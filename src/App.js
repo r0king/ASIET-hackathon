@@ -5,6 +5,7 @@ import Card from "./componets/Card";
 import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./componets/Hero";
+import ComingSoon from "./componets/Coming_soon";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route exact path="/:name/" element={<Install />} />
         <Route path="/ex" element={<Card/>}/>
+        <Route path="/coming_soon" element={<ComingSoon/>}/>
       </Routes>
     </BrowserRouter>
   );

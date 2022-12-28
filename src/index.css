@@ -15,3 +15,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@layer utilities {
+  @variants hover {
+    .shadow-btn34-h7 {
+      box-shadow: 0 0 5px #5dea8c,
+                0 0 25px #5dea8c,
+                0 0 50px #5dea8c,
+                0 0 100px #5dea8c;
+    }
+  }
+}
+@font-face {
+  font-family: 'Clip';
+  src: url('../src/fonts/Clip.ttf') format('truetype');
+}
+@layer utilities {
+  .text-shadow-te6 {
+    text-shadow: 0 0 0.6rem #ECFDF5, 0 0 1.5rem #6EE7B7,
+    -0.2rem 0.1rem 1rem #6EE7B7, 0.2rem 0.1rem 1rem #6EE7B7,
+    0 -0.5rem 2rem #059669, 0 0.5rem 3rem #059669;
+  }
+}
