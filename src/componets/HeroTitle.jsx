@@ -1,9 +1,29 @@
 import React, { Component } from "react";
 
 export default class HeroTitle extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  element = React.createRef();
+  observer = null;
+
+  componentDidMount() {
+    this.observer = new IntersectionObserver((entries) => {
+      // Check if the element is in the viewport
+      if (entries[0].isIntersecting) {
+        console.log("Title is in the viewport");
+      }
+    });
+    this.observer.observe(this.element.current);
+  }
+
+  componentWillUnmount() {
+    this.observer.disconnect();
+  }
   render() {
     return (
-      <div className="h-screen w-screen flex justify-center content-center items-center">
+      <div className="h-screen w-screen flex justify-center content-center items-center" ref={this.element}>
         <h1
           style={{
             fontFamily: "Azonix",

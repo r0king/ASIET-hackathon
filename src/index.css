@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+*{
+  outline: 3px solid limegreen !important;
+} */
 
 body {
   margin: 0;

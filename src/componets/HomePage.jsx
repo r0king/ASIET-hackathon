@@ -6,7 +6,7 @@ export default class HomePage extends Component {
     return (
       <>
         <Hero />
-        <div className="relative">
+        <div className="relative z-10 bg-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
           mollitia unde ipsum possimus facere quia nobis architecto voluptas nam
           voluptatibus pariatur nihil at, sapiente odit aperiam est amet quidem

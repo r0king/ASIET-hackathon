@@ -23,40 +23,54 @@ export default class Hero extends Component {
     super(props);
     this.ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   }
+
+  element = React.createRef();
+  observer = null;
+
+  componentDidMount() {
+    this.observer = new IntersectionObserver((entries) => {
+      // Check if the element is in the viewport
+      if (entries[0].isIntersecting) {
+        console.log("Hero is in the viewport");
+      }
+    });
+    this.observer.observe(this.element.current);
+  }
+
+  componentWillUnmount() {
+    this.observer.disconnect();
+  }
+
   render() {
     return (
-      <>
-        <div className="relative ">
-          <div className="h-screen overflow-x-hidden w-screen fixed  bg-black"></div>
-
-          <img
-            className="fixed content-center bg-cover top-[20vh] bottom-0 opacity-60 w-full max-w-[500px] object-cover left-0 right-0 m-auto z-20"
-            src={PlanetImg}
-            alt="planet"
-          />
-          <Navbar />
-          <ScrollContainer>
-            <ScrollPage page={0}>
-              <Animator
-                animation={batch(Sticky(50, 33), Fade(), MoveOut(0, -200))}
-              >
-                <HeroTitle />
-              </Animator>
-            </ScrollPage>
-            <ScrollPage page={1}>
-              <Page2 />
-            </ScrollPage>
-            <ScrollPage page={2}>
-              <Animator animation={this.ZoomInScrollOut}>
-                <Page3 />
-              </Animator>
-            </ScrollPage>
-            <ScrollPage page={3}>
-              <Page4 />
-            </ScrollPage>
-          </ScrollContainer>
-        </div>
-      </>
+      <div className="relative bg-black" ref={this.element}>
+        <img
+          className="fixed content-center bg-cover top-[20vh] bottom-0 opacity-60 w-full max-w-[500px] object-cover left-0 right-0 m-auto "
+          src={PlanetImg}
+          alt="planet"
+        />
+        <Navbar />
+        <ScrollContainer>
+          <ScrollPage page={0}>
+            <Animator
+              animation={batch(Sticky(50, 33), Fade(), MoveOut(0, -200))}
+            >
+              <HeroTitle />
+            </Animator>
+          </ScrollPage>
+          <ScrollPage page={1}>
+            <Page2 />
+          </ScrollPage>
+          <ScrollPage page={2}>
+            <Animator animation={this.ZoomInScrollOut}>
+              <Page3 />
+            </Animator>
+          </ScrollPage>
+          <ScrollPage page={3}>
+            <Page4 />
+          </ScrollPage>
+        </ScrollContainer>
+      </div>
     );
   }
 }
