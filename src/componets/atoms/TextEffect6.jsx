@@ -40,7 +40,7 @@ const TextEffect6 = ({ textId = "text-te6", children }) => {
   }, [children, textId])
 
   return (
-    <h1 id={textId} className="tracking-widest text-green-100 uppercase text-7xl font-clip text-shadow-te6 animate-flick">
+    <h1 id={textId} className="text-4xl tracking-widest text-green-100 uppercase font-clip text-shadow-te6 animate-flick ">
       {children}
     </h1>
   )

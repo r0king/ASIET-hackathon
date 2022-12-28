@@ -16,7 +16,7 @@ const ComingSoon = () => {
 
 
         {/* :TEXT EFFECT */}
-        <div className="relative">
+        <div className="relative ">
           <TextEffect6>Coming Soon</TextEffect6>
         </div>
 
