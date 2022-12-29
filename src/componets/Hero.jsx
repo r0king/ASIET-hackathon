@@ -11,7 +11,7 @@ import {
   FadeIn,
 } from "react-scroll-motion";
 import HeroTitle from "./HeroTitle";
-import Navbar from "./Navbar";
+import Menu from './Menu/Menu'
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
@@ -57,7 +57,7 @@ export default class Hero extends Component {
           src={scrolImg}
           alt="scroll wheel"
         ></img>
-        <Navbar />
+        <Menu/>
         <ScrollContainer>
           <ScrollPage page={0} className="z-[2]">
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
