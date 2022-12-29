@@ -4,12 +4,10 @@ import {
   ScrollContainer,
   ScrollPage,
   Animator,
-  Sticky,
   batch,
   Fade,
   MoveOut,
   ZoomIn,
-  Move,
   StickyIn,
   FadeIn,
 } from "react-scroll-motion";
@@ -49,28 +47,19 @@ export default class Hero extends Component {
     this.setState({ page: page });
   };
   render() {
-    const planetStyle = `fixed content-center bg-cover top-[50vh] bottom-0  transition-all w-full max-w-[500px] object-cover left-0 right-0 m-auto  ${
-      this.state.page !== 1 ? "z-0" : "z-20"
+    const planetStyle = `fixed content-center bg-cover bottom-0 saturate-150 transition-all w-full pt-[30vh] md:max-w-[50vw] object-cover top-0 left-0 right-0 m-auto  ${
+      this.state.page !== 1 ? "z-0 blur-[1px]" : "z-20 opacity-90"
     }`;
     return (
-      <div className="relative bg-black" ref={this.element}>
+      <div className="relative bg-black " ref={this.element}>
         <img className={planetStyle} src={PlanetImg} alt="planet" />
         <Navbar />
         <PageSlider/>
         <ScrollContainer>
           <ScrollPage page={0}>
-            <Animator
-              animation={batch(Sticky(50, 33), Fade(), MoveOut(0, -200))}
-            >
+            <Animator animation={batch(Fade(), MoveOut(0, -200))}>
               <HeroTitle updatePage={this.updatePage} />
             </Animator>
-          </ScrollPage>
-          <ScrollPage page={1}>
-            <Animator
-              style={{
-                height: "10vh",
-              }}
-            ></Animator>
           </ScrollPage>
           <ScrollPage page={2}>
             <Page2 updatePage={this.updatePage} />

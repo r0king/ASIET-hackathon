@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import Hero from "./Hero";
+import cursorImg from "../assets/cursor.png";
 
 export default class HomePage extends Component {
   render() {
+    const cursor_path = `url(${cursorImg})`
     return (
-      <>
+      <div style={{
+        cursor: `${cursor_path},auto`
+      }} >
         <Hero />
         <div className="relative z-10 bg-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
@@ -412,7 +416,7 @@ export default class HomePage extends Component {
           Voluptatem, maiores at blanditiis facere architecto quaerat animi error aspernatur, et eius enim consectetur omnis. Odio, cum aliquid recusandae minus expedita suscipit at magni, molestiae quae eos placeat dolore inventore.
           Eaque doloremque dicta facilis repudiandae consequatur. Voluptates, veritatis aperiam, ut quibusdam iste commodi tempore recusandae perferendis, eos officia eius? Optio fugiat impedit quia consequatur perspiciatis labore quo doloremque, atque dolorem.
         </div>
-      </>
+      </div>
     );
   }
 }

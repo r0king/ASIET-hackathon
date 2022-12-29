@@ -28,10 +28,10 @@ export default class Page2 extends Component {
   render() {
     return (
       <div
-        className="flex justify-center items-center h-screen"
+        className="flex justify-center items-center h-screen "
         ref={this.element}
       >
-        <span className="font-semibold text-4xl">
+        <span className="font-semibold text-4xl z-40">
           <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
           <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>-
           I'm Dante Chun -
