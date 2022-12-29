@@ -47,24 +47,21 @@ function App() {
                 mode: "grab",
                 parallax: {
                   enable: true,
-                  force: 60,
+                  force: 20,
                   smooth: 10,
                 },
               },
               resize: true,
             },
             modes: {
-              push: {
-                quantity: 4,
-              },
               repulse: {
                 distance: 200,
                 duration: 0.4,
               },
               grab: {
-                distance: 400,
+                distance: 200,
                 links: {
-                  blink: false,
+                  blink: true,
                   consent: false,
                   opacity: 1,
                 },
@@ -82,32 +79,28 @@ function App() {
               opacity: 0.5,
               width: 1,
             },
-            collisions: {
-              enable: true,
-              
-            },
             move: {
-              directions: "none",
+              directions: "bottom",
               enable: true,
               outModes: {
                 default: "bounce",
               },
-              random: false,
-              speed: 3,
+              random: true,
+              speed: 1,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 900,
               },
-              value: 50,
+              value: 60,
             },
             opacity: {
               value: 1,
             },
             shape: {
-              type: "circle",
+              type: "square",
             },
             size: {
               value: { min: 1, max: 5 },
