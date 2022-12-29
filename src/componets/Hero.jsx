@@ -46,13 +46,17 @@ export default class Hero extends Component {
     this.setState({ page: page });
   };
   render() {
-    const planetStyle = `fixed content-center z-10 bg-cover bottom-0 saturate-150 transition-all w-full pt-[30vh] md:max-w-[50vw] object-cover top-0 left-0 right-0 m-auto  ${
+    const planetStyle = `fixed content-center z-10 bg-cover bottom-0 saturate-150 transition-all w-full pt-[30vh] md:max-w-[50vw] lg:pt-[55vh]  object-cover top-0 left-0 right-0 m-auto  ${
       this.state.page !== 1 ? "blur-[1px]" : "opacity-90"
     }`;
     return (
       <div className="relative bg-black " ref={this.element}>
         <img className={planetStyle} src={PlanetImg} alt="planet" />
-        <img className="fixed m-auto content-center bottom-0 hidden left-0 right-0 py-20 w-14 md:block z-50" src={scrolImg} alt="scroll wheel"></img>
+        <img
+          className="fixed m-auto content-center bottom-0 hidden left-0 right-0 py-20 w-14 md:block z-20 "
+          src={scrolImg}
+          alt="scroll wheel"
+        ></img>
         <Navbar />
         <ScrollContainer>
           <ScrollPage page={0} className="z-[2]">
@@ -60,7 +64,7 @@ export default class Hero extends Component {
               <HeroTitle updatePage={this.updatePage} />
             </Animator>
           </ScrollPage>
-          <ScrollPage page={2} className="z-10" >
+          <ScrollPage page={2} className="z-10">
             <Page2 updatePage={this.updatePage} />
           </ScrollPage>
           <ScrollPage page={3} className="z-10">

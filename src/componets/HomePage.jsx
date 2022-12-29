@@ -10,7 +10,7 @@ export default class HomePage extends Component {
         cursor: `${cursor_path},auto`
       }} >
         <Hero />
-        <div className="relative z-10 bg-black">
+        <div className="relative z-50 bg-black">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
           mollitia unde ipsum possimus facere quia nobis architecto voluptas nam
           voluptatibus pariatur nihil at, sapiente odit aperiam est amet quidem

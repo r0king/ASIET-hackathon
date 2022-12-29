@@ -34,7 +34,7 @@ export default class HeroTitle extends Component {
             fontFamily: "Azonix",
             transformStyle: "preserve-3d",
           }}
-          className="text-4xl max-w-[80vw] sm:text-6xl  text- text-center bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] font-extrabold text-transparent"
+          className="text-4xl p-2 md:max-w-[60vw] sm:text-6xl  xl:text-8xl text-center bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] font-extrabold text-transparent"
         >
           ADI SHANKARA <span ref={this.textRef}>HACKATHON</span> 23
         </h1>
