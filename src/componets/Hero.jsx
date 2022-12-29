@@ -43,7 +43,7 @@ export default class Hero extends Component {
 
   render() {
     return (
-      <div className="relative bg-black" ref={this.element}>
+      <div className="bg-black" ref={this.element}>
         <img
           className="fixed content-center bg-cover top-[20vh] bottom-0 opacity-60 w-full max-w-[500px] object-cover left-0 right-0 m-auto "
           src={PlanetImg}
