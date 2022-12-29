@@ -26,7 +26,7 @@ export default class HeroTitle extends Component {
   render() {
     return (
       <div
-        className="h-screen w-screen flex pb-[33vh] justify-center content-center items-center mb-10"
+        className="h-screen w-screen flex pb-[33vh] justify-center content-center items-center mb-10 z-10"
         ref={this.element}
       >
         <h1

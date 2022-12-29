@@ -23,6 +23,16 @@ code {
   font-family: "Azonix";
   src: local("Azonix"), url(fonts/Azonix.otf) format("opentype");
 }
+
+#tsparticles {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1;
+  position: fixed;
+ }
+ 
+
 @layer utilities {
   .transform-letter-te7 {
     transform: translateZ(25px);

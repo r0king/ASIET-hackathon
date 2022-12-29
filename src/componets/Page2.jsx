@@ -28,7 +28,7 @@ export default class Page2 extends Component {
   render() {
     return (
       <div
-        className="flex justify-center items-center h-screen "
+        className="flex justify-center items-center h-screen z-10 "
         ref={this.element}
       >
         <span className="font-semibold text-4xl z-40">

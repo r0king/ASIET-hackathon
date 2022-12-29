@@ -28,6 +28,7 @@ const particlesLoaded = useCallback(async container => {
   return (
     <>
     <Particles
+            className=""   
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -37,12 +38,12 @@ const particlesLoaded = useCallback(async container => {
                         value: "transparent",
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 30,
                 interactivity: {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
+                            mode: "",
                         },
                         onHover: {
                             enable: true,
