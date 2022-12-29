@@ -1,9 +1,7 @@
-
 import React, { useState } from 'react'
 
-
-const Pagination7 = () => {
-
+const Pagination7 = (props) => {
+  
   const [current, setCurrent] = useState(1)
   const [effect, setEffect] = useState(null)
   const goToNext = () => {
@@ -15,46 +13,35 @@ const Pagination7 = () => {
     setCurrent(current - 1)
   }
 
+  let page = props.selected
+
   return (
-    <nav className="text-lg text-gray-400 font-bold" aria-label="Pagination">
-      
+    <nav className="text-lg text-gray-400 font-bold z-10 fixed rotate-90 bottom-[50%] md:ml-[-5vw] ml-[-20vw]" aria-label="Pagination">
+
       {/* :PAGINATION - large devices */}
-      <div className="hidden sm:flex items-center space-x-3">
+      <div className="sm:flex items-center space-x-3">
         {/* Page 1 */}
-        <a href="#link" className={`inline-flex items-center ${current === 1 && "text-red-700"}`} onClick={() => setCurrent(1)}>
-          01
-          <span className={`ml-1 h-0.5 ${current === 1 ? "w-20" : "w-0"} bg-red-700 transition-all duration-300 ease-in`} />
+        <a href="#link" className={`inline-flex items-center ${current === 1 && "text-[#E2DCC8]"}`} onClick={() => setCurrent(1)}>
+          <span className='rotate-[270deg]'>01 {page===1?'Home':''}</span>
+          <span className={`ml-1 h-0.5 ${(page===1 ? "w-20" : "w-0") || (current === 1 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
         {/* Page 2 */}
-        <a href="#link" className={`inline-flex items-center ${current === 2 && "text-red-700"}`} onClick={() => setCurrent(2)}>
-          02
-          <span className={`ml-1 h-0.5 ${current === 2 ? "w-20" : "w-0"} bg-red-700 transition-all duration-300 ease-in`} />
+        <a href="#link1" className={`inline-flex items-center ${current === 2 && "text-[#E2DCC8]"}`} onClick={() => setCurrent(2)} {...(page===2? {className: 'inline-flex items-center active active:text-red-600'} : {})}>
+          <span className='rotate-[270deg]'>02 {page===2?'About':''}</span>
+          <span className={` ml-1 h-0.5 ${(page===2 ? "w-20" : "w-0") || (current === 2 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
         {/* Page 3 */}
-        <a href="#link" className={`inline-flex items-center ${current === 3 && "text-red-700"}`} onClick={() => setCurrent(3)}>
-          03
-          <span className={`ml-1 h-0.5 ${current === 3 ? "w-20" : "w-0"} bg-red-700 transition-all duration-300 ease-in`} />
+        <a href="#link2" className={`inline-flex items-center ${current === 3 && "text-[#E2DCC8]"}`} onClick={() => setCurrent(3)} {...(page===3? {className: 'inline-flex items-center active active:text-red-600'} : {})}>
+          <span className='rotate-[270deg]'>03 {page===3?'TagLine':''}</span>
+          <span className={`ml-1 h-0.5 ${(page===3 ? "w-20" : "w-0") || (current === 3 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
         {/* Page 4 */}
-        <a href="#link" className={`inline-flex items-center ${current === 4 && "text-red-700"}`} onClick={() => setCurrent(4)}>
-          04
-          <span className={`ml-1 h-0.5 ${current === 4 ? "w-20" : "w-0"} bg-red-700 transition-all duration-300 ease-in`} />
+        <a href="#link3" className={`inline-flex items-center ${current === 4 && "text-[#E2DCC8]"}`} onClick={() => setCurrent(4)} {...(page===4? {className: 'inline-flex items-center active active:text-red-600'} : {})}>
+          <span className='rotate-[270deg]'>04 {page===4?'Sponsers':''}</span>
+          <span className={`ml-1 h-0.5 ${(page===4 ? "w-20" : "w-0") || (current === 4 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
       </div>
 
-      {/* :PAGINATION - small devices */}
-      <div className="sm:hidden flex items-center">
-        {/* Previous line */}
-        <button className={`mr-2 w-16 h-6 inline-flex items-center `} onClick={goToPrev} onAnimationEnd={() => setEffect(null)} >
-          <span className={`w-full h-0.5 bg-red-700 ${effect === "prev" && "animate-linesquiz"}`} />
-        </button>
-        {/* Page */}
-        <a href="#link" className="px-1">{current}</a>
-        {/* Next line */}
-        <button className={`ml-2 w-16 h-6 inline-flex items-center ${effect && "animate-linesquiz"}`} onClick={goToNext} onAnimationEnd={() => setEffect(null)}>
-          <span className={`w-full h-0.5 bg-red-700 ${effect === "next" && "animate-linesquiz"}`} />
-        </button>
-      </div>
 
     </nav>
   )

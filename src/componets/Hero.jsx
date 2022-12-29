@@ -54,7 +54,7 @@ export default class Hero extends Component {
       <div className="relative bg-black " ref={this.element}>
         <img className={planetStyle} src={PlanetImg} alt="planet" />
         <Navbar />
-        <PageSlider/>
+        <PageSlider updatePage={this.updatePage} selected={this.state.page}/>
         <ScrollContainer>
           <ScrollPage page={0}>
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
