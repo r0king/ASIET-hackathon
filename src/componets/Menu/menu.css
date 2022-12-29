@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    color: white;
+    color: #E2DCC8;
 }
 
 .menubar{
@@ -13,7 +13,6 @@
     justify-content: space-evenly;
     width: 30vw;
     background-color: rgba(4, 23, 23, 0.56);
-    padding: 2%;
     animation-name: slide-in;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -28,13 +27,21 @@
 }
 
 .menubar .menuitems li{
-    padding: 10%;
+    padding: 5%;
+}
+
+.menubar .menuitems li:active, .menubar .menuitems li:hover{
+    border-left: 10px outset white;
+    font-weight: bold;
+    color: white;
 }
 
 
 .menubar .links{
     display: flex;
+    width: 50%;
     justify-content: space-between;
+    padding: 5%;
 }
 
 .hamburger{

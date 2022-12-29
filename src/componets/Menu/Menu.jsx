@@ -15,9 +15,10 @@ function Menu() {
 
     return (
         <>
+
             <div className="menu">
-                <div className={`${open?'menubar':'menu-dismiss'}`}>
-                    <div className={`${open?'menuitems':'menu-dismiss'}`}>
+                <div className={`${open ? 'menubar' : 'menu-dismiss'}`}>
+                    <div className={`${open ? 'menuitems' : 'menu-dismiss'}`}>
                         <li>Home</li>
                         <li>Rules and guidelines</li>
                         <li>FAQ</li>
@@ -25,19 +26,21 @@ function Menu() {
 
                     </div>
 
-                    <div className={`${open?'links':'menu-dismiss'}`}>
-                        <p>facebook</p>
-                        <p>instagram</p>
-                        <p>twitter</p>
+                    <div className={`${open ? 'links' : 'menu-dismiss'}`}>
+                        <i class="fa-brands fa-facebook-f fa"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
                     </div>
                 </div>
-                
+
                 <div className="hamburger" onClick={toggleMenu}>
                     <p className={`${open ? 'line' : ''}1 line`}></p>
                     <p className={`${open ? 'line' : ''}2 line`}></p>
                     <p className={`${open ? 'line' : ''}3 line`}></p>
                 </div>
             </div>
+
+
         </>
     )
 }
