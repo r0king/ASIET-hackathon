@@ -34,6 +34,7 @@
     border-left: 10px outset white;
     font-weight: bold;
     color: white;
+    transition: all 0.25s ease-in;
 }
 
 
