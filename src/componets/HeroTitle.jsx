@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 export default class HeroTitle extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   element = React.createRef();
   observer = null;
@@ -13,6 +10,7 @@ export default class HeroTitle extends Component {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
         console.log("Title is in the viewport");
+        this.props.updatePage(1);
       }
     });
     this.observer.observe(this.element.current);

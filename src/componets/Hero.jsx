@@ -8,6 +8,7 @@ import {
   Fade,
   MoveOut,
   ZoomIn,
+  Move,
   StickyIn,
   FadeIn,
 } from "react-scroll-motion";
@@ -22,6 +23,9 @@ export default class Hero extends Component {
   constructor(props) {
     super(props);
     this.ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+    this.state = {
+      page: 0,
+    };
   }
 
   element = React.createRef();
@@ -40,34 +44,42 @@ export default class Hero extends Component {
   componentWillUnmount() {
     this.observer.disconnect();
   }
-
+  updatePage = (page) => {
+    this.setState({ page: page });
+  };
   render() {
+    const planetStyle = `fixed content-center bg-cover top-[50vh] bottom-0  transition-all w-full max-w-[500px] object-cover left-0 right-0 m-auto  ${
+      this.state.page !== 1 ? "z-0" : "z-20"
+    }`;
     return (
       <div className="relative bg-black" ref={this.element}>
-        <img
-          className="fixed content-center bg-cover top-[20vh] bottom-0 opacity-60 w-full max-w-[500px] object-cover left-0 right-0 m-auto "
-          src={PlanetImg}
-          alt="planet"
-        />
+        <img className={planetStyle} src={PlanetImg} alt="planet" />
         <Navbar />
         <ScrollContainer>
           <ScrollPage page={0}>
             <Animator
               animation={batch(Sticky(50, 33), Fade(), MoveOut(0, -200))}
             >
-              <HeroTitle />
+              <HeroTitle updatePage={this.updatePage} />
             </Animator>
           </ScrollPage>
           <ScrollPage page={1}>
-            <Page2 />
+            <Animator
+              style={{
+                height: "10vh",
+              }}
+            ></Animator>
           </ScrollPage>
           <ScrollPage page={2}>
-            <Animator animation={this.ZoomInScrollOut}>
-              <Page3 />
-            </Animator>
+            <Page2 updatePage={this.updatePage} />
           </ScrollPage>
           <ScrollPage page={3}>
-            <Page4 />
+            <Animator animation={this.ZoomInScrollOut}>
+              <Page3 updatePage={this.updatePage} />
+            </Animator>
+          </ScrollPage>
+          <ScrollPage page={4}>
+            <Page4 updatePage={this.updatePage} />
           </ScrollPage>
         </ScrollContainer>
       </div>

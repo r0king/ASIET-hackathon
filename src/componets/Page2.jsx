@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import { Animator, MoveIn, MoveOut } from "react-scroll-motion";
 
 export default class Page2 extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.element = React.createRef();
+  //   this.observer = null;
+  // }
+
   element = React.createRef();
   observer = null;
 
@@ -10,6 +16,7 @@ export default class Page2 extends Component {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
         console.log("Page 2 is in the viewport");
+        this.props.updatePage(2);
       }
     });
     this.observer.observe(this.element.current);
