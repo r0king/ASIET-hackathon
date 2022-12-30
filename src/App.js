@@ -39,7 +39,7 @@ function App() {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
@@ -63,7 +63,7 @@ function App() {
                 links: {
                   blink: true,
                   consent: false,
-                  opacity: 1,
+                  opacity: 0,
                 },
               },
             },
@@ -75,7 +75,7 @@ function App() {
             links: {
               color: "#ffffff",
               distance: 150,
-              enable: true,
+              enable: false,
               opacity: 0.5,
               width: 1,
             },
@@ -100,10 +100,10 @@ function App() {
               value: 1,
             },
             shape: {
-              type: "square",
+              type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 4 },
             },
           },
           detectRetina: true,
