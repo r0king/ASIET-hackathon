@@ -13,6 +13,7 @@ import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
 import { useWindowSize } from "react-use";
+import "./PageSlider.css";
 
 const HomePage = () => {
   const element = React.createRef();
@@ -31,6 +32,11 @@ const HomePage = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
+
+  let pageShow = [];
+  pageShow = [0, 0, 0, 0, 0];
+  pageShow[4] = "scale-[2.5]";
+
   return (
     <div className="bg-black">
       <Particles
@@ -118,14 +124,14 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      
+      {/* <Pageination /> */}
       <Parallax pages={width < 450 ? 4.6 : 4.5} className="z-10">
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
         <ParallaxLayer
           offset={0.55}
-          factor={1.5}
+          factor={1.5}          
           speed={1}
           className="flex justify-center "
         >
@@ -158,3 +164,26 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+function Pageination(pageShow) {
+  return (
+    <ul id="pagination">
+      <div className="vl"></div>
+      <div className="flex justify-center flex-col items-center">
+        <li className={pageShow[1]}>
+          <a href="#page1"></a>
+        </li>
+        <li className={pageShow[2]}>
+          <a href="#page2"></a>
+        </li>
+        <li className={pageShow[3]}>
+          <a href="#page3"></a>
+        </li>
+        <li className={pageShow[4]}>
+          <a href="#page4"></a>
+        </li>
+      </div>
+      <div className="vl1"></div>
+    </ul>
+  );
+}
