@@ -1,8 +1,8 @@
 {
-  "name": "react-template",
+  "name": "asiet-hackathon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://r0king.github.io/react-template/",
+  "homepage": "https://r0king.github.io/asiet-hackathon/",
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^1.0.6",
