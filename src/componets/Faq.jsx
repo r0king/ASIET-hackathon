@@ -51,7 +51,7 @@ const Faq = () => {
   ]
 
   return (
-    <div className="relative py-10 w-full bg-black overflow-hidden h-screen">
+    <div className="relative py-10 w-full bg-black overflow-hidden h-screen my-[5vh] shadow-[0_35px_60px_15px_rgba(0,0,0,1)]">
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2"> {/* Container */}
 
         {/* :IMAGE */}
@@ -62,7 +62,7 @@ const Faq = () => {
         </div>
 
         {/* :FAQ */}
-        <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen">
+        <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
           {/* ::Title */}
           <div className="text-4xl md:text-5xl lg:text-6xl">
            Frequently Asked Questions
