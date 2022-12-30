@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 
 export default class HeroTitle extends Component {
-
-  element = React.createRef();
-  observer = null;
+  constructor(props) {
+    super(props);
+    this.element = React.createRef();
+    this.observer = null;
+    this.textRef = React.createRef();
+  } 
 
   componentDidMount() {
+    console.log(this.textRef.current)
     this.observer = new IntersectionObserver((entries) => {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
@@ -21,17 +25,20 @@ export default class HeroTitle extends Component {
   }
   render() {
     return (
-      <div className="h-screen w-screen flex pb-[33vh] justify-center content-center items-center mb-10" ref={this.element}>
+      <div
+        className="h-screen w-screen flex pb-[33vh] justify-center content-center items-center mb-10 z-10"
+        ref={this.element}
+      >
         <h1
           style={{
             fontFamily: "Azonix",
+            transformStyle: "preserve-3d",
           }}
-          className="text-4xl max-w-[80vw] sm:text-6xl  text- text-center bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] font-extrabold text-transparent"
+          className="text-4xl p-2 md:max-w-[60vw] sm:text-6xl  xl:text-8xl text-center bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] font-extrabold text-transparent"
         >
-          ADI SHANKARA HACKATHON 23
+          ADI SHANKARA <span ref={this.textRef}>HACKATHON</span> 23
         </h1>
       </div>
     );
   }
 }
-
