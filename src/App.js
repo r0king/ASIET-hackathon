@@ -4,6 +4,7 @@ import Card from "./componets/Card";
 import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
+import FAQ from "./componets/Faq";
 
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -114,6 +115,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route exact path="/:name/" element={<Install />} />
           <Route path="/ex" element={<Card />} />
+          <Route path="/faq" element={<FAQ/>} />
         </Routes>
       </BrowserRouter>
     </>
