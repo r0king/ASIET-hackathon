@@ -1,6 +1,7 @@
 import React from 'react'
 import TextEffect6 from "./atoms/TextEffect6"
 import ButtonEffect34 from "./atoms/buttonEffect34.jsx"
+import './Coming_soon.css'
 
 
 const ComingSoon = () => {
@@ -22,7 +23,7 @@ const ComingSoon = () => {
 
 
         {/* :BUTTON BACK HOME */}
-        <a href="#link" className="mt-16 text-base">
+        <a href="#link" className="mt-16 text-base adjust">
           <ButtonEffect34>Go Back to Home</ButtonEffect34>
         </a>
 
