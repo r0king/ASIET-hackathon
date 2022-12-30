@@ -45,6 +45,7 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Particles
+        className=""
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -58,7 +59,7 @@ const HomePage = () => {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
@@ -82,7 +83,7 @@ const HomePage = () => {
                 links: {
                   blink: true,
                   consent: false,
-                  opacity: 1,
+                  opacity: 0,
                 },
               },
             },
@@ -94,7 +95,7 @@ const HomePage = () => {
             links: {
               color: "#ffffff",
               distance: 150,
-              enable: true,
+              enable: false,
               opacity: 0.5,
               width: 1,
             },
@@ -119,10 +120,10 @@ const HomePage = () => {
               value: 1,
             },
             shape: {
-              type: "square",
+              type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 4 },
             },
           },
           detectRetina: true,
@@ -135,13 +136,18 @@ const HomePage = () => {
           speed={1}
           className="flex justify-center "
         >
-          <img src={planetImg} alt="planet" srcSet="" className="top-0 object-cover" />
+          <img
+            src={planetImg}
+            alt="planet"
+            srcSet=""
+            className="top-0 object-cover"
+          />
         </ParallaxLayer>
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
         <ParallaxLayer speed={1} offset={0.8}>
-          <HeroTitle />
+          <Page2 />
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.5}>
           <h2 className="flex w-screen justify-center items-center h-screen">
