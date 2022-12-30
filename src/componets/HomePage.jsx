@@ -12,9 +12,6 @@ import {
 } from "react-scroll-motion";
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu/Menu";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
-import Page4 from "./Page4";
 import planetImg from "../assets/planet.jpg";
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -22,6 +19,7 @@ import Faq from "./Faq";
 import ContactUs from "./ContactUs";
 import { loadFull } from "tsparticles";
 import Particles from "react-particles";
+import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
 
@@ -129,9 +127,12 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <Parallax pages={5} className="z-10">
+      <Parallax pages={3} className="z-10">
+        <ParallaxLayer speed={0.3} offset={0.1}>
+          <HeroTitle />
+        </ParallaxLayer>
         <ParallaxLayer
-          offset={0.4}
+          offset={0.5}
           factor={1.5}
           speed={1}
           className="flex justify-center "
@@ -143,20 +144,29 @@ const HomePage = () => {
             className="top-0 object-cover"
           />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.3} offset={0.1}>
-          <HeroTitle />
+
+        <ParallaxLayer speed={0.8} offset={0.99}>
+          <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer speed={1} offset={0.8}>
-          <Page2 />
-        </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0.5}>
-          <h2 className="flex w-screen justify-center items-center h-screen">
-            Page 3
-          </h2>
+        <ParallaxLayer offset={1.3} speed={0.5}>
+          <AboutUs />
         </ParallaxLayer>
       </Parallax>
+
     </div>
   );
 };
 
 export default HomePage;
+//       >
+//         <Hero />
+//         <div className="relative z-50 ">
+//           <AboutUs />
+//           <Poster />
+//           <Faq />
+//           <ContactUs />
+//         </div>
+//       </div>
+//     );
+//   }
+// }
