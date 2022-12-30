@@ -15,6 +15,7 @@ import Menu from './Menu/Menu'
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
+import Poster from "./Poster";
 import PlanetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
 export default class Hero extends Component {
