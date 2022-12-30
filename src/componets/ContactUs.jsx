@@ -77,7 +77,7 @@ const ContactUs = () => {
           <div className="col-span-full sm:col-span-3">
             {/* Embed Google map */}
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.8211700506645!2d76.42882559361558!3d10.17761954352797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1672305829425!5m2!1sen!2sin"
-              title="map" scrolling="no" frameborder="0"
+              title="map" scrolling="no" frameBorder="0"
               className="w-full h-64 sm:h-full"
               loading="lazy" />
           </div>

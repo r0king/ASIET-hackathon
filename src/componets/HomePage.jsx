@@ -22,6 +22,8 @@ import Faq from "./Faq";
 import ContactUs from "./ContactUs";
 import { loadFull } from "tsparticles";
 import Particles from "react-particles";
+import Poster from "./Poster";
+import Tagline from "./Tagline";
 
 const HomePage = () => {
   const element = React.createRef();
