@@ -1,15 +1,5 @@
-import React, { Component, useCallback } from "react";
-import {
-  ScrollContainer,
-  ScrollPage,
-  Animator,
-  batch,
-  Fade,
-  MoveOut,
-  ZoomIn,
-  StickyIn,
-  FadeIn,
-} from "react-scroll-motion";
+import React, { useCallback } from "react";
+
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu/Menu";
 import planetImg from "../assets/planet.jpg";
@@ -22,10 +12,11 @@ import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
+import { useWindowSize } from "react-use";
 
 const HomePage = () => {
   const element = React.createRef();
-
+  const { width } = useWindowSize();
   const updatePage = (page) => {
     this.setState({ page: page });
   };
@@ -127,12 +118,13 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <Parallax pages={3} className="z-10">
+      
+      <Parallax pages={width < 450 ? 4.6 : 4.5} className="z-10">
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
         <ParallaxLayer
-          offset={0.5}
+          offset={0.55}
           factor={1.5}
           speed={1}
           className="flex justify-center "
@@ -149,24 +141,20 @@ const HomePage = () => {
           <Tagline />
         </ParallaxLayer>
         <ParallaxLayer offset={1.3} speed={0.5}>
+          <Poster />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={1}>
           <AboutUs />
         </ParallaxLayer>
+        <ParallaxLayer offset={2.8} speed={1}>
+          <Faq />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3.5} speed={0.3}>
+          <ContactUs />
+        </ParallaxLayer>
       </Parallax>
-
     </div>
   );
 };
 
 export default HomePage;
-//       >
-//         <Hero />
-//         <div className="relative z-50 ">
-//           <AboutUs />
-//           <Poster />
-//           <Faq />
-//           <ContactUs />
-//         </div>
-//       </div>
-//     );
-//   }
-// }
