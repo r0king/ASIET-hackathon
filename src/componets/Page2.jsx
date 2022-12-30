@@ -15,7 +15,6 @@ export default class Page2 extends Component {
     this.observer = new IntersectionObserver((entries) => {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
-        console.log("Page 2 is in the viewport");
         this.props.updatePage(2);
       }
     });
