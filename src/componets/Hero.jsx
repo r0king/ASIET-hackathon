@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PageSlider from "./PageSlider";
 import {
   ScrollContainer,
   ScrollPage,
@@ -19,6 +18,7 @@ import Page4 from "./Page4";
 import Poster from "./Poster";
 import PlanetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
+import "./PageSlider.css"
 export default class Hero extends Component {
   constructor(props) {
     super(props);
@@ -65,22 +65,23 @@ export default class Hero extends Component {
         <div>
           <ul id="pagination">
             <div className="vl"></div>
-            <li className={pageShow[1]}>
-              <a href="#page1"></a>
-            </li>
-            <li className={pageShow[2]}>
-              <a href="#page2"></a>
-            </li>
-            <li className={pageShow[3]}>
-              <a href="#page3"></a>
-            </li>
-            <li className={pageShow[4]}>
-              <a href="#page4"></a>
-            </li>
+            <div className="flex justify-center flex-col items-center">
+              <li className={pageShow[1]}>
+                <a href="#page1"></a>
+              </li>
+              <li className={pageShow[2]}>
+                <a href="#page2"></a>
+              </li>
+              <li className={pageShow[3]}>
+                <a href="#page3"></a>
+              </li>
+              <li className={pageShow[4]}>
+                <a href="#page4"></a>
+              </li>
+            </div>
             <div className="vl1"></div>
           </ul>
         </div>
-        <PageSlider updatePage={this.updatePage} selected={this.state.page} />
 
         <ScrollContainer>
           <ScrollPage page={0} className="z-[2]" id="page-1">
