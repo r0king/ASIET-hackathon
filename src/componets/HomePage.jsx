@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import cursorImg from "../assets/cursor.png";
 import ContactUs from "./ContactUs";
 import Faq from "./Faq";
+import Poster from "./Poster";
 
 export default class HomePage extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class HomePage extends Component {
       >
         <Hero />
         <div className="relative z-50 ">
+        <Poster/>
           <Faq/>
           <ContactUs />
         </div>
