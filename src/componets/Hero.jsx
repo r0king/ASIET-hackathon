@@ -15,8 +15,11 @@ import Menu from './Menu/Menu'
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
-import PlanetImg from "../assets/planet.png";
+import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Faq from "./Faq";
+import ContactUs from "./ContactUs";
 export default class Hero extends Component {
   constructor(props) {
     super(props);
@@ -27,55 +30,55 @@ export default class Hero extends Component {
   }
 
   element = React.createRef();
-  observer = null;
 
-  componentDidMount() {
-    this.observer = new IntersectionObserver((entries) => {
-      // Check if the element is in the viewport
-      if (entries[0].isIntersecting) {
-        console.log("Hero is in the viewport");
-      }
-    });
-    this.observer.observe(this.element.current);
-  }
-
-  componentWillUnmount() {
-    this.observer.disconnect();
-  }
   updatePage = (page) => {
     this.setState({ page: page });
   };
   render() {
-    const planetStyle = `fixed content-center z-10 bg-cover bottom-0 saturate-150 transition-all w-full pt-[30vh] md:max-w-[50vw] lg:pt-[55vh]  object-cover top-0 left-0 right-0 m-auto  ${
-      this.state.page !== 1 ? "blur-[1px]" : "opacity-90"
-    }`;
     return (
-      <div className="relative bg-black " ref={this.element}>
-        <img className={planetStyle} src={PlanetImg} alt="planet" />
-        <img
-          className="fixed m-auto content-center bottom-0 hidden left-0 right-0 py-20 w-14 md:block z-20 "
-          src={scrolImg}
-          alt="scroll wheel"
-        ></img>
-        <ScrollContainer>
-          <ScrollPage page={0} className="z-[2]">
-            <Animator animation={batch(Fade(), MoveOut(0, -200))}>
-              <HeroTitle updatePage={this.updatePage} />
-            </Animator>
-          </ScrollPage>
-          <ScrollPage page={2} className="z-10">
-            <Page2 updatePage={this.updatePage} />
-          </ScrollPage>
-          <ScrollPage page={3} className="z-10">
-            <Animator animation={this.ZoomInScrollOut}>
-              <Page3 updatePage={this.updatePage} />
-            </Animator>
-          </ScrollPage>
-          <ScrollPage page={4} className="z-10">
-            <Page4 updatePage={this.updatePage} />
-          </ScrollPage>
-        </ScrollContainer>
-      </div>
+      <Parallax pages={2.6} ref={this.element} >
+{/* 
+        <ParallaxLayer
+          offset={0}
+          speed={1}
+          factor={2}
+          
+          style={{
+           
+            // backgroundImage: `url(${planetImg})`,
+            backgroundSize: 'cover',
+          }}
+        /> */}
+
+
+        <ParallaxLayer
+          
+          speed={0}
+          style={{ textAlign: 'center' }}
+        >
+          <img src={planetImg} className="z-0 " />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={0.2}
+          speed={0.05}
+          onClick={() => this.element.current.scrollTo(3)}
+        >
+          <h2>Welcome to my website</h2>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          onClick={() => this.element.current.scrollTo(0)}
+        >
+          <div className="z-40">
+            <Faq />
+          <ContactUs />
+          </div>
+          
+          
+        </ParallaxLayer>
+      </Parallax>
     );
   }
 }

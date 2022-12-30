@@ -9,6 +9,7 @@ import FAQ from "./componets/Faq";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import Hero from "./componets/Hero";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -116,6 +117,7 @@ function App() {
           <Route exact path="/:name/" element={<Install />} />
           <Route path="/ex" element={<Card />} />
           <Route path="/faq" element={<FAQ/>} />
+          <Route path="/para" element={<Hero/>} />          
         </Routes>
       </BrowserRouter>
     </>
