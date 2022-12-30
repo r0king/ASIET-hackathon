@@ -32,7 +32,7 @@ const Poster = () => {
   ]
 
   return (
-    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-gray-50">
+    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center h-[100vh]">
 
         {/* :TITLE */}
