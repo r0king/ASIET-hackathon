@@ -57,7 +57,6 @@ export default class Hero extends Component {
           src={scrolImg}
           alt="scroll wheel"
         ></img>
-        <Menu/>
         <ScrollContainer>
           <ScrollPage page={0} className="z-[2]">
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
