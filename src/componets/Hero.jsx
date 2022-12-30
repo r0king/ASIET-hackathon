@@ -60,7 +60,7 @@ export default class Hero extends Component {
         ></img>
         <PageSlider updatePage={this.updatePage} selected={this.state.page}/>
         <ScrollContainer>
-          <ScrollPage page={0} className="z-[2]">
+          <ScrollPage page={0} className="z-[2]" id="page-1">
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
               <HeroTitle updatePage={this.updatePage} />
             </Animator>

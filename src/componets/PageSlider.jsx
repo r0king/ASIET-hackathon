@@ -53,7 +53,7 @@ function PageSlider(props) {
                 <li><a href="#page2"></a></li>
                 <li><a href="#page3"></a></li>
                 <li><a href="#page4"></a></li>
-                <div className="vl"></div>
+                <div className="vl1"></div>
             </ul>
         </div>
     )
