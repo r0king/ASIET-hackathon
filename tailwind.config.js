@@ -16,6 +16,15 @@ module.exports = {
           },
         },
       },
+      skew: {
+        30: "30deg",
+      },
+      transitionTimingFunction: {
+        bounce: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+      },
+      zIndex: {
+        "-1": "-1",
+      },
       brightness: {
         // Add the 'group-hover' variant to the 'brightness' theme object
         "group-hover": "brightness(90%)",
