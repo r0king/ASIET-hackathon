@@ -13,7 +13,7 @@ const Pagination7 = (props) => {
   }
   let page = props.selected
   return (
-    <nav className="text-lg text-gray-400 font-bold z-50 fixed rotate-90 bottom-[50%] md:ml-[-16vw] ml-[-55vw]" aria-label="Pagination">
+    <nav className="text-lg text-gray-400 font-bold z-10 fixed rotate-90 top-[15%] md:ml-[-30vw] ml-[-55vw] h-[70vh]" aria-label="Pagination">
       <div className="sm:flex items-center space-x-3">
         <a href="#link" className={`inline-flex items-center text-[#E2DCC8]`}>
           <span className={`h-0.5 w-20 bg-[#E2DCC8] transition-all duration-300 ease-in`} />
@@ -31,7 +31,7 @@ const Pagination7 = (props) => {
           <span className={`h-0.5 ${(page === 3 ? "w-20 bg-orange-300" : "w-0") || (current === 3 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
         <a href="#link3" className={`inline-flex items-center ${current === 4 && "text-[#E2DCC8]"}`} onClick={() => setCurrent(4)} {...(page === 4 ? { className: 'inline-flex items-center active active:text-red-600' } : {})}>
-          <span className={`rotate-[270deg] ${(page === 4 ? "pl-20 text-orange-300 ml-[8vh]" : "pl-0")}`}>04 {page === 4 ? 'Sponsers' : ''}</span>
+          <span className={`rotate-[270deg] ${(page === 4 ? "pl-20 text-orange-300" : "pl-0")}`}>04 {page === 4 ? 'Sponsers' : ''}</span>
           <span className={`h-0.5 ${(page === 4 ? "w-20 bg-orange-300" : "w-0") || (current === 4 ? "w-20" : "w-0")} bg-[#E2DCC8] transition-all duration-300 ease-in`} />
         </a>
         <a href="#link" className={`inline-flex items-center text-[#E2DCC8]`}>
