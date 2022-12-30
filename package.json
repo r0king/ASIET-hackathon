@@ -1,14 +1,17 @@
 {
-  "name": "react-template",
+  "name": "asiet-hackathon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://r0king.github.io/react-template/",
+  "homepage": "https://r0king.github.io/asiet-hackathon/",
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "daisyui": "^2.31.0",
+    "jquery": "^3.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-particles": "^2.7.1",
@@ -16,6 +19,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll-motion": "^0.3.2",
     "tsparticles": "^2.7.1",
+    "tsparticles-interaction-external-attract": "^2.7.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,9 +49,9 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10.4.13",
     "gh-pages": "^4.0.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

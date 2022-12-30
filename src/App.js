@@ -4,6 +4,7 @@ import Card from "./componets/Card";
 import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
+import FAQ from "./componets/Faq";
 
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -11,7 +12,6 @@ import { loadFull } from "tsparticles";
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    await container;
   }, []);
 
   return (
@@ -114,6 +114,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route exact path="/:name/" element={<Install />} />
           <Route path="/ex" element={<Card />} />
+          <Route path="/faq" element={<FAQ/>} />
         </Routes>
       </BrowserRouter>
     </>
