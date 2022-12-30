@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PageSlider from './PageSlider'
+import React, { Component } from "react";
+import PageSlider from "./PageSlider";
 import {
   ScrollContainer,
   ScrollPage,
@@ -12,7 +12,7 @@ import {
   FadeIn,
 } from "react-scroll-motion";
 import HeroTitle from "./HeroTitle";
-import Menu from './Menu/Menu'
+import Menu from "./Menu/Menu";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
@@ -45,9 +45,14 @@ export default class Hero extends Component {
     this.observer.disconnect();
   }
   updatePage = (page) => {
+    console.log(page);
     this.setState({ page: page });
   };
   render() {
+    let pageShow = [];
+    pageShow = [0, 0, 0, 0, 0];
+    pageShow[this.state.page] = "scale-[2.5]";
+
     const planetStyle = `fixed content-center z-10 bg-cover bottom-0 saturate-150 transition-all w-full pt-[30vh] md:max-w-[50vw] lg:pt-[55vh]  object-cover top-0 left-0 right-0 m-auto  ${
       this.state.page !== 1 ? "blur-[1px]" : "opacity-90"
     }`;
@@ -55,11 +60,30 @@ export default class Hero extends Component {
       <div className="relative bg-black " ref={this.element}>
         <img className={planetStyle} src={PlanetImg} alt="planet" />
         <img
-          className="fixed m-auto content-center bottom-0 hidden left-0 right-0 py-20 w-14 md:block z-20 "
+          className="fixed m-auto content-center  bottom-0 hidden left-0 right-0 py-20 w-14 md:block z-20 "
           src={scrolImg}
           alt="scroll wheel"
         ></img>
-        <PageSlider updatePage={this.updatePage} selected={this.state.page}/>
+        <div>
+          <ul id="pagination">
+            <div className="vl"></div>
+            <li className={pageShow[1]}>
+              <a href="#page1"></a>
+            </li>
+            <li className={pageShow[2]}>
+              <a href="#page2"></a>
+            </li>
+            <li className={pageShow[3]}>
+              <a href="#page3"></a>
+            </li>
+            <li className={pageShow[4]}>
+              <a href="#page4"></a>
+            </li>
+            <div className="vl1"></div>
+          </ul>
+        </div>
+        <PageSlider updatePage={this.updatePage} selected={this.state.page} />
+
         <ScrollContainer>
           <ScrollPage page={0} className="z-[2]" id="page-1">
             <Animator animation={batch(Fade(), MoveOut(0, -200))}>
