@@ -1,6 +1,5 @@
 import React from 'react'
 import './PageSlider.css'
-import $ from 'jquery'
 
 function PageSlider(props) {
     return (

@@ -5,6 +5,7 @@ import ContactUs from "./ContactUs";
 import Faq from "./Faq";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
+import Menu from './Menu'
 
 export default class HomePage extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class HomePage extends Component {
           cursor: `${cursor_path},auto`,
         }}
       >
+        <Menu/>
         <Hero />
         <div className="relative z-50 ">
           {/* <Tagline /> */}
