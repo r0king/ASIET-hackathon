@@ -50,7 +50,7 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 30,
+          fpsLimit: 20,
           interactivity: {
             events: {
               onClick: {
@@ -107,18 +107,18 @@ const HomePage = () => {
             number: {
               density: {
                 enable: true,
-                area: 900,
+                area: 50,
               },
               value: 60,
             },
             opacity: {
-              value: 1,
+              value: 0.5,
             },
             shape: {
-              type: "circle",
+              type: "star",
             },
             size: {
-              value: { min: 1, max: 4 },
+              value: { min: 0.1, max: 1 },
             },
           },
           detectRetina: true,
@@ -129,9 +129,10 @@ const HomePage = () => {
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
+
         <ParallaxLayer
           offset={0.55}
-          factor={1.5}          
+          factor={1.5}
           speed={1}
           className="flex justify-center "
         >
@@ -158,32 +159,21 @@ const HomePage = () => {
         <ParallaxLayer offset={3.5} speed={0.3}>
           <ContactUs />
         </ParallaxLayer>
+        <ParallaxLayer
+          factor={0.5}
+          speed={10}
+          offset={0.5}
+          className="flex justify-center "
+        >
+          <img
+            className="fixed m-auto content-center  bottom-0 hidden pt-20 pb-5 w-14 md:block z-20 "
+            src={scrolImg}
+            alt="scroll wheel"
+          ></img>
+        </ParallaxLayer>
       </Parallax>
     </div>
   );
 };
 
 export default HomePage;
-
-function Pageination(pageShow) {
-  return (
-    <ul id="pagination">
-      <div className="vl"></div>
-      <div className="flex justify-center flex-col items-center">
-        <li className={pageShow[1]}>
-          <a href="#page1"></a>
-        </li>
-        <li className={pageShow[2]}>
-          <a href="#page2"></a>
-        </li>
-        <li className={pageShow[3]}>
-          <a href="#page3"></a>
-        </li>
-        <li className={pageShow[4]}>
-          <a href="#page4"></a>
-        </li>
-      </div>
-      <div className="vl1"></div>
-    </ul>
-  );
-}
