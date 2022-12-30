@@ -34,7 +34,6 @@ export default class Hero extends Component {
     this.observer = new IntersectionObserver((entries) => {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
-        console.log("Hero is in the viewport");
       }
     });
     this.observer.observe(this.element.current);

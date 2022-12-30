@@ -51,7 +51,7 @@ const Faq = () => {
   ]
 
   return (
-    <div className="relative py-10 w-full bg-black overflow-x-hidden my-[5vh] shadow-[0_35px_60px_15px_rgba(0,0,0,1)]">
+    <div className="relative py-10 w-full bg-black overflow-x-hidden my-[5vh] shadow-[0_0px_33px_23px_rgba(0,0,0,1)]">
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2"> {/* Container */}
 
         {/* :IMAGE */}
