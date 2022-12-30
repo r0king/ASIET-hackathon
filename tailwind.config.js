@@ -75,15 +75,15 @@ module.exports = {
         },
         blink: {
           '0%, 22%, 36%, 75%': {
-            'color': '#ECFDF5',
-            'text-shadow': "0 0 0.6rem #ECFDF5, 0 0 1.5rem #6EE7B7, -0.2rem 0.1rem 1rem #6EE7B7, 0.2rem 0.1rem 1rem #6EE7B7, 0 -0.5rem 2rem #059669, 0 0.5rem 3rem #059669",
+            'color': '#F1F1F1',
+            'text-shadow': "0 0 0.6rem #F1F1F1, 0 0 1.5rem #F1F1F1, -0.2rem 0.1rem 1rem #F1F1F1, 0.2rem 0.1rem 1rem #F1F1F1, 0 -0.5rem 2rem #E2DCC8, 0 0.5rem 3rem #E2DCC8",
           },
           '28%, 33%': {
-            'color': '#6EE7B7',
+            'color': '#F1F1F1',
             'text-shadow': 'none',
           },
           '82%, 97%': {
-            'color': '#059669',
+            'color': '#F1F1F1',
             'text-shadow': 'none',
           },
         },

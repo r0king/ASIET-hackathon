@@ -6,7 +6,7 @@ const TextEffect6 = ({ textId = "text-te6", children }) => {
     let text = document.getElementById(textId);
     let content = text.textContent;
     text.textContent = "";
-    let toBlink = [5]; /* ::Choose index letters you want to see blink */
+    let toBlink = [8]; /* ::Choose index letters you want to see blink */
     let toBlinkFast = [1]; /* ::Choose index letters you want to see blink fast */
     
     [...content].map((letter, index) => {
@@ -40,7 +40,7 @@ const TextEffect6 = ({ textId = "text-te6", children }) => {
   }, [children, textId])
 
   return (
-    <h1 id={textId} className="text-4xl tracking-widest text-green-100 uppercase font-clip text-shadow-te6 animate-flick ">
+    <h1 id={textId} className="text-4xl tracking-widest text-[#F1F1F1] uppercase font-clip text-shadow-te6 animate-flick ">
       {children}
     </h1>
   )
