@@ -5,6 +5,7 @@ import ContactUs from "./ContactUs";
 import Faq from "./Faq";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
+import Team from "./Team";
 
 export default class HomePage extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class HomePage extends Component {
           <Tagline/>
         <Poster/>
           <Faq/>
+          <Team/>
           <ContactUs />
         </div>
       </div>
