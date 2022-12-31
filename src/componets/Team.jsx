@@ -81,7 +81,7 @@ const Team = () => {
         <div>
           <ul className="relative w-full grid grid-cols-10 sm:gap-x-5">
             {people.map((person, index) => (
-              <li key={person.name} className="col-span-5 md:col-span-3 lg:col-span-2 py-8 px-2">
+              <li key={index} className="col-span-5 md:col-span-3 lg:col-span-2 py-8 px-2">
                 {/* ::Inner container */}
                 <div className={`group z-10 relative ${index % 2 === 0 ? "bottom-3" : "top-3"} w-full h-full inline-flex flex-col justify-center transition-all duration-300 ease-in transform hover:translate-y-3`}>
                   {/* :::top selector line */}

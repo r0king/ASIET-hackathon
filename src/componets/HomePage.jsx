@@ -14,15 +14,11 @@ import Poster from "./Poster";
 import Tagline from "./Tagline";
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
+import Team from "./Team";
 
 const HomePage = () => {
-  const element = React.createRef();
   const { width } = useWindowSize();
-  const updatePage = (page) => {
-    this.setState({ page: page });
-  };
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -30,7 +26,7 @@ const HomePage = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    await container;
   }, []);
 
   let pageShow = [];
@@ -87,13 +83,6 @@ const HomePage = () => {
             color: {
               value: "#ffffff",
             },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: false,
-              opacity: 0.5,
-              width: 1,
-            },
             move: {
               directions: "bottom",
               enable: true,
@@ -101,7 +90,7 @@ const HomePage = () => {
                 default: "bounce",
               },
               random: true,
-              speed: 1,
+              speed: 0.2,
               straight: false,
             },
             number: {
@@ -125,7 +114,7 @@ const HomePage = () => {
         }}
       />
       {/* <Pageination /> */}
-      <Parallax pages={width < 450 ? 4.6 : 4.5} style={{
+      <Parallax pages={width < 450 ? 6.2 : 5.4} style={{
         zIndex: 10,
       }}>
         <ParallaxLayer speed={0.3} offset={0.1}>
@@ -158,7 +147,10 @@ const HomePage = () => {
         <ParallaxLayer offset={2.8} speed={1}>
           <Faq />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={0.3}>
+        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
+          <Team />
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 5.1 : 4.6} speed={1}>
           <ContactUs />
         </ParallaxLayer>
         <ParallaxLayer
