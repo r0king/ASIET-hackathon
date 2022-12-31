@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 
 import HeroTitle from "./HeroTitle";
-import Menu from "./Menu/Menu";
+// import Menu from "./Menu/Menu";
 import planetImg from "../assets/planet.jpg";
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -16,11 +16,8 @@ import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 
 const HomePage = () => {
-  const element = React.createRef();
   const { width } = useWindowSize();
-  const updatePage = (page) => {
-    this.setState({ page: page });
-  };
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
