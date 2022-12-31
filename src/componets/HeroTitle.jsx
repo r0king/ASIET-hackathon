@@ -9,11 +9,9 @@ export default class HeroTitle extends Component {
   } 
 
   componentDidMount() {
-    console.log(this.textRef.current)
     this.observer = new IntersectionObserver((entries) => {
       // Check if the element is in the viewport
       if (entries[0].isIntersecting) {
-        console.log("Title is in the viewport");
         this.props.updatePage(1);
       }
     });
@@ -26,7 +24,7 @@ export default class HeroTitle extends Component {
   render() {
     return (
       <div
-        className="h-screen w-screen flex pb-[33vh] justify-center content-center items-center mb-10 z-10"
+        className="h-screen flex pb-[33vh] justify-center content-center items-center mb-10 z-10"
         ref={this.element}
       >
         <h1
