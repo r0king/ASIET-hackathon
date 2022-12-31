@@ -12,26 +12,6 @@ import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
-import { useWindowSize } from "react-use";
-import "./PageSlider.css";
-import Team from "./Team";
-
-const HomePage = () => {
-  const { width } = useWindowSize();
-  const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await container;
-  }, []);
-
-  let pageShow = [];
-  pageShow = [0, 0, 0, 0, 0];
-  pageShow[4] = "scale-[2.5]";
 
   return (
     <div className="bg-black">
@@ -112,33 +92,10 @@ const HomePage = () => {
           },
           detectRetina: true,
         }}
-      />
-      {/* <Pageination /> */}
-      <Parallax pages={width < 450 ? 6.2 : 5.4} style={{
-        zIndex: 10,
-      }}>
-        <ParallaxLayer speed={0.3} offset={0.1}>
-          <HeroTitle />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={0.55}
-          factor={1.5}
-          speed={1}
-          className="flex justify-center "
-        >
-          <img
-            src={planetImg}
-            alt="planet"
-            srcSet=""
-            className="top-0 object-cover"
-          />
-        </ParallaxLayer>
-
-        <ParallaxLayer speed={0.8} offset={0.99}>
-          <Tagline />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.3} speed={0.5}>
+      >
+        <Hero />
+        <div className="relative z-50 ">
+          {/* <Tagline /> */}
           <Poster />
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={1}>
