@@ -15,6 +15,7 @@ import Menu from './Menu'
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 import Team from "./Team";
+import Sponsors from "./Sponsors/Sponsors";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -151,9 +152,11 @@ const HomePage = () => {
         <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
           <Team />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 5.1 : 4.6} speed={1}>
-          <ContactUs />
+        
+        <ParallaxLayer offset={width < 450 ? 7 : 4.6} speed={1}>
+        <Sponsors />
         </ParallaxLayer>
+        
         <ParallaxLayer
           factor={0.5}
           speed={10}

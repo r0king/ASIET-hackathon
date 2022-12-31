@@ -4,7 +4,7 @@ import Card from "./componets/Card";
 import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
-
+import Sponsors from "./componets/Sponsors/Sponsors"
 function App() {
   return (
     <>
