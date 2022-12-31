@@ -10,7 +10,7 @@ const Poster = () => {
       name: "Productathon",
       tagline: "#24Hrs #HackathonEvent",
       href: "#link",
-      picture: "https://fancytailwind.com/static/deco2-3175a434dff7de9bdc29d5c5fc945693.jpg",
+      picture: "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
       pictureAlt: "Description of your picture"
     },
     {

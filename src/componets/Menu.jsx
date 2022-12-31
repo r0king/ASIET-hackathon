@@ -6,7 +6,7 @@ const Navbar24 = () => {
 
   return (
 
-      <header className="w-full bg-transparent text-gray-100 body-font mb-4 shadow-sm">
+      <header className="w-full bg-transparent text-gray-100 body-font mb-4 shadow-sm fixed z-50">
 
         {/* :DESKTOP MENU */}
         <div className="container mx-auto flex justify-end items-center py-2 px-5">
