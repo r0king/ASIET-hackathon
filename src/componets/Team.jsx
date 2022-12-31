@@ -49,11 +49,6 @@ const Team = () => {
       role: "CTO",
       picture: "https://fancytailwind.com/static/profile12-7637478ac2813cadaac205bbb4424261.jpg",
     },
-    {
-      name: "Tarik Sliman",
-      role: "CTO",
-      picture: "https://fancytailwind.com/static/profile12-7637478ac2813cadaac205bbb4424261.jpg",
-    }
   ]
 
   const CubeDots = () => (
@@ -79,7 +74,7 @@ const Team = () => {
 
         {/* :TEAM */}
         <div>
-          <ul className="relative w-full grid grid-cols-10 sm:gap-x-5">
+          <ul className="relative w-full grid items-center grid-cols-10 sm:gap-x-5">
             {people.map((person, index) => (
               <li key={index} className="col-span-5 md:col-span-3 lg:col-span-2 py-8 px-2">
                 {/* ::Inner container */}
