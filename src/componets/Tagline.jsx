@@ -1,9 +1,8 @@
 
-import React, { useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 
 const Tagline = () => {
-
     useEffect(() => {
         let style1 = document.createElement("style")
         let style2 = document.createElement("style")
@@ -45,13 +44,22 @@ const Tagline = () => {
         glitch.style.animation = "glitch-effect-3 1s infinite linear alternate-reverse"
     }, [])
 
+    const textContainer = useRef(null);
+
     return (
         <div className="text-center">
-            <h1 id="glitch-te2" className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10" data-text="glitch">
+            {window.innerWidth < 1150 ? <marquee behavior="" direction="">
+            <h1 ref={textContainer} id="glitch-te2" className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10" data-text="glitch">
                 <span id="before-te2" className="absolute top-0 left-0.5 w-full h-full" style={{ textShadow: "-2px 0 #ff00c1", clipPath: "rect(44px, 450px, 56px, 0)" }} aria-hidden="true"> #Ideate_Innovate_Incubate_Your_Dreams.</span>{/* glitch::before */}
                 #Ideate_Innovate_Incubate_Your_Dreams.
                 <span id="after-te2" className="absolute top-0 -left-0.5 w-full h-full" style={{ textShadow: "-2px 0 #00fff9, 2px 2px #ff00c1" }} aria-hidden="true"> #Ideate_Innovate_Incubate_Your_Dreams.</span>{/* glitch::after */}
             </h1>
+            </marquee> :<h1 ref={textContainer} id="glitch-te2" className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10" data-text="glitch">
+                <span id="before-te2" className="absolute top-0 left-0.5 w-full h-full" style={{ textShadow: "-2px 0 #ff00c1", clipPath: "rect(44px, 450px, 56px, 0)" }} aria-hidden="true"> #Ideate_Innovate_Incubate_Your_Dreams.</span>{/* glitch::before */}
+                #Ideate_Innovate_Incubate_Your_Dreams.
+                <span id="after-te2" className="absolute top-0 -left-0.5 w-full h-full" style={{ textShadow: "-2px 0 #00fff9, 2px 2px #ff00c1" }} aria-hidden="true"> #Ideate_Innovate_Incubate_Your_Dreams.</span>{/* glitch::after */}
+            </h1>
+            }
             <p className='m-6 justify-evenly'>
                 AdiShankara Hackathon is a deep programmatic model developed by Adi Shankara Institute of Engineering and Technology, Kalady, Kerala (ASIET) to bring new generation entrepreneurs into the tech ecosystem. It's a 24hrs Hackathon event which consists of three major parallel events like Ideathon, Productathon and Gameathon for aspiring student entrepreneurs across the nation.
             </p>
