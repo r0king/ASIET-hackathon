@@ -21,11 +21,11 @@ const Navbar24 = () => {
 
         {/* :OPENED MENU */}
         {isOpen &&
-          <div style={{ backgroundColor: 'rgba(4,23,23,0.5)'}} className="w-full h-screen flex flex-col md:justify-center py-4 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
-            <a href="#link" className="block my-5 px-3 py-2 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-gray-700">Solutions</a>
-            <a href="#link" className="block my-5 px-3 py-2 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-gray-700">Prices</a>
-            <a href="#link" className="block my-5 px-3 py-2 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-gray-700">About</a>
-            <a href="#link" className="block my-5 px-3 py-2 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-gray-700">Contact</a>
+          <div className="bg-black/80 w-screen h-screen flex flex-col md:justify-center py-4 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
+            <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-black/30">Solutions</a>
+            <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-black/30">Prices</a>
+            <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-black/30">About</a>
+            <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white-500 hover:text-white hover:bg-black/30">Contact</a>
           </div>
         }
 
