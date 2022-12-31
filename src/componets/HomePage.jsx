@@ -12,6 +12,7 @@ import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
+import Menu from './Menu'
 
   return (
     <div className="bg-black">
@@ -93,6 +94,9 @@ import Tagline from "./Tagline";
           detectRetina: true,
         }}
       >
+        <div style={{zIndex:100,right:0}} className="fixed">
+          <Menu />
+        </div>
         <Hero />
         <div className="relative z-50 ">
           {/* <Tagline /> */}
