@@ -17,7 +17,9 @@ export default class HomePage extends Component {
           cursor: `${cursor_path},auto`,
         }}
       >
-        <Menu/>
+        <div style={{zIndex:100,right:0}} className="fixed">
+          <Menu />
+        </div>
         <Hero />
         <div className="relative z-50 ">
           {/* <Tagline /> */}
