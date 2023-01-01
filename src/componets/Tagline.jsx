@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { useRef, useEffect } from "react";
 
 const Tagline = () => {
@@ -51,7 +52,6 @@ const Tagline = () => {
 
   return (
     <div className="text-center">
-      {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
       {window.innerWidth < 1150 ? (
         <marquee behavior="" direction="">
           <h1
