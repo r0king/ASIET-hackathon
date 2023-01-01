@@ -30,16 +30,6 @@ import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
   const { width } = useWindowSize();
-  const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await container;
-  }, []);
 
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
@@ -47,74 +37,6 @@ const HomePage = () => {
 
   return (
     <div className="bg-black">
-      <Particles
-        className=""
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 2,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "grab",
-                parallax: {
-                  enable: false,
-                  smooth: 10,
-                },
-              },
-            },
-            modes: {
-              grab: {
-                distance: 150,
-                links: {
-                  blink: true,
-                  consent: false,
-                  opacity: 0,
-                },
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            move: {
-              directions: "bottom",
-              enable: false,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 0.2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 50,
-              },
-              value: 60,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "star",
-            },
-            size: {
-              value: { min: 0.1, max: 1 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
       <Menu />
       {/* <Pageination /> */}
       <Parallax
@@ -187,7 +109,7 @@ const HomePage = () => {
             boxShadow: "0 0px 5vh 10vh rgba(195, 218, 224, 0.7)",
           }}
         ></ParallaxLayer>
-
+{/* 
         <ParallaxLayer
           speed={0.4}
           sticky={{ start: 2.9, end: 4 }}
@@ -198,7 +120,7 @@ const HomePage = () => {
             height: "200px",
             backgroundPosition: "center",
           }}
-        ></ParallaxLayer>
+        ></ParallaxLayer> */}
         <ParallaxLayer
           offset={width < 450 ? 3.3 : 2.9}
           factor={1.5}
@@ -223,30 +145,30 @@ const HomePage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={width < 450 ? 3.3 : 3.9}
-          factor={2}
-          speed={0.1}
+          offset={3.9}
+          factor={1}
+          speed={0.2}
           style={{
             backgroundImage: `url(${mountainImg})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             width: "100%",
           }}
         ></ParallaxLayer>
         {/* fliped image */}
         <ParallaxLayer
-          offset={width < 450 ? 3.3 : 4}
+          offset={3.6}
           factor={2}
           speed={0.4}
           style={{
             backgroundImage: `url(${landScapeImg})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             width: "100%",
           }}
         ></ParallaxLayer>
         <ParallaxLayer
-          offset={width < 450 ? 3.3 : 4.9}
+          offset={4}
           factor={2}
-          speed={0.1}
+          speed={0.7}
           style={{
             backgroundImage: `url(${asietImg})`,
             width: "100%",
