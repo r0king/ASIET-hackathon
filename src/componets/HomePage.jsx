@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 
 import HeroTitle from "./HeroTitle";
-import planetImg from "../assets/planet.jpg";
+import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
