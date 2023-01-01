@@ -63,7 +63,7 @@ const Team = () => {
   )
 
   return (
-    <div className="relative mx-auto py-10 px-1 sm:px-4 w-full max-w-7xl bg-black shadow-inner">
+    <div className="relative mx-auto py-10 px-1 sm:px-4 w-full max-w-7xl -z-10 shadow-inner">
       <div className="flex flex-col items-center">
 
         {/* :TITLE CONTAINER */}

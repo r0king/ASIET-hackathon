@@ -51,7 +51,7 @@ const Faq = () => {
   ]
 
   return (
-    <div className="relative py-10 w-full  overflow-x-hidden my-[5vh] shadow-[0_0px_33px_23px_rgba(0,0,0,1)]">
+    <div className="relative py-10 w-full  overflow-x-hidden my-[5vh] ">
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2"> {/* Container */}
 
         {/* :IMAGE */}
@@ -68,7 +68,7 @@ const Faq = () => {
            Frequently Asked Questions
           </div>
           {/* ::Accordion Panel */}
-          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center md:overflow-y-scroll">
+          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center md:overflow-y-scroll z-10">
             {
               faq.map(faq => (
                 <Disclosure key={faq.number} >
