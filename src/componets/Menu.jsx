@@ -27,7 +27,7 @@ const Navbar24 = () => {
           </div>
           <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">HOME</a>
 
-          <div className='line'>
+          <div className='line line-shift-right'>
             <div className="slider"></div>
           </div>
           <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">RULES AND GUIDELINES</a>
@@ -37,7 +37,7 @@ const Navbar24 = () => {
           </div>
           <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">FAQs</a>
 
-          <div className='line'>
+          <div className='line line-shift-right'>
             <div className="slider"></div>
           </div>
           <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">CONTACT US</a>

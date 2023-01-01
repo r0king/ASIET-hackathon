@@ -18,9 +18,16 @@
     align-items: center;
 }
 
+
+
 .Menu .slider{
     width:5%;
     border: 5px solid white;
     border-radius: 10px;
     position: absolute;
 }
+
+.Menu .line-shift-right{
+    justify-content: end;
+}
+
