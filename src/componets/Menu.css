@@ -34,6 +34,13 @@
     position: absolute;
 }
 
+.Menu .social-media-links{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 @keyframes shift {
     0%{justify-content: flex-start;}
