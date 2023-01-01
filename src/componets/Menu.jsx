@@ -21,7 +21,7 @@ const Navbar24 = () => {
 
       {/* :OPENED MENU */}
       {isOpen &&
-        <div className=" w-screen h-screen flex flex-col md:justify-center py-10 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
+        <div className=" w-screen h-screen flex flex-col md:justify-center py-20 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
           <div className='line'>
             <div className="slider"></div>
           </div>
