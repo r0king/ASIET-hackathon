@@ -17,7 +17,7 @@ import "./PageSlider.css";
 import Team from "./Team";
 import Sponsors from "./Sponsors/Sponsors";
 import satImg from "../assets/satlite.png";
-
+import moonImg from "../assets/moon.png";
 const HomePage = () => {
   const { width } = useWindowSize();
   const particlesInit = useCallback(async (engine) => {
@@ -132,7 +132,10 @@ const HomePage = () => {
           <Tagline />
         </ParallaxLayer>
         <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
-          <img src={satImg} alt="Satelite" className="scale-75"/>
+          <img src={satImg} alt="Satelite" className="scale-50"/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 1.8} speed={0.4} factor={2}>
+          <img src={moonImg} alt="Moon" className="scale-75 ml-[50vw] rounded shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover"/>
         </ParallaxLayer>
         <ParallaxLayer offset={1.} speed={0.8}>
           <AboutUs />
