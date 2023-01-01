@@ -11,7 +11,7 @@ import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
-import Menu from './Menu'
+import Menu from "./Menu";
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 import Team from "./Team";
@@ -114,11 +114,14 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <Menu/>
+      <Menu />
       {/* <Pageination /> */}
-      <Parallax pages={width < 450 ? 6.2 : 5.4} style={{
-        zIndex: 10,
-      }}>
+      <Parallax
+        pages={width < 450 ? 7.1 : 6.2}
+        style={{
+          zIndex: 10,
+        }}
+      >
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
@@ -136,11 +139,8 @@ const HomePage = () => {
             className="top-0 object-cover"
           />
         </ParallaxLayer>
-        <ParallaxLayer
-        offset={0.70}
-        speed={1}
-        >
-          <CountDown/>
+        <ParallaxLayer offset={0.7} speed={1}>
+          <CountDown />
         </ParallaxLayer>
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
@@ -157,11 +157,15 @@ const HomePage = () => {
         <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
           <Team />
         </ParallaxLayer>
-        
-        <ParallaxLayer offset={width < 450 ? 7 : 4.6} speed={1}>
-        <Sponsors />
+
+        <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
+          <Sponsors />
         </ParallaxLayer>
-        
+
+        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
+          <ContactUs />
+        </ParallaxLayer>
+
         <ParallaxLayer
           factor={0.5}
           speed={10}

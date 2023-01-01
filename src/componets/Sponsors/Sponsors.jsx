@@ -33,35 +33,35 @@ export default function Sponsors() {
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div class="lines"></div>
             <div class="angles"></div>
-            <img src={logo2} alt="" className="max-h-10 opacity-80 spo_img" />
+            <img src={logo2} alt="" className=" opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 3 -> Blablacar */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div class="lines"></div>
             <div class="angles"></div>
-            <img src={logo3} alt="" className="max-h-10 opacity-80 spo_img" />
+            <img src={logo3} alt="" className=" opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 4 -> Boursorama */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div class="lines"></div>
             <div class="angles"></div>
-            <img src={logo4} alt="" className="max-h-10 opacity-80 spo_img" />
+            <img src={logo4} alt="" className=" opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 5 -> Google */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div class="lines"></div>
             <div class="angles"></div>
-            <img src="https://fancytailwind.com/static/blablacar-logo-black-d14f356f24cf3b23017d777b9909293c.svg" alt="" className="max-h-10 opacity-50 spo_img" />
+            <img src="https://fancytailwind.com/static/blablacar-logo-black-d14f356f24cf3b23017d777b9909293c.svg" alt="" className=" opacity-50 spo_img" />
           </div>
 
           {/* ::Partner 6 -> Microsoft */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div class="lines"></div>
             <div class="angles"></div>
-            <img src="https://fancytailwind.com/static/microsoft-logo-29676a36b829016b82e0d8d1865c842b.svg" alt="" className="max-h- opacity-50 spo_img" />
+            <img src="https://fancytailwind.com/static/microsoft-logo-29676a36b829016b82e0d8d1865c842b.svg" alt="" className=" opacity-50 spo_img" />
           </div>
 
         </div>
