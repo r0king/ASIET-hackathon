@@ -46,7 +46,7 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 20,
+          fpsLimit: 2,
           interactivity: {
             events: {
               onClick: {
@@ -57,8 +57,7 @@ const HomePage = () => {
                 enable: true,
                 mode: "grab",
                 parallax: {
-                  enable: true,
-                  force: 20,
+                  enable: false,
                   smooth: 10,
                 },
               },
@@ -70,7 +69,7 @@ const HomePage = () => {
                 duration: 0.4,
               },
               grab: {
-                distance: 200,
+                distance: 150,
                 links: {
                   blink: true,
                   consent: false,
@@ -85,7 +84,7 @@ const HomePage = () => {
             },
             move: {
               directions: "bottom",
-              enable: true,
+              enable: false,
               outModes: {
                 default: "bounce",
               },
