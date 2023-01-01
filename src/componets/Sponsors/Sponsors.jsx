@@ -3,7 +3,6 @@ import logo1 from "../../assets/Sponsors/cloud.png"
 import logo2 from "../../assets/Sponsors/kerala.png"
 import logo3 from "../../assets/Sponsors/maker.png"
 import logo4 from "../../assets/Sponsors/nascom1.png"
-import logo5 from "../../assets/Sponsors/titlab.png"
 import "./Sponsors.css"
 export default function Sponsors() {
   return (
