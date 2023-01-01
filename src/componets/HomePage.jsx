@@ -138,12 +138,36 @@ const HomePage = () => {
           <Tagline />
         </ParallaxLayer>
         <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
-          <img src={satImg} alt="Satelite" className="scale-50"/>
+          <img src={satImg} alt="Satelite" className="scale-50" />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.3 : 1.8} speed={0.4} factor={2}>
-          <img src={moonImg} alt="Moon" className="scale-75 ml-[50vw] rounded shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover"/>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 1.8} speed={0.4} >
+          <img
+            src={moonImg}
+            alt="Moon"
+            className="scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+          />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.} speed={0.8}>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 2.9} factor={10} speed={1.5} 
+          style={{
+            width:"100vw",
+            backgroundColor:"rgba(195, 218, 224, 0.5)",
+            backdropFilter:"blur(10px)",
+          }}
+        >
+
+        </ParallaxLayer>
+
+        {/* <ParallaxLayer offset={width < 450 ? 3.3 : 2} speed={0.4} 
+        
+        >            <img src={} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+        <img src={} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+     
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={width < 450 ? 3.3 : 2} speed={0.7} className="flex justify-end">
+          <div className="h-[550px] ml-[50vw] w-[50vw] rounded-full blur-md bg-black opacity-50"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.8}>
           <AboutUs />
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={1}>
@@ -155,7 +179,6 @@ const HomePage = () => {
         <ParallaxLayer offset={width < 450 ? 3.3 : 3} speed={0.4}>
           <Faq />
         </ParallaxLayer>
-      
 
         <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
