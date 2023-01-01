@@ -22,25 +22,36 @@ const Navbar24 = () => {
       {/* :OPENED MENU */}
       {isOpen &&
         <div className=" w-screen h-screen flex flex-col md:justify-center py-20 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
-          <div className='line'>
-            <div className="slider"></div>
-          </div>
-          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">HOME</a>
 
-          <div className='line line-shift-right'>
-            <div className="slider"></div>
-          </div>
-          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">RULES AND GUIDELINES</a>
+          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">
+            <div className='line '>
+              <div className="slider"></div>
+            </div>
+            HOME
+          </a>
 
-          <div className='line'>
-            <div className="slider"></div>
-          </div>
-          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">FAQs</a>
 
-          <div className='line line-shift-right'>
-            <div className="slider"></div>
-          </div>
-          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">CONTACT US</a>
+          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">
+            <div className='line'>
+              <div className="slider"></div>
+            </div>
+            RULES AND GUIDELINES
+          </a>
+
+
+          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">
+            <div className='line'>
+              <div className="slider"></div>
+            </div>FAQs
+          </a>
+
+          <a href="#link" className="block px-3 py-7 rounded-md md:text-2xl text-white/40 hover:text-white ">
+
+            <div className='line line-shift-right'>
+              <div className="slider"></div>
+            </div>
+            CONTACT US
+          </a>
         </div>
       }
 
