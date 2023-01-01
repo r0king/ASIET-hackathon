@@ -1,0 +1,26 @@
+.Menu a{
+    margin: auto;
+    -webkit-text-stroke: 1px white;
+    font-size: 1.5rem;
+    color: transparent;
+}
+
+.Menu a:active, .Menu a:hover{
+    color: white;
+}
+
+.Menu .line{
+    margin: auto;
+    width: 30%;
+    border: 1px solid #041717;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+.Menu .slider{
+    width:5%;
+    border: 5px solid white;
+    border-radius: 10px;
+    position: absolute;
+}
