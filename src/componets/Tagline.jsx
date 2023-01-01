@@ -48,6 +48,7 @@ const Tagline = () => {
 
     return (
         <div className="text-center">
+            {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
             {window.innerWidth < 1150 ? <marquee behavior="" direction="">
             <h1 ref={textContainer} id="glitch-te2" className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10" data-text="glitch">
                 <span id="before-te2" className="absolute top-0 left-0.5 w-full h-full" style={{ textShadow: "-2px 0 #ff00c1", clipPath: "rect(44px, 450px, 56px, 0)" }} aria-hidden="true"> #Ideate_Innovate_Incubate_Your_Dreams.</span>{/* glitch::before */}

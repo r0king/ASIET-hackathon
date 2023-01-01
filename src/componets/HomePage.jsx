@@ -15,6 +15,7 @@ import Menu from "./Menu";
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 import Team from "./Team";
+import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
@@ -48,17 +49,21 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 3,
+          fpsLimit: 2,
           interactivity: {
             events: {
               onHover: {
                 enable: true,
                 mode: "grab",
+                parallax: {
+                  enable: false,
+                  smooth: 10,
+                },
               },
             },
             modes: {
               grab: {
-                distance: 200,
+                distance: 150,
                 links: {
                   blink: true,
                   consent: false,
@@ -104,13 +109,12 @@ const HomePage = () => {
       <Menu />
       {/* <Pageination /> */}
       <Parallax
-        pages={width < 450 ? 6.8 : 5.8}
+        pages={width < 450 ? 7.1 : 6.2}
         style={{
           zIndex: 10,
         }}
       >
-        <ParallaxLayer 
-        speed={0.3} offset={0.1}>
+        <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
 
@@ -127,7 +131,9 @@ const HomePage = () => {
             className="top-0 object-cover"
           />
         </ParallaxLayer>
-
+        <ParallaxLayer offset={0.7} speed={1}>
+          <CountDown />
+        </ParallaxLayer>
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
@@ -154,9 +160,15 @@ const HomePage = () => {
         <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 5.9 : 4.9} speed={0.6}>
+
+        <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
+          <Sponsors />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>
+
         <ParallaxLayer
           factor={0.5}
           speed={10}

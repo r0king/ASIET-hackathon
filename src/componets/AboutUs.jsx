@@ -14,7 +14,7 @@ const AboutUs = () => {
           </p>
           {/* ::Title */}
           <h2 className="mb-8 text-2xl sm:text-3xl text-gray-100 font-bold capitalize">
-            About Our Institute
+          <span className="text-[#0D6394]">About Our</span> Institute
           </h2>
           {/* Content goes here */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
