@@ -15,6 +15,7 @@ import Menu from './Menu'
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 import Team from "./Team";
+import CountDown from "./CountDown";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -46,7 +47,7 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 20,
+          fpsLimit: 2,
           interactivity: {
             events: {
               onClick: {
@@ -57,7 +58,7 @@ const HomePage = () => {
                 enable: true,
                 mode: "grab",
                 parallax: {
-                  enable: true,
+                  enable: false,
                   force: 20,
                   smooth: 10,
                 },
@@ -85,7 +86,7 @@ const HomePage = () => {
             },
             move: {
               directions: "bottom",
-              enable: true,
+              enable: false,
               outModes: {
                 default: "bounce",
               },
@@ -135,7 +136,12 @@ const HomePage = () => {
             className="top-0 object-cover"
           />
         </ParallaxLayer>
-
+        <ParallaxLayer
+        offset={0.70}
+        speed={1}
+        >
+          <CountDown/>
+        </ParallaxLayer>
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
