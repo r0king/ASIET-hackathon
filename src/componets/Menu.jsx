@@ -52,6 +52,12 @@ const Navbar24 = () => {
             </div>
             CONTACT US
           </a>
+
+          <div className="social-media-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
         </div>
       }
 
