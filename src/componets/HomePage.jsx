@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 
 import HeroTitle from "./HeroTitle";
-import planetImg from "../assets/planet.jpg";
+import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
@@ -11,11 +11,12 @@ import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
-import Menu from './Menu'
+import Menu from "./Menu";
 import { useWindowSize } from "react-use";
 import "./PageSlider.css";
 import Team from "./Team";
 import Sponsors from "./Sponsors/Sponsors";
+import satImg from "../assets/satlite.png";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -47,29 +48,15 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 20,
+          fpsLimit: 3,
           interactivity: {
             events: {
-              onClick: {
-                enable: false,
-                mode: "push",
-              },
               onHover: {
                 enable: true,
                 mode: "grab",
-                parallax: {
-                  enable: true,
-                  force: 20,
-                  smooth: 10,
-                },
               },
-              resize: true,
             },
             modes: {
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
               grab: {
                 distance: 200,
                 links: {
@@ -86,11 +73,11 @@ const HomePage = () => {
             },
             move: {
               directions: "bottom",
-              enable: true,
+              enable: false,
               outModes: {
                 default: "bounce",
               },
-              random: true,
+              random: false,
               speed: 0.2,
               straight: false,
             },
@@ -114,12 +101,16 @@ const HomePage = () => {
           detectRetina: true,
         }}
       />
-      <Menu/>
+      <Menu />
       {/* <Pageination /> */}
-      <Parallax pages={width < 450 ? 6.2 : 5.4} style={{
-        zIndex: 10,
-      }}>
-        <ParallaxLayer speed={0.3} offset={0.1}>
+      <Parallax
+        pages={width < 450 ? 6.8 : 5.8}
+        style={{
+          zIndex: 10,
+        }}
+      >
+        <ParallaxLayer 
+        speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
 
@@ -140,23 +131,29 @@ const HomePage = () => {
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.3} speed={0.5}>
-          <Poster />
+        <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
+          <img src={satImg} alt="Satelite" className="scale-75"/>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={1.} speed={0.8}>
           <AboutUs />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.8} speed={1}>
+        <ParallaxLayer offset={2} speed={1}>
+          <Poster />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.9} speed={1.5}>
+          <Sponsors />
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 3} speed={0.4}>
           <Faq />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
+      
+
+        <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
-        
-        <ParallaxLayer offset={width < 450 ? 7 : 4.6} speed={1}>
-        <Sponsors />
+        <ParallaxLayer offset={width < 450 ? 5.9 : 4.9} speed={0.6}>
+          <ContactUs />
         </ParallaxLayer>
-        
         <ParallaxLayer
           factor={0.5}
           speed={10}
