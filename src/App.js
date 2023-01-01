@@ -4,7 +4,6 @@ import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
 import Test from "./componets/Test ";
-import Sponsors from "./componets/Sponsors/Sponsors"
 
 function App() {
   return (
