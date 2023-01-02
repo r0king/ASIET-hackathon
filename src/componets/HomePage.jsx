@@ -79,6 +79,16 @@ const HomePage = () => {
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
+          <img src={satImg} alt="Satelite" className="scale-50" />
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 3.3 : 1.8} speed={0.5}>
+          <img
+            src={moonImg}
+            alt="Moon"
+            className="scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+          />
+        </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
         </ParallaxLayer>
