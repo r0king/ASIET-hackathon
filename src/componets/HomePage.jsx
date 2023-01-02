@@ -21,8 +21,8 @@ import GameWork from "./GameWork";
 import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
-  const { width } = useWindowSize();
-
+  const { width ,height} = useWindowSize();
+  console.log(height)
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
@@ -32,7 +32,7 @@ const HomePage = () => {
       <Menu />
       {/* <Pageination /> */}
       <Parallax
-        pages={width < 450 ? 7.1 : 6.2}
+        pages={width < 450 ? 7.9 : 6.2}
         style={{
           zIndex: 10,
         }}
@@ -85,11 +85,11 @@ const HomePage = () => {
           <Team />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
+        <ParallaxLayer offset={width < 450 ? 5.4 : 4.6} speed={0.5}>
           <Sponsors />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
+        <ParallaxLayer offset={width < 450 ? 6.5 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>
 
