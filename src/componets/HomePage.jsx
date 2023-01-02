@@ -18,20 +18,20 @@ import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
-import starsImg from "../assets/stars.svg";
+// import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
   const { width } = useWindowSize();
-  // const particlesInit = useCallback(async (engine) => {
-  //   // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-  //   // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-  //   // starting from v2 you can add only the features you need reducing the bundle size
-  //   await loadFull(engine);
-  // }, []);
+  const particlesInit = useCallback(async (engine) => {
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
 
-  // const particlesLoaded = useCallback(async (container) => {
-  //   await container;
-  // }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await container;
+  }, []);
 
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
@@ -40,7 +40,7 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Menu />
-      {/* <Particles
+      <Particles
         className=""
         id="tsparticles"
         init={particlesInit}
@@ -51,15 +51,14 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 12,
+          fpsLimit: width < 450 ? 2 : 12,
           interactivity: {
             events: {
               onHover: {
                 enable: true,
                 mode: "grab",
                 parallax: {
-                  enable: true,
-                  smooth: 10,
+                  enable: width < 450 ? false : true,
                   force: 10,
                 },
               },
@@ -103,14 +102,14 @@ const HomePage = () => {
           },
           detectRetina: true,
         }}
-      /> */}
+      />
       <Parallax
         pages={width < 450 ? 7.1 : 6.2}
         style={{
           zIndex: 10,
         }}
       >
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={0}
           speed={0}
           factor={8}
@@ -118,7 +117,7 @@ const HomePage = () => {
             backgroundImage: `url(${starsImg})`,
             backgroundSize: "cover",
           }}
-        />
+        /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
