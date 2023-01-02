@@ -49,26 +49,26 @@ export default class CountDown extends Component {
     }
     render() {
         return (
-            <div className="text-3xl grid grid-flow-col justify-center gap-5 text-center auto-cols-max mx-auto md:m-[unset]">
-                <div className="flex flex-col p-2 rounded-box text-neutral-content">
+            <div className="text-xl grid grid-flow-col justify-center gap-5 text-center auto-cols-max mx-auto w-full md:m-[unset]">
+                <div className="flex flex-col md:p-2 rounded-box text-neutral-content">
                     <span className="countdown text-5xl font-semibold md:text-7xl ">
                         <span style={{ "--value": this.state.days }}></span>
                     </span>
                     days
                 </div>
-                <div className="flex flex-col p-2 rounded-box text-neutral-content">
+                <div className="flex flex-col md:p-2 rounded-box text-neutral-content">
                     <span className="countdown text-5xl font-semibold md:text-7xl">
                         <span style={{ "--value": this.state.hours }}></span>
                     </span>
                     hours
                 </div>
-                <div className="flex flex-col p-2 rounded-box text-neutral-content">
+                <div className="flex flex-col md:p-2 rounded-box text-neutral-content">
                     <span className="countdown text-5xl font-semibold md:text-7xl">
                         <span style={{ "--value": this.state.minutes }}></span>
                     </span>
                     min
                 </div>
-                <div className="flex flex-col p-2 rounded-box text-neutral-content">
+                <div className="flex flex-col md:p-2 rounded-box text-neutral-content">
                     <span className="countdown text-5xl font-semibold md:text-7xl">
                         <span style={{ "--value": this.state.seconds }}></span>
                     </span>

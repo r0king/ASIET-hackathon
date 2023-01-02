@@ -13,7 +13,6 @@ import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 import { useWindowSize } from "react-use";
-import "./PageSlider.css";
 import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
