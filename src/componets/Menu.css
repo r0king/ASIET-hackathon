@@ -60,6 +60,16 @@
     }
 }
 
+@keyframes shift-mobile{
+
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(600%);
+    }
+}
+
 @media (max-width:480px) {
     .Menu .social-media-links{
         width: 100%;
@@ -72,6 +82,13 @@
     .Menu .line{
         width: 80%;
         margin-bottom: 5%;
+    }
+
+    .Menu a:hover .slider,.Menu a:active .slider{
+        animation-name: shift-mobile;
+        animation-duration: 0.75s;
+        animation-iteration-count: 1;
+        transform: translateX(600%);
     }
 
 }
