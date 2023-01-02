@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Gamework from '../assets/GAME.png'
+import Gamework from '../assets/gameworkshop.png'
 
 export default class GameWork extends Component {
     render() {
