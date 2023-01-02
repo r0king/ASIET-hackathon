@@ -9,12 +9,12 @@
     align-items: center;
 }
 
-.Menu a:active .line,
-.Menu a:hover .line {
+.Menu a:active .slider,
+.Menu a:hover .slider {
     animation-name: shift;
-    animation-duration: 0.1s;
+    animation-duration: 0.75s;
     animation-iteration-count: 1;
-    justify-content: end;
+    transform: translateX(900%);
 }
 
 
@@ -50,17 +50,13 @@
 }
 
 
-@keyframes shift {
-    0% {
-        justify-content: flex-start;
-    }
+@keyframes shift{
 
-    50% {
-        justify-content: center;
+    from{
+        transform: translateX(0);
     }
-
-    100% {
-        justify-content: end;
+    to{
+        transform: translateX(900%);
     }
 }
 
