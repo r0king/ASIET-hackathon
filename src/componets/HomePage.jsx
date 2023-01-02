@@ -79,7 +79,7 @@ const HomePage = () => {
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 1.2 : 1.3} speed={width < 450 ? 0.01 :0.01} factor={2}>
+        <ParallaxLayer offset={width < 450 ? 1.2 : 1.3} speed={width < 450 ? 0.01 : 0.01} factor={2}>
           <img src={satImg} alt="Satelite" className="scale-50" />
         </ParallaxLayer>
         <ParallaxLayer offset={width < 450 ? 1.5 : 1.8} speed={0.5}>
@@ -95,39 +95,39 @@ const HomePage = () => {
         <ParallaxLayer offset={1.9} speed={1}>
           <Poster />
         </ParallaxLayer>
-       
-       
-  <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8: 1.5}>
+
+
+        <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8 : 1.8}>
           <img
             src={cloud1}
             alt="clouds"
-            className="scale-80 ml-32 md:ml-20 object-cover "
+            className="scale-80 ml-32 md:ml-96 object-cover "
           />
-          </ParallaxLayer> 
-  <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.1:1.9}>
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.1 : 1.1}>
           <img
             src={cloud2}
             alt="clouds"
-            className="scale-80  ml-10 md:ml-80 object-cover "
+            className="scale-80  ml-10 md:ml-72 object-cover "
           />
-        </ParallaxLayer> 
-  <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.5:1.6} >
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.5 : 1.5} >
           <img
             src={cloud2}
             alt="clouds"
             className="scale-80  -ml-28 md:-ml-80  object-cover "
           />
-        </ParallaxLayer> 
-        <ParallaxLayer offset={2.1} speed={1}>
-          <GameWork/>
         </ParallaxLayer>
-       
-        <ParallaxLayer offset={width < 450 ? 2.4 :2.9} speed={1.5}>
+        <ParallaxLayer offset={2.1} speed={1}>
+          <GameWork />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={width < 450 ? 2.4 : 2.9} speed={1.5}>
           <Sponsors />
         </ParallaxLayer>
         <ParallaxLayer
           offset={width < 450 ? 3 : 3}
-          speed={width < 450 ? 0.1 :0.4}
+          speed={width < 450 ? 0.1 : 0.4}
           style={{ zIndex: 5 }}
         >
           <Faq />
