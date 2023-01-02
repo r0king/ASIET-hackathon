@@ -17,6 +17,13 @@
     justify-content: end;
 }
 
+
+.Menu i{
+    transform: scale(1.5);
+    margin-top: 2% ;
+    margin-bottom: 5%;
+}
+
 .Menu .line {
 
     width: 50%;
@@ -24,7 +31,7 @@
     height: min-content;
     display: flex;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 
@@ -68,5 +75,7 @@
 
     .Menu .line{
         width: 80%;
+        margin-bottom: 5%;
     }
+
 }
