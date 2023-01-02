@@ -42,7 +42,7 @@ const HomePage = () => {
       <Menu />
       {/* <Pageination /> */}
       <Parallax
-        pages={width < 450 ? 7.1 : 6.2}
+        pages={width < 450 ? 6.7 : 6.2}
         style={{
           zIndex: 10,
         }}
@@ -79,14 +79,14 @@ const HomePage = () => {
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
+        <ParallaxLayer offset={width < 450 ? 1.2 : 1.3} speed={width < 450 ? 0.01 :0.01} factor={2}>
           <img src={satImg} alt="Satelite" className="scale-50" />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.3 : 1.8} speed={0.5}>
+        <ParallaxLayer offset={width < 450 ? 1.5 : 1.8} speed={0.5}>
           <img
             src={moonImg}
             alt="Moon"
-            className="scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+            className="scale-80 md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
           />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
@@ -97,45 +97,46 @@ const HomePage = () => {
         </ParallaxLayer>
        
        
-  <ParallaxLayer offset={width < 450 ? 3.3 : 2.5} speed={1}>
-          <img
+  <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.2: 1.5}>
+          {/* <img
             src={cloud1}
             alt="clouds"
-            className="scale-80 ml-52 md:ml-44 object-cover "
-          />
+            className="scale-80 ml-32 md:ml-20 object-cover "
+          /> */}
           </ParallaxLayer> 
-  <ParallaxLayer offset={width < 450 ? 3.3 : 2.5} speed={1}>
+  <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.1:1.9}>
           <img
             src={cloud2}
             alt="clouds"
-            className="scale-80  ml-10  object-cover "
+            className="scale-80  ml-10 md:ml-80 object-cover "
           />
         </ParallaxLayer> 
-  {/* <ParallaxLayer offset={width < 450 ? 3.3 : 2.6} speed={1}>
+  <ParallaxLayer offset={width < 450 ? 2.2 : 2.6} speed={width < 450 ? 1.3:1.6} >
           <img
-            src={cloud1}
+            src={cloud2}
             alt="clouds"
-            className="scale-75 ml-[]  object-cover "
+            className="scale-80  -ml-28 md:-ml-80  object-cover "
           />
-        </ParallaxLayer>  */}
-        <ParallaxLayer offset={2.2} speed={1}>
+        </ParallaxLayer> 
+        <ParallaxLayer offset={2.1} speed={1}>
           <GameWork/>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.9} speed={1.5}>
+       
+        <ParallaxLayer offset={width < 450 ? 2.3 :2.9} speed={1.5}>
           <Sponsors />
         </ParallaxLayer>
         <ParallaxLayer
-          offset={width < 450 ? 3.3 : 3}
-          speed={0.4}
+          offset={width < 450 ? 3 : 3}
+          speed={width < 450 ? 0.1 :0.4}
           style={{ zIndex: 5 }}
         >
           <Faq />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
+        <ParallaxLayer offset={width < 450 ? 4.2 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
+        <ParallaxLayer offset={width < 450 ? 5.5 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>
 
