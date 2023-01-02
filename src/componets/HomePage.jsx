@@ -103,6 +103,29 @@ const HomePage = () => {
           <Poster />
         </ParallaxLayer>
 
+        <ParallaxLayer
+          offset={width < 450 ? 2.1: 2.9}
+          factor={0.5}
+          speed={1.5}
+          style={{
+            width: "100vw",
+            backgroundColor: "rgba(195, 218, 224, 0.3)",
+            backdropFilter: "blur(10px)",
+            boxShadow: "0 0px 5vh 10vh rgba(195, 218, 224, 0.3)",
+          }}
+        ></ParallaxLayer>
+        <ParallaxLayer
+          offset={width < 450 ? 2.1 : 2.9}
+          factor={10}
+          speed={1.5}
+          style={{
+            width: "100vw",
+            marginTop: "50vh",
+            backgroundColor: "rgba(195, 218, 224, 0.7)",
+            backdropFilter: "blur(10px)",
+            boxShadow: "0 0px 5vh 10vh rgba(195, 218, 224, 0.7)",
+          }}
+        ></ParallaxLayer>
 
         <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8 : 1.8}>
           <img
@@ -125,6 +148,7 @@ const HomePage = () => {
             className="scale-80  -ml-28 md:-ml-80  object-cover "
           />
         </ParallaxLayer>
+
         <ParallaxLayer offset={2.1} speed={1}>
           <GameWork />
         </ParallaxLayer>
