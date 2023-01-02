@@ -95,10 +95,32 @@ const HomePage = () => {
         <ParallaxLayer offset={1.9} speed={1}>
           <Poster />
         </ParallaxLayer>
+       
+       
+  <ParallaxLayer offset={width < 450 ? 3.3 : 2.5} speed={1}>
+          <img
+            src={cloud1}
+            alt="clouds"
+            className="scale-80 ml-52 md:ml-44 object-cover "
+          />
+          </ParallaxLayer> 
+  <ParallaxLayer offset={width < 450 ? 3.3 : 2.5} speed={1}>
+          <img
+            src={cloud2}
+            alt="clouds"
+            className="scale-80  ml-10  object-cover "
+          />
+        </ParallaxLayer> 
+  {/* <ParallaxLayer offset={width < 450 ? 3.3 : 2.6} speed={1}>
+          <img
+            src={cloud1}
+            alt="clouds"
+            className="scale-75 ml-[]  object-cover "
+          />
+        </ParallaxLayer>  */}
         <ParallaxLayer offset={2.2} speed={1}>
           <GameWork/>
         </ParallaxLayer>
- 
         <ParallaxLayer offset={2.9} speed={1.5}>
           <Sponsors />
         </ParallaxLayer>
