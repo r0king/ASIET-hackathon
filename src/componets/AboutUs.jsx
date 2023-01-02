@@ -48,22 +48,22 @@ const AboutUs = () => {
             <img
               src={image1}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover"
+              className="absolute inset-0 w-full h-full object-center object-cover opacity-30 md:opacity-80"
             />
           </div>
           {/* ::Image 2 */}
-          <div className="flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
+          <div className="flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow opacity- overflow-hidden">
             {/* Image goes here */}
             <img
               src={image2}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover"
+              className="absolute inset-0 w-full h-full object-center object-cover opacity-20 md:opacity-80"
             />
           </div>
         </div>
 
         {/* :OVERLAY */}
-        <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" />
+        {/* <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" /> */}
       </div>
     </div>
   );
