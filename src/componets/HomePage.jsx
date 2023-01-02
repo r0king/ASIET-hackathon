@@ -97,12 +97,12 @@ const HomePage = () => {
         </ParallaxLayer>
        
        
-  <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.2: 1.5}>
-          {/* <img
+  <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8: 1.5}>
+          <img
             src={cloud1}
             alt="clouds"
             className="scale-80 ml-32 md:ml-20 object-cover "
-          /> */}
+          />
           </ParallaxLayer> 
   <ParallaxLayer offset={width < 450 ? 2.2 : 2.5} speed={width < 450 ? 1.1:1.9}>
           <img
@@ -111,7 +111,7 @@ const HomePage = () => {
             className="scale-80  ml-10 md:ml-80 object-cover "
           />
         </ParallaxLayer> 
-  <ParallaxLayer offset={width < 450 ? 2.2 : 2.6} speed={width < 450 ? 1.3:1.6} >
+  <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.5:1.6} >
           <img
             src={cloud2}
             alt="clouds"
@@ -122,7 +122,7 @@ const HomePage = () => {
           <GameWork/>
         </ParallaxLayer>
        
-        <ParallaxLayer offset={width < 450 ? 2.3 :2.9} speed={1.5}>
+        <ParallaxLayer offset={width < 450 ? 2.4 :2.9} speed={1.5}>
           <Sponsors />
         </ParallaxLayer>
         <ParallaxLayer
