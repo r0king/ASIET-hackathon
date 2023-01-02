@@ -22,6 +22,16 @@ import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
   const { width } = useWindowSize();
+  // const particlesInit = useCallback(async (engine) => {
+  //   // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+  //   // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+  //   // starting from v2 you can add only the features you need reducing the bundle size
+  //   await loadFull(engine);
+  // }, []);
+
+  // const particlesLoaded = useCallback(async (container) => {
+  //   await container;
+  // }, []);
 
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
@@ -30,7 +40,70 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Menu />
-      {/* <Pageination /> */}
+      {/* <Particles
+        className=""
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          background: {
+            color: {
+              value: "transparent",
+            },
+          },
+          fpsLimit: 12,
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "grab",
+                parallax: {
+                  enable: true,
+                  smooth: 10,
+                  force: 10,
+                },
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              grab: {
+                distance: 150,
+                links: {
+                  blink: true,
+                  consent: false,
+                  opacity: 0,
+                },
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 100,
+              },
+              value: 40,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "star",
+            },
+            size: {
+              value: { min: 0.3, max: 0.8 },
+            },
+          },
+          detectRetina: true,
+        }}
+      /> */}
       <Parallax
         pages={width < 450 ? 7.1 : 6.2}
         style={{
@@ -43,7 +116,7 @@ const HomePage = () => {
           factor={8}
           style={{
             backgroundImage: `url(${starsImg})`,
-            backgroundSize: 'cover',
+            backgroundSize: "cover",
           }}
         />
         <ParallaxLayer speed={0.3} offset={0.1}>
@@ -76,7 +149,7 @@ const HomePage = () => {
           <Poster />
         </ParallaxLayer>
         <ParallaxLayer offset={2.2} speed={1}>
-          <GameWork/>
+          <GameWork />
         </ParallaxLayer>
         <ParallaxLayer offset={2.8} speed={0.8}>
           <Faq />

@@ -10,7 +10,7 @@ const Navbar24 = () => {
     <header className={`w-full bg-transparent text-gray-100 body-font mb-4 shadow-sm fixed z-50 Menu ${isOpen && "bg-black/80"}`}>
 
       {/* :DESKTOP MENU */}
-      <div className=" mx-auto flex justify-end items-center py-2 px-5">
+      <div className=" mx-auto flex justify-end items-center py-2 pl-5">
 
         {/* ::Burger icon standard */}
         <div className="inline-flex items-center">
