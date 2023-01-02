@@ -54,9 +54,9 @@ const Navbar24 = () => {
           </a>
 
           <div className="social-media-links">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <i className="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-youtube"></i>
           </div>
         </div>
       }
