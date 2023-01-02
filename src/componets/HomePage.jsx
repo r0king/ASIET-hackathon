@@ -94,7 +94,7 @@ const HomePage = () => {
           speed={0.1}
           className="flex justify-end"
         >
-          <div className="h-[570px] ml-[50vw] w-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
+          <div className="h-[550px] ml-[50vw] w-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
