@@ -2,6 +2,7 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon, QuestionMarkCircleIcon } from '@heroicons/react/outline'
+import "./Scrollbar.css"
 
 
 
@@ -68,7 +69,7 @@ const Faq = () => {
            Frequently Asked Questions
           </div>
           {/* ::Accordion Panel */}
-          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center md:overflow-y-scroll">
+          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll">
             {
               faq.map(faq => (
                 <Disclosure key={faq.number} >
