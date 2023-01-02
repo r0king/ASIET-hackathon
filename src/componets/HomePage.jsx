@@ -86,8 +86,15 @@ const HomePage = () => {
           <img
             src={moonImg}
             alt="Moon"
-            className="scale-80 md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+            className="scale-100 md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
           />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={width < 450 ? 3.3 : 1.8}
+          speed={0.1}
+          className="flex justify-end"
+        >
+          <div className="h-[570px] ml-[50vw] w-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
