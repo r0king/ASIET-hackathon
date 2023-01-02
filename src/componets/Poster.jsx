@@ -1,6 +1,9 @@
 
 import React from 'react'
 import SamPos1 from '../assets/SamplePoster1.jpg'
+import { useState } from 'react';
+import { HoverEvent, HoverMode } from 'tsparticles-engine';
+import { useHover } from 'react-use';
 
 const Poster = () => {
 
@@ -50,7 +53,12 @@ const Poster = () => {
               {/* ::Details */}
               <div className="relative py-10 px-5 h-full flex flex-col justify-end bg-gradient-to-r md:bg-gradient-to-t from-gray-900 group-hover:to-gray-900 md:via-transparent ">
                 {/* :::product quantity */}
-                <p className="text-xs lg:text-sm text-white text-opacity-80 font-bold" style={{ textShadow: "1px 1px 1px gray" }}>{`${category.tagline}`}</p>
+                <p
+                  className="text-xs lg:text-sm text-white text-opacity-80 font-bold group-hover:hidden"
+                  style={{ textShadow: "1px 1px 1px gray" }}
+                >
+                  {`${category.tagline}`}
+                </p>
               </div>
               {/* ::Hover Title */}
               <div className="absolute inset-0 flex justify-center items-center">
