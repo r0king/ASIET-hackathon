@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SamPos1 from '../assets/SamplePoster1.jpg'
 
 const Poster = () => {
@@ -9,7 +10,7 @@ const Poster = () => {
       id: 1,
       name: "Productathon",
       tagline: "Productathon is a 24hrs Hackathon event, where aspiring student entrepreneurs can come collaborate and build their startup ideas to a minimum viable product (MVP) with the support of Nasscom 10k Startups , MakerGram and Google Cloud.",
-      href: "#link",
+      href: "/productathon",
       picture: SamPos1,
       pictureAlt: "Description of your picture"
     },
@@ -17,7 +18,7 @@ const Poster = () => {
       id: 2,
       name: "Gameathon",
       tagline: 159,
-      href: "#link",
+      href: "/gameathon",
       picture: "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
       pictureAlt: "Description of your picture"
     },
@@ -25,7 +26,7 @@ const Poster = () => {
       id: 3,
       name: "Ideathon",
       tagline: 17,
-      href: "#link",
+      href: "/ideathon",
       picture: "https://fancytailwind.com/static/lamp1-cd268fab2e874e2255fa2f8c4a9d9b93.jpg",
       pictureAlt: "Description of your picture"
     },
@@ -44,7 +45,7 @@ const Poster = () => {
         {/* :NAVIGATION */}
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 rounded-sm overflow-hidden">
           {categories.map(category => (
-            <a key={category.id} href={category.href} className="col-span-1 hover:bg-black md:aspect-w-1 md:aspect-h-2 group relative w-full h-52 md:h-full overflow-hidden">
+            <Link key={category.id} to={category.href} className="col-span-1 hover:bg-black md:aspect-w-1 md:aspect-h-2 group relative w-full h-52 md:h-full overflow-hidden">
               {/* ::Background Image */}
               <img src={category.picture} alt={category.pictureAlt} className="absolute inset-0 w-full h-full object-cover object-center filter group-hover:brightness-110" />
               {/* ::Details */}
@@ -56,7 +57,7 @@ const Poster = () => {
               <div className="absolute inset-0 flex justify-center items-center">
                 <span className="text-4xl lg:text-6xl text-[#0D6394] text-opacity-70 font-extrabold uppercase tracking-widest opacity-0 transition-all duration-200 ease-linear transform md:-rotate-90 -translate-y-96 group-hover:translate-y-0 group-hover:opacity-100">{category.name}</span>
               </div>
-            </a>
+            </Link>
           ))
           }
         </div>
