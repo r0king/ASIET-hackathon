@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Gamework from '../assets/gameworkshop.png'
-
+import Gamework from '../assets/Gamework.gif'
+ 
 export default class GameWork extends Component {
     render() {
         return (

@@ -4,7 +4,7 @@ import image2 from "../assets/about-2.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="relative mx-auto py-16 px-4 max-w-7xl overflow-x-clip">
+    <div className="relative mx-auto py-16 px-4 max-w-7xl mt-[40vh] md:mt-[20vh] overflow-x-clip">
       <div className="mx-auto max-w-6xl flex">
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">

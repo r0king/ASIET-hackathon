@@ -1,11 +1,11 @@
-import React, { useCallback } from "react";
-
+import React from "react";
+// , { useCallback }
 import HeroTitle from "./HeroTitle";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
+// import { loadFull } from "tsparticles";
+// import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
@@ -21,14 +21,14 @@ import starsImg from "../assets/stars.svg";
 // parallax images import here
 import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
-import dronImg from "../assets/drone.gif";
+// import dronImg from "../assets/drone.gif";
 import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
-import mountainImg from "../assets/mountain.png";
-import landScapeImg from "../assets/landscape.png";
-import asietImg from "../assets/asiet.png";
+// import mountainImg from "../assets/mountain.png";
+// import landScapeImg from "../assets/landscape.png";
+// import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -76,9 +76,12 @@ const HomePage = () => {
         <ParallaxLayer offset={0.7} speed={1}>
           <CountDown />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.8} offset={0.99}>
+        <ParallaxLayer speed={0.8} offset={width < 450 ? 0.99 :0.99}>
           <Tagline />
         </ParallaxLayer>
+
+            
+
         <ParallaxLayer offset={width < 450 ? 1.2 : 1.3} speed={width < 450 ? 0.01 : 0.01} factor={2}>
           <img src={satImg} alt="Satelite" className="scale-50" />
         </ParallaxLayer>
@@ -154,9 +157,10 @@ const HomePage = () => {
 
         
 
-        <ParallaxLayer offset={width < 450 ? 2.4 : 2.9} speed={1.5}>
+        <ParallaxLayer offset={width < 450 ? 0.99 : 0.99} speed={0.9}>
           <Sponsors />
         </ParallaxLayer>
+        
         <ParallaxLayer
           offset={width < 450 ? 3 : 3}
           speed={width < 450 ? 0.1 : 0.4}
@@ -165,9 +169,9 @@ const HomePage = () => {
           <Faq />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={width < 450 ? 4.2 : 4} speed={0.5}>
+        {/* <ParallaxLayer offset={width < 450 ? 4.2 : 4} speed={0.5}>
           <Team />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         <ParallaxLayer offset={width < 450 ? 5.5 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>

@@ -6,7 +6,7 @@ import logo4 from "../../assets/Sponsors/nascom1.png"
 import "./Sponsors.css"
 export default function Sponsors() {
   return (
-    <div className="md:mx-auto py-10 px-4 w-full max-w-7xl text-white-800 my-32">
+    <div className="md:mx-auto py-10 px-4 w-full max-w-7xl text-white-800 my-32 mt-[30vh] md:mt-[35vh]">
       <div className="flex flex-col items-center space-y-12">
 
         {/* :TITLE CONTAINER */}
