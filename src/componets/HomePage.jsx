@@ -21,6 +21,7 @@ import starsImg from "../assets/stars.svg";
 // parallax images import here
 import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
+import asiet from "../assets/asiet1.png"
 // import dronImg from "../assets/drone.gif";
 import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
@@ -76,59 +77,53 @@ const HomePage = () => {
         <ParallaxLayer offset={0.7} speed={1}>
           <CountDown />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.8} offset={width < 450 ? 0.99 :0.99}>
+        <ParallaxLayer speed={0.8} offset={width < 450 ? 0.99 : 0.99}>
           <Tagline />
         </ParallaxLayer>
 
-            
+
 
         <ParallaxLayer offset={width < 450 ? 1.2 : 1.3} speed={width < 450 ? 0.01 : 0.01} factor={2}>
           <img src={satImg} alt="Satelite" className="scale-50" />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 1.5 : 1.8} speed={0.5}>
+        <ParallaxLayer offset={width < 450 ? 1.9 : 1.8} speed={0.5}>
           <img
             src={moonImg}
             alt="Moon"
-            className="scale-100 md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+            className="scale-[2] md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
           />
         </ParallaxLayer>
         <ParallaxLayer
-          offset={width < 450 ? 3.3 : 1.8}
+          offset={width < 450 ? 1.8 : 1.8}
           speed={0.1}
-          className="flex justify-end"
+          className="flex  md:scale-75 justify-end"
         >
-          <div className="h-[600px] ml-[70vw] w-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
+          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
+        </ParallaxLayer>
+        <ParallaxLayer
+        speed={0.6}
+          sticky={{
+            start:4.5 , end:6
+          }}
+        style={{
+          backgroundImage:`url(${asiet})`,
+          backgroundSize:'100vw 100vh',
+          backgroundRepeat:'no-repeat',
+          backgroundPosition:'center',
+          zIndex:-20         
+          
+        }}
+          
+        >
+           
+     
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
         </ParallaxLayer>
         <ParallaxLayer offset={1.9} speed={1}>
-          <Poster />
+          {/* <Poster /> */}
         </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={width < 450 ? 2.1: 2.9}
-          factor={0.5}
-          speed={1.5}
-          style={{
-            width: "100vw",
-            backgroundColor: "rgba(195, 218, 224, 0.3)",
-            backdropFilter: "blur(10px)",
-            boxShadow: "0 0px 5vh 10vh rgba(195, 218, 224, 0.3)",
-          }}
-        ></ParallaxLayer>
-        <ParallaxLayer
-          offset={width < 450 ? 2.1 : 2.9}
-          factor={10}
-          speed={1.5}
-          style={{
-            width: "100vw",
-            marginTop: "50vh",
-            backgroundColor: "rgba(195, 218, 224, 0.7)",
-            backdropFilter: "blur(10px)",
-            boxShadow: "0 0px 5vh 10vh rgba(195, 218, 224, 0.7)",
-          }}
-        ></ParallaxLayer>
 
         <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8 : 1.8}>
           <img
@@ -155,12 +150,12 @@ const HomePage = () => {
           />
         </ParallaxLayer>
 
-        
+
 
         <ParallaxLayer offset={width < 450 ? 0.99 : 0.99} speed={0.9}>
           <Sponsors />
         </ParallaxLayer>
-        
+
         <ParallaxLayer
           offset={width < 450 ? 3 : 3}
           speed={width < 450 ? 0.1 : 0.4}
@@ -188,6 +183,7 @@ const HomePage = () => {
             alt="scroll wheel"
           ></img>
         </ParallaxLayer>
+    
       </Parallax>
     </div>
   );
