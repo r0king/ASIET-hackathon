@@ -2,19 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *{
+  outline: 3px solid limegreen !important;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@font-face {
+  font-family: "Azonix";
+  src: local("Azonix"), url(fonts/Azonix.otf) format("opentype");
+}
+
+#tsparticles {
+  background: black;
+  z-index: 1;
+  position: fixed;
+ }
+ 
+
+@layer utilities {
+  .transform-letter-te7 {
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  .transform-behind-te7 {
+    transform: rotateX(-90deg);
+  }
+  .transform-in-te7 {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .transform-out-te7 {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  .transform-bgr1-s1 {
+    transform:rotatez(45deg) translate(6px,1px);
+  }
+  .transform-bgr1-s2 {
+    transform:rotatez(-45deg);
+  }
+  .transform-bgr1-s3 {
+    width:50%;
+    transform: translate(2px,-14px) rotatez(45deg);
+  }
+}
+
 @layer utilities {
   @variants hover {
     .shadow-btn34-h7 {
