@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-
+import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 import planetImg from "../assets/planet.png";
 import scrolImg from "../assets/scroll.gif";
@@ -141,20 +141,21 @@ const HomePage = () => {
           <Tagline />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={1}>
-          <AboutUs />
+          <AllUNeed2Know />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.9} speed={1}>
-          <Poster />
+        <ParallaxLayer offset={2.3} speed={0.8}>
+         
+         </ParallaxLayer>
+       
+        <ParallaxLayer offset={2.6} speed={0.8}>
+         
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={1}>
-          <GameWork />
+        <ParallaxLayer offset={3} speed={0.8}>
+         
         </ParallaxLayer>
-        <ParallaxLayer offset={2.8} speed={0.8}>
-          <Faq />
-        </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
-          <Team />
-        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0.8}>
+         
+         </ParallaxLayer>
 
         <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
           <Sponsors />
@@ -171,7 +172,7 @@ const HomePage = () => {
           className="flex justify-center "
         >
           <img
-            className="fixed m-auto content-center  bottom-0 hidden pt-20 pb-5 w-14 md:block z-20 "
+            className="fixed bottom-0 z-20 content-center hidden pt-20 pb-5 m-auto w-14 md:block "
             src={scrolImg}
             alt="scroll wheel"
           ></img>

@@ -24,7 +24,7 @@ const ComingSoon = () => {
 
 
         {/* :BUTTON BACK HOME */}
-        <a href="#link" className="mt-16 text-base">
+        <a href="#link" className="mt-10 text-base">
           <ButtonEffect34>Go Back to Home</ButtonEffect34>
         </a>
         </div>
