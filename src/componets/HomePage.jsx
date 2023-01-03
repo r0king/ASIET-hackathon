@@ -13,10 +13,11 @@ import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 import { useWindowSize } from "react-use";
-import "./PageSlider.css";
 import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
+import GameWork from "./GameWork";
+// import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -37,6 +38,7 @@ const HomePage = () => {
 
   return (
     <div className="bg-black">
+      <Menu />
       <Particles
         className=""
         id="tsparticles"
@@ -48,19 +50,15 @@ const HomePage = () => {
               value: "transparent",
             },
           },
-          fpsLimit: 2,
+          fpsLimit: width < 450 ? 2 : 12,
           interactivity: {
             events: {
-              onClick: {
-                enable: false,
-                mode: "push",
-              },
               onHover: {
                 enable: true,
                 mode: "grab",
                 parallax: {
-                  enable: false,
-                  smooth: 10,
+                  enable: width < 450 ? false : true,
+                  force: 10,
                 },
               },
               resize: true,
@@ -84,22 +82,12 @@ const HomePage = () => {
             color: {
               value: "#ffffff",
             },
-            move: {
-              directions: "bottom",
-              enable: false,
-              outModes: {
-                default: "bounce",
-              },
-              random: true,
-              speed: 0.2,
-              straight: false,
-            },
             number: {
               density: {
                 enable: true,
-                area: 50,
+                area: 100,
               },
-              value: 60,
+              value: 40,
             },
             opacity: {
               value: 0.5,
@@ -108,20 +96,27 @@ const HomePage = () => {
               type: "star",
             },
             size: {
-              value: { min: 0.1, max: 1 },
+              value: { min: 0.3, max: 0.8 },
             },
           },
           detectRetina: true,
         }}
       />
-      <Menu />
-      {/* <Pageination /> */}
       <Parallax
         pages={width < 450 ? 7.1 : 6.2}
         style={{
           zIndex: 10,
         }}
       >
+        {/* <ParallaxLayer
+          offset={0}
+          speed={0}
+          factor={8}
+          style={{
+            backgroundImage: `url(${starsImg})`,
+            backgroundSize: "cover",
+          }}
+        /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
@@ -145,13 +140,16 @@ const HomePage = () => {
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.3} speed={0.5}>
-          <Poster />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.8} speed={1}>
+        <ParallaxLayer offset={1.9} speed={1}>
+          <Poster />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.2} speed={1}>
+          <GameWork />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.8} speed={0.8}>
           <Faq />
         </ParallaxLayer>
         <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
