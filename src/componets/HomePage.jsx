@@ -60,6 +60,7 @@ const HomePage = () => {
           <img
             src={planetImg}
             alt="planet"
+            id="planet"
             srcSet=""
             className="top-0 object-cover"
           />
