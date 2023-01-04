@@ -15,11 +15,7 @@ const AllUNeed2Know = () => {
 				<div className="mt-12 space-y-12">
 					<div className="flex">
 						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
+							
 						</div>
 						<div className="ml-4">
 							<h4 className="text-lg font-medium leading-6 text-gray-50">Per ei quaeque sensibus</h4>
@@ -28,11 +24,7 @@ const AllUNeed2Know = () => {
 					</div>
 					<div className="flex">
 						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
+							
 						</div>
 						<div className="ml-4">
 							<h4 className="text-lg font-medium leading-6 text-gray-50">Cu imperdiet posidonium sed</h4>
@@ -41,11 +33,7 @@ const AllUNeed2Know = () => {
 					</div>
 					<div className="flex">
 						<div className="flex-shrink-0">
-							<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-								</svg>
-							</div>
+							
 						</div>
 						<div className="ml-4">
 							<h4 className="text-lg font-medium leading-6 text-gray-50">Nulla omittam sadipscing mel ne</h4>
@@ -58,58 +46,7 @@ const AllUNeed2Know = () => {
 				<img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto bg-gray-500 rounded-lg shadow-lg" />
 			</div>
 		</div>
-		<div>
-			<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-				<div className="lg:col-start-2">
-					<h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-50">Eam nibh gloriatur ex</h3>
-					<p className="mt-3 text-lg text-gray-400">Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nibh dissentias, mei exerci tamquam euripidis cu. </p>
-					<div className="mt-12 space-y-12">
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 text-gray-50">Cibo augue offendit has ad</h4>
-								<p className="mt-2 text-gray-400">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ullam praesentium error deserunt reiciendis eos inventore nihil aut quae, quasi nisi eius itaque, cupiditate incidunt ea obcaecati, exercitationem enim alias.</p>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 text-gray-50">At eum ferri luptatum lobortis</h4>
-								<p className="mt-2 text-gray-400">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi architecto perspiciatis eveniet, tempore, aliquam placeat quod ratione dolore blanditiis perferendis, odio vitae mollitia! Nostrum blanditiis perspiciatis repellat sunt maiores esse.</p>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex-shrink-0">
-								<div className="flex items-center justify-center w-12 h-12 text-gray-900 rounded-md bg-[#0D6394]">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-									</svg>
-								</div>
-							</div>
-							<div className="ml-4">
-								<h4 className="text-lg font-medium leading-6 text-gray-50">Dicunt verterem evertitur eu sea</h4>
-								<p className="mt-2 text-gray-400">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis, corrupti soluta autem dolorum impedit! Unde provident in necessitatibus, nesciunt, inventore dolorum minima vero perspiciatis dolorem sapiente debitis, iusto nisi.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-					<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto bg-gray-500 rounded-lg shadow-lg" />
-				</div>
-			</div>
-		</div>
+		
 	</div>
 </section>
   )}
