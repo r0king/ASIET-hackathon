@@ -14,7 +14,6 @@ function App() {
             path="/"
             element={<HomePage/>}
           />
-          <Route exact path="/ani" element={<Animation />} />
           <Route exact path="/:name/" element={<Install />} />
         </Routes>
       </BrowserRouter>
