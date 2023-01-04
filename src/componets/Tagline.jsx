@@ -120,14 +120,14 @@ const Tagline = () => {
           {/* glitch::after */}
         </h1>
       )}
-      <p className="m-6 justify-evenly text-xl">
+      {/* <p className="m-6 justify-evenly text-xl">
         AdiShankara Hackathon is a deep programmatic model developed by Adi
         Shankara Institute of Engineering and Technology, Kalady, Kerala (ASIET)
         to bring new generation entrepreneurs into the tech ecosystem. It's a
         24hrs Hackathon event which consists of three major parallel events like
         Ideathon, Productathon and Gameathon for aspiring student entrepreneurs
         across the nation.
-      </p>
+      </p> */}
     </div>
   );
 };
