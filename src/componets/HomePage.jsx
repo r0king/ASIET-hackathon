@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 
 import HeroTitle from "./HeroTitle";
 import planetImg from "../assets/planet.png";
@@ -6,111 +6,40 @@ import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 import { useWindowSize } from "react-use";
-import "./PageSlider.css";
 import Team from "./Team";
+import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import satImg from "../assets/satlite.png";
+import GameWork from "./GameWork";
+// import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
   const { width } = useWindowSize();
-  const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await container;
-  }, []);
-
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
 
   return (
     <div className="bg-black">
-      <Particles
-        className=""
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 3,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "grab",
-              },
-            },
-            modes: {
-              grab: {
-                distance: 200,
-                links: {
-                  blink: true,
-                  consent: false,
-                  opacity: 0,
-                },
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            move: {
-              directions: "bottom",
-              enable: false,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 0.2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 50,
-              },
-              value: 60,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "star",
-            },
-            size: {
-              value: { min: 0.1, max: 1 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
       <Menu />
-      {/* <Pageination /> */}
+      <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
       <Parallax
-        pages={width < 450 ? 6.8 : 5.8}
+        pages={width < 450 ? 7.1 : 6.2}
         style={{
           zIndex: 10,
         }}
       >
-        <ParallaxLayer 
-        speed={0.3} offset={0.1}>
+        <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
 
@@ -123,27 +52,27 @@ const HomePage = () => {
           <img
             src={planetImg}
             alt="planet"
+            id="planet"
             srcSet=""
             className="top-0 object-cover"
           />
         </ParallaxLayer>
-
+        <ParallaxLayer offset={0.7} speed={1}>
+          <CountDown />
+        </ParallaxLayer>
         <ParallaxLayer speed={0.8} offset={0.99}>
           <Tagline />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.3 : 1.3} speed={0.01} factor={2}>
-          <img src={satImg} alt="Satelite" className="scale-75"/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.} speed={0.8}>
+        <ParallaxLayer offset={1} speed={1}>
           <AboutUs />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={1.9} speed={1}>
           <Poster />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.9} speed={1.5}>
-          <Sponsors />
+        <ParallaxLayer offset={2.2} speed={1}>
+          <GameWork />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.3 : 3} speed={0.4}>
+        <ParallaxLayer offset={2.8} speed={0.8}>
           <Faq />
         </ParallaxLayer>
       
@@ -151,9 +80,15 @@ const HomePage = () => {
         <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 5.9 : 4.9} speed={0.6}>
+
+        <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
+          <Sponsors />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>
+
         <ParallaxLayer
           factor={0.5}
           speed={10}

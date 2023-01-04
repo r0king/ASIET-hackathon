@@ -3,7 +3,6 @@ import logo1 from "../../assets/Sponsors/cloud.png"
 import logo2 from "../../assets/Sponsors/kerala.png"
 import logo3 from "../../assets/Sponsors/maker.png"
 import logo4 from "../../assets/Sponsors/nascom1.png"
-import logo5 from "../../assets/Sponsors/titlab.png"
 import "./Sponsors.css"
 export default function Sponsors() {
   return (
@@ -15,7 +14,7 @@ export default function Sponsors() {
           {/* ::Title */}
           <h2 className="text-3xl sm:text-4xl font-bold tracking-wide">Our Trusted Partners</h2>
           {/* ::Text */}
-          <p className="text-sm sm:text-base text-white-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+          <p className="text-sm sm:text-base text-[#f0f0f0]-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
         </div>
 
 
@@ -47,21 +46,21 @@ export default function Sponsors() {
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div className="lines"></div>
             <div className="angles"></div>
-            <img src={logo4} alt="" className="  opacity-80 spo_img" />
+            <img src={logo4} alt="" className=" opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 5 -> Google */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div className="lines"></div>
             <div className="angles"></div>
-            <img src="https://fancytailwind.com/static/blablacar-logo-black-d14f356f24cf3b23017d777b9909293c.svg" alt="" className="  opacity-50 spo_img" />
+            <img src="https://fancytailwind.com/static/blablacar-logo-black-d14f356f24cf3b23017d777b9909293c.svg" alt="" className=" opacity-50 spo_img" />
           </div>
 
           {/* ::Partner 6 -> Microsoft */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div className="lines"></div>
             <div className="angles"></div>
-            <img src="https://fancytailwind.com/static/microsoft-logo-29676a36b829016b82e0d8d1865c842b.svg" alt="" className="max-h- opacity-50 spo_img" />
+            <img src="https://fancytailwind.com/static/microsoft-logo-29676a36b829016b82e0d8d1865c842b.svg" alt="" className=" opacity-50 spo_img" />
           </div>
 
         </div>
