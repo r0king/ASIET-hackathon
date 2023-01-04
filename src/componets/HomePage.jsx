@@ -14,6 +14,7 @@ import { useWindowSize } from "react-use";
 import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
+import satImg from "../assets/satlite.png";
 import GameWork from "./GameWork";
 // import starsImg from "../assets/stars.svg";
 
@@ -38,15 +39,6 @@ const HomePage = () => {
           zIndex: 10,
         }}
       >
-        {/* <ParallaxLayer
-          offset={0}
-          speed={0}
-          factor={8}
-          style={{
-            backgroundImage: `url(${starsImg})`,
-            backgroundSize: "cover",
-          }}
-        /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
@@ -83,7 +75,9 @@ const HomePage = () => {
         <ParallaxLayer offset={2.8} speed={0.8}>
           <Faq />
         </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
+      
+
+        <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
 

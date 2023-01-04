@@ -6,7 +6,7 @@ import logo4 from "../../assets/Sponsors/nascom1.png"
 import "./Sponsors.css"
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full max-w-7xl text-[#f0f0f0]-800">
+    <div className="md:mx-auto py-10 px-4 w-full max-w-7xl text-white-800 my-32">
       <div className="flex flex-col items-center space-y-12">
 
         {/* :TITLE CONTAINER */}
@@ -32,14 +32,14 @@ export default function Sponsors() {
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div className="lines"></div>
             <div className="angles"></div>
-            <img src={logo2} alt="" className=" opacity-80 spo_img" />
+            <img src={logo2} alt="" className="  opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 3 -> Blablacar */}
           <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 logo_bg">
             <div className="lines"></div>
             <div className="angles"></div>
-            <img src={logo3} alt="" className=" opacity-80 spo_img" />
+            <img src={logo3} alt="" className="  opacity-80 spo_img" />
           </div>
           
           {/* ::Partner 4 -> Boursorama */}

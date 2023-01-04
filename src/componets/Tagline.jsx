@@ -57,7 +57,7 @@ const Tagline = () => {
           <h1
             ref={textContainer}
             id="glitch-te2"
-            className="relative text-[#f0f0f0] text-5xl font-bold tracking-widest mt-6 mb-10"
+            className="relative text-[#f0f0f0] text-4xl font-bold tracking-widest mt-6 mb-10"
             data-text="glitch"
           >
             <span
@@ -91,7 +91,7 @@ const Tagline = () => {
         <h1
           ref={textContainer}
           id="glitch-te2"
-          className="relative text-[#f0f0f0] text-5xl font-bold tracking-widest mt-6 mb-10"
+          className="relative text-[#f0f0f0] text-4xl font-bold tracking-widest mt-6 mb-10"
           data-text="glitch"
         >
           <span
@@ -120,7 +120,7 @@ const Tagline = () => {
           {/* glitch::after */}
         </h1>
       )}
-      <p className="m-6 justify-evenly">
+      <p className="m-6 justify-evenly text-xl">
         AdiShankara Hackathon is a deep programmatic model developed by Adi
         Shankara Institute of Engineering and Technology, Kalady, Kerala (ASIET)
         to bring new generation entrepreneurs into the tech ecosystem. It's a
