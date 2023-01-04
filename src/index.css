@@ -68,3 +68,25 @@ code {
     transform: translate(2px,-14px) rotatez(45deg);
   }
 }
+
+@layer utilities {
+  @variants hover {
+    .shadow-btn34-h7 {
+      box-shadow: 0 0 5px #5dea8c,
+                0 0 25px #5dea8c,
+                0 0 50px #5dea8c,
+                0 0 100px #5dea8c;
+    }
+  }
+}
+@font-face {
+  font-family: 'Clip';
+  src: url('../src/fonts/Clip.ttf') format('truetype');
+}
+@layer utilities {
+  .text-shadow-te6 {
+    text-shadow: 0 0 0.6rem #E2DCC8, 0 0 1.5rem #F1F1F1,
+    -0.2rem 0.1rem 1rem #F1F1F1, 0.2rem 0.1rem 1rem #F1F1F1,
+    0 -0.5rem 2rem #E2DCC8, 0 0.5rem 3rem #E2DCC8;
+  }
+}

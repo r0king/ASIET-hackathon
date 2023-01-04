@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useCallback } from "react";
+import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
@@ -188,7 +189,7 @@ const HomePage = () => {
           className="flex justify-center "
         >
           <img
-            className="fixed m-auto content-center  bottom-0 hidden pt-20 pb-5 w-14 md:block z-20 "
+            className="fixed bottom-0 z-20 content-center hidden pt-20 pb-5 m-auto w-14 md:block "
             src={scrolImg}
             alt="scroll wheel"
           ></img>
