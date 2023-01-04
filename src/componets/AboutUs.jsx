@@ -9,24 +9,26 @@ const AboutUs = () => {
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-sm text-gray-400 font-semibold uppercase tracking-wide">
+          <p className="text-lg text-gray-400 font-semibold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
-          <h2 className="mb-8 text-2xl sm:text-3xl text-gray-100 font-bold capitalize">
+          <h2 className="mb-8 text-3xl sm:text-3xl text-gray-100 font-bold capitalize">
             <span className="text-[#0D6394]">About Our</span>{" "}
             <span className="text-[f0f0f0]">Institute</span>
           </h2>
           {/* Content goes here */}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          explicabo assumenda consequatur nam? Blanditiis, nesciunt vitae.
-          Praesentium, quam iusto tenetur quaerat optio quasi at maiores
-          laudantium quae distinctio sequi natus. Dolorem sunt nobis nostrum
-          debitis incidunt, neque esse tempore. Quia, accusamus sunt quam
-          praesentium ad officiis earum ducimus sit molestias fuga sapiente,
-          corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
+          <p className="text-lg"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            explicabo assumenda consequatur nam? Blanditiis, nesciunt vitae.
+            Praesentium, quam iusto tenetur quaerat optio quasi at maiores
+            laudantium quae distinctio sequi natus. Dolorem sunt nobis nostrum
+            debitis incidunt, neque esse tempore. Quia, accusamus sunt quam
+            praesentium ad officiis earum ducimus sit molestias fuga sapiente,
+            corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
+          </p>
           {/* ::Button */}
-          <button className="group my-5 relative px-6 py-4 bg-gradient-to-br from-[f0f0f0] to-[#0D6394] bg-clip-text text-base  active:top-0.5 focus:outline-none">
+          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-[f0f0f0] to-[#0D6394] bg-clip-text active:top-0.5 focus:outline-none">
             Know More
             {/* button::before */}
             <span
