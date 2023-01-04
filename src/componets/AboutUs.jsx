@@ -25,7 +25,7 @@ const AboutUs = () => {
           praesentium ad officiis earum ducimus sit molestias fuga sapiente,
           corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
           {/* ::Button */}
-          <button className="mt-[6vh] group z-10 relative px-5 py-2.5 bg-transparent text-base text- font-semibold tracking-widest antialiased transition duration-700 text-black hover:text-white active:top-0.5 focus:outline-none">
+          <button className="mt-[6vh] group z-10 relative px-5 py-2.5 bg-transparent text-base text- font-semibold tracking-widest antialiased transition duration-700 text-black hover:text-[#f0f0f0] active:top-0.5 focus:outline-none">
             {/* button::before */}
             <span
               className="-z-1 absolute -top-1.5 -left-1.5 h-full w-2/3 rounded-sm bg-gradient-to-t from-transparent to-white skew-x-30 transition-all duration-500 ease-bounce transform group-hover:to-white group-hover:bg-transparent  group-hover:top-0 group-hover:left-11 group-hover:mix-blend-overlay group-hover:skew-x-0"
