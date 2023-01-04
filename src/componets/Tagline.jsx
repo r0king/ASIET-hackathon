@@ -57,7 +57,7 @@ const Tagline = () => {
           <h1
             ref={textContainer}
             id="glitch-te2"
-            className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10"
+            className="relative text-[#f0f0f0] text-5xl font-bold tracking-widest mt-6 mb-10"
             data-text="glitch"
           >
             <span
@@ -91,7 +91,7 @@ const Tagline = () => {
         <h1
           ref={textContainer}
           id="glitch-te2"
-          className="relative text-white text-5xl font-bold tracking-widest mt-6 mb-10"
+          className="relative text-[#f0f0f0] text-5xl font-bold tracking-widest mt-6 mb-10"
           data-text="glitch"
         >
           <span
