@@ -15,6 +15,7 @@ function App() {
             element={<HomePage/>}
           />
           <Route exact path="/:name/" element={<Install />} />
+
         </Routes>
       </BrowserRouter>
     </>
