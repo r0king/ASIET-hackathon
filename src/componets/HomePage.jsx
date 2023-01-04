@@ -75,20 +75,15 @@ const HomePage = () => {
         <ParallaxLayer offset={2.8} speed={0.8}>
           <Faq />
         </ParallaxLayer>
-      
-
         <ParallaxLayer offset={width < 450 ? 4.5 : 4} speed={0.5}>
           <Team />
         </ParallaxLayer>
-
         <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
           <Sponsors />
         </ParallaxLayer>
-
         <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
           <ContactUs />
         </ParallaxLayer>
-
         <ParallaxLayer
           factor={0.5}
           speed={10}
