@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <div className='flex  p-6 justify-center items-center my-40'>
 
-      <div className=" w-[90vw]  bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 text-white overflow-hidden">
+      <div className=" w-[90vw]  bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 text-[#f0f0f0] overflow-hidden">
         <div className="grid grid-cols-6 md:grid-cols-5">
           {/* <div className='  bg-gray-400 rounded-md 
         bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'></div> */}
@@ -15,32 +15,32 @@ const ContactUs = () => {
           <div className="col-span-full sm:col-span-3 md:col-span-2 mx-auto py-8 sm:py-16 px-3 flex flex-col">
 
             {/* ::Title Contact */}
-            <h2 className="text-4xl sm:text-5xl text-white font-semibold tracking-wide">Contact Us</h2>
+            <h2 className="text-4xl sm:text-5xl text-[#f0f0f0] font-semibold tracking-wide">Contact Us</h2>
 
             {/* ::Address */}
             <div className="mt-8 sm:mt-16 space-y-3">
               <h3 className="text-base font-semibold">Address</h3>
-              <p className="text-sm text-white text-opacity-60">5CHJ+758, Vidya Bharathi Nagar , Mattoor, Kalady,<br /> Ernakulam, Kerala 683574</p>
+              <p className="text-sm text-[#f0f0f0] text-opacity-60">5CHJ+758, Vidya Bharathi Nagar , Mattoor, Kalady,<br /> Ernakulam, Kerala 683574</p>
             </div>
 
             {/* ::Office Hours */}
             <div className="mt-5 sm:mt-10 space-y-3">
               <h3 className="text-base font-semibold">Office Hours</h3>
-              <p className="text-sm text-white text-opacity-60"> 8AM-4PM</p>
+              <p className="text-sm text-[#f0f0f0] text-opacity-60"> 8AM-4PM</p>
             </div>
 
             {/* ::Contact */}
             <div className="mt-5 sm:mt-10 space-y-3">
               <h3 className="text-base font-semibold">Contact</h3>
-              <div className="space-y-1 text-sm text-white text-opacity-60">
+              <div className="space-y-1 text-sm text-[#f0f0f0] text-opacity-60">
                 <p className="font-semibold">0484-2463825<br />0484-2466066<br></br> 0484-2461933</p>
-                <a href="mailto:#" className="inline-block hover:text-white">info@adishankara.ac.in</a>
+                <a href="mailto:#" className="inline-block hover:text-[#f0f0f0]">info@adishankara.ac.in</a>
               </div>
             </div>
 
             {/* ::Social */}
             <div className="mt-8 sm:mt-16 flex items-center">
-              <h3 className="text-sm text-white text-opacity-60 font-semibold uppercase tracking-wider">Social</h3>
+              <h3 className="text-sm text-[#f0f0f0] text-opacity-60 font-semibold uppercase tracking-wider">Social</h3>
               <div className="ml-3 flex space-x-2">
                 {/* :::facebook */}
                 <a href="#facebook" className="p-1 inline-flex justify-center items-center text-blue-300 hover:text-blue-400">

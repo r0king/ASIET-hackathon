@@ -2,6 +2,7 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon, QuestionMarkCircleIcon } from '@heroicons/react/outline'
+import "./Scrollbar.css"
 
 
 
@@ -68,18 +69,18 @@ const Faq = () => {
            Frequently Asked Questions
           </div>
           {/* ::Accordion Panel */}
-          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center md:overflow-y-scroll z-10">
+          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll z-10">
             {
               faq.map(faq => (
                 <Disclosure key={faq.number} >
                   {({ open }) => (
                     <>
                       {/* Question */}
-                      <dt className={`group mt-6 w-full border-b-2 border-gray-700 text-gray-400 hover:text-white ${open && "text-white"}`}>
+                      <dt className={`group mt-6 w-full border-b-2 border-gray-700 text-gray-400 hover:text-[#f0f0f0] ${open && "text-[#f0f0f0]"}`}>
                         <Disclosure.Button className="py-5 px-3 w-full flex justify-between items-center">
-                          <QuestionMarkCircleIcon className={`${open && 'text-white'} flex-shrink-0 mr-2 w-5 h-5 text-gray-600 group-hover:text-white`} aria-hidden="true" />
+                          <QuestionMarkCircleIcon className={`${open && 'text-[#f0f0f0]'} flex-shrink-0 mr-2 w-5 h-5 text-gray-600 group-hover:text-[#f0f0f0]`} aria-hidden="true" />
                           <span className="mr-auto text-base text-left font-semibold transition duration-150 ease-in transform group-hover:translate-x-2">{faq.question}</span>
-                          <ChevronDownIcon className={`${open && 'transform rotate-180 text-white'} flex-shrink-0 ml-2 w-5 h-5 text-gray-600 group-hover:text-white`} aria-hidden="true" />
+                          <ChevronDownIcon className={`${open && 'transform rotate-180 text-[#f0f0f0]'} flex-shrink-0 ml-2 w-5 h-5 text-gray-600 group-hover:text-[#f0f0f0]`} aria-hidden="true" />
                         </Disclosure.Button>
                       </dt>
                       {/* Answer */}

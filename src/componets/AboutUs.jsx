@@ -14,7 +14,8 @@ const AboutUs = () => {
           </p>
           {/* ::Title */}
           <h2 className="mb-8 text-2xl sm:text-3xl text-gray-100 font-bold capitalize">
-          <span className="text-[#0D6394]">About Our</span> Institute
+            <span className="text-[#0D6394]">About Our</span>{" "}
+            <span className="text-[f0f0f0]">Institute</span>
           </h2>
           {/* Content goes here */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -25,16 +26,16 @@ const AboutUs = () => {
           praesentium ad officiis earum ducimus sit molestias fuga sapiente,
           corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
           {/* ::Button */}
-          <button className="mt-[6vh] group z-10 relative px-5 py-2.5 bg-transparent text-base text- font-semibold tracking-widest antialiased transition duration-700 text-black hover:text-white active:top-0.5 focus:outline-none">
+          <button className="group my-5 relative px-6 py-4 bg-gradient-to-br from-[f0f0f0] to-[#0D6394] bg-clip-text text-base  active:top-0.5 focus:outline-none">
+            Know More
             {/* button::before */}
             <span
-              className="-z-1 absolute -top-1.5 -left-1.5 h-full w-2/3 rounded-sm bg-gradient-to-t from-transparent to-white skew-x-30 transition-all duration-500 ease-bounce transform group-hover:to-white group-hover:bg-transparent  group-hover:top-0 group-hover:left-11 group-hover:mix-blend-overlay group-hover:skew-x-0"
+              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-[#0D6394] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
               aria-hidden="true"
             />
-            Know More
             {/* button::after */}
             <span
-              className="-z-1 absolute top-1.5 left-12 h-full w-2/3 rounded-sm bg-gradient-to-b from-white to-tranfrom-transparent skew-x-30 transition-all duration-500 ease-bounce transform group-hover:from-white group-hover:bg-transparent  group-hover:top-0 group-hover:left-0 group-hover:mix-blend-overlay group-hover:skew-x-0"
+              className="absolute bottom-1 left-1 w-1/4 h-1/4 border-2 border-t-0 border-r-0 border-[f0f0f0] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
               aria-hidden="true"
             />
           </button>

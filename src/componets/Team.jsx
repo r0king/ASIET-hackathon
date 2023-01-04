@@ -67,7 +67,7 @@ const Team = () => {
       <div className="flex flex-col items-center">
 
         {/* :TITLE CONTAINER */}
-        <h2 className="mb-6 text-lg text-white font-semibold uppercase tracking-widest">
+        <h2 className="mb-6 text-lg text-[#f0f0f0] font-semibold uppercase tracking-widest">
           <span className="text-[#0D6394]">Who </span> are we?
         </h2>
 
@@ -88,7 +88,7 @@ const Team = () => {
                   {/* :::name */}
                   <h3 className="text-sm text-[#0D6394] font-bold uppercase tracking-wider transition-all duration-300 transform -translate-y-20 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.name}</h3>
                   {/* :::role */}
-                  <span className="text-xs text-white font-semibold transition-all duration-500 transform -translate-y-40 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.role}</span>
+                  <span className="text-xs text-[#f0f0f0] font-semibold transition-all duration-500 transform -translate-y-40 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.role}</span>
                 </div>
               </li>
             ))}

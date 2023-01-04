@@ -1,17 +1,13 @@
 import React from "react";
-// , { useCallback }
 import HeroTitle from "./HeroTitle";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
-// import { loadFull } from "tsparticles";
-// import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 import { useWindowSize } from "react-use";
-import "./PageSlider.css";
 import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
@@ -41,22 +37,27 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Menu />
-      {/* <Pageination /> */}
+      <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
       <Parallax
         pages={width < 450 ? 6.7 : 6.2}
         style={{
           zIndex: 10,
         }}
       >
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={0}
           speed={0}
           factor={8}
           style={{
             backgroundImage: `url(${starsImg})`,
-            backgroundSize: 'cover',
+            backgroundSize: "cover",
           }}
-        />
+        /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
@@ -70,6 +71,7 @@ const HomePage = () => {
           <img
             src={planetImg}
             alt="planet"
+            id="planet"
             srcSet=""
             className="top-0 object-cover"
           />
@@ -122,7 +124,16 @@ const HomePage = () => {
           <AboutUs />
         </ParallaxLayer>
         <ParallaxLayer offset={1.9} speed={1}>
-          {/* <Poster /> */}
+          <Poster />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.2} speed={1}>
+          <GameWork />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.8} speed={0.8}>
+          <Faq />
+        </ParallaxLayer>
+        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
+          <Team />
         </ParallaxLayer>
 
         <ParallaxLayer offset={width < 450 ? 2.3 : 2.6} speed={width < 450 ? 1.8 : 1.8}>
