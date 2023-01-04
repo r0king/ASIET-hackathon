@@ -12,7 +12,6 @@ import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
-import starsImg from "../assets/stars.svg";
 
 // parallax images import here
 import satImg from "../assets/satlite.png";

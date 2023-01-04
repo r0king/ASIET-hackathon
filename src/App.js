@@ -3,8 +3,6 @@ import "animate.css/animate.min.css";
 import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
-import Animation from "./componets/Animation";
-import PosterCard from "./componets/PosterCard";
 
 function App() {
   return (
