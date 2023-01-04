@@ -38,15 +38,6 @@ const HomePage = () => {
           zIndex: 10,
         }}
       >
-        {/* <ParallaxLayer
-          offset={0}
-          speed={0}
-          factor={8}
-          style={{
-            backgroundImage: `url(${starsImg})`,
-            backgroundSize: "cover",
-          }}
-        /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           <HeroTitle />
         </ParallaxLayer>
