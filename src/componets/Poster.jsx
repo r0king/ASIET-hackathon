@@ -43,9 +43,9 @@ const Poster = () => {
 
 
         {/* :NAVIGATION */}
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 rounded-sm overflow-hidden">
+        <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 rounded-sm">
           {categories.map(category => (
-            <a key={category.id} href={category.href} className="col-span-1 hover:bg-black md:aspect-w-1 md:aspect-h-2 group relative w-full h-52 md:h-full overflow-hidden">
+            <a key={category.id} href={category.href} className="col-span-1 hover:bg-black md:aspect-w-1 md:aspect-h-2 group relative w-full h-[60vh] md:h-full">
             <PosterCard id={category.id}/>
             </a>
           ))

@@ -6,7 +6,7 @@ import logo4 from "../../assets/Sponsors/nascom1.png"
 import "./Sponsors.css"
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full max-w-7xl text-white-800">
+    <div className="mx-auto py-10 px-4 w-full max-w-7xl text-[#f0f0f0]-800">
       <div className="flex flex-col items-center space-y-12">
 
         {/* :TITLE CONTAINER */}
@@ -14,7 +14,7 @@ export default function Sponsors() {
           {/* ::Title */}
           <h2 className="text-3xl sm:text-4xl font-bold tracking-wide">Our Trusted Partners</h2>
           {/* ::Text */}
-          <p className="text-sm sm:text-base text-white-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+          <p className="text-sm sm:text-base text-[#f0f0f0]-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
         </div>
 
 

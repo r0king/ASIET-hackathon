@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 
 import HeroTitle from "./HeroTitle";
 import planetImg from "../assets/planet.png";
@@ -6,8 +6,6 @@ import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
 import AboutUs from "./AboutUs";
 import Poster from "./Poster";
 import Tagline from "./Tagline";
@@ -21,17 +19,6 @@ import GameWork from "./GameWork";
 
 const HomePage = () => {
   const { width } = useWindowSize();
-  const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await container;
-  }, []);
-
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
@@ -39,69 +26,12 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Menu />
-      <Particles
-        className=""
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: width < 450 ? 2 : 12,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "grab",
-                parallax: {
-                  enable: width < 450 ? false : true,
-                  force: 10,
-                },
-              },
-              resize: true,
-            },
-            modes: {
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              grab: {
-                distance: 150,
-                links: {
-                  blink: true,
-                  consent: false,
-                  opacity: 0,
-                },
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 100,
-              },
-              value: 40,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "star",
-            },
-            size: {
-              value: { min: 0.3, max: 0.8 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+      <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
       <Parallax
         pages={width < 450 ? 7.1 : 6.2}
         style={{
@@ -130,6 +60,7 @@ const HomePage = () => {
           <img
             src={planetImg}
             alt="planet"
+            id="planet"
             srcSet=""
             className="top-0 object-cover"
           />

@@ -4,6 +4,7 @@ import Install from "./componets/Install";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./componets/HomePage";
 import PosterCard from "./componets/PosterCard";
+import Animation from "./componets/Animation";
 
 function App() {
   return (
