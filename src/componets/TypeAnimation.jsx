@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react'
 
-const Install = () => {
+const TypeAnimation = () => {
 
   useEffect(() => {
     // Target selectors
@@ -64,7 +64,6 @@ const Install = () => {
           }, 1000)
           if (words.length === 1) {
             stop = true;
-            underscore.classList.add("hidden");
           } // Comment this line if you want to run this animation indefinitely
         }
 
@@ -121,4 +120,4 @@ const Install = () => {
   )
 }
 
-export default Install
+export default TypeAnimation
