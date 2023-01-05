@@ -20,7 +20,7 @@ import "./animation.css";
 import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
 import asiet from "../assets/asiet1.png";
-import planetImg from "../assets/planet.png";
+import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
 // import mountainImg from "../assets/mountain.png";
@@ -28,12 +28,11 @@ import cloud2 from "../assets/cloud_grp.png";
 // import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
-  const { width } = useWindowSize();
+  const { width, height } = useWindowSize();
 
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
-
   return (
     <div className="bg-black">
       <Menu />
@@ -44,7 +43,7 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? 7.4 : 4.8}
+        pages={width < 450 ? (height < 650 ? 8.4 : 7.4) : 4.8}
         style={{
           zIndex: 10,
         }}
@@ -61,12 +60,11 @@ const HomePage = () => {
           speed={1}
           className="flex justify-center "
         >
+          {/* transparent gif */}
           <img
-            src={planetImg}
+            src={planetGif}
             alt="planet"
-            id="planet"
-            srcSet=""
-            className="top-0 object-cover"
+            className="absolute z-10 w-[100vw] md:w-[80vw] object-cover "
           />
         </ParallaxLayer>
         {/* CountDown */}
@@ -74,19 +72,30 @@ const HomePage = () => {
           <CountDown />
         </ParallaxLayer>
         {/* TagLine */}
-        <ParallaxLayer speed={0.8} offset={width < 450 ? 0.99 : 0.99}>
+        <ParallaxLayer
+          speed={0.8}
+          offset={width < 450 ? (height < 650 ? 0.99 : 0.99) : 0.99}
+        >
           <Tagline />
         </ParallaxLayer>
         {/* Satlite */}
         <ParallaxLayer
-          offset={width < 450 ? 1.2 : 1.3}
-          speed={width < 450 ? 0.01 : 0.01}
+          offset={width < 450 ? (height < 650 ? 1.2 : 1.2) : 1.3}
+          speed={width < 450 ? (height < 650 ? 0.01 : 0.01) : 0.01}
           factor={2}
+          className="transition-all duration-500 ease-in-out"
         >
-          <img src={satImg} alt="Satlite" className="scale-50" />
+          <img
+            src={satImg}
+            alt="Satlite"
+            className="scale-50 -ml-40 md:-ml-20"
+          />
         </ParallaxLayer>
         {/* Moon */}
-        <ParallaxLayer offset={width < 450 ? 1.9 : 1.8} speed={0.5}>
+        <ParallaxLayer
+          offset={width < 450 ? (height < 650 ? 1.9 : 1.9) : 1.8}
+          speed={0.5}
+        >
           <img
             src={moonImg}
             alt="Moon"
@@ -95,7 +104,7 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Moon Shadow */}
         <ParallaxLayer
-          offset={width < 450 ? 1.8 : 1.8}
+          offset={width < 450 ? (height < 650 ? 1.8 : 1.8) : 1.8}
           speed={0.1}
           className="flex  md:scale-75 justify-end"
         >
@@ -103,8 +112,8 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Cloud 1*/}
         <ParallaxLayer
-          offset={width < 450 ? 2.3 : 2.6}
-          speed={width < 450 ? 1.8 : 1.8}
+          offset={width < 450 ? (height < 650 ? 2.3 : 2.3) : 2.6}
+          speed={width < 450 ? (height < 650 ? 1.8 : 1.8) : 1.8}
         >
           <img
             src={cloud1}
@@ -114,8 +123,8 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Cloud 2 */}
         <ParallaxLayer
-          offset={width < 450 ? 2.2 : 2.5}
-          speed={width < 450 ? 1.1 : 0.5}
+          offset={width < 450 ? (height < 650 ? 2.2 : 2.2) : 2.5}
+          speed={width < 450 ? (height < 650 ? 1.1 : 1.1) : 0.5}
         >
           <img
             src={cloud2}
@@ -125,8 +134,8 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Cloud 3 */}
         <ParallaxLayer
-          offset={width < 450 ? 4 : 3}
-          speed={width < 450 ? 1.5 : -0.3}
+          offset={width < 450 ? (height < 650 ? 4.0 : 4.0) : 3}
+          speed={width < 450 ? (height < 650 ? 1.5 : 1.5) : -0.3}
           factor={2}
         >
           <img
@@ -151,7 +160,7 @@ const HomePage = () => {
           }
           style={{
             backgroundImage: `url(${asiet})`,
-            backgroundSize: "100vw 100vh",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             zIndex: -20,
@@ -162,58 +171,58 @@ const HomePage = () => {
 
         {/* Sponsors */}
         <ParallaxLayer
-          offset={width < 450 ? 0.99 : 0.99}
-          speed={width < 450 ? 1 : 0.9}
+          offset={width < 450 ? (height < 650 ? 0.99 : 0.99) : 0.99}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.9}
         >
           <Sponsors />
         </ParallaxLayer>
         {/* Poster */}
         <ParallaxLayer
-          offset={width < 450 ? 2 : 1.99}
-          speed={width < 450 ? 1 : 1}
+          offset={width < 450 ? (height < 650 ? 2.4 : 2.0) : 1.99}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1}
         >
           <Poster />
         </ParallaxLayer>
 
         {/* About Us */}
         <ParallaxLayer
-          offset={width < 450 ? 1.5 : 1.4}
-          speed={width < 450 ? 1 : 1.3}
+          offset={width < 450 ? (height < 650 ? 1.9 : 1.5) : 1.4}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1.3}
         >
           <AboutUs />
         </ParallaxLayer>
         {/* GameWorkshop */}
         <ParallaxLayer
-          offset={width < 450 ? 4 : 2.4}
-          speed={width < 450 ? 1 : 1}
+          offset={width < 450 ? (height < 850 ? 4.5 : 3.9) : 2.4}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1}
         >
           <GameWork />
         </ParallaxLayer>
         {/* All u need 2 kno */}
         <ParallaxLayer
-          offset={width < 450 ? 4 : 2.8}
-          speed={width < 450 ? 1 : 0.8}
+          offset={width < 450 ? (height < 650 ? 4.6 : 3.99) : 2.8}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.8}
         >
           <AllUNeed2Know />
         </ParallaxLayer>
         {/* FAQ */}
         <ParallaxLayer
-          offset={width < 450 ? 5.7 : 3.3}
-          speed={width < 450 ? 1 : 0.8}
+          offset={width < 450 ? (height < 650 ? 6 : 4.99) : 3.3}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.8}
         >
           <Faq />
         </ParallaxLayer>
         {/* Team
         <ParallaxLayer
-          offset={width < 450 ? 3.6 : 3.6}
-          speed={width < 450 ? 1 : 0.3}
+          offset={width < 450 ? (height < 650 ?(3.6: (3.6)) : 3.6}
+          speed={width < 450 ? (height < 650 ?(1 :)): (1 :)) 0.3}
         >
           <Team />
         </ParallaxLayer> */}
         {/* Contact Us */}
         <ParallaxLayer
-          offset={width < 450 ? 6.5 : 4}
-          speed={width < 450 ? 1 : 1.2}
+          offset={width < 450 ? (height < 650 ? 7.1 : 6.5) : 4}
+          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1.2}
           style={{
             zIndex: 20,
           }}
