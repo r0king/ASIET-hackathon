@@ -29,7 +29,8 @@ import cloud2 from "../assets/cloud_grp.png";
 
 const HomePage = () => {
   const { width, height } = useWindowSize();
-
+  // refer parallax
+  console.log(window.offset,height)
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
@@ -43,10 +44,11 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? (height < 650 ? 8.4 : 7.4) : 4.8}
+        pages={width < 450 ? 5.48 : 4.8}
         style={{
           zIndex: 10,
         }}
+
       >
         {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
@@ -147,17 +149,10 @@ const HomePage = () => {
         {/* College */}
         <ParallaxLayer
           speed={0.6}
-          sticky={
-            width < 450
-              ? {
-                  start: 5.5,
-                  end: 9,
-                }
-              : {
-                  start: 3.5,
-                  end: 9,
-                }
-          }
+          sticky={{
+            start: 3.5,
+            end: 9,
+          }}
           style={{
             backgroundImage: `url(${asiet})`,
             backgroundSize: "cover",
@@ -168,67 +163,50 @@ const HomePage = () => {
         ></ParallaxLayer>
 
         {/* Main Componets */}
-
-        {/* Sponsors */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 0.99 : 0.99) : 0.99}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.9}
-        >
-          <Sponsors />
-        </ParallaxLayer>
-        {/* Poster */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 2.4 : 2.0) : 1.99}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1}
-        >
-          <Poster />
-        </ParallaxLayer>
-
-        {/* About Us */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 1.9 : 1.5) : 1.4}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1.3}
-        >
-          <AboutUs />
-        </ParallaxLayer>
-        {/* GameWorkshop */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 850 ? 4.5 : 3.9) : 2.4}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1}
-        >
-          <GameWork />
-        </ParallaxLayer>
-        {/* All u need 2 kno */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 4.6 : 3.99) : 2.8}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.8}
-        >
-          <AllUNeed2Know />
-        </ParallaxLayer>
-        {/* FAQ */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 6 : 4.99) : 3.3}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 0.8}
-        >
-          <Faq />
-        </ParallaxLayer>
-        {/* Team
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ?(3.6: (3.6)) : 3.6}
-          speed={width < 450 ? (height < 650 ?(1 :)): (1 :)) 0.3}
-        >
-          <Team />
-        </ParallaxLayer> */}
-        {/* Contact Us */}
-        <ParallaxLayer
-          offset={width < 450 ? (height < 650 ? 7.1 : 6.5) : 4}
-          speed={width < 450 ? (height < 650 ? 1.0 : 1.0) : 1.2}
-          style={{
-            zIndex: 20,
-          }}
-        >
-          <ContactUs />
-        </ParallaxLayer>
+        {width > 450 ? (
+          <>
+            {/* Sponsors */}
+            <ParallaxLayer offset={0.99} speed={0.9}>
+              <Sponsors />
+            </ParallaxLayer>
+            {/* Poster */}
+            <ParallaxLayer offset={1.99} speed={1}>
+              <Poster />
+            </ParallaxLayer>
+            {/* About Us */}
+            <ParallaxLayer offset={1.4} speed={1.3}>
+              <AboutUs />
+            </ParallaxLayer>
+            {/* GameWorkshop */}
+            <ParallaxLayer offset={2.4} speed={1}>
+              <GameWork />
+            </ParallaxLayer>
+            {/* All u need 2 kno */}
+            <ParallaxLayer offset={2.8} speed={0.8}>
+              <AllUNeed2Know />
+            </ParallaxLayer>
+            {/* FAQ */}
+            <ParallaxLayer offset={3.3} speed={0.8}>
+              <Faq />
+            </ParallaxLayer>
+            {/* Contact Us */}
+            <ParallaxLayer offset={4} speed={1.2} style={{ zIndex: 20 }}>
+              <ContactUs />
+            </ParallaxLayer>
+          </>
+        ) : (
+          <>
+            <ParallaxLayer offset={0.99} speed={1}>
+              <Sponsors />
+              <AboutUs />
+              <Poster />
+              <GameWork />
+              <AllUNeed2Know />
+              <Faq />
+              <ContactUs />
+            </ParallaxLayer>
+          </>
+        )}
         {/* Scroll bar */}
         <ParallaxLayer
           factor={0.5}
