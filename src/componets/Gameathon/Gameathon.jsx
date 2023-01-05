@@ -1,21 +1,9 @@
-import React, { useState,useCallback } from 'react'
+import React, { useState} from 'react'
 import { CalendarIcon, HeartIcon, ShieldExclamationIcon, SearchIcon, CreditCardIcon, UserGroupIcon } from '@heroicons/react/outline'
 import "./GG.css"
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { useWindowSize } from "react-use";
+import "./animation.css"
 const Gameathon = () => {
-  const { width } = useWindowSize();
-  const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await container;
-  }, []);
   const features = [
     { name: "Register", 
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus tempora eaque ipsa aut enim laudantium? Vitae amet labore, eveniet nulla qui quis veritatis quisquam quos neque nostrum in doloremque minus!",
@@ -55,69 +43,12 @@ const Gameathon = () => {
   return (
     <>
     
-    <Particles
-        className=""
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: width < 450 ? 2 : 12,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "grab",
-                parallax: {
-                  enable: width < 450 ? false : true,
-                  force: 10,
-                },
-              },
-              resize: true,
-            },
-            modes: {
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              grab: {
-                distance: 150,
-                links: {
-                  blink: true,
-                  consent: false,
-                  opacity: 0,
-                },
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 100,
-              },
-              value: 40,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "star",
-            },
-            size: {
-              value: { min: 0.3, max: 0.8 },
-            },
-          },
-          detectRetina: true,
-        }}
-      />
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
     
     <div className="mx-auto w-full max-w-7xl">
       {/* CONTAINER */}
@@ -165,7 +96,7 @@ const Gameathon = () => {
             {/* :::feature 1 */}
             <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
               <button onClick={() => setCurrentFeature(0)}>
-                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 0 ? "from-green-500 to-blue-500 text-white" : "from-gray-400 to-gray-400 text-black"}`}>
+                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 0 ? "from-[#0d6394] to-[#0d6394] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
                   {getIcon(features[0].icon)}
                 </span>
                 <h3 className={`${currentFeature === 0 ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[0].name}</h3>
@@ -174,7 +105,7 @@ const Gameathon = () => {
             {/* :::feature 2 */}
             <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
               <button onClick={() => setCurrentFeature(1)}>
-                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 1 ? "from-green-500 to-blue-500 text-white" : "from-gray-400 to-gray-400 text-black"}`}>
+                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 1 ? "from-[#0d6394] to-[#0d6394] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
                   {getIcon(features[1].icon)}
                 </span>
                 <h3 className={`${currentFeature === 1 ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[1].name}</h3>
@@ -183,7 +114,7 @@ const Gameathon = () => {
             {/* :::feature 3 */}
             <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
               <button onClick={() => setCurrentFeature(2)}>
-                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 2 ? "from-green-500 to-blue-500 text-white" : "from-gray-400 to-gray-400 text-black"}`}>
+                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 2 ? "from-[#0d6394] to-[#0d6394] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
                   {getIcon(features[2].icon)}
                 </span>
                 <h3 className={`${currentFeature === 2 ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[2].name}</h3>
@@ -198,7 +129,7 @@ const Gameathon = () => {
             {/* :::feature 4 */}
             <div className="col-span-1 sm:col-span-full relative md:right-10 flex justify-center items-center">
               <button onClick={() => setCurrentFeature(3)}>
-                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 3 ? "from-green-500 to-blue-500 text-white" : "from-gray-400 to-gray-400 text-black"}`}>
+                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 3 ? "from-[#0d6394] to-[#0d6394] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
                   {getIcon(features[3].icon)}
                 </span>
                 <h3 className={`${currentFeature === 3 ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[3].name}</h3>
@@ -207,10 +138,10 @@ const Gameathon = () => {
             {/* :::feature 5 */}
             <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
               <button onClick={() => setCurrentFeature(4)}>
-                <span className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 4 ? "from-[#0d6394] to-[#0d6394] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
+                <span className={`hover:bg-sky-700 w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${currentFeature === 4 ? "from-[#3bc8ff] to-[#3bc8ff] text-white" : "from-gray-400 to-gray-400 text-black"}`}>
                   {getIcon(features[4].icon)}
                 </span>
-                <h3 className={`${currentFeature === 4 ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[4].name}</h3>
+                <h3 className={`${currentFeature === 4 ? "text-white bg-clip-text text-transparent" : "text-gray-400"} text-xs sm:text-base uppercase`}>{features[4].name}</h3>
               </button>
             </div>
             {/* :::feature 6 */}
