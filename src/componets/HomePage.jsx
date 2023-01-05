@@ -44,7 +44,7 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? 5.48 : 4.8}
+        pages={width < 450 ? 5.7 : 4.8}
         style={{
           zIndex: 10,
         }}

@@ -5,7 +5,7 @@ import image2 from "../assets/about-2.jpg";
 const AboutUs = () => {
   return (
     <div className="relative mx-auto py-16 px-4 max-w-7xl md:mt-[20vh] overflow-x-clip">
-      <div className="mx-auto max-w-6xl flex">
+      <div className="mx-auto max-w-6xl flex ">
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
@@ -44,9 +44,9 @@ const AboutUs = () => {
         </div>
 
         {/* :IMAGES CONTAINER */}
-        <div className="absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-3/4 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
+        <div className="bg-gray-900 opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-3/4 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
           {/* ::Image 1 */}
-          <div className="flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
+          <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
             {/* Image goes here */}
             <img
               src={image1}
@@ -55,7 +55,7 @@ const AboutUs = () => {
             />
           </div>
           {/* ::Image 2 */}
-          <div className="flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow opacity- overflow-hidden">
+          <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow opacity- overflow-hidden">
             {/* Image goes here */}
             <img
               src={image2}
