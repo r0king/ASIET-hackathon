@@ -30,7 +30,7 @@ import cloud2 from "../assets/cloud_grp.png";
 const HomePage = () => {
   const { width, height } = useWindowSize();
   // refer parallax
-  console.log(window.offset,height)
+  console.log(window.offset, height);
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
@@ -48,7 +48,6 @@ const HomePage = () => {
         style={{
           zIndex: 10,
         }}
-
       >
         {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
@@ -72,13 +71,6 @@ const HomePage = () => {
         {/* CountDown */}
         <ParallaxLayer offset={0.7} speed={1}>
           <CountDown />
-        </ParallaxLayer>
-        {/* TagLine */}
-        <ParallaxLayer
-          speed={0.8}
-          offset={width < 450 ? (height < 650 ? 0.99 : 0.99) : 0.99}
-        >
-          <Tagline />
         </ParallaxLayer>
         {/* Satlite */}
         <ParallaxLayer
@@ -165,8 +157,12 @@ const HomePage = () => {
         {/* Main Componets */}
         {width > 450 ? (
           <>
+            {/* TagLine */}
+            <ParallaxLayer offset={0.99} speed={0.8}>
+              <Tagline />
+            </ParallaxLayer>
             {/* Sponsors */}
-            <ParallaxLayer offset={0.99} speed={0.9}>
+            <ParallaxLayer offset={0.999} speed={0.9}>
               <Sponsors />
             </ParallaxLayer>
             {/* Poster */}
@@ -197,6 +193,7 @@ const HomePage = () => {
         ) : (
           <>
             <ParallaxLayer offset={0.99} speed={1}>
+              <Tagline />
               <Sponsors />
               <AboutUs />
               <Poster />
