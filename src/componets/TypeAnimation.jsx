@@ -113,6 +113,10 @@ const TypeAnimation = () => {
         <span className="sentences-te16">PRODUCATHON</span>
         <span className="sentences-te16">IDEATHON</span>
         <span className="sentences-te16">GAMETHON</span>
+        <span className="sentences-te16">15 LAKHS</span>
+        <span className="sentences-te16">PRODUCATHON</span>
+        <span className="sentences-te16">IDEATHON</span>
+        <span className="sentences-te16">GAMETHON</span>
         <span className="sentences-te16">HACKATHON</span>
       </span>
       <span id='underscore' className="inline-block relative -top-1.5 left-1.5 font-extrabold bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] text-transparent">&#95;</span>

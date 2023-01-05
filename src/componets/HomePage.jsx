@@ -1,7 +1,7 @@
 import React from "react";
 import HeroTitle from "./HeroTitle";
 
-import scrolImg from "../assets/scrollgif.gif";
+import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
