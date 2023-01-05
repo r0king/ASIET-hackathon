@@ -51,6 +51,7 @@ const HomePage = () => {
       >
         {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
+          {/* <Install/> */}
           <HeroTitle />
         </ParallaxLayer>
         {/* Planet */}
