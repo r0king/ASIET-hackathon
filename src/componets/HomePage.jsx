@@ -15,6 +15,7 @@ import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
+import Install from "./Install";
 // import starsImg from "../assets/stars.svg";
 
 const HomePage = () => {
@@ -48,6 +49,7 @@ const HomePage = () => {
           }}
         /> */}
         <ParallaxLayer speed={0.3} offset={0.1}>
+          {/* <Install/> */}
           <HeroTitle />
         </ParallaxLayer>
 
