@@ -76,23 +76,7 @@ const HomePage = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={1.9} speed={1}>
           <Poster />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={1}>
-          <GameWork />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.8} speed={0.8}>
-          <Faq />
-        </ParallaxLayer>
-        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
-          <Team />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={width < 450 ? 5 : 4.6} speed={0.5}>
-          <Sponsors />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={width < 450 ? 6 : 5} speed={0.2}>
-          <ContactUs />
+       
         </ParallaxLayer>
 
         <ParallaxLayer
