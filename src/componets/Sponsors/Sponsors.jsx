@@ -11,7 +11,7 @@ import partner1 from "../../assets/Sponsors/jyothy.png";
 import "./Sponsors.css";
 export default function Sponsors() {
   return (
-    <div className="mx-auto mt-[20vh] py-10 px-4 w-full max-h-20  text-[#f0f0f0]-800">
+    <div className="mx-auto mt-[20vh] py-10 px-4 w-full  md:max-h-20 max-h-10  text-[#f0f0f0]-800">
       <div className="flex flex-col items-center my-5 space-y-12">
         {/* :TITLE CONTAINER */}
         <div className="mx-auto max-w-6xl space-y-3 text-center">
@@ -30,7 +30,7 @@ export default function Sponsors() {
             <img
               src={logo1}
               alt=""
-              className="w-full max-h-20 object-contain  "
+              className="w-full  md:max-h-20 max-h-10 object-contain  "
             />
           </div>
 
@@ -38,7 +38,7 @@ export default function Sponsors() {
             <img
               src={logo2}
               alt=""
-              className=" w-full max-h-20 object-contain opacity-80 "
+              className=" w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
             />
           </div>
 
@@ -46,7 +46,7 @@ export default function Sponsors() {
             <img
               src={logo3}
               alt=""
-              className="  w-full max-h-20 object-contain opacity-80 "
+              className="  w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
             />
           </div>
 
@@ -54,7 +54,7 @@ export default function Sponsors() {
             <img
               src={logo4}
               alt=""
-              className="  w-full max-h-20 object-contaiimage.pngn opacity-80 "
+              className="  w-full  md:max-h-20 max-h-10 object-contaiimage.pngn opacity-80 "
             />
           </div>
 
@@ -63,19 +63,19 @@ export default function Sponsors() {
             <img
               src={logo5}
               alt=""
-              className="w-full max-h-20 object-contain invert"
+              className="w-full  md:max-h-20 max-h-10 object-contain invert"
             />
           </div>
           <div className="py-12 px-5 flex justify-center logo_bg">
             <img
               src={logo6}
               alt=""
-              className="w-full max-h-20 object-contain  opacity-80 "
+              className="w-full  md:max-h-20 max-h-10 object-contain  opacity-80 "
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center my-5 space-y-12">
+      <div className="flex flex-col items-center my-10 space-y-12">
         {/* :TITLE CONTAINER */}
         <div className="mx-auto max-w-6xl space-y-3 text-center">
           {/* ::Title */}
@@ -91,11 +91,11 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex justify-center logo_bg" >
             <img
               src={partner1}
               alt=""
-              className="w-full max-h-20 object-contain  "
+              className="w-full  md:max-h-20 max-h-10 object-contain  "
             />
           </div>
 
@@ -103,7 +103,7 @@ export default function Sponsors() {
             <img
               src={logo2}
               alt=""
-              className=" w-full max-h-20 object-contain opacity-80 "
+              className=" w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
             />
           </div>
         </div>
