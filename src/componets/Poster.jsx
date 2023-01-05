@@ -1,6 +1,10 @@
 import React from "react";
 import SamPos1 from "../assets/SamplePoster1.jpg";
 import PosterCard from "./PosterCard";
+import xbox from "../assets/Poster/xbox.png";
+import mqueen from "../assets/Poster/mqueen.png";
+import superM from   "../assets/Poster/supermario.png";
+import mcSteeve from "../assets/Poster/minecraft.png";
 
 const Poster = () => {
   const categories = [
@@ -12,6 +16,12 @@ const Poster = () => {
       href: "#link",
       picture: SamPos1,
       pictureAlt: "Description of your picture",
+      front1:superM,
+      front2:xbox,
+      back1:mcSteeve,
+      back2:mqueen,
+      price:"7.5 Lakhs"
+
     },
     {
       id: 1,
@@ -21,6 +31,12 @@ const Poster = () => {
       picture:
         "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
       pictureAlt: "Description of your picture",
+      front1:"",
+      front2:"",
+      back1:"",
+      back2:"",
+      price:"7.5 Lakhs"
+
     },
     {
       id: 2,
@@ -30,6 +46,12 @@ const Poster = () => {
       picture:
         "https://fancytailwind.com/static/lamp1-cd268fab2e874e2255fa2f8c4a9d9b93.jpg",
       pictureAlt: "Description of your picture",
+      front1:"",
+      front2:"",
+      back1:"",
+      back2:"",
+      price:"7.5 Lakhs"
+
     },
   ];
 
@@ -51,7 +73,7 @@ const Poster = () => {
               href={category.href}
               className="col-span-1 md:aspect-w-1 md:aspect-h-2 group relative w-full h-[40rem] md:h-full"
             >
-              <PosterCard id={category.id} />
+              <PosterCard id={category.id} front1={category.front1} front2={category.front2} back1={category.back1} back2={category.back2} name={category.name} tagline={category.tagline} picture={category.picture} pictureAlt={category.pictureAlt} price={category.price} />
             </a>
           ))}
         </div>

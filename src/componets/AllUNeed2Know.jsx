@@ -1,5 +1,5 @@
 import React from "react";
-
+import allUNeed2Know from "../assets/SamplePoster1.jpg";
 const AllUNeed2Know = () => {
   return (
     <section
@@ -84,7 +84,7 @@ const AllUNeed2Know = () => {
           </div>
           <div aria-hidden="true" className="mt-10 lg:mt-0">
             <img
-              src="https://source.unsplash.com/random/360x480"
+              src={allUNeed2Know}
               alt=""
               className="mx-auto bg-gray-500 rounded-lg shadow-lg"
             />

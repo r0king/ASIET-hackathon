@@ -8,11 +8,9 @@ export default class PosterCard extends Component {
     this.state = {
       checked: true,
     };
+    console.log(this.props);
   }
 
-  //  componentDidMount(){
-  //     console.log(this.hover)
-  //  }
   render() {
     return (
       <div>
@@ -43,38 +41,28 @@ export default class PosterCard extends Component {
                     <div className="card-3d-wrapper">
                       <div className="card-front ">
                         <div className="pricing-wrap">
-                          <h4 className="mb-5">Kayaking</h4>
-                          <h2 className="mb-2">
-                            <sup>$</sup>39 / 4<sup>hrs</sup>
-                          </h2>
-                          <p className="mb-4">per person</p>
+                          <h4 className="mb-5">{this.props.price}</h4>
+                          <h2 className="mb-2">{this.props.name}</h2>
+                          <p className="mb-4 p-4">{this.props.tagline}</p>
                           <p className="mb-1">
                             <i className="uil uil-location-pin-alt size-22"></i>
                           </p>
                           <p className="mb-4">Drina, Serbia</p>
-                          <div className="img-wrap img-2">
+                          {/* <div className="img-wrap img-2">
                             <img
                               src="https://assets.codepen.io/1462889/sea.png"
                               alt=""
                             />
-                          </div>
-                          <div className="img-wrap img-1">
+                          </div> */}
+                          <div className="img-wrap img-1 ">
                             <img
-                              src="https://assets.codepen.io/1462889/kayak.png"
+                              src={this.props.front1}
                               alt=""
-                            />
-                          </div>
-                          <div className="img-wrap img-3">
-                            <img
-                              src="https://assets.codepen.io/1462889/water.png"
-                              alt=""
+                              className="max-h-56 object-contain"
                             />
                           </div>
                           <div className="img-wrap img-6">
-                            <img
-                              src="https://assets.codepen.io/1462889/Stone.png"
-                              alt=""
-                            />
+                            <img src={this.props.front2} alt="" />
                           </div>
                         </div>
                       </div>
@@ -89,29 +77,11 @@ export default class PosterCard extends Component {
                             <i className="uil uil-location-pin-alt size-22"></i>
                           </p>
                           <p className="mb-4">Tara, Serbia</p>
-                          <div className="img-wrap img-2">
-                            <img
-                              src="https://assets.codepen.io/1462889/grass.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="img-wrap img-4">
-                            <img
-                              src="https://assets.codepen.io/1462889/camp.png"
-                              alt=""
-                            />
-                          </div>
-                          <div className="img-wrap img-5">
-                            <img
-                              src="https://assets.codepen.io/1462889/Ivy.png"
-                              alt=""
-                            />
+                          <div className="img-wrap img-2 -left-10">
+                            <img src={this.props.back1} alt="" />
                           </div>
                           <div className="img-wrap img-7">
-                            <img
-                              src="https://assets.codepen.io/1462889/IvyRock.png"
-                              alt=""
-                            />
+                            <img src={this.props.back2} alt="" />
                           </div>
                         </div>
                       </div>

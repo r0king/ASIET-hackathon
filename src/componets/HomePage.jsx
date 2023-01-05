@@ -44,7 +44,7 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? 5.7 : 4.8}
+        pages={width < 450 ? (height < 700 ? 8.3 : 5.7) : 4.8}
         style={{
           zIndex: 10,
         }}
@@ -139,20 +139,24 @@ const HomePage = () => {
           />
         </ParallaxLayer>
         {/* College */}
-        <ParallaxLayer
-          speed={0.6}
-          sticky={{
-            start: 3.5,
-            end: 9,
-          }}
-          style={{
-            backgroundImage: `url(${asiet})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            zIndex: -20,
-          }}
-        ></ParallaxLayer>
+        {width > 450 ? (
+          <ParallaxLayer
+            speed={0.6}
+            sticky={{
+              start: 3.5,
+              end: 9,
+            }}
+            style={{
+              backgroundImage: `url(${asiet})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              zIndex: -20,
+            }}
+          ></ParallaxLayer>
+        ) : (
+          <></>
+        )}
 
         {/* Main Componets */}
         {width > 450 ? (
