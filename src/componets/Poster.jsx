@@ -32,7 +32,7 @@ const Poster = () => {
   ]
 
   return (
-    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent">
+    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center h-[100vh]">
 
         {/* :TITLE */}
@@ -42,7 +42,7 @@ const Poster = () => {
 
 
         {/* :NAVIGATION */}
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 rounded-sm overflow-hidden">
+        <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 rounded-sm overflow-hidden ">
           {categories.map(category => (
             <a key={category.id} href={category.href} className="col-span-1 hover:bg-black md:aspect-w-1 md:aspect-h-2 group relative w-full h-52 md:h-full overflow-hidden">
               {/* ::Background Image */}

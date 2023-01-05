@@ -4,7 +4,7 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div className='flex  p-6 justify-center items-center my-40'>
+    <div className='flex  p-6 justify-center items-center md:my-40'>
 
       <div className=" w-[90vw]  bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 text-[#f0f0f0] overflow-hidden">
         <div className="grid grid-cols-6 md:grid-cols-5">

@@ -11,6 +11,7 @@ import { useWindowSize } from "react-use";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
+import AllUNeed2Know from "./AllUNeed2Know";
 import "./animation.css";
 
 // parallax images import here
@@ -113,7 +114,7 @@ const HomePage = () => {
         {/* Cloud 2 */}
         <ParallaxLayer
           offset={width < 450 ? 2.2 : 2.5}
-          speed={width < 450 ? 1.1 : 1.1}
+          speed={width < 450 ? 1.1 : 0.5}
         >
           <img
             src={cloud2}
@@ -123,8 +124,9 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Cloud 3 */}
         <ParallaxLayer
-          offset={width < 450 ? 2.3 : 2.6}
-          speed={width < 450 ? 1.5 : 1.5}
+          offset={width < 450 ? 2.3 : 3}
+          speed={width < 450 ? 1.5 : -0.3}
+          factor={0.3}
         >
           <img
             src={cloud2}
@@ -136,7 +138,7 @@ const HomePage = () => {
         <ParallaxLayer
           speed={0.6}
           sticky={{
-            start: 4.5,
+            start: 3.5,
             end: 6,
           }}
           style={{
@@ -149,20 +151,33 @@ const HomePage = () => {
         ></ParallaxLayer>
 
         {/* Main Componets */}
+
+        {/* Sponsors */}
+        <ParallaxLayer
+          offset={width < 450 ? 0.99 : 0.99}
+          speed={width < 450 ? 1 : 0.9}
+        >
+          <Sponsors />
+        </ParallaxLayer>
+
         {/* About Us */}
-        <ParallaxLayer offset={1} speed={width < 450 ? 1 : 1}>
+        <ParallaxLayer offset={1.4} speed={width < 450 ? 1.7 : 1.3}>
           <AboutUs />
         </ParallaxLayer>
         {/* Poster */}
-        <ParallaxLayer offset={1.9} speed={width < 450 ? 1 : 1}>
+        <ParallaxLayer offset={1.99} speed={width < 450 ? 1 : 1}>
           <Poster />
         </ParallaxLayer>
         {/* GameWorkshop */}
-        <ParallaxLayer offset={2.2} speed={width < 450 ? 1 : 1}>
+        <ParallaxLayer offset={2.4} speed={width < 450 ? 1 : 1}>
           <GameWork />
         </ParallaxLayer>
-        {/* FAQ */}
+        {/* All u need 2 kno */}
         <ParallaxLayer offset={2.8} speed={width < 450 ? 1 : 0.8}>
+          <AllUNeed2Know />
+        </ParallaxLayer>
+        {/* FAQ */}
+        <ParallaxLayer offset={3.3} speed={width < 450 ? 1 : 0.8}>
           <Faq />
         </ParallaxLayer>
         {/* Team
@@ -172,17 +187,10 @@ const HomePage = () => {
         >
           <Team />
         </ParallaxLayer> */}
-        {/* Sponsors */}
-        <ParallaxLayer
-          offset={width < 450 ? 0.99 : 0.99}
-          speed={width < 450 ? 1 : 0.9}
-        >
-          <Sponsors />
-        </ParallaxLayer>
         {/* Contact Us */}
         <ParallaxLayer
-          offset={width < 450 ? 5.5 : 5}
-          speed={width < 450 ? 1 : 0.2}
+          offset={width < 450 ? 5.5 : 4}
+          speed={width < 450 ? 1 : 0.7}
         >
           <ContactUs />
         </ParallaxLayer>
