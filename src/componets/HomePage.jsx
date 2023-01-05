@@ -1,5 +1,7 @@
 import React from "react";
 import HeroTitle from "./HeroTitle";
+
+import scrolImg from "../assets/scrollgif.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
@@ -18,9 +20,7 @@ import "./animation.css";
 import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
 import asiet from "../assets/asiet1.png";
-// import dronImg from "../assets/drone.gif";
 import planetImg from "../assets/planet.png";
-import scrolImg from "../assets/scroll.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
 // import mountainImg from "../assets/mountain.png";
@@ -227,7 +227,7 @@ const HomePage = () => {
           className="flex justify-center "
         >
           <img
-            className="fixed bottom-0 z-20 content-center hidden pt-20 pb-5 m-auto w-14 md:block "
+            className="fixed bottom-0 z-20 content-center hidden w-32 pt-20 pb-5 m-auto md:block "
             src={scrolImg}
             alt="scroll wheel"
           ></img>
