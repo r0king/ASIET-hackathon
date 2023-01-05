@@ -26,7 +26,7 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo1}
               alt=""
@@ -34,7 +34,7 @@ export default function Sponsors() {
             />
           </div>
 
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo2}
               alt=""
@@ -42,7 +42,7 @@ export default function Sponsors() {
             />
           </div>
 
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo3}
               alt=""
@@ -50,7 +50,7 @@ export default function Sponsors() {
             />
           </div>
 
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo4}
               alt=""
@@ -58,7 +58,7 @@ export default function Sponsors() {
             />
           </div>
 
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             {/* logo must be visible */}
             <img
               src={logo5}
@@ -66,7 +66,7 @@ export default function Sponsors() {
               className="w-full  md:max-h-20 max-h-10 object-contain invert"
             />
           </div>
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo6}
               alt=""
@@ -91,7 +91,7 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
-          <div className="py-12 px-5 flex justify-center logo_bg" >
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg" >
             <img
               src={partner1}
               alt=""
@@ -99,7 +99,7 @@ export default function Sponsors() {
             />
           </div>
 
-          <div className="py-12 px-5 flex justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
             <img
               src={logo2}
               alt=""

@@ -44,7 +44,7 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? 6.7 : 6.2}
+        pages={width < 450 ? 7.4 : 4.8}
         style={{
           zIndex: 10,
         }}
@@ -124,9 +124,9 @@ const HomePage = () => {
         </ParallaxLayer>
         {/* Cloud 3 */}
         <ParallaxLayer
-          offset={width < 450 ? 2.3 : 3}
+          offset={width < 450 ? 4 : 3}
           speed={width < 450 ? 1.5 : -0.3}
-          factor={0.3}
+          factor={2}
         >
           <img
             src={cloud2}
@@ -137,10 +137,17 @@ const HomePage = () => {
         {/* College */}
         <ParallaxLayer
           speed={0.6}
-          sticky={{
-            start: 3.5,
-            end: 6,
-          }}
+          sticky={
+            width < 450
+              ? {
+                  start: 5.5,
+                  end: 9,
+                }
+              : {
+                  start: 3.5,
+                  end: 9,
+                }
+          }
           style={{
             backgroundImage: `url(${asiet})`,
             backgroundSize: "100vw 100vh",
@@ -159,6 +166,13 @@ const HomePage = () => {
         >
           <Sponsors />
         </ParallaxLayer>
+        {/* Poster */}
+        <ParallaxLayer
+          offset={width < 450 ? 2 : 1.99}
+          speed={width < 450 ? 1 : 1}
+        >
+          <Poster />
+        </ParallaxLayer>
 
         {/* About Us */}
         <ParallaxLayer
@@ -167,28 +181,27 @@ const HomePage = () => {
         >
           <AboutUs />
         </ParallaxLayer>
-        {/* Poster */}
-        <ParallaxLayer
-          offset={width < 450 ? 2 : 1.99}
-          speed={width < 450 ? 1 : 1}
-        >
-          <Poster />
-        </ParallaxLayer>
         {/* GameWorkshop */}
         <ParallaxLayer
-          offset={width < 450 ? 3 : 2.4}
+          offset={width < 450 ? 4 : 2.4}
           speed={width < 450 ? 1 : 1}
         >
           <GameWork />
         </ParallaxLayer>
         {/* All u need 2 kno */}
-        {/* <ParallaxLayer offset={2.8} speed={width < 450 ? 1 : 0.8}>
+        <ParallaxLayer
+          offset={width < 450 ? 4 : 2.8}
+          speed={width < 450 ? 1 : 0.8}
+        >
           <AllUNeed2Know />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
         {/* FAQ */}
-        {/* <ParallaxLayer offset={3.3} speed={width < 450 ? 1 : 0.8}>
+        <ParallaxLayer
+          offset={width < 450 ? 5.7 : 3.3}
+          speed={width < 450 ? 1 : 0.8}
+        >
           <Faq />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
         {/* Team
         <ParallaxLayer
           offset={width < 450 ? 3.6 : 3.6}
@@ -198,8 +211,11 @@ const HomePage = () => {
         </ParallaxLayer> */}
         {/* Contact Us */}
         <ParallaxLayer
-          offset={width < 450 ? 5.5 : 4}
-          speed={width < 450 ? 1 : 0.7}
+          offset={width < 450 ? 6.5 : 4}
+          speed={width < 450 ? 1 : 1.2}
+          style={{
+            zIndex: 20,
+          }}
         >
           <ContactUs />
         </ParallaxLayer>
