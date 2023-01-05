@@ -7,7 +7,7 @@ const Navbar24 = () => {
 
   return (
 
-    <header className={`w-full bg-transparent text-gray-100 body-font mb-4 shadow-sm fixed z-50 Menu ${isOpen && "bg-black/80"}`}>
+    <header className={`w-full bg-transparent text-gray-100 body-font mb-4 md:px-5  shadow-sm fixed z-50 Menu ${isOpen && "bg-black/80"}`}>
 
       {/* :DESKTOP MENU */}
       <div className=" mx-auto flex justify-end items-center py-2 pl-5">
@@ -23,7 +23,7 @@ const Navbar24 = () => {
       {isOpen &&
         <div className=" w-screen h-screen flex flex-col md:justify-center py-20 px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
 
-          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-[#f0f0f0]/40 hover:text-[#f0f0f0] ">
+          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-white/40  ">
             <div className='line '>
               <div className="slider"></div>
             </div>
@@ -31,7 +31,7 @@ const Navbar24 = () => {
           </a>
 
 
-          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-[#f0f0f0]/40 hover:text-[#f0f0f0] ">
+          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-white/40  ">
             <div className='line'>
               <div className="slider"></div>
             </div>
@@ -39,13 +39,13 @@ const Navbar24 = () => {
           </a>
 
 
-          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-[#f0f0f0]/40 hover:text-[#f0f0f0] ">
+          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-white/40  ">
             <div className='line'>
               <div className="slider"></div>
             </div>FAQs
           </a>
 
-          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-[#f0f0f0]/40 hover:text-[#f0f0f0] ">
+          <a href="#link" className="block px-3 py-3 rounded-md md:text-2xl text-white/40  ">
 
             <div className='line line-shift-right'>
               <div className="slider"></div>
