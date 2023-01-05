@@ -1,5 +1,4 @@
-import React, { useCallback } from "react";
-import AllUNeed2Know from "./AllUNeed2Know";
+import React from "react";
 import HeroTitle from "./HeroTitle";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Faq from "./Faq";
@@ -9,11 +8,10 @@ import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 import { useWindowSize } from "react-use";
-import Team from "./Team";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
-import "./animation.css"
+import "./animation.css";
 
 // parallax images import here
 import satImg from "../assets/satlite.png";
@@ -134,7 +132,6 @@ const HomePage = () => {
             className="scale-80  -ml-28 md:-ml-80  object-cover "
           />
         </ParallaxLayer>
-
         {/* College */}
         <ParallaxLayer
           speed={0.6}
@@ -152,33 +149,41 @@ const HomePage = () => {
         ></ParallaxLayer>
 
         {/* Main Componets */}
-
         {/* About Us */}
-        <ParallaxLayer offset={1} speed={1}>
+        <ParallaxLayer offset={1} speed={width < 450 ? 1 : 1}>
           <AboutUs />
         </ParallaxLayer>
         {/* Poster */}
-        <ParallaxLayer offset={1.9} speed={1}>
+        <ParallaxLayer offset={1.9} speed={width < 450 ? 1 : 1}>
           <Poster />
         </ParallaxLayer>
         {/* GameWorkshop */}
-        <ParallaxLayer offset={2.2} speed={1}>
+        <ParallaxLayer offset={2.2} speed={width < 450 ? 1 : 1}>
           <GameWork />
         </ParallaxLayer>
         {/* FAQ */}
-        <ParallaxLayer offset={2.8} speed={0.8}>
+        <ParallaxLayer offset={2.8} speed={width < 450 ? 1 : 0.8}>
           <Faq />
         </ParallaxLayer>
-        {/* Team */}
-        <ParallaxLayer offset={width < 450 ? 3.6 : 3.6} speed={0.3}>
+        {/* Team
+        <ParallaxLayer
+          offset={width < 450 ? 3.6 : 3.6}
+          speed={width < 450 ? 1 : 0.3}
+        >
           <Team />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         {/* Sponsors */}
-        <ParallaxLayer offset={width < 450 ? 0.99 : 0.99} speed={0.9}>
+        <ParallaxLayer
+          offset={width < 450 ? 0.99 : 0.99}
+          speed={width < 450 ? 1 : 0.9}
+        >
           <Sponsors />
         </ParallaxLayer>
         {/* Contact Us */}
-        <ParallaxLayer offset={width < 450 ? 5.5 : 5} speed={0.2}>
+        <ParallaxLayer
+          offset={width < 450 ? 5.5 : 5}
+          speed={width < 450 ? 1 : 0.2}
+        >
           <ContactUs />
         </ParallaxLayer>
         {/* Scroll bar */}

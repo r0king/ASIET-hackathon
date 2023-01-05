@@ -1,7 +1,6 @@
 
 import React from 'react'
 import SamPos1 from '../assets/SamplePoster1.jpg'
-import PosterCard from './PosterCard'
 
 const Poster = () => {
 
