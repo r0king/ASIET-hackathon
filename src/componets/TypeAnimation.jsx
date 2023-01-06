@@ -98,22 +98,22 @@ const TypeAnimation = () => {
         transformStyle: "preserve-3d",
       }}
       className="relative font-extrabold bg-clip-text bg-gradient-to-br from-pc to-sc text-transparent"
-    >
+    > 
+    <span className='invisible'>
+      &#95;
+      
+    </span>
       <span id="text" className="invisible w-44 align-top">
         <span className="sentences-te16">HACKATHON</span>
-        <span className="sentences-te16">15 LAKHS</span>
         <span className="sentences-te16">PRODUCATHON</span>
         <span className="sentences-te16">IDEATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">15 LAKHS</span>
         <span className="sentences-te16">PRODUCATHON</span>
         <span className="sentences-te16">IDEATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">15 LAKHS</span>
         <span className="sentences-te16">PRODUCATHON</span>
         <span className="sentences-te16">IDEATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">15 LAKHS</span>
         <span className="sentences-te16">PRODUCATHON</span>
         <span className="sentences-te16">IDEATHON</span>
         <span className="sentences-te16">GAMETHON</span>

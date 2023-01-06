@@ -84,7 +84,10 @@ const Faq = () => {
         <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
           {/* ::Title */}
           <div className="text-4xl md:text-5xl lg:text-6xl">
-            Frequently Asked Questions
+            <span className="text-[var(--primary-color)]">
+              Frequently Asked{" "}
+            </span>
+            Questions
           </div>
           {/* ::Accordion Panel */}
           <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll z-10">
@@ -102,10 +105,10 @@ const Faq = () => {
                         <QuestionMarkCircleIcon
                           className={`${
                             open && "text-[#f0f0f0]"
-                          } flex-shrink-0 mr-2 w-5 h-5 text-gray-600 group-hover:text-[#f0f0f0]`}
+                          } flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
                           aria-hidden="true"
                         />
-                        <span className="mr-auto text-base text-left font-semibold transition duration-150 ease-in transform group-hover:translate-x-2">
+                        <span className="mr-auto text-base text-left transition duration-150 ease-in transform group-hover:translate-x-2">
                           {faq.question}
                         </span>
                         <ChevronDownIcon

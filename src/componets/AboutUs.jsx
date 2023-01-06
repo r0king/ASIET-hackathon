@@ -9,12 +9,12 @@ const AboutUs = () => {
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-lg text-gray-400 font-semibold uppercase tracking-wide">
+          <p className="text-lg text-gray-400 font-bold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
           <h2 className="mb-8 text-3xl sm:text-3xl text-gray-100 font-bold capitalize">
-            <span className="text-pc">About Our</span>{" "}
+            <span className="text-[var(--primary-color)]">About Our</span>{" "}
             <span className="text-sc">Institute</span>
           </h2>
           {/* Content goes here */}
@@ -28,11 +28,11 @@ const AboutUs = () => {
             corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
           </p>
           {/* ::Button */}
-          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-sc to-pc bg-clip-text active:top-0.5 focus:outline-none">
+          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-sc to-[var(--primary-color)] bg-clip-text active:top-0.5 focus:outline-none">
             Know More
             {/* button::before */}
             <span
-              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-pc transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
+              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-[var(--primary-color)] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
               aria-hidden="true"
             />
             {/* button::after */}

@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      "pc": "var(--primary-color)",
-      "sc": "var(--secondary-color)"
+      "pc": "var(--gradient-primary)",
+      "sc": "var(--gradient-secondary)"
     },
 
       fontFamily: {

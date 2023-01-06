@@ -12,7 +12,7 @@ const AllUNeed2Know = () => {
       <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">
-            ALL U NEED 2 KNOW
+            ALL <span className="text-[var(--primary-color)]">U NEED 2 KNOW</span>
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400">
             Quando cetero his ne, eum admodum sapientem ut.
@@ -20,7 +20,7 @@ const AllUNeed2Know = () => {
         </div>
         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-50">
+            <h3 className="text-2xl  tracking-tight sm:text-3xl text-gray-50">
               Ad vix debet docendi
             </h3>
             <p className="mt-3 text-lg text-gray-400">
@@ -31,7 +31,7 @@ const AllUNeed2Know = () => {
             <div className="mt-12 space-y-12">
               <div className="flex">
                 <div className="flex-shrink-0"></div>
-                <div className="ml-4">
+                <div className="ml-4 lg:ml-14">
                   <h4 className="text-lg font-medium leading-6 text-gray-50">
                     Per ei quaeque sensibus
                   </h4>
@@ -48,7 +48,7 @@ const AllUNeed2Know = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0"></div>
-                <div className="ml-4">
+                <div className="ml-4 lg:ml-14">
                   <h4 className="text-lg font-medium leading-6 text-gray-50">
                     Cu imperdiet posidonium sed
                   </h4>
@@ -65,7 +65,7 @@ const AllUNeed2Know = () => {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0"></div>
-                <div className="ml-4">
+                <div className="ml-4 lg:ml-14">
                   <h4 className="text-lg font-medium leading-6 text-gray-50">
                     Nulla omittam sadipscing mel ne
                   </h4>

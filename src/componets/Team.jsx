@@ -55,7 +55,7 @@ const Team = () => {
     <svg width={200} height={600} fill="none" viewBox="0 0 200 600" aria-hidden="true">
       <defs>
         <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x={0} y={0} width={40} height={40} patternUnits="userSpaceOnUse">
-          <rect x={0} y={0} width={5} height={5} className="text-pc" fill="currentColor" />
+          <rect x={0} y={0} width={5} height={5} className="text-[var(--primary-color)]" fill="currentColor" />
         </pattern>
       </defs>
       <rect width={200} height={600} fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
@@ -68,7 +68,7 @@ const Team = () => {
 
         {/* :TITLE CONTAINER */}
         <h2 className="mb-6 text-lg text-[#f0f0f0] font-semibold uppercase tracking-widest">
-          <span className="text-pc">Who </span> are we?
+          <span className="text-[var(--primary-color)]">Who </span> are we?
         </h2>
 
 
@@ -80,13 +80,13 @@ const Team = () => {
                 {/* ::Inner container */}
                 <div className={`group z-10 relative ${index % 2 === 0 ? "bottom-3" : "top-3"} w-full h-full inline-flex flex-col justify-center transition-all duration-300 ease-in transform hover:translate-y-3`}>
                   {/* :::top selector line */}
-                  <span className="z-20 absolute -top-16 left-1/2 w-0.5 h-10 bg-pc bg-opacity-40 opacity-0 transition-all duration-150 ease-out transform -translate-x-1/2 group-hover:translate-y-10 group-hover:opacity-100" />
+                  <span className="z-20 absolute -top-16 left-1/2 w-0.5 h-10 bg-[var(--primary-color)] bg-opacity-40 opacity-0 transition-all duration-150 ease-out transform -translate-x-1/2 group-hover:translate-y-10 group-hover:opacity-100" />
                   {/* :::picture */}
                   <div className="z-10 mb-1 w-full aspect-w-4 aspect-h-6">
                     <img className="object-cover rounded-sm shadow-md filter saturate-0 brightness-50 group-hover:brightness-100" src={person.picture} alt="" />
                   </div>
                   {/* :::name */}
-                  <h3 className="text-sm text-pc font-bold uppercase tracking-wider transition-all duration-300 transform -translate-y-20 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.name}</h3>
+                  <h3 className="text-sm text-[var(--primary-color)] font-bold uppercase tracking-wider transition-all duration-300 transform -translate-y-20 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.name}</h3>
                   {/* :::role */}
                   <span className="text-xs text-[#f0f0f0] font-semibold transition-all duration-500 transform -translate-y-40 opacity-0 group-hover:-translate-y-0 group-hover:opacity-100">{person.role}</span>
                 </div>

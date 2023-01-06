@@ -67,7 +67,7 @@ const HomePage = () => {
           <img
             src={planetGif}
             alt="planet"
-            className="absolute z-10 w-[100vw] md:w-[80vw] object-cover "
+            className="absolute z-10 w-[100vw] md:w-[80vw] object-cover lg:ml-20"
           />
         </ParallaxLayer>
         {/* CountDown */}
