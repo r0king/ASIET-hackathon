@@ -61,7 +61,7 @@ const HomePage = () => {
           offset={0.55}
           factor={1.5}
           speed={1}
-          className="flex justify-center "
+          className="flex justify-center opacity-60"
         >
           {/* transparent gif */}
           <img
@@ -79,7 +79,7 @@ const HomePage = () => {
           offset={width < 450 ? (height < 650 ? 1.2 : 1.2) : 1.3}
           speed={width < 450 ? (height < 650 ? 0.01 : 0.01) : 0.01}
           factor={2}
-          className="transition-all duration-500 ease-in-out"
+          className="transition-all duration-500 ease-in-out opacity-40"
         >
           <img
             src={satImg}
@@ -95,7 +95,7 @@ const HomePage = () => {
           <img
             src={moonImg}
             alt="Moon"
-            className="scale-[2] md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover "
+            className="scale-[2] md:scale-75 ml-[50vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] object-cover opacity-40"
           />
         </ParallaxLayer>
         {/* Moon Shadow */}
@@ -104,7 +104,7 @@ const HomePage = () => {
           speed={0.1}
           className="flex  md:scale-75 justify-end"
         >
-          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.75)] rounded-full blur-md bg-black opacity-50"></div>
+          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-black opacity-50"></div>
         </ParallaxLayer>
         {/* Cloud 1*/}
         <ParallaxLayer
@@ -114,7 +114,7 @@ const HomePage = () => {
           <img
             src={cloud1}
             alt="clouds"
-            className="scale-80 ml-32 md:ml-96 object-cover "
+            className="scale-80 ml-32 md:ml-96 object-cover opacity-40"
           />
         </ParallaxLayer>
         {/* Cloud 2 */}
@@ -125,7 +125,7 @@ const HomePage = () => {
           <img
             src={cloud2}
             alt="clouds"
-            className="scale-80  ml-10 md:ml-72 object-cover "
+            className="scale-80  ml-10 md:ml-72 object-cover opacity-40"
           />
         </ParallaxLayer>
         {/* Cloud 3 */}
@@ -137,7 +137,7 @@ const HomePage = () => {
           <img
             src={cloud2}
             alt="clouds"
-            className="scale-80  -ml-28 md:-ml-80  object-cover "
+            className="scale-80  -ml-28 md:-ml-80  object-cover opacity-40"
           />
         </ParallaxLayer>
         {/* College */}
@@ -154,6 +154,7 @@ const HomePage = () => {
             backgroundPosition: "center",
             zIndex: -20,
           }}
+          className="opacity-40"
         ></ParallaxLayer>
 
         {/* Main Componets */}
