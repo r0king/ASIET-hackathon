@@ -44,7 +44,9 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={width < 450 ? (height < 700 ? 8.3 : 5.7) : 4.8}
+        pages={
+          width < 450 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
+        }
         style={{
           zIndex: 10,
         }}
@@ -139,75 +141,34 @@ const HomePage = () => {
           />
         </ParallaxLayer>
         {/* College */}
-        {width > 450 ? (
-          <ParallaxLayer
-            speed={0.6}
-            sticky={{
-              start: 3.5,
-              end: 9,
-            }}
-            style={{
-              backgroundImage: `url(${asiet})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              zIndex: -20,
-            }}
-          ></ParallaxLayer>
-        ) : (
-          <></>
-        )}
+        <ParallaxLayer
+          speed={0.6}
+          sticky={{
+            start: 3.5,
+            end: 9,
+          }}
+          style={{
+            backgroundImage: `url(${asiet})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            zIndex: -20,
+          }}
+        ></ParallaxLayer>
 
         {/* Main Componets */}
-        {width > 450 ? (
-          <>
-            {/* TagLine */}
-            <ParallaxLayer offset={0.99} speed={0.8}>
-              <Tagline />
-            </ParallaxLayer>
-            {/* Sponsors */}
-            <ParallaxLayer offset={0.999} speed={0.9}>
-              <Sponsors />
-            </ParallaxLayer>
-            {/* Poster */}
-            <ParallaxLayer offset={1.99} speed={1}>
-              <Poster />
-            </ParallaxLayer>
-            {/* About Us */}
-            <ParallaxLayer offset={1.4} speed={1.3}>
-              <AboutUs />
-            </ParallaxLayer>
-            {/* GameWorkshop */}
-            <ParallaxLayer offset={2.4} speed={1}>
-              <GameWork />
-            </ParallaxLayer>
-            {/* All u need 2 kno */}
-            <ParallaxLayer offset={2.8} speed={0.8}>
-              <AllUNeed2Know />
-            </ParallaxLayer>
-            {/* FAQ */}
-            <ParallaxLayer offset={3.3} speed={0.8}>
-              <Faq />
-            </ParallaxLayer>
-            {/* Contact Us */}
-            <ParallaxLayer offset={4} speed={1.2} style={{ zIndex: 20 }}>
-              <ContactUs />
-            </ParallaxLayer>
-          </>
-        ) : (
-          <>
-            <ParallaxLayer offset={0.99} speed={1}>
-              <Tagline />
-              <Sponsors />
-              <AboutUs />
-              <Poster />
-              <GameWork />
-              <AllUNeed2Know />
-              <Faq />
-              <ContactUs />
-            </ParallaxLayer>
-          </>
-        )}
+        <>
+          <ParallaxLayer offset={0.99} speed={1}>
+            <Tagline />
+            <Sponsors />
+            <AboutUs />
+            <Poster />
+            <GameWork />
+            <AllUNeed2Know />
+            <Faq />
+            <ContactUs />
+          </ParallaxLayer>
+        </>
         {/* Scroll bar */}
         <ParallaxLayer
           factor={0.5}
