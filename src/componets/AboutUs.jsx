@@ -9,7 +9,7 @@ const AboutUs = () => {
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-lg text-gray-400 font-bold uppercase tracking-wide">
+          <p className="text-lg pt-10 md:pt-0 text-gray-400 font-bold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
@@ -18,7 +18,7 @@ const AboutUs = () => {
             <span className="text-sc">Institute</span>
           </h2>
           {/* Content goes here */}
-          <p className="text-lg"> 
+          <p className="text-lg text-justify p-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             explicabo assumenda consequatur nam? Blanditiis, nesciunt vitae.
             Praesentium, quam iusto tenetur quaerat optio quasi at maiores
@@ -28,16 +28,24 @@ const AboutUs = () => {
             corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
           </p>
           {/* ::Button */}
-          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-sc to-[var(--primary-color)] bg-clip-text active:top-0.5 focus:outline-none">
-            Know More
-            {/* button::before */}
+          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 shadow-inset rounded shadow-lg outline-none bg-[var(--primary-color)] text-white font-medium transition-all duration-200 ease-out hover:text-[var(--primary-color)] hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none">
+            {/* span::before */}
             <span
-              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-[var(--primary-color)] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
+              className="absolute h-0 w-0.5 right-0 top-0 bg-[var(--primary-color)] transition-all duration-500 ease-out group-hover:h-full"
               aria-hidden="true"
             />
-            {/* button::after */}
             <span
-              className="absolute bottom-1 left-1 w-1/4 h-1/4 border-2 border-t-0 border-r-0 border-sc transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
+              className="absolute left-0 bottom-0 bg-[var(--primary-color)] transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
+              aria-hidden="true"
+            />
+            Know More
+            {/* span::after */}
+            <span
+              className="absolute left-0 bottom-0 bg-[var(--primary-color)] transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
+              aria-hidden="true"
+            />
+            <span
+              className="absolute w-0 h-0.5 right-0 top-0 bg-[var(--primary-color)] transition-all duration-500 ease-out group-hover:w-full"
               aria-hidden="true"
             />
           </button>
