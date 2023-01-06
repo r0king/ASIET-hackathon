@@ -7,7 +7,7 @@ export default class HeroTitle extends Component {
     this.element = React.createRef();
     this.observer = null;
     this.textRef = React.createRef();
-  } 
+  }
 
   componentDidMount() {
     this.observer = new IntersectionObserver((entries) => {
@@ -32,9 +32,13 @@ export default class HeroTitle extends Component {
             fontFamily: "Azonix",
             transformStyle: "preserve-3d",
           }}
-          className="text-4xl p-1 md:max-w-[70vw] sm:text-6xl  xl:text-8xl text-center bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] font-extrabold"
+          className="text-4xl p-1 md:max-w-[70vw] sm:text-6xl  xl:text-8xl text-center bg-clip-text bg-gradient-to-br from-pc to-sc font-extrabold"
         >
-          <span className="text-transparent">ADI SHANKARA </span><span ref={this.textRef}><TypeAnimation/></span><span className="text-transparent">2K23</span>
+          <span className="text-transparent">ADI SHANKARA </span>
+          <span ref={this.textRef}>
+            <TypeAnimation />
+          </span>
+          <span className="text-transparent">2K23</span>
         </h1>
       </div>
     );

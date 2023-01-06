@@ -97,7 +97,7 @@ const TypeAnimation = () => {
         fontFamily: "Azonix",
         transformStyle: "preserve-3d",
       }}
-      className="relative font-extrabold bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] text-transparent"
+      className="relative font-extrabold bg-clip-text bg-gradient-to-br from-pc to-sc text-transparent"
     >
       <span id="text" className="invisible w-44 align-top">
         <span className="sentences-te16">HACKATHON</span>
@@ -119,7 +119,7 @@ const TypeAnimation = () => {
         <span className="sentences-te16">GAMETHON</span>
         <span className="sentences-te16">HACKATHON</span>
       </span>
-      <span id='underscore' className="inline-block relative -top-1.5 left-1.5 font-extrabold bg-clip-text bg-gradient-to-br from-[#ADB1C7] to-[#452308] text-transparent">&#95;</span>
+      <span id='underscore' className="inline-block relative -top-1.5 left-1.5 font-extrabold bg-clip-text bg-gradient-to-br from-sc to-sc text-transparent">&#95;</span>
     </h1>
   )
 }

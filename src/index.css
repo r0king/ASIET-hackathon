@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --primary-color: #005AA7;
+  --secondary-color: #FFFDE4;
+}
 /* *{
   outline: 3px solid limegreen !important;
 } */

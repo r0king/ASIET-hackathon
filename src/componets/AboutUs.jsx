@@ -14,8 +14,8 @@ const AboutUs = () => {
           </p>
           {/* ::Title */}
           <h2 className="mb-8 text-3xl sm:text-3xl text-gray-100 font-bold capitalize">
-            <span className="text-[#0D6394]">About Our</span>{" "}
-            <span className="text-[f0f0f0]">Institute</span>
+            <span className="text-pc">About Our</span>{" "}
+            <span className="text-sc">Institute</span>
           </h2>
           {/* Content goes here */}
           <p className="text-lg"> 
@@ -28,16 +28,16 @@ const AboutUs = () => {
             corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
           </p>
           {/* ::Button */}
-          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-[f0f0f0] to-[#0D6394] bg-clip-text active:top-0.5 focus:outline-none">
+          <button className="group my-5 text-lg relative px-6 py-4 bg-gradient-to-br from-sc to-pc bg-clip-text active:top-0.5 focus:outline-none">
             Know More
             {/* button::before */}
             <span
-              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-[#0D6394] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
+              className="absolute top-1 right-1 w-1/4 h-1/4 border-2 border-b-0 border-l-0 border-pc transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
               aria-hidden="true"
             />
             {/* button::after */}
             <span
-              className="absolute bottom-1 left-1 w-1/4 h-1/4 border-2 border-t-0 border-r-0 border-[f0f0f0] transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
+              className="absolute bottom-1 left-1 w-1/4 h-1/4 border-2 border-t-0 border-r-0 border-sc transition-all duration-500 rounded-sm group-hover:w-full group-hover:h-full"
               aria-hidden="true"
             />
           </button>

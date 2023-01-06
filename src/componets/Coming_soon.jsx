@@ -11,8 +11,8 @@ const ComingSoon = () => {
 
         {/* :TEXT BACKGROUND */}
         <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-          <p className="text-4xl font-extrabold text-center text-[#0D6394] text-opacity-40 sm:text-6xl md:text-7xl">Great Things</p>
-          <p className="font-black tracking-widest text-center text-[#0D6394] text-opacity-40 uppercase text-8xl sm:text-10xl md:text-12xl">Take Time</p>
+          <p className="text-4xl font-extrabold text-center text-pc text-opacity-40 sm:text-6xl md:text-7xl">Great Things</p>
+          <p className="font-black tracking-widest text-center text-pc text-opacity-40 uppercase text-8xl sm:text-10xl md:text-12xl">Take Time</p>
         </div>
 
 

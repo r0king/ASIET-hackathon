@@ -61,7 +61,7 @@ const Poster = () => {
         {/* :TITLE */}
         <h2 className="relative m-4 md:w-16 lg:w-24 flex justify-center text-xl lg:text-3xl text-gray-400 font-bold uppercase tracking-widest whitespace-nowrap origin-center transform md:-rotate-90 hover:text-gray-700">
           <a href="#allCategoryLink">
-            All <span className="text-[#0D6394]">Category</span>
+            All <span className="text-pc">Category</span>
           </a>
         </h2>
 
