@@ -2,9 +2,13 @@ import React from "react";
 import SamPos1 from "../assets/SamplePoster1.jpg";
 import PosterCard from "./PosterCard";
 import xbox from "../assets/Poster/xbox.png";
-import mqueen from "../assets/Poster/mqueen.png";
+import Ps from "../assets/Poster/ps5.png";
 import superM from   "../assets/Poster/supermario.png";
 import mcSteeve from "../assets/Poster/minecraft.png";
+import rocket from "../assets/Poster/rocket.png"
+import drone from "../assets/Poster/drone2.png"
+import idea from "../assets/Poster/Idea.png"
+import vr from "../assets/Poster/ARVR.png"
 
 const Poster = () => {
   const categories = [
@@ -16,10 +20,10 @@ const Poster = () => {
       href: "#link",
       picture: SamPos1,
       pictureAlt: "Description of your picture",
-      front1:superM,
-      front2:xbox,
-      back1:mcSteeve,
-      back2:mqueen,
+      front1:vr,
+      front2:drone,
+      back1:"",
+      back2:"",
       price:"7.5 Lakhs"
 
     },
@@ -31,10 +35,10 @@ const Poster = () => {
       picture:
         "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
       pictureAlt: "Description of your picture",
-      front1:"",
-      front2:"",
-      back1:"",
-      back2:"",
+      front1:superM,
+      front2:xbox,
+      back1:mcSteeve,
+      back2:Ps,
       price:"7.5 Lakhs"
 
     },
@@ -46,7 +50,7 @@ const Poster = () => {
       picture:
         "https://fancytailwind.com/static/lamp1-cd268fab2e874e2255fa2f8c4a9d9b93.jpg",
       pictureAlt: "Description of your picture",
-      front1:"",
+      front1:idea,
       front2:"",
       back1:"",
       back2:"",
