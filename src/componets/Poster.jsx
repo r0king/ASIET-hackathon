@@ -9,6 +9,8 @@ import rocket from "../assets/Poster/rocket.png"
 import drone from "../assets/Poster/drone2.png"
 import idea from "../assets/Poster/Idea.png"
 import vr from "../assets/Poster/ARVR.png"
+import boy from "../assets/Poster/boy.png"
+
 
 const Poster = () => {
   const categories = [
@@ -52,7 +54,7 @@ const Poster = () => {
       pictureAlt: "Description of your picture",
       front1:idea,
       front2:"",
-      back1:"",
+      back1:boy,
       back2:"",
       price:"7.5 Lakhs"
 
