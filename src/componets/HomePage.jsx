@@ -178,7 +178,7 @@ const HomePage = () => {
           className="flex justify-center "
         >
           <img
-            className="fixed bottom-0 z-20 content-center hidden w-32 pt-20 pb-5 m-auto md:block "
+            className="fixed bottom-0 z-20 content-center hidden w-32 pt-24 pb-1 m-auto md:block "
             src={scrolImg}
             alt="scroll wheel"
           ></img>
