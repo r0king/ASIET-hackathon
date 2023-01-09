@@ -1,11 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --primary-color: #0d6394;
+  --secondary-color: #f0f0f0;
+  --gradient-primary: #e0eafc;
+  --gradient-secondary: #cfdef3;
+}
 /* *{
   outline: 3px solid limegreen !important;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200&family=Roboto+Slab:wght@700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -13,9 +21,13 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
 }
 
 code {
@@ -31,8 +43,7 @@ code {
   background: black;
   z-index: 1;
   position: fixed;
- }
- 
+}
 
 @layer utilities {
   .transform-letter-te7 {
@@ -52,13 +63,53 @@ code {
   }
 
   .transform-bgr1-s1 {
-    transform:rotatez(45deg) translate(6px,1px);
+    transform: rotatez(45deg) translate(6px, 1px);
   }
   .transform-bgr1-s2 {
-    transform:rotatez(-45deg);
+    transform: rotatez(-45deg);
   }
   .transform-bgr1-s3 {
-    width:50%;
-    transform: translate(2px,-14px) rotatez(45deg);
+    width: 50%;
+    transform: translate(2px, -14px) rotatez(45deg);
+  }
+}
+
+@layer utilities {
+  .shadow-inset {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  @variants hover {
+    .shadow-btn34-h7 {
+      box-shadow: 0 0 5px #5dea8c, 0 0 25px #5dea8c, 0 0 50px #5dea8c,
+        0 0 100px #5dea8c;
+    }
+  }
+  .transform-after-the3 {
+    transform: translate3d(101%,0,0);
+  }
+  @variants group-hover {
+    .transform-h-after-the3 {
+      transform: translate3d(0,0,0);
+    }
+  }
+  .shadow-text5 {
+    text-shadow: -15px 5px 20px #ced0d3;
+    }
+  @variants hover {
+    .shadow-h-text5 {
+      text-shadow: -16px 6px 15px #ced0d3;
+    }
+  }
+}
+@font-face {
+  font-family: "Clip";
+  src: url("../src/fonts/Clip.ttf") format("truetype");
+}
+@layer utilities {
+  .text-shadow-te6 {
+    text-shadow: 0 0 0.6rem #e2dcc8, 0 0 1.5rem #f1f1f1,
+      -0.2rem 0.1rem 1rem #f1f1f1, 0.2rem 0.1rem 1rem #f1f1f1,
+      0 -0.5rem 2rem #e2dcc8, 0 0.5rem 3rem #e2dcc8;
   }
 }
