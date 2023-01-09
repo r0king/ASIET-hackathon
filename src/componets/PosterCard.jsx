@@ -47,13 +47,6 @@ export default class PosterCard extends Component {
                           <p className="mb-1">
                             <i className="uil uil-location-pin-alt size-22"></i>
                           </p>
-                          <p className="mb-4">Drina, Serbia</p>
-                          {/* <div className="img-wrap img-2">
-                            <img
-                              src="https://assets.codepen.io/1462889/sea.png"
-                              alt=""
-                            />
-                          </div> */}
                           <div className="img-wrap img-1 ">
                             <img
                               src={this.props.front1}

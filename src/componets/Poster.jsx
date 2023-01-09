@@ -3,12 +3,12 @@ import SamPos1 from "../assets/SamplePoster1.jpg";
 import PosterCard from "./PosterCard";
 import xbox from "../assets/Poster/xbox.png";
 import Ps from "../assets/Poster/ps5.png";
-import superM from   "../assets/Poster/supermario.png";
+import superM from "../assets/Poster/supermario.png";
 import mcSteeve from "../assets/Poster/minecraft.png";
-import rocket from "../assets/Poster/rocket.png"
-import drone from "../assets/Poster/drone2.png"
-import idea from "../assets/Poster/Idea.png"
-import vr from "../assets/Poster/ARVR.png"
+import rocket from "../assets/Poster/rocket.png";
+import drone from "../assets/Poster/drone2.png";
+import idea from "../assets/Poster/Idea.png";
+import vr from "../assets/Poster/ARVR.png";
 
 const Poster = () => {
   const categories = [
@@ -20,42 +20,44 @@ const Poster = () => {
       href: "#link",
       picture: SamPos1,
       pictureAlt: "Description of your picture",
-      front1:vr,
-      front2:drone,
-      back1:"",
-      back2:"",
-      price:"7.5 Lakhs"
-
+      front1: vr,
+      
+      front2: drone,
+      back1: "",
+      back2: "",
+      price: "7.5 Lakhs",
     },
     {
       id: 1,
       name: "Gameathon",
-      tagline: 159,
+      tagline:
+        "Gameathon is also a 24hrs Hackathon event, where students will receive hybrid mentoring bootcamp in Unity Game Development. In addition, they can build their own creative games or startup products through games with the support of TiltLabs Consultancy Services Pvt Ltd and JITF Banglore.",
       href: "#link",
       picture:
         "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
       pictureAlt: "Description of your picture",
-      front1:superM,
-      front2:xbox,
-      back1:mcSteeve,
-      back2:Ps,
-      price:"7.5 Lakhs"
-
+      front1: superM,
+      
+      front2: xbox,
+      back1: mcSteeve,
+      back2: Ps,
+      price: "5.5 Lakhs",
     },
     {
       id: 2,
       name: "Ideathon",
-      tagline: 17,
+      tagline:
+        "Ideathon is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
       href: "#link",
       picture:
         "https://fancytailwind.com/static/lamp1-cd268fab2e874e2255fa2f8c4a9d9b93.jpg",
       pictureAlt: "Description of your picture",
-      front1:idea,
-      front2:"",
-      back1:"",
-      back2:"",
-      price:"7.5 Lakhs"
-
+      front1: idea,
+      
+      front2: "",
+      back1: "",
+      back2: "",
+      price: "3.5 Lakhs",
     },
   ];
 
@@ -77,7 +79,18 @@ const Poster = () => {
               href={category.href}
               className="col-span-1 md:aspect-w-1 md:aspect-h-2 group relative w-full h-[40rem] md:h-full"
             >
-              <PosterCard id={category.id} front1={category.front1} front2={category.front2} back1={category.back1} back2={category.back2} name={category.name} tagline={category.tagline} picture={category.picture} pictureAlt={category.pictureAlt} price={category.price} />
+              <PosterCard
+                id={category.id}
+                front1={category.front1}
+                front2={category.front2}
+                back1={category.back1}
+                back2={category.back2}
+                name={category.name}
+                tagline={category.tagline}
+                picture={category.picture}
+                pictureAlt={category.pictureAlt}
+                price={category.price}
+              />
             </a>
           ))}
         </div>
