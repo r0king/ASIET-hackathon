@@ -6,8 +6,8 @@
 :root {
   --primary-color: #0d6394;
   --secondary-color: #f0f0f0;
-  --gradient-primary: #9CECFB;
-  --gradient-secondary: #0052D4;
+  --gradient-primary: #e0eafc;
+  --gradient-secondary: #cfdef3;
 }
 /* *{
   outline: 3px solid limegreen !important;
