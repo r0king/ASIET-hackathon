@@ -49,7 +49,6 @@ const HomePage = () => {
       pages = 4.6;
     }
   }
-  alert(pages);
   return (
     <div className="bg-black">
       <Menu />
