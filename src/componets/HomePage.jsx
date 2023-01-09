@@ -31,7 +31,6 @@ import PrizeMoney from "./PrizeMoney";
 const HomePage = () => {
   const { width, height } = useWindowSize();
   // refer parallax
-  console.log(window.offset, height);
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";

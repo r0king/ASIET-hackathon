@@ -8,7 +8,6 @@ export default class PosterCard extends Component {
     this.state = {
       checked: true,
     };
-    console.log(this.props);
   }
 
   render() {
