@@ -34,6 +34,22 @@ const HomePage = () => {
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
+  // let pages = width < 450 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
+  let pages = 0;
+  if (width < 450) {
+    if (height < 750) {
+      pages = 8;
+    } else {
+      pages = 5.8;
+    }
+  } else {
+    if (height < 750) {
+      pages = 5.5;
+    } else {
+      pages = 4.6;
+    }
+  }
+  alert(pages);
   return (
     <div className="bg-black">
       <Menu />
@@ -44,9 +60,7 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Parallax
-        pages={
-          width < 450 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
-        }
+        pages={pages}
         style={{
           zIndex: 10,
         }}
