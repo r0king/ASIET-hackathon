@@ -6,8 +6,8 @@
 :root {
   --primary-color: #0d6394;
   --secondary-color: #f0f0f0;
-  --gradient-primary: #9CECFB;
-  --gradient-secondary: #0052D4;
+  --gradient-primary: #e0eafc;
+  --gradient-secondary: #cfdef3;
 }
 /* *{
   outline: 3px solid limegreen !important;
@@ -83,6 +83,22 @@ code {
     .shadow-btn34-h7 {
       box-shadow: 0 0 5px #5dea8c, 0 0 25px #5dea8c, 0 0 50px #5dea8c,
         0 0 100px #5dea8c;
+    }
+  }
+  .transform-after-the3 {
+    transform: translate3d(101%,0,0);
+  }
+  @variants group-hover {
+    .transform-h-after-the3 {
+      transform: translate3d(0,0,0);
+    }
+  }
+  .shadow-text5 {
+    text-shadow: -15px 5px 20px #ced0d3;
+    }
+  @variants hover {
+    .shadow-h-text5 {
+      text-shadow: -16px 6px 15px #ced0d3;
     }
   }
 }

@@ -23,6 +23,7 @@ import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
+import PrizeMoney from "./PrizeMoney";
 // import mountainImg from "../assets/mountain.png";
 // import landScapeImg from "../assets/landscape.png";
 // import asietImg from "../assets/asiet.png";
@@ -52,6 +53,10 @@ const HomePage = () => {
         }}
       >
         {/* Main Title */}
+        <ParallaxLayer speed={3} offset={0.1}>
+          {/* <Install/> */}
+          <PrizeMoney />
+        </ParallaxLayer>
         <ParallaxLayer speed={0.3} offset={0.1}>
           {/* <Install/> */}
           <HeroTitle />
@@ -61,7 +66,7 @@ const HomePage = () => {
           offset={0.55}
           factor={1.5}
           speed={1}
-          className="flex justify-center "
+          className="flex justify-center"
         >
           {/* transparent gif */}
           <img
@@ -178,7 +183,7 @@ const HomePage = () => {
           className="flex justify-center "
         >
           <img
-            className="fixed bottom-0 z-20 content-center hidden w-32 pt-20 pb-5 m-auto md:block "
+            className="fixed bottom-0 z-20 content-center hidden w-32 pt-24 pb-1 m-auto md:block "
             src={scrolImg}
             alt="scroll wheel"
           ></img>

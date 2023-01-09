@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 import Burger1 from "./atoms/Burger1.jsx";
 import "./Menu.css";
-
+import logoAsiet from "../assets/logo.png"
 const Navbar24 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header
-      className={`w-full bg-transparent text-gray-100 body-font mb-4 md:px-5  shadow-sm fixed z-50 Menu ${
+      className={`w-screen bg-transparent text-gray-100 body-font mb-4 md:pr-5  shadow-sm fixed z-50 Menu ${
         isOpen && "bg-black/90"
       }`}
     >
       {/* :DESKTOP MENU */}
-      <div className=" mx-auto flex justify-end items-center py-2 pl-5">
+      <div className=" mx-auto flex justify-between items-center py-2 pl-5">
         {/* ::Burger icon standard */}
-        <div className="inline-flex items-center">
-          <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
+        <div className="inline-flex items-center ">
+          <img src={logoAsiet} className="h-12" alt="logo"></img>
         </div>
+          <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <div className="inline-flex items-center">
+        </div> */}
       </div>
 
       {/* :OPENED MENU */}

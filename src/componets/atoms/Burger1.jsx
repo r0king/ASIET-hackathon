@@ -2,7 +2,7 @@ import React from 'react'
 
 const Burger1 = ({ isOpen, setIsOpen }) => {
   return (
-    <button onClick={() => setIsOpen(!isOpen)} className="flex flex-col w-12 cursor-pointer active:outline-none focus:outline-none">
+    <button onClick={() => setIsOpen(!isOpen)} className="-mt-5 flex flex-col w-12 cursor-pointer active:outline-none focus:outline-none">
       {/* Top line */}
       <span className={`bg-gradient-to-br from-white to-white rounded-xl w-2/5 h-1 my-1 transition-all duration-500 ease-bounce ${isOpen && "origin-bottom"}`} style={{ transform: `${isOpen ? "rotateZ(45deg) translate(6px,1px)" : ""}` }} aria-hidden="true"/>
       {/* Middle line */}
