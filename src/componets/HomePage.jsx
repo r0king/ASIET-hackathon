@@ -61,7 +61,7 @@ const HomePage = () => {
           offset={0.55}
           factor={1.5}
           speed={1}
-          className="flex justify-center opacity-60"
+          className="flex justify-center "
         >
           {/* transparent gif */}
           <img
