@@ -3,7 +3,7 @@ import React from 'react'
 
 const PrizeMoney = () => {
   return (
-    <a className="group px-2.5 pb-1 flex flex-row justify-center relative text-6xl bg-clip-text bg-gradient-to-br from-pc to-sc font-bold no-underline whitespace-nowrap outline-none overflow-hidden " href="#url">
+    <a className="group px-2.5 pb-1 flex flex-row justify-center relative text-3xl mt-32 md:mt-0 md:text-6xl bg-clip-text bg-gradient-to-br from-pc to-sc font-bold no-underline whitespace-nowrap outline-none overflow-hidden " href="#url">
       {/* Text slide */}
       <span className="flex flex-row justify-center absolute top-0 text-white whitespace-nowrap antialiased overflow-hidden transition-all duration-500 ease-temporize transform w-0 " aria-hidden="true">1.5 MILLION PRIZE MONEY</span>
 
