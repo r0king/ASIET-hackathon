@@ -15,7 +15,7 @@ const AboutUs = () => {
           {/* ::Title */}
           <h2 className="mb-8 text-3xl sm:text-3xl text-gray-100 font-bold capitalize">
             <span className="text-[var(--primary-color)]">About Our</span>{" "}
-            <span className="text-sc">Institute</span>
+            <span className="">Institute</span>
           </h2>
           {/* Content goes here */}
           <p className="text-lg text-justify p-3">

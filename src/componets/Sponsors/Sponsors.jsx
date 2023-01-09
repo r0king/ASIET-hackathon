@@ -11,14 +11,14 @@ import partner1 from "../../assets/Sponsors/jyothy.png";
 import "./Sponsors.css";
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full  text-[#f0f0f0]-800 mt-32 md:mt-40">
+    <div className="mx-auto py-10 px-4 w-full  text-[var(--secondary-color)] mt-32 md:mt-40">
       <div className="flex flex-col items-center my-5 space-y-12">
         {/* :TITLE CONTAINER */}
         <div className="mx-auto max-w-6xl space-y-3 text-center">
           {/* ::Title */}
           <h2 className="text-3xl font-bold tracking-wide">Our Sponsers</h2>
           {/* ::Text */}
-          <p className="text-lg sm:text-base text-[#f0f0f0]-700">
+          <p className="text-lg sm:text-base text-[var(--secondary-color)]">
             Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate
             quidem, repudiandae nihil repellendus praesentium impedit sequi non
             modi ipsa! Libero, nostrum?
@@ -38,7 +38,7 @@ export default function Sponsors() {
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
+              className=" w-full  md:max-h-20 max-h-10 object-contain  "
             />
           </div>
 
@@ -46,7 +46,7 @@ export default function Sponsors() {
             <img
               src={logo3}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
+              className="  w-full  md:max-h-20 max-h-10 object-contain  "
             />
           </div>
 
@@ -54,7 +54,7 @@ export default function Sponsors() {
             <img
               src={logo4}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contaiimage.pngn opacity-80 "
+              className="  w-full  md:max-h-20 max-h-10 object-contaiimage.pngn  "
             />
           </div>
 
@@ -70,7 +70,7 @@ export default function Sponsors() {
             <img
               src={logo6}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain  opacity-80 "
+              className="w-full  md:max-h-20 max-h-10 object-contain   "
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Sponsors() {
             Our Trusted Partners
           </h2>
           {/* ::Text */}
-          <p className="text-lg sm:text-base text-[#f0f0f0]-700">
+          <p className="text-lg sm:text-base text-[var(--secondary-color)]">
             Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate
             quidem, repudiandae nihil repellendus praesentium impedit sequi non
             modi ipsa! Libero, nostrum?
@@ -103,7 +103,7 @@ export default function Sponsors() {
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain opacity-80 "
+              className=" w-full  md:max-h-20 max-h-10 object-contain  "
             />
           </div>
         </div>
