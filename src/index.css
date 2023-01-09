@@ -85,6 +85,22 @@ code {
         0 0 100px #5dea8c;
     }
   }
+  .transform-after-the3 {
+    transform: translate3d(101%,0,0);
+  }
+  @variants group-hover {
+    .transform-h-after-the3 {
+      transform: translate3d(0,0,0);
+    }
+  }
+  .shadow-text5 {
+    text-shadow: -15px 5px 20px #ced0d3;
+    }
+  @variants hover {
+    .shadow-h-text5 {
+      text-shadow: -16px 6px 15px #ced0d3;
+    }
+  }
 }
 @font-face {
   font-family: "Clip";
