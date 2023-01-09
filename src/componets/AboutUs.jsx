@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "../assets/about-1.webp";
-import image2 from "../assets/about-2.jpg";
+import image2 from "../assets/asiet1.jpeg";
 
 const AboutUs = () => {
   return (
@@ -19,13 +19,9 @@ const AboutUs = () => {
           </h2>
           {/* Content goes here */}
           <p className="text-lg text-justify p-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            explicabo assumenda consequatur nam? Blanditiis, nesciunt vitae.
-            Praesentium, quam iusto tenetur quaerat optio quasi at maiores
-            laudantium quae distinctio sequi natus. Dolorem sunt nobis nostrum
-            debitis incidunt, neque esse tempore. Quia, accusamus sunt quam
-            praesentium ad officiis earum ducimus sit molestias fuga sapiente,
-            corrupti dicta cupiditate fugiat dolore voluptate? Esse, at!
+          Adi Shankara Institute of Engineering and Technology was established in Kalady with the sole purpose of cultivating the engineering temperament of its students and turning them into enterprising people in the industry. The school is managed by ADI SANKARA TRUST, a registered trust that has made a name for itself in the field of education. The Foundation has a tradition of managing educational institutions for more than 50 years.
+
+With JIT, we, ASIET, aspire to create a platform to bring professionals and students together and create a collaborative environment to solve a given problem in a rational way through the three exclusive phases.
           </p>
           {/* ::Button */}
           <button className="group my-10  relative inline-flex items-center px-5 py-2.5 shadow-inset rounded shadow-lg outline-none bg-[var(--primary-color)] text-white font-medium transition-all duration-200 ease-out hover:text-[var(--primary-color)] hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none">
