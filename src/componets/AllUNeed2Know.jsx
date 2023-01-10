@@ -3,7 +3,7 @@ import allUNeed2Know from "../assets/SamplePoster1.jpg";
 const AllUNeed2Know = () => {
   return (
     <section
-      className="text-gray-100 bg-black/50 md:bg-transparent"
+      className="text-gray-100 bg-[#171717]/50 md:bg-transparent"
       style={{
         backgroundColor: "rgba(0,0,0, 0.5)",
         boxShadow: "0 0px 5vh 10vh rgba(0,0,0, 0.5)",

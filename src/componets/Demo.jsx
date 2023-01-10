@@ -3,10 +3,10 @@ import React from 'react'
 
 const Demo = () => {
   return (
-    <div className='bg-black '>
+    <div className='bg-[#171717] '>
       <Parallax>
         <ParallaxLayer>
-            <h1 className='text-black'>hellow world</h1>
+            <h1 className='text-[#171717]'>hellow world</h1>
         </ParallaxLayer>
       </Parallax>
     </div>

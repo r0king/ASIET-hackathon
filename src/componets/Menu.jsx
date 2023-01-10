@@ -8,13 +8,13 @@ const Navbar24 = () => {
   return (
     <header
       className={`w-screen bg-transparent text-gray-100 body-font mb-4 md:pr-5  shadow-sm fixed z-50 Menu ${
-        isOpen && "bg-black/90"
+        isOpen && "bg-[#171717]/90"
       }`}
     >
       {/* :DESKTOP MENU */}
       <div className=" mx-auto flex justify-between items-center py-2 pl-5">
         {/* ::Burger icon standard */}
-        <div className="inline-flex items-center brightness-[50] opacity-60">
+        <div className="inline-flex items-center brightness-[50] opacity-80">
           <img src={logoAsiet} className="h-12" alt="logo"></img>
         </div>
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />

@@ -58,7 +58,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="bg-[#171717]">
       <Menu />
       <div className="bg-animation">
         <div id="stars"></div>
@@ -130,7 +130,7 @@ const HomePage = () => {
           speed={0.1}
           className="flex  md:scale-75 justify-end"
         >
-          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-black opacity-50"></div>
+          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-[#171717] opacity-50"></div>
         </ParallaxLayer>
         {/* Cloud 1*/}
         <ParallaxLayer
