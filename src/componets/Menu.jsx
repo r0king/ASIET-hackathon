@@ -14,7 +14,7 @@ const Navbar24 = () => {
       {/* :DESKTOP MENU */}
       <div className=" mx-auto flex justify-between items-center py-2 pl-5">
         {/* ::Burger icon standard */}
-        <div className="inline-flex items-center ">
+        <div className="inline-flex items-center brightness-[50] opacity-60">
           <img src={logoAsiet} className="h-12" alt="logo"></img>
         </div>
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />

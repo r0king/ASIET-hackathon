@@ -31,24 +31,24 @@ const AboutUs = () => {
             rational way through the three exclusive phases.
           </p>
           {/* ::Button */}
-          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 rounded shadow-xl shadow-white/40 outline-none bg-black text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent  active:top-0.5 focus:outline-none">
+          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 rounded shadow-xl font-bold shadow-white/30  bg-gradient-to-br from-pc to-sc text-black text-lg transition-all duration-200 ease-out  hover:from-black hover:to-transparent hover:text-[var(--secondary-color)]  active:top-0.5 focus:outline-none">
             {/* span::before */}
             <span
-              className="absolute h-0 w-0.5 right-0 top-0 bg-white transition-all duration-500 ease-out group-hover:h-full"
+              className="absolute h-0 w-0.5 right-0 top-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out group-hover:h-full"
               aria-hidden="true"
             />
             <span
-              className="absolute left-0 bottom-0 bg-white transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
+              className="absolute left-0 bottom-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
               aria-hidden="true"
             />
             Know More
             {/* span::after */}
             <span
-              className="absolute left-0 bottom-0 bg-white transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
+              className="absolute left-0 bottom-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
               aria-hidden="true"
             />
             <span
-              className="absolute w-0 h-0.5 right-0 top-0 bg-white transition-all duration-500 ease-out group-hover:w-full"
+              className="absolute w-0 h-0.5 right-0 top-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out group-hover:w-full"
               aria-hidden="true"
             />
           </button>
