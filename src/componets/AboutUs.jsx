@@ -19,29 +19,36 @@ const AboutUs = () => {
           </h2>
           {/* Content goes here */}
           <p className="text-lg text-justify p-3">
-          Adi Shankara Institute of Engineering and Technology was established in Kalady with the sole purpose of cultivating the engineering temperament of its students and turning them into enterprising people in the industry. The school is managed by ADI SANKARA TRUST, a registered trust that has made a name for itself in the field of education. The Foundation has a tradition of managing educational institutions for more than 50 years.
-
-With JIT, we, ASIET, aspire to create a platform to bring professionals and students together and create a collaborative environment to solve a given problem in a rational way through the three exclusive phases.
+            Adi Shankara Institute of Engineering and Technology was established
+            in Kalady with the sole purpose of cultivating the engineering
+            temperament of its students and turning them into enterprising
+            people in the industry. The school is managed by ADI SANKARA TRUST,
+            a registered trust that has made a name for itself in the field of
+            education. The Foundation has a tradition of managing educational
+            institutions for more than 50 years. With JIT, we, ASIET, aspire to
+            create a platform to bring professionals and students together and
+            create a collaborative environment to solve a given problem in a
+            rational way through the three exclusive phases.
           </p>
           {/* ::Button */}
-          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 shadow-inset rounded shadow-lg outline-none bg-[var(--primary-color)] text-white font-medium transition-all duration-200 ease-out hover:text-[var(--primary-color)] hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none">
+          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 rounded shadow-xl shadow-white/40 outline-none bg-black text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent  active:top-0.5 focus:outline-none">
             {/* span::before */}
             <span
-              className="absolute h-0 w-0.5 right-0 top-0 bg-[var(--primary-color)] transition-all duration-500 ease-out group-hover:h-full"
+              className="absolute h-0 w-0.5 right-0 top-0 bg-white transition-all duration-500 ease-out group-hover:h-full"
               aria-hidden="true"
             />
             <span
-              className="absolute left-0 bottom-0 bg-[var(--primary-color)] transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
+              className="absolute left-0 bottom-0 bg-white transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
               aria-hidden="true"
             />
             Know More
             {/* span::after */}
             <span
-              className="absolute left-0 bottom-0 bg-[var(--primary-color)] transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
+              className="absolute left-0 bottom-0 bg-white transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
               aria-hidden="true"
             />
             <span
-              className="absolute w-0 h-0.5 right-0 top-0 bg-[var(--primary-color)] transition-all duration-500 ease-out group-hover:w-full"
+              className="absolute w-0 h-0.5 right-0 top-0 bg-white transition-all duration-500 ease-out group-hover:w-full"
               aria-hidden="true"
             />
           </button>

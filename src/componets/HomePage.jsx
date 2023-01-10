@@ -57,7 +57,6 @@ const HomePage = () => {
     // parallax.content.current.style.height = '7000px'
   }, []);
 
-  alert(`width ${width},height ${height},pages ${pages}}`);
   return (
     <div className="bg-black">
       <Menu />
@@ -216,20 +215,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-const findPageHeight = () => {
-  var pageHeight = 0;
-
-  function findHighestNode(nodesList) {
-      for (var i = nodesList.length - 1; i >= 0; i--) {
-          if (nodesList[i].scrollHeight && nodesList[i].clientHeight) {
-              var elHeight = Math.max(nodesList[i].scrollHeight, nodesList[i].clientHeight);
-              pageHeight = Math.max(elHeight, pageHeight);
-          }
-          if (nodesList[i].childNodes.length) findHighestNode(nodesList[i].childNodes);
-      }
-  }
-
-  findHighestNode(document.documentElement.childNodes);
-  return pageHeight;
-}

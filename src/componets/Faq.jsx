@@ -97,7 +97,7 @@ const Faq = () => {
                   <>
                     {/* Question */}
                     <dt
-                      className={`group mt-6 w-full border-b-2 border-gray-700 text-gray-400 hover:text-[#f0f0f0] ${
+                      className={`group mt-6 w-full border-b-2 border-gray-700 text-[#f0f0f0] hover:text-[var(--secondary-color)] ${
                         open && "text-[#f0f0f0]"
                       }`}
                     >
@@ -114,13 +114,13 @@ const Faq = () => {
                         <ChevronDownIcon
                           className={`${
                             open && "transform rotate-180 text-[#f0f0f0]"
-                          } flex-shrink-0 ml-2 w-5 h-5 text-gray-600 group-hover:text-[#f0f0f0]`}
+                          } flex-shrink-0 ml-2 w-5 h-5 text-[#f0f0f0] group-hover:text-[#f0f0f0]`}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
                     </dt>
                     {/* Answer */}
-                    <dd className="w-full text-base text-gray-200">
+                    <dd className="w-full text-base text-gray-400">
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-left">
                         {faq.answer}
                       </Disclosure.Panel>
