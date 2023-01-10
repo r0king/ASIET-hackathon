@@ -26,51 +26,63 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo1}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain  "
+              className="w-full  md:max-h-20  max-h-10 object-contain  "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain  "
+              className=" w-full  md:max-h-20  max-h-10 object-contain  "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo3}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contain  "
+              className="  w-full  md:max-h-20  max-h-10 object-contain  "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo4}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contaiimage.pngn  "
+              className="  w-full  md:max-h-20  max-h-10 object-contaiimage.pngn  "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             {/* logo must be visible */}
             <img
               src={logo5}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain invert"
+              className="w-full  md:max-h-20  max-h-10 object-contain invert"
             />
           </div>
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo6}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain   "
+              className="w-full  md:max-h-20  max-h-10 object-contain   "
             />
           </div>
         </div>
@@ -91,19 +103,23 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg" >
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={partner1}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain  "
+              className="w-full  md:max-h-20  max-h-10 object-contain  "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
+            backgroundColor: "#E2eff39b"
+          }}>
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain  "
+              className=" w-full  md:max-h-20  max-h-10 object-contain  "
             />
           </div>
         </div>

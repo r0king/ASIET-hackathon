@@ -31,7 +31,7 @@ const AboutUs = () => {
             rational way through the three exclusive phases.
           </p>
           {/* ::Button */}
-          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 rounded shadow-xl font-bold shadow-white/30  bg-gradient-to-br from-pc to-sc text-[#171717] text-lg transition-all duration-200 ease-out  hover:from-[#171717] hover:to-transparent hover:text-[var(--secondary-color)]  active:top-0.5 focus:outline-none">
+          <button className="group my-10  relative inline-flex items-center px-5 py-2.5 rounded shadow-xl font-bold shadow-white/30  bg-[#E2eff3] text-[#171717] text-lg transition-all duration-200 ease-out  hover:from-[#171717] hover:to-transparent hover:text-[var(--secondary-color)]  active:top-0.5 focus:outline-none">
             {/* span::before */}
             <span
               className="absolute h-0 w-0.5 right-0 top-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out group-hover:h-full"
