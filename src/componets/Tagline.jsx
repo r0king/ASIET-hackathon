@@ -2,7 +2,7 @@
 
 const Tagline = () => {
   return (
-    <div className="text-center text-3xl text-[var(--secondary-color)] font-[Montserrat]">#Ideate_Innovate_Incubate_Your_Dreams.</div>
+    <div className="text-center text-3xl -mt-[100vh] text-[var(--secondary-color)] font-[Montserrat]">#Ideate_Innovate_Incubate_Your_Dreams.</div>
   );
 };
 

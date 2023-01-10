@@ -24,31 +24,40 @@ import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
 import PrizeMoney from "./PrizeMoney";
+import { useEffect } from "react";
 // import mountainImg from "../assets/mountain.png";
 // import landScapeImg from "../assets/landscape.png";
 // import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
+
   const { width, height } = useWindowSize();
   // refer parallax
+  const parallax = React.useRef();
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
   // let pages = width < 450 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
   let pages = 0;
   if (width < 450) {
-    if (height < 750) {
-      pages = 8;
+    if (height < 768) {
+      pages = 9;
     } else {
-      pages = 5.8;
+      pages = 6.3;
     }
   } else {
-    if (height < 750) {
-      pages = 5.5;
+    if (height < 768) {
+      pages = 6.5;
     } else {
       pages = 4.6;
     }
   }
+  useEffect(() => {
+    // const pheight = findPageHeight()
+    // parallax.content.current.style.height = '7000px'
+  }, []);
+
+  alert(`width ${width},height ${height},pages ${pages}}`);
   return (
     <div className="bg-black">
       <Menu />
@@ -63,6 +72,7 @@ const HomePage = () => {
         style={{
           zIndex: 10,
         }}
+        ref={parallax}
       >
         {/* Main Title */}
         <ParallaxLayer speed={3} offset={0.1}>
@@ -176,7 +186,7 @@ const HomePage = () => {
 
         {/* Main Componets */}
         <>
-          <ParallaxLayer offset={0.99} speed={1}>
+          <ParallaxLayer offset={1} speed={1}>
             <Tagline />
             <Sponsors />
             <AboutUs />
@@ -206,3 +216,20 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+const findPageHeight = () => {
+  var pageHeight = 0;
+
+  function findHighestNode(nodesList) {
+      for (var i = nodesList.length - 1; i >= 0; i--) {
+          if (nodesList[i].scrollHeight && nodesList[i].clientHeight) {
+              var elHeight = Math.max(nodesList[i].scrollHeight, nodesList[i].clientHeight);
+              pageHeight = Math.max(elHeight, pageHeight);
+          }
+          if (nodesList[i].childNodes.length) findHighestNode(nodesList[i].childNodes);
+      }
+  }
+
+  findHighestNode(document.documentElement.childNodes);
+  return pageHeight;
+}
