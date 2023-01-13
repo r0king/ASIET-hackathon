@@ -122,7 +122,7 @@ export default function Sponsors() {
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
           <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
             style={{
               backgroundColor: "#E2eff39b",
             }}
@@ -130,12 +130,12 @@ export default function Sponsors() {
             <img
               src={partner1}
               alt=""
-              className="md:max-h-20  object-contain "
+              className="md:max-h-[15vw]  object-contain "
             />
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
             style={{
               backgroundColor: "#E2eff39b",
             }}
@@ -143,7 +143,7 @@ export default function Sponsors() {
             <img
               src={logo2}
               alt=""
-              className=" w-full md:max-h-20 object-contain "
+              className=" w-full md:max-h-[15vw] object-contain "
             />
           </div>
         </div>
