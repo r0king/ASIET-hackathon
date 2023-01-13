@@ -127,7 +127,7 @@ function Ideathon() {
         </nav>
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
-          <h1 className="text-4xl font-bold  text-[#f0f0f0] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] ">
+          <h1 className="text-4xl font-bold  text-[#E9DFCC] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] ">
             Ideathon
           </h1>
           {/* sub heading */}
@@ -201,7 +201,7 @@ function Ideathon() {
                   {/* Background image */}
                   <div className="absolute top-0 left-0 w-full h-full bg-black object-cover"></div>
                   {/* Icon */}
-                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] text-white">
+                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]">
                     {getIcon(features[currentFeature].icon)}
                   </span>
                   {/* Feature name */}
@@ -209,10 +209,10 @@ function Ideathon() {
                     {features[currentFeature].name}
                   </dt>
                   {/* Feature description */}
-                  <dd className="relative text-sm text-gray-700">
+                  <dd className="relative text-sm text-[#E9DFCC]/80">
                     {features[currentFeature].description}
                   </dd>
-                  {currentFeature===0 ? (
+                  {currentFeature === 0 ? (
                     <button
                       id="register_btn"
                       className="bg-gradient-to-br from-[#D9AC59] to-[#D9AC59]"
@@ -235,8 +235,8 @@ function Ideathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 0
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[0].icon)}
@@ -245,8 +245,8 @@ function Ideathon() {
                     className={`${
                       currentFeature === 0
                         ? "bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[0].name}
                   </h3>
@@ -258,8 +258,8 @@ function Ideathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 1
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[1].icon)}
@@ -268,8 +268,8 @@ function Ideathon() {
                     className={`${
                       currentFeature === 1
                         ? "bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[1].name}
                   </h3>
@@ -281,8 +281,8 @@ function Ideathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 2
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[2].icon)}
@@ -291,8 +291,8 @@ function Ideathon() {
                     className={`${
                       currentFeature === 2
                         ? "bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[2].name}
                   </h3>
@@ -308,8 +308,8 @@ function Ideathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 3
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[3].icon)}
@@ -318,8 +318,8 @@ function Ideathon() {
                     className={`${
                       currentFeature === 3
                         ? "bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[3].name}
                   </h3>
@@ -331,8 +331,8 @@ function Ideathon() {
                   <span
                     className={`hover:bg-sky-700 w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 4
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[4].icon)}
@@ -340,9 +340,9 @@ function Ideathon() {
                   <h3
                     className={`${
                       currentFeature === 4
-                        ? "text-white bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "text-[#E9DFCC] bg-clip-text text-transparent"
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[4].name}
                   </h3>
@@ -354,8 +354,8 @@ function Ideathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 5
-                        ? "from-[#D9AC59] to-[#D9AC59] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? "from-[#D9AC59] to-[#D9AC59] text-[#E9DFCC]"
+                        : "from-[#E9DFCC] to-[#E9DFCC] text-black"
                     }`}
                   >
                     {getIcon(features[5].icon)}
@@ -364,8 +364,8 @@ function Ideathon() {
                     className={`${
                       currentFeature === 5
                         ? "bg-gradient-to-br from-[#D9AC59] to-[#D9AC59] bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        : "text-[#E9DFCC]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[5].name}
                   </h3>
