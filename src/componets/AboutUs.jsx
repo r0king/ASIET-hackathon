@@ -18,7 +18,7 @@ const AboutUs = () => {
             <span className="">Institute</span>
           </h2>
           {/* Content goes here */}
-          <p className="text-lg text-justify p-3">
+          <p className="text-lg text-justify ">
             Adi Shankara Institute of Engineering and Technology was established
             in Kalady with the sole purpose of cultivating the engineering
             temperament of its students and turning them into enterprising

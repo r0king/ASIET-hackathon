@@ -73,11 +73,11 @@ const HomePage = () => {
         }}
         ref={parallax}
       >
-        {/* Main Title */}
-        <ParallaxLayer speed={3} offset={0.1}>
-          {/* <Install/> */}
+        {/* PrizeMoney */}
+        {/* <ParallaxLayer speed={3} offset={0.1}>
           <PrizeMoney />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
+        {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           {/* <Install/> */}
           <HeroTitle />
@@ -127,7 +127,7 @@ const HomePage = () => {
         {/* Moon Shadow */}
         <ParallaxLayer
           offset={width < 450 ? (height < 650 ? 1.8 : 1.8) : 1.8}
-          speed={0.1}
+          speed={0.08}
           className="flex  md:scale-75 justify-end"
         >
           <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-[#171717] opacity-50"></div>

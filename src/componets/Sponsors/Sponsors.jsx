@@ -26,10 +26,9 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -39,10 +38,9 @@ export default function Sponsors() {
             />
           </div>
 
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -52,10 +50,9 @@ export default function Sponsors() {
             />
           </div>
 
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -65,10 +62,9 @@ export default function Sponsors() {
             />
           </div>
 
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -78,10 +74,9 @@ export default function Sponsors() {
             />
           </div>
 
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             {/* logo must be visible */}
@@ -91,10 +86,9 @@ export default function Sponsors() {
               className="w-full md:max-h-20 max-h-10 object-contain invert"
             />
           </div>
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -121,10 +115,9 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img
@@ -134,10 +127,9 @@ export default function Sponsors() {
             />
           </div>
 
-          <div
-            className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
+          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[15vw] logo_bg justify-center rounded"
             style={{
-              backgroundColor: "#E2eff39b",
+              backgroundColor:"#313131b5"
             }}
           >
             <img

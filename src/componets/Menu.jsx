@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Burger1 from "./atoms/Burger1.jsx";
 import "./Menu.css";
-import logoAsiet from "../assets/logo.png"
+import logoAsiet from "../assets/logo.png";
 const Navbar24 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,12 +12,14 @@ const Navbar24 = () => {
       }`}
     >
       {/* :DESKTOP MENU */}
-      <div className=" mx-auto flex justify-between items-center py-2 pl-5">
+      <div className=" mx-auto flex justify-between items-center">
         {/* ::Burger icon standard */}
-        <div className="inline-flex items-center brightness-[50] opacity-80">
+        <div className="inline-flex items-center brightness-[50] opacity-80 p-7">
           <img src={logoAsiet} className="h-12" alt="logo"></img>
         </div>
+        <div className="mr-2 ">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
         {/* <div className="inline-flex items-center">
         </div> */}
       </div>
