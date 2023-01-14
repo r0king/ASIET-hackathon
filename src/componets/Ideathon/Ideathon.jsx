@@ -92,11 +92,13 @@ function Ideathon() {
         <nav className="flex justify-between items-center p-5">
           {/* logo */}
           <div className="flex items-center">
-            <img
-              src={logoAsiet}
-              alt="logo"
-              className="w-10 h-10 object-contain brightness-[5] grayscale"
-            />
+            <a href="/">
+              <img
+                src={logoAsiet}
+                alt="logo"
+                className="w-10 h-10 object-contain brightness-[5] grayscale"
+              />
+            </a>
           </div>
           {/* nav links */}
           <div className="md:flex items-center hidden md:visible">

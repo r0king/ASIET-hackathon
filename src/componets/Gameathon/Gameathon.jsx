@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Gameathon/bg.png";
+import bgImgDesk from "../../assets/Gameathon/bgD.png";
+import bgImgMobile from "../../assets/Gameathon/bgM.png";
 import logoAsiet from "../../assets/logo.png";
 import {
   CalendarIcon,
@@ -70,7 +71,7 @@ function Gameathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
+                backgroundImage: `url(${bgImgDesk})`,
                 backgroundSize: "contain",
                 backgroundPosition: "right 0",
                 backgroundRepeat: "no-repeat",
@@ -79,7 +80,7 @@ function Gameathon() {
                 boxShadow: "0px 0px 50px 0px var(--bg-color)",
               }
             : {
-                backgroundImage: `url(${bgImg})`,
+                backgroundImage: `url(${bgImgMobile})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
@@ -92,11 +93,15 @@ function Gameathon() {
         <nav className="flex justify-between items-center p-5">
           {/* logo */}
           <div className="flex items-center">
-            <img
-              src={logoAsiet}
-              alt="logo"
-              className="w-10 h-10 object-contain brightness-[5] grayscale"
-            />
+            <a
+              href="/"              
+            >
+              <img
+                src={logoAsiet}
+                alt="logo"
+                className="w-10 h-10 object-contain brightness-[5] grayscale"
+              />
+            </a>
           </div>
           {/* nav links */}
           <div className="md:flex items-center hidden md:visible">
@@ -181,7 +186,7 @@ function Gameathon() {
         {/* CONTAINER */}
         <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
           {/* :TITLE CONTAINER */}
-          <div className="relative z-50 w-full text-center text-[var(--secondary-color)]">
+          <div className="relative z-50 w-full text-center text-[var(--primary-color)]">
             <h2 className="capitalize">
               <span className="block mt-2 text-3xl sm:text-4xl font-bold">
                 Rules And Regulations
