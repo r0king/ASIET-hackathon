@@ -76,7 +76,7 @@ function Productathon() {
                 backgroundRepeat: "no-repeat",
                 height: "140vh",
                 backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px #fff",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
               }
             : {
                 backgroundImage: `url(${bgImg})`,
@@ -84,7 +84,7 @@ function Productathon() {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 height: "150vh",
-                boxShadow: "0px 0px 50px 0px #fff",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
               }
         }
       >
@@ -177,7 +177,7 @@ function Productathon() {
         </div>
       </div>
 
-      <div className="Productathon mx-auto w-full bg-[var(--bg-color)] overflow-x-hidden">
+      <div className="Productathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
         {/* CONTAINER */}
         <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
           {/* :TITLE CONTAINER */}
