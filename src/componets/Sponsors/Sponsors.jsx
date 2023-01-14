@@ -27,9 +27,9 @@ export default function Sponsors() {
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -40,9 +40,9 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -53,9 +53,9 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -66,9 +66,9 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -79,9 +79,9 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             {/* logo must be visible */}
@@ -92,9 +92,9 @@ export default function Sponsors() {
             />
           </div>
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[20vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -122,9 +122,9 @@ export default function Sponsors() {
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[15vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
@@ -135,9 +135,9 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw]  md:max-w-[15vw] logo_bg justify-center rounded"
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
             style={{
-              boxShadow: "rgb(255 255 255 / 29%) 0px 4px 50px 0px",
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
             }}
           >
             <img
