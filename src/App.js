@@ -7,6 +7,7 @@ import Productathon from "./componets/Productathon/Productathon";
 import Gameathon from "./componets/Gameathon/Gameathon";
 import Ideathon from "./componets/Ideathon/Ideathon";
 import Mechathon from "./componets/Mechathon/Mechathon";
+import Civilathon from "./componets/Civilathon/Civilathon";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/gameathon" element={<Gameathon />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/mechathon" element={<Mechathon />} />
+          <Route exact path="/civilathon" element={<Civilathon />} />
         </Routes>
       </BrowserRouter>
     </>
