@@ -16,27 +16,27 @@ const ContactUs = () => {
           {/* :CONTACT INFOS CONTAINER */}
           <div className="col-span-full w-full pl-9 sm:col-span-3 md:col-span-2 h-full mx-auto py-8 md:pt-10 px-3 flex flex-col">
             {/* ::Title Contact */}
-            <h2 className="text-3xl text-[#f0f0f0] font-medium tracking-wide">
+            <h2 className="text-2xl text-[#f0f0f0] font-medium tracking-wide">
               Contact Us
             </h2>
 
             {/* ::Address */}
-            <div className="mt-8 sm:mt-8 space-y-3">
+            <div className="mt-5 sm:mt-5 space-y-3">
               <h3 className="text-xl font-medium">Address</h3>
-              <p className="text-xl text-[#f0f0f0] text-opacity-60">
-                5CHJ+758, Vidya Bharathi Nagar , Mattoor, Kalady,
+              <p className="text-lg text-[#f0f0f0] text-opacity-60">
+                5CHJ+758,<br/> Vidya Bharathi Nagar, <br/> Mattoor, Kalady,
                 <br /> Ernakulam, Kerala 683574
               </p>
             </div>
 
             {/* ::Office Hours */}
-            <div className="mt-5 sm:mt-8 space-y-3">
+            <div className="mt-5 sm:mt-5 space-y-3">
               <h3 className="text-xl font-medium">Office Hours</h3>
-              <p className="text-xl text-[#f0f0f0] text-opacity-60"> 8AM-4PM</p>
+              <p className="text-lg text-[#f0f0f0] text-opacity-60"> 8AM-4PM</p>
             </div>
 
             {/* ::Contact */}
-            <div className="mt-5 sm:mt-8 space-y-3">
+            <div className="mt-5 sm:mt-5 space-y-3">
               <h3 className="text-xl font-medium">Contact</h3>
               <div className="space-y-1 text-xl text-[#f0f0f0] text-opacity-60">
                 <p className="font-medium">
@@ -54,8 +54,8 @@ const ContactUs = () => {
             </div>
 
             {/* ::Social */}
-            <div className="mt-8 sm:mt-8 flex items-center">
-              <h3 className="text-xl text-[#f0f0f0] text-opacity-60 font-medium uppercase tracking-wider">
+            <div className="mt-5 sm:mt-5 flex items-center">
+              <h3 className="text-lg text-[#f0f0f0] text-opacity-60 font-medium uppercase tracking-wider">
                 Social
               </h3>
               <div className="ml-3 flex space-x-2">

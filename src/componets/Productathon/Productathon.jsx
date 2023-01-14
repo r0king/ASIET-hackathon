@@ -157,7 +157,7 @@ function Productathon() {
           <button
             className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
             style={{
-              boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.9)",
+              boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
           >
             Register Now
