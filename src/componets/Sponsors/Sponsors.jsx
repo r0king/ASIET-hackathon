@@ -27,80 +27,140 @@ export default function Sponsors() {
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
               src={logo1}
               alt=""
-              className="w-full md:max-h-20 max-h-10 object-contain "
+              className="w-full md:max-h-20 max-h-10 object-contain pointer-events-none"
             />
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg hover:shadow-xl md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
               src={logo2}
               alt=""
-              className=" w-full md:max-h-20 max-h-10 object-contain "
+              className=" w-full md:max-h-20 max-h-10 object-contain pointer-events-none"
             />
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
               src={logo3}
               alt=""
-              className=" w-full md:max-h-20 max-h-10 object-contain "
+              className=" w-full md:max-h-20 max-h-10 object-contain pointer-events-none"
             />
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
               src={logo4}
               alt=""
-              className=" w-full md:max-h-20 max-h-10 object-contaiimage.pngn "
+              className=" w-full md:max-h-20 max-h-10 object-contaiimage.pngn pointer-events-none"
             />
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             {/* logo must be visible */}
             <img
               src={logo5}
               alt=""
-              className="w-full md:max-h-20 max-h-10 object-contain invert"
+              className="w-full md:max-h-20 max-h-10 object-contain invertpointer-events-none"
             />
           </div>
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
               src={logo6}
               alt=""
-              className="w-full md:max-h-20 max-h-10 object-contain  "
+              className="w-full md:max-h-20 max-h-10 object-contain  pointer-events-none"
             />
           </div>
         </div>
@@ -122,9 +182,19 @@ export default function Sponsors() {
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
@@ -135,9 +205,19 @@ export default function Sponsors() {
           </div>
 
           <div
-            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
+            className="transition-all duration-500 py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
             style={{
               boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+            onMouseEnter={(e) => {
+              // update boxshadow to increate opacity
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 50%) 0px 8px 40px 0px";
+            }}
+            onMouseLeave={(e) => {
+              // update boxshadow back
+              e.target.style.boxShadow =
+                "rgb(255 255 255 / 15%) 0px 8px 40px 0px";
             }}
           >
             <img
