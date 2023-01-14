@@ -8,7 +8,6 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/outline";
 import "./GG.css";
-import "./animation.css";
 const Gameathon = () => {
   const features = [
     {
@@ -58,7 +57,7 @@ const Gameathon = () => {
 
   return (
     <>
-      <div class="bg-animation">
+      <div className="bg-animation">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
