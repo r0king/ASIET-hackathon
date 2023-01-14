@@ -12,7 +12,7 @@ const ContactUs = () => {
         bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'></div> */}
 
           {/* :CONTACT INFOS CONTAINER */}
-          <div className="col-span-full sm:col-span-3 md:col-span-2 mx-auto py-8 sm:py-16 px-3 flex flex-col">
+          <div className="col-span-full w-full pl-7 sm:col-span-3 md:col-span-2 mx-auto py-8 sm:py-16 px-3 flex flex-col">
 
             {/* ::Title Contact */}
             <h2 className="text-4xl sm:text-5xl text-[#f0f0f0] font-semibold tracking-wide">Contact Us</h2>
