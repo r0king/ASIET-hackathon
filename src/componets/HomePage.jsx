@@ -1,5 +1,5 @@
-import React from "react";
-import HeroTitle from "./HeroTitle";
+import React, { useEffect } from "react";
+import "./animation.css";
 
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -14,7 +14,7 @@ import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
-import "./animation.css";
+import HeroTitle from "./HeroTitle";
 
 // parallax images import here
 import satImg from "../assets/satlite.png";
@@ -23,14 +23,8 @@ import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
-import PrizeMoney from "./PrizeMoney";
-import { useEffect } from "react";
-// import mountainImg from "../assets/mountain.png";
-// import landScapeImg from "../assets/landscape.png";
-// import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
-
   const { width, height } = useWindowSize();
   // refer parallax
   const parallax = React.useRef();
