@@ -120,3 +120,18 @@ code {
       0 -0.5rem 2rem #e2dcc8, 0 0.5rem 3rem #e2dcc8;
   }
 }
+
+@keyframes marquee-alt {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.moving-text {
+  animation: marquee-alt 15s linear infinite;
+}
+.moving-text:hover{
+  animation-play-state: paused;
+}

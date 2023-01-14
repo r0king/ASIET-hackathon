@@ -36,7 +36,7 @@ const AboutUs = () => {
             aria-label="Know More"
             style={{
               // shadow-[0_4px_12px_0_var(--secondary-color)]
-              boxShadow: "0 4px 12px 0 #ffffff9c",
+              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px 0px",
               
             }}            
           >
