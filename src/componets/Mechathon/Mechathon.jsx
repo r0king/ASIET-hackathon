@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Productathon/bg.png";
+import bgImg from "../../assets/Mechathon/bg.png";
 import logoAsiet from "../../assets/logo.png";
 import {
   CalendarIcon,
@@ -11,9 +11,9 @@ import {
 } from "@heroicons/react/outline";
 import { useWindowSize } from "react-use";
 import Burger1 from "../atoms/Burger1";
-import "./Productathon.css";
+import "./Mechathon.css";
 
-function Productathon() {
+function Mechathon() {
   const features = [
     {
       name: "Register",
@@ -66,7 +66,7 @@ function Productathon() {
   return (
     <>
       <div
-        className="Productathon"
+        className="Mechathon"
         style={
           width > 640
             ? {
@@ -81,7 +81,7 @@ function Productathon() {
             : {
                 backgroundImage: `url(${bgImg})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "right",
                 backgroundRepeat: "no-repeat",
                 height: "150vh",
                 boxShadow: "0px 0px 50px 0px var(--bg-color)",
@@ -92,7 +92,9 @@ function Productathon() {
         <nav className="flex justify-between items-center p-5">
           {/* logo */}
           <div className="flex items-center">
-            <a href="/">
+            <a
+              href="/"              
+            >
               <img
                 src={logoAsiet}
                 alt="logo"
@@ -137,7 +139,7 @@ function Productathon() {
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Productathon
+            Mechathon
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
@@ -145,7 +147,7 @@ function Productathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Productathon is a unique program designed specifically for school
+            Mechathon is a unique program designed specifically for school
             students who have an interest in entrepreneurship and innovation. It
             provides a platform for students to turn their ideas into reality by
             offering mentorship, support, and funding. This program is an
@@ -155,7 +157,7 @@ function Productathon() {
           </p>
           {/* basic rounded line button */}
           <button
-            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
             style={{
               boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.9)",
             }}
@@ -179,7 +181,7 @@ function Productathon() {
         </div>
       </div>
 
-      <div className="Productathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
+      <div className="Mechathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
         {/* CONTAINER */}
         <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
           {/* :TITLE CONTAINER */}
@@ -210,7 +212,7 @@ function Productathon() {
                   {/* Background image */}
                   <div className="absolute top-0 left-0 w-full h-full bg-black object-cover"></div>
                   {/* Icon */}
-                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br  text-[var(--primary-color)]">
+                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br  text-[var(--secondary-color)]">
                     {getIcon(features[currentFeature].icon)}
                   </span>
                   {/* Feature name */}
@@ -218,7 +220,7 @@ function Productathon() {
                     {features[currentFeature].name}
                   </dt>
                   {/* Feature description */}
-                  <dd className="relative text-sm text-[var(--primary-color)]/80">
+                  <dd className="relative text-sm text-[var(--secondary-color)]/80">
                     {features[currentFeature].description}
                   </dd>
                   {currentFeature === 0 ? (
@@ -241,8 +243,8 @@ function Productathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 0
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[0].icon)}
@@ -264,8 +266,8 @@ function Productathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 1
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[1].icon)}
@@ -287,8 +289,8 @@ function Productathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 2
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[2].icon)}
@@ -314,8 +316,8 @@ function Productathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 3
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[3].icon)}
@@ -337,8 +339,8 @@ function Productathon() {
                   <span
                     className={` w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 4
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[4].icon)}
@@ -360,8 +362,8 @@ function Productathon() {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 5
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[5].icon)}
@@ -385,4 +387,4 @@ function Productathon() {
   );
 }
 
-export default Productathon;
+export default Mechathon;

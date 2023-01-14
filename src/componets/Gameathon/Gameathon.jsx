@@ -106,7 +106,7 @@ function Gameathon() {
           {/* nav links */}
           <div className="md:flex items-center hidden md:visible">
             <a
-              href="#Home"
+              href="/"
               className="2xl:text-lg text-sm font-medium  text-[#f0f0f064] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
             >
               Home

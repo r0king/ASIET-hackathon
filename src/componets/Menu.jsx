@@ -15,9 +15,9 @@ const Navbar24 = () => {
       <div className=" mx-auto flex justify-between items-center fixed w-full z-50">
         {/* ::Burger icon standard */}
         <div className="inline-flex items-center brightness-[50] opacity-80 p-7">
-          <img src={logoAsiet} className="h-12" alt="logo"></img>
+          <img src={logoAsiet} className="h-9 " alt="logo"></img>
         </div>
-        <div className="mr-5 z-50">
+        <div className="mr-5 z-50 scale-75">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {/* <div className="inline-flex items-center">
@@ -26,48 +26,48 @@ const Navbar24 = () => {
 
       {/* :OPENED MENU */}
       {isOpen && (
-        <div className="fixed pt-[12vh] w-[80vw] left-0 right-0 m-auto z-50 h-screen flex flex-col md:justify-center px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
+        <div className="z-0 fixed pt-[12vh] md:w-[80vw] left-0 right-0 m-auto h-screen flex flex-col md:justify-center px-3  bg-opacity-95 text-base uppercase text-center font-semibold">
           <a
             href="/"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             HOME
           </a>
           <a
             href="/productathon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Productathon
           </a>
 
           <a
             href="/gameathon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Gameathon
           </a>
 
           <a
             href="/ideathon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Young Scientist Award (Ideathon)
           </a>
           <a
             href="/mechathon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Mechathon
           </a>
           <a
             href="/civilathon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Civilathon
           </a>
           <a
             href="/bizthon"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             Bizthon
           </a>
@@ -76,14 +76,14 @@ const Navbar24 = () => {
             onClick={() => {
               setIsOpen(false);
             }}
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
             FAQS
           </a>
           <a
             href="https://www.adishankara.ac.in/contact-us"
             target="_blank"
-            className="block px-3 py-3 w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
+            className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
             rel="noreferrer"
           >
             Contact US
