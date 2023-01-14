@@ -46,16 +46,16 @@ export default class PosterCard extends Component {
                           <p className="mb-1">
                             <i className="uil uil-location-pin-alt size-22"></i>
                           </p>
-                          <div className="img-wrap img-1 ">
+                          {/* <div className="img-wrap img-1 ">
                             <img
                               src={this.props.front1}
                               alt=""
                               className="max-h-56 object-contain"
                             />
-                          </div>
-                          <div className="img-wrap img-6">
+                          </div> */}
+                          {/* <div className="img-wrap img-6">
                             <img src={this.props.front2} alt="" />
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="card-back">
@@ -69,12 +69,12 @@ export default class PosterCard extends Component {
                             <i className="uil uil-location-pin-alt size-22"></i>
                           </p>
                           <p className="mb-4">Tara, Serbia</p>
-                          <div className="img-wrap img-2 -left-10">
+                          {/* <div className="img-wrap img-2 -left-10">
                             <img src={this.props.back1} alt="" />
-                          </div>
-                          <div className="img-wrap img-7">
+                          </div> */}
+                          {/* <div className="img-wrap img-7">
                             <img src={this.props.back2} alt="" />
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
