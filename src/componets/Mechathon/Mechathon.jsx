@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import bgImg from "../../assets/Mechathon/bg.png";
-import logoAsiet from "../../assets/logo.png";
 import {
   CalendarIcon,
   HeartIcon,
@@ -10,8 +9,8 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/outline";
 import { useWindowSize } from "react-use";
-import Burger1 from "../atoms/Burger1";
 import "./Mechathon.css";
+import { Navbar } from "../NavbarPages";
 
 function Mechathon() {
   const features = [
@@ -89,50 +88,8 @@ function Mechathon() {
         }
       >
         {/* navbar */}
-        <nav className="flex justify-between items-center p-5">
-          {/* logo */}
-          <div className="flex items-center">
-            <a
-              href="/"              
-            >
-              <img
-                src={logoAsiet}
-                alt="logo"
-                className="w-10 h-10 object-contain brightness-[5] grayscale"
-              />
-            </a>
-          </div>
-          {/* nav links */}
-          <div className="md:flex items-center hidden md:visible">
-            <a
-              href="/"
-              className="2xl:text-lg text-sm font-medium  text-[#f0f0f064] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
-            >
-              Home
-            </a>
-            <a
-              href="#Events"
-              className="2xl:text-lg text-sm font-medium  text-[#f0f0f080] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
-            >
-              Events
-            </a>
-            <a
-              href="#Blogs"
-              className="2xl:text-lg text-sm font-medium  text-[#f0f0f0c4] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
-            >
-              Blogs
-            </a>
-            <a
-              href="#Contact"
-              className="2xl:text-lg text-sm font-medium  text-[#f0f0f0e6] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
-            >
-              Contact
-            </a>
-          </div>
-          <div className="md:hidden">
-            <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
-          </div>
-        </nav>
+                <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
           <h1
