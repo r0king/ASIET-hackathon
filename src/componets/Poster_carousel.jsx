@@ -9,7 +9,7 @@ const Poster_carousel = () => {
     { id: 1, 
       href: "#link",
       name:"Prodectathon", 
-      image: "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg"
+      image: "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg  "
     },
 
     { id: 2, href: "#link", name:"gameathon", collection: "Stargazers", image: "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg", price: "0.67 ETH", highestBid: "1.5 ETH", stock: "10", chain:"ethereum" },

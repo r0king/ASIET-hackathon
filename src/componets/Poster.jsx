@@ -5,6 +5,7 @@ import xbox from "../assets/Poster/xbox.png";
 import Ps from "../assets/Poster/ps5.png";
 import superM from "../assets/Poster/supermario.png";
 import mcSteeve from "../assets/Poster/minecraft.png";
+import bg1 from "../assets/Bizthon/bg.png"
 import drone from "../assets/Poster/drone2.png";
 import idea from "../assets/Poster/Idea.png";
 import vr from "../assets/Poster/ARVR.png";
@@ -37,7 +38,7 @@ const Poster = () => {
       front2: xbox,
       back1: mcSteeve,
       back2: Ps,
-      
+
       price: "5.5 Lakhs",
     },
     {
