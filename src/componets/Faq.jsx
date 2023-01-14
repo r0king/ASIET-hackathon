@@ -61,6 +61,7 @@ const Faq = () => {
 
   return (
     <div
+      id="faq"
       className="relative py-10 w-full  overflow-x-hidden my-[5vh]"
       style={{
         backgroundColor: "rgba(0,0,0, 0.5)",

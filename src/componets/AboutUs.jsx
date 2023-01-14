@@ -41,7 +41,13 @@ const AboutUs = () => {
               className="absolute left-0 bottom-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full"
               aria-hidden="true"
             />
-            Know More
+            <a
+              href="https://www.adishankara.ac.in/about-us"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Know More
+            </a>
             {/* span::after */}
             <span
               className="absolute left-0 bottom-0 bg-[var(--secondary-color)] transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full"
