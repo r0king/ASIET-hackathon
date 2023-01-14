@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react'
-import { ChevronLeftIcon, ChevronRightIcon, HeartIcon } from "@heroicons/react/solid"
+import { ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/solid"
 
 
-const Poster_carousel = () => {
+const PosterCarousel = () => {
 
   const categories = [
     { id: 1, 
@@ -163,4 +163,4 @@ const Poster_carousel = () => {
   )
 }
 
-export default Poster_carousel
+export default PosterCarousel

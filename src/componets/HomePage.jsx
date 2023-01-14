@@ -23,7 +23,7 @@ import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
-import Poster_carousel from "./Poster_carousel";
+import PosterCarousel from "./Poster_Carousel";
   
 const HomePage = () => {
   const { width, height } = useWindowSize();
@@ -185,7 +185,7 @@ const HomePage = () => {
             <Sponsors />
             <AboutUs />
              <Poster />
-             <Poster_carousel/>
+             <PosterCarousel/>
              <GameWork />
             <AllUNeed2Know />
             <Faq />
