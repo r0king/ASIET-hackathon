@@ -1,5 +1,5 @@
-import React from "react";
-import HeroTitle from "./HeroTitle";
+import React, { useEffect } from "react";
+import "./animation.css";
 
 import scrolImg from "../assets/scroll.gif";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -14,7 +14,7 @@ import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
-import "./animation.css";
+import HeroTitle from "./HeroTitle";
 
 // parallax images import here
 import satImg from "../assets/satlite.png";
@@ -23,34 +23,36 @@ import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud_grp.png";
-import PrizeMoney from "./PrizeMoney";
-// import mountainImg from "../assets/mountain.png";
-// import landScapeImg from "../assets/landscape.png";
-// import asietImg from "../assets/asiet.png";
 
 const HomePage = () => {
   const { width, height } = useWindowSize();
   // refer parallax
+  const parallax = React.useRef();
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
   // let pages = width < 450 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
   let pages = 0;
   if (width < 450) {
-    if (height < 750) {
-      pages = 8;
+    if (height < 768) {
+      pages = 9;
     } else {
-      pages = 5.8;
+      pages = 6.3;
     }
   } else {
-    if (height < 750) {
-      pages = 5.5;
+    if (height < 768) {
+      pages = 6.5;
     } else {
       pages = 4.6;
     }
   }
+  useEffect(() => {
+    // const pheight = findPageHeight()
+    // parallax.content.current.style.height = '7000px'
+  }, []);
+
   return (
-    <div className="bg-black">
+    <div className="bg-[#171717]">
       <Menu />
       <div className="bg-animation">
         <div id="stars"></div>
@@ -63,12 +65,13 @@ const HomePage = () => {
         style={{
           zIndex: 10,
         }}
+        ref={parallax}
       >
-        {/* Main Title */}
-        <ParallaxLayer speed={3} offset={0.1}>
-          {/* <Install/> */}
+        {/* PrizeMoney */}
+        {/* <ParallaxLayer speed={3} offset={0.1}>
           <PrizeMoney />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
+        {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           {/* <Install/> */}
           <HeroTitle />
@@ -118,10 +121,10 @@ const HomePage = () => {
         {/* Moon Shadow */}
         <ParallaxLayer
           offset={width < 450 ? (height < 650 ? 1.8 : 1.8) : 1.8}
-          speed={0.1}
+          speed={0.08}
           className="flex  md:scale-75 justify-end"
         >
-          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-black opacity-50"></div>
+          <div className="h-[100vw] md:h-[600px] md:ml-[45vw] w-[100vw] md:w-[45vw] shadow-[inset_53px_0_100px_49px_rgba(0,0,0,0.25)] rounded-full blur-md bg-[#171717] opacity-50"></div>
         </ParallaxLayer>
         {/* Cloud 1*/}
         <ParallaxLayer
@@ -176,7 +179,7 @@ const HomePage = () => {
 
         {/* Main Componets */}
         <>
-          <ParallaxLayer offset={0.99} speed={1}>
+          <ParallaxLayer offset={1} speed={1}>
             <Tagline />
             <Sponsors />
             <AboutUs />

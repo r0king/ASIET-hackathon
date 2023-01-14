@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --primary-color: #0d6394;
-  --secondary-color: #f0f0f0;
+  --primary-color: #4285f4;
+  --secondary-color: #f0f0f0f3;
   --gradient-primary: #e0eafc;
   --gradient-secondary: #cfdef3;
 }
@@ -46,6 +46,13 @@ code {
 }
 
 @layer utilities {
+  @variants group-hover {
+    .shape-btn-h-32 {
+      stroke-width: 4;
+      stroke-dasharray: 125, 330;
+      stroke-dashoffset: 265;
+    }
+  }
   .transform-letter-te7 {
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
@@ -86,16 +93,16 @@ code {
     }
   }
   .transform-after-the3 {
-    transform: translate3d(101%,0,0);
+    transform: translate3d(101%, 0, 0);
   }
   @variants group-hover {
     .transform-h-after-the3 {
-      transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
   }
   .shadow-text5 {
     text-shadow: -15px 5px 20px #ced0d3;
-    }
+  }
   @variants hover {
     .shadow-h-text5 {
       text-shadow: -16px 6px 15px #ced0d3;
@@ -112,4 +119,19 @@ code {
       -0.2rem 0.1rem 1rem #f1f1f1, 0.2rem 0.1rem 1rem #f1f1f1,
       0 -0.5rem 2rem #e2dcc8, 0 0.5rem 3rem #e2dcc8;
   }
+}
+
+@keyframes marquee-alt {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.moving-text {
+  animation: marquee-alt 15s linear infinite;
+}
+.moving-text:hover{
+  animation-play-state: paused;
 }

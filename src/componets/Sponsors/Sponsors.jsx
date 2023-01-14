@@ -11,7 +11,7 @@ import partner1 from "../../assets/Sponsors/jyothy.png";
 import "./Sponsors.css";
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full  text-[var(--secondary-color)] mt-32 md:mt-40">
+    <div className="mx-auto py-10 px-4 w-full text-[var(--secondary-color)] mt-32 md:mt-40">
       <div className="flex flex-col items-center my-5 space-y-12">
         {/* :TITLE CONTAINER */}
         <div className="mx-auto max-w-6xl space-y-3 text-center">
@@ -26,51 +26,81 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-6 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo1}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain  "
+              className="w-full md:max-h-20 max-h-10 object-contain "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain  "
+              className=" w-full md:max-h-20 max-h-10 object-contain "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo3}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contain  "
+              className=" w-full md:max-h-20 max-h-10 object-contain "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo4}
               alt=""
-              className="  w-full  md:max-h-20 max-h-10 object-contaiimage.pngn  "
+              className=" w-full md:max-h-20 max-h-10 object-contaiimage.pngn "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             {/* logo must be visible */}
             <img
               src={logo5}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain invert"
+              className="w-full md:max-h-20 max-h-10 object-contain invert"
             />
           </div>
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[20vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo6}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain   "
+              className="w-full md:max-h-20 max-h-10 object-contain  "
             />
           </div>
         </div>
@@ -91,19 +121,29 @@ export default function Sponsors() {
         </div>
         {/* :PARTNERS LOGOS */}
         <div className="flex justify-center gap-5 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg" >
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={partner1}
               alt=""
-              className="w-full  md:max-h-20 max-h-10 object-contain  "
+              className="md:max-h-[15vw]  object-contain "
             />
           </div>
 
-          <div className="py-12 px-5 flex max-w-[50vw] justify-center logo_bg">
+          <div
+            className="py-12 px-5 flex max-w-[50vw] rounded-lg md:max-w-[15vw] bg-black/70 justify-center cursor-pointer "
+            style={{
+              boxShadow: "rgb(255 255 255 / 15%) 0px 8px 40px 0px",
+            }}
+          >
             <img
               src={logo2}
               alt=""
-              className=" w-full  md:max-h-20 max-h-10 object-contain  "
+              className=" w-full md:max-h-[15vw] object-contain "
             />
           </div>
         </div>
