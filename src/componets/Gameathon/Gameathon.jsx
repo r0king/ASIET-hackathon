@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import bgImg from "../../assets/Gameathon/bg.png";
+import logoAsiet from "../../assets/logo.png";
 import {
   CalendarIcon,
   HeartIcon,
@@ -7,8 +9,11 @@ import {
   CreditCardIcon,
   UserGroupIcon,
 } from "@heroicons/react/outline";
-import "./GG.css";
-const Gameathon = () => {
+import { useWindowSize } from "react-use";
+import Burger1 from "../atoms/Burger1";
+import "./Gameathon.css";
+
+function Gameathon() {
   const features = [
     {
       name: "Register",
@@ -55,23 +60,131 @@ const Gameathon = () => {
 
   const [currentFeature, setCurrentFeature] = useState(0);
 
+  const { width } = useWindowSize();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <div className="bg-animation">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
+      <div
+        className="Gameathon"
+        style={
+          width > 640
+            ? {
+                backgroundImage: `url(${bgImg})`,
+                backgroundSize: "contain",
+                backgroundPosition: "right 0",
+                backgroundRepeat: "no-repeat",
+                height: "140vh",
+                backgroundColor: "var(--bg-color)",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              }
+            : {
+                backgroundImage: `url(${bgImg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                height: "150vh",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              }
+        }
+      >
+        {/* navbar */}
+        <nav className="flex justify-between items-center p-5">
+          {/* logo */}
+          <div className="flex items-center">
+            <img
+              src={logoAsiet}
+              alt="logo"
+              className="w-10 h-10 object-contain brightness-[5] grayscale"
+            />
+          </div>
+          {/* nav links */}
+          <div className="md:flex items-center hidden md:visible">
+            <a
+              href="#Home"
+              className="2xl:text-lg text-sm font-medium  text-[#f0f0f064] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
+            >
+              Home
+            </a>
+            <a
+              href="#Events"
+              className="2xl:text-lg text-sm font-medium  text-[#f0f0f080] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
+            >
+              Events
+            </a>
+            <a
+              href="#Blogs"
+              className="2xl:text-lg text-sm font-medium  text-[#f0f0f0c4] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
+            >
+              Blogs
+            </a>
+            <a
+              href="#Contact"
+              className="2xl:text-lg text-sm font-medium  text-[#f0f0f0e6] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
+            >
+              Contact
+            </a>
+          </div>
+          <div className="md:hidden">
+            <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
+        </nav>
+        {/* main content */}
+        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+          <h1
+            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            style={{ fontFamily: "Azonix" }}
+          >
+            Gameathon
+          </h1>
+          {/* sub heading */}
+          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+            24 Hours of Innovation
+          </h2>
+          {/* description */}
+          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+            Gameathon is a unique program designed specifically for school
+            students who have an interest in entrepreneurship and innovation. It
+            provides a platform for students to turn their ideas into reality by
+            offering mentorship, support, and funding. This program is an
+            excellent opportunity for students to gain practical experience in
+            starting a business, learn from industry experts and develop their
+            skills in problem-solving, creativity and teamwork.
+          </p>
+          {/* basic rounded line button */}
+          <button
+            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+            style={{
+              boxShadow: "0px 10px 15px rgba(0, 0, 0, 0.9)",
+            }}
+          >
+            Register Now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="Gameathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
         {/* CONTAINER */}
-        <div className="py-16 px-5 flex flex-col justify-center items-center space-y-10">
+        <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
           {/* :TITLE CONTAINER */}
-          <div className="relative z-50 w-full text-center text-white">
+          <div className="relative z-50 w-full text-center text-[var(--secondary-color)]">
             <h2 className="capitalize">
               <span className="block mt-2 text-3xl sm:text-4xl font-bold">
-                Gameathon
+                Rules And Regulations
               </span>
             </h2>
           </div>
@@ -93,28 +206,21 @@ const Gameathon = () => {
                   style={{ width: "85%", height: "92%" }}
                 >
                   {/* Background image */}
-                  <img
-                    src="https://fancytailwind.com/static/doctor1-c976c70d307506e76a6ed1bd0c592475.jpg"
-                    alt=""
-                    className="absolute top-0 left-0 w-full h-full object-cover opacity-10"
-                  />
+                  <div className="absolute top-0 left-0 w-full h-full bg-black object-cover"></div>
                   {/* Icon */}
-                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br from-green-500 to-blue-500 text-white">
+                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br  text-[var(--secondary-color)]">
                     {getIcon(features[currentFeature].icon)}
                   </span>
                   {/* Feature name */}
-                  <dt className="relative mb-5 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-xl text-transparent font-bold">
+                  <dt className="relative mb-5 bg-gradient-to-br  bg-clip-text text-xl  font-bold">
                     {features[currentFeature].name}
                   </dt>
                   {/* Feature description */}
-                  <dd className="relative text-sm text-gray-700">
+                  <dd className="relative text-sm text-[var(--secondary-color)]/80">
                     {features[currentFeature].description}
                   </dd>
                   {currentFeature === 0 ? (
-                    <button
-                      id="register_btn"
-                      className="bg-gradient-to-br from-green-500 to-blue-500"
-                    >
+                    <button id="register_btn" className="bg-gradient-to-br ">
                       Register
                     </button>
                   ) : (
@@ -133,8 +239,8 @@ const Gameathon = () => {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 0
-                        ? "from-[#0d6394] to-[#0d6394] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[0].icon)}
@@ -142,9 +248,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 0
-                        ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "bg-gradient-to-br  bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[0].name}
                   </h3>
@@ -156,8 +262,8 @@ const Gameathon = () => {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 1
-                        ? "from-[#0d6394] to-[#0d6394] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[1].icon)}
@@ -165,9 +271,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 1
-                        ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "bg-gradient-to-br  bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[1].name}
                   </h3>
@@ -179,8 +285,8 @@ const Gameathon = () => {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 2
-                        ? "from-[#0d6394] to-[#0d6394] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[2].icon)}
@@ -188,9 +294,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 2
-                        ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "bg-gradient-to-br  bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[2].name}
                   </h3>
@@ -206,8 +312,8 @@ const Gameathon = () => {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 3
-                        ? "from-[#0d6394] to-[#0d6394] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[3].icon)}
@@ -215,9 +321,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 3
-                        ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "bg-gradient-to-br  bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[3].name}
                   </h3>
@@ -227,10 +333,10 @@ const Gameathon = () => {
               <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
                 <button onClick={() => setCurrentFeature(4)}>
                   <span
-                    className={`hover:bg-sky-700 w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
+                    className={` w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 4
-                        ? "from-[#3bc8ff] to-[#3bc8ff] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[4].icon)}
@@ -238,9 +344,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 4
-                        ? "text-white bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? " bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[4].name}
                   </h3>
@@ -252,8 +358,8 @@ const Gameathon = () => {
                   <span
                     className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
                       currentFeature === 5
-                        ? "from-[#0d6394] to-[#0d6394] text-white"
-                        : "from-gray-400 to-gray-400 text-black"
+                        ? " text-[var(--secondary-color)]"
+                        : "from-[var(--secondary-color)] to-transparent "
                     }`}
                   >
                     {getIcon(features[5].icon)}
@@ -261,9 +367,9 @@ const Gameathon = () => {
                   <h3
                     className={`${
                       currentFeature === 5
-                        ? "bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent"
-                        : "text-gray-400"
-                    } text-xs sm:text-base uppercase`}
+                        ? "bg-gradient-to-br  bg-clip-text "
+                        : "text-[var(--primary-color)]"
+                    } text-xs sm:text-base uppercase p-4`}
                   >
                     {features[5].name}
                   </h3>
@@ -275,6 +381,6 @@ const Gameathon = () => {
       </div>
     </>
   );
-};
+}
 
 export default Gameathon;
