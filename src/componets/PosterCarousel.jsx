@@ -48,7 +48,6 @@ const PosterCarousel = () => {
   const nextBtn = React.createRef();
   const previousSuggestion = () => {
     if (position >= 1) {
-      prevBtn.current.style.opacity = 1;
       setPosition(position - 1);
       // if it have prevAnimation2 class then remove it and add prevAnimation1 class
       if (prevBtn.current.classList.contains("prevAnimation2")) {
@@ -71,8 +70,7 @@ const PosterCarousel = () => {
   const nextSuggestion = () => {
     let maxSlide = categories.length - 2;
     position <= maxSlide && setPosition(position + 1);
-    if (position <= maxSlide - 1) {
-      nextBtn.current.style.opacity = 1;
+    if (position <= maxSlide) {
       // setPosition(position + 1);
       // if it have nextAnimation2 class then remove it and add nextAnimation1 class
       if (nextBtn.current.classList.contains("nextAnimation2")) {
@@ -88,7 +86,8 @@ const PosterCarousel = () => {
       else {
         nextBtn.current.classList.add("nextAnimation2");
       }
-    } else {
+    }
+    if (position > maxSlide-1) {
       nextBtn.current.style.opacity = 0.3;
     }
   };
@@ -99,6 +98,8 @@ const PosterCarousel = () => {
     let slideValue = viewport < 640 ? -100 : viewport < 1024 ? -33.33 : -33.33;
     // On each state update it will slide to the current position
     slide.style.transform = `translateX(${start * slideValue}%)`;
+    prevBtn.current.style.opacity = 1;
+    nextBtn.current.style.opacity = 1;
   }, [position]);
   // On resize set current position to zero to avoid unwanted effects
   useEffect(() => {
