@@ -3,7 +3,6 @@ import "./animation.css";
 import Faq from "./Faq";
 import ContactUs from "./ContactUs";
 import AboutUs from "./AboutUs";
-import Poster from "./Poster";
 import Tagline from "./Tagline";
 import Menu from "./Menu";
 // import { useWindowSize } from "react-use";
@@ -13,6 +12,7 @@ import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 import planetGif from "../assets/earth1.gif";
+import PosterCarousel from "./PosterCarousel";
 
 const HomePage = () => {
   return (
@@ -26,11 +26,7 @@ const HomePage = () => {
       <Menu />
       <div className="relative">
         <div className="absolute flex w-full justify-center">
-          <img
-            src={planetGif}
-            alt="planet"
-            className="ml-10 -z-10 mt-[45vh]"
-          />
+          <img src={planetGif} alt="planet" className="ml-10 -z-10 mt-[45vh]" />
         </div>
         <HeroTitle />
         <CountDown />
@@ -39,7 +35,7 @@ const HomePage = () => {
         <Tagline />
         <Sponsors />
         <AboutUs />
-        <Poster />
+        <PosterCarousel />
         <GameWork />
         <AllUNeed2Know />
         <Faq />
