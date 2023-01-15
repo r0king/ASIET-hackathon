@@ -11,8 +11,8 @@ import partner1 from "../../assets/Sponsors/jyothy.png";
 import "./Sponsors.css";
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full text-[var(--secondary-color)] mt-32 md:mt-40">
-      <div className="flex flex-col items-center my-5 space-y-12">
+    <div className="mx-auto py-10 px-4 w-full text-[var(--secondary-color)] mt-32 md:mt-40 z-10">
+      <div className="flex flex-col items-center my-5 space-y-12 ">
         {/* :TITLE CONTAINER */}
         <div className="mx-auto max-w-6xl space-y-3 text-center">
           {/* ::Title */}

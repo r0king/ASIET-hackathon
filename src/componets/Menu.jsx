@@ -7,7 +7,7 @@ const Navbar24 = () => {
 
   return (
     <header
-      className={`w-screen  bg-transparent text-gray-100 body-font mb-4 md:pr-5  shadow-sm fixed z-50 Menu ${
+      className={`w-screen  bg-transparent text-gray-100 body-font mb-4 md:pr-5 top-0 shadow-sm fixed z-50 Menu ${
         isOpen && "bg-black/90 h-screen"
       }`}
     >

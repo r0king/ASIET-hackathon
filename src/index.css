@@ -39,12 +39,6 @@ code {
   src: local("Azonix"), url(fonts/Azonix.otf) format("opentype");
 }
 
-#tsparticles {
-  background: black;
-  z-index: 1;
-  position: fixed;
-}
-
 @layer utilities {
   @variants group-hover {
     .shape-btn-h-32 {
