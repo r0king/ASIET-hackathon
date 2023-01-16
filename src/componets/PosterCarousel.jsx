@@ -102,7 +102,7 @@ const PosterCarousel = () => {
     slide.style.transform = `translateX(${start * slideValue}%)`;
     prevBtn.current.style.opacity = 1;
     nextBtn.current.style.opacity = 1;
-  }, [position]);
+  }, [position,prevBtn,nextBtn]);
   // On resize set current position to zero to avoid unwanted effects
   useEffect(() => {
     window.addEventListener("resize", () => setPosition(0));
@@ -136,6 +136,7 @@ const PosterCarousel = () => {
                 // glarePosition="top"
                 // glareBorderRadius="15px"
                 perspective={500}
+                key={item.id}
               >
                 <li
                   key={item.id}
