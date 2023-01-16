@@ -32,14 +32,12 @@ const Poster = () => {
       tagline:
         "Gameathon is also a 24hrs Hackathon event, where students will receive hybrid mentoring bootcamp in Unity Game Development. In addition, they can build their own creative games or startup products through games with the support of TiltLabs Consultancy Services Pvt Ltd and JITF Banglore.",
       href: "#link",
-      picture:
-        "https://fancytailwind.com/static/furniture1-cc3771ea8f6070740dda23b432a8e5c3.jpg",
-      pictureAlt: "Description of your picture",
+  
       front1: superM,
-      
       front2: xbox,
       back1: mcSteeve,
       back2: Ps,
+
       price: "5.5 Lakhs",
     },
     {
@@ -48,8 +46,7 @@ const Poster = () => {
       tagline:
         "Ideathon is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
       href: "#link",
-      picture:
-        "https://fancytailwind.com/static/lamp1-cd268fab2e874e2255fa2f8c4a9d9b93.jpg",
+       
       pictureAlt: "Description of your picture",
       front1: idea,
       
@@ -59,7 +56,7 @@ const Poster = () => {
       price: "3.5 Lakhs",
     },
   ];
-
+  
   return (
     <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center ">

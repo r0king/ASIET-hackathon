@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div className="flex p-6 justify-center items-center ">
       <div
-        className=" w-[90vw]  bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70  text-[#f0f0f0] overflow-hidden"
+        className=" w-[90vw] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 bg-clip-padding backdrop-filter bg-opacity-70  text-[#f0f0f0] overflow-hidden"
         style={{
           boxShadow: "rgb(0 0 0 / 90%) 12px 8px 40px 0px",
         }}

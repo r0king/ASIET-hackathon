@@ -12,7 +12,7 @@
 /* *{
   outline: 3px solid limegreen !important;
 } */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;400&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200&family=Roboto+Slab:wght@700&display=swap");
 
 html {
@@ -49,7 +49,7 @@ code {
   @variants group-hover {
     .shape-btn-h-32 {
       stroke-width: 4;
-      stroke-dasharray: 125, 330;
+      stroke-dasharray: 125, 340;
       stroke-dashoffset: 265;
     }
   }
@@ -132,6 +132,67 @@ code {
 .moving-text {
   animation: marquee-alt 15s linear infinite;
 }
-.moving-text:hover{
+.moving-text:hover {
   animation-play-state: paused;
+}
+@keyframes moveNext {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20%) scale(1.2);
+  }
+  100% {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@keyframes moveNext2 {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20%) scale(1.2);
+  }
+  100% {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+.nextAnimation1 {
+  animation: moveNext 0.3s ease-in-out;
+}
+.nextAnimation2 {
+  animation: moveNext2 0.3s ease-in-out;
+}
+
+@keyframes movePrev1 {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-20%) scale(1.2);
+  }
+  100% {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@keyframes movePrev2 {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-20%) scale(1.2);
+  }
+  100% {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+.prevAnimation1 {
+  animation: movePrev1 0.3s ease-in-out;
+}
+.prevAnimation2 {
+  animation: movePrev2 0.3s ease-in-out;
 }
