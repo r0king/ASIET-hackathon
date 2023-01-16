@@ -76,7 +76,7 @@ const HomePage = () => {
         {/* Main Title */}
         <ParallaxLayer speed={3} offset={0.1}>
           {/* <Install/> */}
-          <PrizeMoney />
+        <PrizeMoney />
         </ParallaxLayer>
         <ParallaxLayer speed={0.3} offset={0.1}>
           {/* <Install/> */}

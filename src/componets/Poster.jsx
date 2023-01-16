@@ -59,7 +59,7 @@ const Poster = () => {
       price: "3.5 Lakhs",
     },
   ];
-
+  
   return (
     <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center ">
