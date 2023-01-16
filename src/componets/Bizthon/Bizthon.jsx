@@ -104,13 +104,10 @@ function Bizthon() {
           </h2>
           {/* description */}
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Bizthon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. It
-            provides a platform for students to turn their ideas into reality by
-            offering mentorship, support, and funding. This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and develop their
-            skills in problem-solving, creativity and teamwork.
+            Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.    
+            This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
+
+            So,grab your ticket to revolutiona nd metamorphise yourselves!
           </p>
           {/* basic rounded line button */}
           <button
