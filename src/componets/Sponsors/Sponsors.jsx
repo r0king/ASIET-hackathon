@@ -1,129 +1,120 @@
-import React from "react";
-import logo1 from "../../assets/Sponsors/cloud.png";
-import logo2 from "../../assets/Sponsors/ciirc.png";
-import logo3 from "../../assets/Sponsors/nascom1.png";
-import logo4 from "../../assets/Sponsors/nascom2.png";
-import logo5 from "../../assets/Sponsors/tiltlabs.png";
-import logo6 from "../../assets/Sponsors/maker.png";
+import React from 'react'
+import logo1 from "../../assets/Sponsors/cloud.png"
+import logo2 from "../../assets/Sponsors/kerala.png"
+import logo3 from "../../assets/Sponsors/maker.png"
+import logo4 from "../../assets/Sponsors/nascom1.png"
+import "./Sponsors.css"
+import Tilt from 'react-parallax-tilt';
 
-import partner1 from "../../assets/Sponsors/jyothy.png";
-
-import "./Sponsors.css";
 export default function Sponsors() {
   return (
-    <div className="mx-auto py-10 px-4 w-full  text-[var(--secondary-color)] mt-32 md:mt-40">
-      <div className="flex flex-col items-center my-5 space-y-12">
-        {/* :TITLE CONTAINER */}
-        <div className="mx-auto max-w-6xl space-y-3 text-center">
-          {/* ::Title */}
-          <h2 className="text-3xl font-bold tracking-wide">Our Sponsers</h2>
-          {/* ::Text */}
-          <p className="text-lg sm:text-base text-[var(--secondary-color)]">
-            Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate
-            quidem, repudiandae nihil repellendus praesentium impedit sequi non
-            modi ipsa! Libero, nostrum?
-          </p>
+    <div className="sponsers_main_container">
+      <div className="sponsors_container">
+        <div className="sponsor_title">
+          <h1 className='text-3xl p-10'>Our Sponsors</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit repudiandae magni voluptas sint velit ullam dolores odit molestiae libero Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi dolorem, magnam tenetur modi reiciendis omnis placeat incidunt reprehenderit beatae?</p>
         </div>
-        {/* :PARTNERS LOGOS */}
-        <div className="flex justify-center gap-6 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo1}
-              alt=""
-              className="w-full  md:max-h-20  max-h-10 object-contain  "
-            />
-          </div>
-
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo2}
-              alt=""
-              className=" w-full  md:max-h-20  max-h-10 object-contain  "
-            />
-          </div>
-
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo3}
-              alt=""
-              className="  w-full  md:max-h-20  max-h-10 object-contain  "
-            />
-          </div>
-
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo4}
-              alt=""
-              className="  w-full  md:max-h-20  max-h-10 object-contaiimage.pngn  "
-            />
-          </div>
-
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            {/* logo must be visible */}
-            <img
-              src={logo5}
-              alt=""
-              className="w-full  md:max-h-20  max-h-10 object-contain invert"
-            />
-          </div>
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo6}
-              alt=""
-              className="w-full  md:max-h-20  max-h-10 object-contain   "
-            />
+        <div className="sponsors_platinum sponsors">
+          <h1 className='text-2xl p-3'>Platinum</h1>
+          <div className="images">
+            <Tilt scale={0.9} glareEnable={true} glareColor="cyan" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo1} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="cyan" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo2} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="cyan" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo3} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="cyan" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo4} alt="" />
+            </div>
+            </Tilt>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center my-10 space-y-12">
-        {/* :TITLE CONTAINER */}
-        <div className="mx-auto max-w-6xl space-y-3 text-center">
-          {/* ::Title */}
-          <h2 className="text-3xl font-bold tracking-wide">
-            Our Trusted Partners
-          </h2>
-          {/* ::Text */}
-          <p className="text-lg sm:text-base text-[var(--secondary-color)]">
-            Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate
-            quidem, repudiandae nihil repellendus praesentium impedit sequi non
-            modi ipsa! Libero, nostrum?
-          </p>
-        </div>
-        {/* :PARTNERS LOGOS */}
-        <div className="flex justify-center gap-5 flex-wrap">
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={partner1}
-              alt=""
-              className="w-full  md:max-h-20  max-h-10 object-contain  "
-            />
+        <div className="sponsors_diamond sponsors">
+          <h1 className='text-2xl p-3'>Diamond</h1>
+          <div className="images">
+          <Tilt scale={0.9} glareEnable={true} glareColor="pink" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo1} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="pink" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo2} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="pink" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo3} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="pink" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo4} alt="" />
+            </div>
+            </Tilt>
           </div>
-
-          <div className="py-12 px-5 flex max-w-[50vw] md:max-w-[20vw] logo_bg justify-center rounded" style={{
-            backgroundColor: "#E2eff39b"
-          }}>
-            <img
-              src={logo2}
-              alt=""
-              className=" w-full  md:max-h-20  max-h-10 object-contain  "
-            />
+        </div>
+        <div className="sponsors_gold sponsors">
+          <h1 className='text-2xl p-3'>Gold</h1>
+          <div className="images">
+          <Tilt scale={0.9} glareEnable={true} glareMaxOpacity={0.45} glareBorderRadius="15px" glareColor="gold" glarePosition="all" perspective={500} >
+            <div className="img">
+              <img src={logo1} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="gold" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo2} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="gold" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo3} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="gold" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo4} alt="" />
+            </div>
+            </Tilt>
+          </div>
+        </div>
+        <div className="sponsors_silver sponsors">
+          <h1 className='text-2xl p-3'>Silver</h1>
+          <div className="images">
+          <Tilt scale={0.9} glareEnable={true} glareColor="silver" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo1} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="silver" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo2} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="silver" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo3} alt="" />
+            </div>
+            </Tilt>
+            <Tilt scale={0.9} glareEnable={true} glareColor="silver" glarePosition="all" glareMaxOpacity={0.45} glareBorderRadius="15px" perspective={500} >
+            <div className="img">
+              <img src={logo4} alt="" />
+            </div>
+            </Tilt>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
