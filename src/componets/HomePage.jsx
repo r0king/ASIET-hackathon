@@ -21,6 +21,7 @@ import moonImg from "../assets/moon.png";
 import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import PosterCarousel from "./PosterCarousel";
+import PrizeMoney from "./PrizeMoney";
 
 const HomePage = () => {
   const { width, height } = useWindowSize();
@@ -66,9 +67,9 @@ const HomePage = () => {
         ref={parallax}
       >
         {/* PrizeMoney */}
-        {/* <ParallaxLayer speed={3} offset={0.1}>
+        <ParallaxLayer speed={3} offset={0.1}>
           <PrizeMoney />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
         {/* Main Title */}
         <ParallaxLayer speed={0.3} offset={0.1}>
           {/* <Install/> */}

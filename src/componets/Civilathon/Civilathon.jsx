@@ -104,13 +104,12 @@ function Civilathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Civilathon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. It
-            provides a platform for students to turn their ideas into reality by
-            offering mentorship, support, and funding. This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and develop their
-            skills in problem-solving, creativity and teamwork.
+            Civilathon is a rapid and collaborative hackathon aimed at the discipline of Civil Engineering. It is an excellent platform for students with limited experience in coding to showcase their skills and talents, in the said discipline.
+             The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility. 
+             
+             So hope on, and get a ticket for this exciting adventure where you can get many networking opportunities, polish your existing skills and flourish yourselves.
+
+
           </p>
           {/* basic rounded line button */}
           <button
