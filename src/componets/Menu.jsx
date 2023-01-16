@@ -17,7 +17,7 @@ const Navbar24 = () => {
         <div className="inline-flex items-center brightness-[50] opacity-80 p-7">
           <img src={logoAsiet} className="h-9 " alt="logo"></img>
         </div>
-        <div className="mr-5 z-50 scale-75 pr-3">
+        <div className="mr-5 z-50 scale-75">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {/* <div className="inline-flex items-center">
