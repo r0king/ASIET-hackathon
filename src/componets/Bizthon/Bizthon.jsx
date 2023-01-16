@@ -106,8 +106,10 @@ function Bizthon() {
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
             Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.    
             This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
+            Bring forth your analytical and creative skills to expose your hidden self.
 
             So,grab your ticket to revolutiona nd metamorphise yourselves!
+
           </p>
           {/* basic rounded line button */}
           <button
