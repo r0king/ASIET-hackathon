@@ -139,7 +139,7 @@ const PosterCarousel = () => {
               >
                 <li
                   key={item.id}
-                  className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-full md:w-[290px] "
+                  className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px] ml-7 md:ml-0 "
                   style={{
                     transformStyle: "preserve-3d",
                   }}
@@ -148,8 +148,8 @@ const PosterCarousel = () => {
                     href={item.name}
                     className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
                       position === item.id
-                        ? "-translate-y-3 md:-translate-y-9 scale-110 "
-                        : "hover:-translate-y-3 md:hover:-translate-y-9 hover:scale-110"
+                        ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
+                        : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
                     }`}
                   >
                     {/* ::Image Container */}
