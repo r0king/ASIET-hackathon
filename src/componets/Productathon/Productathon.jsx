@@ -102,12 +102,11 @@ function Productathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Productathon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. It
-            provides a platform for the school graders to turn their ideas into life. And, to back them up we do
-            offer mentorship, support, and funding. This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and evolve themselves in problem-solving, creativity and teamwork.
+            Productathon is a Productathon is a 24hrs Hackathon event,  where aspiring student entrepreneurs can come collaborate 
+            and build  their startup ideas to a minimum viable product with the support of Nasscom 10k Startups , MakerGram and Google Cloud.
+           It has been designed specifically for students who have an grails in entrepreneurship and innovation. 
+
+           So, come forth ,grab and your ticket and prove your mettle!
           </p>
           {/* basic rounded line button */}
           <button
