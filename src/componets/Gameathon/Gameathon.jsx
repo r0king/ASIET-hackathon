@@ -105,13 +105,12 @@ function Gameathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Gameathon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. It
-            provides a platform for students to turn their ideas into reality by
-            offering mentorship, support, and funding. This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and develop their
-            skills in problem-solving, creativity and teamwork.
+            Are you one of those who aspires to make the gaming lives easy??
+            Then we have got your back.
+            Presenting to you the GAMEATHON where you developers get to pitch your  gaming ideas and take home your skills to create your own masterpiece backed up by hybrid mentoring bootcamp in Unity Game Development.
+            Plus,you can also create and invent with the support of TiltLabs Consultency Services pvt ltd and JITF Banglore.
+
+            You ideate, we give life and play!!!
           </p>
           {/* basic rounded line button */}
           <button
