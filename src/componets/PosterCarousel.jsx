@@ -111,7 +111,7 @@ const PosterCarousel = () => {
   useEffect(() => {});
 
   return (
-    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
+    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:my-28">
       {/* :TITLE CONTAINER */}
       <div className="px-5">
         <h2 className="relative flex justify-center font-[900] text-3xl text-gray-400 uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
@@ -154,7 +154,7 @@ const PosterCarousel = () => {
                     }`}
                   >
                     {/* ::Image Container */}
-                    <div className="relative shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                    <div className="relative shadow-[20px_20px_50px_rgba(0,0,0,0.5)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
                       <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
                         {/* :::image nft */}
                         <img
