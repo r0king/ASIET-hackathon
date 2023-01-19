@@ -47,22 +47,22 @@ const HomePage = () => {
       pages = 4.6;
     }
   }
-  let end = 0;
+  let endparallax = 0;
   // width < 640 ? (height < 750 ? 8 : height < 950 ? 5.5 : 6.4) : 4.5
   if (width < 640) {
     if (height < 650) {
-      end = 8;
+      endparallax = 8;
     } else if (height < 750) {
-      end = 7;
+      endparallax = 7;
     } else {
-      end = 6.2;
+      endparallax = 6.2;
     }
   } else if (width < 1400) {
-    end = 4.5;
+    endparallax = 4.5;
   } else if (width < 1400) {
-    end = 4;
+    endparallax = 4;
   } else {
-    end = 3.4;
+    endparallax = 3.4;
   }
   useEffect(() => {
     // const pheight = findPageHeight()
@@ -164,7 +164,7 @@ const HomePage = () => {
         <ParallaxLayer
           speed={0.6}
           sticky={{
-            start: 5.7,
+            start: endparallax,
             end: 20,
           }}
           className=""
