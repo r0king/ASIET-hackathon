@@ -17,7 +17,7 @@ const Navbar24 = () => {
         <div className="inline-flex items-center brightness-[50] opacity-80 p-7">
           <img src={logoAsiet} className="h-9 " alt="logo"></img>
         </div>
-        <div className="mr-5 z-50 scale-75 pr-3">
+        <div className="mr-5 z-50 scale-75">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {/* <div className="inline-flex items-center">
@@ -51,7 +51,7 @@ const Navbar24 = () => {
             href="/ideathon"
             className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
-            Young Scientist Award (Ideathon)
+            Young Scientist Award
           </a>
           <a
             href="/mechathon"

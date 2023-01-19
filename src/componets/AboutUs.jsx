@@ -1,5 +1,4 @@
 import React from "react";
-import image1 from "../assets/about-1.webp";
 import image2 from "../assets/asiet1.jpeg";
 
 const AboutUs = () => {
@@ -9,16 +8,16 @@ const AboutUs = () => {
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-xl  pt-10 md:pt-0 text-gray-400 font-bold uppercase tracking-wide">
+          <p className="text-lg  pt-10 md:pt-0 text-[var(--secondary-color)] font-bold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
-          <h2 className="mb-8 text-3xl text-gray-100 font-bold capitalize">
+          <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
             <span className="text-[var(--primary-color)]">About Our</span>{" "}
             <span className="">Institute</span>
           </h2>
           {/* Content goes here */}
-          <p className="text-xl text-justify ">
+          <p className="text-base text-justify text-[var(--secondary-color)]">
             Adi Shankara Institute of Engineering and Technology was established
             in Kalady with the sole purpose of cultivating the engineering
             temperament of its students and turning them into enterprising
@@ -32,13 +31,18 @@ const AboutUs = () => {
           </p>
           {/* ::Button */}
           <button
-            className="group my-5 relative inline-flex items-center px-5 py-2.5 rounded  font-bold bg-[#E2eff3] text-[#171717] text-lg transition-all duration-200 ease-out  hover:bg-transparent hover:to-transparent hover:text-[var(--secondary-color)]  "
+            className="group
+             my-5 px-5 py-2.5 
+           bg-[var(--accent-color)] text-[var(--secondary-color))]
+             text-lg font-bold 
+             relative inline-flex items-center rounded  
+             transition-all duration-200 ease-out
+             hover:bg-transparent hover:to-transparent hover:text-[var(--secondary-color)]  "
             aria-label="Know More"
             style={{
               // shadow-[0_4px_12px_0_var(--secondary-color)]
-              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px 0px",
-              
-            }}            
+              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px -3px",
+            }}
           >
             <a
               href="https://www.adishankara.ac.in/about-us"
@@ -52,14 +56,16 @@ const AboutUs = () => {
         </div>
 
         {/* :IMAGES CONTAINER */}
-        <div className="bg-gray-900 opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-4/5 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
+        <div className="opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-4/5 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
           {/* ::Image 1 */}
           <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
             {/* Image goes here */}
             <img
-              src={image1}
+              src={image2}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover opacity-30 md:opacity-80"
+              className="
+              shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
+               absolute inset-0 w-full h-4/5 object-left object-cover  md:opacity-90"
             />
           </div>
           {/* ::Image 2 */}
@@ -68,7 +74,8 @@ const AboutUs = () => {
             <img
               src={image2}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover opacity-20 md:opacity-80"
+              className=" shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+              absolute inset-0 w-full h-4/5 object-center object-cover md:opacity-90"
             />
           </div>
         </div>

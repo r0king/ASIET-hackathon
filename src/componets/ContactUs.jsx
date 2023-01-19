@@ -2,9 +2,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="flex p-6 justify-center items-center ">
+    <div className="flex p-3 md:p-6 justify-center items-center ">
       <div
-        className=" w-[90vw]  bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70  text-[#f0f0f0] overflow-hidden"
+        className="
+         w-[90vw] backdrop-blur-3xl bg-[rgb(255,255,255,0.15)]
+         border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+         bg-clip-padding backdrop-filter bg-opacity-70  text-[#f0f0f0] 
+         overflow-hidden"
         style={{
           boxShadow: "rgb(0 0 0 / 90%) 12px 8px 40px 0px",
         }}
@@ -14,7 +18,11 @@ const ContactUs = () => {
         bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'></div> */}
 
           {/* :CONTACT INFOS CONTAINER */}
-          <div className="col-span-full w-full pl-9 sm:col-span-3 md:col-span-2 h-full mx-auto py-8 md:pt-10 px-3 flex flex-col">
+          <div
+            className="col-span-full sm:col-span-3 md:col-span-2 
+             p-5 sm:p-10
+             flex flex-col w-full h-full mx-auto"
+          >
             {/* ::Title Contact */}
             <h2 className="text-2xl text-[#f0f0f0] font-medium tracking-wide">
               Contact Us
@@ -24,7 +32,8 @@ const ContactUs = () => {
             <div className="mt-5 sm:mt-5 space-y-3">
               <h3 className="text-xl font-medium">Address</h3>
               <p className="text-lg text-[#f0f0f0] text-opacity-60">
-                5CHJ+758,<br/> Vidya Bharathi Nagar, <br/> Mattoor, Kalady,
+                5CHJ+758,
+                <br /> Vidya Bharathi Nagar, <br /> Mattoor, Kalady,
                 <br /> Ernakulam, Kerala 683574
               </p>
             </div>
@@ -116,7 +125,7 @@ const ContactUs = () => {
           </div>
 
           {/* :MAP CONTAINER */}
-          <div className="col-span-full sm:col-span-3">
+          <div className="col-span-full sm:col-span-3 hidden md:block">
             {/* Embed Google map */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.8211700506645!2d76.42882559361558!3d10.17761954352797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1672305829425!5m2!1sen!2sin"
@@ -128,7 +137,7 @@ const ContactUs = () => {
             />
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

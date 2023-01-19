@@ -8,7 +8,7 @@ import Menu from "./Menu";
 // import { useWindowSize } from "react-use";
 import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
-import GameWork from "./GameWork";
+// import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 import planetGif from "../assets/earth1.gif";
@@ -36,7 +36,6 @@ const HomePage = () => {
         <Sponsors />
         <AboutUs />
         <PosterCarousel />
-        <GameWork />
         <AllUNeed2Know />
         <Faq />
         <ContactUs />

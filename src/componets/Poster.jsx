@@ -5,7 +5,6 @@ import xbox from "../assets/Poster/xbox.png";
 import Ps from "../assets/Poster/ps5.png";
 import superM from "../assets/Poster/supermario.png";
 import mcSteeve from "../assets/Poster/minecraft.png";
-import bg1 from "../assets/Bizthon/bg.png"
 import drone from "../assets/Poster/drone2.png";
 import idea from "../assets/Poster/Idea.png";
 import vr from "../assets/Poster/ARVR.png";
@@ -57,7 +56,7 @@ const Poster = () => {
       price: "3.5 Lakhs",
     },
   ];
-
+  
   return (
     <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center ">
