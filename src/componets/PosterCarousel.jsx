@@ -96,10 +96,10 @@ const PosterCarousel = () => {
   useEffect(() => {
     const slide = document.getElementById("slider-w3c9");
     let start = position;
-    const viewport = window.innerWidth;
-    let slideValue = viewport < 640 ? -100 : viewport < 1024 ? -33.33 : -33.33;
+    // const viewport = window.innerWidth;
+    // let slideValue = viewport < 640 ? -290 : (-33.33);
     // On each state update it will slide to the current position
-    slide.style.transform = `translateX(${start * slideValue}%)`;
+    slide.style.transform = `translateX(${start * -290}px)`;
     prevBtn.current.style.opacity = 1;
     nextBtn.current.style.opacity = 1;
   }, [position,prevBtn,nextBtn]);
@@ -126,7 +126,7 @@ const PosterCarousel = () => {
           {/* CARDS */}
           <ul
             id="slider-w3c9"
-            className="w-full flex transition-all duration-500 ease-in"
+            className="w-full flex transition-all duration-500 ease-in ml-[7vw]"
           >
             {categories.map((item) => (
               <Tilt
@@ -140,7 +140,7 @@ const PosterCarousel = () => {
               >
                 <li
                   key={item.id}
-                  className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px] ml-7 md:ml-0 "
+                  className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
                   style={{
                     transformStyle: "preserve-3d",
                   }}
@@ -169,7 +169,11 @@ const PosterCarousel = () => {
                           translate: "translateY(20px)",
 
                         }}
-                        className={`absolute top-3 duration-300 animate__animated animate__fast opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center rounded-full text-xl sm:text-3xl md:text-4xl text-[var(--secondary-color)] font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
+                        className={
+                          `absolute top-3 duration-300 animate__animated animate__fast
+                           opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center
+                           rounded-full text-3xl md:text-4xl text-[var(--secondary-color)]
+                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
                           position === item.id
                             ? "z-50 translate-y-0 opacity-60 animate__fadeInUp"
                             : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
