@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-const AnimatedComponent = ({ once,animation, children }) => {
+const AnimatedComponent = ({ once, animation, threshold, children }) => {
   const [ref, inView] = useInView({
-    threshold: 0,
+    threshold: threshold ? threshold : 0,
     triggerOnce: once,
   });
   const [isAnimated, setIsAnimated] = useState(false);
@@ -12,8 +12,7 @@ const AnimatedComponent = ({ once,animation, children }) => {
   useEffect(() => {
     if (inView) {
       setIsAnimated(true);
-    }
-    else {
+    } else {
       setIsAnimated(false);
     }
   }, [inView]);
