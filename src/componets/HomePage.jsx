@@ -30,8 +30,6 @@ const HomePage = () => {
   let pageShow = [];
   pageShow = [0, 0, 0, 0, 0];
   pageShow[4] = "scale-[2.5]";
-  const aspectRatio = window.innerWidth / window.innerHeight;
-  alert(aspectRatio);
   // let pages = width < 640 ? (height < 700 ? 8.3 : 5.7) : height < 750 ? 5.7 : 4.5
   let pages = 0;
   if (width < 640) {
