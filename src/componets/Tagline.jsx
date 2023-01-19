@@ -4,7 +4,7 @@ const Tagline = () => {
 
   if (width < 650) {
     return (
-      <div className="moving-text text-center text-3xl  text-[var(--secondary-color)] font-[Montserrat]">
+      <div className="moving-text text-center text-3xl mt-20 text-[var(--secondary-color)] font-[Montserrat]">
         #Ideate_Innovate_Incubate_Your_Dreams.
       </div>
     );

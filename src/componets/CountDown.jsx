@@ -49,7 +49,7 @@ export default class CountDown extends Component {
     }
     render() {
         return (
-            <div className="-mt-[15vh] md:pr-5 text-xl grid grid-flow-col justify-center gap-5 text-center auto-cols-max mx-auto w-full font-poppins">
+            <div className="-mt-[10vh] md:pr-5 text-xl grid grid-flow-col justify-center gap-5 text-center auto-cols-max mx-auto w-full font-poppins">
                 <div className="flex flex-col md:p-2 rounded-box text-neutral-content">
                     <span className="countdown text-5xl font-semibold md:text-5xl ">
                         <span style={{ "--value": this.state.days }}></span>

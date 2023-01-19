@@ -111,7 +111,7 @@ const PosterCarousel = () => {
   useEffect(() => {});
 
   return (
-    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:my-28">
+    <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:my-28 overflow-hidden">
       {/* :TITLE CONTAINER */}
       <div className="px-5">
         <h2 className="relative flex justify-center font-[900] text-3xl text-gray-400 uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">

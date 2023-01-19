@@ -24,7 +24,7 @@ export default class HeroTitle extends Component {
   render() {
     return (
       <div
-        className="h-[70vh] flex justify-center content-center items-center mt-[15vh] "
+        className="h-[70vh] flex justify-center content-center items-center  md:mt-[5vh] "
         ref={this.element}
       >
         <h1

@@ -11,7 +11,7 @@ import { useWindowSize } from "react-use";
 export default function Sponsors() {
   const { width } = useWindowSize();
   return (
-    <div className="sponsers_main_container">
+    <div className="sponsers_main_container mt-28">
       <div className="sponsors_container">
         <div className="sponsor_title">
           <h1 className="text-3xl p-10">Our Sponsors</h1>

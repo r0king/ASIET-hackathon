@@ -13,6 +13,7 @@ import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 import planetGif from "../assets/earth1.gif";
 import PosterCarousel from "./PosterCarousel";
+import AnimatedComponent from "./AnimatedComponent";
 
 const HomePage = () => {
   return (
@@ -24,21 +25,64 @@ const HomePage = () => {
         <div id="stars4"></div>
       </div>
       <Menu />
-      <div className="relative">
-        <div className="absolute flex w-full justify-center">
-          <img src={planetGif} alt="planet" className="ml-10 -z-10 mt-[45vh]" />
-        </div>
+      <div className="flex -z-10 w-full justify-center  absolute ">
+        <img
+          src={planetGif}
+          alt="planet"
+          className="pl-[5%] mt-[50vh] md:mt-[55vh]"
+        />
+      </div>
+      <div className="top-3 absolute flex justify-center w-full flex-col">
         <HeroTitle />
         <CountDown />
-      </div>
-      <div className="z-10">
-        <Tagline />
-        <Sponsors />
-        <AboutUs />
-        <PosterCarousel />
-        <AllUNeed2Know />
-        <Faq />
-        <ContactUs />
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <div className="max-w-full overflow-x-hidden">
+            <Tagline />
+          </div>
+          <AnimatedComponent
+            animation=" animate__slow animate__fadeInUp"
+            once={true}
+          >
+            <Sponsors />
+          </AnimatedComponent>
+        </AnimatedComponent>
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <AboutUs />
+        </AnimatedComponent>
+
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <PosterCarousel />
+        </AnimatedComponent>
+
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <AllUNeed2Know />
+        </AnimatedComponent>
+
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <Faq />
+        </AnimatedComponent>
+
+        <AnimatedComponent
+          animation=" animate__slow animate__fadeInUp"
+          once={true}
+        >
+          <ContactUs />
+        </AnimatedComponent>
       </div>
     </>
   );

@@ -5,7 +5,8 @@
 
 :root {
   --primary-color: #7286D3;
-  --secondary-color: #65647C;
+  --primary-accent-color: #65647C;
+  --secondary-color: #f0f0f0;
   --accent-color: #E97777;
   --gradient-primary: #e0eafc;
   --gradient-secondary: #cfdef3;
@@ -15,10 +16,6 @@
 } */
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;400&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200&family=Roboto+Slab:wght@700&display=swap");
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   margin: 0;
