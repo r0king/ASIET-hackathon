@@ -1,15 +1,17 @@
 
-import React, { useEffect } from 'react'
-import CircleType from 'circletype';
+import React from 'react'
 import './PrizeMoney.css';
 
 const PrizeMoney = () => {
-  useEffect(() => {
-    new CircleType(document.getElementById('demo1')).radius(750);
-  })
+  
   return (
     <div className='z-20'>
-      <h1 id='demo1' class='sweet-title'>1.5 MILLION PRIZE MONEY</h1>
+      
+      <svg viewBox="0 0 1320 300" className="h-auto">
+        <text x="50%" y="20%" dy=".35em" textAnchor="middle">
+          1.5 MILLION PRIZE MONEY
+        </text>
+      </svg>
     </div>
   )
 }
