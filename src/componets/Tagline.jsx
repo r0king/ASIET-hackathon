@@ -10,7 +10,7 @@ const Tagline = () => {
     );
   } else {
     return (
-      <div className="text-center text-3xl text-[var(--secondary-color)] font-[Montserrat]">
+      <div className="text-center text-3xl mt-10 text-[var(--secondary-color)] font-[Montserrat]">
         #Ideate_Innovate_Incubate_Your_Dreams.
       </div>
     );

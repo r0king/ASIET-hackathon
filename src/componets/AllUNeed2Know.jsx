@@ -8,10 +8,6 @@ const AllUNeed2Know = () => {
   return (
     <section
       className="text-gray-100 bg-[#171717]/50 md:bg-transparent"
-      style={{
-        backgroundColor: "rgba(0,0,0, 0.5)",
-        boxShadow: "0 0px 5vh 10vh rgba(0,0,0, 0.5)",
-      }}
     >
       <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>

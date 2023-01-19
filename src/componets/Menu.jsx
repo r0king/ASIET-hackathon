@@ -10,10 +10,10 @@ const Navbar24 = () => {
       {/* :DESKTOP MENU */}
       <div className=" mx-auto flex justify-between items-center fixed w-full z-50 top-0">
         {/* ::Burger icon standard */}
-        <div className="inline-flex items-center brightness-[50] opacity-80 p-7">
-          <img src={logoAsiet} className="h-9 " alt="logo"></img>
+        <div className="inline-flex items-center brightness-[50] opacity-80 p-7 pt-4">
+          <img src={logoAsiet} className="h-9 p-1" alt="logo"></img>
         </div>
-        <div className="z-50 scale-75">
+        <div className="z-50 scale-75 mr-1">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {/* <div className="inline-flex items-center">

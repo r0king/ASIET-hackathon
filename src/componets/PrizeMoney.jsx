@@ -5,7 +5,7 @@ import './PrizeMoney.css';
 const PrizeMoney = () => {
   
   return (
-    <div className='z-20'>
+    <div className='absolute top-0 w-screen'>
       
       <svg viewBox="0 0 1320 300" className="h-auto">
         <text x="50%" y="20%" dy=".35em" textAnchor="middle">

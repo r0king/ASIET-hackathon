@@ -10,6 +10,7 @@ import CountDown from "./CountDown";
 import Sponsors from "./Sponsors/Sponsors";
 // import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
+import PrizeMoney from "./PrizeMoney";
 import HeroTitle from "./HeroTitle";
 import planetGif from "../assets/earth1.gif";
 import PosterCarousel from "./PosterCarousel";
@@ -32,14 +33,16 @@ const HomePage = () => {
           className="pl-[5%] mt-[50vh] md:mt-[55vh]"
         />
       </div>
-      <div className="top-3 absolute flex justify-center w-full flex-col">
+      <div className="top-3 relative flex justify-center w-full flex-col bg-gradient-to-b from-transparent via-[#7285d353] to-[#7285d3af]">
+        <PrizeMoney />
         <HeroTitle />
         <CountDown />
+
         <AnimatedComponent
           animation=" animate__slow animate__fadeInUp"
           once={true}
         >
-          <div className="max-w-full overflow-x-hidden">
+          <div className="max-w-full overflow-x-hidden ">
             <Tagline />
           </div>
           <AnimatedComponent

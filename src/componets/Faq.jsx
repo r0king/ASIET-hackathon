@@ -62,11 +62,7 @@ const Faq = () => {
   return (
     <div
       id="faq"
-      className="relative py-10 w-full  overflow-x-hidden my-[5vh]"
-      style={{
-        backgroundColor: "rgba(0,0,0, 0.5)",
-        boxShadow: "0 0px 5vh 15vh rgba(0,0,0, 0.5)",
-      }}
+      className="relative py-10 w-full  overflow-x-hidden "
     >
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
         {" "}
