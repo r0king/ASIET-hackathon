@@ -154,7 +154,7 @@ const PosterCarousel = () => {
                     }`}
                   >
                     {/* ::Image Container */}
-                    <div className="relative shadow-[20px_20px_50px_rgba(0,0,0,0.5)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                    <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
                       <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
                         {/* :::image nft */}
                         <img

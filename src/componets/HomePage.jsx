@@ -33,7 +33,10 @@ const HomePage = () => {
           className="pl-[5%] mt-[50vh] md:mt-[55vh]"
         />
       </div>
-      <div className="top-3 relative flex justify-center w-full flex-col bg-gradient-to-b from-transparent via-[#7285d353] to-[#7285d3af]">
+      <div className="
+      overflow-x-hidden
+       top-3 relative flex justify-center w-full flex-col
+       bg-gradient-to-b from-transparent via-[#7285d353] to-[#7285d3af]">
         <PrizeMoney />
         <HeroTitle />
         <CountDown />

@@ -80,7 +80,7 @@ const Faq = () => {
         {/* :FAQ */}
         <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
           {/* ::Title */}
-          <div className="text-3xl">
+          <div className="text-2xl">
             <span className="text-[var(--primary-color)]">
               Frequently Asked{" "}
             </span>
@@ -105,7 +105,7 @@ const Faq = () => {
                           } flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
                           aria-hidden="true"
                         />
-                        <span className="mr-auto text-xl text-left transition duration-150 ease-in transform group-hover:translate-x-2">
+                        <span className="mr-auto text-base text-left transition duration-150 ease-in transform group-hover:translate-x-2">
                           {faq.question}
                         </span>
                         <ChevronDownIcon
@@ -117,7 +117,7 @@ const Faq = () => {
                       </Disclosure.Button>
                     </dt>
                     {/* Answer */}
-                    <dd className="w-full text-lg text-gray-400">
+                    <dd className="w-full text-base text-gray-400">
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-left">
                         {faq.answer}
                       </Disclosure.Panel>

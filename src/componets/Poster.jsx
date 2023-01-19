@@ -61,7 +61,7 @@ const Poster = () => {
     <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:mt-56">
       <div className="mx-auto max-w-md md:max-w-none flex flex-col md:flex-row items-center ">
         {/* :TITLE */}
-        <h2 className="relative m-4 md:w-16 lg:w-24 flex justify-center text-xl lg:text-3xl text-gray-400 font-bold uppercase tracking-widest whitespace-nowrap origin-center transform md:-rotate-90 hover:text-gray-700">
+        <h2 className="relative m-4 md:w-16 lg:w-24 flex justify-center text-base lg:text-2xl text-gray-400 font-bold uppercase tracking-widest whitespace-nowrap origin-center transform md:-rotate-90 hover:text-gray-700">
           <a href="#allCategoryLink">
             All <span className="text-[var(--primary-color)]">Categories</span>
           </a>

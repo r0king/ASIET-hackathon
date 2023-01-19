@@ -25,7 +25,7 @@ export default function Sponsors() {
         </div>
         <AnimatedComponent animation=" animate__fast animate__fadeInUp">
           <div className="sponsors_platinum sponsors">
-            <h1 className="text-2xl p-3 pb-4">Platinum</h1>
+            <h1 className="text-lg p-3 pb-4">Platinum</h1>
             <div className="images">
               <Tilt
                 scale={0.9}
@@ -84,7 +84,7 @@ export default function Sponsors() {
         </AnimatedComponent>
         <AnimatedComponent animation=" animate__fast animate__fadeInUp">
           <div className="sponsors_diamond sponsors">
-            <h1 className="text-2xl p-3 pb-4">Diamond</h1>
+            <h1 className="text-lg p-3 pb-4">Diamond</h1>
             <div className="images">
               <Tilt
                 scale={0.9}
@@ -143,7 +143,7 @@ export default function Sponsors() {
         </AnimatedComponent>
         <AnimatedComponent animation=" animate__fast animate__fadeInUp">
           <div className="sponsors_gold sponsors">
-            <h1 className="text-2xl p-3 pb-4">Gold</h1>
+            <h1 className="text-lg p-3 pb-4">Gold</h1>
             <div className="images">
               <Tilt
                 scale={0.9}
@@ -202,7 +202,7 @@ export default function Sponsors() {
         </AnimatedComponent>
         <AnimatedComponent animation=" animate__fast animate__fadeInUp">
           <div className="sponsors_silver sponsors">
-            <h1 className="text-2xl p-3 pb-4">Silver</h1>
+            <h1 className="text-lg p-3 pb-4">Silver</h1>
             <div className="images">
               <Tilt
                 scale={0.9}

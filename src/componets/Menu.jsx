@@ -32,7 +32,7 @@ const Navbar24 = () => {
         >
           <a
             href="/"
-            className="mt-[20%] md:mt-[5%] block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
+            className="mt-[10%] md:mt-[5%] block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             HOME
           </a>

@@ -3,12 +3,12 @@ import image2 from "../assets/asiet1.jpeg";
 
 const AboutUs = () => {
   return (
-    <div className="relative mx-auto py-16 px-4 max-w-7xl md:mt-[20vh] overflow-x-clip">
+    <div className="relative mx-auto pt-16 px-4 max-w-7xl md:mt-[20vh] overflow-x-clip">
       <div className="mx-auto max-w-6xl flex ">
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-lg  pt-10 md:pt-0 text-[var(--secondary-color)] font-bold uppercase tracking-wide">
+          <p className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
@@ -33,22 +33,22 @@ const AboutUs = () => {
           <button
             className="group
              my-5 px-5 py-2.5 
-           bg-[var(--accent-color)] text-[var(--secondary-color))]
+             bg-[var(--secondary-color)] text-[var(--secondary-color))]
              text-lg font-bold 
              relative inline-flex items-center rounded  
-             transition-all duration-200 ease-out
-             hover:bg-transparent hover:to-transparent hover:text-[var(--secondary-color)]  "
+             transition-all duration-200 ease-linear
+             hover:bg-[var(--accent-color)] "
             aria-label="Know More"
             style={{
-              // shadow-[0_4px_12px_0_var(--secondary-color)]
-              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px -3px",
+              //shadow-[12px_8px_40px_-3px rgba(0, 0, 0, 0.3)]
+              boxShadow: "rgb(0 0 0 / 30%) 12px 8px 40px -3px",
             }}
           >
             <a
               href="https://www.adishankara.ac.in/about-us"
               target="_blank"
               rel="noreferrer"
-              className="text-[#171717] group-hover:text-[var(--secondary-color)]"
+              className="text-[var(--primary-accent-color)] group-hover:text-[var(--primary-accent-color)]"
             >
               Know More
             </a>
