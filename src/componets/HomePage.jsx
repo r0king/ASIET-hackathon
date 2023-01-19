@@ -22,6 +22,7 @@ import asiet from "../assets/asiet1.png";
 import planetGif from "../assets/earth1.gif";
 import PosterCarousel from "./PosterCarousel";
 import PrizeMoney from "./PrizeMoney";
+import AnimatedComponent from "./AnimatedComponent";
 
 const HomePage = () => {
   const { width, height } = useWindowSize();
@@ -175,10 +176,18 @@ const HomePage = () => {
           <ParallaxLayer offset={1} speed={1}>
             <Tagline />
             <Sponsors />
-            <AboutUs />
-            <PosterCarousel />
-            <AllUNeed2Know />
-            <Faq />
+            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+              <AboutUs />
+            </AnimatedComponent>
+            <AnimatedComponent animation=" animate__slow animate__fadeInRight">
+              <PosterCarousel />
+            </AnimatedComponent>
+            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+              <AllUNeed2Know />
+            </AnimatedComponent>
+            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+              <Faq />
+            </AnimatedComponent>
           </ParallaxLayer>
         </>
         {/* Scroll bar */}

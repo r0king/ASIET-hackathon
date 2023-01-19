@@ -1,5 +1,4 @@
 import React from "react";
-import image1 from "../assets/about-1.webp";
 import image2 from "../assets/asiet1.jpeg";
 
 const AboutUs = () => {
@@ -36,9 +35,8 @@ const AboutUs = () => {
             aria-label="Know More"
             style={{
               // shadow-[0_4px_12px_0_var(--secondary-color)]
-              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px 0px",
-              
-            }}            
+              boxShadow: "rgb(255 255 255 / 30%) 12px 8px 40px -3px",
+            }}
           >
             <a
               href="https://www.adishankara.ac.in/about-us"
@@ -52,14 +50,16 @@ const AboutUs = () => {
         </div>
 
         {/* :IMAGES CONTAINER */}
-        <div className="bg-gray-900 opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-4/5 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
+        <div className="opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-4/5 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
           {/* ::Image 1 */}
           <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
             {/* Image goes here */}
             <img
-              src={image1}
+              src={image2}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover opacity-30 md:opacity-80"
+              className="
+              shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
+               absolute inset-0 w-full h-4/5 object-left object-cover  md:opacity-90"
             />
           </div>
           {/* ::Image 2 */}
@@ -68,7 +68,8 @@ const AboutUs = () => {
             <img
               src={image2}
               alt=""
-              className="absolute inset-0 w-full h-full object-center object-cover opacity-20 md:opacity-80"
+              className=" shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+              absolute inset-0 w-full h-4/5 object-center object-cover md:opacity-90"
             />
           </div>
         </div>
