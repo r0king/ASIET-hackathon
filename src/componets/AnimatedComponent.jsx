@@ -12,9 +12,8 @@ const AnimatedComponent = ({ once,animation, children }) => {
   useEffect(() => {
     if (inView) {
       setIsAnimated(true);
-      setIsAnimatedOut(false);
-    } else {
-      setIsAnimatedOut(true);
+    }
+    else {
       setIsAnimated(false);
     }
   }, [inView]);

@@ -8,16 +8,16 @@ const AboutUs = () => {
         {/* :TITLE CONTAINER */}
         <div className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           {/* ::Category */}
-          <p className="text-xl  pt-10 md:pt-0 text-gray-400 font-bold uppercase tracking-wide">
+          <p className="text-lg  pt-10 md:pt-0 text-[var(--secondary-color)] font-bold uppercase tracking-wide">
             About Us
           </p>
           {/* ::Title */}
-          <h2 className="mb-8 text-3xl text-gray-100 font-bold capitalize">
+          <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
             <span className="text-[var(--primary-color)]">About Our</span>{" "}
             <span className="">Institute</span>
           </h2>
           {/* Content goes here */}
-          <p className="text-xl text-justify ">
+          <p className="text-base text-justify text-[var(--secondary-color)]">
             Adi Shankara Institute of Engineering and Technology was established
             in Kalady with the sole purpose of cultivating the engineering
             temperament of its students and turning them into enterprising
@@ -31,7 +31,13 @@ const AboutUs = () => {
           </p>
           {/* ::Button */}
           <button
-            className="group my-5 relative inline-flex items-center px-5 py-2.5 rounded  font-bold bg-[#E2eff3] text-[#171717] text-lg transition-all duration-200 ease-out  hover:bg-transparent hover:to-transparent hover:text-[var(--secondary-color)]  "
+            className="group
+             my-5 px-5 py-2.5 
+           bg-[var(--accent-color)] text-[var(--secondary-color))]
+             text-lg font-bold 
+             relative inline-flex items-center rounded  
+             transition-all duration-200 ease-out
+             hover:bg-transparent hover:to-transparent hover:text-[var(--secondary-color)]  "
             aria-label="Know More"
             style={{
               // shadow-[0_4px_12px_0_var(--secondary-color)]

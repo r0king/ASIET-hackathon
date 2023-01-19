@@ -16,10 +16,9 @@ import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
 
 // parallax images import here
-import satImg from "../assets/satlite.png";
 import moonImg from "../assets/moon.png";
 import asiet from "../assets/asiet1.png";
-import planetGif from "../assets/earth1.gif";
+import planetGif from "../assets/planet.png";
 import PosterCarousel from "./PosterCarousel";
 import PrizeMoney from "./PrizeMoney";
 import AnimatedComponent from "./AnimatedComponent";
@@ -103,25 +102,12 @@ const HomePage = () => {
           <img
             src={planetGif}
             alt="planet"
-            className="absolute z-10 w-[100vw] md:w-[80vw] object-cover lg:ml-20 ml-10"
+            className="absolute z-10 w-[100vw] md:w-[80vw] object-cover "
           />
         </ParallaxLayer>
         {/* CountDown */}
         <ParallaxLayer offset={0.7} speed={1}>
           <CountDown />
-        </ParallaxLayer>
-        {/* Satlite */}
-        <ParallaxLayer
-          offset={width < 640 ? (height < 650 ? 1.2 : 1.2) : 1.3}
-          speed={width < 640 ? (height < 650 ? 0.01 : 0.01) : 0.01}
-          factor={2}
-          className="transition-all duration-500 ease-in-out opacity-40"
-        >
-          <img
-            src={satImg}
-            alt="Satlite"
-            className="scale-50 -ml-40 md:-ml-20"
-          />
         </ParallaxLayer>
         {/* Moon */}
         <ParallaxLayer
@@ -175,25 +161,16 @@ const HomePage = () => {
           <ParallaxLayer offset={1} speed={1}>
             <Tagline />
             <Sponsors />
-            <AnimatedComponent
-              animation=" animate__slow animate__slideInUp"
-              once={true}
-            >
+            <AnimatedComponent animation=" animate__slow animate__slideInUp">
               <AboutUs />
             </AnimatedComponent>
-            <AnimatedComponent animation=" animate__slow animate__fadeInRight">
+            <AnimatedComponent animation=" animate__slow animate__slideInUp">
               <PosterCarousel />
             </AnimatedComponent>
-            <AnimatedComponent
-              animation=" animate__slow animate__slideInUp"
-              once={true}
-            >
+            <AnimatedComponent animation=" animate__slow animate__slideInUp">
               <AllUNeed2Know />
             </AnimatedComponent>
-            <AnimatedComponent
-              animation=" animate__slow animate__slideInUp"
-              once={true}
-            >
+            <AnimatedComponent animation=" animate__slow animate__slideInUp">
               <Faq />
             </AnimatedComponent>
           </ParallaxLayer>

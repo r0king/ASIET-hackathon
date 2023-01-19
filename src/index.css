@@ -4,8 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --primary-color: #4285f4;
-  --secondary-color: #f0f0f0f3;
+  --primary-color: #7286D3;
+  --secondary-color: #65647C;
+  --accent-color: #E97777;
   --gradient-primary: #e0eafc;
   --gradient-secondary: #cfdef3;
 }

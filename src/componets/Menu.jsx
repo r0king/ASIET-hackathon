@@ -51,7 +51,7 @@ const Navbar24 = () => {
             href="/ideathon"
             className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40  "
           >
-            Young Scientist Award (Ideathon)
+            Young Scientist Award
           </a>
           <a
             href="/mechathon"

@@ -1,8 +1,10 @@
 import React from "react";
 import allUNeed2Know from "../assets/SamplePoster1.jpg";
 import Tilt from "react-parallax-tilt";
+import { useWindowSize } from "react-use";
 
 const AllUNeed2Know = () => {
+  const { width } = useWindowSize();
   return (
     <section
       className="text-gray-100 bg-[#171717]/50 md:bg-transparent"
@@ -74,13 +76,21 @@ const AllUNeed2Know = () => {
             </div>
           </div>
           <div aria-hidden="true" className="mt-10 lg:mt-0 p-5">
-            <Tilt>
+            {width > 640 ? (
+              <Tilt>
+                <img
+                  src={allUNeed2Know}
+                  alt=""
+                  className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20"
+                />
+              </Tilt>
+            ) : (
               <img
                 src={allUNeed2Know}
                 alt=""
                 className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20"
               />
-            </Tilt>
+            )}
           </div>
         </div>
       </div>
