@@ -114,7 +114,7 @@ const PosterCarousel = () => {
     <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:my-28 overflow-hidden">
       {/* :TITLE CONTAINER */}
       <div className="px-5">
-        <h2 className="relative flex justify-center font-[900] text-3xl text-gray-400 uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
+        <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
           <a href="#allCategoryLink">
             All <span className="text-[var(--primary-color)]">Categories</span>
           </a>
@@ -172,10 +172,10 @@ const PosterCarousel = () => {
                         className={
                           `absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center
-                           rounded-full text-3xl md:text-4xl text-[var(--secondary-color)]
+                           rounded-full text-2xl text-[var(--secondary-color)]
                            font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
                           position === item.id
-                            ? "z-50 translate-y-0 opacity-60 animate__fadeInUp"
+                            ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
                             : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
                         } drop-shadow`}
                       >
