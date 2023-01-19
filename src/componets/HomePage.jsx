@@ -164,7 +164,7 @@ const HomePage = () => {
         <ParallaxLayer
           speed={0.6}
           sticky={{
-            start: end,
+            start: 5.7,
             end: 20,
           }}
           className=""
