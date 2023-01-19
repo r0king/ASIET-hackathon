@@ -14,6 +14,7 @@ import Sponsors from "./Sponsors/Sponsors";
 // import GameWork from "./GameWork";
 import AllUNeed2Know from "./AllUNeed2Know";
 import HeroTitle from "./HeroTitle";
+import Timeline from "./Timeline";
 
 // parallax images import here
 import satImg from "../assets/satlite.png";
@@ -179,6 +180,11 @@ const HomePage = () => {
             <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
               <AboutUs />
             </AnimatedComponent>
+            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+
+            <Timeline/>
+            </AnimatedComponent>
+
             <AnimatedComponent animation=" animate__slow animate__fadeInRight">
               <PosterCarousel />
             </AnimatedComponent>
