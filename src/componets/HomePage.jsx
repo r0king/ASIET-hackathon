@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./animation.css";
 
 import scrolImg from "../assets/scroll.gif";
@@ -46,27 +46,26 @@ const HomePage = () => {
       pages = 4.6;
     }
   }
-  let end = 0;
+  let parallaxEnd = 0;
   // width < 640 ? (height < 750 ? 8 : height < 950 ? 5.5 : 6.4) : 4.5
   if (width < 640) {
     if (height < 650) {
-      end = 8;
+      parallaxEnd = 8;
     } else if (height < 750) {
-      end = 7;
+      parallaxEnd = 7;
     } else {
-      end = 6.2;
+      parallaxEnd = 6.2;
     }
   } else if (width < 1400) {
-    end = 4.5;
+    parallaxEnd = 4.5;
   } else if (width < 1400) {
-    end = 4;
+    parallaxEnd = 4;
   } else {
-    end = 3.4;
+    parallaxEnd = 3.4;
+    if (height < 750) {
+      parallaxEnd = 4.5;
+    }
   }
-  useEffect(() => {
-    // const pheight = findPageHeight()
-    // parallax.content.current.style.height = '7000px'
-  }, []);
 
   return (
     <div className="bg-[#171717]">
@@ -163,7 +162,7 @@ const HomePage = () => {
         <ParallaxLayer
           speed={0.6}
           sticky={{
-            start: end,
+            start: parallaxEnd,
             end: 20,
           }}
           className=""
@@ -176,16 +175,25 @@ const HomePage = () => {
           <ParallaxLayer offset={1} speed={1}>
             <Tagline />
             <Sponsors />
-            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+            <AnimatedComponent
+              animation=" animate__slow animate__slideInUp"
+              once={true}
+            >
               <AboutUs />
             </AnimatedComponent>
             <AnimatedComponent animation=" animate__slow animate__fadeInRight">
               <PosterCarousel />
             </AnimatedComponent>
-            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+            <AnimatedComponent
+              animation=" animate__slow animate__slideInUp"
+              once={true}
+            >
               <AllUNeed2Know />
             </AnimatedComponent>
-            <AnimatedComponent animation=" animate__slow animate__slideInUp" once={true}>
+            <AnimatedComponent
+              animation=" animate__slow animate__slideInUp"
+              once={true}
+            >
               <Faq />
             </AnimatedComponent>
           </ParallaxLayer>
