@@ -36,8 +36,8 @@ const HomePage = () => {
       <div className="
       overflow-x-hidden
        top-3 relative flex justify-center w-full flex-col
-       bg-gradient-to-b from-transparent via-[#7285d353] to-[#7285d3af]">
-        <PrizeMoney />
+       bg-gradient-to-b from-transparent via-[#7285d353] to-[#7285d353]">
+        {/* <PrizeMoney /> */}
         <HeroTitle />
         <CountDown />
 

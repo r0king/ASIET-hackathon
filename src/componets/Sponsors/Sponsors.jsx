@@ -12,7 +12,7 @@ export default function Sponsors() {
     <div className="sponsers_main_container mt-28">
       <div className="sponsors_container">
         <div className="sponsor_title">
-          <h1 className="text-3xl p-10 font-bold">Our Sponsors</h1>
+          <h1 className="text-2xl p-10 font-bold">Our Sponsors</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
             suscipit repudiandae magni voluptas sint velit ullam dolores odit

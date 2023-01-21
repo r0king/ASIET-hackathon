@@ -30,7 +30,7 @@ const ContactUs = () => {
 
             {/* ::Address */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-base font-medium">Address</h3>
+              <h3 className="text-lg font-semibold">Address</h3>
               <p className="text-base text-[#f0f0f0] text-opacity-60">
                 5CHJ+758,
                 <br /> Vidya Bharathi Nagar, <br /> Mattoor, Kalady,

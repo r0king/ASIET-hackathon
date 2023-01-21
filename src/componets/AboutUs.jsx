@@ -64,7 +64,7 @@ const AboutUs = () => {
               src={image2}
               alt=""
               className="
-              shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
+              shadow-[20px_20px_50px_rgba(0,0,0,0.15)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
                absolute inset-0 w-full h-4/5 object-left object-cover  md:opacity-90"
             />
           </div>
@@ -74,7 +74,7 @@ const AboutUs = () => {
             <img
               src={image2}
               alt=""
-              className=" shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+              className=" shadow-[20px_20px_50px_rgba(0,0,0,0.15)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
               absolute inset-0 w-full h-4/5 object-center object-cover md:opacity-90"
             />
           </div>
