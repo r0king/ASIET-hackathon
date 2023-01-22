@@ -63,11 +63,30 @@
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
 }
-.sponsors_platinum{
+.sponsors h1{
+    display: inline-block;
 }
-.sponsors_diamond{
+.sponsors h1:hover{
+    border-bottom-width: 100%;
 }
-.sponsors_gold{
+.sponsors_platinum h1{
+    border-bottom: 2px solid cyan;
 }
-.sponsors_silver{
+.sponsors_diamond h1{
+    border-bottom: 2px solid pink;
+}
+.sponsors_gold h1{
+    border-bottom: 2px solid gold;
+
+}
+.sponsors_silver h1{
+    border-bottom: 2px solid silver;
+
+}
+
+@media(max-width:510px){
+    .sponsors .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
