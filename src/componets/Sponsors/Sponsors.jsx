@@ -9,7 +9,7 @@ import AnimatedComponent from "../AnimatedComponent";
 
 export default function Sponsors() {
   return (
-    <div className="sponsers_main_container -mt-10 md:mt-28 ">
+    <div className="sponsers_main_container -mt-10 md:mt-28 bg-gradient-to-b from-black to-transparent md:from-transparent">
       <div className="sponsors_container">
         <div className="sponsor_title">
           <h1 className="text-2xl p-10 font-bold">Our Sponsors</h1>

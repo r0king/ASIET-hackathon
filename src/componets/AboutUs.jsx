@@ -5,7 +5,7 @@ import AnimatedComponent from "./AnimatedComponent";
 const AboutUs = () => {
   
   return (
-    <div className="relative mx-auto pt-16 px-4 max-w-7xl md:mt-[20vh] overflow-x-clip">
+    <div className="relative mx-auto pt-[16vh] px-4 overflow-x-clip md:bg-gradient-to-b md:from-black md:to-transparent">
       <div className="mx-auto max-w-6xl flex ">
         {/* :TITLE CONTAINER */}
         
