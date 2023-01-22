@@ -99,10 +99,6 @@ const TypeAnimation = () => {
       }}
       className="relative font-extrabold bg-clip-text bg-gradient-to-br from-pc to-sc text-transparent"
     > 
-    <span className='invisible'>
-      &#95;
-      
-    </span>
       <span id="text" className="invisible w-44 align-top">
         <span className="sentences-te16">HACKOSTAV</span>
         <span className="sentences-te16">PRODUCTATHON</span>

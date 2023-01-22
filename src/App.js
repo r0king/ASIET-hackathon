@@ -9,13 +9,21 @@ import Ideathon from "./componets/Ideathon/Ideathon";
 import Mechathon from "./componets/Mechathon/Mechathon";
 import Civilathon from "./componets/Civilathon/Civilathon";
 import Bizthon from "./componets/Bizthon/Bizthon";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
     <>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={
+              <ParallaxProvider>
+                <HomePage />
+              </ParallaxProvider>
+            }
+          />
           <Route path="/coming_soon" element={<ComingSoon />} />
           <Route exact path="/productathon" element={<Productathon />} />
           <Route exact path="/gameathon" element={<Gameathon />} />
