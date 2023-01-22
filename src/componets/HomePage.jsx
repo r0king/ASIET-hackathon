@@ -1,5 +1,6 @@
 import React from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { useWindowSize } from "react-use";
 
 import "./animation.css";
 
@@ -13,10 +14,12 @@ import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
 import AboutUs from "./AboutUs";
 import CountDown from "./CountDown";
+import Timeline from "./Timeline";
+import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
-import ContactUs from "./ContactUs";
-import { useWindowSize } from "react-use";
+import cloudImg from "../assets/Parallax/cloud.png";
+import collegePic from "../assets/Parallax/asiet.png";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -39,7 +42,7 @@ const Component = () => {
   const videoglobe: BannerLayer = {
     translateY: width > 640 ? ["72%", "-25%"] : ["78%", "-25%"],
     opacity: [0.9, 0.4, "easeOutCubic"],
-    scale: [width > 640 ? 3: 3, width > 640 ? 0.5 : 0.5, "easeOutCubic"],
+    scale: [width > 640 ? 3 : 3, width > 640 ? 0.5 : 0.5, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -48,6 +51,7 @@ const Component = () => {
       <video
         autoPlay
         loop
+        preload="auto"
         muted
         className="top-0 absolute bottom-0 object-contain w-screen"
       >
@@ -127,19 +131,60 @@ const Component = () => {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
+        <Timeline />
         <AboutUs />
         <AnimatedComponent animation=" animate__fast animate__zoomIn">
           <PosterCarousel />
         </AnimatedComponent>
-        <AnimatedComponent animation=" animate__fast animate__fadeInLeft">
-          <AllUNeed2Know />
-        </AnimatedComponent>
-        <AnimatedComponent animation=" animate__fast animate__fadeInLeft">
+        <ParallaxBanner
+          layers={[
+            {
+              translateY: [width > 640 ? 70 : 84, -15],
+              translateX: [width > 640 ? -60 : -100, 30],
+              scale: [3, 0.7, "easeOutCubic"],
+              children: (
+                <img
+                  className="w-full md:w-1/2 opacity-70"
+                  src={cloudImg}
+                  alt="Cloud"
+                  loading="lazy"
+                />
+              ),
+            },
+            {
+              translateY: [width > 640 ? 70 : 80, -15],
+              translateX: [width > 640 ? 178 : 100, width > 640 ? -30 : -50],
+              scale: [width > 640 ? 3 : 4, 0.7, "easeOutCubic"],
+              children: (
+                <img
+                  className="w-full md:w-1/2 opacity-70"
+                  src={cloudImg}
+                  alt="Cloud"
+                  loading="lazy"
+                />
+              ),
+            },
+            {
+              speed: 80,
+              translateY: [width > 640 ? 40 : 55, width > 640 ? 86 : 113],
+              scale: [1, 1.5, "easeOutCubic"],
+              children: (
+                <img
+                  className="w-screen opacity-70"
+                  src={collegePic}
+                  alt="Cloud"
+                  loading="lazy"
+                />
+              ),
+            },
+          ]}
+        >
+          <AnimatedComponent animation=" animate__fast animate__fadeInLeft">
+            <AllUNeed2Know />
+          </AnimatedComponent>
           <Faq />
-        </AnimatedComponent>
-        <AnimatedComponent animation=" animate__fast animate__fadeInLeft">
           <ContactUs />
-        </AnimatedComponent>
+        </ParallaxBanner>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="flex p-3 md:p-6 justify-center items-center ">
+    <div className="flex p-3 md:p-6 justify-center items-center bg-[#7285d35b]">
       <div
         className="
          w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.15)]

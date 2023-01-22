@@ -4,7 +4,7 @@ import React from 'react';
 const Timeline = () => {
     return (
         <div>
-            <div className="container bg-transparent mx-auto w-full h-full">
+            <div className="container bg-transparent mx-auto w-full h-full md:bg-gradient-to-b md:from-black md:to-transparent">
         <div className="relative wrap overflow-hidden p-10 h-full">
           <div className="border-2-2 absolute border-opacity-50 border-white h-full border" style={{left: '50%'}} />
           {/* right timeline */}

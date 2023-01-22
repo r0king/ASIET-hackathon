@@ -62,7 +62,7 @@ const Faq = () => {
   return (
     <div
       id="faq"
-      className="relative py-10 w-full  overflow-x-hidden "
+      className="relative py-10 w-full  overflow-x-hidden bg-gradient-to-b from-transparent via-[#7285d35b] to-[#7285d35b]"
     >
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
         {" "}
