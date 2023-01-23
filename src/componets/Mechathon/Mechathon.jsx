@@ -104,11 +104,10 @@ function Mechathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Mechathon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. This is a sample hackathon.This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and develop their
-            skills in problem-solving, creativity and teamwork.
+            Mechathon is an intensive brainstorming event for the machinists and mechanists out there to pour out their creative and prolific ideas
+            and merge our mentorship to institute something new.
+            The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility. 
+            So,grab a ticket to your venture something exciting and launch yourselves!
           </p>
           {/* basic rounded line button */}
           <button

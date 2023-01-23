@@ -104,20 +104,20 @@ const TypeAnimation = () => {
       
     </span>
       <span id="text" className="invisible w-44 align-top">
-        <span className="sentences-te16">HACKATHON</span>
-        <span className="sentences-te16">PRODUCATHON</span>
-        <span className="sentences-te16">IDEATHON</span>
+        <span className="sentences-te16">HACKOSTAV</span>
+        <span className="sentences-te16">PRODUCTATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">PRODUCATHON</span>
-        <span className="sentences-te16">IDEATHON</span>
+        <span className="sentences-te16">YOUNG SCIENTIST AWARD</span>
+        <span className="sentences-te16">PRODUCTATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">PRODUCATHON</span>
-        <span className="sentences-te16">IDEATHON</span>
+        <span className="sentences-te16">YOUNG SCIENTIST AWARD</span>
+        <span className="sentences-te16">PRODUCTATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">PRODUCATHON</span>
-        <span className="sentences-te16">IDEATHON</span>
+        <span className="sentences-te16">YOUNG SCIENTIST AWARD</span>
+        <span className="sentences-te16">PRODUCTATHON</span>
         <span className="sentences-te16">GAMETHON</span>
-        <span className="sentences-te16">HACKATHON</span>
+        <span className="sentences-te16">YOUNG SCIENTIST AWARD</span>
+        <span className="sentences-te16">HACKOSTAV</span>
       </span>
       <span id='underscore' className="inline-block relative -top-1.5 left-1.5 font-extrabold bg-clip-text bg-gradient-to-br from-sc to-sc text-transparent">&#95;</span>
     </h1>

@@ -2,9 +2,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="flex p-6 justify-center items-center ">
+    <div className="flex p-3 md:p-6 justify-center items-center relative z-30">
       <div
-        className=" w-[90vw] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 bg-clip-padding backdrop-filter bg-opacity-70  text-[#f0f0f0] overflow-hidden"
+        className="
+         w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.15)]
+         border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+         bg-clip-padding bg-opacity-70  text-[#f0f0f0] 
+         overflow-hidden"
         style={{
           boxShadow: "rgb(0 0 0 / 90%) 12px 8px 40px 0px",
         }}
@@ -14,31 +18,36 @@ const ContactUs = () => {
         bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'></div> */}
 
           {/* :CONTACT INFOS CONTAINER */}
-          <div className="col-span-full w-full pl-9 sm:col-span-3 md:col-span-2 h-full mx-auto py-8 md:pt-10 px-3 flex flex-col">
+          <div
+            className="col-span-full sm:col-span-3 md:col-span-2 
+             p-5 sm:p-10
+             flex flex-col w-full h-full mx-auto"
+          >
             {/* ::Title Contact */}
-            <h2 className="text-2xl text-[#f0f0f0] font-medium tracking-wide">
+            <h2 className="text-lg text-[#f0f0f0] font-medium tracking-wide">
               Contact Us
             </h2>
 
             {/* ::Address */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-xl font-medium">Address</h3>
-              <p className="text-lg text-[#f0f0f0] text-opacity-60">
-                5CHJ+758,<br/> Vidya Bharathi Nagar, <br/> Mattoor, Kalady,
+              <h3 className="text-lg font-semibold">Address</h3>
+              <p className="text-base text-[#f0f0f0] text-opacity-60">
+                5CHJ+758,
+                <br /> Vidya Bharathi Nagar, <br /> Mattoor, Kalady,
                 <br /> Ernakulam, Kerala 683574
               </p>
             </div>
 
             {/* ::Office Hours */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-xl font-medium">Office Hours</h3>
-              <p className="text-lg text-[#f0f0f0] text-opacity-60"> 8AM-4PM</p>
+              <h3 className="text-base font-medium">Office Hours</h3>
+              <p className="text-base text-[#f0f0f0] text-opacity-60"> 8AM-4PM</p>
             </div>
 
             {/* ::Contact */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-xl font-medium">Contact</h3>
-              <div className="space-y-1 text-xl text-[#f0f0f0] text-opacity-60">
+              <h3 className="text-base font-medium">Contact</h3>
+              <div className="space-y-1 text-base text-[#f0f0f0] text-opacity-60">
                 <p className="font-medium">
                   0484-2463825
                   <br />
@@ -55,14 +64,14 @@ const ContactUs = () => {
 
             {/* ::Social */}
             <div className="mt-5 sm:mt-5 flex items-center">
-              <h3 className="text-lg text-[#f0f0f0] text-opacity-60 font-medium uppercase tracking-wider">
+              <h3 className="text-base text-[#f0f0f0] text-opacity-60 font-medium uppercase tracking-wider">
                 Social
               </h3>
               <div className="ml-3 flex space-x-2">
                 {/* :::facebook */}
                 <a
                   href="#facebook"
-                  className="p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="flex-shrink-0 w-5 h-5 fill-current"
@@ -75,7 +84,7 @@ const ContactUs = () => {
                 {/* :::twitter */}
                 <a
                   href="#twitter"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -88,7 +97,7 @@ const ContactUs = () => {
                 {/* :::intagram */}
                 <a
                   href="#instagrap"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -101,7 +110,7 @@ const ContactUs = () => {
                 {/* :::linkedin */}
                 <a
                   href="#linkedin"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -116,10 +125,10 @@ const ContactUs = () => {
           </div>
 
           {/* :MAP CONTAINER */}
-          <div className="col-span-full sm:col-span-3">
+          <div className="col-span-full sm:col-span-3 hidden md:block">
             {/* Embed Google map */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.8211700506645!2d76.42882559361558!3d10.17761954352797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1672305829425!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.8211700506645!2d76.428809361558!3d10.17761954352797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1672305829425!5m2!1sen!2sin"
               title="map"
               scrolling="no"
               frameBorder="0"
@@ -128,7 +137,7 @@ const ContactUs = () => {
             />
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

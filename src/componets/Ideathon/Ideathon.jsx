@@ -104,13 +104,12 @@ function Ideathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Ideathon is a unique program designed specifically for school
-            students who have an interest in entrepreneurship and innovation. It
-            provides a platform for students to turn their ideas into reality by
-            offering mentorship, support, and funding. This program is an
+          Ideathon is a unique program designed specifically for school
+            students who have a dig in entrepreneurship and innovation. It
+            provides a platform for the school graders to turn their ideas into life. And, to back them up we do
+            offer mentorship, support, and funding. This program is an
             excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and develop their
-            skills in problem-solving, creativity and teamwork.
+            starting a business, learn from industry experts and evolve themselves in problem-solving, creativity and teamwork.
           </p>
           {/* basic rounded line button */}
           <button
