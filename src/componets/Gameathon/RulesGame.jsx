@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RulesGame() {
   return (
-    <div className='md:p-10 p-3 md:text-2xl text-xl md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'>
+    <div className='md:p-10 p-3 md:text-2xl text-xl md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <h1 className='text-4xl font-bold'>Gameathon Rules</h1><br />
       <ul className='list-disc text-2xl font-[poppins] pl-14'>
         <li>Gameathon will be held on the ASIET campus.</li>
