@@ -166,13 +166,13 @@ const Component = () => {
             },
             {
               speed: 80,
-              translateY: [width > 640 ? 40 : 55, width > 640 ? 86 : 113],
+              translateY: [width > 640 ? 60 : 57, width > 640 ? 90 : 110],
               scale: [1, 1.5, "easeOutCubic"],
               children: (
                 <img
                   className="w-screen opacity-70"
                   src={collegePic}
-                  alt="Cloud"
+                  alt="College"
                   loading="lazy"
                 />
               ),

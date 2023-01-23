@@ -71,7 +71,7 @@ const ContactUs = () => {
                 {/* :::facebook */}
                 <a
                   href="#facebook"
-                  className="p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="flex-shrink-0 w-5 h-5 fill-current"
@@ -84,7 +84,7 @@ const ContactUs = () => {
                 {/* :::twitter */}
                 <a
                   href="#twitter"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -97,7 +97,7 @@ const ContactUs = () => {
                 {/* :::intagram */}
                 <a
                   href="#instagrap"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
@@ -110,7 +110,7 @@ const ContactUs = () => {
                 {/* :::linkedin */}
                 <a
                   href="#linkedin"
-                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--primary-color)] hover:text-blue-400"
+                  className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
                     className="w-4 h-4 fill-current"
