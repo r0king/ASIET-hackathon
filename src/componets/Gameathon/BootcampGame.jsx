@@ -3,7 +3,7 @@ import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png'
 
 export default function BootcampGame() {
   return (
-    <div className='md:p-10 p-3 md:text-2xl text-xl md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'>
+    <div className='md:p-10 p-3 md:text-2xl text-xl md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <div>
         <h1 className='text-4xl font-bold'>Prerequisites for Bootcamp</h1><br />
         <ul className='list-disc text-2xl font-[poppins] pl-14'>

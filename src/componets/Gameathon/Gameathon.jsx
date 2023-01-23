@@ -10,6 +10,7 @@ import RegistrationGame from "./RegistrationGame";
 import EligibilityGame from "./EligibilityGame";
 import BootcampGame from "./BootcampGame";
 import RulesGame from "./RulesGame";
+// import gameathonVideo from "../../assets/Gameathon/gameathonVideo.mp4"
 
 function Gameathon() {
 
@@ -25,7 +26,7 @@ function Gameathon() {
     { name: "Rules", icon: LightBulbIcon, page: <RulesGame /> },
   ]
 
-  const [currentTab, setCurrentTab] = useState("Services")
+  const [currentTab, setCurrentTab] = useState("About")
 
   const translateValue = tabs.findIndex(tab => tab.name === currentTab) / tabs.length * 100
 
@@ -33,73 +34,88 @@ function Gameathon() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div style={
-      width > 640
-        ? {
-          backgroundImage: `url(${bgImgDesk})`,
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat", 
-          backgroundColor: "var(--bg-color)",
-          boxShadow: "0px 0px 50px 0px var(--bg-color)",         
-        }
-        : {
-          backgroundImage: `url(${bgImgMobile})`,
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat", 
-          backgroundColor: "var(--bg-color)",
-          boxShadow: "0px 0px 50px 0px var(--bg-color)",
-        }
-    }>
-      <div className="Gameathon">
-        {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
-
-        {/* main content */}
-        <div className="flex flex-col justify-center p-5 md:p-10 2xl:pl-24">
-          <h1
-            className="text-2xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
-            style={{ fontFamily: "Azonix" }}
-          >
-            Gameathon 2K23
-          </h1>
-          {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            28TH, 29TH & 30TH MARCH 2023
-          </h2>
-          {/* description */}
-          <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
-            Join us for a 3-day event at Adi Shankara Institute of Engineering & Technology where students can engage in team-working, explore their creative and technology skills, and challenge themselves to develop a game in just three days.
-            With the support of industry partner TILTLABS, participants will be provided with a concept and access to tools such as Unity and Blender to create either casual or hyper-casual games.
-          </p>
-          {/* basic rounded line button */}
-          <button
-            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
-            style={{
-              boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
-            }}
-          >
-            Register Now
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <>
+      <div style={
+        width > 640
+          ? {
+            backgroundImage: `url(${bgImgDesk})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            height: "140vh",
+            backgroundColor: "var(--bg-color)",
+            boxShadow: "0px 0px 50px 0px var(--bg-color)",
+          }
+          : {
+            backgroundImage: `url(${bgImgMobile})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: "120vh",
+            boxShadow: "0px 0px 50px 0px var(--bg-color)",
+          }
+      }>
+        <div className="Gameathon">
+          {/* navbar */}
+          <Navbar isOpen={isOpen} setIsOpen={setIsOpen} countDate="Mar 28, 2023 00:00:00"/>
+          {/* <div className="h-[50vh] flex flex-row">
+            <video autoPlay loop muted>
+              <source src={gameathonVideo} type="video/mp4" />
+            </video>
+          </div> */}
+          {/* main content */}
+          <div className="flex flex-col justify-center p-5 md:p-10 2xl:pl-24">
+            <h1
+              className="text-2xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+              style={{ fontFamily: "Azonix" }}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </button>
+              Gameathon 2K23
+            </h1>
+            {/* sub heading */}
+            <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+              28TH, 29TH & 30TH MARCH 2023
+            </h2>
+            {/* description */}
+            <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
+              Join us for a 3-day event at Adi Shankara Institute of Engineering & Technology where students can engage in team-working, explore their creative and technology skills, and challenge themselves to develop a game in just three days.
+              With the support of industry partner TILTLABS, participants will be provided with a concept and access to tools such as Unity and Blender to create either casual or hyper-casual games.
+            </p>
+            {/* basic rounded line button */}
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSflq22uUuGh9orK2Wry4Sucx-UlCsqIdJbtqx2atCpD97QZeQ/viewform" rel="noreferrer" target={"_blank"}>
+            <button
+              className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+              style={{
+                boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
+              }}
+              >
+              Register Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+              </svg>
+            </button>
+                  </a>
+          </div>
         </div>
-        <div className="md:ml-16 w-[90vw] mx-auto md:w-full md:max-w-5xl  rounded-full border border-gray-200 bg-white overflow-hidden" >
+      </div>
+      <div className="Gameathon h-[100vh] mt-5 mb-10">
+      <div className="bg-animation -z-10">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+      </div>
+        <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
 
           {/* :LARGE DEVICES */}
           <div className="relative  sm:block overflow-hidden">
@@ -137,7 +153,7 @@ function Gameathon() {
         })
         }
       </div>
-    </div>
+    </>
   );
 }
 
