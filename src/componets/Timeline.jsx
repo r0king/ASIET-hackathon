@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 const Timeline = () => {
   return (
@@ -18,10 +19,12 @@ const Timeline = () => {
             >
               <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
             </div>
+            <div className="order-1 w-5/12 ">
+            <Parallax translateX={[40, -50]} opacity={[2,-0.5]}>
             <div
-              className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4"
+              className=" rounded-lg shadow-xl px-6 py-4"
               style={{ backgroundColor: "#F8F4EA" }}
-            >
+              >
               <h3 className="mb-3 font-bold text-gray-800 text-xl">
                 Lorem Ipsum
               </h3>
@@ -31,6 +34,8 @@ const Timeline = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
+            </div>
+            </Parallax>
             </div>
           </div>
           {/* left timeline */}
@@ -42,17 +47,23 @@ const Timeline = () => {
             >
               <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
             </div>
+            <div className="order-1 w-5/12 ">
+            <Parallax translateX={[-40, 50]} opacity={[2,-0.5]}>
             <div
-              className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4"
-              style={{ backgroundColor: "#2C74B3" }}
-            >
-              <h3 className="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-              <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+              className=" rounded-lg shadow-xl px-6 py-4"
+              style={{ backgroundColor: "#F8F4EA" }}
+              >
+              <h3 className="mb-3 font-bold text-gray-800 text-xl">
+                Lorem Ipsum
+              </h3>
+              <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
+            </div>
+            </Parallax>
             </div>
           </div>
           {/* right timeline */}
@@ -64,10 +75,12 @@ const Timeline = () => {
             >
               <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
             </div>
+            <div className="order-1 w-5/12 ">
+            <Parallax translateX={[40, -50]} opacity={[2,-0.5]}>
             <div
-              className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4"
+              className=" rounded-lg shadow-xl px-6 py-4"
               style={{ backgroundColor: "#F8F4EA" }}
-            >
+              >
               <h3 className="mb-3 font-bold text-gray-800 text-xl">
                 Lorem Ipsum
               </h3>
@@ -77,6 +90,8 @@ const Timeline = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
+            </div>
+            </Parallax>
             </div>
           </div>
           {/* left timeline */}
@@ -88,17 +103,23 @@ const Timeline = () => {
             >
               <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
             </div>
+            <div className="order-1 w-5/12 ">
+            <Parallax translateX={[-40, 50]} opacity={[2,-0.5]}>
             <div
-              className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4"
-              style={{ backgroundColor: "#2C74B3" }}
-            >
-              <h3 className="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-              <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+              className=" rounded-lg shadow-xl px-6 py-4"
+              style={{ backgroundColor: "#F8F4EA" }}
+              >
+              <h3 className="mb-3 font-bold text-gray-800 text-xl">
+                Lorem Ipsum
+              </h3>
+              <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
+            </div>
+            </Parallax>
             </div>
           </div>
         </div>

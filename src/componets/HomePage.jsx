@@ -1,11 +1,10 @@
 import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
 import "./animation.css";
 
 import AllUNeed2Know from "./AllUNeed2Know";
-import AnimatedComponent from "./AnimatedComponent";
 import Faq from "./Faq";
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu";
@@ -89,7 +88,7 @@ const Component = () => {
     ),
   };
   const sponsers: BannerLayer = {
-    translateY: [width > 640 ? 44 : 38, 30],
+    translateY: [width > 640 ? 42 : 38, 30],
     scale: [1, 1.1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     children: (
@@ -101,7 +100,7 @@ const Component = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] opacity-100 bg-opacity-100">
+      <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
         <Menu />
         {width > 640 ? (
           <ParallaxBanner
@@ -114,7 +113,7 @@ const Component = () => {
               sponsers,
             ]}
             // gradientOverlay]}
-            className="md:h-[280vh] bg-black"
+            className="md:h-[285vh] bg-black"
           />
         ) : (
           <>
@@ -133,10 +132,9 @@ const Component = () => {
         </div>
         <Timeline />
         <AboutUs />
-        <AnimatedComponent animation=" animate__fast animate__zoomIn">
-          <PosterCarousel />
-        </AnimatedComponent>
+        <PosterCarousel />
         <ParallaxBanner
+          className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
           layers={[
             {
               translateY: [width > 640 ? 70 : 84, -15],
@@ -170,7 +168,7 @@ const Component = () => {
               scale: [1, 1.5, "easeOutCubic"],
               children: (
                 <img
-                  className="w-screen opacity-70"
+                  className="w-screen"
                   src={collegePic}
                   alt="College"
                   loading="lazy"
@@ -179,9 +177,7 @@ const Component = () => {
             },
           ]}
         >
-          <AnimatedComponent animation=" animate__fast animate__fadeInLeft">
-            <AllUNeed2Know />
-          </AnimatedComponent>
+          <AllUNeed2Know />
           <Faq />
           <ContactUs />
         </ParallaxBanner>
