@@ -1,8 +1,9 @@
 import React from "react";
 import logoAsiet from "../assets/logo.png";
 import Burger1 from "./atoms/Burger1";
+import EventCountDown from "./EventCountDown";
 import "./Menu.css";
-export const Navbar = ({ isOpen, setIsOpen }) => {
+export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
   return (
     <nav className="flex justify-between items-center p-5">
       {/* logo */}
@@ -14,6 +15,7 @@ export const Navbar = ({ isOpen, setIsOpen }) => {
             className="w-10 h-10 object-contain brightness-[5] grayscale"
           />
         </a>
+        {countDate?<span className="ml-5"><EventCountDown countDate={countDate}/></span>:"  "}
       </div>
       {/* nav links */}
       <div className="md:flex items-center hidden md:visible">
