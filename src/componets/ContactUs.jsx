@@ -5,12 +5,12 @@ const ContactUs = () => {
     <div className="flex p-3 md:p-6 justify-center items-center relative z-30">
       <div
         className="
-         w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.15)]
+         w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.25)]
          border-t-[1px] border-l-[1px] rounded-xl border-white/20 
-         bg-clip-padding bg-opacity-70  text-[#f0f0f0] 
+         bg-clip-padding text-[#f0f0f0] 
          overflow-hidden"
         style={{
-          boxShadow: "rgb(0 0 0 / 90%) 12px 8px 40px 0px",
+          boxShadow: "rgb(0 0 0 / 20%) 12px 8px 40px 0px",
         }}
       >
         <div className="grid grid-cols-6 md:grid-cols-5">

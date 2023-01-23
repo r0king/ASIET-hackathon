@@ -80,14 +80,14 @@ const AllUNeed2Know = () => {
                   <img
                     src={allUNeed2Know}
                     alt=""
-                    className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20"
+                    className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-sm border-l-[1px] rounded-xl border-white/20"
                   />
                 </Tilt>
               ) : (
                 <img
                   src={allUNeed2Know}
                   alt=""
-                  className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20"
+                  className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-sm border-l-[1px] rounded-xl border-white/20"
                 />
               )}
             </div>

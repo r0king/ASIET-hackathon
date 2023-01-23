@@ -54,10 +54,10 @@ export const Navbar = ({ isOpen, setIsOpen }) => {
             HOME
           </a>
           <a
-            href="/productathon"
+            href="/codathon"
             className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40 hover:text-[var(--primary-color)] "
           >
-            Productathon
+            Codathon
           </a>
 
           <a

@@ -9,7 +9,7 @@ const PosterCarousel = () => {
     {
       id: 0,
       href: "#link",
-      name: "productathon",
+      name: "codathon",
       image: posterImg,
     },
 

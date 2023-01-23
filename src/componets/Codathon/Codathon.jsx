@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Productathon/bg.png";
+import bgImg from "../../assets/Codathon/bg.png";
 import {
   CalendarIcon,
   HeartIcon,
@@ -9,10 +9,10 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/outline";
 import { useWindowSize } from "react-use";
-import "./Productathon.css";
+import "./Codathon.css";
 import { Navbar } from "../NavbarPages";
 
-function Productathon() {
+function Codathon() {
   const features = [
     {
       name: "Register",
@@ -65,7 +65,7 @@ function Productathon() {
   return (
     <>
       <div
-        className="Productathon"
+        className="Codathon"
         style={
           width > 640
             ? {
@@ -94,7 +94,7 @@ function Productathon() {
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Productathon
+            Codathon
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
@@ -102,7 +102,7 @@ function Productathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Productathon is a Productathon is a 24hrs Hackathon event, where
+            Codathon is a Codathon is a 24hrs Hackathon event, where
             aspiring student entrepreneurs can come collaborate and build their
             startup ideas to a minimum viable product with the support of
             Nasscom 10k Startups , MakerGram and Google Cloud. It has been
@@ -141,7 +141,7 @@ function Productathon() {
         </div>
       </div>
 
-      <div className="Productathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
+      <div className="Codathon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
         {/* CONTAINER */}
         <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
           {/* :TITLE CONTAINER */}
@@ -347,4 +347,4 @@ function Productathon() {
   );
 }
 
-export default Productathon;
+export default Codathon;
