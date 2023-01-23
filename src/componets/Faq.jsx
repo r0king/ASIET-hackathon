@@ -5,6 +5,7 @@ import {
   QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
 import "./Scrollbar.css";
+import { Parallax } from "react-scroll-parallax";
 
 const Faq = () => {
   const faq = [
@@ -60,76 +61,78 @@ const Faq = () => {
   ];
 
   return (
-    <div
-      id="faq"
-      className="relative py-10 w-full  overflow-x-hidden "
-    >
-      <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
-        {" "}
-        {/* Container */}
-        {/* :IMAGE */}
-        <div className="col-span-2 md:col-span-1 relative p-4 flex flex-col justify-center items-center">
-          <div className="hidden md:block relative w-full h-full max-w-xl">
-            <img
-              src="https://fancytailwind.com/static/neon2-acb9ac107b3f843a5552c2603c29cd79.jpg"
-              alt=""
-              className="absolute w-full h-full object-cover object-center"
-            />
+    <Parallax scale={[0.9, 1.15]}>
+      <div
+        id="faq"
+        className="relative py-10 w-full  overflow-x-hidden "
+      >
+        <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
+          {" "}
+          {/* Container */}
+          {/* :IMAGE */}
+          <div className="col-span-2 md:col-span-1 relative p-4 flex flex-col justify-center items-center">
+            <div className="hidden md:block relative w-full h-full max-w-xl">
+              <img
+                src="https://fancytailwind.com/static/neon2-acb9ac107b3f843a5552c2603c29cd79.jpg"
+                alt=""
+                className="absolute w-full h-full object-cover object-center"
+              />
+            </div>
           </div>
-        </div>
-        {/* :FAQ */}
-        <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
-          {/* ::Title */}
-          <div className="text-2xl">
-            <span className="text-[var(--primary-color)]">
-              Frequently Asked{" "}
-            </span>
-            Questions
+          {/* :FAQ */}
+          <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
+            {/* ::Title */}
+            <div className="text-2xl">
+              <span className="text-[var(--primary-color)]">
+                Frequently Asked{" "}
+              </span>
+              Questions
+            </div>
+            {/* ::Accordion Panel */}
+            <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll z-10">
+              {faq.map((faq) => (
+                <Disclosure key={faq.number}>
+                  {({ open }) => (
+                    <>
+                      {/* Question */}
+                      <dt
+                        className={`group mt-6 w-full border-b-2 border-gray-700 text-[#f0f0f0] hover:text-[var(--secondary-color)] ${
+                          open && "text-[#f0f0f0]"
+                        }`}
+                      >
+                        <Disclosure.Button className="py-5 px-3 w-full flex justify-between items-center">
+                          <QuestionMarkCircleIcon
+                            className={`${
+                              open && "text-[#f0f0f0]"
+                            } flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
+                            aria-hidden="true"
+                          />
+                          <span className="mr-auto text-base text-left transition duration-150 ease-in transform group-hover:translate-x-2">
+                            {faq.question}
+                          </span>
+                          <ChevronDownIcon
+                            className={`${
+                              open && "transform rotate-180 text-[#f0f0f0]"
+                            } flex-shrink-0 ml-2 w-5 h-5 text-[#f0f0f0] group-hover:text-[#f0f0f0]`}
+                            aria-hidden="true"
+                          />
+                        </Disclosure.Button>
+                      </dt>
+                      {/* Answer */}
+                      <dd className="w-full text-base text-gray-400">
+                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-left">
+                          {faq.answer}
+                        </Disclosure.Panel>
+                      </dd>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
           </div>
-          {/* ::Accordion Panel */}
-          <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll z-10">
-            {faq.map((faq) => (
-              <Disclosure key={faq.number}>
-                {({ open }) => (
-                  <>
-                    {/* Question */}
-                    <dt
-                      className={`group mt-6 w-full border-b-2 border-gray-700 text-[#f0f0f0] hover:text-[var(--secondary-color)] ${
-                        open && "text-[#f0f0f0]"
-                      }`}
-                    >
-                      <Disclosure.Button className="py-5 px-3 w-full flex justify-between items-center">
-                        <QuestionMarkCircleIcon
-                          className={`${
-                            open && "text-[#f0f0f0]"
-                          } flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
-                          aria-hidden="true"
-                        />
-                        <span className="mr-auto text-base text-left transition duration-150 ease-in transform group-hover:translate-x-2">
-                          {faq.question}
-                        </span>
-                        <ChevronDownIcon
-                          className={`${
-                            open && "transform rotate-180 text-[#f0f0f0]"
-                          } flex-shrink-0 ml-2 w-5 h-5 text-[#f0f0f0] group-hover:text-[#f0f0f0]`}
-                          aria-hidden="true"
-                        />
-                      </Disclosure.Button>
-                    </dt>
-                    {/* Answer */}
-                    <dd className="w-full text-base text-gray-400">
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-left">
-                        {faq.answer}
-                      </Disclosure.Panel>
-                    </dd>
-                  </>
-                )}
-              </Disclosure>
-            ))}
-          </dl>
         </div>
       </div>
-    </div>
+    </Parallax>
   );
 };
 

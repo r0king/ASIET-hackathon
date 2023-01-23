@@ -1,28 +1,23 @@
 import React from "react";
 import image2 from "../assets/asiet1.jpeg";
-import AnimatedComponent from "./AnimatedComponent";
+import { Parallax } from "react-scroll-parallax";
 
 const AboutUs = () => {
-  
   return (
-    <div className="relative mx-auto pt-16 px-4 max-w-7xl md:mt-[20vh] overflow-x-clip">
+    <div className="relative mx-auto pt-[16vh] px-4 overflow-x-clip ">
       <div className="mx-auto max-w-6xl flex ">
         {/* :TITLE CONTAINER */}
-        
-          <AnimatedComponent
-            animation="animate__fadeInLeft"
-            threshold={0.1}
-            className="z-10 relative mx-auto md:mx-0 py-10 w-full max-w-lg flex flex-col items-center md:items-start text-center md:text-left"
-          >
-            {/* ::Category */}
-            <h3 className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
-              About Us
-            </h3>
-            {/* ::Title */}
-            <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
-              <span className="text-[var(--primary-color)]">About Our</span>{" "}
-              <span className="">Institute</span>
-            </h2>
+        <Parallax translateX={[-40, 20]}>
+          {/* ::Category */}
+          <h3 className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
+            About Us
+          </h3>
+          {/* ::Title */}
+          <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
+            <span className="text-[var(--primary-color)]">About Our</span>{" "}
+            <span className="">Institute</span>
+          </h2>
+          <Parallax translateX={[-10, 10]}>
             {/* Content goes here */}
             <p className="text-base text-justify text-[var(--secondary-color)]">
               Adi Shankara Institute of Engineering and Technology was
@@ -37,59 +32,64 @@ const AboutUs = () => {
               solve a given problem in a rational way through the three
               exclusive phases.
             </p>
-            {/* ::Button */}
-            <button
-              className="group
-             my-5 px-5 py-2.5 
-             bg-[var(--secondary-color)] text-[var(--secondary-color))]
-             text-lg font-bold 
-             relative inline-flex items-center rounded  
-             transition-all duration-200 ease-linear
+          </Parallax>
+          {/* ::Button */}
+          <button
+            className="group
+          my-5 px-5 py-2.5 
+          bg-[var(--secondary-color)] text-[var(--secondary-color))]
+          text-lg font-bold 
+          relative inline-flex items-center rounded  
+          transition-all duration-200 ease-linear
              hover:bg-[var(--accent-color)] "
-              aria-label="Know More"
-              style={{
-                //shadow-[12px_8px_40px_-3px rgba(0, 0, 0, 0.3)]
-                boxShadow: "rgb(0 0 0 / 30%) 12px 8px 40px -3px",
-              }}
+            aria-label="Know More"
+            style={{
+              //shadow-[12px_8px_40px_-3px rgba(0, 0, 0, 0.3)]
+              boxShadow: "rgb(0 0 0 / 30%) 12px 8px 40px -3px",
+            }}
+          >
+            <a
+              href="https://www.adishankara.ac.in/about-us"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[var(--primary-accent-color)] group-hover:text-[var(--primary-accent-color)]"
             >
-              <a
-                href="https://www.adishankara.ac.in/about-us"
-                target="_blank"
-                rel="noreferrer"
-                className="text-[var(--primary-accent-color)] group-hover:text-[var(--primary-accent-color)]"
-              >
-                Know More
-              </a>
-            </button>
-          </AnimatedComponent>
-        
+              Know More
+            </a>
+          </button>
+        </Parallax>
 
-        {/* :IMAGES CONTAINER */}
-        <div className="opacity-70  absolute md:relative top-1/2 left-1/2 md:inset-0 sm:ml-5 w-full md:w-1/2 h-4/5 md:h-auto md:min-h-full flex transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
-          {/* ::Image 1 */}
-          <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
-            {/* Image goes here */}
-            <img
-              src={image2}
-              alt=""
-              className="
+        <Parallax translateX={[80, -80]} opacity={[1, -0.5]}>
+          {/* :IMAGES CONTAINER */}
+          <div
+            className="
+              absolute md:relative top-1/2 left-1/2 md:inset-0 flex 
+              h-full sm:ml-5 w-full md:w-1/2 
+              transform -translate-x-1/2 md:translate-x-0"
+          >
+            {/* ::Image 1 */}
+            <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow overflow-hidden">
+              {/* Image goes here */}
+              <img
+                src={image2}
+                alt=""
+                className="
               shadow-[20px_20px_50px_rgba(0,0,0,0.15)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
-               absolute inset-0 w-full h-4/5 object-left object-cover  md:opacity-90"
-            />
+               absolute inset-0 w-full h-full object-cover object-left-bottom  "
+              />
+            </div>
+            {/* ::Image 2 */}
+            <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
+              {/* Image goes here */}
+              <img
+                src={image2}
+                alt=""
+                className=" shadow-[20px_20px_50px_rgba(0,0,0,0.15)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+              absolute inset-0 w-full h-full object-center object-cover "
+              />
+            </div>
           </div>
-          {/* ::Image 2 */}
-          <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow opacity- overflow-hidden">
-            {/* Image goes here */}
-            <img
-              src={image2}
-              alt=""
-              className=" shadow-[20px_20px_50px_rgba(0,0,0,0.15)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
-              absolute inset-0 w-full h-4/5 object-center object-cover md:opacity-90"
-            />
-          </div>
-
-        </div>
-
+        </Parallax>
         {/* :OVERLAY */}
         {/* <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" /> */}
       </div>
