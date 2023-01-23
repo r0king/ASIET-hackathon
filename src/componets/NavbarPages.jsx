@@ -15,7 +15,7 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
             className="w-10 h-10 object-contain brightness-[5] grayscale"
           />
         </a>
-        {countDate?<span className="ml-5"><EventCountDown countDate={countDate}/></span>:""}
+        {countDate?<span className="ml-5"><EventCountDown countDate={countDate}/></span>:"  "}
       </div>
       {/* nav links */}
       <div className="md:flex items-center hidden md:visible">
