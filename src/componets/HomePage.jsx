@@ -2,8 +2,6 @@ import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
-
-
 import "./animation.css";
 
 import AllUNeed2Know from "./AllUNeed2Know";
@@ -56,7 +54,7 @@ const Component = () => {
         muted
         className="top-0 absolute bottom-0 object-contain w-screen"
       >
-        <source src={planetVideo} type="video/mp4" />
+        <source src={planetVideo} type='video/mp4; codecs="avc1"'/>
       </video>
     ),
   };

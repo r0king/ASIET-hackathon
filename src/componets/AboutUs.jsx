@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="relative mx-auto pt-[16vh] px-4 overflow-x-clip ">
       <div className="mx-auto max-w-6xl flex ">
         {/* :TITLE CONTAINER */}
-        <Parallax translateX={[-40, 20]}>
+        <Parallax scale={[0.8, 1.3]} opacity={[2,-0.4]}>
           {/* ::Category */}
           <h3 className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
             About Us
@@ -17,22 +17,19 @@ const AboutUs = () => {
             <span className="text-[var(--primary-color)]">About Our</span>{" "}
             <span className="">Institute</span>
           </h2>
-          <Parallax translateX={[-10, 10]}>
-            {/* Content goes here */}
-            <p className="text-base text-justify text-[var(--secondary-color)]">
-              Adi Shankara Institute of Engineering and Technology was
-              established in Kalady with the sole purpose of cultivating the
-              engineering temperament of its students and turning them into
-              enterprising people in the industry. The school is managed by ADI
-              SANKARA TRUST, a registered trust that has made a name for itself
-              in the field of education. The Foundation has a tradition of
-              managing educational institutions for more than 50 years. With
-              JIT, we, ASIET, aspire to create a platform to bring professionals
-              and students together and create a collaborative environment to
-              solve a given problem in a rational way through the three
-              exclusive phases.
-            </p>
-          </Parallax>
+          {/* Content goes here */}
+          <p className="text-base text-justify text-[var(--secondary-color)]">
+            Adi Shankara Institute of Engineering and Technology was established
+            in Kalady with the sole purpose of cultivating the engineering
+            temperament of its students and turning them into enterprising
+            people in the industry. The school is managed by ADI SANKARA TRUST,
+            a registered trust that has made a name for itself in the field of
+            education. The Foundation has a tradition of managing educational
+            institutions for more than 50 years. With JIT, we, ASIET, aspire to
+            create a platform to bring professionals and students together and
+            create a collaborative environment to solve a given problem in a
+            rational way through the three exclusive phases.
+          </p>
           {/* ::Button */}
           <button
             className="group
@@ -59,7 +56,7 @@ const AboutUs = () => {
           </button>
         </Parallax>
 
-        <Parallax translateX={[80, -80]} opacity={[1, -0.5]}>
+        <Parallax scale={[0.8, 1.3]} translateX={[0, 20]}>
           {/* :IMAGES CONTAINER */}
           <div
             className="
