@@ -39,9 +39,9 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["72%", "-25%"] : ["78%", "-25%"],
-    opacity: [0.9, 0.4, "easeOutCubic"],
-    scale: [width > 640 ? 3 : 3, width > 640 ? 0.5 : 0.5, "easeOutCubic"],
+    translateY: width > 640 ? ["55%", "-25%"] : ["78%", "-25%"],
+    opacity: [0.9, 0.8, "easeOutCubic"],
+    scale: [width > 640 ? 2 : 3, width > 640 ? 0.6 : 0.5, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -54,12 +54,13 @@ const Component = () => {
         muted
         className="top-0 absolute bottom-0 object-contain w-screen"
       >
+        <source src={planetVideo} type='video/mp4; codecs="hvc1"' />
         <source src={planetVideo} type='video/mp4; codecs="avc1"'/>
       </video>
     ),
   };
   const headline: BannerLayer = {
-    translateY: [width > 640 ? -30 : -10, -20],
+    translateY: [width > 640 ? -34 : -10, -20],
     speed: 40,
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,

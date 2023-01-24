@@ -108,14 +108,14 @@ function Gameathon() {
           </div>
         </div>
       </div>
-      <div className="Gameathon h-[100vh] mt-5 mb-10">
+      <div className="Gameathon  my-10 mb-16">
       <div className="bg-animation -z-10">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div id="stars4"></div>
       </div>
-        <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
+        <div className="w-[90vw]  mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
 
           {/* :LARGE DEVICES */}
           <div className="relative  sm:block overflow-hidden">
@@ -146,7 +146,7 @@ function Gameathon() {
         </div>
         {tabs.map(tab => {
           return (
-            <div className="md:mx-16 mx-6 mt-10 text-[var(--primary-color)]">
+            <div className="md:mx-16 mx-6 my-10 text-[var(--primary-color)]">
               {tab.name === currentTab ? tab.page : ""}
             </div>
           )
