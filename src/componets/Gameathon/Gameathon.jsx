@@ -125,7 +125,7 @@ function Gameathon() {
                 {tabs.map(tab => {
                   const Icon = tab.icon
                   return (
-                    <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-white" : "text-gray-400 hover:text-gray-500"}`}>
+                    <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
                       <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
                         {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
                         {tab.name}

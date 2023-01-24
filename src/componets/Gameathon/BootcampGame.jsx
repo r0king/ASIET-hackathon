@@ -5,7 +5,7 @@ export default function BootcampGame() {
   return (
     <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <div>
-        <h1 className='text-2xl font-bold'>Prerequisites for Bootcamp</h1><br />
+        <h1 className='text-lg font-bold'>Prerequisites for Bootcamp</h1><br />
         <ul className='list-disc text-base font-[poppins] pl-14'>
           <li>A strong interest in game development and a desire to learn about the game industry.</li>
           <li>Basic understanding of programming concepts and familiarity with at least one programming language.</li>
