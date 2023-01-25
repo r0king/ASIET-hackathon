@@ -1,11 +1,11 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 import "./Timeline.css";
 
 
 const Timeline = () => {
   return (
-    <div className="md:bg-gradient-to-b md:from-black md:to-transparent">
+    <div className="-mt-72 md:bg-gradient-to-b md:from-black md:to-transparent">
       <div className="container bg-transparent mx-auto w-full h-full ">
         <div className="relative wrap overflow-hidden p-10 h-full">
           <div className="border-2-2 absolute border-opacity-50 border-white h-full border linenormal linealign"  />

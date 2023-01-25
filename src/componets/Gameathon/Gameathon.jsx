@@ -83,7 +83,7 @@ function Gameathon() {
             {/* basic rounded line button */}
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSflq22uUuGh9orK2Wry4Sucx-UlCsqIdJbtqx2atCpD97QZeQ/viewform" rel="noreferrer" target={"_blank"}>
             <button
-              className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+              className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
               style={{
                 boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
               }}
@@ -91,7 +91,7 @@ function Gameathon() {
               Register Now
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 my-auto "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
