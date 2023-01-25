@@ -83,7 +83,7 @@ function Gameathon() {
             {/* basic rounded line button */}
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSflq22uUuGh9orK2Wry4Sucx-UlCsqIdJbtqx2atCpD97QZeQ/viewform" rel="noreferrer" target={"_blank"}>
             <button
-              className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+              className="w-full md:w-1/4 p=5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
               style={{
                 boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
               }}
@@ -91,7 +91,7 @@ function Gameathon() {
               Register Now
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 my-auto "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -108,14 +108,14 @@ function Gameathon() {
           </div>
         </div>
       </div>
-      <div className="Gameathon h-[100vh] mt-5 mb-10">
+      <div className="Gameathon  my-10 mb-16">
       <div className="bg-animation -z-10">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div id="stars4"></div>
       </div>
-        <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
+        <div className="w-[90vw]  mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
 
           {/* :LARGE DEVICES */}
           <div className="relative  sm:block overflow-hidden">
@@ -125,7 +125,7 @@ function Gameathon() {
                 {tabs.map(tab => {
                   const Icon = tab.icon
                   return (
-                    <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-white" : "text-gray-400 hover:text-gray-500"}`}>
+                    <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
                       <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
                         {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
                         {tab.name}
@@ -146,7 +146,7 @@ function Gameathon() {
         </div>
         {tabs.map(tab => {
           return (
-            <div className="md:mx-16 mx-6 mt-10 text-[var(--primary-color)]">
+            <div className="md:mx-16 mx-6 my-10 text-[var(--primary-color)]">
               {tab.name === currentTab ? tab.page : ""}
             </div>
           )
