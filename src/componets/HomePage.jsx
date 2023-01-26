@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import {  ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
 import "./animation.css";
@@ -20,7 +20,7 @@ import planetVideo from "../assets/earth2.mp4";
 import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
-import titleVideo from "../assets/title1.mp4";
+import prizeVideo from "../assets/prize.mp4";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -64,8 +64,24 @@ const Component = () => {
       </video>
     ),
   };
+  const videoprize: BannerLayer = {
+    translateY: width > 640 ? ["-6%", "25%"] : ["73%", "-25%"],
+    opacity: [3.5, -0.7, "easeOutCubic"],
+    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    children: (
+      <video
+        autoPlay
+        loop
+        muted
+        className="top-0 absolute bottom-0 object-contain w-screen "
+      >
+        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+        <source src={prizeVideo} type='video/mp4; codecs="avc1"' />
+      </video>
+    ),
+  };
   const headline: BannerLayer = {
-    translateY: [width > 640 ? -34 : -10, -20],
+    translateY: [width > 640 ? -32 : -10, -20],
     speed: 40,
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
@@ -108,24 +124,11 @@ const Component = () => {
     <>
       <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
         <Menu />
-        <Parallax
-          shouldAlwaysCompleteAnimation={true}
-          // targetElement={targetElement}
-          className="w-full h-[100vh] "
-        >
-          <video
-            autoPlay
-            loop
-            muted
-            className="absolute top-0 z-20 left-0 w-full h-full"
-          >
-            <source src={titleVideo} type='video/mp4; codecs="avc1"' />
-          </video>
-        </Parallax>
         {width > 640 ? (
           <ParallaxBanner
             layers={[
               background,
+              videoprize,
               headline,
               videoglobe,
               countdown,
