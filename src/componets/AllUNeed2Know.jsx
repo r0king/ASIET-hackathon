@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import allUNeed2Know from "../assets/SamplePoster1.jpg";
 import Tilt from "react-parallax-tilt";
 import { useWindowSize } from "react-use";
@@ -6,30 +6,55 @@ import { Parallax } from "react-scroll-parallax";
 
 const AllUNeed2Know = () => {
   const { width } = useWindowSize();
+  const targetRef = React.useRef(null);
+
+  const [targetElement, setElement] = useState();
+  useEffect(() => {
+    setElement(targetRef.current);
+  }, []);
+
   return (
     <section className="text-gray-100 bg-gradient-to-b from-transparent via-[#171717]/50 to-transparent md:bg-transparent">
-      <Parallax scale={[0.8, 1.3]} opacity={[0.5, 1.3]}>
-        <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight text-center text-gray-50">
-              ALL{" "}
-              <span className=" text-[var(--primary-color)]">
-                U NEED 2 KNOW
-              </span>
-            </h2>
+      <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+        <div>
+          <h2
+            ref={targetRef}
+            className="text-2xl font-bold tracking-tight text-center text-gray-50"
+          >
+            ALL
+            <span className=" text-[var(--primary-color)]">U NEED 2 KNOW</span>
+          </h2>
+          <Parallax
+            shouldAlwaysCompleteAnimation={true}
+            targetElement={targetElement}
+            scale={[0.6, 1]}
+            opacity={[0.5, 1.3]}
+          >
             <h3 className="max-w-3xl mx-auto mt-4 text-lg  text-center text-gray-50">
               Quando cetero his ne, eum admodum sapientem ut.
             </h3>
-          </div>
-          <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-            <div>
+          </Parallax>
+        </div>
+        <div className="flex flex-col md:flex-row">
+          <div>
+            <Parallax
+              scale={[0.6, 1]}
+              opacity={[0.5, 1.3]}
+              targetElement={targetElement}
+            >
               <h3 className="text-lg  tracking-tight ">Ad vix debet docendi</h3>
               <p className="mt-3 text-base text-gray-400">
                 Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos
                 etiam regione ut, persius eripuit quo id. Sit te euismod
                 tacimates.
               </p>
-              <div className="mt-12 space-y-12">
+            </Parallax>
+            <div className="mt-12 space-y-12">
+              <Parallax
+                scale={[0.6, 1]}
+                opacity={[0.5, 1.3]}
+                targetElement={targetElement}
+              >
                 <div className="flex">
                   <div className="flex-shrink-0"></div>
                   <div className="ml-4 lg:ml-14">
@@ -44,6 +69,12 @@ const AllUNeed2Know = () => {
                     </p>
                   </div>
                 </div>
+              </Parallax>
+              <Parallax
+                scale={[0.6, 1]}
+                opacity={[0.5, 1.3]}
+                targetElement={targetElement}
+              >
                 <div className="flex">
                   <div className="flex-shrink-0"></div>
                   <div className="ml-4 lg:ml-14">
@@ -56,7 +87,13 @@ const AllUNeed2Know = () => {
                       quis. lorum Lorem ipsum dolor sit amet consectetur
                     </p>
                   </div>
-                </div>
+                </div>{" "}
+              </Parallax>
+              <Parallax
+                scale={[0.6, 1]}
+                opacity={[0.5, 1.3]}
+                targetElement={targetElement}
+              >
                 <div className="flex">
                   <div className="flex-shrink-0"></div>
                   <div className="ml-4 lg:ml-14">
@@ -72,28 +109,29 @@ const AllUNeed2Know = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Parallax>
             </div>
-            <div aria-hidden="true" className="mt-10 lg:mt-0 p-5">
-              {width > 640 ? (
-                <Tilt>
-                  <img
-                    src={allUNeed2Know}
-                    alt=""
-                    className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-sm border-l-[1px] rounded-xl border-white/20"
-                  />
-                </Tilt>
-              ) : (
+          </div>
+
+          <div aria-hidden="true" className="mt-10 lg:mt-0 p-5">
+            {width > 640 ? (
+              <Tilt>
                 <img
                   src={allUNeed2Know}
                   alt=""
                   className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-sm border-l-[1px] rounded-xl border-white/20"
                 />
-              )}
-            </div>
+              </Tilt>
+            ) : (
+              <img
+                src={allUNeed2Know}
+                alt=""
+                className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-[min(24rem,100%)] border-l-[1px] rounded-xl border-white/20"
+              />
+            )}
           </div>
         </div>
-      </Parallax>
+      </div>
     </section>
   );
 };

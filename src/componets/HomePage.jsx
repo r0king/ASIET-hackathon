@@ -17,6 +17,7 @@ import Timeline from "./Timeline";
 import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
+import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
 
@@ -39,9 +40,9 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["55%", "-25%"] : ["78%", "-25%"],
+    translateY: width > 640 ? ["55%", "-25%"] : ["73%", "-25%"],
     opacity: [0.9, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 2 : 3, width > 640 ? 0.6 : 0.5, "easeOutCubic"],
+    scale: [width > 640 ? 2 : 1.8, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -50,12 +51,15 @@ const Component = () => {
       <video
         autoPlay
         loop
-        preload="auto"
         muted
         className="top-0 absolute bottom-0 object-contain w-screen"
       >
-        <source src={planetVideo} type='video/mp4; codecs="hvc1"' />
-        <source src={planetVideo} type='video/mp4; codecs="avc1"'/>
+        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+        {width > 640 ? (
+          <source src={planetVideo} type='video/mp4; codecs="avc1"' />
+        ) : (
+          <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
+        )}
       </video>
     ),
   };
