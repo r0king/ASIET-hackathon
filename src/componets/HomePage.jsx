@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
 import "./animation.css";
@@ -41,9 +41,9 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["55%", "-25%"] : ["73%", "-25%"],
-    opacity: [0.9, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 2 : 1.8, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    translateY: width > 640 ? ["32%", "-25%"] : ["73%", "-25%"],
+    opacity: [1, 0.8, "easeOutCubic"],
+    scale: [width > 640 ? 1.7 : 1.8, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -65,7 +65,7 @@ const Component = () => {
     ),
   };
   const videoprize: BannerLayer = {
-    translateY: width > 640 ? ["-6%", "25%"] : ["73%", "-25%"],
+    translateY: width > 640 ? ["-12%", "20%"] : ["73%", "-25%"],
     opacity: [3.5, -0.7, "easeOutCubic"],
     scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
     children: (
@@ -73,7 +73,7 @@ const Component = () => {
         autoPlay
         loop
         muted
-        className="top-0 absolute bottom-0 object-contain w-screen "
+        className="top-0 absolute bottom-0 object-contain w-screen opacity-70"
       >
         {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
         <source src={prizeVideo} type='video/mp4; codecs="avc1"' />
@@ -83,11 +83,12 @@ const Component = () => {
   const headline: BannerLayer = {
     translateY: [width > 640 ? -32 : -10, -20],
     speed: 40,
+    translateX: width > 640 ? [0, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="absolute p-5 inset-0 flex items-center justify-center ">
+      <div className="absolute p-5 inset-0 flex items-center justify-center md:justify-start  ">
         <HeroTitle />
       </div>
     ),
@@ -95,6 +96,7 @@ const Component = () => {
   const countdown = {
     translateY: [width > 640 ? 33.3 : 69, 60],
     speed: -10,
+    translateX: width > 640 ? [0, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
@@ -128,9 +130,9 @@ const Component = () => {
           <ParallaxBanner
             layers={[
               background,
+              videoglobe,
               videoprize,
               headline,
-              videoglobe,
               countdown,
               tagline,
               sponsers,
