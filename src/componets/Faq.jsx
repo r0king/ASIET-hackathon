@@ -75,9 +75,7 @@ const Faq = () => {
         <Parallax
           shouldAlwaysCompleteAnimation={true}
           scale={[0.8, 1]}
-          startScroll={"450%"}
           targetElement={targetElement}
-          endScroll={"460%"}
           opacity={[0.5, 1.3]}
         >
           <div className="h-full col-span-2 md:col-span-1 relative p-4 flex flex-col justify-center items-center">

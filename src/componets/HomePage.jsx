@@ -1,5 +1,5 @@
 import React from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
 import "./animation.css";
@@ -20,6 +20,7 @@ import planetVideo from "../assets/earth2.mp4";
 import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
+import titleVideo from "../assets/title1.mp4";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -107,6 +108,20 @@ const Component = () => {
     <>
       <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
         <Menu />
+        <Parallax
+          shouldAlwaysCompleteAnimation={true}
+          // targetElement={targetElement}
+          className="w-full h-[100vh] "
+        >
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 z-20 left-0 w-full h-full"
+          >
+            <source src={titleVideo} type='video/mp4; codecs="avc1"' />
+          </video>
+        </Parallax>
         {width > 640 ? (
           <ParallaxBanner
             layers={[
