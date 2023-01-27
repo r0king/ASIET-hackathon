@@ -24,13 +24,13 @@ const ContactUs = () => {
              flex flex-col w-full h-full mx-auto"
           >
             {/* ::Title Contact */}
-            <h2 className="text-lg text-[#f0f0f0] font-medium tracking-wide">
+            <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
             </h2>
 
             {/* ::Address */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-lg font-semibold">Address</h3>
+              <h3 className="text-lg font-medium">Address</h3>
               <p className="text-base text-[#f0f0f0] text-opacity-60">
                 5CHJ+758,
                 <br /> Vidya Bharathi Nagar, <br /> Mattoor, Kalady,
@@ -55,7 +55,7 @@ const ContactUs = () => {
                 </p>
                 <a
                   href="mailto:#"
-                  className="inline-block hover:text-[#f0f0f0]"
+                  className="inline-block font-medium hover:text-[#f0f0f0]"
                 >
                   info@adishankara.ac.in
                 </a>

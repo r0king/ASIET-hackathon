@@ -13,7 +13,6 @@ import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
 import AboutUs from "./AboutUs";
 import CountDown from "./CountDown";
-import Timeline from "./Timeline";
 import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
@@ -155,8 +154,8 @@ const Component = () => {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <Timeline />
-        <AboutUs />
+        {/* <Timeline /> */}
+        
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
@@ -189,7 +188,7 @@ const Component = () => {
             },
             {
               speed: 80,
-              translateY: [width > 640 ? 60 : 57, width > 640 ? 90 : 110],
+              translateY: [width > 640 ? 64 : 57, width > 640 ? 90 : 110],
               scale: [1, 1.5, "easeOutCubic"],
               children: (
                 <img
@@ -204,6 +203,7 @@ const Component = () => {
         >
           <AllUNeed2Know />
           <Faq />
+          <AboutUs />
           <ContactUs />
         </ParallaxBanner>
       </div>
