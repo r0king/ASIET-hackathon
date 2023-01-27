@@ -27,14 +27,34 @@ const Component = () => {
   const background: BannerLayer = {
     speed: -10,
     translateX: width > 640 ? [0, -20] : [0, -40],
-    scale: width > 640 ? [1.3, 0.85, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
+    scale: width > 640 ? [2.5, 1.5, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     children: (
-      <div className="bg-animation ">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
+      <div className="bg-animation no-animation">
+        <div
+          id="stars"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars2"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars3"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars4"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
       </div>
     ),
   };
@@ -94,7 +114,7 @@ const Component = () => {
     ),
   };
   const countdown = {
-    translateY: [width > 640 ? 30 : 69, 60],
+    translateY: [width > 640 ? 28 : 69, 60],
     speed: -10,
     translateX: width > 640 ? [6, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
