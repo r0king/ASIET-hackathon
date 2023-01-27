@@ -40,9 +40,10 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["32%", "-25%"] : ["73%", "-25%"],
-    opacity: [1, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 1.7 : 1.8, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    translateY: width > 640 ? ["38%", "-25%"] : ["73%", "-25%"],
+    translateX: width > 640 ? ["45%", "50%"] : ["-10%", "-10%"],
+    opacity: [0.95, 0.8, "easeOutCubic"],
+    scale: [width > 640 ? 1.3 : 1.8, width > 640 ? 1.1 : 0.6, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -52,7 +53,7 @@ const Component = () => {
         autoPlay
         loop
         muted
-        className="top-0 absolute bottom-0 object-contain w-screen"
+        className="top-0 absolute bottom-0 object-contain "
       >
         {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
         {width > 640 ? (
@@ -80,22 +81,22 @@ const Component = () => {
     ),
   };
   const headline: BannerLayer = {
-    translateY: [width > 640 ? -32 : -10, -20],
+    translateX: width > 640 ? [5, 20] : [0, 0],
+    translateY: [width > 640 ? -35 : -10, -20],
     speed: 40,
-    translateX: width > 640 ? [0, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="absolute p-5 inset-0 flex items-center justify-center md:justify-start  ">
+      <div className="absolute p-5 inset-0 flex items-center justify-center md:justify-start ">
         <HeroTitle />
       </div>
     ),
   };
   const countdown = {
-    translateY: [width > 640 ? 33.3 : 69, 60],
+    translateY: [width > 640 ? 30 : 69, 60],
     speed: -10,
-    translateX: width > 640 ? [0, 20] : [0, 0],
+    translateX: width > 640 ? [6, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
@@ -130,7 +131,7 @@ const Component = () => {
             layers={[
               background,
               videoglobe,
-              videoprize,
+              // videoprize,
               headline,
               countdown,
               tagline,
@@ -142,7 +143,14 @@ const Component = () => {
         ) : (
           <>
             <ParallaxBanner
-              layers={[background, headline, videoglobe, countdown, tagline]}
+              layers={[
+                background,
+                headline,
+                videoprize,
+                videoglobe,
+                countdown,
+                tagline,
+              ]}
               className="h-[110vh] bg-black"
             />
             <Sponsors />
@@ -155,7 +163,7 @@ const Component = () => {
           <div id="stars4"></div>
         </div>
         {/* <Timeline /> */}
-        
+
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
