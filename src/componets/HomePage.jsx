@@ -2,8 +2,6 @@ import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
-
-
 import "./animation.css";
 
 import AllUNeed2Know from "./AllUNeed2Know";
@@ -15,12 +13,13 @@ import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
 import AboutUs from "./AboutUs";
 import CountDown from "./CountDown";
-import Timeline from "./Timeline";
 import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
+import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
+import prizeVideo from "../assets/prize.mp4";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -28,22 +27,43 @@ const Component = () => {
   const background: BannerLayer = {
     speed: -10,
     translateX: width > 640 ? [0, -20] : [0, -40],
-    scale: width > 640 ? [1.3, 0.85, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
+    scale: width > 640 ? [2.5, 1.5, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     children: (
-      <div className="bg-animation ">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
+      <div className="bg-animation no-animation">
+        <div
+          id="stars"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars2"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars3"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
+        <div
+          id="stars4"
+          style={{
+            animationPlayState: "paused",
+          }}
+        ></div>
       </div>
     ),
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["72%", "-25%"] : ["78%", "-25%"],
-    opacity: [0.9, 0.4, "easeOutCubic"],
-    scale: [width > 640 ? 3 : 3, width > 640 ? 0.5 : 0.5, "easeOutCubic"],
+    translateY: width > 640 ? ["38%", "-25%"] : ["73%", "-25%"],
+    translateX: width > 640 ? ["45%", "50%"] : ["-10%", "-10%"],
+    opacity: [0.95, 0.8, "easeOutCubic"],
+    scale: [width > 640 ? 1.3 : 1.8, width > 640 ? 1.1 : 0.6, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
@@ -52,29 +72,51 @@ const Component = () => {
       <video
         autoPlay
         loop
-        preload="auto"
         muted
-        className="top-0 absolute bottom-0 object-contain w-screen"
+        className="top-0 absolute bottom-0 object-contain "
       >
-        <source src={planetVideo} type="video/mp4" />
+        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+        {width > 640 ? (
+          <source src={planetVideo} type='video/mp4; codecs="avc1"' />
+        ) : (
+          <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
+        )}
+      </video>
+    ),
+  };
+  const videoprize: BannerLayer = {
+    translateY: width > 640 ? ["-12%", "20%"] : ["73%", "-25%"],
+    opacity: [3.5, -0.7, "easeOutCubic"],
+    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    children: (
+      <video
+        autoPlay
+        loop
+        muted
+        className="top-0 absolute bottom-0 object-contain w-screen opacity-70"
+      >
+        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+        <source src={prizeVideo} type='video/mp4; codecs="avc1"' />
       </video>
     ),
   };
   const headline: BannerLayer = {
-    translateY: [width > 640 ? -30 : -10, -20],
+    translateX: width > 640 ? [5, 20] : [0, 0],
+    translateY: [width > 640 ? -35 : -10, -20],
     speed: 40,
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="absolute p-5 inset-0 flex items-center justify-center ">
+      <div className="absolute p-5 inset-0 flex items-center justify-center md:justify-start ">
         <HeroTitle />
       </div>
     ),
   };
   const countdown = {
-    translateY: [width > 640 ? 33.3 : 69, 60],
+    translateY: [width > 640 ? 28 : 69, 60],
     speed: -10,
+    translateX: width > 640 ? [6, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
@@ -108,8 +150,9 @@ const Component = () => {
           <ParallaxBanner
             layers={[
               background,
-              headline,
               videoglobe,
+              // videoprize,
+              headline,
               countdown,
               tagline,
               sponsers,
@@ -120,7 +163,14 @@ const Component = () => {
         ) : (
           <>
             <ParallaxBanner
-              layers={[background, headline, videoglobe, countdown, tagline]}
+              layers={[
+                background,
+                headline,
+                videoprize,
+                videoglobe,
+                countdown,
+                tagline,
+              ]}
               className="h-[110vh] bg-black"
             />
             <Sponsors />
@@ -132,8 +182,8 @@ const Component = () => {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <Timeline />
-        <AboutUs />
+        {/* <Timeline /> */}
+
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
@@ -166,7 +216,7 @@ const Component = () => {
             },
             {
               speed: 80,
-              translateY: [width > 640 ? 60 : 57, width > 640 ? 90 : 110],
+              translateY: [width > 640 ? 64 : 57, width > 640 ? 90 : 110],
               scale: [1, 1.5, "easeOutCubic"],
               children: (
                 <img
@@ -181,6 +231,7 @@ const Component = () => {
         >
           <AllUNeed2Know />
           <Faq />
+          <AboutUs />
           <ContactUs />
         </ParallaxBanner>
       </div>

@@ -13,9 +13,9 @@ const Poster = () => {
   const categories = [
     {
       id: 0,
-      name: "Productathon",
+      name: "Codathon",
       tagline:
-        "Productathon is a 24hrs Hackathon event, where aspiring student entrepreneurs can come collaborate and build their startup ideas to a minimum viable product (MVP) with the support of Nasscom 10k Startups , MakerGram and Google Cloud.",
+        "Codathon is a 24hrs Hackathon event, where aspiring student entrepreneurs can come collaborate and build their startup ideas to a minimum viable product (MVP) with the support of Nasscom 10k Startups , MakerGram and Google Cloud.",
       href: "#link",
       picture: SamPos1,
       pictureAlt: "Description of your picture",

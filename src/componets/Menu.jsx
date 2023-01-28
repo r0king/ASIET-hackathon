@@ -37,10 +37,10 @@ const Navbar24 = () => {
             HOME
           </a>
           <a
-            href="/productathon"
+            href="/codathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Productathon
+            Codathon
           </a>
 
           <a

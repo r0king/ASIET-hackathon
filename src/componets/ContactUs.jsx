@@ -5,12 +5,12 @@ const ContactUs = () => {
     <div className="flex p-3 md:p-6 justify-center items-center relative z-30">
       <div
         className="
-         w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.15)]
+         w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.25)]
          border-t-[1px] border-l-[1px] rounded-xl border-white/20 
-         bg-clip-padding bg-opacity-70  text-[#f0f0f0] 
+         bg-clip-padding text-[#f0f0f0] 
          overflow-hidden"
         style={{
-          boxShadow: "rgb(0 0 0 / 90%) 12px 8px 40px 0px",
+          boxShadow: "rgb(0 0 0 / 20%) 12px 8px 40px 0px",
         }}
       >
         <div className="grid grid-cols-6 md:grid-cols-5">
@@ -24,13 +24,13 @@ const ContactUs = () => {
              flex flex-col w-full h-full mx-auto"
           >
             {/* ::Title Contact */}
-            <h2 className="text-lg text-[#f0f0f0] font-medium tracking-wide">
+            <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
             </h2>
 
             {/* ::Address */}
             <div className="mt-5 sm:mt-5 space-y-3">
-              <h3 className="text-lg font-semibold">Address</h3>
+              <h3 className="text-lg font-medium">Address</h3>
               <p className="text-base text-[#f0f0f0] text-opacity-60">
                 5CHJ+758,
                 <br /> Vidya Bharathi Nagar, <br /> Mattoor, Kalady,
@@ -55,7 +55,7 @@ const ContactUs = () => {
                 </p>
                 <a
                   href="mailto:#"
-                  className="inline-block hover:text-[#f0f0f0]"
+                  className="inline-block font-medium hover:text-[#f0f0f0]"
                 >
                   info@adishankara.ac.in
                 </a>

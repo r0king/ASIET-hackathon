@@ -3,10 +3,10 @@ import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png'
 
 export default function BootcampGame() {
   return (
-    <div className='md:p-10 p-3 md:text-2xl text-xl md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <div>
-        <h1 className='text-4xl font-bold'>Prerequisites for Bootcamp</h1><br />
-        <ul className='list-disc text-2xl font-[poppins] pl-14'>
+        <h1 className='text-lg font-bold'>Prerequisites for Bootcamp</h1><br />
+        <ul className='list-disc text-base font-[poppins] pl-14'>
           <li>A strong interest in game development and a desire to learn about the game industry.</li>
           <li>Basic understanding of programming concepts and familiarity with at least one programming language.</li>
           <li>Basic understanding of art and design principles.</li>
@@ -18,8 +18,8 @@ export default function BootcampGame() {
         </ul>
       </div>
       <div>
-        <h1 className='text-4xl font-bold mt-8'>How should the candidate attend the training?</h1><br />
-        <ul className='list-disc text-2xl font-[poppins] pl-14'>
+        <h1 className='text-lg font-bold mt-8'>How should the candidate attend the training?</h1><br />
+        <ul className='list-disc text-base font-[poppins] pl-14'>
           <li>Students can use the Discord channel to ask questions and interact with the instructor and classmates.</li>
           <li>Students can also use the help-desk platform to submit tickets with their doubts or questions. The training organization will respond as soon as possible.</li>
           <li>During the course, students can also ask doubts directly to the instructor during class sessions or through private messaging.</li>
@@ -27,13 +27,13 @@ export default function BootcampGame() {
         </ul>
       </div>
       <div>
-        <h1 className='text-4xl font-bold mt-8'>Bootcamp contents</h1><br />
+        <h1 className='text-lg font-bold mt-8'>Bootcamp contents</h1><br />
         <img src={bootCampDiagram} alt="Bootcamp Content" />
       </div>
       <div>
-        <h1 className='text-4xl font-bold'>Bootcamp Rules</h1><br />
-        <h1 className='text-3xl font-bold pl-5 pb-6'>Specific Rules</h1>
-        <ol className='list-decimal text-2xl font-[poppins] pl-16'>
+        <h1 className='text-2xl font-bold'>Bootcamp Rules</h1><br />
+        <h1 className='text-lg font-bold pl-5 pb-6'>Specific Rules</h1>
+        <ol className='list-decimal text-base font-[poppins] pl-16'>
           <li>The Bootcamp will consist of 40 hours of content to be delivered to students in morning and evening batches.</li>
           <li>Students will participate in Zoom sessions and can log in as team members.</li>
           <li>A dedicated Discord channel will be established for all Bootcamp attendees.</li>
@@ -44,15 +44,15 @@ export default function BootcampGame() {
           <li>PDFs and slides will be provided to students.</li>
           <li>
             Deliverables:
-            <ol className='list-decimal pl-10 text-xl'>
+            <ol className='list-decimal pl-10 text-base'>
               <li>Unity session</li>
               <li>Basic concepts of 3D modeling</li>
               <li>Completing one hyper-casual game with basic gameplay.</li>
             </ol>
           </li>
         </ol>
-        <h1 className='text-3xl font-bold pl-5 pb-6 pt-5'>General Rules</h1>
-        <ul className='list-disc text-2xl font-[poppins] pl-14'>
+        <h1 className='text-lg font-bold pl-5 pb-6 pt-5'>General Rules</h1>
+        <ul className='list-disc text-base font-[poppins] pl-14'>
           <li>Attendance is mandatory for all sessions. If a student is unable to attend a session, they must inform the instructor in advance and make arrangements to catch up on missed material.</li>
           <li>Students must complete all assignments on time and to the best of their ability; late or incomplete assignments will not be accepted.</li>
           <li>Active participation in class discussions and activities is expected from students.</li>
@@ -73,8 +73,8 @@ export default function BootcampGame() {
         </ul>
       </div>
       <div>
-        <h1 className='text-4xl font-bold mt-8'>Bootcamp Certificate</h1><br />
-        <h2 className='text-2xl font-[poppins] pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from TILTLABS.</h2>
+        <h1 className='text-lg font-bold mt-8'>Bootcamp Certificate</h1><br />
+        <h2 className='text-base font-[poppins] pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from TILTLABS.</h2>
       </div>
     </div>
   )

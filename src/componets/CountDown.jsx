@@ -53,29 +53,29 @@ export default class CountDown extends Component {
       <div
         className="
             -mt-[10vh] md:pr-5 mx-auto w-full
-             grid grid-flow-col justify-center gap-5 auto-cols-max
-            text-center  text-xl font-poppins"
+             grid grid-flow-col justify-center md:justify-start gap-5 auto-cols-max
+            text-center text-xl font-poppins"
       >
-        <div className="flex flex-col md:p-2 rounded-box text-base md:text-xl text-neutral-content">
-          <span className="countdown text-2xl md:text-5xl font-semibold ">
+        <div className="flex flex-col md:p-2  rounded-box text-base md:text-xl text-neutral-content">
+          <span className="countdown text-2xl md:pb-2 md:text-5xl font-semibold ">
             <span style={{ "--value": this.state.days }}></span>
           </span>
           days
         </div>
-        <div className="flex flex-col md:p-2 rounded-box text-base md:text-xl text-neutral-content">
-          <span className="countdown text-2xl md:text-5xl font-semibold">
+        <div className="flex flex-col md:p-2  rounded-box text-base md:text-xl text-neutral-content">
+          <span className="countdown text-2xl md:pb-2 md:text-5xl font-semibold">
             <span style={{ "--value": this.state.hours }}></span>
           </span>
           hours
         </div>
-        <div className="flex flex-col md:p-2 rounded-box text-base md:text-xl text-neutral-content">
-          <span className="countdown text-2xl md:text-5xl font-semibold">
+        <div className="flex flex-col md:p-2  rounded-box text-base md:text-xl text-neutral-content">
+          <span className="countdown text-2xl md:pb-2 md:text-5xl font-semibold">
             <span style={{ "--value": this.state.minutes }}></span>
           </span>
           min
         </div>
-        <div className="flex flex-col md:p-2 rounded-box text-base md:text-xl text-neutral-content">
-          <span className="countdown text-2xl md:text-5xl font-semibold">
+        <div className="flex flex-col md:p-2  rounded-box text-base md:text-xl text-neutral-content">
+          <span className="countdown text-2xl md:pb-2 md:text-5xl font-semibold">
             <span style={{ "--value": this.state.seconds }}></span>
           </span>
           sec
