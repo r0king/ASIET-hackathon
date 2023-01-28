@@ -34,7 +34,6 @@ function App() {
           <Route exact path="/bizthon" element={<Bizthon />} />
         </Routes>
       </BrowserRouter>
-      <Partners />
     </>
   );
 }

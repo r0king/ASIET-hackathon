@@ -137,6 +137,7 @@ const Component = () => {
     shouldAlwaysCompleteAnimation: true,
     children: (
       <>
+        
         <Sponsors />
       </>
     ),

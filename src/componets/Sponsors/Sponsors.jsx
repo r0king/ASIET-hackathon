@@ -6,10 +6,12 @@ import logo4 from "../../assets/Sponsors/nascom1.png";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import AnimatedComponent from "../AnimatedComponent";
+import Partners from "../Partners/Partners";
 
 export default function Sponsors() {
   return (
     <div className="sponsers_main_container -mt-10 md:mt-28 bg-gradient-to-b from-black to-transparent md:from-transparent">
+      <Partners />
       <div className="sponsors_container">
         <div className="sponsor_title">
           <h1 className="text-2xl p-5 mt-20 font-bold"><span>OUR</span> SPONSORS</h1>
