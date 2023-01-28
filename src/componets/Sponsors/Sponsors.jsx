@@ -12,7 +12,7 @@ export default function Sponsors() {
     <div className="sponsers_main_container -mt-10 md:mt-28 bg-gradient-to-b from-black to-transparent md:from-transparent">
       <div className="sponsors_container">
         <div className="sponsor_title">
-          <h1 className="text-2xl p-10 font-bold">Our Sponsors</h1>
+          <h1 className="text-2xl p-5 mt-20 font-bold"><span>OUR</span> SPONSORS</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
             suscipit repudiandae magni voluptas sint velit ullam dolores odit
@@ -22,7 +22,7 @@ export default function Sponsors() {
           </p>
         </div>
         <div className="sponsors_platinum sponsors">
-          <h1 className="text-lg p-3 pb-4 font-semibold">Platinum</h1>
+          <h1 className="text-lg font-semibold">Platinum</h1>
           <AnimatedComponent animation=" animate__fast animate__fadeInUp">
             <div className="images">
               <Tilt
@@ -81,7 +81,7 @@ export default function Sponsors() {
           </AnimatedComponent>
         </div>
         <div className="sponsors_diamond sponsors">
-          <h1 className="text-lg p-3 pb-4 font-semibold">Diamond</h1>
+          <h1 className="text-lg font-semibold">Diamond</h1>
           <AnimatedComponent animation=" animate__fast animate__fadeInUp">
             <div className="images">
               <Tilt
@@ -140,7 +140,7 @@ export default function Sponsors() {
           </AnimatedComponent>
         </div>
         <div className="sponsors_gold sponsors">
-          <h1 className="text-lg p-3 pb-4 font-semibold">Gold</h1>
+          <h1 className="text-lg font-semibold">Gold</h1>
           <AnimatedComponent animation=" animate__fast animate__fadeInUp">
             <div className="images">
               <Tilt
@@ -199,7 +199,7 @@ export default function Sponsors() {
           </AnimatedComponent>
         </div>
         <div className="sponsors_silver sponsors">
-          <h1 className="text-lg p-3 pb-4 font-semibold">Silver</h1>
+          <h1 className="text-lg font-semibold">Silver</h1>
           <AnimatedComponent animation=" animate__fast animate__fadeInUp">
             <div className="images">
               <Tilt
