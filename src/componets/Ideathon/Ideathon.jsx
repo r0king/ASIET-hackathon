@@ -1,66 +1,102 @@
 import React, { useState } from "react";
 import bgImg from "../../assets/Ideathon/bg.png";
-import {
-  CalendarIcon,
-  HeartIcon,
-  ShieldExclamationIcon,
-  SearchIcon,
-  CreditCardIcon,
-  UserGroupIcon,
-} from "@heroicons/react/outline";
+import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Ideathon.css";
 import { Navbar } from "../NavbarPages";
 
+function AboutYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      “What the mind can conceive and believe, it can achieve.”<br /><br />
+      <span className="pl-96">Napoleon Hill</span><br /><br />
+      In recent times, technology has produced many innovations of holocaustic nature and scientists and researchers in its quest to conquer nature, have evolved various dangerous concepts threatening the very existence of mankind. These pose a big challenge to the meaning and principle of humanity. In this regard, students should play a strong and positive role in determining emerging trends of technology. It is with this great thought in mind, that “Adi Shankara Young Scientist Award" is conceived and designed.
+      <br /><br />
+      <span className="pl-20">The objective of Adi Shankara Young Scientist Award is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.</span>
+    </div>
+  )
+}
+
+function ContactYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      Email: innovation@adishankara.ac.in<br /><br />
+      Dr. Ajay Kumar<br />
+      Associate Professor<br />
+      +919846900310<br /><br />
+      Mr. Albins Paul<br />
+      Asst. Professor<br />
+      +919495129696<br /><br />
+      Adi Shankara Institute of Engineering and Technology<br />
+      Vidya Bharathi Nagar, Mattoor<br />
+      Kalady, Ernakulam<br />
+      Kerala, India<br />
+      Phone No. 0484-2460000<br />
+
+    </div>
+  )
+}
+
+function FaqYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <br /><b>Q1. Should both participants belong to the same school?</b>
+      <br />Ans. Yes, both the participants and their mentor must be from the same school
+      <br /><br /><b>Q2. Should the participants visit the college at any intermediate stages?</b>
+      <br />Ans. No, participants are to be presents in the college only for the final round. Any other interactions   would be done either through Skype/Imo or through direct visit to your schools.
+      <br /><br /><b>Q3. Can students participate individually for the competition?</b>
+      <br />Ans. Yes
+      <br /><br /><b>Q4. We are unaware of Skype/Imo. Will we receive any support?</b>
+      <br />Ans. Sure, You will be allocated a mentor from the college, who will guide you through each steps.
+      <br /><br /><b>Q5. During the final round at college, will we be provided with accommodation and other amenities?</b>
+      <br />Ans. Yes, College will take appropriate steps to ensure your comfortable stay.
+      <br /><br /><b>Q6. Will there be any elimination in each round?</b>
+      <br />Ans. No, eliminations are there only for pre-final and final rounds.
+    </div>
+  )
+}
+
+function GuideYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>The contest must meet the following requirements:</b><br/><br/>
+      <ul className="list-disc pl-10">
+        <li>Each team can have a maximum of 2 students.(both from the same school)</li>
+        <li>Each team should have a mentor from the same school.</li>
+        <li>Student(s) can present maximum of one idea. Subsequent entries will be disqualified.</li>
+        <li>Entries must be in English.</li>
+        <li>Entries are void if they are in whole or part incomplete, counterfeit, obtained through fraud, or submitted late.</li>
+        <li>The idea can be in any domain. But it should be capable of answering the problem statement (why), should have a definite objective (what), should include the implementation details (how) and social relevance.</li>
+        <li>If two teams submit nearly the same idea and have got the same rating, the idea submitted first based on date and time stamp shall be given priority.</li>
+        <li>The ideas should be original. If, at any stage of the contest, the organizers discover plagiarism, the entry is disqualified.</li>
+        <li>Participation in Adi Shankara Young Scientists Award is FREE. However, for the final round, teams will have to make their own arrangements for travel.</li>
+        <li>The management reserves the right to change rules and regulations without prior notice.</li>
+      </ul>
+    </div>
+  )
+}
+
 function Ideathon() {
-  const features = [
-    {
-      name: "Register",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus tempora eaque ipsa aut enim laudantium? Vitae amet labore, eveniet nulla qui quis veritatis quisquam quos neque nostrum in doloremque minus!",
-      icon: CalendarIcon,
-    },
-    {
-      name: "Primary Care",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet minima impedit odit nostrum magni alias ipsam in officia, temporibus asperiores ipsum ab qui facere et eaque voluptates repellendus voluptate?",
-      icon: HeartIcon,
-    },
-    {
-      name: "Insurance",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem laborum sint nostrum maiores commodi fugiat minima exercitationem praesentium animi, ad, ducimus est eum porro voluptas consectetur fuga natus atque.",
-      icon: ShieldExclamationIcon,
-    },
-    {
-      name: "Speciality search",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum rerum nobis maxime, rem minus, architecto blanditiis totam, perspiciatis fuga beatae nisi temporibus eaque nulla doloremque hic dolorum? Itaque, quasi!",
-      icon: SearchIcon,
-    },
-    {
-      name: "Online Payment",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus suscipit maiores animi fugiat eveniet dolorem ipsam laudantium obcaecati, fugit explicabo amet perferendis! Deserunt vero officia iusto beatae consectetur debitis voluptates.",
-      icon: CreditCardIcon,
-    },
-    {
-      name: "24/7 Support",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus ipsa consequatur enim maiores? Dolor incidunt fugiat molestias reprehenderit pariatur ipsa labore maiores hic, eius dolorum. Quo nostrum ipsa explicabo?",
-      icon: UserGroupIcon,
-    },
-  ];
-
-  const getIcon = (icon) => {
-    const Icon = icon;
-    return <Icon className="w-5 sm:w-8 h-5 sm:h-8" />;
-  };
-
-  const [currentFeature, setCurrentFeature] = useState(0);
 
   const { width } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
+
+  const tabs = [
+    {
+      name: "About",
+      icon: ArchiveIcon,
+      page: <AboutYoung />,
+    },
+    { name: "Registration", icon: CloudUploadIcon },
+    { name: "Eligibility", icon: ChartBarIcon },
+    { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
+    { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
+    { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
+  ]
+
+  const [currentTab, setCurrentTab] = useState("About")
+
+  const translateValue = tabs.findIndex(tab => tab.name === currentTab) / tabs.length * 100
 
   return (
     <>
@@ -69,26 +105,26 @@ function Ideathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "contain",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "contain",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "100vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "100vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} countDate="Apr 07, 2023 00:00:00" />
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -100,16 +136,11 @@ function Ideathon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            24 Hours of Innovation
+            Registration Ends on 07th April 2023
           </h2>
           {/* description */}
-          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-          Ideathon is a unique program designed specifically for school
-            students who have a dig in entrepreneurship and innovation. It
-            provides a platform for the school graders to turn their ideas into life. And, to back them up we do
-            offer mentorship, support, and funding. This program is an
-            excellent opportunity for students to gain practical experience in
-            starting a business, learn from industry experts and evolve themselves in problem-solving, creativity and teamwork.
+          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
+            The objective of <b>Adi Shankara Young Scientist Award</b> is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.
           </p>
           {/* basic rounded line button */}
           <button
@@ -137,210 +168,53 @@ function Ideathon() {
         </div>
       </div>
 
-      <div className="Ideathon mx-auto my-[20vh] pt-20 md:pt-px md:my-auto w-full bg-[var(--bg-color)] overflow-x-hidden">
-        {/* CONTAINER */}
-        <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
-          {/* :TITLE CONTAINER */}
-          <div className="relative z-50 w-full text-center text-[var(--secondary-color)]">
-            <h2 className="capitalize">
-              <span className="block mt-2 text-3xl sm:text-4xl font-bold">
-                Rules And Regulations
-              </span>
-            </h2>
-          </div>
+      <div className="Ideathon  my-10 mb-16">
+        <div className="bg-animation -z-10">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+          <div id="stars4"></div>
+        </div>
+        <div className="bg-black py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
 
-          {/* :FEATURES CONTAINER */}
-          <div className="mx-auto w-full max-w-5xl grid grid-cols-4 gap-y-5 sm:gap-x-5">
-            {/* ::Device container */}
-            <div className="order-3 sm:order-2 col-span-full sm:col-span-2 relative flex justify-center">
-              <div className="relative z-10 w-60 lg:w-64 overflow-hidden">
-                {/* :::smartphone frame */}
-                <img
-                  src="https://fancytailwind.com/static/device-phone-white-fcfe0f4bbba2c26f3c420e89490ac2a5.png"
-                  alt=""
-                  className="relative z-10 w-full h-full"
-                />
-                {/* :::feature details displayed */}
-                <dl
-                  className="absolute top-1/2 left-1/2 px-4 h-full flex flex-col justify-center items-center bg-white bg-opacity-90 text-center transform -translate-y-1/2 -translate-x-1/2"
-                  style={{ width: "85%", height: "92%" }}
-                >
-                  {/* Background image */}
-                  <div className="absolute top-0 left-0 w-full h-full bg-black object-cover"></div>
-                  {/* Icon */}
-                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]">
-                    {getIcon(features[currentFeature].icon)}
-                  </span>
-                  {/* Feature name */}
-                  <dt className="relative mb-5 bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text text-xl  font-bold">
-                    {features[currentFeature].name}
-                  </dt>
-                  {/* Feature description */}
-                  <dd className="relative text-sm text-[var(--primary-color)]/80">
-                    {features[currentFeature].description}
-                  </dd>
-                  {currentFeature === 0 ? (
-                    <button
-                      id="register_btn"
-                      className="bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)]"
-                    >
-                      Register
-                    </button>
-                  ) : (
-                    ""
-                  )}
-                </dl>
-              </div>
-              {/* :::background circles */}
-            </div>
 
-            {/* ::Features container left  */}
-            <div className="order-1 sm:order-1 col-span-full sm:col-span-1 z-20 w-full grid grid-cols-3">
-              {/* :::feature 1 */}
-              <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(0)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 0
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[0].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 0
-                        ? "bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[0].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 2 */}
-              <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(1)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 1
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[1].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 1
-                        ? "bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[1].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 3 */}
-              <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(2)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 2
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[2].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 2
-                        ? "bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[2].name}
-                  </h3>
-                </button>
-              </div>
-            </div>
-
-            {/* ::Features container right  */}
-            <div className="order-2 sm:order-3 col-span-full sm:col-span-1 z-20 w-full grid grid-cols-3">
-              {/* :::feature 4 */}
-              <div className="col-span-1 sm:col-span-full relative md:right-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(3)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 3
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[3].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 3
-                        ? "bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[3].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 5 */}
-              <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(4)}>
-                  <span
-                    className={`hover:bg-sky-700 w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 4
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[4].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 4
-                        ? " bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[4].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 6 */}
-              <div className="col-span-1 sm:col-span-full relative md:right-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(5)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 5
-                        ? "from-[var(--secondary-color)] to-[var(--secondary-color)] text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-[var(--primary-color)] "
-                    }`}
-                  >
-                    {getIcon(features[5].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 5
-                        ? "bg-gradient-to-br from-[var(--secondary-color)] to-[var(--secondary-color)] bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[5].name}
-                  </h3>
-                </button>
+            {/* :LARGE DEVICES */}
+            <div className="relative  sm:block overflow-hidden">
+              {/* ::Navigation Tabs */}
+              <nav aria-label="Tabs">
+                <ul className="grid grid-flow-col auto-cols-fr">
+                  {tabs.map(tab => {
+                    const Icon = tab.icon
+                    return (
+                      <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
+                        <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
+                          {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
+                          {tab.name}
+                        </button>
+                      </li>
+                    )
+                  })
+                  }
+                </ul>
+              </nav>
+              {/* ::Sliding Background */}
+              <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
+                <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
+                  <div className="h-full rounded-full bg-[var(--primary-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {tabs.map(tab => {
+          return (
+            <div className="md:mx-16 mx-6 my-10 text-[var(--secondary-color)]">
+              {tab.name === currentTab ? tab.page : ""}
+            </div>
+          )
+        })
+        }
       </div>
     </>
   );
