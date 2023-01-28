@@ -10,6 +10,7 @@ import Mechathon from "./componets/Mechathon/Mechathon";
 import Civilathon from "./componets/Civilathon/Civilathon";
 import Bizthon from "./componets/Bizthon/Bizthon";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Partners from "./componets/Partners/Partners";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/bizthon" element={<Bizthon />} />
         </Routes>
       </BrowserRouter>
+      <Partners />
     </>
   );
 }
