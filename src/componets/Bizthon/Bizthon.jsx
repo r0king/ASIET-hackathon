@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import bgImg from "../../assets/Bizthon/bg.png";
 import { useWindowSize } from "react-use";
 import "./Bizthon.css";
-import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
+import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { Navbar } from "../NavbarPages";
 
 function AboutBiz(props) {

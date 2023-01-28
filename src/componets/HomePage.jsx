@@ -5,15 +5,16 @@ import { useWindowSize } from "react-use";
 import "./animation.css";
 
 import AllUNeed2Know from "./AllUNeed2Know";
+import AboutUs from "./AboutUs";
+import CountDown from "./CountDown";
+import ContactUs from "./ContactUs";
 import Faq from "./Faq";
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu";
 import PosterCarousel from "./PosterCarousel";
+import Partners from "./Partners/Partners";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
-import AboutUs from "./AboutUs";
-import CountDown from "./CountDown";
-import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
 import planetVideoM from "../assets/earthmobile.mp4";
@@ -184,7 +185,7 @@ const Component = () => {
           <div id="stars4"></div>
         </div>
         {/* <Timeline /> */}
-
+        <Partners />
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
