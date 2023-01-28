@@ -1,63 +1,120 @@
 import React, { useState } from "react";
 import bgImg from "../../assets/Bizthon/bg.png";
-import {
-  CalendarIcon,
-  HeartIcon,
-  ShieldExclamationIcon,
-  SearchIcon,
-  CreditCardIcon,
-  UserGroupIcon,
-} from "@heroicons/react/outline";
 import { useWindowSize } from "react-use";
 import "./Bizthon.css";
+import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { Navbar } from "../NavbarPages";
 
+function AboutBiz(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.
+      This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
+      Bring forth your analytical and creative skills to expose your hidden self.
+    </div>
+  )
+}
+
+function StagesBiz(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[full] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      The Bizthon is a Business Hackathon contest which consists of three unique stages
+      <br /><br /><b>Stage 1 - INNOVATE</b>
+      <br />Participants are given six themes. Each team has to make a video on an innovative business idea to be launched in a digital platform/App for 4-5 minutes based on the following themes:
+      <ul className="list-decimal pl-10 mt-3">
+        <li>Medical management</li>
+        <li>GI Tagged heritage tourism</li>
+        <li>Retail shopping experience</li>
+        <li>Mutual Fund Investment using Fin Tech</li>
+        <li>Gamification and fun in education</li>
+      </ul>
+      <br />
+      <b>These videos has to be posted in the Adi Shankara B School YouTube Channel</b>
+      <br /><br />Evaluation will be done based on the uniqueness of the idea by:
+      <ul className="list-disc pl-10">
+        <li>popularity of the video based on likes and shares.</li>
+        <li>external panel of experts</li>
+      </ul><br />
+      <b className="text-[var(--primary-color)]">20 TEAMS WILL BE SELECTED FOR STAGE 2</b>
+      <br /><br />
+      <b>Stage 2: Strategise</b>
+      <ul className="list-disc pl-10 my-3">
+        <li>Twenty teams of four each will be then called to the college for the 24 hours hackathon starting on March 29th morning.</li>
+        <li>Shortlisted teams will do due diligence and homework and come to campus fully prepared.</li>
+        <li>Each team have to make a business canvas and business plan model. The business canvas will be presented in a chart while the plan model will be a pitch deck. The deck has to be comprehensive and should incorporate the financial feasibility, marketing feasibility and the supply chain and logistics design.</li>
+        <li>Mentors will be provided for each team.</li>
+        <li>Those who require training sessions for preparing business canvas and pitch desk will be provided for at a minimum cost</li>
+      </ul>
+      Evaluation for this stage will be done by industry experts
+      <br /><br /><b className="text-[var(--primary-color)]">5 TEAMS WILL BE SELECTED FOR STAGE 3 (FINALISTS)</b>
+      <br /><br />
+      <b>Stage 3 - DEPICT - UI & UX</b>
+      <ul className="list-disc pl-10 my-3">
+        <li>In Stage 3 the finalists have to make a presentation using the User Interface (UI) for the App/Website</li>
+        <li>The preparation and presentation can be either as a</li>
+        (i)	Demo App/Website or
+        (ii)	Digital 3D or 2D Image
+        <li>The design should showcase the User Experience</li>
+      </ul>
+
+      Evaluation for this stage will be done by industry experts<br />
+
+      We are discussing with the companies to provide financial support for converting the innovative service concepts of the winners to industry ready products.
+
+    </div>
+  )
+}
+
+function PrizeBiz(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <li>First prize – Rs.1 lakh</li>
+      <li>Second prize – Rs.50,000</li>
+      <li>Third Prize (3 Nos) – Rs.10,000 each</li>
+      <li>Gifts/surprise prizes for the participants on STAGE 2</li>
+    </div>
+  )
+}
+
+function RegBiz(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <li>First Round – Rs.100 per video</li>
+      <li>Second Round – Rs. 400 per team.</li>
+      <li>Charges for training will be based on requirements</li>
+    </div>
+  )
+}
+
+function ConBiz() {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <h1>0484-2463825</h1>
+      <h1>0484-2466066</h1>
+      <h1>0484-2461933</h1>
+      <h1>Principal: +91 9539010657</h1>
+      <h1>Admissions: +91 9446523599</h1>
+      <h1>info@adishankara.ac.in</h1>
+    </div>
+  )
+}
+
 function Bizthon() {
-  const features = [
+  const tabs = [
     {
-      name: "Register",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus tempora eaque ipsa aut enim laudantium? Vitae amet labore, eveniet nulla qui quis veritatis quisquam quos neque nostrum in doloremque minus!",
-      icon: CalendarIcon,
+      name: "About",
+      icon: ArchiveIcon,
+      page: <AboutBiz />
     },
-    {
-      name: "Primary Care",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet minima impedit odit nostrum magni alias ipsam in officia, temporibus asperiores ipsum ab qui facere et eaque voluptates repellendus voluptate?",
-      icon: HeartIcon,
-    },
-    {
-      name: "Insurance",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatem laborum sint nostrum maiores commodi fugiat minima exercitationem praesentium animi, ad, ducimus est eum porro voluptas consectetur fuga natus atque.",
-      icon: ShieldExclamationIcon,
-    },
-    {
-      name: "Speciality search",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum rerum nobis maxime, rem minus, architecto blanditiis totam, perspiciatis fuga beatae nisi temporibus eaque nulla doloremque hic dolorum? Itaque, quasi!",
-      icon: SearchIcon,
-    },
-    {
-      name: "Online Payment",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus suscipit maiores animi fugiat eveniet dolorem ipsam laudantium obcaecati, fugit explicabo amet perferendis! Deserunt vero officia iusto beatae consectetur debitis voluptates.",
-      icon: CreditCardIcon,
-    },
-    {
-      name: "24/7 Support",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus ipsa consequatur enim maiores? Dolor incidunt fugiat molestias reprehenderit pariatur ipsa labore maiores hic, eius dolorum. Quo nostrum ipsa explicabo?",
-      icon: UserGroupIcon,
-    },
-  ];
+    { name: "Stages", icon: CloudUploadIcon, page: <StagesBiz /> },
+    { name: "Prize", icon: ChartBarIcon, page: <PrizeBiz /> },
+    { name: "Registration", icon: ChartBarIcon, page: <RegBiz /> },
+    { name: "Contact", icon: LightBulbIcon, page: <ConBiz /> },
+  ]
 
-  const getIcon = (icon) => {
-    const Icon = icon;
-    return <Icon className="w-5 sm:w-8 h-5 sm:h-8" />;
-  };
+  const [currentTab, setCurrentTab] = useState("About")
 
-  const [currentFeature, setCurrentFeature] = useState(0);
+  const translateValue = tabs.findIndex(tab => tab.name === currentTab) / tabs.length * 100
 
   const { width } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
@@ -69,26 +126,26 @@ function Bizthon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         {/* navbar */}
-                <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -100,11 +157,11 @@ function Bizthon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            24 Hours of Innovation
+            Service with a tech twist
           </h2>
           {/* description */}
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.    
+            Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.
             This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
             Bring forth your analytical and creative skills to expose your hidden self.
 
@@ -137,207 +194,53 @@ function Bizthon() {
         </div>
       </div>
 
-      <div className="Bizthon md:pt-20 min-h-[110vh] 2xl:pt-0 w-full bg-[var(--bg-color)] overflow-x-hidden">
-        {/* CONTAINER */}
-        <div className="2xl:my-[25vh] px-5 flex 2xl:scale-125 flex-col justify-center items-center space-y-10">
-          {/* :TITLE CONTAINER */}
-          <div className="relative z-50 w-full text-center text-[var(--primary-color)]">
-            <h2 className="capitalize">
-              <span className="block mt-2 text-3xl sm:text-4xl font-bold">
-                Rules And Regulations
-              </span>
-            </h2>
-          </div>
+      <div className="Bizthon  my-10 mb-16">
+        <div className="bg-animation -z-10">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+          <div id="stars4"></div>
+        </div>
+        <div className="bg-black py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
 
-          {/* :FEATURES CONTAINER */}
-          <div className="mx-auto w-full max-w-5xl grid grid-cols-4 gap-y-5 sm:gap-x-5">
-            {/* ::Device container */}
-            <div className="order-3 sm:order-2 col-span-full sm:col-span-2 relative flex justify-center">
-              <div className="relative z-10 w-60 lg:w-64 overflow-hidden">
-                {/* :::smartphone frame */}
-                <img
-                  src="https://fancytailwind.com/static/device-phone-white-fcfe0f4bbba2c26f3c420e89490ac2a5.png"
-                  alt=""
-                  className="relative z-10 w-full h-full"
-                />
-                {/* :::feature details displayed */}
-                <dl
-                  className="absolute top-1/2 left-1/2 px-4 h-full flex flex-col justify-center items-center bg-white bg-opacity-90 text-center transform -translate-y-1/2 -translate-x-1/2"
-                  style={{ width: "85%", height: "92%" }}
-                >
-                  {/* Background image */}
-                  <div className="absolute top-0 left-0 w-full h-full bg-black object-cover"></div>
-                  {/* Icon */}
-                  <span className="relative w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br  text-[var(--primary-color)]">
-                    {getIcon(features[currentFeature].icon)}
-                  </span>
-                  {/* Feature name */}
-                  <dt className="relative mb-5 bg-gradient-to-br  bg-clip-text text-xl  font-bold">
-                    {features[currentFeature].name}
-                  </dt>
-                  {/* Feature description */}
-                  <dd className="relative text-sm text-[var(--primary-color)]/80">
-                    {features[currentFeature].description}
-                  </dd>
-                  {currentFeature === 0 ? (
-                    <button id="register_btn" className="bg-gradient-to-br ">
-                      Register
-                    </button>
-                  ) : (
-                    ""
-                  )}
-                </dl>
-              </div>
-              {/* :::background circles */}
-            </div>
 
-            {/* ::Features container left  */}
-            <div className="order-1 sm:order-1 col-span-full sm:col-span-1 z-20 w-full grid grid-cols-3">
-              {/* :::feature 1 */}
-              <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(0)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 0
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[0].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 0
-                        ? "bg-gradient-to-br  bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[0].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 2 */}
-              <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(1)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 1
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[1].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 1
-                        ? "bg-gradient-to-br  bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[1].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 3 */}
-              <div className="col-span-1 sm:col-span-full relative md:left-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(2)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 2
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[2].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 2
-                        ? "bg-gradient-to-br  bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[2].name}
-                  </h3>
-                </button>
-              </div>
-            </div>
-
-            {/* ::Features container right  */}
-            <div className="order-2 sm:order-3 col-span-full sm:col-span-1 z-20 w-full grid grid-cols-3">
-              {/* :::feature 4 */}
-              <div className="col-span-1 sm:col-span-full relative md:right-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(3)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 3
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[3].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 3
-                        ? "bg-gradient-to-br  bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[3].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 5 */}
-              <div className="col-span-1 sm:col-span-full relative flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(4)}>
-                  <span
-                    className={` w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 4
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[4].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 4
-                        ? " bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[4].name}
-                  </h3>
-                </button>
-              </div>
-              {/* :::feature 6 */}
-              <div className="col-span-1 sm:col-span-full relative md:right-10 flex justify-center items-center">
-                <button onClick={() => setCurrentFeature(5)}>
-                  <span
-                    className={`w-8 sm:w-14 h-8 sm:h-14 inline-flex justify-center items-center rounded-full bg-gradient-to-br ${
-                      currentFeature === 5
-                        ? " text-[var(--primary-color)]"
-                        : "from-[var(--primary-color)] to-transparent "
-                    }`}
-                  >
-                    {getIcon(features[5].icon)}
-                  </span>
-                  <h3
-                    className={`${
-                      currentFeature === 5
-                        ? "bg-gradient-to-br  bg-clip-text "
-                        : "text-[var(--primary-color)]"
-                    } text-xs sm:text-base uppercase p-4`}
-                  >
-                    {features[5].name}
-                  </h3>
-                </button>
+            {/* :LARGE DEVICES */}
+            <div className="relative  sm:block overflow-hidden">
+              {/* ::Navigation Tabs */}
+              <nav aria-label="Tabs">
+                <ul className="grid grid-flow-col auto-cols-fr">
+                  {tabs.map(tab => {
+                    const Icon = tab.icon
+                    return (
+                      <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
+                        <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
+                          {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
+                          {tab.name}
+                        </button>
+                      </li>
+                    )
+                  })
+                  }
+                </ul>
+              </nav>
+              {/* ::Sliding Background */}
+              <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
+                <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
+                  <div className="h-full rounded-full bg-[var(--primary-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {tabs.map(tab => {
+          return (
+            <div className="md:mx-16 mx-6 my-10 text-[var(--secondary-color)]">
+              {tab.name === currentTab ? tab.page : ""}
+            </div>
+          )
+        })
+        }
       </div>
     </>
   );

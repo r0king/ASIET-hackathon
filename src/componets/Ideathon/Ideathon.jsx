@@ -59,7 +59,7 @@ function FaqYoung(props) {
 function GuideYoung(props) {
   return (
     <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <b>The contest must meet the following requirements:</b><br/><br/>
+      <b>The contest must meet the following requirements:</b><br /><br />
       <ul className="list-disc pl-10">
         <li>Each team can have a maximum of 2 students.(both from the same school)</li>
         <li>Each team should have a mentor from the same school.</li>
@@ -76,6 +76,62 @@ function GuideYoung(props) {
   )
 }
 
+function ConYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      Unlike other similar events, here the students have to go through different stages which will transform them into entrepreneurs. From the second stage onwards, a dedicated mentor will work in tandem with the students.
+      <br /><br /><b>Stage 1 Registration <span className="text-[var(--primary-color)]">(Before 07th April 2023)</span></b>
+      <br />Each participant must provide an abstract of their project idea in their registration form, which should include
+      <ul className="list-disc md:pl-48 pl-10">
+        <li>Summary of the Idea</li>
+        <li>Expected Social Relevance/Benefit</li>
+      </ul>
+      <br /><br /><b>Stage 2 Idea Pitching <span className="text-[var(--primary-color)]">(15th April 2023)</span></b>
+      <br />This round helps them in honing their talents in presenting an idea succinctly.
+      <br /><br /><b>Stage 3 Prefinal round <span className="text-[var(--primary-color)]">(20-22 April 2023)</span></b>
+      <br />This is the stage in which the participants will face the expert panel either directly or via skype. Here they have to present their idea with the help of Power Point Presentation. It would not be a fault finding session but a venue for students to understand how to effectively present their idea before a panel.
+      <br /><br />After the third stage, the participant gets a 2 week time to translate their idea to a prototype.
+      <br /><br /><b>Stage 4 Final Round <span className="text-[var(--primary-color)]">(08th May 2023)</span></b>
+      <br />The shortlisted entries would be invited to ASIET Kalady for the Grand Finale in the month of May 2023. They would have to make a final presentation in front of a panel consisting of eminent personalities including CEOs and CTOs of prominent companies, experts from NASSCOM Startups, scientists and academicians. The idea and prototype should again be presented in this stage which could help them explore possible funding options from the Industry and Start Up ventures
+    </div>
+  )
+}
+
+function AwardYoung(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>Amazing Cash Prize awaits the winners</b><br /><br />
+      <table className="px-4 min-w-[20vw] rounded-md border border-gray-200 overflow-hidden">
+        <tbody>
+          <tr >
+            <td>Best Idea</td>
+            <td>Rs. 1 Lakhs</td>
+          </tr>
+          <tr >
+            <td >1st Runner-Up</td>
+            <td>Rs. 50,000</td>
+          </tr>
+          <tr >
+            <td >2nd Runner-Up</td>
+            <td>Rs. 25,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <b>Top 100 projects: Scholarships for higher studies in Adi Shankara Group of Institutions</b>
+      <br/><br /><b>Award Categories</b>
+      <ul className="list-disc pl-10">
+        <li>Best Business Potential</li>
+        <li>Best Social Impact</li>
+        <li>Encouragement Awards</li>
+        <li>Best Idea Pitch</li>
+        <li>Best Problem Description</li>
+        <li>Best Presentation</li>
+      </ul>
+    </div>
+  )
+}
+
 function Ideathon() {
 
   const { width } = useWindowSize();
@@ -87,8 +143,8 @@ function Ideathon() {
       icon: ArchiveIcon,
       page: <AboutYoung />,
     },
-    { name: "Registration", icon: CloudUploadIcon },
-    { name: "Eligibility", icon: ChartBarIcon },
+    { name: "Contest", icon: CloudUploadIcon, page: <ConYoung /> },
+    { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
