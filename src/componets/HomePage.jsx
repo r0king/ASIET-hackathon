@@ -61,28 +61,30 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["38%", "-25%"] : ["73%", "-25%"],
-    translateX: width > 640 ? ["45%", "50%"] : ["-10%", "-10%"],
+    translateY: width > 640 ? ["38%", "-25%"] : ["90%", "-25%"],
+    translateX: width > 640 ? ["45%", "50%"] : ["0%", "0%"],
     opacity: [0.95, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 1.3 : 1.8, width > 640 ? 1.1 : 0.6, "easeOutCubic"],
+    scale: [width > 640 ? 1.3 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
     // },
     children: (
-      <video
-        autoPlay
-        loop
-        muted
-        className="top-0 absolute bottom-0 object-contain "
-      >
-        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
-        {width > 640 ? (
-          <source src={planetVideo} type='video/mp4; codecs="avc1"' />
-        ) : (
-          <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
-        )}
-      </video>
+      <div className="flex justify-center w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          className="top-0 absolute bottom-0 object-contain h-screen min-w-max md:h-auto "
+        >
+          {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+          {width > 640 ? (
+            <source src={planetVideo} type='video/mp4; codecs="avc1"' />
+          ) : (
+            <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
+          )}
+        </video>
+      </div>
     ),
   };
   const videoprize: BannerLayer = {
@@ -138,7 +140,6 @@ const Component = () => {
     shouldAlwaysCompleteAnimation: true,
     children: (
       <>
-        
         <Sponsors />
       </>
     ),
@@ -153,11 +154,11 @@ const Component = () => {
             layers={[
               background,
               videoglobe,
-              // videoprize,
+              videoprize,
               headline,
-              countdown,
-              tagline,
               sponsers,
+              tagline,
+              countdown,
             ]}
             // gradientOverlay]}
             className="md:h-[285vh] bg-black"

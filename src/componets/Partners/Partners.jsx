@@ -9,17 +9,10 @@ import "./Partners.css"
 function Partners() {
   return (
     <>
-        <div className="parners_main_container">
+        <div className="parners_main_container bg-gradient-to-b from-black via-black to-transparent">
             <div className="partners_container">
                 <div className="partners_title">
                     <h1 className="text-2xl p-5 font-bold"><span>OUR</span> PARTNERS</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-                        suscipit repudiandae magni voluptas sint velit ullam dolores odit
-                        molestiae libero Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Dolorum eligendi dolorem, magnam tenetur modi reiciendis omnis
-                        placeat incidunt reprehenderit beatae?
-                    </p>
                 </div>
                 <div className="partners">
                 <AnimatedComponent animation=" animate__fast animate__fadeInUp">

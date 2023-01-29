@@ -42,9 +42,9 @@ const Poster = () => {
     },
     {
       id: 2,
-      name: "Ideathon",
+      name: "Young Scientist Award",
       tagline:
-        "Ideathon is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
+        "Young Scientist Award is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
       href: "#link",
        
       pictureAlt: "Description of your picture",

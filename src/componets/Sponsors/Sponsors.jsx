@@ -9,17 +9,12 @@ import AnimatedComponent from "../AnimatedComponent";
 
 export default function Sponsors() {
   return (
-    <div className="sponsers_main_container -mt-10 md:mt-28 bg-gradient-to-b from-black to-transparent md:from-transparent">    
+    <div className="sponsers_main_container -mt-10 md:mt-28  ">
       <div className="sponsors_container">
         <div className="sponsor_title">
-          <h1 className="text-2xl p-5 mt-20 font-bold"><span>OUR</span> SPONSORS</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-            suscipit repudiandae magni voluptas sint velit ullam dolores odit
-            molestiae libero Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Dolorum eligendi dolorem, magnam tenetur modi reiciendis omnis
-            placeat incidunt reprehenderit beatae?
-          </p>
+          <h1 className="text-2xl p-5 mt-20 font-bold">
+            <span>OUR</span> SPONSORS
+          </h1>
         </div>
         <div className="sponsors_platinum sponsors">
           <h1 className="text-lg font-semibold">Platinum</h1>
@@ -81,8 +76,63 @@ export default function Sponsors() {
           </AnimatedComponent>
         </div>
         <div className="sponsors_diamond sponsors">
-          <h1 className="text-lg font-semibold">Diamond</h1>
-          <AnimatedComponent animation=" animate__fast animate__fadeInUp">
+          <div className="w-full flex justify-center items-center">
+            <span className="flex-grow opacity-80">
+              <svg
+                width="96"
+                height="23"
+                viewBox="0 0 96 23"
+                fill="none"
+                className="pl-8 mt-3"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <linearGradient
+                  id="gradientl"
+                  x1="100%"
+                  y1="0%"
+                  x2="0%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#000" />
+                  <stop offset="100%" stop-color="cyan" />
+                </linearGradient>
+                <path
+                  d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
+                  stroke="url(#gradientl)"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <h1 className="text-lg font-semibold mb-auto px-5">Diamond</h1>
+            <span className="flex-grow opacity-80 ">
+              <svg
+                width="96"
+                height="23"
+                viewBox="0 0 96 23"
+                className="pr-8 mt-3"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stop-color="#000" />
+                    <stop offset="100%" stop-color="cyan" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
+                  stroke="url(#gradient)"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </div>
+          <AnimatedComponent animation="mt-8 md:-mt-14 animate__fast animate__fadeInUp">
             <div className="images">
               <Tilt
                 scale={0.9}

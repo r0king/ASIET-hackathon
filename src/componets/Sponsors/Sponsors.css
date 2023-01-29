@@ -71,14 +71,8 @@
 }
 .sponsors h1{
     display: inline-block;
-    margin-bottom: 20px;
-    color: #7286D3;
-    font-weight: bold;
-    border-bottom: 2px solid white;
+    color: #f0f0f0;
     text-transform: uppercase;
-}
-.sponsors h1:hover{
-    border-bottom-width: 100%;
 }
 /* .sponsors_platinum h1{
     border-bottom: 2px solid cyan;
