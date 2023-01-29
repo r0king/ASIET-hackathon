@@ -1,10 +1,10 @@
 import React from 'react'
 import Tilt from "react-parallax-tilt";
 import AnimatedComponent from "../AnimatedComponent";
-import logo1 from "../../assets/Sponsors/titlab.png";
-import logo2 from "../../assets/Sponsors/kerala.png";
-import logo3 from "../../assets/Sponsors/maker.png";
-import logo4 from "../../assets/Sponsors/nascom1.png";
+import logo1 from "../../assets/Sponsors/titlab.png.webp";
+import logo2 from "../../assets/Sponsors/kerala.png.webp";
+import logo3 from "../../assets/Sponsors/maker.png.webp";
+import logo4 from "../../assets/Sponsors/nascom1.png.webp";
 import "./Partners.css"
 function Partners() {
   return (

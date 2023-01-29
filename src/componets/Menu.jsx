@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Burger1 from "./atoms/Burger1.jsx";
 import "./Menu.css";
-import logoAsiet from "../assets/logo.png";
+import logoAsiet from "../assets/logo.png.webp";
 const Navbar24 = () => {
   const [isOpen, setIsOpen] = useState(false);
 

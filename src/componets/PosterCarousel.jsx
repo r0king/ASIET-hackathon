@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import posterImg from "../assets/Gameathon/bgM.png";
+import posterImg from "../assets/Gameathon/bgM.png.webp";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
 

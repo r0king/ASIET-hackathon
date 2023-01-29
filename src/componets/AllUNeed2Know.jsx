@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import allUNeed2Know from "../assets/SamplePoster2.jpeg";
+import allUNeed2Know from "../assets/SamplePoster2.jpeg.webp";
 import Tilt from "react-parallax-tilt";
 import { useWindowSize } from "react-use";
 import { Parallax } from "react-scroll-parallax";

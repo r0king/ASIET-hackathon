@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Bizthon/bg.png";
+import bgImg from "../../assets/Bizthon/bg.png.webp";
 import { useWindowSize } from "react-use";
 import "./Bizthon.css";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'

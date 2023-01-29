@@ -1,5 +1,5 @@
 import React from "react";
-import logoAsiet from "../assets/logo.png";
+import logoAsiet from "../assets/logo.png.webp";
 import Burger1 from "./atoms/Burger1";
 import EventCountDown from "./EventCountDown";
 import "./Menu.css";

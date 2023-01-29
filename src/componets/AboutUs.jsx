@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import image2 from "../assets/asiet1.jpeg";
+import image2 from "../assets/asiet1.jpeg.webp";
 import { Parallax } from "react-scroll-parallax";
 
 const AboutUs = () => {

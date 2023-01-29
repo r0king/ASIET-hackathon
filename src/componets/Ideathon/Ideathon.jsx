@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Ideathon/bg.png";
+import bgImg from "../../assets/Ideathon/bg.png.webp";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Ideathon.css";

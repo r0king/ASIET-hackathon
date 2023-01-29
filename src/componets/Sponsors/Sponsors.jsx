@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import logo1 from "../../assets/Sponsors/maker.png";
-import logo2 from "../../assets/Sponsors/maker.png";
-import logo3 from "../../assets/Sponsors/maker.png";
-import logo4 from "../../assets/Sponsors/maker.png";
+import logo1 from "../../assets/Sponsors/maker.png.webp";
+import logo2 from "../../assets/Sponsors/maker.png.webp";
+import logo3 from "../../assets/Sponsors/maker.png.webp";
+import logo4 from "../../assets/Sponsors/maker.png.webp";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";

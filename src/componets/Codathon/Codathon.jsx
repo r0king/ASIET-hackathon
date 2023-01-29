@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Codathon/bg.png";
+import bgImg from "../../assets/Codathon/bg.png.webp";
 import {
   CalendarIcon,
   HeartIcon,
@@ -160,7 +160,7 @@ function Codathon() {
               <div className="relative z-10 w-60 lg:w-64 overflow-hidden">
                 {/* :::smartphone frame */}
                 <img
-                  src="https://fancytailwind.com/static/device-phone-white-fcfe0f4bbba2c26f3c420e89490ac2a5.png"
+                  src="https://fancytailwind.com/static/device-phone-white-fcfe0f4bbba2c26f3c420e89490ac2a5.png.webp"
                   alt=""
                   className="relative z-10 w-full h-full"
                 />
