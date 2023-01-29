@@ -12,7 +12,6 @@ import Faq from "./Faq";
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu";
 import PosterCarousel from "./PosterCarousel";
-import Partners from "./Partners/Partners";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
 
@@ -163,9 +162,9 @@ const Component = () => {
               videoglobe,
               videoprize,
               headline,
-              sponsers,
               tagline,
               countdown,
+              sponsers,
             ]}
             // gradientOverlay]}
             className="md:h-[285vh] bg-black"
@@ -193,7 +192,7 @@ const Component = () => {
           <div id="stars4"></div>
         </div>
         {/* <Timeline /> */}
-        <Partners />
+        {/* <Partners /> */}
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
