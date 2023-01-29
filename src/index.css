@@ -8,8 +8,8 @@
   --primary-accent-color: #65647C;
   --secondary-color: #f0f0f0;
   --accent-color: #E97777;
-  --gradient-primary: #e0eafc;
-  --gradient-secondary: #cfdef3;
+  --gradient-primary: #f0f0f0;
+  --gradient-secondary: #f0f0f0;
 }
 /* *{
   outline: 3px solid limegreen !important;
@@ -37,6 +37,7 @@ code {
 @font-face {
   font-family: "Azonix";
   src: local("Azonix"), url(fonts/Azonix.otf) format("opentype");
+  font-display: swap;
 }
 
 @layer utilities {

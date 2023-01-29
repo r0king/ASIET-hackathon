@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Civilathon/bg.png";
-import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
+import bgImg from "../../assets/Civilathon/bg.png.webp";
+import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Civilathon.css";
 import { Navbar } from "../NavbarPages";

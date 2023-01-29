@@ -5,21 +5,22 @@ import { useWindowSize } from "react-use";
 import "./animation.css";
 
 import AllUNeed2Know from "./AllUNeed2Know";
+import AboutUs from "./AboutUs";
+import CountDown from "./CountDown";
+import ContactUs from "./ContactUs";
 import Faq from "./Faq";
 import HeroTitle from "./HeroTitle";
 import Menu from "./Menu";
 import PosterCarousel from "./PosterCarousel";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
-import AboutUs from "./AboutUs";
-import CountDown from "./CountDown";
-import ContactUs from "./ContactUs";
 
 import planetVideo from "../assets/earth2.mp4";
 import planetVideoM from "../assets/earthmobile.mp4";
-import cloudImg from "../assets/Parallax/cloud.png";
-import collegePic from "../assets/Parallax/asiet.png";
-import prizeVideo from "../assets/prize.mp4";
+import cloudImg from "../assets/Parallax/cloud.png.webp";
+import collegePic from "../assets/Parallax/asiet.png.webp";
+// import prizeVideo from "../assets/prize.mp4";
+import prizeVideoM from "../assets/prizeM.mp4";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -60,44 +61,52 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["38%", "-25%"] : ["73%", "-25%"],
-    translateX: width > 640 ? ["45%", "50%"] : ["-10%", "-10%"],
+    translateY: width > 640 ? ["25%", "-25%"] : ["90%", "-25%"],
+    translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
     opacity: [0.95, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 1.3 : 1.8, width > 640 ? 1.1 : 0.6, "easeOutCubic"],
+    scale: [width > 640 ? 0.8 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;
     // },
     children: (
-      <video
-        autoPlay
-        loop
-        muted
-        className="top-0 absolute bottom-0 object-contain "
-      >
-        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
-        {width > 640 ? (
-          <source src={planetVideo} type='video/mp4; codecs="avc1"' />
-        ) : (
-          <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
-        )}
-      </video>
+      <div className="flex justify-center w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          className="top-0 absolute bottom-0 object-contain h-screen min-w-max md:h-auto "
+        >
+          {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+          {width > 640 ? (
+            <source src={planetVideo} type='video/mp4; codecs="avc1"' />
+          ) : (
+            <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
+          )}
+        </video>
+      </div>
     ),
   };
   const videoprize: BannerLayer = {
-    translateY: width > 640 ? ["-12%", "20%"] : ["73%", "-25%"],
-    opacity: [3.5, -0.7, "easeOutCubic"],
-    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    translateY: width > 640 ? ["2%", "20%"] : ["23%", "-25%"],
+    opacity:
+      width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
+    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "easeOutCubic"],
     children: (
-      <video
-        autoPlay
-        loop
-        muted
-        className="top-0 absolute bottom-0 object-contain w-screen opacity-70"
-      >
-        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
-        <source src={prizeVideo} type='video/mp4; codecs="avc1"' />
-      </video>
+      <div className="flex justify-center w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          className="top-0 absolute bottom-0 object-contain h-screen md:h-auto "
+        >
+          {width > 640 ? (
+            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+          ) : (
+            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+          )}
+        </video>
+      </div>
     ),
   };
   const headline: BannerLayer = {
@@ -151,10 +160,10 @@ const Component = () => {
             layers={[
               background,
               videoglobe,
-              // videoprize,
+              videoprize,
               headline,
-              countdown,
               tagline,
+              countdown,
               sponsers,
             ]}
             // gradientOverlay]}
@@ -166,9 +175,9 @@ const Component = () => {
               layers={[
                 background,
                 headline,
-                videoprize,
                 videoglobe,
                 countdown,
+                videoprize,
                 tagline,
               ]}
               className="h-[110vh] bg-black"
@@ -183,7 +192,7 @@ const Component = () => {
           <div id="stars4"></div>
         </div>
         {/* <Timeline /> */}
-
+        {/* <Partners /> */}
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"

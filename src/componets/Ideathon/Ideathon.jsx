@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Ideathon/bg.png";
+import bgImg from "../../assets/Ideathon/bg.png.webp";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon, ViewGridIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Ideathon.css";
@@ -188,7 +188,7 @@ function Ideathon() {
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Ideathon
+            Young Scientist Award
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">

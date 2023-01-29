@@ -1,13 +1,13 @@
 import React from "react";
 import SamPos1 from "../assets/SamplePoster1.jpg";
 import PosterCard from "./PosterCard";
-import xbox from "../assets/Poster/xbox.png";
-import Ps from "../assets/Poster/ps5.png";
-import superM from "../assets/Poster/supermario.png";
-import mcSteeve from "../assets/Poster/minecraft.png";
-import drone from "../assets/Poster/drone2.png";
-import idea from "../assets/Poster/Idea.png";
-import vr from "../assets/Poster/ARVR.png";
+import xbox from "../assets/Poster/xbox.png.webp";
+import Ps from "../assets/Poster/ps5.png.webp";
+import superM from "../assets/Poster/supermario.png.webp";
+import mcSteeve from "../assets/Poster/minecraft.png.webp";
+import drone from "../assets/Poster/drone2.png.webp";
+import idea from "../assets/Poster/Idea.png.webp";
+import vr from "../assets/Poster/ARVR.png.webp";
 
 const Poster = () => {
   const categories = [
@@ -42,9 +42,9 @@ const Poster = () => {
     },
     {
       id: 2,
-      name: "Ideathon",
+      name: "Young Scientist Award",
       tagline:
-        "Ideathon is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
+        "Young Scientist Award is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
       href: "#link",
        
       pictureAlt: "Description of your picture",

@@ -1,5 +1,5 @@
 import React from 'react'
-import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png'
+import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png.webp'
 
 export default function BootcampGame() {
   return (

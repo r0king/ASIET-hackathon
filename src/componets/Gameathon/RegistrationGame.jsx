@@ -1,5 +1,5 @@
 import React from 'react'
-import regFlowChart from '../../assets/Gameathon/regFlowChart1.png'
+import regFlowChart from '../../assets/Gameathon/regFlowChart1.png.webp'
 
 export default function RegistrationGame() {
   return (

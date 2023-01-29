@@ -1,5 +1,5 @@
 import React from "react";
-import logoAsiet from "../assets/logo.png";
+import logoAsiet from "../assets/logo.png.webp";
 import Burger1 from "./atoms/Burger1";
 import EventCountDown from "./EventCountDown";
 import "./Menu.css";
@@ -73,7 +73,7 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
             href="/ideathon"
             className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40 hover:text-[var(--primary-color)] "
           >
-            Young Scientist Award (Ideathon)
+            Young Scientist Award
           </a>
           <a
             href="/mechathon"

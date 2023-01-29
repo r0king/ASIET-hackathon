@@ -7,6 +7,8 @@ import {
 import "./Scrollbar.css";
 import { Parallax } from "react-scroll-parallax";
 
+import neonImg from "../assets/neonlight.webp"
+
 const Faq = () => {
   const faq = [
     {
@@ -69,7 +71,7 @@ const Faq = () => {
   return (
     <div id="faq" className="relative py-10 w-full  overflow-x-hidden ">
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
-        {" "}
+        
         {/* Container */}
         {/* :IMAGE */}
         <Parallax
@@ -81,8 +83,8 @@ const Faq = () => {
           <div className="h-full col-span-2 md:col-span-1 relative p-4 flex flex-col justify-center items-center">
             <div className="hidden md:block relative w-full h-full max-w-xl">
               <img
-                src="https://fancytailwind.com/static/neon2-acb9ac107b3f843a5552c2603c29cd79.jpg"
-                alt=""
+                src={neonImg}
+                alt="neon light"
                 className="absolute w-full h-full object-cover object-center"
               />
             </div>
@@ -93,7 +95,7 @@ const Faq = () => {
           {/* ::Title */}
           <div className="text-2xl">
             <span className="text-[var(--primary-color)]" ref={targetRef}>
-              Frequently Asked{" "}
+              Frequently Asked
             </span>
             Questions
           </div>
