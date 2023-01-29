@@ -32,12 +32,14 @@ const Navbar24 = () => {
         >
           <a
             href="/"
+            aria-label="click to go back to home"
             className="mt-[10%] md:mt-[5%] block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             HOME
           </a>
           <a
             href="/codathon"
+            aria-label="click to go to codathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Codathon
@@ -45,6 +47,7 @@ const Navbar24 = () => {
 
           <a
             href="/gameathon"
+            aria-label="click to go to gameathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Gameathon
@@ -52,30 +55,35 @@ const Navbar24 = () => {
 
           <a
             href="/ideathon"
+            aria-label="click to go to ideathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Young Scientist Award
           </a>
           <a
             href="/mechathon"
+            aria-label="click to go to mechathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Mechathon
           </a>
           <a
             href="/civilathon"
+            aria-label="click to go to civilathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Civilathon
           </a>
           <a
             href="/bizthon"
+            aria-label="click to go to bizthon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Bizthon
           </a>
           <a
             href="#faq"
+            aria-label="click to go to faqs"
             onClick={() => {
               setIsOpen(false);
             }}
@@ -86,6 +94,7 @@ const Navbar24 = () => {
           <a
             href="https://www.adishankara.ac.in/contact-us"
             target="_blank"
+            aria-label="click to go to contact us"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
             rel="noreferrer"
           >
@@ -95,6 +104,7 @@ const Navbar24 = () => {
           <div className="social-media-links flex justify-center gap-7 pt-7">
             <a
               href="#facebook"
+              aria-label="click to go to facebook"
               className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
             >
               <svg
@@ -108,6 +118,7 @@ const Navbar24 = () => {
             {/* :::twitter */}
             <a
               href="#twitter"
+              aria-label="click to go to twitter"
               className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
             >
               <svg
@@ -121,6 +132,7 @@ const Navbar24 = () => {
             {/* :::intagram */}
             <a
               href="#instagrap"
+              aria-label="click to go to instagram"
               className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
             >
               <svg
@@ -134,6 +146,7 @@ const Navbar24 = () => {
             {/* :::linkedin */}
             <a
               href="#linkedin"
+              aria-label="click to go to linkedin"
               className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
             >
               <svg

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
@@ -150,7 +150,10 @@ const Component = () => {
       </>
     ),
   };
-
+  console.log("before");
+  useEffect(() => {
+    console.log("loaded");
+  }, []);
   return (
     <>
       <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">

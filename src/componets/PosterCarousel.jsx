@@ -157,6 +157,7 @@ const PosterCarousel = () => {
                       }}
                     >
                       <a
+                        aria-label={item.name}
                         href={item.name}
                         className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
                           position === item.id
@@ -204,6 +205,7 @@ const PosterCarousel = () => {
                   type="button"
                   onClick={previousSuggestion}
                   ref={prevBtn}
+                  aria-label="Previous"
                   className=" absolute top-1/2 left-0 w-16 h-16 inline-flex justify-center  items-center rounded-md shadow bg-opacity-80 whtie transform  hover:bg-opacity-80 hover:text-white "
                 >
                   <ChevronLeftIcon className="w-48 h-48" />
@@ -212,6 +214,7 @@ const PosterCarousel = () => {
                   type="button"
                   onClick={nextSuggestion}
                   ref={nextBtn}
+                  aria-label="Next"
                   className=" absolute top-1/2 right-0 w-16 h-16 inline-flex justify-center  items-center rounded-md shadow bg-opacity-80 whtie transform  hover:bg-opacity-80 hover:text-white "
                 >
                   <ChevronRightIcon className="w-48 h-48" />

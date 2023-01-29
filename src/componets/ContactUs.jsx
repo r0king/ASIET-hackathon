@@ -55,6 +55,7 @@ const ContactUs = () => {
                 </p>
                 <a
                   href="mailto:#"
+                  aria-label="mail"
                   className="inline-block font-medium hover:text-[#f0f0f0]"
                 >
                   info@adishankara.ac.in
@@ -71,6 +72,7 @@ const ContactUs = () => {
                 {/* :::facebook */}
                 <a
                   href="#facebook"
+                  aria-label="facebook"
                   className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
@@ -84,6 +86,7 @@ const ContactUs = () => {
                 {/* :::twitter */}
                 <a
                   href="#twitter"
+                  aria-label="twitter"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
@@ -97,6 +100,7 @@ const ContactUs = () => {
                 {/* :::intagram */}
                 <a
                   href="#instagrap"
+                  aria-label="instagrap"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
@@ -110,6 +114,7 @@ const ContactUs = () => {
                 {/* :::linkedin */}
                 <a
                   href="#linkedin"
+                  aria-label="linkedin"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg

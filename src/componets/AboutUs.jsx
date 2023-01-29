@@ -54,6 +54,7 @@ const AboutUsMain = () => {
               </p>
               {/* ::Button */}
               <button
+              
                 className="group
                           my-5 px-5 py-2.5 
                           bg-[var(--secondary-color)] text-[var(--secondary-color))]
@@ -71,6 +72,7 @@ const AboutUsMain = () => {
                   href="https://www.adishankara.ac.in/about-us"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Know More"
                   className="text-[var(--primary-accent-color)] group-hover:text-[var(--primary-accent-color)]"
                 >
                   Know More
