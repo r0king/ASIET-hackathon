@@ -140,48 +140,49 @@ const PosterCarousel = () => {
                 className="w-full flex transition-all duration-500 ease-in ml-[7vw]"
               >
                 {categories.map((item) => (
-                  <Tilt
-                    // glareEnable={true}
-                    // glareColor="cyan"
-                    // glareMaxOpacity={0.35}
-                    // glarePosition="top"
-                    // glareBorderRadius="15px"
-                    perspective={500}
-                    key={item.id}
-                  >
-                    <li
+                  <li>
+                    <Tilt
+                      // glareEnable={true}
+                      // glareColor="cyan"
+                      // glareMaxOpacity={0.35}
+                      // glarePosition="top"
+                      // glareBorderRadius="15px"
+                      perspective={500}
                       key={item.id}
-                      className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
-                      style={{
-                        transformStyle: "preserve-3d",
-                      }}
                     >
-                      <a
-                        aria-label={item.name}
-                        href={item.name}
-                        className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
-                          position === item.id
-                            ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
-                            : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
-                        }`}
+                      <div
+                        key={item.id}
+                        className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
+                        style={{
+                          transformStyle: "preserve-3d",
+                        }}
                       >
-                        {/* ::Image Container */}
-                        <LazyLoad offset={350}>
-                          <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
-                            <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
-                              {/* :::image nft */}
-                              <img
-                                src={item.image}
-                                alt=""
-                                className={`object-cover rounded-md opacity-90 `}
-                              />
-                            </span>
-                            <span
-                              style={{
-                                writingMode: "vertical-rl",
-                                translate: "translateY(20px)",
-                              }}
-                              className={`absolute top-3 duration-300 animate__animated animate__fast
+                        <a
+                          aria-label={item.name}
+                          href={item.name}
+                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
+                            position === item.id
+                              ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
+                              : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
+                          }`}
+                        >
+                          {/* ::Image Container */}
+                          <LazyLoad offset={350}>
+                            <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                              <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
+                                {/* :::image nft */}
+                                <img
+                                  src={item.image}
+                                  alt=""
+                                  className={`object-cover rounded-md opacity-90 `}
+                                />
+                              </span>
+                              <span
+                                style={{
+                                  writingMode: "vertical-rl",
+                                  translate: "translateY(20px)",
+                                }}
+                                className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
                            font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
@@ -189,14 +190,15 @@ const PosterCarousel = () => {
                                ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
                                : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
                            } drop-shadow`}
-                            >
-                              {item.name}
-                            </span>
-                          </div>
-                        </LazyLoad>
-                      </a>
-                    </li>
-                  </Tilt>
+                              >
+                                {item.name}
+                              </span>
+                            </div>
+                          </LazyLoad>
+                        </a>
+                      </div>
+                    </Tilt>
+                  </li>
                 ))}
               </ul>
               {/* NAVIGATION BUTTONS */}
