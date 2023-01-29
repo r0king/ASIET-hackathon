@@ -37,6 +37,7 @@ code {
 @font-face {
   font-family: "Azonix";
   src: local("Azonix"), url(fonts/Azonix.otf) format("opentype");
+  font-display: swap;
 }
 
 @layer utilities {

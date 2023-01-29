@@ -61,10 +61,10 @@ const Component = () => {
   };
 
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["38%", "-25%"] : ["90%", "-25%"],
-    translateX: width > 640 ? ["45%", "50%"] : ["0%", "0%"],
+    translateY: width > 640 ? ["25%", "-25%"] : ["90%", "-25%"],
+    translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
     opacity: [0.95, 0.8, "easeOutCubic"],
-    scale: [width > 640 ? 1.3 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
+    scale: [width > 640 ? 0.8 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
     // onChange: (el) => {
     //   console.log(el.el.firstChild.firstChild);
     //   el.el.firstChild.currentTime = el.progress * 10;

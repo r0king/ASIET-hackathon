@@ -6,8 +6,9 @@ import logo4 from "../../assets/Sponsors/maker.png.webp";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
+import LazyLoad from "react-lazy-load";
 
-export default function Sponsors() {
+const Sponsors = () => {
   const targetTitleRef = React.useRef(null);
   const targetPlatinumRef = React.useRef(null);
   const targetDiamondRef = React.useRef(null);
@@ -56,13 +57,13 @@ export default function Sponsors() {
                     x2="0%"
                     y2="0%"
                   >
-                    <stop offset="0%" stop-color="#000" />
-                    <stop offset="100%" stop-color="cyan" />
+                    <stop offset="0%" stopColor="#000" />
+                    <stop offset="100%" stopColor="cyan" />
                   </linearGradient>
                   <path
                     d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
                     stroke="url(#gradientlplat)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
@@ -83,14 +84,14 @@ export default function Sponsors() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#000" />
-                      <stop offset="100%" stop-color="cyan" />
+                      <stop offset="0%" stopColor="#000" />
+                      <stop offset="100%" stopColor="cyan" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
                     stroke="url(#gradientrplat)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
@@ -175,13 +176,13 @@ export default function Sponsors() {
                     x2="0%"
                     y2="0%"
                   >
-                    <stop offset="0%" stop-color="#000" />
-                    <stop offset="100%" stop-color="pink" />
+                    <stop offset="0%" stopColor="#000" />
+                    <stop offset="100%" stopColor="pink" />
                   </linearGradient>
                   <path
                     d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
                     stroke="url(#gradientldiamone)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
@@ -202,72 +203,74 @@ export default function Sponsors() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#000" />
-                      <stop offset="100%" stop-color="pink" />
+                      <stop offset="0%" stopColor="#000" />
+                      <stop offset="100%" stopColor="pink" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
                     stroke="url(#gradientrdiamond)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
             </div>
-            <div className="images mt-8 md:-mt-14">
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo1} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo2} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo3} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo4} alt="" />
-                </div>
-              </Tilt>
-            </div>
+            <LazyLoad offset={300}>
+              <div className="images mt-8 md:-mt-14">
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo1} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo2} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo3} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo4} alt="" />
+                  </div>
+                </Tilt>
+              </div>
+            </LazyLoad>
           </Parallax>
         </div>
         <div className="sponsors_gold sponsors " ref={targetSilverRef}>
@@ -293,13 +296,13 @@ export default function Sponsors() {
                     x2="0%"
                     y2="0%"
                   >
-                    <stop offset="0%" stop-color="#000" />
-                    <stop offset="100%" stop-color="gold" />
+                    <stop offset="0%" stopColor="#000" />
+                    <stop offset="100%" stopColor="gold" />
                   </linearGradient>
                   <path
                     d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
                     stroke="url(#gradientlgold)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
@@ -320,72 +323,74 @@ export default function Sponsors() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#000" />
-                      <stop offset="100%" stop-color="gold" />
+                      <stop offset="0%" stopColor="#000" />
+                      <stop offset="100%" stopColor="gold" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
                     stroke="url(#gradientrgold)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
             </div>
-            <div className="images mt-8 md:-mt-14">
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                glareColor="gold"
-                glarePosition="all"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo1} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="gold"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo2} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="gold"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo3} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="gold"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo4} alt="" />
-                </div>
-              </Tilt>
-            </div>
+            <LazyLoad offset={300}>
+              <div className="images mt-8 md:-mt-14">
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  glareColor="gold"
+                  glarePosition="all"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo1} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="gold"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo2} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="gold"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo3} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="gold"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo4} alt="" />
+                  </div>
+                </Tilt>
+              </div>
+            </LazyLoad>
           </Parallax>
         </div>
         <div className="sponsors_silver sponsors">
@@ -411,13 +416,13 @@ export default function Sponsors() {
                     x2="0%"
                     y2="0%"
                   >
-                    <stop offset="0%" stop-color="#000" />
-                    <stop offset="100%" stop-color="silver" />
+                    <stop offset="0%" stopColor="#000" />
+                    <stop offset="100%" stopColor="silver" />
                   </linearGradient>
                   <path
                     d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
                     stroke="url(#gradientlsilver)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
@@ -438,72 +443,74 @@ export default function Sponsors() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#000" />
-                      <stop offset="100%" stop-color="silver" />
+                      <stop offset="0%" stopColor="#000" />
+                      <stop offset="100%" stopColor="silver" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
                     stroke="url(#gradientrsilver)"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>
             </div>
-            <div className="images mt-8 md:-mt-14">
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="silver"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo1} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="silver"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo2} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="silver"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo3} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="silver"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo4} alt="" />
-                </div>
-              </Tilt>
-            </div>
+            <LazyLoad offset={300}>
+              <div className="images mt-8 md:-mt-14">
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="silver"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo1} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="silver"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo2} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="silver"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo3} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="silver"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo4} alt="" />
+                  </div>
+                </Tilt>
+              </div>
+            </LazyLoad>
           </Parallax>
         </div>
         <div className="sponsor_title">
@@ -518,63 +525,67 @@ export default function Sponsors() {
             opacity={[0, 1]}
             targetElement={targetSilver}
           >
-            <div className="images">
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo1} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo2} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo3} alt="" />
-                </div>
-              </Tilt>
-              <Tilt
-                scale={0.9}
-                glareEnable={true}
-                glareColor="pink"
-                glarePosition="all"
-                glareMaxOpacity={0.45}
-                glareBorderRadius="15px"
-                perspective={500}
-              >
-                <div className="img">
-                  <img src={logo4} alt="" />
-                </div>
-              </Tilt>
-            </div>
+            <LazyLoad offset={300}>
+              <div className="images">
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo1} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo2} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo3} alt="" />
+                  </div>
+                </Tilt>
+                <Tilt
+                  scale={0.9}
+                  glareEnable={true}
+                  glareColor="pink"
+                  glarePosition="all"
+                  glareMaxOpacity={0.45}
+                  glareBorderRadius="15px"
+                  perspective={500}
+                >
+                  <div className="img">
+                    <img src={logo4} alt="" />
+                  </div>
+                </Tilt>
+              </div>
+            </LazyLoad>
           </Parallax>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Sponsors;

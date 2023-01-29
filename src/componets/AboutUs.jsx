@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import image2 from "../assets/asiet1.jpeg.webp";
 import { Parallax } from "react-scroll-parallax";
+import LazyLoad from "react-lazy-load";
 
-const AboutUs = () => {
+const AboutUsMain = () => {
   const targetRef = React.useRef(null);
 
   const [targetElement, setElement] = useState();
@@ -34,7 +35,7 @@ const AboutUs = () => {
               </h3>
               {/* ::Title */}
               <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
-                <span className="text-[var(--primary-color)]">About Our</span>{" "}
+                <span className="text-[var(--primary-color)]">About Our</span>
                 <span className="">Institute</span>
               </h2>
               {/* Content goes here */}
@@ -119,5 +120,9 @@ const AboutUs = () => {
     </>
   );
 };
-
+const AboutUs = () => <div>
+  <LazyLoad offset={300}>
+    <AboutUsMain />
+  </LazyLoad>
+</div>;
 export default AboutUs;

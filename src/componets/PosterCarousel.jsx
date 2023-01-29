@@ -3,6 +3,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import posterImg from "../assets/Gameathon/bgM.png.webp";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
+import LazyLoad from "react-lazy-load";
 
 const PosterCarousel = () => {
   const categories = [
@@ -119,12 +120,12 @@ const PosterCarousel = () => {
   return (
     <>
       <div ref={targetRef}></div>
-      <div className="mx-auto py-5 px-4 w-full max-w-7xl bg-transparent md:my-28 overflow-hidden">
+      <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden bg-gradient-to-b from-black to-transparent">
         {/* :TITLE CONTAINER */}
         <div className="px-5">
           <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
             <a href="#allCategoryLink">
-              All{" "}
+              All
               <span className="text-[var(--primary-color)]">Categories</span>
             </a>
           </h2>
@@ -164,21 +165,22 @@ const PosterCarousel = () => {
                         }`}
                       >
                         {/* ::Image Container */}
-                        <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
-                          <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
-                            {/* :::image nft */}
-                            <img
-                              src={item.image}
-                              alt=""
-                              className={`object-cover rounded-md opacity-90 `}
-                            />
-                          </span>
-                          <span
-                            style={{
-                              writingMode: "vertical-rl",
-                              translate: "translateY(20px)",
-                            }}
-                            className={`absolute top-3 duration-300 animate__animated animate__fast
+                        <LazyLoad offset={350}>
+                          <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                            <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
+                              {/* :::image nft */}
+                              <img
+                                src={item.image}
+                                alt=""
+                                className={`object-cover rounded-md opacity-90 `}
+                              />
+                            </span>
+                            <span
+                              style={{
+                                writingMode: "vertical-rl",
+                                translate: "translateY(20px)",
+                              }}
+                              className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
                            font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
@@ -186,10 +188,11 @@ const PosterCarousel = () => {
                                ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
                                : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
                            } drop-shadow`}
-                          >
-                            {item.name}
-                          </span>
-                        </div>
+                            >
+                              {item.name}
+                            </span>
+                          </div>
+                        </LazyLoad>
                       </a>
                     </li>
                   </Tilt>
