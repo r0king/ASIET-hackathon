@@ -21,6 +21,7 @@ import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
 import prizeVideo from "../assets/prize.mp4";
+import prizeVideoM from "../assets/prizeM.mp4";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -88,19 +89,25 @@ const Component = () => {
     ),
   };
   const videoprize: BannerLayer = {
-    translateY: width > 640 ? ["-12%", "20%"] : ["73%", "-25%"],
-    opacity: [3.5, -0.7, "easeOutCubic"],
-    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 0.6, "easeOutCubic"],
+    translateY: width > 640 ? ["2%", "20%"] : ["23%", "-25%"],
+    opacity:
+      width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
+    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "easeOutCubic"],
     children: (
-      <video
-        autoPlay
-        loop
-        muted
-        className="top-0 absolute bottom-0 object-contain w-screen opacity-70"
-      >
-        {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
-        <source src={prizeVideo} type='video/mp4; codecs="avc1"' />
-      </video>
+      <div className="flex justify-center w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          className="top-0 absolute bottom-0 object-contain h-screen md:h-auto "
+        >
+          {width > 640 ? (
+            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+          ) : (
+            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+          )}
+        </video>
+      </div>
     ),
   };
   const headline: BannerLayer = {
@@ -169,9 +176,9 @@ const Component = () => {
               layers={[
                 background,
                 headline,
-                videoprize,
                 videoglobe,
                 countdown,
+                videoprize,
                 tagline,
               ]}
               className="h-[110vh] bg-black"
