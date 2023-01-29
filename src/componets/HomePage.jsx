@@ -20,7 +20,7 @@ import planetVideo from "../assets/earth2.mp4";
 import planetVideoM from "../assets/earthmobile.mp4";
 import cloudImg from "../assets/Parallax/cloud.png";
 import collegePic from "../assets/Parallax/asiet.png";
-import prizeVideo from "../assets/prize.mp4";
+// import prizeVideo from "../assets/prize.mp4";
 import prizeVideoM from "../assets/prizeM.mp4";
 
 const Component = () => {
