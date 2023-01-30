@@ -126,7 +126,7 @@ const PosterCarousel = () => {
   return (
     <>
       <div ref={targetRef}></div>
-      <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden bg-gradient-to-b from-black to-transparent">
+      <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden ">
         {/* :TITLE CONTAINER */}
         <div className="px-5">
           <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">

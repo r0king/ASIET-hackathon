@@ -54,7 +54,7 @@ const Navbar24 = () => {
           </a>
 
           <a
-            href="/ideathon"
+            href="/young scientist award"
             aria-label="click to go to ideathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >

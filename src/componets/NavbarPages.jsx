@@ -78,7 +78,7 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
           </a>
 
           <a
-            href="/ideathon"
+            href="/young scientist award"
             className="block px-3 py-3 md:w-4/5 rounded-md uppercase md:text-2xl text-white/40 hover:text-[var(--primary-color)] "
           >
             Young Scientist Award
