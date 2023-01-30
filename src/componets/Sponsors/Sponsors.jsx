@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import logo1 from "../../assets/Sponsors/maker.png.webp";
-import logo2 from "../../assets/Sponsors/maker.png.webp";
-import logo3 from "../../assets/Sponsors/maker.png.webp";
-import logo4 from "../../assets/Sponsors/maker.png.webp";
+import logo1 from "../../assets/Sponsors/titlab.png.webp";
+import logo2 from "../../assets/Sponsors/titlab.png.webp";
+import logo3 from "../../assets/Sponsors/titlab.png.webp";
+import logo4 from "../../assets/Sponsors/titlab.png.webp";
+import partLogo1 from "../../assets/Sponsors/titlab.png.webp"
+import partLogo2 from "../../assets/Sponsors/ciirc.png.webp"
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
@@ -812,7 +814,7 @@ const Sponsors = () => {
                     perspective={500}
                   >
                     <div className="img">
-                      <img src={logo1} alt="" />
+                      <img src={partLogo1} alt="" />
                     </div>
                   </Tilt>
                   <Tilt
@@ -825,7 +827,7 @@ const Sponsors = () => {
                     perspective={500}
                   >
                     <div className="img">
-                      <img src={logo2} alt="" />
+                      <img src={partLogo2} alt="" />
                     </div>
                   </Tilt>
                   <Tilt
@@ -862,10 +864,10 @@ const Sponsors = () => {
               <LazyLoad offset={450}>
                 <div className="images">
                   <div className="img">
-                    <img src={logo1} alt="" />
+                    <img src={partLogo1} alt="" />
                   </div>
                   <div className="img">
-                    <img src={logo2} alt="" />
+                    <img src={partLogo2} alt="" />
                   </div>
                   <div className="img">
                     <img src={logo3} alt="" />

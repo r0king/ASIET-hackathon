@@ -12,6 +12,7 @@ const PosterCarousel = () => {
       href: "#link",
       name: "codathon",
       image: posterImg,
+      date: "29<sup>th</sup> March"
     },
 
     {
@@ -19,30 +20,35 @@ const PosterCarousel = () => {
       href: "#link",
       name: "gameathon",
       image: posterImg,
+      date: "28-30<sup>th</sup> March"
     },
     {
       id: 2,
       href: "#link",
       name: "ideathon",
       image: posterImg,
+      date: "29<sup>th</sup> March"
     },
     {
       id: 3,
       href: "#link",
       name: "mechathon",
       image: posterImg,
+      date: "29<sup>th</sup> March"
     },
     {
       id: 4,
       href: "#link",
       name: "civiathon",
       image: posterImg,
+      date: "29<sup>th</sup> March"
     },
     {
       id: 5,
       href: "#link",
       name: "bizthon",
       image: posterImg,
+      date: "29<sup>th</sup> March"
     },
   ];
 
@@ -125,8 +131,8 @@ const PosterCarousel = () => {
         <div className="px-5">
           <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
             <a href="#allCategoryLink">
-              All
-              <span className="text-[var(--primary-color)]">Categories</span>
+              Hackathon
+              <span className="text-[var(--primary-color)]"> Categories</span>
             </a>
           </h2>
         </div>
@@ -180,10 +186,11 @@ const PosterCarousel = () => {
                               <span
                                 style={{
                                   writingMode: "vertical-rl",
-                                  translate: "translateY(20px)",
+                                  translate: "translateY(20px)",  
+                                  rotate: "180deg"
                                 }}
                                 className={`absolute top-3 duration-300 animate__animated animate__fast
-                           opacity-0 right-2 py-1 px-2 inline-flex justify-center items-center
+                           opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
                            font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
                              position === item.id
@@ -193,6 +200,17 @@ const PosterCarousel = () => {
                               >
                                 {item.name}
                               </span>
+                              {<span
+                                dangerouslySetInnerHTML={{ __html: item.date }}
+                                className={`absolute bottom-3 duration-300 animate__animated animate__fast
+                           opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
+                           rounded-full text-base font-light text-white z-1 transition ease-in-out transform -translate-y-5  ${
+                             position === item.id
+                               ? "z-50 translate-y-0 opacity-100 animate__fadeInUp"
+                               : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
+                           } drop-shadow`}
+                              >
+                              </span>}
                             </div>
                           </LazyLoad>
                         </a>
