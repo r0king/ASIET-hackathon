@@ -33,7 +33,7 @@ const AllUNeed2Know = () => {
               opacity={[0.5, 1.3]}
             >
               <h3 className="max-w-3xl mx-auto mt-4 text-lg  text-center text-gray-50">
-                All you need to know about the HACKOSTAV 2021 event
+                All you need to know about the HACKATHON 2021 event
               </h3>
             </Parallax>
           </div>
@@ -62,7 +62,7 @@ const AllUNeed2Know = () => {
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
                     <div className="ml-4 lg:ml-14">
-                      <h4 className="text-lg font-medium leading-6 ">
+                      <h4 classNamOSTAVe="text-lg font-medium leading-6 ">
                         Per ei quaeque sensibus
                       </h4>
                       <p className="mt-2 text-base text-gray-400">

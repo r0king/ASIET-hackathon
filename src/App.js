@@ -33,19 +33,13 @@ function App() {
             transform: "translate(-50%, -50%)",
           }}
         >
-          {/* <LoadingIcons.Audio /> */}
-          {/* <LoadingIcons.BallTriangle /> */}
-          <LoadingIcons.Bars  stroke="transparent" fill="#f0f0f0" strokeOpacity={1} height={'3.5rem'} />
-          <div className="flex justify-center text-center">Loading…</div>          
-          {/* <LoadingIcons.Circles /> */}
-          {/* <LoadingIcons.Grid /> */}
-          {/* <LoadingIcons.Hearts /> */}
-          {/* <LoadingIcons.Oval /> */}
-          {/* <LoadingIcons.Puff /> */}
-          {/* <LoadingIcons.Rings /> */}
-          {/* <LoadingIcons.SpinningCircles /> */}
-          {/* <LoadingIcons.TailSpin /> */}
-          {/* <LoadingIcons.ThreeDots /> */}
+          <LoadingIcons.Bars
+            stroke="transparent"
+            fill="#f0f0f0"
+            strokeOpacity={1}
+            height={"3.5rem"}
+          />
+          <div className="flex justify-center text-center">Loading…</div>
         </div>
       ) : (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
