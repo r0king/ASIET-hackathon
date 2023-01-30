@@ -152,7 +152,10 @@ function Gameathon() {
           <video
             autoPlay
             muted
+<<<<<<< HEAD
             loop
+=======
+>>>>>>> origin/optimize
             className="h-full w-full object-cover"
           >
             <source src={gameathonVideo} type='video/mp4; codecs="avc1"' />
