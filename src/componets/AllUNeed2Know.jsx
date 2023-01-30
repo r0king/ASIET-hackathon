@@ -21,10 +21,7 @@ const AllUNeed2Know = () => {
         <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-center text-gray-50">
-              ALL
-              <span className=" text-[var(--primary-color)]">
-                U NEED 2 KNOW
-              </span>
+              ALL <span className=" text-[var(--primary-color)]">U NEED 2 KNOW</span>
             </h2>
             <Parallax
               shouldAlwaysCompleteAnimation={true}
@@ -33,7 +30,7 @@ const AllUNeed2Know = () => {
               opacity={[0.5, 1.3]}
             >
               <h3 className="max-w-3xl mx-auto mt-4 text-lg  text-center text-gray-50">
-                All you need to know about the HACKOSTAV 2021 event
+                All you need to know about the HACKATHON 2023 event
               </h3>
             </Parallax>
           </div>
