@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
