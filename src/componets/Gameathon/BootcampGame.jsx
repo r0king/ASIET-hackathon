@@ -1,5 +1,5 @@
 import React from 'react'
-import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png.webp'
+// import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png.webp'
 
 export default function BootcampGame() {
   return (
@@ -26,10 +26,10 @@ export default function BootcampGame() {
           <li>After the course has finished, students will have access to a 1-month support period during which they can continue to ask doubts through the help-desk platform. The training organization will respond to inquiries within 24 hours.</li>
         </ul>
       </div>
-      <div>
+      {/* <div>
         <h1 className='text-lg font-bold mt-8'>Bootcamp contents</h1><br />
         <img src={bootCampDiagram} alt="Bootcamp Content" />
-      </div>
+      </div> */}
       <div>
         <h1 className='text-2xl font-bold'>Bootcamp Rules</h1><br />
         <h1 className='text-lg font-bold pl-5 pb-6'>Specific Rules</h1>
