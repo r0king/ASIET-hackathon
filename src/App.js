@@ -10,10 +10,27 @@ import Mechathon from "./componets/Mechathon/Mechathon";
 import Civilathon from "./componets/Civilathon/Civilathon";
 import Bizthon from "./componets/Bizthon/Bizthon";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { useState, useEffect } from "react";
+import { Waves } from 'loading-animations-react';
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
+
   return (
     <>
+      {loading?
+      <div style={{
+        position: 'absolute', left: '50%', top: '50%',
+        transform: 'translate(-50%, -50%)'
+    }}><Waves/></div>:
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route
@@ -32,7 +49,7 @@ function App() {
           <Route exact path="/civilathon" element={<Civilathon />} />
           <Route exact path="/bizthon" element={<Bizthon />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>}
     </>
   );
 }
