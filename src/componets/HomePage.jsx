@@ -59,7 +59,6 @@ const Component = () => {
       </div>
     ),
   };
-
   const videoglobe: BannerLayer = {
     translateY: width > 640 ? ["25%", "-25%"] : ["90%", "-25%"],
     translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
@@ -88,17 +87,17 @@ const Component = () => {
     ),
   };
   const videoprize: BannerLayer = {
-    translateY: width > 640 ? ["5%", "30%"] : ["0%", "0%"],
+    translateY: width > 640 ? ["45%", "30%"] : ["20%", "0%"],
     opacity:
       width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
     scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "easeOutCubic"],
     children: (
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center w-full h-full">
         <video
           autoPlay
           loop
           muted
-          className="top-14 absolute bottom-0 object-contain md:h-auto "
+          className="z-30 top-0 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
             <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
@@ -111,7 +110,7 @@ const Component = () => {
   };
   const headline: BannerLayer = {
     translateX: width > 640 ? [5, 20] : [0, 0],
-    translateY: [width > 640 ? -35 : -10, -20],
+    translateY: [width > 640 ? -2 : -10, -20],
     speed: 40,
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
@@ -123,7 +122,7 @@ const Component = () => {
     ),
   };
   const countdown = {
-    translateY: [width > 640 ? 28 : 69, 60],
+    translateY: [width > 640 ? 86 : 69, 70],
     speed: -10,
     translateX: width > 640 ? [6, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
@@ -132,21 +131,11 @@ const Component = () => {
     children: <CountDown />,
   };
   const tagline: BannerLayer = {
-    translateY: [width > 640 ? 40 : 60, width > 640 ? 20 : 68],
+    translateY: [width > 640 ? 65 : 60, width > 640 ? 48 : 68],
     shouldAlwaysCompleteAnimation: true,
     children: (
       <>
         <Tagline />
-      </>
-    ),
-  };
-  const sponsers: BannerLayer = {
-    translateY: [width > 640 ? 42 : 38, 30],
-    scale: [1, 1.1, "easeOutCubic"],
-    shouldAlwaysCompleteAnimation: true,
-    children: (
-      <>
-        <Sponsors />
       </>
     ),
   };
@@ -155,19 +144,36 @@ const Component = () => {
       <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
         <Menu />
         {width > 640 ? (
-          <ParallaxBanner
-            layers={[
-              background,
-              videoglobe,
-              videoprize,
-              headline,
-              countdown,
-              sponsers,
-              tagline,
-            ]}
-            // gradientOverlay]}
-            className="md:h-[285vh] bg-black"
-          />
+          <>
+            <ParallaxBanner
+              layers={[
+                background,
+                videoglobe,
+                headline,
+                countdown,
+                // sponsers,
+                // videoprize,
+                tagline,
+              ]}
+              // gradientOverlay]}
+              className="h-[100vh] bg-black"
+            ></ParallaxBanner>
+            <div className="flex justify-center w-full h-full">
+              <video
+                autoPlay
+                loop
+                muted
+                className="z-30 top-10 absolute bottom-0 object-contain md:h-auto "
+              >
+                {width > 640 ? (
+                  <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+                ) : (
+                  <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+                )}
+              </video>
+            </div>
+            <Sponsors />
+          </>
         ) : (
           <>
             <ParallaxBanner
@@ -181,7 +187,7 @@ const Component = () => {
               ]}
               className="h-[110vh] bg-black"
             />
-             <Tagline />
+            {/* <Tagline /> */}
             <Sponsors />
           </>
         )}

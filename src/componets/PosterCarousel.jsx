@@ -25,7 +25,7 @@ const PosterCarousel = () => {
     {
       id: 2,
       href: "#link",
-      name: "ideathon",
+      name: "young scientist award",
       image: posterImg,
       date: "29<sup>th</sup> March"
     },
@@ -185,9 +185,7 @@ const PosterCarousel = () => {
                               </span>
                               <span
                                 style={{
-                                  writingMode: "vertical-rl",
                                   translate: "translateY(20px)",  
-                                  rotate: "180deg"
                                 }}
                                 className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center

@@ -696,7 +696,7 @@ const Sponsors = () => {
                 </span>
               </div>
               <LazyLoad offset={300}>
-                <div className="images">
+                <div className="images mt-8 md:-mt-14">
                   <div className="img">
                     <img src={logo1} alt="" />
                   </div>
@@ -803,7 +803,7 @@ const Sponsors = () => {
               targetElement={targetSilver}
             >
               <LazyLoad offset={300}>
-                <div className="images">
+                <div className="images ">
                   <Tilt
                     scale={0.9}
                     glareEnable={true}
@@ -861,13 +861,69 @@ const Sponsors = () => {
             </Parallax>
           ) : (
             <div>
-              <LazyLoad offset={450}>
-                <div className="images">
+              <div className="w-full flex justify-center items-center">
+                <span className="flex-grow opacity-80">
+                  <svg
+                    width="96"
+                    height="23"
+                    viewBox="0 0 96 23"
+                    fill="none"
+                    className="pl-8 mt-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <linearGradient
+                      id="gradientlsilver"
+                      x1="100%"
+                      y1="0%"
+                      x2="0%"
+                      y2="0%"
+                    >
+                      <stop offset="0%" stopColor="#000" />
+                      <stop offset="100%" stopColor="silver" />
+                    </linearGradient>
+                    <path
+                      d="M95 1H5C2.00232 1 1 2 1 5C1 8 1 22 1 22"
+                      stroke="url(#gradientlsilver)"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+                <h1 className="text-lg font-semibold mb-auto px-5">Silver</h1>
+                <span className="flex-grow opacity-80 ">
+                  <svg
+                    width="96"
+                    height="23"
+                    viewBox="0 0 96 23"
+                    className="pr-8 mt-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="gradientrsilver"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop offset="0%" stopColor="#000" />
+                        <stop offset="100%" stopColor="silver" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M1 1H91C93.9977 1 95 2 95 5C95 8 95 22 95 22"
+                      stroke="url(#gradientrsilver)"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <LazyLoad offset={450} >
+                <div className="images ">
                   <div className="img">
-                    <img src={partLogo1} alt="" />
+                    <img src={logo1} alt="" />
                   </div>
                   <div className="img">
-                    <img src={partLogo2} alt="" />
+                    <img src={logo2} alt="" />
                   </div>
                   <div className="img">
                     <img src={logo3} alt="" />
