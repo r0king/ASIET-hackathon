@@ -54,7 +54,6 @@ const AboutUsMain = () => {
               </p>
               {/* ::Button */}
               <button
-              
                 className="group
                           my-5 px-5 py-2.5 
                           bg-[var(--secondary-color)] text-[var(--secondary-color))]
@@ -86,34 +85,36 @@ const AboutUsMain = () => {
             targetElement={targetElement}
           >
             {/* :IMAGES CONTAINER */}
-            <div
-              className="
+            <LazyLoad offset={500}>
+              <div
+                className="
               absolute md:relative top-1/2 left-1/2 md:inset-0 flex 
               h-full sm:ml-5 w-full md:w-1/2 
               transform -translate-x-1/2 md:translate-x-0"
-            >
-              {/* ::Image 1 */}
-              <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
-                {/* Image goes here */}
-                <img
-                  src={image2}
-                  alt=""
-                  className="
+              >
+                {/* ::Image 1 */}
+                <div className="hidden md:block flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
+                  {/* Image goes here */}
+                  <img
+                    src={image2}
+                    alt=""
+                    className="
               shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
                absolute inset-0 w-full h-full object-cover object-left-bottom  "
-                />
+                  />
+                </div>
+                {/* ::Image 2 */}
+                <div className="hidden md:block flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
+                  {/* Image goes here */}
+                  <img
+                    src={image2}
+                    alt=""
+                    className=" shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+                    absolute inset-0 w-full h-full object-center object-cover "
+                  />
+                </div>
               </div>
-              {/* ::Image 2 */}
-              <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
-                {/* Image goes here */}
-                <img
-                  src={image2}
-                  alt=""
-                  className=" shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
-              absolute inset-0 w-full h-full object-center object-cover "
-                />
-              </div>
-            </div>
+            </LazyLoad>
           </Parallax>
           {/* :OVERLAY */}
           {/* <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" /> */}
@@ -122,9 +123,11 @@ const AboutUsMain = () => {
     </>
   );
 };
-const AboutUs = () => <div>
-  <LazyLoad offset={300}>
-    <AboutUsMain />
-  </LazyLoad>
-</div>;
+const AboutUs = () => (
+  <div>
+    <LazyLoad offset={500}>
+      <AboutUsMain />
+    </LazyLoad>
+  </div>
+);
 export default AboutUs;
