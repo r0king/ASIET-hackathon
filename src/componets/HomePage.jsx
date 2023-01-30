@@ -88,7 +88,7 @@ const Component = () => {
     ),
   };
   const videoprize: BannerLayer = {
-    // translateY: width > 640 ? ["5%", "20%"] : ["20%", "-25%"],
+    translateY: width > 640 ? ["5%", "30%"] : ["0%", "0%"],
     opacity:
       width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
     scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "easeOutCubic"],
@@ -150,10 +150,6 @@ const Component = () => {
       </>
     ),
   };
-  console.log("before");
-  useEffect(() => {
-    console.log("loaded");
-  }, []);
   return (
     <>
       <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
