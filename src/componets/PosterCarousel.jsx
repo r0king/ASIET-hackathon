@@ -39,7 +39,7 @@ const PosterCarousel = () => {
     {
       id: 4,
       href: "#link",
-      name: "civiathon",
+      name: "civilathon",
       image: posterImg,
       date: "29<sup>th</sup> March"
     },
