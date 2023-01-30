@@ -56,8 +56,8 @@ function Civilathon() {
       icon: ArchiveIcon,
       page: <AboutCivil />
     },
-    { name: "DECONSTRUCT_23", icon: CloudUploadIcon, page: <DeconCivil /> },
-    { name: "RAPID BUILD_23", icon: ChartBarIcon, page: <RebuildCivil /> },
+    { name: "DECONSTRUCT", icon: CloudUploadIcon, page: <DeconCivil /> },
+    { name: "RAPID BUILD", icon: ChartBarIcon, page: <RebuildCivil /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConCivil /> },
   ]
 
@@ -162,8 +162,8 @@ function Civilathon() {
                   {tabs.map(tab => {
                     const Icon = tab.icon
                     return (
-                      <li key={tab.name} className={`relative z-10 rounded-full text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
-                        <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
+                      <li key={tab.name} className={`relative z-10 rounded-full flex justify-center items-center text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
+                        <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center flex-col items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
                           {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
                           {tab.name}
                         </button>
@@ -174,7 +174,7 @@ function Civilathon() {
                 </ul>
               </nav>
               {/* ::Sliding Background */}
-              <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
+              <div className="absolute inset-0 mx-auto w-full h-full rounded-full flex flex-col justify-center">
                 <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
                   <div className="h-full rounded-full bg-[var(--bg-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
                 </div>

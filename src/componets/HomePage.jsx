@@ -141,13 +141,13 @@ const Component = () => {
   };
   return (
     <>
-      <div className="bg-gradient-to-b from-transparent via-[#7285d328] to-[#7285d371] ">
+      <div className=" ">
         <Menu />
         {width > 640 ? (
           <>
             <ParallaxBanner
               layers={[
-                background,
+                // background,
                 videoglobe,
                 headline,
                 countdown,
@@ -163,7 +163,7 @@ const Component = () => {
                 autoPlay
                 loop
                 muted
-                className="z-30 top-10 absolute bottom-0 object-contain md:h-auto "
+                className=" top-10 absolute bottom-0 object-contain md:h-auto "
               >
                 {width > 640 ? (
                   <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />

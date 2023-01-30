@@ -147,7 +147,7 @@ function Gameathon() {
             countDate="Mar 28, 2023 00:00:00"
           />
         </div>
-        <div className="absolute top-0 h-screen w-screen z-40 ">
+        <div className="absolute top-0 h-screen w-full z-40 ">
           {/* navbar */}
           <video
             autoPlay
