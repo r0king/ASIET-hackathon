@@ -8,25 +8,33 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
     <nav className="flex justify-between items-center p-5">
       {/* logo */}
       <div className="flex items-center">
-        <a href="/">
+        <a href="/" aria-label="logo">
           <img
             src={logoAsiet}
             alt="logo"
             className="w-10 h-10 object-contain brightness-[5] grayscale"
           />
         </a>
-        {countDate?<span className="ml-5"><EventCountDown countDate={countDate}/></span>:"  "}
+        {countDate ? (
+          <span className="ml-5">
+            <EventCountDown countDate={countDate} />
+          </span>
+        ) : (
+          "  "
+        )}
       </div>
       {/* nav links */}
       <div className="md:flex items-center hidden md:visible">
         <a
           href="/"
+          aria-label="click to go back to home"
           className="2xl:text-lg text-sm font-medium  text-[#f0f0f064] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
         >
           Home
         </a>
         <a
           href="#Events"
+          aria-label="click to go to events"
           className="2xl:text-lg text-sm font-medium  text-[#f0f0f080] uppercase hover:text-[#f0f0f0] hover:bg-white hover:bg-opacity-10 rounded-md px-5 2xl:px-10 2xl:py-5 py-2"
         >
           Events

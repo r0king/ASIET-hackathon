@@ -4,6 +4,7 @@ const Burger1 = ({ isOpen, setIsOpen }) => {
   return (
     <button
       onClick={() => setIsOpen(!isOpen)}
+      aria-label="Open Menu"
       className="group -mt-5 flex flex-col w-12 cursor-pointer active:outline-none focus:outline-none"
     >
       {/* Top line */}
