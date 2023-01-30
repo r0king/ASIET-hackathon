@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import image2 from "../assets/asiet1.jpeg.webp";
+import image2 from "../assets/asiet1.jpeg";
 import { Parallax } from "react-scroll-parallax";
 import LazyLoad from "react-lazy-load";
 
-const AboutUsMain = () => {
+const AboutUs = () => {
   const targetRef = React.useRef(null);
 
   const [targetElement, setElement] = useState();
@@ -35,7 +35,7 @@ const AboutUsMain = () => {
               </h3>
               {/* ::Title */}
               <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
-                <span className="text-[var(--primary-color)]">About Our</span>
+                <span className="text-[var(--primary-color)]">About Our</span>{" "}
                 <span className="">Institute</span>
               </h2>
               {/* Content goes here */}
@@ -54,7 +54,6 @@ const AboutUsMain = () => {
               </p>
               {/* ::Button */}
               <button
-              
                 className="group
                           my-5 px-5 py-2.5 
                           bg-[var(--secondary-color)] text-[var(--secondary-color))]
@@ -72,7 +71,6 @@ const AboutUsMain = () => {
                   href="https://www.adishankara.ac.in/about-us"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Know More"
                   className="text-[var(--primary-accent-color)] group-hover:text-[var(--primary-accent-color)]"
                 >
                   Know More
@@ -85,13 +83,14 @@ const AboutUsMain = () => {
             translateX={[0, 5]}
             targetElement={targetElement}
           >
-            {/* :IMAGES CONTAINER */}
+            {/* :IMAGES CONTAINER */}<LazyLoad offset={600} height={'500px'}>
             <div
               className="
               absolute md:relative top-1/2 left-1/2 md:inset-0 flex 
               h-full sm:ml-5 w-full md:w-1/2 
               transform -translate-x-1/2 md:translate-x-0"
             >
+              
               {/* ::Image 1 */}
               <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
                 {/* Image goes here */}
@@ -113,7 +112,7 @@ const AboutUsMain = () => {
               absolute inset-0 w-full h-full object-center object-cover "
                 />
               </div>
-            </div>
+            </div></LazyLoad>
           </Parallax>
           {/* :OVERLAY */}
           {/* <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" /> */}
@@ -122,9 +121,5 @@ const AboutUsMain = () => {
     </>
   );
 };
-const AboutUs = () => <div>
-  <LazyLoad offset={300}>
-    <AboutUsMain />
-  </LazyLoad>
-</div>;
+
 export default AboutUs;

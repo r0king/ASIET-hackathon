@@ -64,7 +64,7 @@ const ContactUs = () => {
             </div>
 
             {/* ::Social */}
-            <div className="mt-5 sm:mt-5 flex items-center">
+            <div className="mt-5 sm:mt-5 flex items-center ">
               <h3 className="text-base text-[#f0f0f0] text-opacity-60 font-medium uppercase tracking-wider">
                 Social
               </h3>
@@ -76,7 +76,7 @@ const ContactUs = () => {
                   className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
                   <svg
-                    className="flex-shrink-0 w-5 h-5 fill-current"
+                    className="w-5 h-5 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
@@ -130,7 +130,7 @@ const ContactUs = () => {
           </div>
 
           {/* :MAP CONTAINER */}
-          <div className="col-span-full sm:col-span-3 hidden md:block">
+          <div className="col-span-full sm:col-span-3">
             {/* Embed Google map */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.8211700506645!2d76.428809361558!3d10.17761954352797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0807bfa8906d61%3A0x11ad08dbd85357dc!2sAdi%20Shankara%20Institute%20of%20Engineering%20and%20Technology%20Kaladi!5e0!3m2!1sen!2sin!4v1672305829425!5m2!1sen!2sin"
