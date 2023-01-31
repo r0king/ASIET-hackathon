@@ -163,7 +163,7 @@ const Component = () => {
                 autoPlay
                 loop
                 muted
-                className=" top-10 absolute bottom-0 object-contain md:h-auto "
+                className=" top-[8%] absolute bottom-0 object-contain md:h-auto "
               >
                 {width > 640 ? (
                   <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />

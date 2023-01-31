@@ -10,9 +10,9 @@ function AboutYoung(props) {
     <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       “What the mind can conceive and believe, it can achieve.”<br /><br />
       <span className="pl-96">Napoleon Hill</span><br /><br />
-      In recent times, technology has produced many innovations of holocaustic nature and scientists and researchers in its quest to conquer nature, have evolved various dangerous concepts threatening the very existence of mankind. These pose a big challenge to the meaning and principle of humanity. In this regard, students should play a strong and positive role in determining emerging trends of technology. It is with this great thought in mind, that “Adi Shankara Young Scientist Award" is conceived and designed.
+      In recent times, technology has produced many innovations of holocaustic nature and scientists and researchers in its quest to conquer nature, have evolved various dangerous concepts threatening the very existence of mankind. These pose a big challenge to the meaning and principle of humanity. In this regard, students should play a strong and positive role in determining emerging trends of technology. It is with this great thought in mind, that “Adi Shankara Young Scientists Award" is conceived and designed.
       <br /><br />
-      <span className="pl-20">The objective of Adi Shankara Young Scientist Award is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.</span>
+      <span className="pl-20">The objective of Adi Shankara Young Scientists Award is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.</span>
     </div>
   )
 }
@@ -188,7 +188,7 @@ function Ideathon() {
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Young Scientist Award
+            Young Scientists Award
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
@@ -196,7 +196,7 @@ function Ideathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
-            The objective of <b>Adi Shankara Young Scientist Award</b> is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.
+            The objective of <b>Adi Shankara Young Scientists Award</b> is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.
           </p>
           {/* basic rounded line button */}
           <button

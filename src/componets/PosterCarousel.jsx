@@ -25,7 +25,7 @@ const PosterCarousel = () => {
     {
       id: 2,
       href: "#link",
-      name: "young scientist award",
+      name: "young scientists award",
       image: posterImg,
       date: "29<sup>th</sup> March"
     },

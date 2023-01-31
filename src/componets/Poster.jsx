@@ -42,9 +42,9 @@ const Poster = () => {
     },
     {
       id: 2,
-      name: "Young Scientist Award",
+      name: "Young Scientists Award",
       tagline:
-        "Young Scientist Award is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
+        "Young Scientists Award is an exclusive program offered to school students where we are planning to mentor, support and fund to school students startup ideas.",
       href: "#link",
        
       pictureAlt: "Description of your picture",

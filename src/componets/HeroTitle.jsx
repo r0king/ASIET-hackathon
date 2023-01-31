@@ -32,7 +32,7 @@ export default class HeroTitle extends Component {
             fontFamily: "Azonix",
             transformStyle: "preserve-3d",
           }}
-          className="text-4xl p-1  md:max-w-[70vw] md:text-6xl text-center md:text-left bg-clip-text bg-gradient-to-br from-pc to-sc font-extrabold -z-20"
+          className="text-4xl p-1  md:max-w-[70vw] md:text-7xl text-center md:text-left bg-clip-text bg-gradient-to-br from-pc to-sc font-extrabold -z-20"
         >
           <span className="text-transparent leading-[1.8]">ADI SHANKARA </span>
           <span ref={this.textRef}>

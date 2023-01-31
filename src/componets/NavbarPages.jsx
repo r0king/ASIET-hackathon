@@ -56,11 +56,19 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
           </a>
 
           <a
-            href="/young scientist award"
-            aria-label="click to go to ideathon"
+            href="/techathon"
+            aria-label="click to go to bizthon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Young Scientist Award
+            Techathon
+          </a>
+
+          <a
+            href="/bizthon"
+            aria-label="click to go to bizthon"
+            className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
+          >
+            Bizthon
           </a>
           <a
             href="/mechathon"
@@ -77,11 +85,11 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
             Civilathon
           </a>
           <a
-            href="/bizthon"
-            aria-label="click to go to bizthon"
+            href="/young scientist award"
+            aria-label="click to go to ideathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Bizthon
+            Young Scientists Award
           </a>
           <a
             href="#faq"

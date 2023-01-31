@@ -24,11 +24,11 @@ const Navbar24 = () => {
       {isOpen && (
         <div
           className="
-        flex flex-col 
-      bg-black/90 
-        w-screen h-screen z-20 m-auto pl-1 md:pl-px
-        fixed top-0
-         text-base uppercase text-center font-semibold"
+      flex flex-col 
+    bg-black/90 
+      w-screen h-screen z-20 m-auto pl-1 md:pl-px
+      fixed top-0
+       text-base uppercase text-center font-semibold"
         >
           <a
             href="/"
@@ -54,11 +54,19 @@ const Navbar24 = () => {
           </a>
 
           <a
-            href="/young scientist award"
-            aria-label="click to go to ideathon"
+            href="/techathon"
+            aria-label="click to go to bizthon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Young Scientist Award
+            Techathon
+          </a>
+
+          <a
+            href="/bizthon"
+            aria-label="click to go to bizthon"
+            className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
+          >
+            Bizthon
           </a>
           <a
             href="/mechathon"
@@ -75,11 +83,11 @@ const Navbar24 = () => {
             Civilathon
           </a>
           <a
-            href="/bizthon"
-            aria-label="click to go to bizthon"
+            href="/young scientist award"
+            aria-label="click to go to ideathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Bizthon
+            Young Scientists Award
           </a>
           <a
             href="#faq"
