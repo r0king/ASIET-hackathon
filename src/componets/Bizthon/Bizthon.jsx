@@ -7,7 +7,7 @@ import { Navbar } from "../NavbarPages";
 
 function AboutBiz(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.
       This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
       Bring forth your analytical and creative skills to expose your hidden self.
@@ -17,11 +17,11 @@ function AboutBiz(props) {
 
 function StagesBiz(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[full] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[full] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       The Bizthon is a Business Hackathon contest which consists of three unique stages
       <br /><br /><b>Stage 1 - INNOVATE</b>
       <br />Participants are given six themes. Each team has to make a video on an innovative business idea to be launched in a digital platform/App for 4-5 minutes based on the following themes:
-      <ul className="list-decimal pl-10 mt-3">
+      <ul className="list-decimal pl-10 mt-3 ">
         <li>Medical management</li>
         <li>GI Tagged heritage tourism</li>
         <li>Retail shopping experience</li>
@@ -67,7 +67,7 @@ function StagesBiz(props) {
 
 function PrizeBiz(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <li>First prize – Rs.1 lakh</li>
       <li>Second prize – Rs.50,000</li>
       <li>Third Prize (3 Nos) – Rs.10,000 each</li>
@@ -78,7 +78,7 @@ function PrizeBiz(props) {
 
 function RegBiz(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <li>First Round – Rs.100 per video</li>
       <li>Second Round – Rs. 400 per team.</li>
       <li>Charges for training will be based on requirements</li>
@@ -88,7 +88,7 @@ function RegBiz(props) {
 
 function ConBiz() {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <h1>0484-2463825</h1>
       <h1>0484-2466066</h1>
       <h1>0484-2461933</h1>

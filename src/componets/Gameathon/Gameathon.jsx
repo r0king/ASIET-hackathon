@@ -21,7 +21,7 @@ import ProfImg from "../../assets/Sponsors/titlab.png.webp";
 
 function AboutGame(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       We invite you to participate in a 3-day event at Adi Shankara Institute of
       Engineering & Technology, where students can engage in team-working,
       explore their creativity, and develop a game within three days. This event
@@ -72,7 +72,7 @@ function ContactGame() {
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
         <div className="mt-10">

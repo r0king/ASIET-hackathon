@@ -45,7 +45,7 @@ const Sponsors = () => {
           {width > 640 ? (
             <Parallax
               className="mt-8 md:-mt-14"
-              scale={[0, 1]}
+              scale={[0.7, 1]}
               opacity={[0, 1]}
               targetElement={targetTitle}
             >
@@ -438,7 +438,7 @@ const Sponsors = () => {
         <div className="sponsors_gold sponsors " ref={targetGold}>
           {width > 640 ? (
             <Parallax
-              scale={[0, 1]}
+              scale={[0.3, 1]}
               opacity={[0, 1]}
               targetElement={width > 650 ? targetPlatinum : targetDiamond}
             >
@@ -635,7 +635,7 @@ const Sponsors = () => {
         <div className="sponsors_silver sponsors" ref={targetSilverRef}>
           {width > 640 ? (
             <Parallax
-              scale={[0, 1]}
+              scale={[0.7, 1]}
               opacity={[0, 1]}
               targetElement={width > 650 ? targetDiamond : targetPlatinum}
             >
@@ -798,7 +798,7 @@ const Sponsors = () => {
           {width > 640 ? (
             <Parallax
               className="mt-8 md:-mt-14"
-              scale={[0, 1]}
+              scale={[0.7, 1]}
               opacity={[0, 1]}
               targetElement={targetSilver}
             >

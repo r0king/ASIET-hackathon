@@ -7,7 +7,7 @@ import { Navbar } from "../NavbarPages";
 
 function AboutCivil(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       A civil engineering technical event intended for engineering/ architecture/ diploma students and/or graduates with sufficient theoretical knowledge and design skills to solve complex civil engineering problems. Registration for the event has to be done individually before the deadline and they can form groups of four after the orientation session provided by the organisers, depending on the areas of expertise of each registered participants.
       The event is planned for a span of 24 hours which will include wide range of civil engineering areas like engineering drawing, planning, construction management, structural design, soil investigation, sanitary engineering and quantity estimation. This is scheduled in four stages and the participants are expected to find creative, feasible and technical solutions to the stated complex problem designed by the event organisers. The stages will be focused on the above-mentioned areas and will be evaluated by a panel of experts.
       Essential and relevant training and orientation sessions for the stages will be arranged by the organising committee. Training for softwares AutoCAD, STAAD.PRO, STAAD FOUNDATION, REVIT, PRIMAVERA will be provided prior to the event for registered participants. Certificates will be provided for successful completion of training.
@@ -18,7 +18,7 @@ function AboutCivil(props) {
 
 function DeconCivil(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       A civil engineering technical event intended for engineering/ architecture/ diploma students and/or graduates with sufficient theoretical knowledge and design skills to solve complex civil engineering problems. Registration for the event has to be done individually before the deadline and they can form groups of four after the orientation session provided by the organisers, depending on the areas of expertise of each registered participants.
       The event is planned for a span of 24 hours which will include wide range of civil engineering areas like engineering drawing, planning, construction management, structural design, soil investigation, sanitary engineering and quantity estimation. This is scheduled in four stages and the participants are expected to find creative, feasible and technical solutions to the stated complex problem designed by the event organisers. The stages will be focused on the above-mentioned areas and will be evaluated by a panel of experts.
       Essential and relevant training and orientation sessions for the stages will be arranged by the organising committee. Training for softwares AutoCAD, STAAD.PRO, STAAD FOUNDATION, REVIT, PRIMAVERA will be provided prior to the event for registered participants. Certificates will be provided for successful completion of training.
@@ -29,7 +29,7 @@ function DeconCivil(props) {
 
 function RebuildCivil(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       An event intended for school students who are interested in building designs and modern construction techniques. The event is planned as a half day session which primarily focus on physical model development. The participants should complete online registration through the website before the deadline. A workshop on relevant areas required for the competition will be provided by subject experts before the commencement of the event. Certificates will be provided for active participation in the workshop. The participants are expected to complete the task using the resources provided by the organisers within the stipulated time.
       The winners of the event as decided by an expert jury panel will be awarded a cash prize of fifty thousand rupees.
     </div>
@@ -38,7 +38,7 @@ function RebuildCivil(props) {
 
 function ConCivil() {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <h1>0484-2463825</h1>
       <h1>0484-2466066</h1>
       <h1>0484-2461933</h1>

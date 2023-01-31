@@ -15,12 +15,12 @@ import PosterCarousel from "./PosterCarousel";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
 
-import planetVideo from "../assets/earth2.mp4";
-import planetVideoM from "../assets/earthmobile.mp4";
+import planetVideo from "../assets/globe.webm";
+import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
 // import prizeVideo from "../assets/prize.mp4";
-import prizeVideoM from "../assets/prizeM.mp4";
+import prizeVideoM from "../assets/prizeM.webm";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -60,8 +60,8 @@ const Component = () => {
     ),
   };
   const videoglobe: BannerLayer = {
-    translateY: width > 640 ? ["25%", "-25%"] : ["90%", "-25%"],
-    translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
+    translateY: width > 640 ? ["48%", "-25%"] : ["90%", "-25%"],
+    // translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
     opacity: [0.95, 0.8, "easeOutCubic"],
     scale: [width > 640 ? 0.8 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
     // onChange: (el) => {
@@ -69,19 +69,20 @@ const Component = () => {
     //   el.el.firstChild.currentTime = el.progress * 10;
     // },
     children: (
-      <div className="flex justify-center w-full h-full">
+      <div className="flex justify-center object-center items-center w-full h-full">
         <video
           autoPlay
           loop
           muted
-          className="top-0 absolute bottom-0 object-contain h-screen min-w-max md:h-auto "
+          className="top-0 max-w-full absolute object-contain h-screen md:h-auto"
         >
           {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
           {width > 640 ? (
-            <source src={planetVideo} type='video/mp4; codecs="avc1"' />
+            <source src={planetVideo} type="video/webm" />
           ) : (
-            <source src={planetVideoM} type='video/mp4; codecs="avc1"' />
+            <source src={planetVideoM} type='video/webm' />
           )}
+          not supported
         </video>
       </div>
     ),
@@ -97,12 +98,12 @@ const Component = () => {
           autoPlay
           loop
           muted
-          className="z-30 top-0 absolute bottom-0 object-contain md:h-auto "
+          className="z-30 w-full top-0 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
-            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+            <source src={prizeVideoM} type='video/webm' />
           ) : (
-            <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+            <source src={prizeVideoM} type='video/webm' />
           )}
         </video>
       </div>
@@ -166,9 +167,9 @@ const Component = () => {
                 className=" top-[8%] absolute bottom-0 object-contain md:h-auto "
               >
                 {width > 640 ? (
-                  <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+                  <source src={prizeVideoM} type='video/webm' />
                 ) : (
-                  <source src={prizeVideoM} type='video/mp4; codecs="avc1"' />
+                  <source src={prizeVideoM} type='video/webm' />
                 )}
               </video>
             </div>
@@ -230,9 +231,10 @@ const Component = () => {
               ),
             },
             {
-              speed: 80,
-              translateY: [width > 640 ? 64 : 57, width > 640 ? 90 : 110],
-              scale: [1, 1.5, "easeOutCubic"],
+              speed: 20,
+              translateY: width > 640 ? [106, 68,'easeInOut'] : [70, 98],
+              scale: [1, 1.4, "easeOutBack"],
+              // easing: "easeInOutCubic",
               children: (
                 <img
                   className="w-screen"

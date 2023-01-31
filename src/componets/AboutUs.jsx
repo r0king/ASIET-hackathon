@@ -17,8 +17,6 @@ const AboutUs = () => {
       <div
         className="
         relative py-[15vh] mx-auto pt-[16vh] px-4 overflow-x-clip 
-        backdrop-blur-sm bg-[rgb(0,0,0,0.75)]
-         border-white/20 
         bg-clip-padding text-[#f0f0f0]  "
       >
         <div className="mx-auto max-w-6xl flex ">

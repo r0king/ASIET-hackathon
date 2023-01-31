@@ -7,7 +7,7 @@ import { Navbar } from "../NavbarPages";
 
 function AboutYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       “What the mind can conceive and believe, it can achieve.”<br /><br />
       <span className="pl-96">Napoleon Hill</span><br /><br />
       In recent times, technology has produced many innovations of holocaustic nature and scientists and researchers in its quest to conquer nature, have evolved various dangerous concepts threatening the very existence of mankind. These pose a big challenge to the meaning and principle of humanity. In this regard, students should play a strong and positive role in determining emerging trends of technology. It is with this great thought in mind, that “Adi Shankara Young Scientists Award" is conceived and designed.
@@ -19,7 +19,7 @@ function AboutYoung(props) {
 
 function ContactYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       Email: innovation@adishankara.ac.in<br /><br />
       Dr. Ajay Kumar<br />
       Associate Professor<br />
@@ -39,7 +39,7 @@ function ContactYoung(props) {
 
 function FaqYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <br /><b>Q1. Should both participants belong to the same school?</b>
       <br />Ans. Yes, both the participants and their mentor must be from the same school
       <br /><br /><b>Q2. Should the participants visit the college at any intermediate stages?</b>
@@ -58,7 +58,7 @@ function FaqYoung(props) {
 
 function GuideYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <b>The contest must meet the following requirements:</b><br /><br />
       <ul className="list-disc pl-10">
         <li>Each team can have a maximum of 2 students.(both from the same school)</li>
@@ -78,7 +78,7 @@ function GuideYoung(props) {
 
 function ConYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       Unlike other similar events, here the students have to go through different stages which will transform them into entrepreneurs. From the second stage onwards, a dedicated mentor will work in tandem with the students.
       <br /><br /><b>Stage 1 Registration <span className="text-[var(--primary-color)]">(Before 07th April 2023)</span></b>
       <br />Each participant must provide an abstract of their project idea in their registration form, which should include
@@ -99,7 +99,7 @@ function ConYoung(props) {
 
 function AwardYoung(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <b>Amazing Cash Prize awaits the winners</b><br /><br />
       <table className="px-4 min-w-[20vw] rounded-md border border-gray-200 overflow-hidden">
         <tbody>
