@@ -80,19 +80,19 @@ function ConYoung(props) {
   return (
     <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       Unlike other similar events, here the students have to go through different stages which will transform them into entrepreneurs. From the second stage onwards, a dedicated mentor will work in tandem with the students.
-      <br /><br /><b>Stage 1 Registration <span className="text-[var(--primary-color)]">(Before 07th April 2023)</span></b>
+      <br /><br /><b>Stage 1 Registration</b>
       <br />Each participant must provide an abstract of their project idea in their registration form, which should include
       <ul className="list-disc md:pl-48 pl-10">
         <li>Summary of the Idea</li>
         <li>Expected Social Relevance/Benefit</li>
       </ul>
-      <br /><br /><b>Stage 2 Idea Pitching <span className="text-[var(--primary-color)]">(15th April 2023)</span></b>
+      <br /><br /><b>Stage 2 Idea Pitching</b>
       <br />This round helps them in honing their talents in presenting an idea succinctly.
-      <br /><br /><b>Stage 3 Prefinal round <span className="text-[var(--primary-color)]">(20-22 April 2023)</span></b>
+      <br /><br /><b>Stage 3 Prefinal round</b>
       <br />This is the stage in which the participants will face the expert panel either directly or via skype. Here they have to present their idea with the help of Power Point Presentation. It would not be a fault finding session but a venue for students to understand how to effectively present their idea before a panel.
       <br /><br />After the third stage, the participant gets a 2 week time to translate their idea to a prototype.
-      <br /><br /><b>Stage 4 Final Round <span className="text-[var(--primary-color)]">(08th May 2023)</span></b>
-      <br />The shortlisted entries would be invited to ASIET Kalady for the Grand Finale in the month of May 2023. They would have to make a final presentation in front of a panel consisting of eminent personalities including CEOs and CTOs of prominent companies, experts from NASSCOM Startups, scientists and academicians. The idea and prototype should again be presented in this stage which could help them explore possible funding options from the Industry and Start Up ventures
+      <br /><br /><b>Stage 4 Final Round</b>
+      <br />The shortlisted entries would be invited to ASIET Kalady for the Grand Finale. They would have to make a final presentation in front of a panel consisting of eminent personalities including CEOs and CTOs of prominent companies, experts from NASSCOM Startups, scientists and academicians. The idea and prototype should again be presented in this stage which could help them explore possible funding options from the Industry and Start Up ventures
     </div>
   )
 }
@@ -180,7 +180,7 @@ function Ideathon() {
         }
       >
         {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} countDate="Apr 07, 2023 00:00:00" />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} countDate="Jul 01, 2023 00:00:00" />
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -192,7 +192,7 @@ function Ideathon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            Registration Ends on 07th April 2023
+            Registration will starts on July 2023
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
@@ -205,7 +205,7 @@ function Ideathon() {
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
           >
-            Register Now
+            Coming Soon
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 ml-2"

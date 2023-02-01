@@ -76,11 +76,11 @@ const Navbar24 = () => {
             Mechathon
           </a>
           <a
-            href="/civilathon"
-            aria-label="click to go to civilathon"
+            href="/civiathon"
+            aria-label="click to go to civiathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Civilathon
+            Civiathon
           </a>
           <a
             href="/young scientist award"

@@ -57,7 +57,7 @@ function App() {
             <Route exact path="/gameathon" element={<Gameathon />} />
             <Route exact path="/young scientist award" element={<Ideathon />} />
             <Route exact path="/mechathon" element={<Mechathon />} />
-            <Route exact path="/civilathon" element={<Civilathon />} />
+            <Route exact path="/civiathon" element={<Civilathon />} />
             <Route exact path="/bizthon" element={<Bizthon />} />
           </Routes>
         </BrowserRouter>
