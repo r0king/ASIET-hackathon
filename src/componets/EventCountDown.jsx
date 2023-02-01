@@ -51,7 +51,7 @@ export default class EventCountDown extends Component {
   render() {
     return (
       <div
-        className="grid grid-flow-col gap-1 auto-cols-max text-xl font-poppins">
+        className="grid grid-flow-col gap-1 auto-cols-max text-xl ">
         <div className="flex flex-col md:p-2 md:pb-0 rounded-box text-base md:text-xl text-neutral-content">
           <span className="countdown text-2xl md:text-3xl font-semibold ">
             <span style={{ "--value": this.state.days }}></span>
