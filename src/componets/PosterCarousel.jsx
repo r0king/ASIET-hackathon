@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import posterImg from "../assets/Gameathon/bgM.png.webp";
+import gameImg from "../assets/Gameathon/bgM.png.webp";
+import bizImg from "../assets/Bizthon/bgM.webp";
+import mechImg from "../assets/Mechathon/bgM.webp";
+import civiImg from "../assets/Civilathon/bgM.webp";
+import techImg from "../assets/Codathon/bgM.webp";
+import codathonImg from "../assets/Codathon/bgM.webp";
+import youngImg from "../assets/Ideathon/bgM.webp";
+
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
 import LazyLoad from "react-lazy-load";
@@ -11,7 +18,7 @@ const PosterCarousel = () => {
       id: 0,
       href: "#link",
       name: "codathon",
-      image: posterImg,
+      image: codathonImg,
       date: "29<sup>th</sup> March"
     },
 
@@ -19,35 +26,42 @@ const PosterCarousel = () => {
       id: 1,
       href: "#link",
       name: "gameathon",
-      image: posterImg,
+      image: gameImg,
       date: "28-30<sup>th</sup> March"
     },
     {
       id: 2,
       href: "#link",
-      name: "young scientists award",
-      image: posterImg,
+      name: "techathon",
+      image: techImg,
       date: "29<sup>th</sup> March"
     },
     {
       id: 3,
       href: "#link",
-      name: "mechathon",
-      image: posterImg,
+      name: "bizthon",
+      image: bizImg,
       date: "29<sup>th</sup> March"
     },
     {
       id: 4,
       href: "#link",
-      name: "civiathon",
-      image: posterImg,
+      name: "mechathon",
+      image: mechImg,
       date: "29<sup>th</sup> March"
     },
     {
       id: 5,
       href: "#link",
-      name: "bizthon",
-      image: posterImg,
+      name: "civiathon",
+      image: civiImg,
+      date: "29<sup>th</sup> March"
+    },
+    {
+      id: 6,
+      href: "#link",
+      name: "young scientists award",
+      image: youngImg,
       date: "29<sup>th</sup> March"
     },
   ];
@@ -175,12 +189,12 @@ const PosterCarousel = () => {
                           {/* ::Image Container */}
                           <LazyLoad offset={350}>
                             <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
-                              <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg overflow-hidden">
+                              <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg  overflow-hidden">
                                 {/* :::image nft */}
                                 <img
                                   src={item.image}
                                   alt=""
-                                  className={`object-cover rounded-md opacity-90 `}
+                                  className={`object-cover rounded-md opacity-90 w-full max-h-[360px]`}
                                 />
                               </span>
                               <span
@@ -202,10 +216,10 @@ const PosterCarousel = () => {
                                 dangerouslySetInnerHTML={{ __html: item.date }}
                                 className={`absolute bottom-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
-                           rounded-full text-base font-light text-white z-1 transition ease-in-out transform -translate-y-5  ${
+                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${
                              position === item.id
-                               ? "z-50 translate-y-0 opacity-100 animate__fadeInUp"
-                               : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
+                               ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
+                               : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
                            } drop-shadow`}
                               >
                               </span>}

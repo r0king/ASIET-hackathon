@@ -16,7 +16,7 @@ import RegistrationGame from "./RegistrationGame";
 import EligibilityGame from "./EligibilityGame";
 import BootcampGame from "./BootcampGame";
 import RulesGame from "./RulesGame";
-import gameathonVideo from "../../assets/Gameathon/intro.mp4";
+import gameathonVideo from "../../assets/Gameathon/intro.webm";
 import ProfImg from "../../assets/Sponsors/titlab.png.webp";
 
 function AboutGame(props) {
