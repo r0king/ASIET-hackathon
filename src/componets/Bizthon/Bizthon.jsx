@@ -36,11 +36,11 @@ function StagesBiz(props) {
         <li>external panel of experts</li>
       </ul><br />
       <b className="text-[var(--primary-color)]">20 TEAMS WILL BE SELECTED FOR STAGE 2</b>
+      <br /><br/>Twenty teams of four each will be then called to the college for the 24 hours hackathon starting on April 28th morning.
+      <br/>Shortlisted teams will do due diligence and homework and come to campus fully prepared.
       <br /><br />
       <b>Stage 2: Strategise</b>
       <ul className="list-disc pl-10 my-3">
-        <li>Twenty teams of four each will be then called to the college for the 24 hours hackathon starting on March 29th morning.</li>
-        <li>Shortlisted teams will do due diligence and homework and come to campus fully prepared.</li>
         <li>Each team have to make a business canvas and business plan model. The business canvas will be presented in a chart while the plan model will be a pitch deck. The deck has to be comprehensive and should incorporate the financial feasibility, marketing feasibility and the supply chain and logistics design.</li>
         <li>Mentors will be provided for each team.</li>
         <li>Those who require training sessions for preparing business canvas and pitch desk will be provided for at a minimum cost</li>
@@ -80,7 +80,7 @@ function RegBiz(props) {
   return (
     <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <li>First Round – Rs.100 per video</li>
-      <li>Second Round – Rs. 400 per team.</li>
+      <li>Second Round – Rs. 1000 per team.</li>
       <li>Charges for training will be based on requirements</li>
     </div>
   )
@@ -161,11 +161,10 @@ function Bizthon() {
           </h2>
           {/* description */}
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Bizthon is organised to evaluate the business outcomes or ideaology of a product via branding,skilling and engagement.
-            This platform invites students as well as professionals to test and showcase their entrepreneurial skills and create a protoype.
-            Bring forth your analytical and creative skills to expose your hidden self.
+            Bizthon is organised to evaluate the overall business acumen of the participant through a three stage process from ideation to business model to the actual user inteface and engagemant. This event is aimed at the undergraduate students whether it be arts & science or technical.All you need be is creative in designing a product analyzing its feasibility, creating a business canvas and desgning a user interface.
+            Lakhs of rupees worth of prizes await you.
 
-            So,grab your ticket to revolutiona nd metamorphise yourselves!
+            So, grab your ticket to success and may be a beautiful career!
 
           </p>
           {/* basic rounded line button */}
