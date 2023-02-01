@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import logo1 from "../../assets/Sponsors/titlab.png.webp";
-import logo2 from "../../assets/Sponsors/titlab.png.webp";
-import logo3 from "../../assets/Sponsors/titlab.png.webp";
-import logo4 from "../../assets/Sponsors/titlab.png.webp";
+import logo1 from "../../assets/Sponsors/sampleLogo.webp";
+import logo2 from "../../assets/Sponsors/sampleLogo.webp";
+import logo3 from "../../assets/Sponsors/sampleLogo.webp";
+import logo4 from "../../assets/Sponsors/sampleLogo.webp";
 import partLogo1 from "../../assets/Sponsors/titlab.png.webp"
 import partLogo2 from "../../assets/Sponsors/ciirc.png.webp"
 import "./Sponsors.css";

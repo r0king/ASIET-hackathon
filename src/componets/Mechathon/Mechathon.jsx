@@ -7,12 +7,45 @@ import { Navbar } from "../NavbarPages";
 
 function AboutMech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      “What the mind can conceive and believe, it can achieve.”<br /><br />
-      <span className="pl-96">Napoleon Hill</span><br /><br />
-      In recent times, technology has produced many innovations of holocaustic nature and scientists and researchers in its quest to conquer nature, have evolved various dangerous concepts threatening the very existence of mankind. These pose a big challenge to the meaning and principle of humanity. In this regard, students should play a strong and positive role in determining emerging trends of technology. It is with this great thought in mind, that “Adi Shankara Young Scientists Award" is conceived and designed.
-      <br /><br />
-      <span className="pl-20">The objective of Adi Shankara Young Scientists Award is to recognize the potentialities of promising young aspiring scientists who dedicate themselves to solve the most pressing problems the world faces. This award aims to recognise and reward quality workmanship, inspire scholarship and support researchers to pursue their passion in creating technological innovations beneficial to mankind.</span>
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>“Logic will get you from A to Z, imagination will get you everywhere.”</b> —Albert Einstein.<br />
+      <br />
+      Mechathon’23 is a technical fiesta conducted by Mechanical Engineering department as a part of Hachathon’23. The program provides a power packed group of competitions and events which would take place side by side. The competition categories include
+      <ul className="list-decimal pl-10">
+        <li>Go Kart</li>
+        <li>Automotive Design Challenge</li>
+      </ul>
+      The event would be a one of its kind experience and comes forth with exciting cash prizes worth 3 lakhs. Competitors from all over India would participate in this mega event.
+    </div>
+  )
+}
+
+function EventMech(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <p className="normal-case">
+        <b>Go Kart</b> <br /><br />
+        <ul className="list-disc pl-10">
+          <li>VENUE: COLLEGE GROUND/HOSTEL AREA</li>
+          <li>COLLABORATORS: SAE INDIA.ASME</li>
+          <li>EXPERT PANEL: EXTERNAL -2 AND INTERNAL 3</li>
+          <li>EVALUATION STRATEGY:STAGE BY STAGE PRESENTATION IN</li>
+          <li>FRONT OF EXPERT PANEL+PERFORMANCE ON THE DAY OF EVENT</li>
+          <li>EXPECTED NUMBER OF TEAMS: 20</li>
+          <li>REGISTRATION FEE: 6000 PER TEAM</li>
+          <li>EXPECTED SPONSERS MAJOR AUTOMOBILE SALES AND SERVICE</li>
+          <li>TOTAL CASH PRIZE: 2 LAKHS</li>
+        </ul>
+        <br />
+        <b>Automotive Design Challenge</b><br /><br />
+        <ul className="list-disc pl-10">
+          <li>DESIGN AND ASSEMBLY OF AUTOMOBILE</li>
+          <li>EVALUATING AERODYNAMIC, AESTHETIC, ERGONOMICS AND SAFETY FEATURES</li>
+          <li>ALLOWED SOFTWARE- FUSION 360</li>
+          <li>TOTAL PRIZE- 25KEXPECTED NO: OF TEAMS-25 (MAXIMUM 2 MEMBERS/TEAM)</li>
+          <li>JUDGING PANEL- 2 MEMBERS FROM EXTERNAL AND 1 MEMBER FROM INTERNAL</li>
+        </ul>
+      </p>
     </div>
   )
 }
@@ -24,7 +57,7 @@ function Mechathon() {
       icon: ArchiveIcon,
       page: <AboutMech />,
     },
-    // { name: "Contest", icon: CloudUploadIcon, page: <ConYoung /> },
+    { name: "Events", icon: CloudUploadIcon, page: <EventMech /> },
     // { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     // { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
@@ -45,26 +78,26 @@ function Mechathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "contain",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "contain",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "right",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "right",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         {/* navbar */}
-                <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -82,7 +115,7 @@ function Mechathon() {
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
             Mechathon is an intensive brainstorming event for the machinists and mechanists out there to pour out their creative and prolific ideas
             and merge our mentorship to institute something new.
-            The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility. 
+            The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility.
             So,grab a ticket to your venture something exciting and launch yourselves!
           </p>
           {/* basic rounded line button */}
@@ -111,7 +144,7 @@ function Mechathon() {
         </div>
       </div>
 
-      <div className="Ideathon  my-10 mb-16">
+      <div className="Mechathon  my-10 mb-16">
         <div className="bg-animation -z-10">
           <div id="stars"></div>
           <div id="stars2"></div>

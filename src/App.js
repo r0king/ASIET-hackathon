@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div
           style={{
             position: "absolute",
@@ -41,7 +41,7 @@ function App() {
           />
           <div className="flex justify-center text-center">Loading…</div>
         </div>
-      ) : (
+      ) : ( */}
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route
@@ -61,7 +61,7 @@ function App() {
             <Route exact path="/bizthon" element={<Bizthon />} />
           </Routes>
         </BrowserRouter>
-      )}
+      {/* )} */}
     </>
   );
 }
