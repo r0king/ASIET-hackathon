@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import gameImg from "../assets/Gameathon/bgM.png.webp";
 import bizImg from "../assets/Bizthon/bgM.webp";
-import mechImg from "../assets/Mechathon/bgM.webp";
+import mechImg from "../assets/Mechathon/batmob.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
 import techImg from "../assets/Codathon/bgM.webp";
 import codathonImg from "../assets/Codathon/bgM.webp";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Mechathon/bg.png.webp";
+import bgImg from "../../assets/Mechathon/gocart.webp";
 import {
   ArchiveIcon,
   // ChartBarIcon,
