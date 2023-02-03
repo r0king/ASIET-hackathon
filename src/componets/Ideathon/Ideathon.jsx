@@ -294,7 +294,7 @@ function Ideathon() {
           <Navbar
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            countDate="Mar 28, 2023 00:00:00"
+            // countDate="Mar 28, 2023 00:00:00"
           />
         </div>
         <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
@@ -327,11 +327,11 @@ function Ideathon() {
         }
       >
         {/* navbar */}
-        <Navbar
+        {/* <Navbar
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           countDate="Jul 01, 2023 00:00:00"
-        />
+        /> */}
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -388,8 +388,8 @@ function Ideathon() {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <div className="bg-black py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden">
+        <div className="py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
             {/* :LARGE DEVICES */}
             <div className="relative  sm:block overflow-hidden">
               {/* ::Navigation Tabs */}

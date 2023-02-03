@@ -5,6 +5,7 @@ import "./Codathon.css";
 import { Navbar } from "../NavbarPages";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import ProfImg from "../../assets/avatar.webp";
+import codathonVideo from "../../assets/Codathon/intro.webm"
 
 function AboutCode(props) {
   return (
@@ -268,6 +269,21 @@ function Codathon() {
 
   return (
     <>
+    <div className="relative h-screen">
+        <div className="absolute z-50 w-full ">
+          <Navbar
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            countDate="Mar 29, 2023 00:00:00"
+          />
+        </div>
+        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
+          {/* navbar */}
+          <video autoPlay muted loop className="md:h-full w-full object-cover">
+            <source src={codathonVideo} type='video/mp4; codecs="avc1"' />
+          </video>
+        </div>
+      </div>
       <div
         className="Codathon"
         style={
@@ -292,7 +308,7 @@ function Codathon() {
         }
       >
         {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
           <h1
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
@@ -347,8 +363,8 @@ function Codathon() {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <div className="bg-black py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
+        <div className="py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden" >
 
 
             {/* :LARGE DEVICES */}

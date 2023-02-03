@@ -28,9 +28,9 @@ const AboutUs = () => {
               opacity={[0.2, 1]}
               targetElement={targetElement}
             >
-              <h3 className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
+              {/* <h3 className="text-lg  pt-10 md:pt-0 text-[var(--primary-accent-color)] font-bold uppercase tracking-wide">
                 About Us
-              </h3>
+              </h3> */}
               {/* ::Title */}
               <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
                 <span className="text-[var(--primary-color)]">About Our</span>{" "}

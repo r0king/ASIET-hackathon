@@ -10,7 +10,7 @@ import {
 import { useWindowSize } from "react-use";
 import "./Mechathon.css";
 import { Navbar } from "../NavbarPages";
-import inroVideo from "../../assets/Mechathon/intro.webm";
+import mechathonVideo from "../../assets/Mechathon/intro.webm";
 
 function AboutMech(props) {
   return (
@@ -68,12 +68,12 @@ function Mechathon() {
           <Navbar
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            countDate="Mar 28, 2023 00:00:00"
+            // countDate="Mar 28, 2023 00:00:00"
           />
         </div>
         <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
           <video autoPlay muted loop className="md:h-full w-full object-cover">
-            <source src={inroVideo} type='video/mp4; codecs="avc1"' />
+            <source src={mechathonVideo} type='video/mp4; codecs="avc1"' />
           </video>
         </div>
       </div>
@@ -168,7 +168,7 @@ function Mechathon() {
           <div id="stars4"></div>
         </div>
         <div className=" py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
             {/* :LARGE DEVICES */}
             <div className="relative  sm:block overflow-hidden">
               {/* ::Navigation Tabs */}

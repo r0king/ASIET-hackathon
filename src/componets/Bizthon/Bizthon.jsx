@@ -4,6 +4,11 @@ import { useWindowSize } from "react-use";
 import "./Bizthon.css";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { Navbar } from "../NavbarPages";
+import ProfImg1 from "../../assets/Bizthon/cont1.webp";
+import ProfImg2 from "../../assets/Bizthon/cont2.webp";
+import ProfImg3 from "../../assets/Bizthon/cont3.webp";
+import bizthonVideo from "../../assets/Bizthon/intro.webm"
+
 
 function AboutBiz(props) {
   return (
@@ -36,8 +41,8 @@ function StagesBiz(props) {
         <li>external panel of experts</li>
       </ul><br />
       <b className="text-[var(--primary-color)]">20 TEAMS WILL BE SELECTED FOR STAGE 2</b>
-      <br /><br/>Twenty teams of four each will be then called to the college for the 24 hours hackathon starting on April 28th morning.
-      <br/>Shortlisted teams will do due diligence and homework and come to campus fully prepared.
+      <br /><br />Twenty teams of four each will be then called to the college for the 24 hours hackathon starting on April 28th morning.
+      <br />Shortlisted teams will do due diligence and homework and come to campus fully prepared.
       <br /><br />
       <b>Stage 2: Strategise</b>
       <ul className="list-disc pl-10 my-3">
@@ -86,17 +91,88 @@ function RegBiz(props) {
   )
 }
 
-function ConBiz() {
+function FAQBiz(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify  h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <h1>0484-2463825</h1>
-      <h1>0484-2466066</h1>
-      <h1>0484-2461933</h1>
-      <h1>Principal: +91 9539010657</h1>
-      <h1>Admissions: +91 9446523599</h1>
-      <h1>info@adishankara.ac.in</h1>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>1. How many participants can there be in a team?</b>
+      <br/>Ans: Minimum 2 and Maximum 4
+      <br/><br/><b>2. Should all the participants be from the same institute?</b>
+      <br/>Ans: Yes. All of the must be from the same institute but can be from different departments
+      <br/><br/><b>3. Who can register for the Bizthon?</b>
+      <br/>Ans: Under graduate students – both arts and science as well as technical
+      <br/><br/><b>4. Can the members be changed after registration?</b>
+      <br/>Ans: They can be changed as long as the full team is not changed
+      <br/><br/><b>5. Should the participants bring any material?</b>
+      <br/>Ans: They should bring their laptops for creating the business model and the final user interface design
+      <br/><br/><b>6. Will accommodation be provided for the participants?</b>
+      <br/>Ans: No. Accommodation can be arranged only at a cost. The event will be for 24 continuous hours and hence there will be need only for rest.
+      <br/><br/><b>7. Will there be elimination?</b>
+      <br/>Ans: There is elimination at the end of each stage
+      <br/><br/><b>8. Will training sessions be provided?</b>
+      <br/>Ans: Training sessions will be provided for preparing the business canvas as well as the presentation deck for the business plan
     </div>
   )
+}
+
+function ConBiz() {
+  const team = [
+    {
+      id: 1,
+      fullName: "Dr.Hari Sunder",
+      contact: "+91 8547721994",
+      imgSrc: ProfImg1,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 2,
+      fullName: "Prof. Nimal CN",
+      contact: "+91 8870590178",
+      imgSrc: ProfImg2,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 3,
+      fullName: "Prof. Renjith KR",
+      contact: "+91 8547538749",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+  ];
+
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-10">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(0, 4).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-sm text-white font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-gray-300 font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Bizthon() {
@@ -109,6 +185,7 @@ function Bizthon() {
     { name: "Stages", icon: CloudUploadIcon, page: <StagesBiz /> },
     { name: "Prize", icon: ChartBarIcon, page: <PrizeBiz /> },
     { name: "Registration", icon: ChartBarIcon, page: <RegBiz /> },
+    { name: "FAQ", icon: ChartBarIcon, page: <FAQBiz /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConBiz /> },
   ]
 
@@ -121,6 +198,21 @@ function Bizthon() {
 
   return (
     <>
+    <div className="relative h-screen">
+        <div className="absolute z-50 w-full ">
+          <Navbar
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            // countDate="Mar 28, 2023 00:00:00"
+          />
+        </div>
+        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
+          {/* navbar */}
+          <video autoPlay muted loop className="md:h-full w-full object-cover">
+            <source src={bizthonVideo} type='video/mp4; codecs="avc1"' />
+          </video>
+        </div>
+      </div>
       <div
         className="Bizthon"
         style={
@@ -145,7 +237,7 @@ function Bizthon() {
         }
       >
         {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -200,8 +292,8 @@ function Bizthon() {
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <div className="bg-black py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
+        <div className="py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden" >
 
 
             {/* :LARGE DEVICES */}

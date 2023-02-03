@@ -307,7 +307,7 @@ function Gameathon() {
           <div id="stars4"></div>
         </div>
         <div className=" py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
             {/* :LARGE DEVICES */}
             <div className="relative  sm:block overflow-hidden">
               {/* ::Navigation Tabs */}

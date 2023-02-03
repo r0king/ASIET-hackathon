@@ -1,4 +1,5 @@
 import React from "react";
+import asietLogo from "../assets/asietlogo.png"
 
 const ContactUs = () => {
   return (
@@ -23,6 +24,7 @@ const ContactUs = () => {
              p-5 sm:p-10
              flex flex-col w-full h-full mx-auto"
           >
+            <img src={asietLogo} alt="Asiet Logo" className="md:p-5 md:pt-0" srcset="" />
             {/* ::Title Contact */}
             <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
@@ -49,9 +51,12 @@ const ContactUs = () => {
               <h3 className="text-base font-medium">Contact</h3>
               <div className="space-y-1 text-base text-[#f0f0f0] text-opacity-60">
                 <p className="font-medium">
-                  0484-2463825
+                  Prof. R Rajaram : +91 9895199204
                   <br />
-                  0484-2466066<br></br> 0484-2461933
+                  Dr. Maneesh T : +91 8848112354
+                  <br>
+                  </br> 
+                  Prof. Ajay Basil Varghese: +91 9995103073 
                 </p>
                 <a
                   href="mailto:#"

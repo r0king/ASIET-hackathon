@@ -1,64 +1,131 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Civilathon/bg.png.webp";
+import bgImg from "../../assets/Techathon/bg.png.webp";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
-import "./Civilathon.css";
+import "./Techathon.css";
 import { Navbar } from "../NavbarPages";
+import ProfImg1 from "../../assets/avatar.webp"
+import ProfImg2 from "../../assets/avatar.webp"
+import ProfImg3 from "../../assets/avatar.webp"
 
-function AboutCivil(props) {
+function AboutTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      A civil engineering technical event intended for engineering/ architecture/ diploma students and/or graduates with sufficient theoretical knowledge and design skills to solve complex civil engineering problems. Registration for the event has to be done individually before the deadline and they can form groups of four after the orientation session provided by the organisers, depending on the areas of expertise of each registered participants.
-      The event is planned for a span of 24 hours which will include wide range of civil engineering areas like engineering drawing, planning, construction management, structural design, soil investigation, sanitary engineering and quantity estimation. This is scheduled in four stages and the participants are expected to find creative, feasible and technical solutions to the stated complex problem designed by the event organisers. The stages will be focused on the above-mentioned areas and will be evaluated by a panel of experts.
-      Essential and relevant training and orientation sessions for the stages will be arranged by the organising committee. Training for softwares AutoCAD, STAAD.PRO, STAAD FOUNDATION, REVIT, PRIMAVERA will be provided prior to the event for registered participants. Certificates will be provided for successful completion of training.
-      The winners of the event as decided by an expert jury panel will be awarded a cash prize of one lakh rupees.
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>Future IoT for Intelligent society</b><br /><br />
+      Techathon offers an exciting platform to develop technical and  young talented  Engineering students a platform to solve  some of the relevant problems and demonstrate their innovative solutions/ products/prototypes/working models. The main objective is to foster a spirit of innovation and inculcating a mindset of problem solving among the budding engineers.We  invite creative, innovative, out-of-the-box, resourceful and appropriate project in the wide domain of IoT. This serves as a platform for integration on technical advancement and impact generation through a holistic aproach for the overall welfare of society.
+      <br /><br /><b>Based on the readiness level of innovation,avenues for advancing ideas to product may also open up</b>
+      <br /><br /><b>Four categories of project proposals</b>
+      <ul className="list-decimal pl-10">
+        <li>IoT based Energy Transformation solutions</li>
+        <li>IoT based smart city and home applications</li>
+        <li>IoT based Health care</li>
+        <li>Process Automation</li>
+      </ul>
     </div>
   )
 }
 
-function DeconCivil(props) {
+function HighTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      A civil engineering technical event intended for engineering/ architecture/ diploma students and/or graduates with sufficient theoretical knowledge and design skills to solve complex civil engineering problems. Registration for the event has to be done individually before the deadline and they can form groups of four after the orientation session provided by the organisers, depending on the areas of expertise of each registered participants.
-      The event is planned for a span of 24 hours which will include wide range of civil engineering areas like engineering drawing, planning, construction management, structural design, soil investigation, sanitary engineering and quantity estimation. This is scheduled in four stages and the participants are expected to find creative, feasible and technical solutions to the stated complex problem designed by the event organisers. The stages will be focused on the above-mentioned areas and will be evaluated by a panel of experts.
-      Essential and relevant training and orientation sessions for the stages will be arranged by the organising committee. Training for softwares AutoCAD, STAAD.PRO, STAAD FOUNDATION, REVIT, PRIMAVERA will be provided prior to the event for registered participants. Certificates will be provided for successful completion of training.
-      The winners of the event as decided by an expert jury panel will be awarded a cash prize of one lakh rupees.
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <ul className="list-decimal pl-10">
+        <li>Wide opportunity to showcase the models and participate in discussions</li>
+        <li>Gain feedback from experts in the domain and get the project validated</li>
+        <li>Connect with industry experts and market leaders</li>
+        <li>Exciting Cash Prizes</li>
+        <li>Enhance presentation and leadership skills.</li>
+      </ul>
     </div>
   )
 }
 
-function RebuildCivil(props) {
+function PhasesTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      An event intended for school students who are interested in building designs and modern construction techniques. The event is planned as a half day session which primarily focus on physical model development. The participants should complete online registration through the website before the deadline. A workshop on relevant areas required for the competition will be provided by subject experts before the commencement of the event. Certificates will be provided for active participation in the workshop. The participants are expected to complete the task using the resources provided by the organisers within the stipulated time.
-      The winners of the event as decided by an expert jury panel will be awarded a cash prize of fifty thousand rupees.
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>Phase 1 : Submission of proposal</b>
+      <br/>Students may form small project teams with a maximum of 4 participants per team. The team shall submit a brief project proposal in the specified template in any of the four relevant categories.
+      <br/><br/><b>Phase 2: Selection of quality proposals</b>
+      <br/>This phase scrutinizes your proposal based on novelty, social relevance and feasibility. Top proposals will be selected and intimated to the team. Suggestions/feedback will be sent to the selected teams. They can incorporate the expert suggestions in their project.
+      <br/><br/><b>Phase 3: Presentation</b>
+      <br/>The selected teams will be asked to present before an expert panel of judges in online mode. The presentations and proposals will be evaluated thoroughly and the top 50 teams will proceed to the Phase 4.
+      <br/><br/><b>Phase 4: Demonstration of project</b>
+      <br/>The selected teams shall demonstrate their products /working models in the ASIET Campus. Expert team from both industries and academics will evaluate the projects. Top 3 projects will receive awards and  cash prizes.
     </div>
   )
 }
 
-function ConCivil() {
+function ConTech() {
+  const team = [
+    {
+      id: 1,
+      fullName: "Contact 1",
+      contact: "+91 9988998819",
+      imgSrc: ProfImg1,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 2,
+      fullName: "Contact 2",
+      contact: "+91 9988998819",
+      imgSrc: ProfImg2,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 3,
+      fullName: "Contact 3",
+      contact: "+91 9988998819",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+  ];
+
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <h1>0484-2463825</h1>
-      <h1>0484-2466066</h1>
-      <h1>0484-2461933</h1>
-      <h1>Principal: +91 9539010657</h1>
-      <h1>Admissions: +91 9446523599</h1>
-      <h1>info@adishankara.ac.in</h1>
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-10">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(0, 4).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-sm text-white font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-gray-300 font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-function Civilathon() {
+function Techathon() {
+
   const tabs = [
     {
       name: "About",
       icon: ArchiveIcon,
-      page: <AboutCivil />
+      page: <AboutTech />
     },
-    { name: "DECONSTRUCT", icon: CloudUploadIcon, page: <DeconCivil /> },
-    { name: "RAPID BUILD", icon: ChartBarIcon, page: <RebuildCivil /> },
-    { name: "Contact", icon: LightBulbIcon, page: <ConCivil /> },
+    { name: "Highlight", icon: CloudUploadIcon, page: <HighTech /> },
+    { name: "Phases", icon: ChartBarIcon, page: <PhasesTech /> },
+    { name: "Contact", icon: LightBulbIcon, page: <ConTech /> },
   ]
 
   const [currentTab, setCurrentTab] = useState("About")
@@ -71,7 +138,7 @@ function Civilathon() {
   return (
     <>
       <div
-        className="Civilathon"
+        className="Techathon"
         style={
           width > 640
             ? {
@@ -102,7 +169,7 @@ function Civilathon() {
             className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Civilathon
+            Techathon
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
@@ -110,7 +177,7 @@ function Civilathon() {
           </h2>
           {/* description */}
           <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Civilathon is a rapid and collaborative hackathon aimed at the discipline of Civil Engineering. It is an excellent platform for students with limited experience in coding to showcase their skills and talents, in the said discipline.
+            Techathon is a rapid and collaborative hackathon aimed at the discipline of Civil Engineering. It is an excellent platform for students with limited experience in coding to showcase their skills and talents, in the said discipline.
             The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility.
 
             So hope on, and get a ticket for this exciting adventure where you can get many networking opportunities, polish your existing skills and flourish yourselves.
@@ -143,15 +210,15 @@ function Civilathon() {
         </div>
       </div>
 
-      <div className="Civilathon  my-10 mb-16">
+      <div className="Techathon  my-10 mb-16">
         <div className="bg-animation -z-10">
           <div id="stars"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
           <div id="stars4"></div>
         </div>
-        <div className="bg-black py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden" >
+        <div className="py-2 sticky top-0 z-10">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden" >
 
 
             {/* :LARGE DEVICES */}
@@ -176,7 +243,7 @@ function Civilathon() {
               {/* ::Sliding Background */}
               <div className="absolute inset-0 mx-auto w-full h-full rounded-full flex flex-col justify-center">
                 <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
-                  <div className="h-full rounded-full bg-[var(--bg-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
+                  <div className="h-full rounded-full bg-[var(--primary-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
                 </div>
               </div>
             </div>
@@ -195,4 +262,4 @@ function Civilathon() {
   );
 }
 
-export default Civilathon;
+export default Techathon;

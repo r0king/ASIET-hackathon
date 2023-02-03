@@ -9,6 +9,7 @@ import Ideathon from "./componets/Ideathon/Ideathon";
 import Mechathon from "./componets/Mechathon/Mechathon";
 import Civilathon from "./componets/Civilathon/Civilathon";
 import Bizthon from "./componets/Bizthon/Bizthon";
+import Techathon from "./componets/Techathon/Techathon";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { useState, useEffect } from "react";
 import LoadingIcons from "react-loading-icons";
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div
           style={{
             position: "absolute",
@@ -41,7 +42,7 @@ function App() {
           />
           <div className="flex justify-center text-center">Loading…</div>
         </div>
-      ) : (
+      ) : ( */}
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route
@@ -59,9 +60,10 @@ function App() {
             <Route exact path="/mechathon" element={<Mechathon />} />
             <Route exact path="/civiathon" element={<Civilathon />} />
             <Route exact path="/bizthon" element={<Bizthon />} />
+            <Route exact path="/techathon" element={<Techathon />} />
           </Routes>
         </BrowserRouter>
-      )}
+      {/* )} */}
     </>
   );
 }

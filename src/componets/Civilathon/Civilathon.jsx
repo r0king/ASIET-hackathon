@@ -7,6 +7,7 @@ import { Navbar } from "../NavbarPages";
 import ProfImg1 from "../../assets/Civilathon/cont3.webp"
 import ProfImg2 from "../../assets/Civilathon/cont1.webp"
 import ProfImg3 from "../../assets/Civilathon/cont2.webp"
+import civiathonVideo from "../../assets/Civilathon/intro.webm"
 
 function AboutCivil(props) {
   return (
@@ -245,6 +246,21 @@ function Civilathon() {
 
   return (
     <>
+    <div className="relative h-screen">
+        <div className="absolute z-50 w-full ">
+          <Navbar
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            // countDate="Mar 28, 2023 00:00:00"
+          />
+        </div>
+        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
+          {/* navbar */}
+          <video autoPlay muted loop className="md:h-full w-full object-cover">
+            <source src={civiathonVideo} type='video/mp4; codecs="avc1"' />
+          </video>
+        </div>
+      </div>
       <div
         className="Civilathon"
         style={
@@ -269,7 +285,7 @@ function Civilathon() {
         }
       >
         {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+        {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
@@ -326,7 +342,7 @@ function Civilathon() {
           <div id="stars4"></div>
         </div>
         <div className=" py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-transparent overflow-hidden">
+          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
 
 
             {/* :LARGE DEVICES */}
