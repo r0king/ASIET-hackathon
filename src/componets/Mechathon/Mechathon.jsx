@@ -3,38 +3,120 @@ import bgImg from "../../assets/Mechathon/bg.png.webp";
 import {
   ArchiveIcon,
   // ChartBarIcon,
-  // CloudUploadIcon,
-  // LightBulbIcon,
+  CloudUploadIcon,
+  LightBulbIcon,
   // ViewGridIcon,
 } from "@heroicons/react/solid";
 import { useWindowSize } from "react-use";
 import "./Mechathon.css";
 import { Navbar } from "../NavbarPages";
 import mechathonVideo from "../../assets/Mechathon/intro.webm";
+import ProfImg1 from "../../assets/avatar.webp";
+import ProfImg2 from "../../assets/avatar.webp";
+import ProfImg3 from "../../assets/avatar.webp";
 
 function AboutMech(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      “What the mind can conceive and believe, it can achieve.”
-      <span className="pl-10">Napoleon Hill</span>
-      In recent times, technology has produced many innovations of holocaustic
-      nature and scientists and researchers in its quest to conquer nature, have
-      evolved various dangerous concepts threatening the very existence of
-      mankind. These pose a big challenge to the meaning and principle of
-      humanity. In this regard, students should play a strong and positive role
-      in determining emerging trends of technology. It is with this great
-      thought in mind, that “Adi Shankara Young Scientists Award" is conceived
-      and designed.
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <b>“Logic will get you from A to Z, imagination will get you everywhere.”</b> —Albert Einstein.<br />
       <br />
-      <br />
-      <span className="pl-20">
-        The objective of Adi Shankara Young Scientists Award is to recognize the
-        potentialities of promising young aspiring scientists who dedicate
-        themselves to solve the most pressing problems the world faces. This
-        award aims to recognise and reward quality workmanship, inspire
-        scholarship and support researchers to pursue their passion in creating
-        technological innovations beneficial to mankind.
-      </span>
+      Mechathon’23 is a technical fiesta conducted by Mechanical Engineering department as a part of Hachathon’23. The program provides a power packed group of competitions and events which would take place side by side. The competition categories include
+      <ul className="list-decimal pl-10">
+        <li>Go Kart</li>
+        <li>Automotive Design Challenge</li>
+      </ul>
+      The event would be a one of its kind experience and comes forth with exciting cash prizes worth 3 lakhs. Competitors from all over India would participate in this mega event.
+    </div>
+  )
+}
+
+function EventMech(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <p className="normal-case">
+        <b>Go Kart</b> <br /><br />
+        <ul className="list-disc pl-10">
+          <li>VENUE: COLLEGE GROUND/HOSTEL AREA</li>
+          <li>COLLABORATORS: SAE INDIA.ASME</li>
+          <li>EXPERT PANEL: EXTERNAL -2 AND INTERNAL 3</li>
+          <li>EVALUATION STRATEGY:STAGE BY STAGE PRESENTATION IN</li>
+          <li>FRONT OF EXPERT PANEL+PERFORMANCE ON THE DAY OF EVENT</li>
+          <li>EXPECTED NUMBER OF TEAMS: 20</li>
+          <li>REGISTRATION FEE: 6000 PER TEAM</li>
+          <li>EXPECTED SPONSERS MAJOR AUTOMOBILE SALES AND SERVICE</li>
+          <li>TOTAL CASH PRIZE: 2 LAKHS</li>
+        </ul>
+        <br />
+        <b>Automotive Design Challenge</b><br /><br />
+        <ul className="list-disc pl-10">
+          <li>DESIGN AND ASSEMBLY OF AUTOMOBILE</li>
+          <li>EVALUATING AERODYNAMIC, AESTHETIC, ERGONOMICS AND SAFETY FEATURES</li>
+          <li>ALLOWED SOFTWARE- FUSION 360</li>
+          <li>TOTAL PRIZE- 25KEXPECTED NO: OF TEAMS-25 (MAXIMUM 2 MEMBERS/TEAM)</li>
+          <li>JUDGING PANEL- 2 MEMBERS FROM EXTERNAL AND 1 MEMBER FROM INTERNAL</li>
+        </ul>
+      </p>
+    </div>
+  )
+}
+
+function ContactMech() {
+  const team = [
+    {
+      id: 1,
+      fullName: "Dr. Jithesh",
+      contact: "+91 9947035813",
+      imgSrc: ProfImg1,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 2,
+      fullName: "Dr. Rahul S",
+      contact: "+91 8301888190",
+      imgSrc: ProfImg2,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 3,
+      fullName: "Ms. Harshananda TN",
+      contact: "+91 8943046975",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+  ];
+
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-10">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(0, 4).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-sm text-white font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-gray-300 font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -46,14 +128,13 @@ function Mechathon() {
       icon: ArchiveIcon,
       page: <AboutMech />,
     },
-    // { name: "Contest", icon: CloudUploadIcon, page: <ConYoung /> },
+    { name: "Events", icon: CloudUploadIcon, page: <EventMech /> },
     // { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     // { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
-    // { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
-  ];
-
-  const [currentTab, setCurrentTab] = useState("About");
+    { name: "Contact", icon: LightBulbIcon, page: <ContactMech /> },
+  ]
+    const [currentTab, setCurrentTab] = useState("About");
 
   const translateValue =
     (tabs.findIndex((tab) => tab.name === currentTab) / tabs.length) * 100;
