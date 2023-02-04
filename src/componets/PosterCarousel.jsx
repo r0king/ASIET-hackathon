@@ -4,7 +4,7 @@ import gameImg from "../assets/Gameathon/bgM.png.webp";
 import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/batmob.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
-import techImg from "../assets/Codathon/bgM.webp";
+import techImg from "../assets/Techathon/robo_m.webp";
 import codathonImg from "../assets/Codathon/bgM.webp";
 import youngImg from "../assets/Ideathon/bgM.webp";
 

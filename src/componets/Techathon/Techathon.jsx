@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Techathon/bg.png.webp";
+import bgImg from "../../assets/Techathon/tech2.webp";
+import bgImgM from "../../assets/Techathon/robo_m.webp";
+
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Techathon.css";
@@ -151,11 +153,11 @@ function Techathon() {
               boxShadow: "0px 0px 50px 0px var(--bg-color)",
             }
             : {
-              backgroundImage: `url(${bgImg})`,
+              backgroundImage: `url(${bgImgM})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              height: "150vh",
+              height: "140vh",
               boxShadow: "0px 0px 50px 0px var(--bg-color)",
             }
         }

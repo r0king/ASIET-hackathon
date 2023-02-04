@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Codathon/bg.png.webp";
+import bgImg from "../../assets/Codathon/code.webp";
 import { useWindowSize } from "react-use";
 import "./Codathon.css";
 import { Navbar } from "../NavbarPages";
@@ -321,7 +321,7 @@ function Codathon() {
             24 Hours of Innovation
           </h2>
           {/* description */}
-          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          <p className="text-base text-[#f0f0f0c9] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
             Codathon is a Codathon is a 24hrs Hackathon event, where
             aspiring student entrepreneurs can come collaborate and build their
             startup ideas to a minimum viable product with the support of
