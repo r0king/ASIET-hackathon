@@ -60,7 +60,7 @@ function Tab({ tabs, eventName }) {
         return (
           <div
             key={tab.name}
-            className="md:mx-16 mx-6 my-10 text-[var(--primary-color)]"
+            className="md:mx-16 mx-6 my-10 text-[var(--secondary-color)]"
           >
             {tab.name === currentTab ? tab.page : ""}
           </div>

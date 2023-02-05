@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import bgImgD from "../../assets/Techathon/bgD.webp";
 import bgImgM from "../../assets/Techathon/bgM.webp";
 import {

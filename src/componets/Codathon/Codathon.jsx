@@ -1,6 +1,6 @@
 import React from "react";
 import bgImgD from "../../assets/Codathon/bgD.webp";
-import bgImgM from "../../assets/Codathon/bgM2.webp";
+import bgImgM from "../../assets/Codathon/bgM.webp";
 import { useWindowSize } from "react-use";
 import "./Codathon.css";
 import {
@@ -101,12 +101,9 @@ function StagesCode(props) {
 
 function GuideCode(props) {
   return (
-    <div className="md:p-10 p-3 leading-7 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className='md:p-10 p-3 leading-7 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <ul className="list-decimal pl-10">
-        <li>
-          Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on
-          29-03-2023.
-        </li>
+        <li>Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on 29-03-2023.</li>
         <li>Registration starts at 9.00 am.</li>
         <li>Breakfast at 08.30 am- 09.30 am.</li>
         <li>Inauguration at 09.00 am on 29-03-2022. Venue : Auditorium</li>
