@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Codathon/bg.png.webp";
+import bgImgD from "../../assets/Codathon/bgD.webp";
+import bgImgM from "../../assets/Codathon/bgM2.webp";
 import { useWindowSize } from "react-use";
 import "./Codathon.css";
 import { Navbar } from "../NavbarPages";
@@ -210,7 +211,7 @@ function Codathon() {
 
   return (
     <>
-    <div className="relative h-screen">
+    <div className=" relative h-screen">
         <div className="absolute z-50 w-full ">
           <Navbar
             isOpen={isOpen}
@@ -230,16 +231,17 @@ function Codathon() {
         style={
           width > 640
             ? {
-              backgroundImage: `url(${bgImg})`,
+              backgroundImage: `url(${bgImgD})`,
               backgroundSize: "contain",
               backgroundPosition: "right 0",
               backgroundRepeat: "no-repeat",
-              height: "140vh",
+              height: "116vh",
               backgroundColor: "var(--bg-color)",
               boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              
             }
             : {
-              backgroundImage: `url(${bgImg})`,
+              backgroundImage: `url(${bgImgM})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -250,31 +252,25 @@ function Codathon() {
       >
         {/* navbar */}
         {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="Codathon flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
           <h1
-            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[#0eedf5] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
             style={{ fontFamily: "Azonix" }}
           >
-            Codathon
+            Codathon 2K23
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            24 Hours of Innovation
+          <h2 className="text-lg font-bold text-white uppercase md:text-xl 2xl:text-2xl md:pt-7">
+            29th March 2023
           </h2>
           {/* description */}
-          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Codathon is a Codathon is a 24hrs Hackathon event, where
-            aspiring student entrepreneurs can come collaborate and build their
-            startup ideas to a minimum viable product with the support of
-            Nasscom 10k Startups , MakerGram and Google Cloud. It has been
-            designed specifically for students who have an grails in
-            entrepreneurship and innovation. So, come forth ,grab and your
-            ticket and prove your mettle!
+          <p className="text-base text-justify text-white 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          Adi Shankara Codeathon is a national program aimed at empowering students to tackle pressing issues in their daily lives through product innovation and problem-solving. The event is a 24-hour coding competition where participants work to create functional software within the given timeframe. This can include programming languages, operating systems, applications, APIs, or specific subject matter and demographic groups of the programmers. The objective of the codeathon is to foster a culture of innovation and encourage students to approach problems with a creative and solutions-focused mindset.`
           </p>
           {/* basic rounded line button */}
           <button
             className=
-            "md:w-1/4 text-center max-h-16 md:max-h-auto text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+            "md:w-1/4 text-center max-h-16 md:max-h-auto text-white rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[#0eedf5] flex items-center justify-center border border-[#0eedf5] hover:border-white"
             style={{
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
@@ -330,7 +326,7 @@ function Codathon() {
               {/* ::Sliding Background */}
               <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
                 <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
-                  <div className="h-full rounded-full bg-[var(--primary-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
+                  <div className="h-full rounded-full bg-[#0eedf5]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
                 </div>
               </div>
             </div>
@@ -338,7 +334,7 @@ function Codathon() {
         </div>
         {tabs.map(tab => {
           return (
-            <div className="md:mx-16 mx-6 my-10 text-[var(--secondary-color)]">
+            <div className="md:mx-16 mx-6 my-10 text-white">
               {tab.name === currentTab ? tab.page : ""}
             </div>
           )

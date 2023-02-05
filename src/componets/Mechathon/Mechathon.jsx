@@ -134,7 +134,7 @@ function Mechathon() {
     // { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactMech /> },
   ]
-    const [currentTab, setCurrentTab] = useState("About");
+  const [currentTab, setCurrentTab] = useState("About");
 
   const translateValue =
     (tabs.findIndex((tab) => tab.name === currentTab) / tabs.length) * 100;
@@ -149,7 +149,7 @@ function Mechathon() {
           <Navbar
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            // countDate="Mar 28, 2023 00:00:00"
+          // countDate="Mar 28, 2023 00:00:00"
           />
         </div>
         <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
@@ -163,22 +163,22 @@ function Mechathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "120vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "120vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         <div className="Mechathon flex h-full">
@@ -193,25 +193,19 @@ function Mechathon() {
               className="text-2xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
               style={{ fontFamily: "Azonix" }}
             >
-              Mech 2K23
+              Mechathon 2K23
             </h1>
             {/* sub heading */}
             <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-              28TH, 29TH & 30TH MARCH 2023
+              24 hours of innovation
             </h2>
             {/* description */}
             <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
-              Join us for a 3-day event at Adi Shankara Institute of Engineering
-              & Technology where students can engage in team-working, explore
-              their creative and technology skills, and challenge themselves to
-              develop a game in just three days. With the support of industry
-              partner TILTLABS, participants will be provided with a concept and
-              access to tools such as Unity and Blender to create either casual
-              or hyper-casual games.
+              Mechathon'23 is a technical festival organized by the Mechanical Engineering department as part of Hachathon'23. The event offers a diverse range of competitions and events, including Go-Kart and Automotive Design Challenge, that will bring together participants from across India. The competition categories are expected to be challenging and exciting, testing the skills and creativity of participants in the field of mechanical engineering, with exciting cash prizes worth 3 lakhs on offer. Mechathon'23 promises to be a one-of-a-kind experience for participants and a showcase of the latest trends and advancements in mechanical engineering.
             </p>
             {/* basic rounded line button */}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSflq22uUuGh9orK2Wry4Sucx-UlCsqIdJbtqx2atCpD97QZeQ/viewform"
+              href=""
               rel="noreferrer"
               target={"_blank"}
             >
@@ -260,11 +254,10 @@ function Mechathon() {
                     return (
                       <li
                         key={tab.name}
-                        className={`relative z-10 rounded-full text-base ${
-                          tab.name === currentTab
+                        className={`relative z-10 rounded-full text-base ${tab.name === currentTab
                             ? "transition duration-300 text-black"
                             : "text-gray-400 hover:text-gray-500"
-                        }`}
+                          }`}
                       >
                         <button
                           type="button"

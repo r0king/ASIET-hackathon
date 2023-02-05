@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Techathon/bg.png.webp";
+import bgImg from "../../assets/Techathon/bgD.webp";
+import bgImgM from "../../assets/Techathon/bgM.webp";
 import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
 import { useWindowSize } from "react-use";
 import "./Techathon.css";
@@ -151,7 +152,7 @@ function Techathon() {
               boxShadow: "0px 0px 50px 0px var(--bg-color)",
             }
             : {
-              backgroundImage: `url(${bgImg})`,
+              backgroundImage: `url(${bgImgM})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -176,13 +177,8 @@ function Techathon() {
             24 Hours of Innovation
           </h2>
           {/* description */}
-          <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Techathon is a rapid and collaborative hackathon aimed at the discipline of Civil Engineering. It is an excellent platform for students with limited experience in coding to showcase their skills and talents, in the said discipline.
-            The innovatory ideas would be judged by a panel of industry experts based on their creativity, approachability, and feasibility.
-
-            So hope on, and get a ticket for this exciting adventure where you can get many networking opportunities, polish your existing skills and flourish yourselves.
-
-
+          <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          Adi Shankar Techathon'23 provides a dynamic platform for talented engineering students to showcase their innovative solutions, products, prototypes, and working models to address relevant problems. The main objective is to foster a spirit of innovation and encourage problem-solving among aspiring engineers, specifically within the wide domain of IoT. The event invites creative, resourceful, and impactful projects that demonstrate technical advancement and contribute to the overall welfare of society. This platform serves as an opportunity for students to integrate technical knowledge and demonstrate their ability to drive positive change through a holistic approach.
           </p>
           {/* basic rounded line button */}
           <button
