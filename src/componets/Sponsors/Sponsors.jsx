@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+// { useEffect, useState } from "react";
 import logo1 from "../../assets/Sponsors/sampleLogo.webp";
 import logo2 from "../../assets/Sponsors/sampleLogo.webp";
 import logo3 from "../../assets/Sponsors/sampleLogo.webp";
@@ -14,29 +15,29 @@ import { useWindowSize } from "react-use";
 const Sponsors = () => {
   const { width } = useWindowSize();
 
-  const targetTitleRef = React.useRef(null);
-  const targetPlatinumRef = React.useRef(null);
-  const targetDiamondRef = React.useRef(null);
-  const targetSilverRef = React.useRef(null);
-  const targetGoldRef = React.useRef(null);
+  // const targetTitleRef = React.useRef(null);
+  // const targetPlatinumRef = React.useRef(null);
+  // const targetDiamondRef = React.useRef(null);
+  // const targetSilverRef = React.useRef(null);
+  // const targetGoldRef = React.useRef(null);
 
-  const [targetTitle, setTitle] = useState();
-  const [targetPlatinum, setPlatinum] = useState();
-  const [targetDiamond, setDiamond] = useState();
-  const [targetSilver, setSilver] = useState();
-  const [targetGold, setGold] = useState();
+  // const [targetTitle, setTitle] = useState();
+  // const [targetPlatinum, setPlatinum] = useState();
+  // const [targetDiamond, setDiamond] = useState();
+  // const [targetSilver, setSilver] = useState();
+  // const [targetGold, setGold] = useState();
 
-  useEffect(() => {
-    setTitle(targetTitleRef.current);
-    setPlatinum(targetPlatinumRef.current);
-    setDiamond(targetDiamondRef.current);
-    setGold(targetGoldRef.current);
-    setSilver(targetSilverRef.current);
-  }, []);
+  // useEffect(() => {
+  //   setTitle(targetTitleRef.current);
+  //   setPlatinum(targetPlatinumRef.current);
+  //   setDiamond(targetDiamondRef.current);
+  //   setGold(targetGoldRef.current);
+  //   setSilver(targetSilverRef.current);
+  // }, []);
   return (
     <div className="sponsers_main_container z-20 -mt-10 md:mt-28 bg-gradient-to-b from-black via-black to-transparent">
       <div className="sponsors_container">
-        <div className="sponsor_title" ref={targetTitleRef}>
+        {/* <div className="sponsor_title" ref={targetTitleRef}>
           <h1 className="text-2xl p-5 mt-20 font-bold">
             <span>OUR</span> SPONSORS
           </h1>
@@ -788,19 +789,19 @@ const Sponsors = () => {
               </LazyLoad>
             </div>
           )}
-        </div>
+        </div> */}
         <div className="sponsor_title">
-          <h1 className="text-2xl  font-bold p-5">
+          <h1 className="text-2xl  font-bold p-5 pt-20">
             <span>OUR</span> PARTNERS
           </h1>
         </div>
         <div className="sponsors_silver sponsors">
           {width > 640 ? (
             <Parallax
-              className="mt-8 md:-mt-14"
+              className="mt-8 md:mt-0"
               scale={[0.7, 1]}
               opacity={[0, 1]}
-              targetElement={targetSilver}
+              // targetElement={targetSilver}
             >
               <LazyLoad offset={300}>
                 <div className="images ">

@@ -3,7 +3,7 @@ import bgImg from "../../assets/Codathon/bg.png.webp";
 import { useWindowSize } from "react-use";
 import "./Codathon.css";
 import { Navbar } from "../NavbarPages";
-import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
+import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon ,ViewGridIcon} from '@heroicons/react/solid'
 import ProfImg from "../../assets/avatar.webp";
 import codathonVideo from "../../assets/Codathon/intro.webm"
 
@@ -19,6 +19,14 @@ function AboutCode(props) {
         <li>Knowledge</li>
         <li>Opportunity</li>
       </ul>
+    </div>
+  )
+}
+
+function RegisCode(props) {
+  return (
+    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <h1>Coming Soon</h1>
     </div>
   )
 }
@@ -74,7 +82,7 @@ function StagesCode(props) {
 function GuideCode(props) {
   return (
     <div className='md:p-10 p-3 leading-7 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <ul className="list-decimal">
+      <ul className="list-decimal pl-10">
         <li>Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on 29-03-2023.</li>
         <li>Registration starts at 9.00 am.</li>
         <li>Breakfast at 08.30 am- 09.30 am.</li>
@@ -172,74 +180,6 @@ function ContactCode() {
               </div>
             ))}
           </div>
-
-          {/* ::Members Row 2 */}
-          <div className="flex flex-wrap justify-center items-center">
-            {team.slice(4, 9).map((member) => (
-              <div
-                key={member.id}
-                className="flex-shrink-0 group relative m-5 p-5 w-40 h-40 flex justify-center items-center rounded-full bg-black overflow-hidden"
-              >
-                {/* :::picture */}
-                <img
-                  src={member.imgSrc}
-                  alt={member.imgAlt}
-                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-10 transition duration-200"
-                />
-                {/* :::details */}
-                <div className="relative flex flex-col justify-center items-center space-y-2">
-                  <p className="text-lg text-white font-bold">
-                    {member.fullName}
-                  </p>
-                  <p className="text-sm text-gray-300 font-medium">
-                    {member.contact}
-                  </p>
-                  <span className="flex items-center space-x-4">
-                    <a
-                      href={member.fbLink}
-                      className="text-gray-300 hover:text-white"
-                    >
-                      <svg
-                        className="w-4 h-4 fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={member.twLink}
-                      className="text-gray-300 hover:text-white"
-                    >
-                      <svg
-                        className="w-4 h-4 fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={member.instaLink}
-                      className="text-gray-300 hover:text-white"
-                    >
-                      <svg
-                        className="w-4 h-4 fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>
@@ -253,6 +193,7 @@ function Codathon() {
       icon: ArchiveIcon,
       page: <AboutCode />,
     },
+    { name: "Regsitration", icon: ViewGridIcon, page: <RegisCode /> },
     { name: "Streams & Themes", icon: CloudUploadIcon, page: <ThemesCode /> },
     { name: "Stages", icon: ChartBarIcon, page: <StagesCode /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
