@@ -3,7 +3,7 @@ import asietLogo from "../assets/asietlogo.png"
 
 const ContactUs = () => {
   return (
-    <div className="flex p-3 md:p-6 justify-center items-center relative z-10">
+    <div id="contact" className="flex p-3 md:p-6 justify-center items-center relative z-10">
       <div
         className="
          w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.25)]
@@ -54,16 +54,20 @@ const ContactUs = () => {
                   Prof. R Rajaram : +91 9895199204
                   <br />
                   Dr. Maneesh T : +91 8848112354
-                  <br>
-                  </br> 
+                  <br />
+                  P V Rajaraman: +91 9940418252
+                  <br />
                   Prof. Ajay Basil Varghese: +91 9995103073 
+                  <br />
+                  Srideep Krishnan: +91 9496800405
+                  <br /><br />
                 </p>
                 <a
                   href="mailto:#"
                   aria-label="mail"
                   className="inline-block font-medium hover:text-[#f0f0f0]"
                 >
-                  info@adishankara.ac.in
+                  hackathon@adishankara.ac.in
                 </a>
               </div>
             </div>

@@ -101,10 +101,10 @@ const Navbar24 = () => {
           </a>
           <a
             href="https://www.adishankara.ac.in/contact-us"
-            target="_blank"
             aria-label="click to go to contact us"
+            target={"_blank"}
+            rel={"noreferrer"}
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
-            rel="noreferrer"
           >
             Contact US
           </a>

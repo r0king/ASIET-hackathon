@@ -4,7 +4,7 @@ import gameImg from "../assets/Gameathon/bgM.png.webp";
 import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/batmob.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
-import techImg from "../assets/Techathon/robo_m.webp";
+import techImg from "../assets/Techathon/bgM.webp";
 import codathonImg from "../assets/Codathon/bgM.webp";
 import youngImg from "../assets/Ideathon/bgM.webp";
 
@@ -34,35 +34,35 @@ const PosterCarousel = () => {
       href: "#link",
       name: "techathon",
       image: techImg,
-      date: "29<sup>th</sup> March"
+      date: "Coming Soon"
     },
     {
       id: 3,
       href: "#link",
       name: "bizthon",
       image: bizImg,
-      date: "29<sup>th</sup> March"
+      date: "Coming Soon"
     },
     {
       id: 4,
       href: "#link",
       name: "mechathon",
       image: mechImg,
-      date: "29<sup>th</sup> March"
+      date: "Coming Soon"
     },
     {
       id: 5,
       href: "#link",
       name: "civiathon",
       image: civiImg,
-      date: "29<sup>th</sup> March"
+      date: "Coming Soon"
     },
     {
       id: 6,
       href: "#link",
       name: "young scientists award",
       image: youngImg,
-      date: "29<sup>th</sup> March"
+      date: "Coming Soon"
     },
   ];
 

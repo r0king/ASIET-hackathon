@@ -252,7 +252,7 @@ function Bizthon() {
             Service with a tech twist
           </h2>
           {/* description */}
-          <p className="text-base text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
             Bizthon is organised to evaluate the overall business acumen of the participant through a three stage process from ideation to business model to the actual user inteface and engagemant. This event is aimed at the undergraduate students whether it be arts & science or technical.All you need be is creative in designing a product analyzing its feasibility, creating a business canvas and desgning a user interface.
             Lakhs of rupees worth of prizes await you.
 
