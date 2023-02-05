@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import bgImgD from "../../assets/Codathon/bgD.webp";
-import bgImgM from "../../assets/Codathon/bgM2.webp";
+import bgImgM from "../../assets/Codathon/bgM.webp";
 import { useWindowSize } from "react-use";
 import "./Codathon.css";
 import { Navbar } from "../NavbarPages";

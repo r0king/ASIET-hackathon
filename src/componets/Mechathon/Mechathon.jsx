@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Mechathon/gocart.webp";
+import bgImg from "../../assets/Mechathon/bgD.webp";
+import bgImgM from "../../assets/Mechathon/bgM.webp";
+
 import {
   ArchiveIcon,
   // ChartBarIcon,
@@ -172,7 +174,7 @@ function Mechathon() {
               boxShadow: "0px 0px 50px 0px var(--bg-color)",
             }
             : {
-              backgroundImage: `url(${bgImg})`,
+              backgroundImage: `url(${bgImgM})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
