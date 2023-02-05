@@ -5,7 +5,7 @@ import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/batmob.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
 import techImg from "../assets/Techathon/bgM.webp";
-import codathonImg from "../assets/Codathon/bgM.webp";
+import codathonImg from "../assets/Codathon/bgM3.webp";
 import youngImg from "../assets/Ideathon/bgM.webp";
 
 import Tilt from "react-parallax-tilt";
