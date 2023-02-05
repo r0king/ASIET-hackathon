@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useWindowSize } from "react-use";
 
-function Tab({ tabs }) {
-  console.log(tabs);
+function Tab({ tabs, eventName }) {
   const [currentTab, setCurrentTab] = useState("About");
 
   const translateValue =
@@ -11,10 +10,9 @@ function Tab({ tabs }) {
   const { width } = useWindowSize();
 
   return (
-    <>
+    <div className={`${eventName} relative my-10 mb-16`}>
       <div className=" py-2 sticky top-0 z-10">
-        <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
-          {/* :LARGE DEVICES */}
+        <div className="w-fit max-w-[90vw] mx-auto rounded-full border border-gray-200 bg-black/70 overflow-hidden">
           <div className="relative  sm:block overflow-hidden">
             {/* ::Navigation Tabs */}
             <nav aria-label="Tabs">
@@ -24,7 +22,7 @@ function Tab({ tabs }) {
                   return (
                     <li
                       key={tab.name}
-                      className={`relative z-10 rounded-full text-base ${
+                      className={`relative z-10 flex justify-center rounded-full text-base ${
                         tab.name === currentTab
                           ? "transition duration-300 text-black"
                           : "text-gray-400 hover:text-gray-500"
@@ -67,8 +65,8 @@ function Tab({ tabs }) {
             {tab.name === currentTab ? tab.page : ""}
           </div>
         );
-      })}{" "}
-    </>
+      })}
+    </div>
   );
 }
 

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import bgImgDesk from "../../assets/Gameathon/bgD.png.webp";
 import bgImgMobile from "../../assets/Gameathon/bgM.png.webp";
 import { useWindowSize } from "react-use";
 import "./Gameathon.css";
-import { Navbar } from "../NavbarPages";
 import {
   ArchiveIcon,
   ChartBarIcon,
@@ -21,6 +20,8 @@ import ProfImg1 from "../../assets/Gameathon/cont1.jpg";
 import ProfImg2 from "../../assets/Gameathon/cont2.jpg";
 import ProfImg3 from "../../assets/avatar.webp";
 import Tab from "../Utils/Tab";
+import Bg from "../Utils/Bg";
+import NavWrapper from "../Utils/NavWrapper";
 
 function AboutGame(props) {
   return (
@@ -125,27 +126,13 @@ function Gameathon() {
   ];
 
   const { width } = useWindowSize();
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {}, []);
+
+  const event = "Gameathon";
+  const eventDate = "Mar 28, 2023 00:00:00";
 
   return (
     <>
-      {/* intro animation gameathonVideo */}
-      <div className="relative h-screen">
-        <div className="absolute z-50 w-full ">
-          <Navbar
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            countDate="Mar 28, 2023 00:00:00"
-          />
-        </div>
-        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
-          {/* navbar */}
-          <video autoPlay muted loop className="md:h-full w-full object-cover">
-            <source src={gameathonVideo} type='video/mp4; codecs="avc1"' />
-          </video>
-        </div>
-      </div>
+      <NavWrapper eventDate={eventDate} introVideo={gameathonVideo} />
       <div
         className="relative"
         style={
@@ -224,15 +211,8 @@ function Gameathon() {
           </div>
         </div>
       </div>
-      <div className="bg-animation -z-10">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-      </div>
-      <div className="Gameathon relative my-10 mb-16">
-        <Tab tabs={tabs} />
-      </div>
+      <Bg />
+      <Tab tabs={tabs} eventName={event} />
     </>
   );
 }

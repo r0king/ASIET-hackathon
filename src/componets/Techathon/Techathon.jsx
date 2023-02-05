@@ -1,21 +1,45 @@
 import React, { useState } from "react";
-import bgImg from "../../assets/Techathon/bgD.webp";
+import bgImgD from "../../assets/Techathon/bgD.webp";
 import bgImgM from "../../assets/Techathon/bgM.webp";
-import { ArchiveIcon, ChartBarIcon, CloudUploadIcon, LightBulbIcon } from '@heroicons/react/solid'
+import {
+  ArchiveIcon,
+  ChartBarIcon,
+  CloudUploadIcon,
+  LightBulbIcon,
+} from "@heroicons/react/solid";
 import { useWindowSize } from "react-use";
 import "./Techathon.css";
-import { Navbar } from "../NavbarPages";
-import ProfImg1 from "../../assets/avatar.webp"
-import ProfImg2 from "../../assets/avatar.webp"
-import ProfImg3 from "../../assets/avatar.webp"
+import ProfImg1 from "../../assets/avatar.webp";
+import ProfImg2 from "../../assets/avatar.webp";
+import ProfImg3 from "../../assets/avatar.webp";
+import NavWrapper from "../Utils/NavWrapper";
+import Bg from "../Utils/Bg";
+import Tab from "../Utils/Tab";
 
 function AboutTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <b>Future IoT for Intelligent society</b><br /><br />
-      Techathon offers an exciting platform to develop technical and  young talented  Engineering students a platform to solve  some of the relevant problems and demonstrate their innovative solutions/ products/prototypes/working models. The main objective is to foster a spirit of innovation and inculcating a mindset of problem solving among the budding engineers.We  invite creative, innovative, out-of-the-box, resourceful and appropriate project in the wide domain of IoT. This serves as a platform for integration on technical advancement and impact generation through a holistic aproach for the overall welfare of society.
-      <br /><br /><b>Based on the readiness level of innovation,avenues for advancing ideas to product may also open up</b>
-      <br /><br /><b>Four categories of project proposals</b>
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <b>Future IoT for Intelligent society</b>
+      <br />
+      <br />
+      Techathon offers an exciting platform to develop technical and young
+      talented Engineering students a platform to solve some of the relevant
+      problems and demonstrate their innovative solutions/
+      products/prototypes/working models. The main objective is to foster a
+      spirit of innovation and inculcating a mindset of problem solving among
+      the budding engineers.We invite creative, innovative, out-of-the-box,
+      resourceful and appropriate project in the wide domain of IoT. This serves
+      as a platform for integration on technical advancement and impact
+      generation through a holistic aproach for the overall welfare of society.
+      <br />
+      <br />
+      <b>
+        Based on the readiness level of innovation,avenues for advancing ideas
+        to product may also open up
+      </b>
+      <br />
+      <br />
+      <b>Four categories of project proposals</b>
       <ul className="list-decimal pl-10">
         <li>IoT based Energy Transformation solutions</li>
         <li>IoT based smart city and home applications</li>
@@ -23,36 +47,59 @@ function AboutTech(props) {
         <li>Process Automation</li>
       </ul>
     </div>
-  )
+  );
 }
 
 function HighTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <ul className="list-decimal pl-10">
-        <li>Wide opportunity to showcase the models and participate in discussions</li>
-        <li>Gain feedback from experts in the domain and get the project validated</li>
+        <li>
+          Wide opportunity to showcase the models and participate in discussions
+        </li>
+        <li>
+          Gain feedback from experts in the domain and get the project validated
+        </li>
         <li>Connect with industry experts and market leaders</li>
         <li>Exciting Cash Prizes</li>
         <li>Enhance presentation and leadership skills.</li>
       </ul>
     </div>
-  )
+  );
 }
 
 function PhasesTech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>Phase 1 : Submission of proposal</b>
-      <br/>Students may form small project teams with a maximum of 4 participants per team. The team shall submit a brief project proposal in the specified template in any of the four relevant categories.
-      <br/><br/><b>Phase 2: Selection of quality proposals</b>
-      <br/>This phase scrutinizes your proposal based on novelty, social relevance and feasibility. Top proposals will be selected and intimated to the team. Suggestions/feedback will be sent to the selected teams. They can incorporate the expert suggestions in their project.
-      <br/><br/><b>Phase 3: Presentation</b>
-      <br/>The selected teams will be asked to present before an expert panel of judges in online mode. The presentations and proposals will be evaluated thoroughly and the top 50 teams will proceed to the Phase 4.
-      <br/><br/><b>Phase 4: Demonstration of project</b>
-      <br/>The selected teams shall demonstrate their products /working models in the ASIET Campus. Expert team from both industries and academics will evaluate the projects. Top 3 projects will receive awards and  cash prizes.
+      <br />
+      Students may form small project teams with a maximum of 4 participants per
+      team. The team shall submit a brief project proposal in the specified
+      template in any of the four relevant categories.
+      <br />
+      <br />
+      <b>Phase 2: Selection of quality proposals</b>
+      <br />
+      This phase scrutinizes your proposal based on novelty, social relevance
+      and feasibility. Top proposals will be selected and intimated to the team.
+      Suggestions/feedback will be sent to the selected teams. They can
+      incorporate the expert suggestions in their project.
+      <br />
+      <br />
+      <b>Phase 3: Presentation</b>
+      <br />
+      The selected teams will be asked to present before an expert panel of
+      judges in online mode. The presentations and proposals will be evaluated
+      thoroughly and the top 50 teams will proceed to the Phase 4.
+      <br />
+      <br />
+      <b>Phase 4: Demonstration of project</b>
+      <br />
+      The selected teams shall demonstrate their products /working models in the
+      ASIET Campus. Expert team from both industries and academics will evaluate
+      the projects. Top 3 projects will receive awards and  cash prizes.
     </div>
-  )
+  );
 }
 
 function ConTech() {
@@ -117,53 +164,47 @@ function ConTech() {
 }
 
 function Techathon() {
-
   const tabs = [
     {
       name: "About",
       icon: ArchiveIcon,
-      page: <AboutTech />
+      page: <AboutTech />,
     },
     { name: "Highlight", icon: CloudUploadIcon, page: <HighTech /> },
     { name: "Phases", icon: ChartBarIcon, page: <PhasesTech /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConTech /> },
-  ]
-
-  const [currentTab, setCurrentTab] = useState("About")
-
-  const translateValue = tabs.findIndex(tab => tab.name === currentTab) / tabs.length * 100
-
+  ];
   const { width } = useWindowSize();
-  const [isOpen, setIsOpen] = useState(false);
+
+  const event = "Techathon";
+  const eventDate = "Mar 28, 2023 00:00:00";
 
   return (
     <>
+      <NavWrapper eventDate={eventDate} />
       <div
-        className="Techathon"
+        className="Techathon pt-[10%]"
         style={
           width > 640
             ? {
-              backgroundImage: `url(${bgImg})`,
-              backgroundSize: "cover",
-              backgroundPosition: "right 0",
-              backgroundRepeat: "no-repeat",
-              height: "140vh",
-              backgroundColor: "var(--bg-color)",
-              boxShadow: "0px 0px 50px 0px var(--bg-color)",
-            }
+                backgroundImage: `url(${bgImgD})`,
+                backgroundSize: "cover",
+                backgroundPosition: "right 0",
+                backgroundRepeat: "no-repeat",
+                height: "140vh",
+                backgroundColor: "var(--bg-color)",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              }
             : {
-              backgroundImage: `url(${bgImgM})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              height: "150vh",
-              boxShadow: "0px 0px 50px 0px var(--bg-color)",
-            }
+                backgroundImage: `url(${bgImgM})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                height: "150vh",
+                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              }
         }
       >
-        {/* navbar */}
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
-
         {/* main content */}
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
           <h1
@@ -178,7 +219,17 @@ function Techathon() {
           </h2>
           {/* description */}
           <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-          Adi Shankar Techathon'23 provides a dynamic platform for talented engineering students to showcase their innovative solutions, products, prototypes, and working models to address relevant problems. The main objective is to foster a spirit of innovation and encourage problem-solving among aspiring engineers, specifically within the wide domain of IoT. The event invites creative, resourceful, and impactful projects that demonstrate technical advancement and contribute to the overall welfare of society. This platform serves as an opportunity for students to integrate technical knowledge and demonstrate their ability to drive positive change through a holistic approach.
+            Adi Shankar Techathon'23 provides a dynamic platform for talented
+            engineering students to showcase their innovative solutions,
+            products, prototypes, and working models to address relevant
+            problems. The main objective is to foster a spirit of innovation and
+            encourage problem-solving among aspiring engineers, specifically
+            within the wide domain of IoT. The event invites creative,
+            resourceful, and impactful projects that demonstrate technical
+            advancement and contribute to the overall welfare of society. This
+            platform serves as an opportunity for students to integrate
+            technical knowledge and demonstrate their ability to drive positive
+            change through a holistic approach.
           </p>
           {/* basic rounded line button */}
           <button
@@ -205,55 +256,8 @@ function Techathon() {
           </button>
         </div>
       </div>
-
-      <div className="Techathon  my-10 mb-16">
-        <div className="bg-animation -z-10">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
-        <div className="py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden" >
-
-
-            {/* :LARGE DEVICES */}
-            <div className="relative  sm:block overflow-hidden">
-              {/* ::Navigation Tabs */}
-              <nav aria-label="Tabs">
-                <ul className="grid grid-flow-col auto-cols-fr">
-                  {tabs.map(tab => {
-                    const Icon = tab.icon
-                    return (
-                      <li key={tab.name} className={`relative z-10 rounded-full flex justify-center items-center text-base ${tab.name === currentTab ? "transition duration-300 text-black" : "text-gray-400 hover:text-gray-500"}`}>
-                        <button type="button" className="md:p-4 p-2 w-full inline-flex justify-center flex-col items-center text-center md:text-sm text-[.6rem] font-semibold" onClick={() => setCurrentTab(tab.name)}>
-                          {width > 640 ? <Icon className="mr-1.5 w-5 h-5" /> : ""}
-                          {tab.name}
-                        </button>
-                      </li>
-                    )
-                  })
-                  }
-                </ul>
-              </nav>
-              {/* ::Sliding Background */}
-              <div className="absolute inset-0 mx-auto w-full h-full rounded-full flex flex-col justify-center">
-                <div className="relative h-full transition-all duration-300 ease-in" style={{ transform: `translateX(${translateValue}%)` }} >
-                  <div className="h-full rounded-full bg-[var(--primary-color)]" style={{ width: `${1 / (tabs.length) * 100}%` }} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {tabs.map(tab => {
-          return (
-            <div className="md:mx-16 mx-6 my-10 text-[var(--text-color)]">
-              {tab.name === currentTab ? tab.page : ""}
-            </div>
-          )
-        })
-        }
-      </div>
+      <Bg />
+      <Tab tabs={tabs} eventName={event} />
     </>
   );
 }
