@@ -100,11 +100,10 @@ const Navbar24 = () => {
             FAQS
           </a>
           <a
-            href="#contact"
+            href="https://www.adishankara.ac.in/contact-us"
             aria-label="click to go to contact us"
-            onClick={() => {
-              setIsOpen(false);
-            }}
+            target={"_blank"}
+            rel={"noreferrer"}
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
             Contact US

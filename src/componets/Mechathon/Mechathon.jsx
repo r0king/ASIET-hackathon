@@ -204,11 +204,6 @@ function Mechathon() {
               Mechathon'23 is a technical festival organized by the Mechanical Engineering department as part of Hachathon'23. The event offers a diverse range of competitions and events, including Go-Kart and Automotive Design Challenge, that will bring together participants from across India. The competition categories are expected to be challenging and exciting, testing the skills and creativity of participants in the field of mechanical engineering, with exciting cash prizes worth 3 lakhs on offer. Mechathon'23 promises to be a one-of-a-kind experience for participants and a showcase of the latest trends and advancements in mechanical engineering.
             </p>
             {/* basic rounded line button */}
-            <a
-              href=""
-              rel="noreferrer"
-              target={"_blank"}
-            >
               <button
                 className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
                 style={{
@@ -231,7 +226,6 @@ function Mechathon() {
                   />
                 </svg>
               </button>
-            </a>
           </div>
         </div>
       </div>
