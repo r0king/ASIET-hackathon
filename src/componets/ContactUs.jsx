@@ -24,7 +24,7 @@ const ContactUs = () => {
              p-5 sm:p-10
              flex flex-col w-full h-full mx-auto"
           >
-            <img src={asietLogo} alt="Asiet Logo" className="md:p-5 md:pt-0" srcset="" />
+            <img src={asietLogo} alt="Asiet Logo" className="md:p-5 md:pt-0 pb-5" srcSet="" />
             {/* ::Title Contact */}
             <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
@@ -51,19 +51,19 @@ const ContactUs = () => {
               <h3 className="text-base font-medium">Contact</h3>
               <div className="space-y-1 text-base text-[#f0f0f0] text-opacity-60">
                 <p className="font-medium">
-                  Prof. R Rajaram : +91 9895199204
+                  R Rajaram : +91 9895199204
                   <br />
-                  Dr. Maneesh T : +91 8848112354
+                  Maneesh T : +91 8848112354
                   <br />
                   P V Rajaraman: +91 9940418252
                   <br />
-                  Prof. Ajay Basil Varghese: +91 9995103073 
+                  Ajay Basil Varghese: +91 9995103073 
                   <br />
                   Srideep Krishnan: +91 9496800405
                   <br /><br />
                 </p>
                 <a
-                  href="mailto:#"
+                  href="mailto:hackathon@adishankara.ac.in"
                   aria-label="mail"
                   className="inline-block font-medium hover:text-[#f0f0f0]"
                 >

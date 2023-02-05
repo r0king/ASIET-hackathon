@@ -212,7 +212,7 @@ function Gameathon() {
         </div>
       </div>
       <Bg />
-      <Tab tabs={tabs} eventName={event} />
+      <Tab tabs={tabs} eventName="GameathonTabs" />
     </>
   );
 }

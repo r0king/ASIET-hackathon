@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // { useEffect, useState } from "react";
 import logo1 from "../../assets/Sponsors/sampleLogo.webp";
 import logo2 from "../../assets/Sponsors/sampleLogo.webp";
 import logo3 from "../../assets/Sponsors/sampleLogo.webp";
 import logo4 from "../../assets/Sponsors/sampleLogo.webp";
-import partLogo1 from "../../assets/Sponsors/titlab.png.webp"
-import partLogo2 from "../../assets/Sponsors/ciirc.png.webp"
+import partLogo1 from "../../assets/Sponsors/titlab.png.webp";
+import partLogo2 from "../../assets/Sponsors/ciirc.png.webp";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
@@ -15,27 +15,29 @@ import { useWindowSize } from "react-use";
 const Sponsors = () => {
   const { width } = useWindowSize();
 
+  const targetTitleRef = React.useRef(null);
   // const targetTitleRef = React.useRef(null);
   // const targetPlatinumRef = React.useRef(null);
   // const targetDiamondRef = React.useRef(null);
   // const targetSilverRef = React.useRef(null);
   // const targetGoldRef = React.useRef(null);
 
-  // const [targetTitle, setTitle] = useState();
+  const [targetTitle, setTitle] = useState();
   // const [targetPlatinum, setPlatinum] = useState();
   // const [targetDiamond, setDiamond] = useState();
   // const [targetSilver, setSilver] = useState();
   // const [targetGold, setGold] = useState();
 
-  // useEffect(() => {
-  //   setTitle(targetTitleRef.current);
-  //   setPlatinum(targetPlatinumRef.current);
-  //   setDiamond(targetDiamondRef.current);
-  //   setGold(targetGoldRef.current);
-  //   setSilver(targetSilverRef.current);
-  // }, []);
+  useEffect(() => {
+    setTitle(targetTitleRef.current);
+    //   setPlatinum(targetPlatinumRef.current);
+    //   setDiamond(targetDiamondRef.current);
+    //   setGold(targetGoldRef.current);
+    //   setSilver(targetSilverRef.current);
+  }, []);
   return (
     <div className="sponsers_main_container z-20 -mt-10 md:mt-28 bg-gradient-to-b from-black via-black to-transparent">
+      <div ref={targetTitleRef}></div>
       <div className="sponsors_container">
         {/* <div className="sponsor_title" ref={targetTitleRef}>
           <h1 className="text-2xl p-5 mt-20 font-bold">
@@ -801,7 +803,7 @@ const Sponsors = () => {
               className="mt-8 md:mt-0"
               scale={[0.7, 1]}
               opacity={[0, 1]}
-              // targetElement={targetSilver}
+              targetElement={targetTitle}
             >
               <LazyLoad offset={300}>
                 <div className="images ">
@@ -918,7 +920,7 @@ const Sponsors = () => {
                   </svg>
                 </span>
               </div>
-              <LazyLoad offset={450} >
+              <LazyLoad offset={450}>
                 <div className="images ">
                   <div className="img">
                     <img src={logo1} alt="" />
