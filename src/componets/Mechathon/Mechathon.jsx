@@ -12,9 +12,10 @@ import {
 import { useWindowSize } from "react-use";
 import "./Mechathon.css";
 import mechathonVideo from "../../assets/Mechathon/intro.webm";
-import ProfImg1 from "../../assets/avatar.webp";
-import ProfImg2 from "../../assets/avatar.webp";
-import ProfImg3 from "../../assets/avatar.webp";
+import ProfImg1 from "../../assets/Mechathon/cont3.webp";
+import ProfImg2 from "../../assets/Mechathon/cont1.webp";
+import ProfImg3 from "../../assets/Mechathon/cont4.webp";
+import ProfImg4 from "../../assets/Mechathon/cont2.webp";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
@@ -33,7 +34,7 @@ function AboutMech(props) {
       group of competitions and events which would take place side by side. The
       competition categories include
       <ul className="list-decimal pl-10">
-        <li>Go Kart</li>
+        <li>Go Kart Race</li>
         <li>Automotive Design Challenge</li>
       </ul>
       The event would be a one of its kind experience and comes forth with
@@ -47,35 +48,28 @@ function EventMech(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <p className="normal-case">
-        <b>Go Kart</b> <br />
+        <b>Go Kart Race</b> <br />
         <br />
         <ul className="list-disc pl-10">
-          <li>VENUE: COLLEGE GROUND/HOSTEL AREA</li>
-          <li>COLLABORATORS: SAE INDIA.ASME</li>
-          <li>EXPERT PANEL: EXTERNAL -2 AND INTERNAL 3</li>
-          <li>EVALUATION STRATEGY:STAGE BY STAGE PRESENTATION IN</li>
-          <li>FRONT OF EXPERT PANEL+PERFORMANCE ON THE DAY OF EVENT</li>
-          <li>EXPECTED NUMBER OF TEAMS: 20</li>
-          <li>REGISTRATION FEE: 6000 PER TEAM</li>
-          <li>EXPECTED SPONSERS MAJOR AUTOMOBILE SALES AND SERVICE</li>
-          <li>TOTAL CASH PRIZE: 2 LAKHS</li>
+          <li><b>Venue:</b> ASIET Campus</li>
+          <li><b>Expert Panel:</b> External 2 And Internal 3</li>
+          <li><b>Evaluation Strategy:</b> Stage By Stage Presentation In Front Of Expert Panel & performance On The Day Of Event</li>
+          <li><b>Expected Number Of Teams:</b> 20</li>
+          <li><b>Registration Fee:</b> 7500 Per Team</li>
+          <li><b>Expected Sponsers:</b> Major Automobile Sales And Service</li>
+          <li><b>Total Cash Prize:</b> 2 Lakhs</li>
         </ul>
         <br />
         <b>Automotive Design Challenge</b>
         <br />
         <br />
         <ul className="list-disc pl-10">
-          <li>DESIGN AND ASSEMBLY OF AUTOMOBILE</li>
-          <li>
-            EVALUATING AERODYNAMIC, AESTHETIC, ERGONOMICS AND SAFETY FEATURES
-          </li>
-          <li>ALLOWED SOFTWARE- FUSION 360</li>
-          <li>
-            TOTAL PRIZE- 25KEXPECTED NO: OF TEAMS-25 (MAXIMUM 2 MEMBERS/TEAM)
-          </li>
-          <li>
-            JUDGING PANEL- 2 MEMBERS FROM EXTERNAL AND 1 MEMBER FROM INTERNAL
-          </li>
+          <li>Design, Assembly & Animation of 4 Stroke 4 Cylinder Engine</li>
+          <li>Evaluating Aerodynamic, Aesthetic, Ergonomics And Safety Features</li>
+          <li>Allowed Software - Fusion 360</li>
+          <li>Total Prize - 25k</li>
+          <li>expected No: Of Teams - 25 (Maximum 2 Members/team)</li>
+          <li>Judging Panel- 2 Members From External And 1 Member From Internal</li>
         </ul>
       </p>
     </div>
@@ -100,9 +94,16 @@ function ContactMech() {
     },
     {
       id: 3,
-      fullName: "Ms. Harshananda TN",
-      contact: "+91 8943046975",
+      fullName: "Kiran KS",
+      contact: "+91 9605370685",
       imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 4,
+      fullName: "Eldhose K Joy",
+      contact: "+91 9605370685",
+      imgSrc: ProfImg4,
       imgAlt: "profile picture",
     },
   ];
@@ -146,7 +147,21 @@ function ContactMech() {
 function PrizeMech() {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Soon....
+      <p>
+        <b>Go Kart Race</b>
+        <ul className="list-disc pl-10">
+          <li>1st Price: Rs. 1 Lakh</li>
+          <li>2nd Price: Rs. 40,000</li>
+          <li>Rs. 20000 For 3 Teams</li>
+        </ul>
+        <br />
+        <b>Automotive Design Challenge</b>
+        <ul className="list-disc pl-10">
+          <li>1st Price: Rs. 25,000</li>
+          <li>2nd Price: Rs. 15,000</li>
+          <li>3rd Price: Rs. 10,000</li>
+        </ul>
+      </p>
     </div>
   )
 }
@@ -154,7 +169,7 @@ function PrizeMech() {
 function RegisMech() {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Soon....
+      Soon..
     </div>
   )
 }
@@ -187,22 +202,22 @@ function Mechathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
             : {
-                backgroundImage: `url(${bgImgM})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "120vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImgM})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "120vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         <div className="Mechathon flex h-full">

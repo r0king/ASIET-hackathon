@@ -14,14 +14,14 @@ import Menu from "./Menu";
 import PosterCarousel from "./PosterCarousel";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
+import Bg from "./Utils/Bg";
 
 import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-// import prizeVideo from "../assets/prize.mp4";
 import prizeVideoM from "../assets/prizeM.webm";
-import Bg from "./Utils/Bg";
+import introVideo from "../assets/intro.webm";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -143,6 +143,30 @@ const Component = () => {
   };
   return (
     <>
+      <div className="fixed top-0 h-screen flex justify-center items-center w-full z-40 animate__animated animate__slow bg-black ">
+        <video
+          autoPlay
+          muted
+          onEnded={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onClick={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onChange={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onScroll={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onTouchMove={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          className=" md:h-full w-full object-cover"
+        >
+          <source src={introVideo} type='video/mp4; codecs="avc1"' />
+        </video>
+      </div>
       <div className=" ">
         <Menu />
         {width > 640 ? (

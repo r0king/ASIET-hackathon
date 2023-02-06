@@ -32,16 +32,22 @@ function AboutGame(props) {
         explore their creativity, and develop a game within three days. This event
         will be supported by our industry partner TILTLABS. They will provide
         participants with a concept along with tools such as Unity and Blender to
-        create either casual or hyper-casual games. Participants must bring their
+        create either casual or hyper-casual games.
+      </p>
+      <p>&tbsp;Participants must bring their
         own laptops or systems in order to develop the application. Teams must
         have a minimum of two and a maximum of four members. TILTLABS' technical
         and creative teams will be available on-site to answer any questions or
         concerns during the Gameathon. The final games will be evaluated by
         TILTLABS' Creative Officer and Lead Game Designer along with other
-        industry experts. TILTLABS will also conduct a 40-hour training or
+        industry experts.
+      </p>
+      <p> TILTLABS will also conduct a 40-hour training or
         bootcamp before the Gameathon to help participants learn the basics of
         game development using Unity and complete their game ideas into an
-        application. On successful completion of the Gameathon, prizes, gifts,
+        application.
+      </p>
+      <p> On successful completion of the Gameathon, prizes, gifts,
         scholarships to the TILTEDU education program, and internships at TILTLABS
         will be awarded to the top-performing teams. Further, participants will be
         able to work with TILTLABS' cutting-edge gaming development, virtual
