@@ -138,7 +138,7 @@ function Gameathon() {
 
   const { width } = useWindowSize();
 
-  const event = "Gameathon";
+  // const event = "Gameathon";
   const eventDate = "Mar 28, 2023 00:00:00";
 
   return (
