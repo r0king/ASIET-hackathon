@@ -34,7 +34,7 @@ function AboutGame(props) {
         participants with a concept along with tools such as Unity and Blender to
         create either casual or hyper-casual games.
       </p>
-      <p>&tbsp;Participants must bring their
+      <p><br/><span className="pl-10"></span>Participants must bring their
         own laptops or systems in order to develop the application. Teams must
         have a minimum of two and a maximum of four members. TILTLABS' technical
         and creative teams will be available on-site to answer any questions or
@@ -42,12 +42,12 @@ function AboutGame(props) {
         TILTLABS' Creative Officer and Lead Game Designer along with other
         industry experts.
       </p>
-      <p> TILTLABS will also conduct a 40-hour training or
+      <p><br/><span className="pl-10"></span>TILTLABS will also conduct a 40-hour training or
         bootcamp before the Gameathon to help participants learn the basics of
         game development using Unity and complete their game ideas into an
         application.
       </p>
-      <p> On successful completion of the Gameathon, prizes, gifts,
+      <p><br/><span className="pl-10"></span>On successful completion of the Gameathon, prizes, gifts,
         scholarships to the TILTEDU education program, and internships at TILTLABS
         will be awarded to the top-performing teams. Further, participants will be
         able to work with TILTLABS' cutting-edge gaming development, virtual

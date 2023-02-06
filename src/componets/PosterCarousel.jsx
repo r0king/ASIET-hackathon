@@ -146,8 +146,7 @@ const PosterCarousel = () => {
           <a href="#allCategoryLink w-full">
             <h2 
             className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
-              <span className="w-full block text-left">Hackathon</span>
-              <span className="w-full block text-[var(--primary-color)] text-right"> Categories</span>
+              Hackathon <span className="text-[var(--primary-color)]">&nbsp; Categories</span>
             </h2>
           </a>
         </div>
