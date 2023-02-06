@@ -21,6 +21,7 @@ import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
 // import prizeVideo from "../assets/prize.mp4";
 import prizeVideoM from "../assets/prizeM.webm";
+import Bg from "./Utils/Bg";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -80,7 +81,7 @@ const Component = () => {
           {width > 640 ? (
             <source src={planetVideo} type="video/webm" />
           ) : (
-            <source src={planetVideoM} type='video/webm' />
+            <source src={planetVideoM} type="video/webm" />
           )}
           not supported
         </video>
@@ -101,9 +102,9 @@ const Component = () => {
           className="z-30 w-full top-0 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
-            <source src={prizeVideoM} type='video/webm' />
+            <source src={prizeVideoM} type="video/webm" />
           ) : (
-            <source src={prizeVideoM} type='video/webm' />
+            <source src={prizeVideoM} type="video/webm" />
           )}
         </video>
       </div>
@@ -167,37 +168,28 @@ const Component = () => {
                 className=" top-[8%] absolute bottom-0 object-contain md:h-auto "
               >
                 {width > 640 ? (
-                  <source src={prizeVideoM} type='video/webm' />
+                  <source src={prizeVideoM} type="video/webm" />
                 ) : (
-                  <source src={prizeVideoM} type='video/webm' />
+                  <source src={prizeVideoM} type="video/webm" />
                 )}
               </video>
             </div>
-            <Sponsors />
           </>
         ) : (
-          <>
-            <ParallaxBanner
-              layers={[
-                background,
-                headline,
-                videoglobe,
-                countdown,
-                videoprize,
-                tagline,
-              ]}
-              className="h-[110vh] bg-black"
-            />
-            {/* <Tagline /> */}
-            <Sponsors />
-          </>
+          <ParallaxBanner
+            layers={[
+              background,
+              headline,
+              videoglobe,
+              countdown,
+              videoprize,
+              tagline,
+            ]}
+            className="h-[110vh] bg-black"
+          />
         )}
-        <div className="bg-animation -z-10">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
+        <Bg />
+
         {/* <Timeline /> */}
         {/* <Partners /> */}
         <PosterCarousel />
@@ -232,7 +224,8 @@ const Component = () => {
             },
             {
               speed: 20,
-              translateY: width > 640 ? [106, 68,'easeInOut'] : [70, 98],
+              translateY:
+                width > 640 ? [106, 72, "easeInOut"] : [84, 90, "easeInOut"],
               scale: [1, 1.4, "easeOutBack"],
               // easing: "easeInOutCubic",
               children: (
@@ -247,6 +240,7 @@ const Component = () => {
           ]}
         >
           <AllUNeed2Know />
+          <Sponsors />
           <Faq />
           <AboutUs />
           <ContactUs />

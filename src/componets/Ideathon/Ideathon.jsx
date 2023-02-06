@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import bgImg from "../../assets/Ideathon/bg.png.webp";
 import {
   ArchiveIcon,
@@ -9,8 +9,10 @@ import {
 } from "@heroicons/react/solid";
 import { useWindowSize } from "react-use";
 import "./Ideathon.css";
-import { Navbar } from "../NavbarPages";
 import inroVideo from "../../assets/Ideathon/intro.webm";
+import NavWrapper from "../Utils/NavWrapper";
+import Bg from "../Utils/Bg";
+import Tab from "../Utils/Tab";
 
 function AboutYoung(props) {
   return (
@@ -267,8 +269,6 @@ function AwardYoung(props) {
 
 function Ideathon() {
   const { width } = useWindowSize();
-  const [isOpen, setIsOpen] = useState(false);
-
   const tabs = [
     {
       name: "About",
@@ -281,28 +281,11 @@ function Ideathon() {
     { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
   ];
-
-  const [currentTab, setCurrentTab] = useState("About");
-
-  const translateValue =
-    (tabs.findIndex((tab) => tab.name === currentTab) / tabs.length) * 100;
-
+  const event = "Ideathon";
+  const eventDate = "Mar 28, 2023 00:00:00";
   return (
     <>
-      <div className="relative h-screen">
-        <div className="absolute z-50 w-full ">
-          <Navbar
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            // countDate="Mar 28, 2023 00:00:00"
-          />
-        </div>
-        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
-          <video autoPlay muted loop className="md:h-full w-full object-cover">
-            <source src={inroVideo} type='video/mp4; codecs="avc1"' />
-          </video>
-        </div>
-      </div>
+      <NavWrapper eventDate={eventDate} introVideo={inroVideo} />
       <div
         className="Ideathon"
         style={
@@ -380,72 +363,8 @@ function Ideathon() {
           </button>
         </div>
       </div>
-
-      <div className="Ideathon  my-10 mb-16">
-        <div className="bg-animation -z-10">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
-        <div className="py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
-            {/* :LARGE DEVICES */}
-            <div className="relative  sm:block overflow-hidden">
-              {/* ::Navigation Tabs */}
-              <nav aria-label="Tabs">
-                <ul className="grid grid-flow-col auto-cols-fr">
-                  {tabs.map((tab) => {
-                    const Icon = tab.icon;
-                    return (
-                      <li
-                        key={tab.name}
-                        className={`relative z-10 rounded-full text-base ${
-                          tab.name === currentTab
-                            ? "transition duration-300 text-black"
-                            : "text-gray-400 hover:text-gray-500"
-                        }`}
-                      >
-                        <button
-                          type="button"
-                          className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold"
-                          onClick={() => setCurrentTab(tab.name)}
-                        >
-                          {width > 640 ? (
-                            <Icon className="mr-1.5 w-5 h-5" />
-                          ) : (
-                            ""
-                          )}
-                          {tab.name}
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </nav>
-              {/* ::Sliding Background */}
-              <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
-                <div
-                  className="relative h-full transition-all duration-300 ease-in"
-                  style={{ transform: `translateX(${translateValue}%)` }}
-                >
-                  <div
-                    className="h-full rounded-full bg-[var(--primary-color)]"
-                    style={{ width: `${(1 / tabs.length) * 100}%` }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {tabs.map((tab) => {
-          return (
-            <div className="md:mx-16 mx-6 my-10 text-[var(--secondary-color)]">
-              {tab.name === currentTab ? tab.page : ""}
-            </div>
-          );
-        })}
-      </div>
+      <Bg />
+      <Tab tabs={tabs} eventName={event} />
     </>
   );
 }

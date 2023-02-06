@@ -8,7 +8,9 @@ export const Navbar = ({ isOpen, setIsOpen, countDate }) => {
     <nav className="flex justify-between items-center ">
       {/* ::Burger icon standard */}
       <div className="inline-flex items-center cursor-pointer brightness-[50] opacity-80 p-7 pt-4">
-        <img src={logoAsiet} className="h-9 p-1" alt="logo"></img>{" "}
+        <a href="/">
+          <img src={logoAsiet} className="h-9 p-1" alt="logo" />
+        </a>
         {countDate ? (
           <span className="ml-5 scale-75">
             <EventCountDown countDate={countDate} />
