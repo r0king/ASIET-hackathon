@@ -3,7 +3,6 @@ import { Navbar } from "../NavbarPages";
 
 function NavWrapper({ eventDate, introVideo }) {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(introVideo);
   return (
     <div className={`relative ${introVideo && "h-screen"}`}>
       <div className="absolute z-50 w-full ">
