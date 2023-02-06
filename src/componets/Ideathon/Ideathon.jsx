@@ -282,7 +282,7 @@ function Ideathon() {
     { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
   ];
   const event = "Ideathon";
-  const eventDate = "Mar 28, 2023 00:00:00";
+  const eventDate = "";
   return (
     <>
       <NavWrapper eventDate={eventDate} introVideo={inroVideo} />

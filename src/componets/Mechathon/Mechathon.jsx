@@ -143,6 +143,22 @@ function ContactMech() {
   );
 }
 
+function PrizeMech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon....
+    </div>
+  )
+}
+
+function RegisMech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon....
+    </div>
+  )
+}
+
 function Mechathon() {
   const tabs = [
     {
@@ -150,16 +166,18 @@ function Mechathon() {
       icon: ArchiveIcon,
       page: <AboutMech />,
     },
+    { name: "Registration", icon: CloudUploadIcon, page: <RegisMech /> },
     { name: "Events", icon: CloudUploadIcon, page: <EventMech /> },
     // { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     // { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
+    { name: "Prize", icon: CloudUploadIcon, page: <PrizeMech /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactMech /> },
   ];
   const { width } = useWindowSize();
 
   const event = "Mechathon";
-  const eventDate = "Mar 28, 2023 00:00:00";
+  const eventDate = "";
 
   return (
     <>

@@ -270,6 +270,14 @@ function ContactCode() {
   );
 }
 
+function PrizeCode() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon....
+    </div>
+  )
+}
+
 function Codathon() {
   const tabs = [
     {
@@ -282,13 +290,14 @@ function Codathon() {
     { name: "Stages", icon: ChartBarIcon, page: <StagesCode /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     { name: "Guidelines", icon: LightBulbIcon, page: <GuideCode /> },
+    { name: "Prize", icon: LightBulbIcon, page: <PrizeCode /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactCode /> },
   ];
 
   const { width } = useWindowSize();
 
   const event = "Codathon";
-  const eventDate = "Mar 28, 2023 00:00:00";
+  const eventDate = "Mar 29, 2023 00:00:00";
 
   return (
     <>

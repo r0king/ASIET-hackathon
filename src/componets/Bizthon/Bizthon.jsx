@@ -252,15 +252,15 @@ function Bizthon() {
       icon: ArchiveIcon,
       page: <AboutBiz />,
     },
-    { name: "Stages", icon: CloudUploadIcon, page: <StagesBiz /> },
-    { name: "Prize", icon: ChartBarIcon, page: <PrizeBiz /> },
     { name: "Registration", icon: ChartBarIcon, page: <RegBiz /> },
+    { name: "Stages", icon: CloudUploadIcon, page: <StagesBiz /> },
     { name: "FAQ", icon: ChartBarIcon, page: <FAQBiz /> },
+    { name: "Prize", icon: ChartBarIcon, page: <PrizeBiz /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConBiz /> },
   ];
   const { width } = useWindowSize();
   const event = "Civilathon";
-  const eventDate = "Mar 28, 2023 00:00:00";
+  const eventDate = "";
   return (
     <>
       <NavWrapper eventDate={eventDate} introVideo={bizthonVideo} />

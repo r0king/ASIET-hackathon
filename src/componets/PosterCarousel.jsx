@@ -5,7 +5,7 @@ import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/bgM.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
 import techImg from "../assets/Techathon/bgM.webp";
-import codathonImg from "../assets/Codathon/bgM.webp";
+import codathonImg from "../assets/Codathon/bgPosterM.webp";
 import youngImg from "../assets/Ideathon/bgM.webp";
 
 import Tilt from "react-parallax-tilt";
@@ -19,7 +19,7 @@ const PosterCarousel = () => {
       href: "#link",
       name: "codathon",
       image: codathonImg,
-      date: "29<sup>th</sup> March"
+      date: "29<sup>th</sup> March 2023"
     },
 
     {
@@ -27,7 +27,7 @@ const PosterCarousel = () => {
       href: "#link",
       name: "gameathon",
       image: gameImg,
-      date: "28-30<sup>th</sup> March"
+      date: "28-30<sup>th</sup> March 2023"
     },
     {
       id: 2,

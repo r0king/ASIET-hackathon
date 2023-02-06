@@ -4,7 +4,6 @@ import bgImgM from "../../assets/Techathon/bgM.webp";
 import {
   ArchiveIcon,
   ChartBarIcon,
-  CloudUploadIcon,
   LightBulbIcon,
 } from "@heroicons/react/solid";
 import { useWindowSize } from "react-use";
@@ -15,6 +14,7 @@ import ProfImg3 from "../../assets/avatar.webp";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import techathonVideo from "../../assets/Techathon/intro.webm"
 
 function AboutTech(props) {
   return (
@@ -163,6 +163,22 @@ function ConTech() {
   );
 }
 
+function PrizeTech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon....
+    </div>
+  )
+}
+
+function RegisTech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon....
+    </div>
+  )
+}
+
 function Techathon() {
   const tabs = [
     {
@@ -170,18 +186,20 @@ function Techathon() {
       icon: ArchiveIcon,
       page: <AboutTech />,
     },
-    { name: "Highlight", icon: CloudUploadIcon, page: <HighTech /> },
+    { name: "Registration", icon: ChartBarIcon, page: <RegisTech /> },
+    { name: "Highlight", icon: ChartBarIcon, page: <HighTech /> },
     { name: "Phases", icon: ChartBarIcon, page: <PhasesTech /> },
+    { name: "Prize", icon: LightBulbIcon, page: <PrizeTech /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConTech /> },
   ];
   const { width } = useWindowSize();
 
   const event = "Techathon";
-  const eventDate = "Mar 28, 2023 00:00:00";
+  const eventDate = "";
 
   return (
     <>
-      <NavWrapper eventDate={eventDate} />
+      <NavWrapper eventDate={eventDate} introVideo={techathonVideo} />
       <div
         className="Techathon pt-[10%]"
         style={
