@@ -8,9 +8,10 @@ export default class PrizeCard extends Component {
           style={{
             backgroundImage: `url(${prizeImg})`,
           }}
-          className="absolute aspect-square min-w-[450px] w-[90vw] md:w-auto rounded-xl  m-auto
-          flex flex-col justify-between p-5 py-12
-          bg-gradient-to-bl from-[#ECD99F] via-white to-black bg-contain bg-no-repeat"
+          className="
+          absolute aspect-square min-w-[450px] w-[90vw] md:w-auto rounded-xl m-auto
+          flex flex-col justify-between p-5 py-12 
+          bg-contain bg-center bg-no-repeat scale-75 "
         >
           <div className="text-3xl font-semibold text-center text-[#b4a17d] drop-shadow-[0px_0px_2px_rgba(0,0,0,0.15)] pt-5">
             FIRST PRIZE
