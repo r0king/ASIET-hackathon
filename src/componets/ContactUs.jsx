@@ -57,7 +57,7 @@ const ContactUs = () => {
                   <br />
                   P V Rajaraman: +91 9940418252
                   <br />
-                  Ajay Basil Varghese: +91 9995103073 
+                  Ajay Basil Varghese: +91 9995103073
                   <br />
                   Srideep Krishnan: +91 9496800405
                   <br /><br />
@@ -80,7 +80,9 @@ const ContactUs = () => {
               <div className="ml-3 flex space-x-2">
                 {/* :::facebook */}
                 <a
-                  href="#facebook"
+                  href="https://www.facebook.com/adishankara.ac.in/"
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="facebook"
                   className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -94,7 +96,9 @@ const ContactUs = () => {
                 </a>
                 {/* :::twitter */}
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/asietofficial?lang=en"
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="twitter"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -108,7 +112,9 @@ const ContactUs = () => {
                 </a>
                 {/* :::intagram */}
                 <a
-                  href="#instagrap"
+                  href="https://www.instagram.com/asiet.official/?hl=en"
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="instagrap"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -122,7 +128,9 @@ const ContactUs = () => {
                 </a>
                 {/* :::linkedin */}
                 <a
-                  href="#linkedin"
+                  href="https://in.linkedin.com/school/adi-shankara-institute-of-engineering-and-technology-sankar-nagar-mattoor-kalady--683-547/"
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label="linkedin"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
