@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import asietLogo from "../assets/asietlogo.png"
 
 const ContactUs = () => {
+
+  const myRef = useRef(null);
+
+  // useEffect(() => {
+  //   if (myRef.current) {
+  //     myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   }
+  // }, []);
+
   return (
-    <div id="contact" className="flex p-3 md:p-6 justify-center items-center relative z-10">
+    <div id="contact" ref={myRef} className="flex p-3 md:p-6 justify-center items-center relative z-10">
       <div
         className="
          w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.25)]
@@ -57,7 +66,7 @@ const ContactUs = () => {
                   <br />
                   P V Rajaraman: +91 9940418252
                   <br />
-                  Ajay Basil Varghese: +91 9995103073
+                  Ajay Basil Varghese: +91 9995103073 
                   <br />
                   Srideep Krishnan: +91 9496800405
                   <br /><br />
@@ -80,9 +89,7 @@ const ContactUs = () => {
               <div className="ml-3 flex space-x-2">
                 {/* :::facebook */}
                 <a
-                  href="https://www.facebook.com/adishankara.ac.in/"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#facebook"
                   aria-label="facebook"
                   className="p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -96,9 +103,7 @@ const ContactUs = () => {
                 </a>
                 {/* :::twitter */}
                 <a
-                  href="https://twitter.com/asietofficial?lang=en"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#twitter"
                   aria-label="twitter"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -112,9 +117,7 @@ const ContactUs = () => {
                 </a>
                 {/* :::intagram */}
                 <a
-                  href="https://www.instagram.com/asiet.official/?hl=en"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#instagrap"
                   aria-label="instagrap"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >
@@ -128,9 +131,7 @@ const ContactUs = () => {
                 </a>
                 {/* :::linkedin */}
                 <a
-                  href="https://in.linkedin.com/school/adi-shankara-institute-of-engineering-and-technology-sankar-nagar-mattoor-kalady--683-547/"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#linkedin"
                   aria-label="linkedin"
                   className="m-2 p-1 inline-flex justify-center items-center text-[var(--secondary-color)] hover:text-blue-400"
                 >

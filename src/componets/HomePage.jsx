@@ -26,7 +26,7 @@ import introVideo from "../assets/intro.webm";
 const Component = () => {
   const { width } = useWindowSize();
 
-  const background: BannerLayer = {
+  const background = {
     speed: -10,
     translateX: width > 640 ? [0, -20] : [0, -40],
     scale: width > 640 ? [2.5, 1.5, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
@@ -60,7 +60,7 @@ const Component = () => {
       </div>
     ),
   };
-  const videoglobe: BannerLayer = {
+  const videoglobe = {
     translateY: width > 640 ? ["48%", "-25%"] : ["90%", "-25%"],
     // translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
     opacity: [0.95, 0.8, "easeOutCubic"],
@@ -88,7 +88,7 @@ const Component = () => {
       </div>
     ),
   };
-  const videoprize: BannerLayer = {
+  const videoprize = {
     translateY: width > 640 ? ["45%", "30%"] : ["20%", "0%"],
     opacity:
       width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
@@ -110,7 +110,7 @@ const Component = () => {
       </div>
     ),
   };
-  const headline: BannerLayer = {
+  const headline = {
     translateX: width > 640 ? [5, 20] : [0, 0],
     translateY: [width > 640 ? -2 : -10, -20],
     speed: 40,
@@ -132,7 +132,7 @@ const Component = () => {
     expanded: false,
     children: <CountDown />,
   };
-  const tagline: BannerLayer = {
+  const tagline = {
     translateY: [width > 640 ? 65 : 60, width > 640 ? 48 : 68],
     shouldAlwaysCompleteAnimation: true,
     children: (
@@ -147,21 +147,26 @@ const Component = () => {
         <video
           autoPlay
           muted
-          onEnded={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
-                            e.target.parentElement.classList.add("-z-50")            
-        }}
-          onClick={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
-                            e.target.parentElement.classList.add("-z-50")            
-        }}
-          onChange={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
-                            e.target.parentElement.classList.add("-z-50")            
-        }}
-          onScroll={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
-                            e.target.parentElement.classList.add("-z-50")            
-        }}
-          onTouchMove={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
-                            e.target.parentElement.classList.add("-z-50")            
-        }}
+          onEnded={(e) => {
+            e.target.parentElement.classList.add("animate__zoomOut");
+            e.target.parentElement.classList.add("-z-50")
+          }}
+          onClick={(e) => {
+            e.target.parentElement.classList.add("animate__zoomOut");
+            e.target.parentElement.classList.add("-z-50")
+          }}
+          onChange={(e) => {
+            e.target.parentElement.classList.add("animate__zoomOut");
+            e.target.parentElement.classList.add("-z-50")
+          }}
+          onScroll={(e) => {
+            e.target.parentElement.classList.add("animate__zoomOut");
+            e.target.parentElement.classList.add("-z-50")
+          }}
+          onTouchMove={(e) => {
+            e.target.parentElement.classList.add("animate__zoomOut");
+            e.target.parentElement.classList.add("-z-50")
+          }}
           className=" md:h-full w-full object-cover"
         >
           <source src={introVideo} type='video/mp4; codecs="avc1"' />
@@ -173,15 +178,11 @@ const Component = () => {
           <>
             <ParallaxBanner
               layers={[
-                // background,
                 videoglobe,
                 headline,
                 countdown,
-                // sponsers,
-                // videoprize,
                 tagline,
               ]}
-              // gradientOverlay]}
               className="h-[100vh] bg-black"
             ></ParallaxBanner>
             <div className="flex justify-center w-full h-full">
@@ -200,17 +201,45 @@ const Component = () => {
             </div>
           </>
         ) : (
-          <ParallaxBanner
-            layers={[
-              background,
-              headline,
-              videoglobe,
-              countdown,
-              videoprize,
-              tagline,
-            ]}
-            className="h-[110vh] bg-black"
-          />
+          <>
+            <div className="flex justify-center pt-[40%] -z-10 object-center items-center w-full h-full">
+              <video
+                autoPlay
+                loop
+                muted
+                className="-bottom-[60%] max-w-full absolute object-contain h-screen md:h-auto"
+              >
+                {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+                {width > 640 ? (
+                  <source src={planetVideo} type="video/webm" />
+                ) : (
+                  <source src={planetVideoM} type="video/webm" />
+                )}
+                not supported
+              </video>
+            </div>
+            <div className="flex justify-center w-full h-full">
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-full top-[20%] absolute bottom-0 object-contain md:h-auto "
+              >
+                {width > 640 ? (
+                  <source src={prizeVideoM} type="video/webm" />
+                ) : (
+                  <source src={prizeVideoM} type="video/webm" />
+                )}
+              </video>
+            </div>
+            <div className="align-top">
+              <HeroTitle />
+            </div>
+            <CountDown />
+            <div className="w-full overflow-hidden">
+              <Tagline />
+            </div>
+          </>
         )}
         <Bg />
 

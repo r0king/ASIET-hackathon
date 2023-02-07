@@ -145,9 +145,8 @@ const PosterCarousel = () => {
         <div className="px-5">
           <a href="#allCategoryLink w-full">
             <h2 
-            className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
-              <span className="w-full block text-left">Hackathon</span>
-              <span className="w-full block text-[var(--primary-color)] text-right"> Categories</span>
+            className="relative flex justify-center font-[900] text-lg md:text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
+              Hackathon <span className="text-[var(--primary-color)] pl-2">Categories</span>
             </h2>
           </a>
         </div>
