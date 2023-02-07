@@ -5,7 +5,7 @@ import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/bgM.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
 import techImg from "../assets/Techathon/bgM.webp";
-import codathonImg from "../assets/Codathon/bgM.webp";
+import codathonImg from "../assets/Codathon/bgPosterM.webp";
 import youngImg from "../assets/Ideathon/bgM.webp";
 
 import Tilt from "react-parallax-tilt";
@@ -19,7 +19,7 @@ const PosterCarousel = () => {
       href: "#link",
       name: "codathon",
       image: codathonImg,
-      date: "29<sup>th</sup> March"
+      date: "29<sup>th</sup> March 2023"
     },
 
     {
@@ -27,7 +27,7 @@ const PosterCarousel = () => {
       href: "#link",
       name: "gameathon",
       image: gameImg,
-      date: "28-30<sup>th</sup> March"
+      date: "28-30<sup>th</sup> March 2023"
     },
     {
       id: 2,
@@ -143,12 +143,13 @@ const PosterCarousel = () => {
       <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden ">
         {/* :TITLE CONTAINER */}
         <div className="px-5">
-          <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest whitespace-nowrap origin-center transform hover:whtie">
-            <a href="#allCategoryLink">
-              Hackathon
-              <span className="text-[var(--primary-color)]"> Categories</span>
-            </a>
-          </h2>
+          <a href="#allCategoryLink w-full">
+            <h2 
+            className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
+              <span className="w-full block text-left">Hackathon</span>
+              <span className="w-full block text-[var(--primary-color)] text-right"> Categories</span>
+            </h2>
+          </a>
         </div>
         <Parallax targetElement={targetElement} scale={[0.7, 1]}>
           <div className="mx-auto pt-8 md:pt-4 max-w-md md:max-w-4xl flex flex-col md:flex-row items-center ">
@@ -180,11 +181,10 @@ const PosterCarousel = () => {
                         <a
                           aria-label={item.name}
                           href={item.name}
-                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
-                            position === item.id
-                              ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
-                              : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
-                          }`}
+                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${position === item.id
+                            ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
+                            : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
+                            }`}
                         >
                           {/* ::Image Container */}
                           <LazyLoad offset={350}>
@@ -199,16 +199,15 @@ const PosterCarousel = () => {
                               </span>
                               <span
                                 style={{
-                                  translate: "translateY(20px)",  
+                                  translate: "translateY(20px)",
                                 }}
                                 className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
-                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
-                             position === item.id
-                               ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
-                               : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
-                           } drop-shadow`}
+                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${position === item.id
+                                    ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
+                                    : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
+                                  } drop-shadow`}
                               >
                                 {item.name}
                               </span>
@@ -216,11 +215,10 @@ const PosterCarousel = () => {
                                 dangerouslySetInnerHTML={{ __html: item.date }}
                                 className={`absolute bottom-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
-                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${
-                             position === item.id
-                               ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
-                               : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
-                           } drop-shadow`}
+                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${position === item.id
+                                    ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
+                                    : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
+                                  } drop-shadow`}
                               >
                               </span>}
                             </div>

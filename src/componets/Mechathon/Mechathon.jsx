@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import bgImg from "../../assets/Mechathon/bgD.webp";
 import bgImgM from "../../assets/Mechathon/bgM.webp";
 
@@ -11,55 +11,69 @@ import {
 } from "@heroicons/react/solid";
 import { useWindowSize } from "react-use";
 import "./Mechathon.css";
-import { Navbar } from "../NavbarPages";
 import mechathonVideo from "../../assets/Mechathon/intro.webm";
-import ProfImg1 from "../../assets/avatar.webp";
-import ProfImg2 from "../../assets/avatar.webp";
-import ProfImg3 from "../../assets/avatar.webp";
+import ProfImg1 from "../../assets/Mechathon/cont3.webp";
+import ProfImg2 from "../../assets/Mechathon/cont1.webp";
+import ProfImg3 from "../../assets/Mechathon/cont4.webp";
+import ProfImg4 from "../../assets/Mechathon/cont2.webp";
+import NavWrapper from "../Utils/NavWrapper";
+import Bg from "../Utils/Bg";
+import Tab from "../Utils/Tab";
 
 function AboutMech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
-      <b>“Logic will get you from A to Z, imagination will get you everywhere.”</b> —Albert Einstein.<br />
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <b>
+        “Logic will get you from A to Z, imagination will get you everywhere.”
+      </b>
+      —Albert Einstein.
       <br />
-      Mechathon’23 is a technical fiesta conducted by Mechanical Engineering department as a part of Hachathon’23. The program provides a power packed group of competitions and events which would take place side by side. The competition categories include
+      <br />
+      Mechathon’23 is a technical fiesta conducted by Mechanical Engineering
+      department as a part of Hachathon’23. The program provides a power packed
+      group of competitions and events which would take place side by side. The
+      competition categories include
       <ul className="list-decimal pl-10">
-        <li>Go Kart</li>
+        <li>Go Kart Race</li>
         <li>Automotive Design Challenge</li>
       </ul>
-      The event would be a one of its kind experience and comes forth with exciting cash prizes worth 3 lakhs. Competitors from all over India would participate in this mega event.
+      The event would be a one of its kind experience and comes forth with
+      exciting cash prizes worth 3 lakhs. Competitors from all over India would
+      participate in this mega event.
     </div>
-  )
+  );
 }
 
 function EventMech(props) {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <p className="normal-case">
-        <b>Go Kart</b> <br /><br />
+        <b>Go Kart Race</b> <br />
+        <br />
         <ul className="list-disc pl-10">
-          <li>VENUE: COLLEGE GROUND/HOSTEL AREA</li>
-          <li>COLLABORATORS: SAE INDIA.ASME</li>
-          <li>EXPERT PANEL: EXTERNAL -2 AND INTERNAL 3</li>
-          <li>EVALUATION STRATEGY:STAGE BY STAGE PRESENTATION IN</li>
-          <li>FRONT OF EXPERT PANEL+PERFORMANCE ON THE DAY OF EVENT</li>
-          <li>EXPECTED NUMBER OF TEAMS: 20</li>
-          <li>REGISTRATION FEE: 6000 PER TEAM</li>
-          <li>EXPECTED SPONSERS MAJOR AUTOMOBILE SALES AND SERVICE</li>
-          <li>TOTAL CASH PRIZE: 2 LAKHS</li>
+          <li><b>Venue:</b> ASIET Campus</li>
+          <li><b>Expert Panel:</b> External 2 And Internal 3</li>
+          <li><b>Evaluation Strategy:</b> Stage By Stage Presentation In Front Of Expert Panel & performance On The Day Of Event</li>
+          <li><b>Expected Number Of Teams:</b> 20</li>
+          <li><b>Registration Fee:</b> 7500 Per Team</li>
+          <li><b>Expected Sponsers:</b> Major Automobile Sales And Service</li>
+          <li><b>Total Cash Prize:</b> 2 Lakhs</li>
         </ul>
         <br />
-        <b>Automotive Design Challenge</b><br /><br />
+        <b>Automotive Design Challenge</b>
+        <br />
+        <br />
         <ul className="list-disc pl-10">
-          <li>DESIGN AND ASSEMBLY OF AUTOMOBILE</li>
-          <li>EVALUATING AERODYNAMIC, AESTHETIC, ERGONOMICS AND SAFETY FEATURES</li>
-          <li>ALLOWED SOFTWARE- FUSION 360</li>
-          <li>TOTAL PRIZE- 25KEXPECTED NO: OF TEAMS-25 (MAXIMUM 2 MEMBERS/TEAM)</li>
-          <li>JUDGING PANEL- 2 MEMBERS FROM EXTERNAL AND 1 MEMBER FROM INTERNAL</li>
+          <li>Design, Assembly & Animation of 4 Stroke 4 Cylinder Engine</li>
+          <li>Evaluating Aerodynamic, Aesthetic, Ergonomics And Safety Features</li>
+          <li>Allowed Software - Fusion 360</li>
+          <li>Total Prize - 25k</li>
+          <li>expected No: Of Teams - 25 (Maximum 2 Members/team)</li>
+          <li>Judging Panel- 2 Members From External And 1 Member From Internal</li>
         </ul>
       </p>
     </div>
-  )
+  );
 }
 
 function ContactMech() {
@@ -80,9 +94,16 @@ function ContactMech() {
     },
     {
       id: 3,
-      fullName: "Ms. Harshananda TN",
-      contact: "+91 8943046975",
+      fullName: "Kiran KS",
+      contact: "+91 9605370685",
       imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 4,
+      fullName: "Eldhose K Joy",
+      contact: "+91 9605370685",
+      imgSrc: ProfImg4,
       imgAlt: "profile picture",
     },
   ];
@@ -123,6 +144,36 @@ function ContactMech() {
   );
 }
 
+function PrizeMech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <p>
+        <b>Go Kart Race</b>
+        <ul className="list-disc pl-10">
+          <li>1st Price: Rs. 1 Lakh</li>
+          <li>2nd Price: Rs. 40,000</li>
+          <li>Rs. 20000 For 3 Teams</li>
+        </ul>
+        <br />
+        <b>Automotive Design Challenge</b>
+        <ul className="list-disc pl-10">
+          <li>1st Price: Rs. 25,000</li>
+          <li>2nd Price: Rs. 15,000</li>
+          <li>3rd Price: Rs. 10,000</li>
+        </ul>
+      </p>
+    </div>
+  )
+}
+
+function RegisMech() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      Soon..
+    </div>
+  )
+}
+
 function Mechathon() {
   const tabs = [
     {
@@ -130,36 +181,22 @@ function Mechathon() {
       icon: ArchiveIcon,
       page: <AboutMech />,
     },
+    { name: "Registration", icon: CloudUploadIcon, page: <RegisMech /> },
     { name: "Events", icon: CloudUploadIcon, page: <EventMech /> },
     // { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     // { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
+    { name: "Prize", icon: CloudUploadIcon, page: <PrizeMech /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactMech /> },
-  ]
-  const [currentTab, setCurrentTab] = useState("About");
-
-  const translateValue =
-    (tabs.findIndex((tab) => tab.name === currentTab) / tabs.length) * 100;
-
+  ];
   const { width } = useWindowSize();
-  const [isOpen, setIsOpen] = useState(false);
+
+  const event = "Mechathon";
+  const eventDate = "";
 
   return (
     <>
-      <div className="relative h-screen">
-        <div className="absolute z-50 w-full ">
-          <Navbar
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-          // countDate="Mar 28, 2023 00:00:00"
-          />
-        </div>
-        <div className="absolute top-0 h-screen flex justify-center items-center w-full z-40 ">
-          <video autoPlay muted loop className="md:h-full w-full object-cover">
-            <source src={mechathonVideo} type='video/mp4; codecs="avc1"' />
-          </video>
-        </div>
-      </div>
+      <NavWrapper eventDate={eventDate} introVideo={mechathonVideo} />
       <div
         className="relative"
         style={
@@ -203,101 +240,45 @@ function Mechathon() {
             </h2>
             {/* description */}
             <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
-              Mechathon'23 is a technical festival organized by the Mechanical Engineering department as part of Hachathon'23. The event offers a diverse range of competitions and events, including Go-Kart and Automotive Design Challenge, that will bring together participants from across India. The competition categories are expected to be challenging and exciting, testing the skills and creativity of participants in the field of mechanical engineering, with exciting cash prizes worth 3 lakhs on offer. Mechathon'23 promises to be a one-of-a-kind experience for participants and a showcase of the latest trends and advancements in mechanical engineering.
+              Mechathon'23 is a technical festival organized by the Mechanical
+              Engineering department as part of Hachathon'23. The event offers a
+              diverse range of competitions and events, including Go-Kart and
+              Automotive Design Challenge, that will bring together participants
+              from across India. The competition categories are expected to be
+              challenging and exciting, testing the skills and creativity of
+              participants in the field of mechanical engineering, with exciting
+              cash prizes worth 3 lakhs on offer. Mechathon'23 promises to be a
+              one-of-a-kind experience for participants and a showcase of the
+              latest trends and advancements in mechanical engineering.
             </p>
             {/* basic rounded line button */}
-              <button
-                className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
-                style={{
-                  boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
-                }}
-              >
-                Register Now
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 my-auto "
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-          </div>
-        </div>
-      </div>
-      <div className="Mechathon relative my-10 mb-16">
-        <div className="bg-animation -z-10">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
-        <div className=" py-2 sticky top-0 z-10">
-          <div className="w-[90vw] mx-auto md:w-full md:max-w-5xl rounded-full border border-gray-200 bg-black/70 overflow-hidden">
-            {/* :LARGE DEVICES */}
-            <div className="relative  sm:block overflow-hidden">
-              {/* ::Navigation Tabs */}
-              <nav aria-label="Tabs">
-                <ul className="grid bg-black/70 grid-flow-col auto-cols-fr">
-                  {tabs.map((tab) => {
-                    const Icon = tab.icon;
-                    return (
-                      <li
-                        key={tab.name}
-                        className={`relative z-10 rounded-full text-base ${tab.name === currentTab
-                            ? "transition duration-300 text-black"
-                            : "text-gray-400 hover:text-gray-500"
-                          }`}
-                      >
-                        <button
-                          type="button"
-                          className="md:p-4 p-2 w-full inline-flex justify-center items-center text-center md:text-sm text-[.6rem] font-semibold"
-                          onClick={() => setCurrentTab(tab.name)}
-                        >
-                          {width > 640 ? (
-                            <Icon className="mr-1.5 w-5 h-5" />
-                          ) : (
-                            ""
-                          )}
-                          {tab.name}
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </nav>
-              {/* ::Sliding Background */}
-              <div className="absolute inset-0 mx-auto w-full h-full rounded-full">
-                <div
-                  className="relative h-full transition-all duration-300 ease-in"
-                  style={{ transform: `translateX(${translateValue}%)` }}
-                >
-                  <div
-                    className="h-full rounded-full bg-[var(--secondary-color)]"
-                    style={{ width: `${(1 / tabs.length) * 100}%` }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {tabs.map((tab) => {
-          return (
-            <div
-              key={tab.name}
-              className="md:mx-16 mx-6 my-10 text-[var(--primary-color)]"
+            <button
+              className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+              style={{
+                boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
+              }}
             >
-              {tab.name === currentTab ? tab.page : ""}
-            </div>
-          );
-        })}
+              Register Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 my-auto "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
+      <Bg />
+      <Tab tabs={tabs} eventName={event} />
     </>
   );
 }

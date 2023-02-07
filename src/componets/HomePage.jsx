@@ -14,13 +14,14 @@ import Menu from "./Menu";
 import PosterCarousel from "./PosterCarousel";
 import Sponsors from "./Sponsors/Sponsors";
 import Tagline from "./Tagline";
+import Bg from "./Utils/Bg";
 
 import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-// import prizeVideo from "../assets/prize.mp4";
 import prizeVideoM from "../assets/prizeM.webm";
+import introVideo from "../assets/intro.webm";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -80,7 +81,7 @@ const Component = () => {
           {width > 640 ? (
             <source src={planetVideo} type="video/webm" />
           ) : (
-            <source src={planetVideoM} type='video/webm' />
+            <source src={planetVideoM} type="video/webm" />
           )}
           not supported
         </video>
@@ -101,9 +102,9 @@ const Component = () => {
           className="z-30 w-full top-0 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
-            <source src={prizeVideoM} type='video/webm' />
+            <source src={prizeVideoM} type="video/webm" />
           ) : (
-            <source src={prizeVideoM} type='video/webm' />
+            <source src={prizeVideoM} type="video/webm" />
           )}
         </video>
       </div>
@@ -142,6 +143,30 @@ const Component = () => {
   };
   return (
     <>
+      <div className="fixed top-0 h-screen flex justify-center items-center w-full z-40 animate__animated animate__slow bg-black ">
+        <video
+          autoPlay
+          muted
+          onEnded={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onClick={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onChange={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onScroll={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          onTouchMove={(e) => { e.target.parentElement.classList.add("animate__zoomOut");
+                            e.target.parentElement.classList.add("-z-50")            
+        }}
+          className=" md:h-full w-full object-cover"
+        >
+          <source src={introVideo} type='video/mp4; codecs="avc1"' />
+        </video>
+      </div>
       <div className=" ">
         <Menu />
         {width > 640 ? (
@@ -167,37 +192,28 @@ const Component = () => {
                 className=" top-[8%] absolute bottom-0 object-contain md:h-auto "
               >
                 {width > 640 ? (
-                  <source src={prizeVideoM} type='video/webm' />
+                  <source src={prizeVideoM} type="video/webm" />
                 ) : (
-                  <source src={prizeVideoM} type='video/webm' />
+                  <source src={prizeVideoM} type="video/webm" />
                 )}
               </video>
             </div>
-            <Sponsors />
           </>
         ) : (
-          <>
-            <ParallaxBanner
-              layers={[
-                background,
-                headline,
-                videoglobe,
-                countdown,
-                videoprize,
-                tagline,
-              ]}
-              className="h-[110vh] bg-black"
-            />
-            {/* <Tagline /> */}
-            <Sponsors />
-          </>
+          <ParallaxBanner
+            layers={[
+              background,
+              headline,
+              videoglobe,
+              countdown,
+              videoprize,
+              tagline,
+            ]}
+            className="h-[110vh] bg-black"
+          />
         )}
-        <div className="bg-animation -z-10">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div id="stars4"></div>
-        </div>
+        <Bg />
+
         {/* <Timeline /> */}
         {/* <Partners /> */}
         <PosterCarousel />
@@ -232,7 +248,8 @@ const Component = () => {
             },
             {
               speed: 20,
-              translateY: width > 640 ? [106, 68,'easeInOut'] : [70, 98],
+              translateY:
+                width > 640 ? [106, 72, "easeInOut"] : [84, 90, "easeInOut"],
               scale: [1, 1.4, "easeOutBack"],
               // easing: "easeInOutCubic",
               children: (
@@ -247,6 +264,7 @@ const Component = () => {
           ]}
         >
           <AllUNeed2Know />
+          <Sponsors />
           <Faq />
           <AboutUs />
           <ContactUs />
