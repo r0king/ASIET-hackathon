@@ -77,7 +77,7 @@ function Tab({ tabs, eventName }) {
           })}
         </div>
       ) : (
-        <div className="mx-auto w-5/6 max-w-md mt-10 sm:hidden rounded-lg ">
+        <div className="mx-auto w-5/6 max-w-md my-10 sm:hidden rounded-lg ">
           <select
             name="current-tab"
             id="current-tab"
