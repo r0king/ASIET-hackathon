@@ -22,6 +22,7 @@ import ProfImg3 from "../../assets/avatar.webp";
 import Tab from "../Utils/Tab";
 import Bg from "../Utils/Bg";
 import NavWrapper from "../Utils/NavWrapper";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutGame(props) {
   return (
@@ -127,8 +128,8 @@ function ContactGame() {
 
 function PrizeGame() {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Soon....
+    <div className="md:p-10 p-3 text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <PrizeCards/>
     </div>
   );
 }
