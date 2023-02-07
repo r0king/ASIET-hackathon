@@ -98,10 +98,7 @@ function Tab({ tabs, eventName }) {
           </select>
           {tabs.map((tab) => {
             return (
-              <div
-                key={tab.name}
-                className="text-[var(--secondary-color)]"
-              >
+              <div key={tab.name} className="text-[var(--secondary-color)]">
                 {tab.name === selectedOption ? tab.page : ""}
               </div>
             );

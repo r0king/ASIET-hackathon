@@ -13,6 +13,7 @@ import Techathon from "./componets/Techathon/Techathon";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { useState, useEffect } from "react";
 import LoadingIcons from "react-loading-icons";
+import PrizeCard from "./componets/Utils/PrizeCard";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -61,6 +62,7 @@ function App() {
             <Route exact path="/civiathon" element={<Civilathon />} />
             <Route exact path="/bizthon" element={<Bizthon />} />
             <Route exact path="/techathon" element={<Techathon />} />
+            <Route exact path="/prize" element={<PrizeCard />} />
           </Routes>
         </BrowserRouter>
       )}
