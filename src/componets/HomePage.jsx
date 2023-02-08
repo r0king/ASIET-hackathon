@@ -60,7 +60,7 @@ const Component = () => {
       </div>
     ),
   };
-  const videoglobe: BannerLayer = {
+  const videoglobe = {
     translateY:
       width > 640 ? ["48%", "-25%", "easeInOut"] : ["90%", "-25%", "easeInOut"],
     opacity: [0.95, 0.8, "easeOutCubic"],

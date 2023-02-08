@@ -208,7 +208,7 @@ function Mechathon() {
               backgroundPosition: "center",
               height: "140vh",
               backgroundColor: "var(--bg-color)",
-              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
             }
             : {
               backgroundImage: `url(${bgImgM})`,

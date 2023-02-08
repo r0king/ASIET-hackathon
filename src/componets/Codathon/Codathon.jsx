@@ -303,7 +303,7 @@ function Codathon() {
     <>
       <NavWrapper eventDate={eventDate} introVideo={codathonVideo} />
       <div
-        className="Codathon"
+        className="Codathon pt-[6%]"
         style={
           width > 640
             ? {
@@ -311,9 +311,8 @@ function Codathon() {
                 backgroundSize: "contain",
                 backgroundPosition: "right 0",
                 backgroundRepeat: "no-repeat",
-                height: "116vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+                height: "140vh",
+                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",              }
             : {
                 backgroundImage: `url(${bgImgM})`,
                 backgroundSize: "cover",

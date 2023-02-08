@@ -376,7 +376,7 @@ function Civilathon() {
       <NavWrapper eventDate={eventDate} introVideo={civiathonVideo} />
 
       <div
-        className="Civilathon"
+        className="Civilathon pt-[10%]"
         style={
           width > 640
             ? {
@@ -386,7 +386,7 @@ function Civilathon() {
                 backgroundRepeat: "no-repeat",
                 height: "140vh",
                 backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
               }
             : {
                 backgroundImage: `url(${bgImg})`,
