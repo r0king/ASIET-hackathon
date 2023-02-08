@@ -29,8 +29,8 @@ function AboutMech(props) {
       —Albert Einstein.
       <br />
       <br />
-      Mechathon’23 is a technical fiesta conducted by Mechanical Engineering
-      department as a part of Hachathon’23. The program provides a power packed
+      Mechathon 2K23 is a technical fiesta conducted by Mechanical Engineering
+      department as a part of Hachathon 2K23. The program provides a power packed
       group of competitions and events which would take place side by side. The
       competition categories include
       <ul className="list-decimal pl-10">
@@ -53,22 +53,21 @@ function EventMech(props) {
         <ul className="list-disc pl-10">
           <li><b>Venue:</b> ASIET Campus</li>
           <li><b>Expert Panel:</b> External 2 And Internal 3</li>
-          <li><b>Evaluation Strategy:</b> Stage By Stage Presentation In Front Of Expert Panel & performance On The Day Of Event</li>
+          <li><b>Evaluation Strategy:</b> Stage by stage presentation in front of expert panel & performance on the day of event</li>
           <li><b>Expected Number Of Teams:</b> 20</li>
           <li><b>Registration Fee:</b> 7500 Per Team</li>
           <li><b>Expected Sponsers:</b> Major Automobile Sales And Service</li>
-          <li><b>Total Cash Prize:</b> 2 Lakhs</li>
+          <li><b>Total Cash Prize:</b> 2.1 Lakhs</li>
         </ul>
         <br />
         <b>Automotive Design Challenge</b>
         <br />
         <br />
         <ul className="list-disc pl-10">
-          <li>Design, Assembly & Animation of 4 Stroke 4 Cylinder Engine</li>
-          <li>Evaluating Aerodynamic, Aesthetic, Ergonomics And Safety Features</li>
+          <li>Aesthetic & ergonomic design of an automative vehicle</li>
           <li>Allowed Software - Fusion 360</li>
           <li>Total Prize - 25k</li>
-          <li>expected No: Of Teams - 25 (Maximum 2 Members/team)</li>
+          <li>Expected No: Of Teams - 25 (Maximum 2 Members/team)</li>
           <li>Judging Panel- 2 Members From External And 1 Member From Internal</li>
         </ul>
       </p>
@@ -102,7 +101,7 @@ function ContactMech() {
     {
       id: 4,
       fullName: "Eldhose K Joy",
-      contact: "+91 9605370685",
+      contact: "+91 9605440515",
       imgSrc: ProfImg4,
       imgAlt: "profile picture",
     },
@@ -151,15 +150,15 @@ function PrizeMech() {
         <b>Go Kart Race</b>
         <ul className="list-disc pl-10">
           <li>1st Price: Rs. 1 Lakh</li>
-          <li>2nd Price: Rs. 40,000</li>
+          <li>2nd Price: Rs. 50,000</li>
           <li>Rs. 20000 For 3 Teams</li>
         </ul>
         <br />
         <b>Automotive Design Challenge</b>
         <ul className="list-disc pl-10">
-          <li>1st Price: Rs. 25,000</li>
-          <li>2nd Price: Rs. 15,000</li>
-          <li>3rd Price: Rs. 10,000</li>
+          <li>1st Price: Rs. 12,000</li>
+          <li>2nd Price: Rs. 8,000</li>
+          <li>3rd Price: Rs. 5,000</li>
         </ul>
       </p>
     </div>

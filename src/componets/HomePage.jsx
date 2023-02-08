@@ -20,8 +20,8 @@ import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-import prizeVideoM from "../assets/prizeM.webm";
-import introVideo from "../assets/intro.webm";
+import prizeVideoM from "../assets/prizeM1.webm";
+import introVideo from "../assets/intro1.webm";
 
 const Component = () => {
   const { width } = useWindowSize();
@@ -94,7 +94,7 @@ const Component = () => {
           autoPlay
           loop
           muted
-          className="z-30 w-full top-0 absolute bottom-0 object-contain md:h-auto "
+          className="z-30 w-[80%] top-3 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
             <source src={prizeVideoM} type="video/webm" />
@@ -213,7 +213,9 @@ const Component = () => {
           />
         )}
         <Bg />
+        <AllUNeed2Know />
         <PosterCarousel />
+        
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
           layers={[
@@ -248,7 +250,7 @@ const Component = () => {
               translateY:
                 width > 640 ? [106, 72, "easeInOut"] : [84, 90, "easeInOut"],
               scale: [1, 1.4, "easeOutBack"],
-              // easing: "easeInOutCubic",
+              easing: "easeInOutCubic",
               children: (
                 <img
                   className="w-screen"
@@ -260,7 +262,7 @@ const Component = () => {
             },
           ]}
         >
-          <AllUNeed2Know />
+          
           <Sponsors />
           <Faq />
           <AboutUs />

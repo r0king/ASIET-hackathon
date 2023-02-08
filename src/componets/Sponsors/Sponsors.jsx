@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 // { useEffect, useState } from "react";
-import logo1 from "../../assets/Sponsors/sampleLogo.webp";
-import logo2 from "../../assets/Sponsors/sampleLogo.webp";
-import logo3 from "../../assets/Sponsors/sampleLogo.webp";
-import logo4 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo1 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo2 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo3 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo4 from "../../assets/Sponsors/sampleLogo.webp";
 import partLogo1 from "../../assets/Sponsors/titlab.png.webp";
 import partLogo2 from "../../assets/Sponsors/ciirc.png.webp";
+import partLogo3 from "../../assets/Sponsors/iic.webp";
+import partLogo4 from "../../assets/Sponsors/devfolio.webp";
+import partLogo5 from "../../assets/Sponsors/polygon.webp";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
@@ -843,7 +846,7 @@ const Sponsors = () => {
                     perspective={500}
                   >
                     <div className="img">
-                      <img src={logo3} alt="" />
+                      <img src={partLogo3} alt="" />
                     </div>
                   </Tilt>
                   <Tilt
@@ -856,7 +859,20 @@ const Sponsors = () => {
                     perspective={500}
                   >
                     <div className="img">
-                      <img src={logo4} alt="" />
+                      <img src={partLogo4} alt="" />
+                    </div>
+                  </Tilt>
+                  <Tilt
+                    scale={0.9}
+                    glareEnable={true}
+                    glareColor="pink"
+                    glarePosition="all"
+                    glareMaxOpacity={0.45}
+                    glareBorderRadius="15px"
+                    perspective={500}
+                  >
+                    <div className="img">
+                      <img src={partLogo5} alt="" />
                     </div>
                   </Tilt>
                 </div>
@@ -864,7 +880,7 @@ const Sponsors = () => {
             </Parallax>
           ) : (
             <div>
-              <div className="w-full flex justify-center items-center">
+              {/* <div className="w-full flex justify-center items-center">
                 <span className="flex-grow opacity-80">
                   <svg
                     width="96"
@@ -919,20 +935,23 @@ const Sponsors = () => {
                     />
                   </svg>
                 </span>
-              </div>
+              </div> */}
               <LazyLoad offset={450}>
                 <div className="images ">
                   <div className="img">
-                    <img src={logo1} alt="" />
+                    <img src={partLogo1} alt="" />
                   </div>
                   <div className="img">
-                    <img src={logo2} alt="" />
+                    <img src={partLogo2} alt="" />
                   </div>
                   <div className="img">
-                    <img src={logo3} alt="" />
+                    <img src={partLogo3} alt="" />
                   </div>
                   <div className="img">
-                    <img src={logo4} alt="" />
+                    <img src={partLogo4} alt="" />
+                  </div>
+                  <div className="img">
+                    <img src={partLogo5} alt="" />
                   </div>
                 </div>
               </LazyLoad>
