@@ -20,7 +20,7 @@ import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-import prizeVideoM from "../assets/prizeM.mp4";
+import prizeVideoM from "../assets/prizeM1.webm";
 import introVideo from "../assets/intro1.webm";
 
 const Component = () => {
