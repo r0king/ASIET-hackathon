@@ -15,63 +15,70 @@ import LazyLoad from "react-lazy-load";
 const PosterCarousel = () => {
   const categories = [
     {
-      id: 0,
-      href: "#link",
-      name: "codathon",
-      image: codathonImg,
-      date: "29<sup>th</sup> March 2023"
-    },
-
-    {
-      id: 1,
-      href: "#link",
-      name: "gameathon",
-      image: gameImg,
-      date: "28-30<sup>th</sup> March 2023"
-    },
-    {
-      id: 2,
-      href: "#link",
-      name: "techathon",
-      image: techImg,
-      date: "Coming Soon"
-    },
-    {
-      id: 3,
-      href: "#link",
-      name: "bizthon",
-      image: bizImg,
-      date: "Coming Soon"
-    },
-    {
-      id: 4,
-      href: "#link",
-      name: "mechathon",
-      image: mechImg,
-      date: "Coming Soon"
-    },
-    {
-      id: 5,
-      href: "#link",
       name: "civiathon",
       image: civiImg,
-      date: "Coming Soon"
+      date: "Coming Soon",
     },
     {
-      id: 6,
-      href: "#link",
       name: "young scientists award",
       image: youngImg,
-      date: "Coming Soon"
+      date: "Coming Soon",
+    },
+    {
+      name: "codathon",
+      image: codathonImg,
+      date: "29<sup>th</sup> March 2023",
+    },
+    {
+      name: "gameathon",
+      image: gameImg,
+      date: "28-30<sup>th</sup> March 2023",
+    },
+    {
+      name: "techathon",
+      image: techImg,
+      date: "Coming Soon",
+    },
+    {
+      name: "bizthon",
+      image: bizImg,
+      date: "Coming Soon",
+    },
+    {
+      name: "mechathon",
+      image: mechImg,
+      date: "Coming Soon",
+    },
+    {
+      name: "civiathon",
+      image: civiImg,
+      date: "Coming Soon",
+    },
+    {
+      name: "young scientists award",
+      image: youngImg,
+      date: "Coming Soon",
+    },
+    {
+      name: "codathon",
+      image: codathonImg,
+      date: "29<sup>th</sup> March 2023",
+    },
+    {
+      name: "gameathon",
+      image: gameImg,
+      date: "28-30<sup>th</sup> March 2023",
     },
   ];
 
   // Javascript for demonstration purpose of sliding effect. Keep it or implement your own custom solution.
-  const [position, setPosition] = useState(1);
+  const [position, setPosition] = useState(3);
   const prevBtn = React.createRef();
   const nextBtn = React.createRef();
   const previousSuggestion = () => {
-    if (position >= 1) {
+    if (position <= 2) {
+      setPosition(categories.length - 3);
+    } else if (position >= 1) {
       setPosition(position - 1);
       // if it have prevAnimation2 class then remove it and add prevAnimation1 class
       if (prevBtn.current.classList.contains("prevAnimation2")) {
@@ -92,9 +99,11 @@ const PosterCarousel = () => {
     }
   };
   const nextSuggestion = () => {
-    let maxSlide = categories.length - 2;
+    let maxSlide = categories.length - 1;
     position <= maxSlide && setPosition(position + 1);
-    if (position <= maxSlide) {
+    if (position >= maxSlide - 2) {
+      setPosition(2);
+    } else if (position <= maxSlide) {
       // setPosition(position + 1);
       // if it have nextAnimation2 class then remove it and add nextAnimation1 class
       if (nextBtn.current.classList.contains("nextAnimation2")) {
@@ -105,9 +114,7 @@ const PosterCarousel = () => {
       else if (nextBtn.current.classList.contains("nextAnimation1")) {
         nextBtn.current.classList.remove("nextAnimation1");
         nextBtn.current.classList.add("nextAnimation2");
-      }
-      // if it doesn't have any class then add nextAnimation2 class
-      else {
+      } else {
         nextBtn.current.classList.add("nextAnimation2");
       }
     }
@@ -118,9 +125,6 @@ const PosterCarousel = () => {
   useEffect(() => {
     const slide = document.getElementById("slider-w3c9");
     let start = position;
-    // const viewport = window.innerWidth;
-    // let slideValue = viewport < 640 ? -290 : (-33.33);
-    // On each state update it will slide to the current position
     slide.style.transform = `translateX(${start * -290}px)`;
     prevBtn.current.style.opacity = 1;
     nextBtn.current.style.opacity = 1;
@@ -144,9 +148,11 @@ const PosterCarousel = () => {
         {/* :TITLE CONTAINER */}
         <div className="px-5">
           <a href="#allCategoryLink w-full">
-            <h2 
-            className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
-              Hackathon <span className="text-[var(--primary-color)]">&nbsp; Categories</span>
+            <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
+              Hackathon{" "}
+              <span className="text-[var(--primary-color)]">
+                &nbsp; Categories
+              </span>
             </h2>
           </a>
         </div>
@@ -157,21 +163,13 @@ const PosterCarousel = () => {
               {/* CARDS */}
               <ul
                 id="slider-w3c9"
-                className="w-full flex transition-all duration-500 ease-in ml-[7vw]"
+                className="w-full flex flex-nowrap transition-all duration-500 ease-in ml-6 md:ml-[290px]"
               >
-                {categories.map((item) => (
-                  <li>
-                    <Tilt
-                      // glareEnable={true}
-                      // glareColor="cyan"
-                      // glareMaxOpacity={0.35}
-                      // glarePosition="top"
-                      // glareBorderRadius="15px"
-                      perspective={500}
-                      key={item.id}
-                    >
+                {categories.map((item, index) => (
+                  <li key={index}>
+                    <Tilt perspective={500}>
                       <div
-                        key={item.id}
+                        key={index}
                         className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
                         style={{
                           transformStyle: "preserve-3d",
@@ -180,48 +178,52 @@ const PosterCarousel = () => {
                         <a
                           aria-label={item.name}
                           href={item.name}
-                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${position === item.id
-                            ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
-                            : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
-                            }`}
+                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
+                            position === index
+                              ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
+                              : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
+                          }`}
                         >
                           {/* ::Image Container */}
-                          <LazyLoad offset={350}>
-                            <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
-                              <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg  overflow-hidden">
-                                {/* :::image nft */}
-                                <img
-                                  src={item.image}
-                                  alt=""
-                                  className={`object-cover rounded-md opacity-90 w-full max-h-[360px]`}
-                                />
-                              </span>
-                              <span
-                                style={{
-                                  translate: "translateY(20px)",
-                                }}
-                                className={`absolute top-3 duration-300 animate__animated animate__fast
+                          <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                            <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg  overflow-hidden">
+                              {/* :::image nft */}
+                              <img
+                                src={item.image}
+                                alt=""
+                                className={`object-cover rounded-md opacity-90 w-full max-h-[360px]`}
+                              />
+                            </span>
+                            <span
+                              style={{
+                                translate: "translateY(20px)",
+                              }}
+                              className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
-                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${position === item.id
-                                    ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
-                                    : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
-                                  } drop-shadow`}
-                              >
-                                {item.name}
-                              </span>
-                              {<span
-                                dangerouslySetInnerHTML={{ __html: item.date }}
+                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
+                             position === index
+                               ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
+                               : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
+                           } drop-shadow`}
+                            >
+                              {item.name}
+                            </span>
+                            {
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: item.date,
+                                }}
                                 className={`absolute bottom-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
-                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${position === item.id
-                                    ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
-                                    : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
-                                  } drop-shadow`}
-                              >
-                              </span>}
-                            </div>
-                          </LazyLoad>
+                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${
+                             position === index
+                               ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
+                               : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
+                           } drop-shadow`}
+                              ></span>
+                            }
+                          </div>
                         </a>
                       </div>
                     </Tilt>

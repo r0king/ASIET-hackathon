@@ -20,13 +20,13 @@ import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-import prizeVideoM from "../assets/prizeM.webm";
-import introVideo from "../assets/intro.webm";
+import prizeVideoM from "../assets/prizeM1.webm";
+import introVideo from "../assets/intro1.webm";
 
 const Component = () => {
   const { width } = useWindowSize();
 
-  const background = {
+  const background: BannerLayer = {
     speed: -10,
     translateX: width > 640 ? [0, -20] : [0, -40],
     scale: width > 640 ? [2.5, 1.5, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
@@ -83,7 +83,7 @@ const Component = () => {
       </div>
     ),
   };
-  const videoprize = {
+  const videoprize: BannerLayer = {
     translateY: width > 640 ? ["45%", "30%"] : ["20%", "0%"],
     opacity:
       width > 640 ? [3.5, -0.7, "easeInOutCubic"] : [1, 0.9, "ease"],
@@ -94,7 +94,7 @@ const Component = () => {
           autoPlay
           loop
           muted
-          className="z-30 w-full top-0 absolute bottom-0 object-contain md:h-auto "
+          className="z-30 w-[80%] top-3 absolute bottom-0 object-contain md:h-auto "
         >
           {width > 640 ? (
             <source src={prizeVideoM} type="video/webm" />
@@ -105,7 +105,7 @@ const Component = () => {
       </div>
     ),
   };
-  const headline = {
+  const headline: BannerLayer = {
     translateX: width > 640 ? [5, 20] : [0, 0],
     translateY: [width > 640 ? -2 : -10, -20],
     speed: 40,
@@ -127,7 +127,7 @@ const Component = () => {
     expanded: false,
     children: <CountDown />,
   };
-  const tagline = {
+  const tagline: BannerLayer = {
     translateY: [width > 640 ? 65 : 60, width > 640 ? 48 : 68],
     shouldAlwaysCompleteAnimation: true,
     children: (
@@ -173,11 +173,15 @@ const Component = () => {
           <>
             <ParallaxBanner
               layers={[
+                // background,
                 videoglobe,
                 headline,
                 countdown,
+                // sponsers,
+                // videoprize,
                 tagline,
               ]}
+              // gradientOverlay]}
               className="h-[100vh] bg-black"
             ></ParallaxBanner>
             <div className="flex justify-center w-full h-full">
@@ -196,48 +200,22 @@ const Component = () => {
             </div>
           </>
         ) : (
-          <>
-            <div className="flex justify-center pt-[40%] -z-10 object-center items-center w-full h-full">
-              <video
-                autoPlay
-                loop
-                muted
-                className="-bottom-[60%] max-w-full absolute object-contain h-screen md:h-auto"
-              >
-                {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
-                {width > 640 ? (
-                  <source src={planetVideo} type="video/webm" />
-                ) : (
-                  <source src={planetVideoM} type="video/webm" />
-                )}
-                not supported
-              </video>
-            </div>
-            <div className="flex justify-center w-full h-full">
-              <video
-                autoPlay
-                loop
-                muted
-                className="w-full top-[20%] absolute bottom-0 object-contain md:h-auto "
-              >
-                {width > 640 ? (
-                  <source src={prizeVideoM} type="video/webm" />
-                ) : (
-                  <source src={prizeVideoM} type="video/webm" />
-                )}
-              </video>
-            </div>
-            <div className="align-top">
-              <HeroTitle />
-            </div>
-            <CountDown />
-            <div className="w-full overflow-hidden">
-              <Tagline />
-            </div>
-          </>
+          <ParallaxBanner
+            layers={[
+              background,
+              headline,
+              videoglobe,
+              countdown,
+              videoprize,
+              tagline,
+            ]}
+            className="h-[110vh] bg-black"
+          />
         )}
         <Bg />
+        <AllUNeed2Know />
         <PosterCarousel />
+        
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
           layers={[
@@ -272,7 +250,7 @@ const Component = () => {
               translateY:
                 width > 640 ? [106, 72, "easeInOut"] : [84, 90, "easeInOut"],
               scale: [1, 1.4, "easeOutBack"],
-              // easing: "easeInOutCubic",
+              easing: "easeInOutCubic",
               children: (
                 <img
                   className="w-screen"
@@ -284,7 +262,7 @@ const Component = () => {
             },
           ]}
         >
-          <AllUNeed2Know />
+          
           <Sponsors />
           <Faq />
           <AboutUs />

@@ -134,6 +134,9 @@ function GuideYoung(props) {
       <br />
       <ul className="list-disc pl-10">
         <li>
+          Students studying in class 8 to 12 accredited to any school board in India and Middle-East are eligible to participate
+        </li>
+        <li>
           Each team can have a maximum of 2 students.(both from the same school)
         </li>
         <li>Each team should have a mentor from the same school.</li>
@@ -325,7 +328,7 @@ function Ideathon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            Registration will starts on July 2023
+            Registration will start on July 2023
           </h2>
           {/* description */}
           <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
