@@ -211,7 +211,7 @@ function Techathon() {
                 backgroundRepeat: "no-repeat",
                 height: "140vh",
                 backgroundColor: "var(--bg-color)",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+                boxShadow: "inset 0px 0px 50px 0px black, inset 0px 90px 50px -20px black",
               }
             : {
                 backgroundImage: `url(${bgImgM})`,
@@ -219,7 +219,7 @@ function Techathon() {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
+                boxShadow: "inset 0px 0px 50px -20px black, inset 0px 30px 50px -40px black",
               }
         }
       >
