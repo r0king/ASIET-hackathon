@@ -10,8 +10,8 @@ import youngImg from "../assets/Ideathon/bgM.webp";
 
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
-import LazyLoad from "react-lazy-load";
-
+// import LazyLoad from "react-lazy-load";
+// 
 const PosterCarousel = () => {
   const categories = [
     {

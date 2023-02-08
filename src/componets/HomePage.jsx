@@ -22,48 +22,26 @@ import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
 import prizeVideoM from "../assets/prizeM1.webm";
 import introVideo from "../assets/intro1.webm";
+import { useEffect } from "react";
 
 const Component = () => {
   const { width } = useWindowSize();
-
-  const background: BannerLayer = {
-    speed: -10,
-    translateX: width > 640 ? [0, -20] : [0, -40],
-    scale: width > 640 ? [2.5, 1.5, "easeOutCubic"] : [1, 0.5, "easeOutCubic"],
-    shouldAlwaysCompleteAnimation: true,
-    children: (
-      <div className="bg-animation no-animation">
-        <div
-          id="stars"
-          style={{
-            animationPlayState: "paused",
-          }}
-        ></div>
-        <div
-          id="stars2"
-          style={{
-            animationPlayState: "paused",
-          }}
-        ></div>
-        <div
-          id="stars3"
-          style={{
-            animationPlayState: "paused",
-          }}
-        ></div>
-        <div
-          id="stars4"
-          style={{
-            animationPlayState: "paused",
-          }}
-        ></div>
-      </div>
-    ),
-  };
+  const introVideoRef = React.useRef(null);
+  useEffect(() => {
+    const hideVideo = () => {
+      introVideoRef.current.classList.add("animate__zoomOut");
+      introVideoRef.current.classList.add("-z-50");
+      window.removeEventListener("scroll", hideVideo);
+    };
+    window.addEventListener("scroll", hideVideo);
+    return () => {
+      window.removeEventListener("scroll", hideVideo);
+    };
+  }, []);
   const videoglobe = {
-    translateY:
-      width > 640 ? ["48%", "-25%", "easeInOut"] : ["90%", "-25%", "easeInOut"],
+    translateY: ["-48%", "0", "easeInOut"],
     opacity: [0.95, 0.8, "easeOutCubic"],
+    easing: "ease",
     scale: [width > 640 ? 0.8 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
     children: (
       <div className="flex justify-center object-center items-center w-full h-full">
@@ -83,33 +61,12 @@ const Component = () => {
       </div>
     ),
   };
-  const videoprize: BannerLayer = {
-    translateY: width > 640 ? ["45%", "30%"] : ["20%", "0%"],
-    opacity:
-      width > 640 ? [3.5, -0.7, "easeInOutCubic"] : [1, 0.9, "ease"],
-    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "ease"],
-    children: (
-      <div className="flex justify-center w-full h-full">
-        <video
-          autoPlay
-          loop
-          muted
-          className="z-30 w-[80%] top-3 absolute bottom-0 object-contain md:h-auto "
-        >
-          {width > 640 ? (
-            <source src={prizeVideoM} type="video/webm" />
-          ) : (
-            <source src={prizeVideoM} type="video/webm" />
-          )}
-        </video>
-      </div>
-    ),
-  };
-  const headline: BannerLayer = {
+  const headline = {
     translateX: width > 640 ? [5, 20] : [0, 0],
     translateY: [width > 640 ? -2 : -10, -20],
     speed: 40,
     scale: [1, 1.15, "easeOutCubic"],
+    opacity: [1, -0.1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
@@ -119,16 +76,17 @@ const Component = () => {
     ),
   };
   const countdown = {
-    translateY: [width > 640 ? 86 : 69, 70],
+    translateY: [width > 640 ? 0 : 69, -70],
     speed: -10,
+    opacity: [1, -0.5, "easeOutCubic"],
     translateX: width > 640 ? [6, 20] : [0, 0],
     scale: [1, 1.15, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: <CountDown />,
   };
-  const tagline: BannerLayer = {
-    translateY: [width > 640 ? 65 : 60, width > 640 ? 48 : 68],
+  const tagline = {
+    translateY: [width > 640 ? 68 : 60, width > 640 ? 48 : 68],
     shouldAlwaysCompleteAnimation: true,
     children: (
       <>
@@ -138,7 +96,10 @@ const Component = () => {
   };
   return (
     <>
-      <div className="fixed top-0 h-screen flex justify-center items-center w-full z-40 animate__animated animate__slow bg-black ">
+      <div
+        className="fixed top-0 h-screen flex justify-center items-center w-full z-40 animate__animated animate__slow bg-black "
+        ref={introVideoRef}
+      >
         <video
           autoPlay
           muted
@@ -172,24 +133,14 @@ const Component = () => {
         {width > 640 ? (
           <>
             <ParallaxBanner
-              layers={[
-                // background,
-                videoglobe,
-                headline,
-                countdown,
-                // sponsers,
-                // videoprize,
-                tagline,
-              ]}
-              // gradientOverlay]}
+              layers={[videoglobe, headline, countdown, tagline]}
               className="h-[100vh] bg-black"
             ></ParallaxBanner>
             <div className="flex justify-center w-full h-full">
               <video
                 autoPlay
-                loop
                 muted
-                className=" top-[8%] absolute bottom-0 object-contain md:h-auto "
+                className=" top-[8%] absolute bottom-0 object-contain md:h-auto w-[85%]"
               >
                 {width > 640 ? (
                   <source src={prizeVideoM} type="video/webm" />
@@ -200,22 +151,50 @@ const Component = () => {
             </div>
           </>
         ) : (
-          <ParallaxBanner
-            layers={[
-              background,
-              headline,
-              videoglobe,
-              countdown,
-              videoprize,
-              tagline,
-            ]}
-            className="h-[110vh] bg-black"
-          />
+          <>
+            <div className="flex justify-center pt-[40%] -z-10 object-center items-center w-full h-full">
+              <video
+                autoPlay
+                loop
+                muted
+                className="-bottom-[60%] max-w-full absolute object-contain h-screen md:h-auto"
+              >
+                {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
+                {width > 640 ? (
+                  <source src={planetVideo} type="video/webm" />
+                ) : (
+                  <source src={planetVideoM} type="video/webm" />
+                )}
+                not supported
+              </video>
+            </div>
+            <div className="flex justify-center w-full h-full">
+              <video
+                autoPlay
+                loop
+                muted
+                className="w-full top-[20%] absolute bottom-0 object-contain md:h-auto "
+              >
+                {width > 640 ? (
+                  <source src={prizeVideoM} type="video/webm" />
+                ) : (
+                  <source src={prizeVideoM} type="video/webm" />
+                )}
+              </video>
+            </div>
+            <div className="align-top">
+              <HeroTitle />
+            </div>
+            <CountDown />
+            <div className="w-full overflow-hidden">
+              <Tagline />
+            </div>
+          </>
         )}
         <Bg />
         <AllUNeed2Know />
         <PosterCarousel />
-        
+
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
           layers={[
@@ -262,7 +241,6 @@ const Component = () => {
             },
           ]}
         >
-          
           <Sponsors />
           <Faq />
           <AboutUs />
