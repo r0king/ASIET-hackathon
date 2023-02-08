@@ -17,7 +17,7 @@ const AllUNeed2Know = () => {
   return (
     <>
       <div ref={targetRef}></div>
-      <section className="text-gray-100 bg-gradient-to-b from-transparent via-[#171717]/50 to-transparent md:bg-transparent">
+      <section className="text-gray-100 bg-gradient-to-b from-black via-transparent to-transparent">
         <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-center text-gray-50">

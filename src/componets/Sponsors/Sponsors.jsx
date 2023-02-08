@@ -39,7 +39,7 @@ const Sponsors = () => {
     //   setSilver(targetSilverRef.current);
   }, []);
   return (
-    <div className="sponsers_main_container z-20 -mt-10 md:mt-28 bg-gradient-to-b from-black via-black to-transparent">
+    <div className="sponsers_main_container z-20 -mt-10 ">
       <div ref={targetTitleRef}></div>
       <div className="sponsors_container">
         {/* <div className="sponsor_title" ref={targetTitleRef}>
