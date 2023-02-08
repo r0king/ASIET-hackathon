@@ -24,20 +24,25 @@ import prizeVideoM from "../assets/prize.webm";
 import introVideo from "../assets/intro.webm";
 import { useEffect } from "react";
 
-const Component = () => {
+const HomePage = () => {
   const { width } = useWindowSize();
+  // left: 37, up: 38, right: 39, down: 40,
+  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+
   const introVideoRef = React.useRef(null);
+  const removeVideo = (video) => {
+    video.classList.add("animate__zoomOut");
+    video.classList.remove("z-40");
+    video.classList.add("-z-50");
+  };
   useEffect(() => {
     // create a timeout where intro video only playes after 3000 seconds
     const timeout = setTimeout(() => {
-      console.log(introVideoRef.current);
       introVideoRef.current.firstChild.play();
-
     }, 3000);
     console.log(timeout);
     const hideVideo = () => {
-      introVideoRef.current.classList.add("animate__zoomOut");
-      introVideoRef.current.classList.add("-z-50");
+      removeVideo(introVideoRef.current);
     };
     window.addEventListener("scroll", hideVideo, { once: true });
     return () => {
@@ -109,24 +114,19 @@ const Component = () => {
         <video
           muted
           onEnded={(e) => {
-            e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50");
+            removeVideo(e.target.parentElement);
           }}
           onClick={(e) => {
-            e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50");
+            removeVideo(e.target.parentElement);
           }}
           onChange={(e) => {
-            e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50");
+            removeVideo(e.target.parentElement);
           }}
           onScroll={(e) => {
-            e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50");
+            removeVideo(e.target.parentElement);
           }}
           onTouchMove={(e) => {
-            e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50");
+            removeVideo(e.target.parentElement);
           }}
           className=" md:h-full w-full object-cover"
         >
@@ -256,4 +256,4 @@ const Component = () => {
     </>
   );
 };
-export default Component;
+export default HomePage;
