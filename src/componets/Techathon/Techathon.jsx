@@ -201,7 +201,7 @@ function Techathon() {
     <>
       <NavWrapper eventDate={eventDate} introVideo={techathonVideo} />
       <div
-        className="Techathon pt-[10%]"
+        className="Techathon"
         style={
           width > 640
             ? {
@@ -209,7 +209,7 @@ function Techathon() {
                 backgroundSize: "cover",
                 backgroundPosition: "right 0",
                 backgroundRepeat: "no-repeat",
-                height: "140vh",
+                height: "100vh",
                 backgroundColor: "var(--bg-color)",
                 boxShadow: "0px 0px 50px 0px var(--bg-color)",
               }
@@ -224,20 +224,20 @@ function Techathon() {
         }
       >
         {/* main content */}
-        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="flex flex-col justify-center h-screen p-5 md:p-10">
           <h1
-            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}
           >
-            Techathon
+            Techathon 2K23
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:pt-4">
             24 Hours of Innovation
           </h2>
           {/* description */}
-          <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Adi Shankar Techathon'23 provides a dynamic platform for talented
+          <p className="text-base text-justify text-[var(--secondary-color)] md:pt-4 md:w-1/3 2xl:w-1/2 leading-6">
+            Adi Shankara Techathon'23 provides a dynamic platform for talented
             engineering students to showcase their innovative solutions,
             products, prototypes, and working models to address relevant
             problems. The main objective is to foster a spirit of innovation and
@@ -251,7 +251,7 @@ function Techathon() {
           </p>
           {/* basic rounded line button */}
           <button
-            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-lg font-extrabold uppercase mt-8 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
             style={{
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}

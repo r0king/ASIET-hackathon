@@ -12,7 +12,7 @@ class PrizeCard extends Component {
           }}
           className="
           relative
-          aspect-square max-w-[500px] md:max-w-[550px] w-full md:w-auto rounded-xl m-auto
+          aspect-square max-w-[500px] md:w-[600px] w-full  rounded-xl m-auto
           flex flex-col justify-center p-5 py-12 
           bg-contain bg-center bg-no-repeat scale-75"
           // shadow-[0px_105px_65px_-15px_rgba(0,0,0,0.25)]
@@ -35,9 +35,9 @@ class PrizeCard extends Component {
               >
                 {this.props.prize}
               </div>
-              <div className="text-xs hidden md:block md:text-sm py-1 md:py-3 md:mr-3 ml-auto mb-10 border-y-2 w-4/5 border-white/50 text-white/60">
+              {/* <div className="text-xs hidden md:block md:text-sm py-1 md:py-3 md:mr-3 ml-auto mb-10 border-y-2 w-4/5 border-white/50 text-white/60">
                 {this.props.desc}
-              </div>
+              </div> */}
             </div>
           </div>
           <div></div>
@@ -57,8 +57,8 @@ export default class PrizeCards extends Component {
           colors={{
             title: "white",
           }}
-          desc="This prize is awarded to the top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
-          prize="3000$"
+          desc="The top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
+          prize="Rs.1,00,000 ($1200)"
         />
         <PrizeCard
           bg={prize2Img}
