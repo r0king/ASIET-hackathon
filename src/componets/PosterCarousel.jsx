@@ -72,7 +72,7 @@ const PosterCarousel = () => {
   ];
 
   // Javascript for demonstration purpose of sliding effect. Keep it or implement your own custom solution.
-  const [position, setPosition] = useState(2);
+  const [position, setPosition] = useState(3);
   const prevBtn = React.createRef();
   const nextBtn = React.createRef();
   const previousSuggestion = () => {
@@ -163,7 +163,7 @@ const PosterCarousel = () => {
               {/* CARDS */}
               <ul
                 id="slider-w3c9"
-                className="w-full flex flex-nowrap transition-all duration-500 ease-in ml-[290px]"
+                className="w-full flex flex-nowrap transition-all duration-500 ease-in ml-6 md:ml-[290px]"
               >
                 {categories.map((item, index) => (
                   <li key={index}>
@@ -185,21 +185,20 @@ const PosterCarousel = () => {
                           }`}
                         >
                           {/* ::Image Container */}
-                          <LazyLoad offset={450}>
-                            <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
-                              <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg  overflow-hidden">
-                                {/* :::image nft */}
-                                <img
-                                  src={item.image}
-                                  alt=""
-                                  className={`object-cover rounded-md opacity-90 w-full max-h-[360px]`}
-                                />
-                              </span>
-                              <span
-                                style={{
-                                  translate: "translateY(20px)",
-                                }}
-                                className={`absolute top-3 duration-300 animate__animated animate__fast
+                          <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
+                            <span className="block aspect-w-3 aspect-h-3 w-full rounded-lg  overflow-hidden">
+                              {/* :::image nft */}
+                              <img
+                                src={item.image}
+                                alt=""
+                                className={`object-cover rounded-md opacity-90 w-full max-h-[360px]`}
+                              />
+                            </span>
+                            <span
+                              style={{
+                                translate: "translateY(20px)",
+                              }}
+                              className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
                            font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
@@ -207,25 +206,24 @@ const PosterCarousel = () => {
                                ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
                                : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
                            } drop-shadow`}
-                              >
-                                {item.name}
-                              </span>
-                              {
-                                <span
-                                  dangerouslySetInnerHTML={{
-                                    __html: item.date,
-                                  }}
-                                  className={`absolute bottom-3 duration-300 animate__animated animate__fast
+                            >
+                              {item.name}
+                            </span>
+                            {
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: item.date,
+                                }}
+                                className={`absolute bottom-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${
                              position === index
                                ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
                                : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
                            } drop-shadow`}
-                                ></span>
-                              }
-                            </div>
-                          </LazyLoad>
+                              ></span>
+                            }
+                          </div>
                         </a>
                       </div>
                     </Tilt>
