@@ -88,7 +88,7 @@ function Tab({ tabs, eventName }) {
             {tabs.map((tab) => (
               <option
                 key={tab.name}
-                className="text-black w-full "
+                className="text-black w-full"
                 value={tab.name}
                 onSelectCapture={() => setCurrentTab(tab.name)}
               >
