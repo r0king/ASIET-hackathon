@@ -17,23 +17,29 @@ import Tagline from "./Tagline";
 import Bg from "./Utils/Bg";
 
 import planetVideo from "../assets/globe.webm";
-import planetVideoM from "../assets/globeM.webm";
+import planetVideoM from "../assets/globeM1.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-import prizeVideoM from "../assets/prizeM1.webm";
-import introVideo from "../assets/intro1.webm";
+import prizeVideoM from "../assets/prize.webm";
+import introVideo from "../assets/intro.webm";
 import { useEffect } from "react";
 
 const Component = () => {
   const { width } = useWindowSize();
   const introVideoRef = React.useRef(null);
   useEffect(() => {
+    // create a timeout where intro video only playes after 3000 seconds
+    const timeout = setTimeout(() => {
+      console.log(introVideoRef.current);
+      introVideoRef.current.firstChild.play();
+
+    }, 3000);
+    console.log(timeout);
     const hideVideo = () => {
       introVideoRef.current.classList.add("animate__zoomOut");
       introVideoRef.current.classList.add("-z-50");
-      window.removeEventListener("scroll", hideVideo);
     };
-    window.addEventListener("scroll", hideVideo);
+    window.addEventListener("scroll", hideVideo, { once: true });
     return () => {
       window.removeEventListener("scroll", hideVideo);
     };
@@ -101,7 +107,6 @@ const Component = () => {
         ref={introVideoRef}
       >
         <video
-          autoPlay
           muted
           onEnded={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
@@ -139,6 +144,7 @@ const Component = () => {
             <div className="flex justify-center w-full h-full">
               <video
                 autoPlay
+                loop
                 muted
                 className=" top-[8%] absolute bottom-0 object-contain md:h-auto w-[85%]"
               >

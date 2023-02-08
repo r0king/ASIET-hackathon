@@ -11,7 +11,7 @@ import youngImg from "../assets/Ideathon/bgM.webp";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
 // import LazyLoad from "react-lazy-load";
-// 
+//
 const PosterCarousel = () => {
   const categories = [
     {
@@ -78,7 +78,7 @@ const PosterCarousel = () => {
   const previousSuggestion = () => {
     if (position <= 2) {
       setPosition(categories.length - 3);
-    } else if (position >= 1) {
+    } else if (position > 2) {
       setPosition(position - 1);
       // if it have prevAnimation2 class then remove it and add prevAnimation1 class
       if (prevBtn.current.classList.contains("prevAnimation2")) {
@@ -129,10 +129,6 @@ const PosterCarousel = () => {
     prevBtn.current.style.opacity = 1;
     nextBtn.current.style.opacity = 1;
   }, [position, prevBtn, nextBtn]);
-  // On resize set current position to zero to avoid unwanted effects
-  useEffect(() => {
-    window.addEventListener("resize", () => setPosition(0));
-  });
 
   const targetRef = React.useRef(null);
 
@@ -147,11 +143,11 @@ const PosterCarousel = () => {
       <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden ">
         {/* :TITLE CONTAINER */}
         <div className="px-5">
-          <a href="#allCategoryLink w-full">
-            <h2 className="relative flex justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
-              Hackathon{" "}
-              <span className="text-[var(--primary-color)]">
-                &nbsp; Categories
+          <a href="#allCategoryLink w-full ">
+            <h2 className="relative flex m-auto flex-col w-full justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
+              <span className="">Hackathon</span>
+              <span className="self-end text-[var(--primary-color)]">
+                Categories
               </span>
             </h2>
           </a>

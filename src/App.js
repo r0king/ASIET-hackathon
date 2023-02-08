@@ -21,51 +21,48 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3.000);
+    }, 3000);
   }, []);
 
   return (
     <>
-      {loading ? (
-        <div
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <LoadingIcons.Bars
-            stroke="transparent"
-            fill="#f0f0f0"
-            strokeOpacity={1}
-            height={"3.5rem"}
+      <div
+        style={{
+          position: "fixed",
+        }}
+        className={`bg-black z-[999] h-screen w-screen flex flex-col justify-center items-center ${
+          !loading && "hidden"
+        }`}
+      >
+        <LoadingIcons.Puff
+          fill="#f0f0f0"
+          strokeOpacity={1}
+          height={"3.5rem"}
+          className="w-20 h-20"
+        />
+        <div className="flex justify-center text-center ">Loading…</div>
+      </div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ParallaxProvider>
+                <HomePage />
+              </ParallaxProvider>
+            }
           />
-          <div className="flex justify-center text-center">Loading…</div>
-        </div>
-      ) : (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <ParallaxProvider>
-                  <HomePage />
-                </ParallaxProvider>
-              }
-            />
-            <Route path="/coming_soon" element={<ComingSoon />} />
-            <Route exact path="/codathon" element={<Codathon />} />
-            <Route exact path="/gameathon" element={<Gameathon />} />
-            <Route exact path="/young scientist award" element={<Ideathon />} />
-            <Route exact path="/mechathon" element={<Mechathon />} />
-            <Route exact path="/civiathon" element={<Civilathon />} />
-            <Route exact path="/bizthon" element={<Bizthon />} />
-            <Route exact path="/techathon" element={<Techathon />} />
-            <Route exact path="/prize" element={<PrizeCard />} />
-          </Routes>
-        </BrowserRouter>
-      )}
+          <Route path="/coming_soon" element={<ComingSoon />} />
+          <Route exact path="/codathon" element={<Codathon />} />
+          <Route exact path="/gameathon" element={<Gameathon />} />
+          <Route exact path="/young scientist award" element={<Ideathon />} />
+          <Route exact path="/mechathon" element={<Mechathon />} />
+          <Route exact path="/civiathon" element={<Civilathon />} />
+          <Route exact path="/bizthon" element={<Bizthon />} />
+          <Route exact path="/techathon" element={<Techathon />} />
+          <Route exact path="/prize" element={<PrizeCard />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
