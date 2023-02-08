@@ -33,7 +33,7 @@ const ContactUs = () => {
              p-5 sm:p-10
              flex flex-col w-full h-full mx-auto"
           >
-            <img src={asietLogo} alt="Asiet Logo" className="md:p-5 md:pt-0 pb-5" srcSet="" />
+            <img src={asietLogo} alt="Asiet Logo" className=" pl-0 md:pl-0    md:pt-0 pb-5" srcSet="" />
             {/* ::Title Contact */}
             <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
