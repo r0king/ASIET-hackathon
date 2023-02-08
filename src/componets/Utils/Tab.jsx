@@ -77,7 +77,7 @@ function Tab({ tabs, eventName }) {
           })}
         </div>
       ) : (
-        <div className="mx-auto w-5/6 max-w-md mt-10 sm:hidden rounded-lg ">
+        <div className="mx-auto w-5/6 max-w-md my-10 sm:hidden rounded-lg ">
           <select
             name="current-tab"
             id="current-tab"
@@ -88,7 +88,7 @@ function Tab({ tabs, eventName }) {
             {tabs.map((tab) => (
               <option
                 key={tab.name}
-                className="text-black w-full "
+                className="text-black w-full"
                 value={tab.name}
                 onSelectCapture={() => setCurrentTab(tab.name)}
               >
@@ -98,10 +98,7 @@ function Tab({ tabs, eventName }) {
           </select>
           {tabs.map((tab) => {
             return (
-              <div
-                key={tab.name}
-                className="text-[var(--secondary-color)]"
-              >
+              <div key={tab.name} className="text-[var(--secondary-color)]">
                 {tab.name === selectedOption ? tab.page : ""}
               </div>
             );

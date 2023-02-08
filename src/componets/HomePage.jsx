@@ -60,15 +60,11 @@ const Component = () => {
       </div>
     ),
   };
-  const videoglobe = {
-    translateY: width > 640 ? ["48%", "-25%"] : ["90%", "-25%"],
-    // translateX: width > 640 ? ["48%", "50%"] : ["0%", "0%"],
+  const videoglobe: BannerLayer = {
+    translateY:
+      width > 640 ? ["48%", "-25%", "easeInOut"] : ["90%", "-25%", "easeInOut"],
     opacity: [0.95, 0.8, "easeOutCubic"],
     scale: [width > 640 ? 0.8 : 1, width > 640 ? 1.1 : 1, "easeOutCubic"],
-    // onChange: (el) => {
-    //   console.log(el.el.firstChild.firstChild);
-    //   el.el.firstChild.currentTime = el.progress * 10;
-    // },
     children: (
       <div className="flex justify-center object-center items-center w-full h-full">
         <video
@@ -77,7 +73,6 @@ const Component = () => {
           muted
           className="top-0 max-w-full absolute object-contain h-screen md:h-auto"
         >
-          {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
           {width > 640 ? (
             <source src={planetVideo} type="video/webm" />
           ) : (
@@ -91,8 +86,8 @@ const Component = () => {
   const videoprize = {
     translateY: width > 640 ? ["45%", "30%"] : ["20%", "0%"],
     opacity:
-      width > 640 ? [3.5, -0.7, "easeOutCubic"] : [1, 0.9, "easeOutCubic"],
-    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "easeOutCubic"],
+      width > 640 ? [3.5, -0.7, "easeInOutCubic"] : [1, 0.9, "ease"],
+    scale: [width > 640 ? 1 : 1, width > 640 ? 0.6 : 1, "ease"],
     children: (
       <div className="flex justify-center w-full h-full">
         <video
@@ -149,23 +144,23 @@ const Component = () => {
           muted
           onEnded={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50")
+            e.target.parentElement.classList.add("-z-50");
           }}
           onClick={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50")
+            e.target.parentElement.classList.add("-z-50");
           }}
           onChange={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50")
+            e.target.parentElement.classList.add("-z-50");
           }}
           onScroll={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50")
+            e.target.parentElement.classList.add("-z-50");
           }}
           onTouchMove={(e) => {
             e.target.parentElement.classList.add("animate__zoomOut");
-            e.target.parentElement.classList.add("-z-50")
+            e.target.parentElement.classList.add("-z-50");
           }}
           className=" md:h-full w-full object-cover"
         >
@@ -242,9 +237,6 @@ const Component = () => {
           </>
         )}
         <Bg />
-
-        {/* <Timeline /> */}
-        {/* <Partners /> */}
         <PosterCarousel />
         <ParallaxBanner
           className="bg-gradient-to-b from-transparent via-[#171717]/50 to-[#171717]/50"
