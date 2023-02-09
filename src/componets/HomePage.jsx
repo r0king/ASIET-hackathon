@@ -130,7 +130,7 @@ const HomePage = () => {
           }}
           className=" md:h-full w-full object-cover"
         >
-          <source src={introVideo} type='video/mp4; codecs="avc1"' />
+          <source src={introVideo} type='video/webm' />
         </video>
       </div>
       <div className=" ">
