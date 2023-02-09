@@ -140,14 +140,14 @@ const PosterCarousel = () => {
   return (
     <>
       <div ref={targetRef}></div>
-      <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 overflow-hidden ">
+      <div className="mx-auto py-5 px-4 w-full bg-transparent md:py-28 snap-x overflow-x-auto md:overflow-hidden ">
         {/* :TITLE CONTAINER */}
         <div className="px-5">
           <a href="#allCategoryLink w-full ">
-            <h2 className="relative flex m-auto flex-col w-full justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
+            <h2 className="relative flex m-auto flex-col md:flex-row w-full justify-center font-[900] text-2xl text-[var(--secondary-color)] uppercase tracking-widest md:whitespace-nowrap origin-center transform hover:whtie">
               <span className="">Hackathon</span>
-              <span className="self-end text-[var(--primary-color)]">
-                Categories
+              <span className="self-end md:self-auto text-[var(--primary-color)]">
+                &nbsp;Categories
               </span>
             </h2>
           </a>
@@ -159,14 +159,14 @@ const PosterCarousel = () => {
               {/* CARDS */}
               <ul
                 id="slider-w3c9"
-                className="w-full flex flex-nowrap transition-all duration-500 ease-in ml-6 md:ml-[290px]"
+                className="w-full flex flex-nowrap snap-x transition-all duration-500 ease-in ml-6 md:ml-[290px]"
               >
                 {categories.map((item, index) => (
                   <li key={index}>
                     <Tilt perspective={500}>
                       <div
                         key={index}
-                        className="h-[400px] flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
+                        className="h-[400px] snap-center flex-shrink-0 relative py-5 sm:px-2 min-h-full w-[290px]  "
                         style={{
                           transformStyle: "preserve-3d",
                         }}
@@ -174,11 +174,10 @@ const PosterCarousel = () => {
                         <a
                           aria-label={item.name}
                           href={item.name}
-                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${
-                            position === index
-                              ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
-                              : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
-                          }`}
+                          className={`group animate__animated animate__fast mx-auto p-2 max-w-xs sm:max-w-none h-full flex flex-col rounded-lg hover:shadow-md transition duration-300 ease-in transform ${position === index
+                            ? "-translate-y-3 md:-translate-y-9 md:scale-110 "
+                            : "hover:-translate-y-3 md:hover:-translate-y-9 md:hover:scale-110"
+                            }`}
                         >
                           {/* ::Image Container */}
                           <div className="relative shadow-[12px_8px_40px_-3px_rgba(0,0,0,0.3)]  bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20">
@@ -197,11 +196,10 @@ const PosterCarousel = () => {
                               className={`absolute top-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
                            rounded-full text-2xl text-[var(--secondary-color)]
-                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${
-                             position === index
-                               ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
-                               : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
-                           } drop-shadow`}
+                           font-extrabold uppercase z-1 transition ease-in-out transform -translate-y-5  ${position === index
+                                  ? "z-50 translate-y-0 opacity-20 animate__fadeInUp"
+                                  : "group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-60"
+                                } drop-shadow`}
                             >
                               {item.name}
                             </span>
@@ -212,11 +210,10 @@ const PosterCarousel = () => {
                                 }}
                                 className={`absolute bottom-3 duration-300 animate__animated animate__fast
                            opacity-0 left-2 py-1 px-2 inline-flex justify-center items-center
-                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${
-                             position === index
-                               ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
-                               : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
-                           } drop-shadow`}
+                           rounded-full text-base  text-white z-1 transition ease-in-out transform -translate-y-5  ${position === index
+                                    ? " z-50 translate-y-0 opacity-100 animate__fadeInUp"
+                                    : " group-hover:z-50 group-hover:translate-y-0   group-hover:opacity-100"
+                                  } drop-shadow`}
                               ></span>
                             }
                           </div>
