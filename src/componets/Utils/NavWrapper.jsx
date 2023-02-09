@@ -21,7 +21,7 @@ function NavWrapper({ eventDate, introVideo }) {
                 boxShadow: "inset 0px 0px 50px 0px white",
               }}
             >
-              <source src={introVideo} type='video/mp4; codecs="avc1"' />
+              <source src={introVideo} type='video/webm' />
             </video>
             <div className="absolute w-full h-full shadow-[inset_0_-20px_50px_0px_rgba(0,0,0,1)] top-0 left-0"></div>
           </div>
