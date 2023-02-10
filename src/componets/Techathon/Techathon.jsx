@@ -205,22 +205,22 @@ function Techathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImgD})`,
-                backgroundSize: "cover",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "100vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
-              }
+              backgroundImage: `url(${bgImgD})`,
+              backgroundSize: "cover",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "100vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
+            }
             : {
-                backgroundImage: `url(${bgImgM})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "inset 0px 0px 50px -20px black, inset 0px 30px 50px -40px black",
-              }
+              backgroundImage: `url(${bgImgM})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "inset 0px 0px 50px -20px black, inset 0px 30px 50px -40px black",
+            }
         }
       >
         {/* main content */}
@@ -237,17 +237,7 @@ function Techathon() {
           </h2>
           {/* description */}
           <p className="text-base text-justify text-[var(--secondary-color)] md:pt-4 md:w-1/3 2xl:w-1/2 leading-6">
-            Adi Shankara Techathon'23 provides a dynamic platform for talented
-            engineering students to showcase their innovative solutions,
-            products, prototypes, and working models to address relevant
-            problems. The main objective is to foster a spirit of innovation and
-            encourage problem-solving among aspiring engineers, specifically
-            within the wide domain of IoT. The event invites creative,
-            resourceful, and impactful projects that demonstrate technical
-            advancement and contribute to the overall welfare of society. This
-            platform serves as an opportunity for students to integrate
-            technical knowledge and demonstrate their ability to drive positive
-            change through a holistic approach.
+            Techathon  is an event that brings together engineers, developers, and tech enthusiasts to create innovative solutions leveraging the power of IoT technology. Participants work in teams to design, build, and demonstrate prototypes that solve real-world problems, from smart home automation to industrial IoT applications. The hackathon provides a platform for collaboration and learning, as well as the opportunity for participants to showcase their skills, network with industry professionals, and bring their ideas to life. With the goal of advancing IoT technology and promoting innovation, the event promises to be a dynamic and exciting experience for all involved.
           </p>
           {/* basic rounded line button */}
           <button

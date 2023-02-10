@@ -213,21 +213,42 @@ function ContactCode() {
   const team = [
     {
       id: 1,
-      fullName: "Alice Doe",
+      fullName: "Faculty 1",
       contact: "+91 9087654321",
       imgSrc: ProfImg,
       imgAlt: "profile picture",
     },
     {
       id: 2,
-      fullName: "Bob Doe",
+      fullName: "Faculty 2",
       contact: "+91 9087654321",
       imgSrc: ProfImg,
       imgAlt: "profile picture",
     },
     {
       id: 3,
-      fullName: "Clara Doe",
+      fullName: "Faculty 3",
+      contact: "+91 9087654321",
+      imgSrc: ProfImg,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 4,
+      fullName: "Student 1",
+      contact: "+91 9087654321",
+      imgSrc: ProfImg,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 5,
+      fullName: "Student 2",
+      contact: "+91 9087654321",
+      imgSrc: ProfImg,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 6,
+      fullName: "Student 3",
       contact: "+91 9087654321",
       imgSrc: ProfImg,
       imgAlt: "profile picture",
@@ -235,13 +256,14 @@ function ContactCode() {
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <h1 className="text-xl font-semibold text-center pt-14">Faculty Coordinators</h1>
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
-        <div className="mt-10">
+        <div className="mt-5">
           {/* ::Members Row 1 */}
           <div className="flex flex-wrap justify-center items-center">
-            {team.slice(0, 4).map((member) => (
+            {team.slice(0, 3).map((member) => (
               <div
                 key={member.id}
                 className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
@@ -253,7 +275,38 @@ function ContactCode() {
                   className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-10 transition duration-200"
                 />
                 {/* :::details */}
-                <div className="relative flex flex-col justify-center items-center space-y-2">
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-lg text-white font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-gray-300 font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <h1 className="text-xl font-semibold text-center pt-14">Student Coordinators</h1>
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-5">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(3, 6).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
                   <p className="text-lg text-white font-bold">
                     {member.fullName}
                   </p>
@@ -307,49 +360,41 @@ function Codathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImgD})`,
-                backgroundSize: "contain",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",              }
+              backgroundImage: `url(${bgImgD})`,
+              backgroundSize: "contain",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
+            }
             : {
-                backgroundImage: `url(${bgImgM})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImgM})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
-        <div className="Codathon flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="Codathon flex flex-col justify-center h-screen p-5">
           <h1
-            className="text-4xl font-bold  text-[#0eedf5] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[#0eedf5] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}
           >
             Codathon 2K23
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-white uppercase md:text-xl 2xl:text-2xl md:pt-7">
-            29th March 2023
+          <h2 className="text-lg font-bold text-white pt-5">
+            29<sup>th</sup> MARCH 2023
           </h2>
           {/* description */}
-          <p className="text-base text-justify text-white 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Adi Shankara Codeathon is a national program aimed at empowering
-            students to tackle pressing issues in their daily lives through
-            product innovation and problem-solving. The event is a 24-hour
-            coding competition where participants work to create functional
-            software within the given timeframe. This can include programming
-            languages, operating systems, applications, APIs, or specific
-            subject matter and demographic groups of the programmers. The
-            objective of the codeathon is to foster a culture of innovation and
-            encourage students to approach problems with a creative and
-            solutions-focused mindset.`
+          <p className="text-base text-justify text-white pt-5 md:w-[45%] leading-6">
+            Codathon is a coding event where developers, programmers, and tech enthusiasts come together to collaborate and create innovative software solutions. Participants work in teams to design, build, and demonstrate their solutions to real-world scientific problems, using a variety of programming languages and technology platforms. Codathon provides a fast-paced and dynamic environment for participants to showcase their coding skills, network with like-minded individuals, and gain hands-on experience in problem-solving and solution development. With a focus on driving progress and innovation in the tech industry, this event is an exciting and challenging opportunity for coders of all levels to learn, grow, and make an impact.
           </p>
           {/* basic rounded line button */}
           <button
-            className="md:w-1/4 text-center max-h-16 md:max-h-auto text-white rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[#0eedf5] flex items-center justify-center border border-[#0eedf5] hover:border-white"
+            className="md:w-1/4 text-center max-h-16 md:max-h-auto text-white rounded-full duration-300 py-5 px-6 text-lg font-extrabold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[#0eedf5] flex items-center justify-center border border-[#0eedf5] hover:border-white"
             style={{
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import prize1Img from "../../assets/Utils/gold.webp";
-import prize2Img from "../../assets/Utils/gold2.webp";
-import prize3Img from "../../assets/Utils/plat.webp";
+import prize1Img from "../../assets/Utils/gold1.webp";
+import prize2Img from "../../assets/Utils/silver1.webp";
+import prize3Img from "../../assets/Utils/bronze1.webp";
 class PrizeCard extends Component {
   render() {
     return (
@@ -29,7 +29,7 @@ class PrizeCard extends Component {
             <div className="flex justify-center md:w-1/2 flex-col">
               <div
                 className="
-                 font-[Azonix] text-center font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-bl from-[#FAF4C6] via-[#D7B86C] to-[#FDFEFB]
+                 font-[Azonix] text-center font-extrabold text-transparent text-base md:text-3xl bg-clip-text bg-gradient-to-bl from-[#FAF4C6] via-[#D7B86C] to-[#FDFEFB]
                  drop-shadow-[0px_3px_5px_rgba(0,0,0,0.35)]  
                  md:pb-1 md:pt-16"
               >
@@ -50,9 +50,18 @@ class PrizeCard extends Component {
 export default class PrizeCards extends Component {
   render() {
     return (
-      <div className="flex flex-wrap justify-center h-full w-full">
+      <div className="flex flex-col md:flex-row justify-center h-full md:h-[90vh] w-full">
         <PrizeCard
-          bg={prize3Img}
+          bg={prize2Img}
+          text="Second Prize"
+          colors={{
+            title: "black",
+          }}
+          desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
+          prize="Rs.50,000 ($600)"
+        />
+        <PrizeCard
+          bg={prize1Img}
           text="First Prize"
           colors={{
             title: "white",
@@ -61,22 +70,13 @@ export default class PrizeCards extends Component {
           prize="Rs.1,00,000 ($1200)"
         />
         <PrizeCard
-          bg={prize2Img}
-          text="Second Prize"
-          colors={{
-            title: "black",
-          }}
-          desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
-          prize="2000$"
-        />
-        <PrizeCard
-          bg={prize1Img}
+          bg={prize3Img}
           text="Third Prize"
           colors={{
             title: "#b4a17d",
           }}
           desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
-          prize="1000$"
+          prize="Rs.20,000 ($240)"
         />
       </div>
     );

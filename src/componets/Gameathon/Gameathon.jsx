@@ -83,21 +83,74 @@ function ContactGame() {
     },
     {
       id: 3,
-      fullName: "Clara Doe",
+      fullName: "Faculty 3",
       contact: "+91 9087654321",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 4,
+      fullName: "Student 1",
+      contact: "+91 9988776655",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 5,
+      fullName: "Student 2",
+      contact: "+91 9988776655",
+      imgSrc: ProfImg3,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 6,
+      fullName: "Student 3",
+      contact: "+91 9988776655",
       imgSrc: ProfImg3,
       imgAlt: "profile picture",
     },
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <h1 className="text-xl font-semibold text-center">Faculty Coordinators</h1>
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
-        <div className="mt-10">
+        <div className="mt-5">
           {/* ::Members Row 1 */}
           <div className="flex flex-wrap justify-center items-center">
-            {team.slice(0, 4).map((member) => (
+            {team.slice(0, 3).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-lg text-[var(--primary-color)] font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-[var(--primary-color)] font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <h1 className="text-xl font-semibold text-center pt-14">Student Coordinators</h1>
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-5">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(3, 6).map((member) => (
               <div
                 key={member.id}
                 className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
@@ -129,7 +182,7 @@ function ContactGame() {
 function PrizeGame() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <PrizeCards/>
+      <PrizeCards />
     </div>
   );
 }
@@ -162,22 +215,22 @@ function Gameathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImgDesk})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
-              }
+              backgroundImage: `url(${bgImgDesk})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
+            }
             : {
-                backgroundImage: `url(${bgImgMobile})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "120vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImgMobile})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "120vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         <div className="Gameathon flex h-full">
@@ -190,18 +243,12 @@ function Gameathon() {
               Gameathon 2K23
             </h1>
             {/* sub heading */}
-            <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
-              28TH, 29TH & 30TH MARCH 2023
+            <h2 className="text-lg font-bold text-[var(--secondary-color)] md:text-xl 2xl:text-2xl md:pt-7">
+              28<sup>th</sup>, 29<sup>th</sup> & 30<sup>th</sup> MARCH 2023
             </h2>
             {/* description */}
             <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
-              Join us for a 3-day event at Adi Shankara Institute of Engineering
-              & Technology where students can engage in team-working, explore
-              their creative and technology skills, and challenge themselves to
-              develop a game in just three days. With the support of industry
-              partner TILTLABS, participants will be provided with a concept and
-              access to tools such as Unity and Blender to create either casual
-              or hyper-casual games.
+              A Gameathon is an event where game developers, designers, and enthusiasts come together to create new and innovative video games. Participants form teams and use cutting-edge technology and creative design principles to develop new games from concept to completion within a set time frame. The event provides a platform for collaboration, learning, and creativity, as well as the opportunity for participants to showcase their skills, network with industry professionals, and potentially bring their games to market. With a focus on pushing the boundaries of game design and technology, Gameathons are a fun and exciting way for game enthusiasts to challenge themselves and make their mark on the industry.
             </p>
             {/* basic rounded line button */}
             <a

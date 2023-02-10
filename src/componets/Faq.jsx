@@ -13,9 +13,9 @@ const Faq = () => {
   const faq = [
     {
       number: 1,
-      question: "What is the Adi Shankara Hackostav 2k23?",
+      question: "What is the Adi Shankara Hackathon 2K23?",
       answer:
-        "The Adi Shankara Hackostav 2k23 is a 3-day long hackathon of 24 hours each hackathon conducted by the Adi Shankara Institute of Engineering and Technology in collaboration with the Jyothi institute of Engineering and Technology. It aims to develop a skillset and expand the horizons of brilliant minds.",
+        "The Adi Shankara Hackathon 2K23 is a 3-day long hackathon of 24 hours each hackathon conducted by the Adi Shankara Institute of Engineering and Technology in collaboration with the CIIRC, Banglore. It aims to develop a skillset and expand the horizons of brilliant minds.",
     },
     {
       number: 2,
@@ -26,7 +26,7 @@ const Faq = () => {
     },
     {
       number: 3,
-      question: "What are the different events under the  Adi Shankara Hackostav?",
+      question: "What are the different events under the  Adi Shankara Hackathon?",
       answer:
         "Codeathon,Productathon, Gameathon, Mechathon, Civilathon, Bizthon. The event is also inclusive of an award for the Young Scientist which would be accorded on the basis of his/her idea and creativity",
     },

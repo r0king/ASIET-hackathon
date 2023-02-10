@@ -269,22 +269,22 @@ function Bizthon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         {/* navbar */}
@@ -304,14 +304,7 @@ function Bizthon() {
           </h2>
           {/* description */}
           <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
-            Bizthon is organised to evaluate the overall business acumen of the
-            participant through a three stage process from ideation to business
-            model to the actual user inteface and engagemant. This event is
-            aimed at the undergraduate students whether it be arts & science or
-            technical.All you need be is creative in designing a product
-            analyzing its feasibility, creating a business canvas and desgning a
-            user interface. Lakhs of rupees worth of prizes await you. So, grab
-            your ticket to success and may be a beautiful career!
+            Bizthon is an event that brings together business students, entrepreneurs, and industry professionals to develop innovative business solutions. Participants work in teams to ideate, design, and prototype solutions for real-world business challenges, leveraging technology and design thinking methodologies. The hackathon provides a dynamic and fast-paced environment for participants to showcase their skills, network with like-minded individuals, and gain hands-on experience in problem-solving and solution development. The event aims to foster innovation and creativity in the field of business administration and to provide participants with an opportunity to make a positive impact on the world of business.
           </p>
           {/* basic rounded line button */}
           <button

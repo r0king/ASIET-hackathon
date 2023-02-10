@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import image1 from "../assets/asiet1.jpeg";
-// import image2 from "../assets/about-3.jpeg";
+import image2 from "../assets/about-3.jpeg";
 import { Parallax } from "react-scroll-parallax";
 import LazyLoad from "react-lazy-load";
 
@@ -94,11 +94,11 @@ const AboutUs = () => {
               <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
                 {/* Image goes here */}
                 <img
-                  src={image1}
+                  src={image2}
                   alt=""
                   className="
               shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
-               absolute inset-0 w-full h-full object-cover object-left-bottom  "
+               absolute inset-0 w-full h-full object-cover object-right-bottom"
                 />
               </div>
               {/* ::Image 2 */}

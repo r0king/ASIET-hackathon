@@ -3,6 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { useWindowSize } from "react-use";
 import { Parallax } from "react-scroll-parallax";
 import LazyLoad from "react-lazy-load";
+import allUNeed2Know from "../assets/alluneed2know.webp"
 
 const AllUNeed2Know = () => {
   const { width } = useWindowSize();
@@ -16,13 +17,13 @@ const AllUNeed2Know = () => {
   return (
     <>
       <div ref={targetRef}></div>
-      <section className="text-gray-100 bg-gradient-to-b from-black via-transparent to-transparent mt-[40vh]">
+      <section className="text-gray-100 bg-gradient-to-b from-black via-transparent to-transparent mt-[25vh]">
         <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-center text-gray-50">
-              About Adishankara{" "}
+              About {" "}
               <span className=" text-[var(--primary-color)]">
-                Hackathon 2K23
+              Adishankara Hackathon 2K23
               </span>
             </h2>
             {/* 
@@ -37,7 +38,7 @@ const AllUNeed2Know = () => {
               </h3>
             </Parallax> */}
           </div>
-          <div className="flex flex-col md:flex-row ">
+          <div className="flex flex-col md:flex-row">
             <div className="md:w-2/3">
               <Parallax
                 scale={[0.6, 1]}
@@ -47,7 +48,7 @@ const AllUNeed2Know = () => {
                 <h3 className="text-lg  tracking-tight text-center md:text-left">
                   Adi Shankara Hackathon 2023
                 </h3>
-                <p className="mt-3 text-base text-gray-400 text-center md:text-left">
+                <p className="mt-3 text-base text-justify text-gray-400">
                   Transformative initiative launched by Adi Shankara Institute
                   of Engineering and Technology (ASIET) in Kalady, Kerala. The
                   goal is to cultivate the 21st century skills needed for the
@@ -55,7 +56,7 @@ const AllUNeed2Know = () => {
                   their skills and bring their ideas to life.
                 </p>
               </Parallax>
-              <div className="mt-12 space-y-12">
+              <div className="mt-6 space-y-12">
                 <Parallax
                   scale={[0.6, 1]}
                   opacity={[0.5, 1.3]}
@@ -67,7 +68,7 @@ const AllUNeed2Know = () => {
                       <h4 className="text-lg font-medium leading-6 text-center md:text-left">
                         Series of Events
                       </h4>
-                      <p className="mt-2 text-base text-gray-400 text-center md:text-left">
+                      <p className="mt-2 text-base text-gray-400 text-justify">
                         This year-long hackathon series, in partnership with
                         TiltLabs, CIIRC Bangalore, and Devfolio, includes events
                         such as Codathon, Gameathon, Techathon, Bizthon,
@@ -88,10 +89,10 @@ const AllUNeed2Know = () => {
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
                     <div className="ml-4 lg:ml-14">
-                      <h4 className="text-lg font-medium leading-6 text-center md:text-left">
+                      <h4 className="-mt-5 text-lg font-medium leading-6 text-center md:text-left">
                         Incubation Support
                       </h4>
-                      <p className="mt-2 text-base text-gray-400 text-center md:text-left">
+                      <p className="mt-2 text-base text-gray-400 text-justify">
                         The winners will have the chance to incubate their ideas
                         at ASIET TBI, a well-known technology business incubator
                         supported by KSIDC, KSUM, and MSME with funding from the
@@ -108,10 +109,10 @@ const AllUNeed2Know = () => {
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
                     <div className="ml-4 lg:ml-14">
-                      <h4 className="text-lg font-medium leading-6 text-center md:text-left">
+                      <h4 className="-mt-5 text-lg font-medium leading-6 text-center md:text-left">
                         1.5 Million Grand Prize
                       </h4>
-                      <p className="mt-2 text-base text-gray-400 text-center md:text-left">
+                      <p className="mt-2 text-base text-gray-400 text-justify">
                         Adi Shankara Hackathon 2023 series is set to attract
                         over 1000 teams to our campus where they will have the
                         opportunity to turn their dreams into reality with our
@@ -133,7 +134,7 @@ const AllUNeed2Know = () => {
               <LazyLoad offset={300}>
                 {width > 640 ? (
                   <Tilt>
-                    <div className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 rounded-xl border-white/20">
+                    {/* <div className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 rounded-xl border-white/20">
                       <iframe
                         height="315"
                         src="https://www.youtube.com/embed/iSKYwo7CQOg"
@@ -142,19 +143,29 @@ const AllUNeed2Know = () => {
                         allowFullScreen
                         className="w-full"
                       ></iframe>
-                    </div>
+                    </div> */}
+                    <img
+                      src={allUNeed2Know}
+                      alt=""
+                      className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-sm border-l-[1px] rounded-xl border-white/20"
+                    />
                   </Tilt>
                 ) : (
-                  <div className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 rounded-xl border-white/20">
-                    <iframe
-                      height="315"
-                      src="https://www.youtube.com/embed/iSKYwo7CQOg"
-                      title="Promo Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      className="w-full"
-                    ></iframe>
-                  </div>
+                  // <div className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 rounded-xl border-white/20">
+                  //   <iframe
+                  //     height="315"
+                  //     src="https://www.youtube.com/embed/iSKYwo7CQOg"
+                  //     title="Promo Video"
+                  //     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  //     allowFullScreen
+                  //     className="w-full"
+                  //   ></iframe>
+                  // </div>
+                  <img
+                    src={allUNeed2Know}
+                    alt=""
+                    className="mx-auto shadow-[20px_20px_50px_rgba(0,0,0,0.15)] bg-white/10 border-t-[1px] max-w-[min(24rem,100%)] border-l-[1px] rounded-xl border-white/20"
+                  />
                 )}
               </LazyLoad>
             </div>
