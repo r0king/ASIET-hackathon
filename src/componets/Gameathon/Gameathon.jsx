@@ -181,7 +181,7 @@ function ContactGame() {
 
 function PrizeGame() {
   return (
-    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
       <PrizeCards />
     </div>
   );

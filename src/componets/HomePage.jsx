@@ -165,7 +165,6 @@ const HomePage = () => {
                 muted
                 className="-bottom-[60%] max-w-full absolute object-contain h-screen md:h-auto"
               >
-                {/* <source src={planetVideo} type='video/mp4; codecs="hvc1"' /> */}
                 {width > 640 ? (
                   <source src={planetVideo} type="video/webm" />
                 ) : (
