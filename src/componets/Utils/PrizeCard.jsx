@@ -12,7 +12,7 @@ class PrizeCard extends Component {
             backgroundImage: `url(${this.props.bg})`,
           }}
           className="
-          relative
+          relative 
           aspect-square max-w-[500px] md:w-[600px] w-full  rounded-xl m-auto
           flex flex-col justify-center p-5 py-12 
           bg-contain bg-center bg-no-repeat scale-95"
@@ -102,13 +102,14 @@ const PrizeCards = ({ props }) => {
           </div>
           <PrizeCard
             bg={prize3Img}
-            text="Third Prize"
+            text="Third Prize (3 nos) "
             colors={{
               title: "#DF968A",
             }}
             desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
             prize="Rs.20,000 ($240)"
           />
+          <div className=" absolute bottom-0 text-xs left-0 pb-2 pl-2"></div>
         </>
       )}
     </div>
