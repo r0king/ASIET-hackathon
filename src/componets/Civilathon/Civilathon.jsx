@@ -18,7 +18,7 @@ import Tab from "../Utils/Tab";
 
 function AboutCivil(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>ADI SHANKARA CIVIATHON 2K23</b>, is a technical event hosted by the
       Department of Civil Engineering, ASIET. This event is geared towards
       aspirants with basic knowledge and aptitude in the area of Civil
@@ -319,7 +319,7 @@ function ConCivil() {
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
         <div className="mt-10">

@@ -52,29 +52,26 @@ const PrizeCards = (props) => {
         <>
           <PrizeCard
             bg={prize1Img}
-            text="First Prize"
+            text={`First Prize ${props.title[0]}`}
             colors={{
               title: "#D5C17A",
             }}
-            desc="The top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
             prize={props.prize[0]}
           />
           <PrizeCard
             bg={prize2Img}
-            text="Second Prize"
+            text={`Second Prize ${props.title[1]}`}
             colors={{
               title: "#D1D1D3",
             }}
-            desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
             prize={props.prize[1]}
           />
           <PrizeCard
             bg={prize3Img}
-            text="Third Prize"
+            text={`Third Prize ${props.title[2]}`}
             colors={{
               title: "#DF968A",
             }}
-            desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
             prize={props.prize[2]}
           />
         </>
@@ -82,31 +79,29 @@ const PrizeCards = (props) => {
         <>
           <PrizeCard
             bg={prize2Img}
-            text="Second Prize"
+            text={`Second Prize ${props.title[1]}`}
             colors={{
               title: "#D1D1D3",
             }}
-            desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
             prize={props.prize[1]}
           />
           <div>
             <PrizeCard
               bg={prize1Img}
-              text="First Prize"
+              text={`First Prize ${props.title[0]}`}
               colors={{
                 title: "#D5C17A",
               }}
-              desc="The top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
+
               prize={props.prize[0]}
             />
           </div>
           <PrizeCard
             bg={prize3Img}
-            text="Third Prize"
+            text={`Third Prize ${props.title[2]}`}
             colors={{
               title: "#DF968A",
             }}
-            desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
             prize={props.prize[2]}
           />
         </>
