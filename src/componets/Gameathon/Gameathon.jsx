@@ -26,7 +26,7 @@ import PrizeCards from "../Utils/PrizeCard";
 
 function AboutGame(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <p>
         We invite you to participate in a 3-day event at Adi Shankara Institute
         of Engineering & Technology, where students can engage in team-working,
@@ -182,7 +182,7 @@ function ContactGame() {
 function PrizeGame() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards />
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]}/>
     </div>
   );
 }
@@ -194,8 +194,8 @@ function Gameathon() {
       icon: ArchiveIcon,
       page: <AboutGame />,
     },
-    { name: "Registration", icon: CloudUploadIcon, page: <RegistrationGame /> },
     { name: "Eligibility", icon: ChartBarIcon, page: <EligibilityGame /> },
+    { name: "Registration", icon: CloudUploadIcon, page: <RegistrationGame /> },
     { name: "Bootcamp", icon: ViewGridIcon, page: <BootcampGame /> },
     { name: "Rules", icon: LightBulbIcon, page: <RulesGame /> },
     { name: "Prize", icon: LightBulbIcon, page: <PrizeGame /> },
@@ -204,7 +204,7 @@ function Gameathon() {
 
   const { width } = useWindowSize();
 
-  // const event = "Gameathon";
+  const event = "Gameathon";
   const eventDate = "Mar 28, 2023 00:00:00";
 
   return (

@@ -15,10 +15,11 @@ import codathonVideo from "../../assets/Codathon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutCode(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>Adi Shankara Codeathon</b> is a nationwide initiative to provide
       students with a platform to solve some of the pressing problems we face in
       our daily lives, and thus inculcate a culture of product innovation and a
@@ -43,7 +44,7 @@ function AboutCode(props) {
 
 function RegisCode(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <h1>Coming Soon</h1>
     </div>
   );
@@ -51,7 +52,7 @@ function RegisCode(props) {
 
 function ThemesCode(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>Streams</b>
       <ul className="list-disc pl-10">
         <li>Computer Vision,</li>
@@ -76,7 +77,7 @@ function ThemesCode(props) {
 
 function StagesCode(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>ASC Process</b>
       <ul className="list-disc pl-10">
         <li>Registration through DevFolio</li>
@@ -325,8 +326,8 @@ function ContactCode() {
 
 function PrizeCode() {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Soon....
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]}/>
     </div>
   )
 }

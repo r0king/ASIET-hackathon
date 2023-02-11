@@ -15,10 +15,11 @@ import bizthonVideo from "../../assets/Bizthon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutBiz(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       Bizthon is organised to evaluate the business outcomes or ideaology of a
       product via branding,skilling and engagement. This platform invites
       students as well as professionals to test and showcase their
@@ -116,18 +117,21 @@ function StagesBiz(props) {
 
 function PrizeBiz(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <li>First prize – Rs.1 lakh</li>
-      <li>Second prize – Rs.50,000</li>
-      <li>Third Prize (3 Nos) – Rs.10,000 each</li>
-      <li>Gifts/surprise prizes for the participants on STAGE 2</li>
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.10,000 ($120)"]} title={["","","(3 Nos)"]}/>
     </div>
+    // <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    //   <li>First prize – Rs.1 lakh</li>
+    //   <li>Second prize – Rs.50,000</li>
+    //   <li>Third Prize (3 Nos) – Rs.10,000 each</li>
+    //   <li>Gifts/surprise prizes for the participants on STAGE 2</li>
+    // </div>
   );
 }
 
 function RegBiz(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <li>First Round – Rs.100 per video</li>
       <li>Second Round – Rs. 1000 per team.</li>
       <li>Charges for training will be based on requirements</li>
@@ -137,7 +141,7 @@ function RegBiz(props) {
 
 function FAQBiz(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <b>1. How many participants can there be in a team?</b>
       <br />
       Ans: Minimum 2 and Maximum 4
@@ -210,7 +214,7 @@ function ConBiz() {
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
         <div className="mt-10">
@@ -259,7 +263,7 @@ function Bizthon() {
     { name: "Contact", icon: LightBulbIcon, page: <ConBiz /> },
   ];
   const { width } = useWindowSize();
-  const event = "Civilathon";
+  const event = "Bizthon";
   const eventDate = "";
   return (
     <>
