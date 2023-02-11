@@ -167,7 +167,7 @@ function ConTech() {
 function PrizeTech() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.10,000 ($115)"]} title={["","","(5 teams)"]} />
+      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.10,000 ($115)"]} title={["","","(5 NOS)"]} />
     </div>
   )
 }
@@ -247,8 +247,8 @@ function Techathon() {
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
           >
-            Register Now
-            <svg
+            Registration Will Start Soon
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 ml-2"
               fill="none"
@@ -261,7 +261,7 @@ function Techathon() {
                 strokeWidth={2}
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
-            </svg>
+            </svg> */}
           </button>
         </div>
       </div>

@@ -19,6 +19,8 @@ import gameathonVideo from "../../assets/Gameathon/intro.webm";
 import ProfImg1 from "../../assets/Gameathon/cont1.jpg";
 import ProfImg2 from "../../assets/Gameathon/cont2.jpg";
 import ProfImg3 from "../../assets/avatar.webp";
+import ProfImg4 from "../../assets/Gameathon/studCont1.webp";
+import ProfImg5 from "../../assets/Gameathon/studCont2.webp";
 import Tab from "../Utils/Tab";
 import Bg from "../Utils/Bg";
 import NavWrapper from "../Utils/NavWrapper";
@@ -90,25 +92,18 @@ function ContactGame() {
     },
     {
       id: 4,
-      fullName: "Student 1",
-      contact: "+91 9988776655",
-      imgSrc: ProfImg3,
+      fullName: "Revathy Jess",
+      contact: "+91 9946992358",
+      imgSrc: ProfImg4,
       imgAlt: "profile picture",
     },
     {
       id: 5,
-      fullName: "Student 2",
-      contact: "+91 9988776655",
-      imgSrc: ProfImg3,
+      fullName: "Alwin George",
+      contact: "+91 8136973414",
+      imgSrc: ProfImg5,
       imgAlt: "profile picture",
-    },
-    {
-      id: 6,
-      fullName: "Student 3",
-      contact: "+91 9988776655",
-      imgSrc: ProfImg3,
-      imgAlt: "profile picture",
-    },
+    }
   ];
 
   return (
@@ -122,7 +117,7 @@ function ContactGame() {
             {team.slice(0, 3).map((member) => (
               <div
                 key={member.id}
-                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center opacity-60 items-center rounded-full bg-black overflow-hidden"
               >
                 {/* :::picture */}
                 <img
@@ -153,7 +148,7 @@ function ContactGame() {
             {team.slice(3, 6).map((member) => (
               <div
                 key={member.id}
-                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center opacity-60 items-center rounded-full bg-black overflow-hidden"
               >
                 {/* :::picture */}
                 <img
@@ -182,7 +177,7 @@ function ContactGame() {
 function PrizeGame() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]}/>
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]} title={["","",""]}/>
     </div>
   );
 }
@@ -204,6 +199,7 @@ function Gameathon() {
 
   const { width } = useWindowSize();
 
+  // const event = "Gameathon";
   const eventDate = "Mar 28, 2023 00:00:00";
 
   return (

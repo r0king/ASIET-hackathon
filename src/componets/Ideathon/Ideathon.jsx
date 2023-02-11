@@ -14,6 +14,8 @@ import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
 import PrizeCards from "../Utils/PrizeCard";
+import ProfImg1 from "../../assets/Ideathon/facCont1.webp";
+import ProfImg2 from "../../assets/Ideathon/facCont2.webp";
 
 function AboutYoung(props) {
   return (
@@ -46,36 +48,56 @@ function AboutYoung(props) {
   );
 }
 
-function ContactYoung(props) {
+function ContactYoung() {
+  const team = [
+    {
+      id: 1,
+      fullName: "Dr. Ajay Kumar",
+      contact: "+91 9846900310",
+      imgSrc: ProfImg1,
+      imgAlt: "profile picture",
+    },
+    {
+      id: 2,
+      fullName: "Mr. Albins Paul",
+      contact: "+91 9495129696",
+      imgSrc: ProfImg2,
+      imgAlt: "profile picture",
+    },
+  ];
+
   return (
     <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Email: innovation@adishankara.ac.in
-      <br />
-      <br />
-      Dr. Ajay Kumar
-      <br />
-      Associate Professor
-      <br />
-      +919846900310
-      <br />
-      <br />
-      Mr. Albins Paul
-      <br />
-      Asst. Professor
-      <br />
-      +919495129696
-      <br />
-      <br />
-      Adi Shankara Institute of Engineering and Technology
-      <br />
-      Vidya Bharathi Nagar, Mattoor
-      <br />
-      Kalady, Ernakulam
-      <br />
-      Kerala, India
-      <br />
-      Phone No. 0484-2460000
-      <br />
+      <div className="mx-auto max-w-5xl flex flex-col">
+        {/* :TEAM CONTAINER */}
+        <div className="mt-10">
+          {/* ::Members Row 1 */}
+          <div className="flex flex-wrap justify-center items-center">
+            {team.slice(0, 4).map((member) => (
+              <div
+                key={member.id}
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+              >
+                {/* :::picture */}
+                <img
+                  src={member.imgSrc}
+                  alt={member.imgAlt}
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-10 transition duration-200"
+                />
+                {/* :::details */}
+                <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
+                  <p className="text-sm text-white font-bold">
+                    {member.fullName}
+                  </p>
+                  <p className="text-sm text-gray-300 font-medium">
+                    {member.contact}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -257,7 +279,7 @@ function AwardYoung(props) {
 function PrizeYoung() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.25,000 ($300)"]}/>
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.25,000 ($300)"]} title={["","",""]}/>
     </div>
   )
 }
@@ -340,8 +362,8 @@ function Ideathon() {
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
           >
-            Coming Soon
-            <svg
+            Registration Will Start Soon
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 ml-2"
               fill="none"
@@ -354,7 +376,7 @@ function Ideathon() {
                 strokeWidth={2}
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
-            </svg>
+            </svg> */}
           </button>
         </div>
       </div>

@@ -16,6 +16,8 @@ import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
 import PrizeCards from "../Utils/PrizeCard";
+import ProfImg4 from "../../assets/Codathon/studCont1.webp"
+import ProfImg5 from "../../assets/Codathon/studCont2.webp"
 
 function AboutCode(props) {
   return (
@@ -235,25 +237,18 @@ function ContactCode() {
     },
     {
       id: 4,
-      fullName: "Student 1",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
+      fullName: "Musafir KY",
+      contact: "+91 8089520160",
+      imgSrc: ProfImg4,
       imgAlt: "profile picture",
     },
     {
       id: 5,
-      fullName: "Student 2",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
+      fullName: "Electta Varghese",
+      contact: "+91 9605536513",
+      imgSrc: ProfImg5,
       imgAlt: "profile picture",
-    },
-    {
-      id: 6,
-      fullName: "Student 3",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
-      imgAlt: "profile picture",
-    },
+    }
   ];
 
   return (
@@ -298,7 +293,7 @@ function ContactCode() {
             {team.slice(3, 6).map((member) => (
               <div
                 key={member.id}
-                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center items-center rounded-full bg-black overflow-hidden"
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center opacity-60 items-center rounded-full bg-black overflow-hidden"
               >
                 {/* :::picture */}
                 <img
@@ -327,7 +322,7 @@ function ContactCode() {
 function PrizeCode() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]}/>
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]} title={["","","(3 Nos)"]}/>
     </div>
   )
 }
