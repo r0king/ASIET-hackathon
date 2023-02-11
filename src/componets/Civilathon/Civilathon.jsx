@@ -15,6 +15,8 @@ import civiathonVideo from "../../assets/Civilathon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
+
 
 function AboutCivil(props) {
   return (
@@ -58,12 +60,6 @@ function DeconCivil(props) {
       as decided by an expert jury panel will be awarded a cash prize of one
       lakh rupees.
       <br />
-      <br />
-      <b>Prizes</b>
-      <ul className="list-disc pl-10">
-        <li>1st prize : Rs. 1,00,000 ($ 1225)</li>
-        <li>2nd prize : Rs. 50,000 ($ 610)</li>
-      </ul>
       <br />
       <b>Expected participants :</b> Engineering, architecture and diploma
       students/graduates
@@ -167,14 +163,6 @@ function RebuildCivil(props) {
       <br />
       <b>Event duration :</b> 5 hours
       <br />
-      <br />
-      <b>Prizes</b>
-      <ul className="list-disc pl-10">
-        <li>1st prize : Rs. 40,000 ($ 400)</li>
-        <li>2nd prize : Rs. 30,000 ($ 367)</li>
-        <li>3rd prize : Rs. 20,000 ($ 245)</li>
-        <li>4th prize : Rs. 10,000 ($ 122)</li>
-      </ul>
       <br />
       <b>Stages</b>
       <ul className="list-disc pl-10">
@@ -354,6 +342,21 @@ function ConCivil() {
   );
 }
 
+function PrizeCivil() {
+  return (
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <h1 className="my-10 text-xl font-bold text-center">DECONSTRUCTE</h1>
+      <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+        <PrizeCards prize={["Rs.1,00,000 ($1225)", "Rs.50,000 ($610)", ""]} title={["", "", ""]} />
+      </div>
+      <h1 className="my-10 text-xl font-bold text-center">RAPID BUILD</h1>
+      <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+        <PrizeCards prize={["Rs.40,000 ($400)", "Rs.30,000 ($367)", "Rs.20,000 ($245)","Rs.10,000 ($122)"]} title={["", "", ""]} />
+      </div>
+    </div >
+  )
+}
+
 function Civilathon() {
   const tabs = [
     {
@@ -363,6 +366,7 @@ function Civilathon() {
     },
     { name: "DECONSTRUCTE", icon: CloudUploadIcon, page: <DeconCivil /> },
     { name: "RAPID BUILD", icon: ChartBarIcon, page: <RebuildCivil /> },
+    { name: "Prize", icon: ChartBarIcon, page: <PrizeCivil /> },
     { name: "FAQ", icon: ChartBarIcon, page: <FAQCivil /> },
     { name: "Contact", icon: LightBulbIcon, page: <ConCivil /> },
   ];
@@ -380,22 +384,22 @@ function Civilathon() {
         style={
           width > 640
             ? {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "right 0",
-                backgroundRepeat: "no-repeat",
-                height: "140vh",
-                backgroundColor: "var(--bg-color)",
-                boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "right 0",
+              backgroundRepeat: "no-repeat",
+              height: "140vh",
+              backgroundColor: "var(--bg-color)",
+              boxShadow: "inset 0px 0px 12px 10px black, inset 0px 90px 90px -10px black",
+            }
             : {
-                backgroundImage: `url(${bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "150vh",
-                boxShadow: "0px 0px 50px 0px var(--bg-color)",
-              }
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              height: "150vh",
+              boxShadow: "0px 0px 50px 0px var(--bg-color)",
+            }
         }
       >
         <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">

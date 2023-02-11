@@ -15,6 +15,7 @@ import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
 import techathonVideo from "../../assets/Techathon/intro.webm"
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutTech(props) {
   return (
@@ -165,8 +166,8 @@ function ConTech() {
 
 function PrizeTech() {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      Soon....
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.10,000 ($115)"]} title={["","","(5 teams)"]} />
     </div>
   )
 }

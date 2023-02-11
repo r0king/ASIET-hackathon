@@ -19,6 +19,7 @@ import ProfImg4 from "../../assets/Mechathon/cont2.webp";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutMech(props) {
   return (
@@ -146,22 +147,15 @@ function ContactMech() {
 function PrizeMech() {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <p>
-        <b>Go Kart Race</b>
-        <ul className="list-disc pl-10">
-          <li>1st Price: Rs. 1 Lakh</li>
-          <li>2nd Price: Rs. 50,000</li>
-          <li>Rs. 20000 For 3 Teams</li>
-        </ul>
-        <br />
-        <b>Automotive Design Challenge</b>
-        <ul className="list-disc pl-10">
-          <li>1st Price: Rs. 12,000</li>
-          <li>2nd Price: Rs. 8,000</li>
-          <li>3rd Price: Rs. 5,000</li>
-        </ul>
-      </p>
-    </div>
+      <h1 className="my-10 text-xl font-bold text-center">Go Kart Race</h1>
+      <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+        <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.20,000 ($240)"]} title={["", "", "(3 Nos)"]} />
+      </div>
+      <h1 className="my-10 text-xl font-bold text-center">Automative Design Challenge</h1>
+      <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+        <PrizeCards prize={["Rs.12,000 ($145)", "Rs.8,000 ($100)", "Rs.5,000 ($60)"]} title={["", "", ""]} />
+      </div>
+    </div >
   )
 }
 
