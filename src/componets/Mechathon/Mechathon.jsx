@@ -108,7 +108,7 @@ function ContactMech() {
   ];
 
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <div className="mx-auto max-w-5xl flex flex-col">
         {/* :TEAM CONTAINER */}
         <div className="mt-10">

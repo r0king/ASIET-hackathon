@@ -44,7 +44,7 @@ class PrizeCard extends Component {
   }
 }
 
-const PrizeCards = ({ props }) => {
+const PrizeCards = (props) => {
   const { width } = useWindowSize();
   return (
     <div className="flex flex-col rounded-2xl md:flex-row justify-center h-full w-full bg-gradient-to-r from-[#8F8F8E]/50 via-[#D5C17A]/50 to-[#DF968A]/50">
@@ -57,7 +57,7 @@ const PrizeCards = ({ props }) => {
               title: "#D5C17A",
             }}
             desc="The top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
-            prize="Rs.1,00,000 ($1200)"
+            prize={props.prize[0]}
           />
           <PrizeCard
             bg={prize2Img}
@@ -66,7 +66,7 @@ const PrizeCards = ({ props }) => {
               title: "#D1D1D3",
             }}
             desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
-            prize="Rs.50,000 ($600)"
+            prize={props.prize[1]}
           />
           <PrizeCard
             bg={prize3Img}
@@ -75,7 +75,7 @@ const PrizeCards = ({ props }) => {
               title: "#DF968A",
             }}
             desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
-            prize="Rs.20,000 ($240)"
+            prize={props.prize[2]}
           />
         </>
       ) : (
@@ -87,7 +87,7 @@ const PrizeCards = ({ props }) => {
               title: "#D1D1D3",
             }}
             desc="This prize is awarded to the runner-up project that demonstrates exceptional potential in solving the designated challenge."
-            prize="Rs.50,000 ($600)"
+            prize={props.prize[1]}
           />
           <div>
             <PrizeCard
@@ -97,7 +97,7 @@ const PrizeCards = ({ props }) => {
                 title: "#D5C17A",
               }}
               desc="The top project that demonstrates exceptional creativity and innovation in solving the designated challenge."
-              prize="Rs.1,00,000 ($1200)"
+              prize={props.prize[0]}
             />
           </div>
           <PrizeCard
@@ -107,7 +107,7 @@ const PrizeCards = ({ props }) => {
               title: "#DF968A",
             }}
             desc=" This prize is awarded to the project that demonstrates strong potential in solving the designated challenge."
-            prize="Rs.20,000 ($240)"
+            prize={props.prize[2]}
           />
         </>
       )}

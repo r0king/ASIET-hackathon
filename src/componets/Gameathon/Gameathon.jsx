@@ -182,7 +182,7 @@ function ContactGame() {
 function PrizeGame() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards />
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]}/>
     </div>
   );
 }
@@ -194,8 +194,8 @@ function Gameathon() {
       icon: ArchiveIcon,
       page: <AboutGame />,
     },
-    { name: "Registration", icon: CloudUploadIcon, page: <RegistrationGame /> },
     { name: "Eligibility", icon: ChartBarIcon, page: <EligibilityGame /> },
+    { name: "Registration", icon: CloudUploadIcon, page: <RegistrationGame /> },
     { name: "Bootcamp", icon: ViewGridIcon, page: <BootcampGame /> },
     { name: "Rules", icon: LightBulbIcon, page: <RulesGame /> },
     { name: "Prize", icon: LightBulbIcon, page: <PrizeGame /> },

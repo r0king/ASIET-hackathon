@@ -15,6 +15,7 @@ import bizthonVideo from "../../assets/Bizthon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutBiz(props) {
   return (
@@ -116,12 +117,15 @@ function StagesBiz(props) {
 
 function PrizeBiz(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <li>First prize – Rs.1 lakh</li>
-      <li>Second prize – Rs.50,000</li>
-      <li>Third Prize (3 Nos) – Rs.10,000 each</li>
-      <li>Gifts/surprise prizes for the participants on STAGE 2</li>
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.10,000 ($120)"]}/>
     </div>
+    // <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    //   <li>First prize – Rs.1 lakh</li>
+    //   <li>Second prize – Rs.50,000</li>
+    //   <li>Third Prize (3 Nos) – Rs.10,000 each</li>
+    //   <li>Gifts/surprise prizes for the participants on STAGE 2</li>
+    // </div>
   );
 }
 

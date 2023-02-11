@@ -13,6 +13,7 @@ import inroVideo from "../../assets/Ideathon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
+import PrizeCards from "../Utils/PrizeCard";
 
 function AboutYoung(props) {
   return (
@@ -179,7 +180,7 @@ function GuideYoung(props) {
 
 function ConYoung(props) {
   return (
-    <div className="md:p-10 p-3 text-base md:text-justify  h-full md:h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+    <div className="md:p-10 p-3 text-base md:text-justify  h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       Unlike other similar events, here the students have to go through
       different stages which will transform them into entrepreneurs. From the
       second stage onwards, a dedicated mentor will work in tandem with the
@@ -234,23 +235,6 @@ function AwardYoung(props) {
       <b>Amazing Cash Prize awaits the winners</b>
       <br />
       <br />
-      <table className="px-4 min-w-[20vw] rounded-md border border-gray-200 overflow-hidden">
-        <tbody>
-          <tr>
-            <td>Best Idea</td>
-            <td>Rs. 1 Lakhs</td>
-          </tr>
-          <tr>
-            <td>1st Runner-Up</td>
-            <td>Rs. 50,000</td>
-          </tr>
-          <tr>
-            <td>2nd Runner-Up</td>
-            <td>Rs. 25,000</td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
       <b>
         Top 100 projects: Scholarships for higher studies in Adi Shankara Group
         of Institutions
@@ -270,6 +254,14 @@ function AwardYoung(props) {
   );
 }
 
+function PrizeYoung() {
+  return (
+    <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
+      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.25,000 ($300)"]}/>
+    </div>
+  )
+}
+
 function Ideathon() {
   const { width } = useWindowSize();
   const tabs = [
@@ -279,9 +271,10 @@ function Ideathon() {
       page: <AboutYoung />,
     },
     { name: "Contest", icon: CloudUploadIcon, page: <ConYoung /> },
-    { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },
     { name: "Guidelines", icon: LightBulbIcon, page: <GuideYoung /> },
+    { name: "Prize", icon: ChartBarIcon, page: <PrizeYoung /> },
+    { name: "Awards", icon: ChartBarIcon, page: <AwardYoung /> },
     { name: "Contact", icon: LightBulbIcon, page: <ContactYoung /> },
   ];
   const event = "Ideathon";
