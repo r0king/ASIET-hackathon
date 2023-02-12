@@ -23,7 +23,7 @@ function AboutYoung(props) {
       “What the mind can conceive and believe, it can achieve.”
       <br />
       <br />
-      <span className="pl-96">Napoleon Hill</span>
+      <span className="pl-10 md:pl-96">- Napoleon Hill</span>
       <br />
       <br />
       In recent times, technology has produced many innovations of holocaustic
@@ -334,19 +334,19 @@ function Ideathon() {
         /> */}
 
         {/* main content */}
-        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="flex flex-col justify-center h-screen p-5 md:p-10">
           <h1
-            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}
           >
             Young Scientists Award
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase pt-5">
             Registration will start on July 2023
           </h2>
           {/* description */}
-          <p className="text-base text-[#f0f0f070] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
+          <p className="text-base text-[#f0f0f070] pt-5 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
             The objective of <b>Adi Shankara Young Scientists Award</b> is to
             recognize the potentialities of promising young aspiring scientists
             who dedicate themselves to solve the most pressing problems the
@@ -357,7 +357,7 @@ function Ideathon() {
           </p>
           {/* basic rounded line button */}
           <button
-            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-sm font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+            className="md:w-1/4 text-center text-[var(--secondary-color)] rounded-full duration-300 py-5 px-6 text-lg font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--primary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
             style={{
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}

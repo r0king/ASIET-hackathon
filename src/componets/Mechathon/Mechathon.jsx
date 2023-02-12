@@ -220,19 +220,19 @@ function Mechathon() {
             </video>
           </div> */}
           {/* main content */}
-          <div className="flex flex-col justify-center p-5 md:p-10 2xl:pl-24">
+          <div className="flex flex-col justify-center h-screen p-5 md:p-10">
             <h1
-              className="text-2xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+              className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
               style={{ fontFamily: "Azonix" }}
             >
               Mechathon 2K23
             </h1>
             {/* sub heading */}
-            <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+            <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase pt-5">
               24 hours of innovation
             </h2>
             {/* description */}
-            <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
+            <p className="text-base text-[#f0f0f070] pt-5 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
               Mechathon'23 is a technical festival organized by the Mechanical
               Engineering department as part of Hachathon'23. The event offers a
               diverse range of competitions and events, including Go-Kart and

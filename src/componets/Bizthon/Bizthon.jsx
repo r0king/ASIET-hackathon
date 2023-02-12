@@ -295,19 +295,19 @@ function Bizthon() {
         {/* <Navbar isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
         {/* main content */}
-        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="flex flex-col justify-center h-screen p-10">
           <h1
-            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}
           >
             Bizthon
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+          <h2 className="text-lg font-bold text-[var(--secondary-color)] uppercase pt-5">
             Service with a tech twist
           </h2>
           {/* description */}
-          <p className="text-base text-justify text-[var(--secondary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          <p className="text-base text-justify text-[var(--secondary-color)] pt-5 md:w-1/3 2xl:w-1/2 leading-6">
             Bizthon is an event that brings together business students, entrepreneurs, and industry professionals to develop innovative business solutions. Participants work in teams to ideate, design, and prototype solutions for real-world business challenges, leveraging technology and design thinking methodologies. The hackathon provides a dynamic and fast-paced environment for participants to showcase their skills, network with like-minded individuals, and gain hands-on experience in problem-solving and solution development. The event aims to foster innovation and creativity in the field of business administration and to provide participants with an opportunity to make a positive impact on the world of business.
           </p>
           {/* basic rounded line button */}

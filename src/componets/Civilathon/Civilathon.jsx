@@ -402,19 +402,19 @@ function Civilathon() {
             }
         }
       >
-        <div className="flex flex-col justify-center h-screen p-5 md:p-10  2xl:p-24">
+        <div className="flex flex-col justify-center h-screen p-5 md:p-10">
           <h1
-            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+            className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}
           >
             Civiathon
           </h1>
           {/* sub heading */}
-          <h2 className="text-lg font-bold text-[var(--primary-color)] uppercase md:text-xl 2xl:text-2xl md:pt-7">
+          <h2 className="text-lg font-bold text-[var(--primary-color)] uppercase pt-5">
             24 Hours of Innovation
           </h2>
           {/* description */}
-          <p className="text-base text-justify text-[var(--primary-color)] 2xl:text-2xl md:pt-10 md:w-1/3 2xl:w-1/2 leading-6">
+          <p className="text-base text-justify text-[var(--primary-color)] pt-5 md:w-1/3 2xl:w-1/2 leading-6">
             Civiathon is a rapid and collaborative hackathon aimed at the
             discipline of Civil Engineering. It is an excellent platform for
             students with limited experience in coding to showcase their skills

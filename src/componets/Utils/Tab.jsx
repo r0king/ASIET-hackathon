@@ -15,7 +15,7 @@ function Tab({ tabs, eventName }) {
   return (
     <>
       {width > 640 ? (
-        <div className={`${eventName} relative my-10 mb-16`}>
+        <div className={`${eventName} relative mb-16`}>
           <div className=" py-2 sticky top-0 z-10">
             <div className="w-fit max-w-[90vw] mx-auto rounded-full border border-gray-200 bg-black/70 overflow-hidden">
               <div className="relative  sm:block overflow-hidden">

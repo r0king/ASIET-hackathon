@@ -845,8 +845,11 @@ const Sponsors = () => {
                     glareBorderRadius="15px"
                     perspective={500}
                   >
-                    <div className="img">
+                    <div className="img flex flex-col">
                       <img src={partLogo3} alt="" />
+                      <div className="font-bold my-2">
+                        IIC
+                      </div>
                     </div>
                   </Tilt>
                   <Tilt
@@ -858,8 +861,11 @@ const Sponsors = () => {
                     glareBorderRadius="15px"
                     perspective={500}
                   >
-                    <div className="img">
+                    <div className="img flex flex-col">
                       <img src={partLogo4} alt="" />
+                      <div className="font-bold my-2">
+                        Devfolio
+                      </div>
                     </div>
                   </Tilt>
                   <Tilt
@@ -871,8 +877,11 @@ const Sponsors = () => {
                     glareBorderRadius="15px"
                     perspective={500}
                   >
-                    <div className="img">
+                    <div className="img flex flex-col">
                       <img src={partLogo5} alt="" />
+                      <div className="font-bold my-2">
+                        Polygon
+                      </div>
                     </div>
                   </Tilt>
                 </div>
@@ -938,20 +947,39 @@ const Sponsors = () => {
               </div> */}
               <LazyLoad offset={450}>
                 <div className="images ">
-                  <div className="img">
-                    <img src={partLogo1} alt="" />
+                  <div>
+                    <div className="img">
+                      <img src={partLogo1} alt="TITLABS" />
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={partLogo2} alt="" />
+                  <div>
+                    <div className="img">
+                      <img src={partLogo2} alt="CIIRC" />
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={partLogo3} alt="" />
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo3} alt="IIC" />
+                      <div className="font-bold my-2">
+                        IIC
+                      </div>
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={partLogo4} alt="" />
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo4} alt="Devfolio" />
+                      <div className="font-bold my-2">
+                        Devfolio
+                      </div>
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={partLogo5} alt="" />
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo5} alt="Polygon" />
+                      <div className="font-bold my-2">
+                        Polygon
+                      </div>
+                    </div>
                   </div>
                 </div>
               </LazyLoad>

@@ -47,7 +47,9 @@ function AboutCode(props) {
 function RegisCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <h1>Coming Soon</h1>
+      <div className="text-4xl  text-center">
+        Registration Will Start Soon
+      </div>
     </div>
   );
 }
@@ -322,7 +324,7 @@ function ContactCode() {
 function PrizeCode() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)","Rs.50,000 ($600)","Rs.20,000 ($240)"]} title={["","","(3 Nos)"]}/>
+      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.20,000 ($240)"]} title={["", "", "(3 Nos)"]} />
     </div>
   )
 }
@@ -373,7 +375,7 @@ function Codathon() {
             }
         }
       >
-        <div className="Codathon flex flex-col justify-center h-screen p-5">
+        <div className="Codathon flex flex-col h-screen justify-center p-5 md:p-12">
           <h1
             className="text-4xl font-bold  text-[#0eedf5] uppercase md:text-6xl"
             style={{ fontFamily: "Azonix" }}

@@ -230,19 +230,19 @@ function Gameathon() {
       >
         <div className="Gameathon flex h-full">
           {/* main content */}
-          <div className="flex flex-col justify-center p-5 md:p-10 2xl:pl-24">
+          <div className="flex flex-col justify-center p-10">
             <h1
-              className="text-2xl font-bold  text-[var(--primary-color)] uppercase md:text-7xl 2xl:text-8xl pt-[5vh] "
+              className="text-4xl font-bold  text-[var(--primary-color)] uppercase md:text-6xl"
               style={{ fontFamily: "Azonix" }}
             >
               Gameathon 2K23
             </h1>
             {/* sub heading */}
-            <h2 className="text-lg font-bold text-[var(--secondary-color)] md:text-xl 2xl:text-2xl md:pt-7">
+            <h2 className="text-lg font-bold text-[var(--secondary-color)] pt-5">
               28<sup>th</sup>, 29<sup>th</sup> & 30<sup>th</sup> MARCH 2023
             </h2>
             {/* description */}
-            <p className="text-base text-[#f0f0f070] 2xl:text-2xl pt-4 md:pt-10 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
+            <p className="text-base text-[#f0f0f070] pt-5 md:w-1/3 2xl:w-1/2 leading-6 text-justify">
               A Gameathon is an event where game developers, designers, and enthusiasts come together to create new and innovative video games. Participants form teams and use cutting-edge technology and creative design principles to develop new games from concept to completion within a set time frame. The event provides a platform for collaboration, learning, and creativity, as well as the opportunity for participants to showcase their skills, network with industry professionals, and potentially bring their games to market. With a focus on pushing the boundaries of game design and technology, Gameathons are a fun and exciting way for game enthusiasts to challenge themselves and make their mark on the industry.
             </p>
             {/* basic rounded line button */}
@@ -252,7 +252,7 @@ function Gameathon() {
               target={"_blank"}
             >
               <button
-                className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-xl font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
+                className="w-full md:w-1/4 p-5 md:p-auto text-center text-[var(--secondary-color)] rounded-full duration-300 md:py-5 text-lg font-bold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[var(--secondary-color)] flex items-center justify-center border border-[var(--primary-color)] hover:border-[var(--secondary-color)]"
                 style={{
                   boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
                 }}

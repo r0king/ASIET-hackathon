@@ -20,7 +20,7 @@ import planetVideo from "../assets/globe.webm";
 import planetVideoM from "../assets/globeM1.webm";
 import cloudImg from "../assets/Parallax/cloud.png.webp";
 import collegePic from "../assets/Parallax/asiet.png.webp";
-import prizeVideoM from "../assets/prize.webm";
+import prizeVideoM from "../assets/prizeM2.webm";
 import introVideo from "../assets/intro.webm";
 import { useEffect } from "react";
 
@@ -146,7 +146,7 @@ const HomePage = () => {
                 autoPlay
                 loop
                 muted
-                className=" top-[8%] absolute bottom-0 object-contain md:h-auto w-[85%]"
+                className=" top-[8%] absolute bottom-0 object-contain md:h-[10%] w-[85%]"
               >
                 {width > 640 ? (
                   <source src={prizeVideoM} type="video/webm" />
@@ -249,6 +249,13 @@ const HomePage = () => {
           <Sponsors />
           <Faq />
           <AboutUs />
+          <div className="flex justify-center w-full h-full">
+            {width > 640 ?
+              <iframe className="my-10 shadow-2xl rounded-md" width="1000" height="500" src="https://www.youtube.com/embed/iSKYwo7CQOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              :
+              <iframe className="mb-10" width="300" height="300" src="https://www.youtube.com/embed/iSKYwo7CQOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            }
+          </div>
           <ContactUs />
         </ParallaxBanner>
       </div>
