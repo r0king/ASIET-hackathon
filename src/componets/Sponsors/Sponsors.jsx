@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
-import logo1 from "../../assets/Sponsors/titlab.png.webp";
-import logo2 from "../../assets/Sponsors/titlab.png.webp";
-import logo3 from "../../assets/Sponsors/titlab.png.webp";
-import logo4 from "../../assets/Sponsors/titlab.png.webp";
-import partLogo1 from "../../assets/Sponsors/titlab.png.webp"
-import partLogo2 from "../../assets/Sponsors/ciirc.png.webp"
+// { useEffect, useState } from "react";
+// import logo1 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo2 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo3 from "../../assets/Sponsors/sampleLogo.webp";
+// import logo4 from "../../assets/Sponsors/sampleLogo.webp";
+import partLogo1 from "../../assets/Sponsors/titlab.png.webp";
+import partLogo2 from "../../assets/Sponsors/ciirc.png.webp";
+import partLogo3 from "../../assets/Sponsors/iic.webp";
+import partLogo4 from "../../assets/Sponsors/devfolio.webp";
+import partLogo5 from "../../assets/Sponsors/polygon.webp";
 import "./Sponsors.css";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
@@ -15,28 +19,30 @@ const Sponsors = () => {
   const { width } = useWindowSize();
 
   const targetTitleRef = React.useRef(null);
-  const targetPlatinumRef = React.useRef(null);
-  const targetDiamondRef = React.useRef(null);
-  const targetSilverRef = React.useRef(null);
-  const targetGoldRef = React.useRef(null);
+  // const targetTitleRef = React.useRef(null);
+  // const targetPlatinumRef = React.useRef(null);
+  // const targetDiamondRef = React.useRef(null);
+  // const targetSilverRef = React.useRef(null);
+  // const targetGoldRef = React.useRef(null);
 
   const [targetTitle, setTitle] = useState();
-  const [targetPlatinum, setPlatinum] = useState();
-  const [targetDiamond, setDiamond] = useState();
-  const [targetSilver, setSilver] = useState();
-  const [targetGold, setGold] = useState();
+  // const [targetPlatinum, setPlatinum] = useState();
+  // const [targetDiamond, setDiamond] = useState();
+  // const [targetSilver, setSilver] = useState();
+  // const [targetGold, setGold] = useState();
 
   useEffect(() => {
     setTitle(targetTitleRef.current);
-    setPlatinum(targetPlatinumRef.current);
-    setDiamond(targetDiamondRef.current);
-    setGold(targetGoldRef.current);
-    setSilver(targetSilverRef.current);
+    //   setPlatinum(targetPlatinumRef.current);
+    //   setDiamond(targetDiamondRef.current);
+    //   setGold(targetGoldRef.current);
+    //   setSilver(targetSilverRef.current);
   }, []);
   return (
-    <div className="sponsers_main_container z-20 -mt-10 md:mt-28 bg-gradient-to-b from-black via-black to-transparent">
+    <div className="sponsers_main_container z-20 -mt-10 ">
+      <div ref={targetTitleRef}></div>
       <div className="sponsors_container">
-        <div className="sponsor_title" ref={targetTitleRef}>
+        {/* <div className="sponsor_title" ref={targetTitleRef}>
           <h1 className="text-2xl p-5 mt-20 font-bold">
             <span>OUR</span> SPONSORS
           </h1>
@@ -45,7 +51,7 @@ const Sponsors = () => {
           {width > 640 ? (
             <Parallax
               className="mt-8 md:-mt-14"
-              scale={[0, 1]}
+              scale={[0.7, 1]}
               opacity={[0, 1]}
               targetElement={targetTitle}
             >
@@ -438,7 +444,7 @@ const Sponsors = () => {
         <div className="sponsors_gold sponsors " ref={targetGold}>
           {width > 640 ? (
             <Parallax
-              scale={[0, 1]}
+              scale={[0.3, 1]}
               opacity={[0, 1]}
               targetElement={width > 650 ? targetPlatinum : targetDiamond}
             >
@@ -635,7 +641,7 @@ const Sponsors = () => {
         <div className="sponsors_silver sponsors" ref={targetSilverRef}>
           {width > 640 ? (
             <Parallax
-              scale={[0, 1]}
+              scale={[0.7, 1]}
               opacity={[0, 1]}
               targetElement={width > 650 ? targetDiamond : targetPlatinum}
             >
@@ -788,19 +794,19 @@ const Sponsors = () => {
               </LazyLoad>
             </div>
           )}
-        </div>
+        </div> */}
         <div className="sponsor_title">
-          <h1 className="text-2xl  font-bold p-5">
+          <h1 className="text-2xl  font-bold p-5 pt-20">
             <span>OUR</span> PARTNERS
           </h1>
         </div>
         <div className="sponsors_silver sponsors">
           {width > 640 ? (
             <Parallax
-              className="mt-8 md:-mt-14"
-              scale={[0, 1]}
+              className="mt-8 md:mt-0"
+              scale={[0.7, 1]}
               opacity={[0, 1]}
-              targetElement={targetSilver}
+              targetElement={targetTitle}
             >
               <LazyLoad offset={300}>
                 <div className="images ">
@@ -839,8 +845,11 @@ const Sponsors = () => {
                     glareBorderRadius="15px"
                     perspective={500}
                   >
-                    <div className="img">
-                      <img src={logo3} alt="" />
+                    <div className="img flex flex-col">
+                      <img src={partLogo3} alt="" />
+                      <div className="font-bold my-2">
+                        IIC
+                      </div>
                     </div>
                   </Tilt>
                   <Tilt
@@ -852,8 +861,27 @@ const Sponsors = () => {
                     glareBorderRadius="15px"
                     perspective={500}
                   >
-                    <div className="img">
-                      <img src={logo4} alt="" />
+                    <div className="img flex flex-col">
+                      <img src={partLogo4} alt="" />
+                      <div className="font-bold my-2">
+                        Devfolio
+                      </div>
+                    </div>
+                  </Tilt>
+                  <Tilt
+                    scale={0.9}
+                    glareEnable={true}
+                    glareColor="pink"
+                    glarePosition="all"
+                    glareMaxOpacity={0.45}
+                    glareBorderRadius="15px"
+                    perspective={500}
+                  >
+                    <div className="img flex flex-col">
+                      <img src={partLogo5} alt="" />
+                      <div className="font-bold my-2">
+                        Polygon
+                      </div>
                     </div>
                   </Tilt>
                 </div>
@@ -861,7 +889,7 @@ const Sponsors = () => {
             </Parallax>
           ) : (
             <div>
-              <div className="w-full flex justify-center items-center">
+              {/* <div className="w-full flex justify-center items-center">
                 <span className="flex-grow opacity-80">
                   <svg
                     width="96"
@@ -916,20 +944,42 @@ const Sponsors = () => {
                     />
                   </svg>
                 </span>
-              </div>
-              <LazyLoad offset={450} >
+              </div> */}
+              <LazyLoad offset={450}>
                 <div className="images ">
-                  <div className="img">
-                    <img src={logo1} alt="" />
+                  <div>
+                    <div className="img">
+                      <img src={partLogo1} alt="TITLABS" />
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={logo2} alt="" />
+                  <div>
+                    <div className="img">
+                      <img src={partLogo2} alt="CIIRC" />
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={logo3} alt="" />
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo3} alt="IIC" />
+                      <div className="font-bold my-2">
+                        IIC
+                      </div>
+                    </div>
                   </div>
-                  <div className="img">
-                    <img src={logo4} alt="" />
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo4} alt="Devfolio" />
+                      <div className="font-bold my-2">
+                        Devfolio
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo5} alt="Polygon" />
+                      <div className="font-bold my-2">
+                        Polygon
+                      </div>
+                    </div>
                   </div>
                 </div>
               </LazyLoad>

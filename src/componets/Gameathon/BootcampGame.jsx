@@ -1,12 +1,50 @@
 import React from 'react'
-import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png.webp'
+// import bootCampDiagram from '../../assets/Gameathon/bootCampDiagram.png.webp'
 
 export default function BootcampGame() {
   return (
-    <div className='md:p-10 p-3 text-base md:text-justify font-[poppins] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 text-base md:text-justify  h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+      <p>
+        <h1 className='font-bold text-lg'>What is the aim of boot camp for the gameathon?</h1><br />
+        The Bootcamp aims to teach students the principles and skills of game design, art, and
+        development, focusing on casual games (such as running and jumping). The students will learn
+        and create a game output over 5 or 10 days through a combination of lectures, hands-on
+        training, assignments, and opportunities for interaction with the instructor and other students.
+        The boot camp aims to provide a comprehensive learning experience and help students
+        develop practical skills in game development.
+      </p><p>
+        <br /><h1 className='font-bold text-lg'>Brief details of specific gaming software used?</h1><br />
+        The game development bootcamp will use Unity 3D and Blender. Unity is a popular game
+        engine for creating 2D and 3D games on various platforms with a comprehensive set of
+        features, including game engine, scripting, physics, and asset management. Blender is a free,
+        open-source software for modeling, animation, and game creation with a built-in game engine.
+        These tools will provide hands-on experience for students in game development and teach them
+        essential principles and techniques.
+      </p><p>
+        <br /><h1 className='font-bold text-lg'>What are the benefits for participants attending the bootcamp?</h1><br />
+        <ul className='list-decimal pl-10'>
+          <li><b>Hands-on experience:</b> Participants will gain practical experience in game development through hands-on training and creating a game output.</li>
+          <li><b>Improved skills:</b> Participants will learn and improve their skills in game design, art, and development, including concepts such as running and jumping.</li>
+          <li><b>Comprehensive understanding:</b> Participants will receive a comprehensive understanding of game development principles and techniques, including design, art, and programming.</li>
+          <li><b>Access to tools:</b> Participants will have access to powerful game development tools such as Unity 3D and Blender, allowing them to continue their learning and development after the boot camp.</li>
+          <li><b>Networking opportunities:</b> Participants will have opportunities to interact with instructors and other participants, allowing them to expand their network and build connections in the game development community.</li>
+          <li><b>Flexibility:</b> The bootcamp will be delivered in multiple sessions, allowing participants to balance their studies with other commitments.</li>
+        </ul><br />
+        Overall, the game development bootcamp is designed to provide a comprehensive and
+        hands-on learning experience for participants, allowing them to develop their skills and advance
+        their careers in the game development industry.
+      </p><p>
+        <br /><h1 className='font-bold text-lg'>How does attending the boot camp support the actual gameathon competition?</h1><br />
+        Attending the bootcamp equips attendees with essential skills, knowledge, and resources to win
+        the gameathon competition. Participants enhance their game design, art, and development
+        skills through hands-on training and game output creation. Access to tools like Unity 3D and
+        Blender allows attendees to implement creative strategies to stand out in the competition. The
+        practical experience and skills gained at the bootcamp laid a solid foundation for success in the
+        gameathon
+      </p>
       <div>
-        <h1 className='text-lg font-bold'>Prerequisites for Bootcamp</h1><br />
-        <ul className='list-disc text-base font-[poppins] pl-14'>
+        <br /><h1 className='text-lg font-bold'>Prerequisites for Bootcamp</h1><br />
+        <ul className='list-disc text-base  pl-5 md:pl-14'>
           <li>A strong interest in game development and a desire to learn about the game industry.</li>
           <li>Basic understanding of programming concepts and familiarity with at least one programming language.</li>
           <li>Basic understanding of art and design principles.</li>
@@ -19,21 +57,21 @@ export default function BootcampGame() {
       </div>
       <div>
         <h1 className='text-lg font-bold mt-8'>How should the candidate attend the training?</h1><br />
-        <ul className='list-disc text-base font-[poppins] pl-14'>
+        <ul className='list-disc text-base  pl-14'>
           <li>Students can use the Discord channel to ask questions and interact with the instructor and classmates.</li>
           <li>Students can also use the help-desk platform to submit tickets with their doubts or questions. The training organization will respond as soon as possible.</li>
           <li>During the course, students can also ask doubts directly to the instructor during class sessions or through private messaging.</li>
           <li>After the course has finished, students will have access to a 1-month support period during which they can continue to ask doubts through the help-desk platform. The training organization will respond to inquiries within 24 hours.</li>
         </ul>
       </div>
-      <div>
+      {/* <div>
         <h1 className='text-lg font-bold mt-8'>Bootcamp contents</h1><br />
         <img src={bootCampDiagram} alt="Bootcamp Content" />
-      </div>
+      </div> */}
       <div>
-        <h1 className='text-2xl font-bold'>Bootcamp Rules</h1><br />
+        <br /><h1 className='text-2xl font-bold'>Bootcamp Rules</h1><br />
         <h1 className='text-lg font-bold pl-5 pb-6'>Specific Rules</h1>
-        <ol className='list-decimal text-base font-[poppins] pl-16'>
+        <ol className='list-decimal text-base  pl-16'>
           <li>The Bootcamp will consist of 40 hours of content to be delivered to students in morning and evening batches.</li>
           <li>Students will participate in Zoom sessions and can log in as team members.</li>
           <li>A dedicated Discord channel will be established for all Bootcamp attendees.</li>
@@ -52,7 +90,7 @@ export default function BootcampGame() {
           </li>
         </ol>
         <h1 className='text-lg font-bold pl-5 pb-6 pt-5'>General Rules</h1>
-        <ul className='list-disc text-base font-[poppins] pl-14'>
+        <ul className='list-disc text-base  pl-14'>
           <li>Attendance is mandatory for all sessions. If a student is unable to attend a session, they must inform the instructor in advance and make arrangements to catch up on missed material.</li>
           <li>Students must complete all assignments on time and to the best of their ability; late or incomplete assignments will not be accepted.</li>
           <li>Active participation in class discussions and activities is expected from students.</li>
@@ -74,7 +112,7 @@ export default function BootcampGame() {
       </div>
       <div>
         <h1 className='text-lg font-bold mt-8'>Bootcamp Certificate</h1><br />
-        <h2 className='text-base font-[poppins] pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from TILTLABS.</h2>
+        <h2 className='text-base  pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from TILTLABS.</h2>
       </div>
     </div>
   )

@@ -11,7 +11,9 @@ const Navbar24 = () => {
       <div className=" mx-auto flex justify-between items-center fixed w-full z-50 top-0">
         {/* ::Burger icon standard */}
         <div className="inline-flex items-center brightness-[50] opacity-80 p-7 pt-4">
-          <img src={logoAsiet} className="h-9 p-1" alt="logo"></img>
+          <a href="/">
+            <img src={logoAsiet} className="h-9 p-1" alt="logo"></img>
+          </a>
         </div>
         <div className="z-50 scale-75 mr-1">
           <Burger1 isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -24,11 +26,11 @@ const Navbar24 = () => {
       {isOpen && (
         <div
           className="
-        flex flex-col 
-      bg-black/90 
-        w-screen h-screen z-20 m-auto pl-1 md:pl-px
-        fixed top-0
-         text-base uppercase text-center font-semibold"
+      flex flex-col 
+    bg-black/90 
+      w-screen h-screen z-20 m-auto pl-1 md:pl-px
+      fixed top-0
+       text-base uppercase text-center font-semibold"
         >
           <a
             href="/"
@@ -54,11 +56,19 @@ const Navbar24 = () => {
           </a>
 
           <a
-            href="/ideathon"
-            aria-label="click to go to ideathon"
+            href="/techathon"
+            aria-label="click to go to bizthon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Young Scientist Award
+            Techathon
+          </a>
+
+          <a
+            href="/bizthon"
+            aria-label="click to go to bizthon"
+            className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
+          >
+            Bizthon
           </a>
           <a
             href="/mechathon"
@@ -68,18 +78,18 @@ const Navbar24 = () => {
             Mechathon
           </a>
           <a
-            href="/civilathon"
-            aria-label="click to go to civilathon"
+            href="/civiathon"
+            aria-label="click to go to civiathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Civilathon
+            Civiathon
           </a>
           <a
-            href="/bizthon"
-            aria-label="click to go to bizthon"
+            href="/young scientist award"
+            aria-label="click to go to ideathon"
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
           >
-            Bizthon
+            Young Scientists Award
           </a>
           <a
             href="#faq"
@@ -93,10 +103,10 @@ const Navbar24 = () => {
           </a>
           <a
             href="https://www.adishankara.ac.in/contact-us"
-            target="_blank"
             aria-label="click to go to contact us"
+            target={"_blank"}
+            rel={"noreferrer"}
             className="block px-3 py-3 mx-auto md:w-4/5 rounded-md hover:text-[var(--primary-color)] uppercase text-2xl text-white/40  "
-            rel="noreferrer"
           >
             Contact US
           </a>

@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+import asietLogo from "../assets/asietlogo.png"
 
 const ContactUs = () => {
+
+  const myRef = useRef(null);
+
+  // useEffect(() => {
+  //   if (myRef.current) {
+  //     myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   }
+  // }, []);
+
   return (
-    <div className="flex p-3 md:p-6 justify-center items-center relative z-10">
+    <div id="contact" ref={myRef} className="flex p-3 md:p-6 justify-center items-center relative z-10">
       <div
         className="
          w-[90vw] backdrop-blur-3xl bg-[rgb(0,0,0,0.25)]
@@ -23,6 +33,7 @@ const ContactUs = () => {
              p-5 sm:p-10
              flex flex-col w-full h-full mx-auto"
           >
+            <img src={asietLogo} alt="Asiet Logo" className=" pl-0 md:pl-0    md:pt-0 pb-5" srcSet="" />
             {/* ::Title Contact */}
             <h2 className="text-2xl text-[#f0f0f0] font-semibold tracking-wide">
               Contact Us
@@ -49,16 +60,23 @@ const ContactUs = () => {
               <h3 className="text-base font-medium">Contact</h3>
               <div className="space-y-1 text-base text-[#f0f0f0] text-opacity-60">
                 <p className="font-medium">
-                  0484-2463825
+                  R Rajaram : +91 9895199204
                   <br />
-                  0484-2466066<br></br> 0484-2461933
+                  Maneesh T : +91 8848112354
+                  <br />
+                  P V Rajaraman: +91 9940418252
+                  <br />
+                  Ajay Basil Varghese: +91 9995103073 
+                  <br />
+                  Srideep Krishnan: +91 9496800405
+                  <br /><br />
                 </p>
                 <a
-                  href="mailto:#"
+                  href="mailto:hackathon@adishankara.ac.in"
                   aria-label="mail"
                   className="inline-block font-medium hover:text-[#f0f0f0]"
                 >
-                  info@adishankara.ac.in
+                  hackathon@adishankara.ac.in
                 </a>
               </div>
             </div>
