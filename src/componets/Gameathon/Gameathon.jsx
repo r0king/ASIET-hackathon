@@ -18,7 +18,7 @@ import RulesGame from "./RulesGame";
 import gameathonVideo from "../../assets/Gameathon/intro.webm";
 import ProfImg1 from "../../assets/Gameathon/cont1.jpg";
 import ProfImg2 from "../../assets/Gameathon/cont2.jpg";
-import ProfImg3 from "../../assets/avatar.webp";
+import ProfImg3 from "../../assets/Gameathon/facCont3.webp";
 import ProfImg4 from "../../assets/Gameathon/studCont1.webp";
 import ProfImg5 from "../../assets/Gameathon/studCont2.webp";
 import Tab from "../Utils/Tab";
@@ -85,8 +85,8 @@ function ContactGame() {
     },
     {
       id: 3,
-      fullName: "Faculty 3",
-      contact: "+91 9087654321",
+      fullName: "Manesh T",
+      contact: "+91 8848112354",
       imgSrc: ProfImg3,
       imgAlt: "profile picture",
     },

@@ -10,35 +10,30 @@ import {
   LightBulbIcon,
   ViewGridIcon,
 } from "@heroicons/react/solid";
-import ProfImg from "../../assets/avatar.webp";
 import codathonVideo from "../../assets/Codathon/intro.webm";
 import NavWrapper from "../Utils/NavWrapper";
 import Bg from "../Utils/Bg";
 import Tab from "../Utils/Tab";
 import PrizeCards from "../Utils/PrizeCard";
+import ProfImg1 from "../../assets/Codathon/facCont11.webp"
+import ProfImg2 from "../../assets/Codathon/facCont21.webp"
+import ProfImg3 from "../../assets/Codathon/facCont3.webp";
 import ProfImg4 from "../../assets/Codathon/studCont1.webp"
 import ProfImg5 from "../../assets/Codathon/studCont2.webp"
 
 function AboutCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <b>Adi Shankara Codeathon</b> is a nationwide initiative to provide
-      students with a platform to solve some of the pressing problems we face in
-      our daily lives, and thus inculcate a culture of product innovation and a
-      mindset of problem-solving. This will be a 24 hour coding contest where
-      the goal is to create functioning software by the end of the event, which
-      can include the programming language used, the operating system, an
-      application, an API, or the subject and the demographic group of the
-      programmers.
-      <br />
-      <br />
-      <b>Why Adi Shankara Codeathon?</b>
-      <ul className="list-disc pl-10">
-        <li>Entrepreneurship</li>
-        <li>Innovation</li>
-        <li>Imagination</li>
-        <li>Knowledge</li>
-        <li>Opportunity</li>
+      <p>
+        <b>Adi Shankara Codeathon</b><br /><br />
+        Hackathons are rapidly becoming one of the most popular and important events in the technology world, and for good reason. They bring together talented individuals from a variety of backgrounds to collaborate, build, and innovate in a short period of time. Here are just a few of the reasons why attending the hackathon in ASIET is so important:
+      </p><br />
+      <ul className="list-decimal pl-10">
+        <li><b>Encourages Innovation:</b> Hackathons are a breeding ground for new and innovative ideas. By bringing together a diverse group of individuals with different skill sets and perspectives, Adi Shankara Hackathon creates a unique environment for creativity and problem-solving. The fast-paced nature of hackathons means that participants are forced to think outside the box and come up with new and creative solutions to complex problems.</li><br />
+        <li><b>Builds Community:</b> Adi Shankara Hackathon is an excellent way to build and strengthen the tech community. It brings together people from different backgrounds and industries to collaborate and network. By working together, participants can form meaningful relationships and build lasting connections.</li><br />
+        <li><b>Offers Career Opportunities:</b> Adi Shankara Hackathon is a great way to showcase your skills and make connections in the tech industry. Many participants come here with the intention of making connections that can help advance their careers. Companies and recruiters often attend hackathons to find the best and brightest talent.</li><br />
+        <li><b>Provides Hands-On Experience:</b> Adi Shankara Hackathon is an excellent opportunity for participants to get hands-on experience with new technologies and tools. They are an ideal way for people to learn new skills, try out new ideas, and get feedback from other participants and industry experts.</li><br />
+        <li><b>Promotes Diversity and Inclusion:</b> Adi Shankara Hackathon is a great way to promote diversity and inclusion in the tech industry. They bring together individuals from different backgrounds and perspectives, creating an environment where everyone's voice can be heard and everyone's ideas can be considered.</li><br />
       </ul>
     </div>
   );
@@ -47,9 +42,7 @@ function AboutCode(props) {
 function RegisCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <div className="text-4xl  text-center">
-        Registration Will Start Soon
-      </div>
+      We have joined forces with DevFolio to host this Hackathon. To sign up, you need to complete the registration process on the DevFolio website. The registration link can be found here.
     </div>
   );
 }
@@ -57,23 +50,20 @@ function RegisCode(props) {
 function ThemesCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <b>Streams</b>
-      <ul className="list-disc pl-10">
-        <li>Computer Vision,</li>
-        <li>Natural Language Processing,</li>
-        <li>Speech</li>
-        <li>Cyber Security</li>
-      </ul>
-      <br />
-      <br />
-      <b>Themes</b>
-      <ul className="list-disc pl-10">
-        <li>Agriculture</li>
-        <li>Healthcare</li>
-        <li>Cybersecurity</li>
-        <li>Automation</li>
-        <li>Digital Education</li>
-        <li>Energy Optimization</li>
+      <p><b>Themes</b><br /><br />
+        Codeathons typically have a theme or focus area that participants work on during the event. Some common themes for codeathons include:
+      </p><br />
+      <ul className="list-decimal pl-10">
+        <li><b>Artificial Intelligence and Machine Learning:</b> Participants build projects using AI and ML technologies to solve real-world problems.</li>
+        <li><b>Web Development:</b> Participants create websites, web applications, and other digital products.</li>
+        <li><b>Cybersecurity:</b> Participants develop solutions to protect against cyber threats and secure data.</li>
+        <li><b>Data Science:</b> Participants analyze and visualize large datasets to gain insights and make predictions.</li>
+        <li><b>Virtual and Augmented Reality:</b> Participants create virtual and augmented reality experiences.</li>
+        <li><b>Blockchain:</b> Participants build projects that use blockchain technology to secure and track transactions.</li>
+        <li><b>Social Impact:</b> Participants create projects that address social and environmental challenges.</li>
+        <li><b>Speech processing:</b> Participants develop projects that focuses on the design, development, and implementation of technologies that enable computers to understand and generate human speech.</li>
+        <li><b>Natural Language Processing:</b> Participants can build projects that aim to develop algorithms and models that can process and analyze large amounts of natural language data, including speech and text, to extract meaning and perform various language-related tasks such as sentiment analysis, machine translation, and text classification.</li>
+        <li><b>Computer Vision:</b> Computer Vision projects aim to develop algorithms and models that can analyze visual data and perform tasks such as object recognition, image segmentation, and scene understanding, with applications ranging from self-driving cars and security systems to medical imaging and augmented reality.</li>
       </ul>
     </div>
   );
@@ -82,31 +72,37 @@ function ThemesCode(props) {
 function StagesCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <b>ASC Process</b>
-      <ul className="list-disc pl-10">
-        <li>Registration through DevFolio</li>
-        <li>Collection of ideas</li>
-        <li>Registration ends</li>
-        <li>Shortlisting ideas</li>
-        <li>ASH Day</li>
+      <b>Adi Shankara Hackathon Process</b>
+      <br /><br />
+      Adi Shankara Hackathon is a technology event where participants work together to create innovative solutions to real-world problems. The process for this hackathon may involve the following steps:
+      <br /><br />
+      <ul className="list-decimal pl-10">
+        <li><b>Registration through DevFolio:</b> Participants may be required to register for the hackathon through a platform such as DevFolio. This platform may be used to manage the registration process, collect participant information, and communicate updates and information about the hackathon</li>
+        <li><b>Collection of Ideas:</b> Participants will be asked to submit their ideas for projects they would like to work on during the hackathon. These ideas may be reviewed and evaluated by the organizers to determine which projects will be selected for the hackathon.</li>
+        <li><b>Registration Ends:</b> The registration period for the hackathon will end on a specified date. After this date, the organizers will begin the process of shortlisting the ideas and forming teams.</li>
+        <li><b>Shortlisting Ideas:</b> The organizers will review the submitted ideas and select a set of projects to be included in the hackathon. This may involve evaluating the feasibility, originality, and impact of each idea. The selected projects will be assigned to teams of participants.</li>
+        <li><b>Codeathon Day:</b> The actual hackathon event, referred to as ASH Day, will take place on a specified date. During this time, participants will work together to build their projects and present their solutions to a panel of judges. Prizes and awards may be given to the teams with the best projects.</li>
       </ul>
       <br />
-      <br />
-      <b>Key Take Aways from ASC</b>
-      <ul className="list-disc pl-10">
-        <li>Business incubators</li>
-        <li>Interaction with developer community</li>
-        <li>Teamwork</li>
-        <li>Networking</li>
-        <li>Rise to innovation</li>
+      This is a general outline of the process for Adi Shankara Hackathon, and specific details may vary depending on the event. However, the goal of the hackathon is to bring together talented individuals to collaborate and create innovative solutions to real-world problems.
+      <br /><br />
+      <b>Key Take Aways From Adi Shankara Codeathon</b>
+      <br /><br />
+      <ul className="list-decimal pl-10">
+        <li><b>Business Incubators:</b> Hackathons are often hosted by business incubators, which are organizations that help startups and entrepreneurs to grow their businesses. By participating in a hackathon, you can learn from experienced business leaders and entrepreneurs, and get valuable insights into the process of starting and growing a business.</li>
+        <li><b>Interaction with Developer Community:</b> Hackathons are a great opportunity to connect with other developers, designers, and tech enthusiasts. You can learn from others, share your ideas and experiences, and collaborate on projects. This can help you to expand your network and develop new skills and knowledge.</li>
+        <li><b>Teamwork:</b> Hackathons are all about working together in teams to build new products and solutions. Teamwork is a key skill that you can develop through hackathons, as you will need to work closely with others to complete projects in a short amount of time. This can help you to build strong relationships with your team members and learn how to collaborate effectively.</li>
+        <li><b>Networking:</b> Hackathons provide a platform for you to meet and network with people from different backgrounds and industries. This can help you to expand your network and make new connections that can be valuable for your future career.</li>
+        <li><b>Rise to Innovation:</b> Hackathons encourage creativity, innovation, and problem-solving. By participating in a hackathon, you can challenge yourself to come up with new and innovative solutions to real-world problems. This can help you to develop new ideas and skills, and make a positive impact on society.</li>
       </ul>
+
     </div>
   );
 }
 
 function GuideCode(props) {
   return (
-    <div className='md:p-10 p-3 leading-7 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+    <div className='md:p-10 p-3 leading-8 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <ul className="list-decimal pl-10">
         <li>Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on 29-03-2023.</li>
         <li>Registration starts at 9.00 am.</li>
@@ -218,23 +214,23 @@ function ContactCode() {
   const team = [
     {
       id: 1,
-      fullName: "Faculty 1",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
+      fullName: "Mr. P.V. Rajaraman",
+      contact: "+91 9940418252",
+      imgSrc: ProfImg1,
       imgAlt: "profile picture",
     },
     {
       id: 2,
-      fullName: "Faculty 2",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
+      fullName: "Mrs. Neetha K Nataraj",
+      contact: "+91 9400414349",
+      imgSrc: ProfImg2,
       imgAlt: "profile picture",
     },
     {
       id: 3,
-      fullName: "Faculty 3",
-      contact: "+91 9087654321",
-      imgSrc: ProfImg,
+      fullName: "Mr. Sumesh MS",
+      contact: "+91 19447414654",
+      imgSrc: ProfImg3,
       imgAlt: "profile picture",
     },
     {
@@ -274,7 +270,7 @@ function ContactCode() {
                 />
                 {/* :::details */}
                 <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
-                  <p className="text-lg text-white font-bold">
+                  <p className="text-base text-white font-bold">
                     {member.fullName}
                   </p>
                   <p className="text-sm text-gray-300 font-medium">
@@ -295,17 +291,17 @@ function ContactCode() {
             {team.slice(3, 6).map((member) => (
               <div
                 key={member.id}
-                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center opacity-60 items-center rounded-full bg-black overflow-hidden"
+                className="flex-shrink-0 group relative m-5 p-5 w-56 h-56 flex justify-center opacity-70 items-center rounded-full bg-black overflow-hidden"
               >
                 {/* :::picture */}
                 <img
                   src={member.imgSrc}
                   alt={member.imgAlt}
-                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-10 transition duration-200"
+                  className="z-1 group-hover:z-0 absolute inset-0 w-full h-full object-cover group-hover:opacity-10 transition duration-200"
                 />
                 {/* :::details */}
                 <div className="absolute bottom-[10%] flex flex-col justify-center items-center space-y-2">
-                  <p className="text-lg text-white font-bold">
+                  <p className="text-base text-white font-bold">
                     {member.fullName}
                   </p>
                   <p className="text-sm text-gray-300 font-medium">
@@ -324,7 +320,7 @@ function ContactCode() {
 function PrizeCode() {
   return (
     <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
-      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.20,000 ($240)"]} title={["", "", "(3 Nos)"]} />
+      <PrizeCards prize={["Rs.1,00,000 ($1200)", "Rs.50,000 ($600)", "Rs.20,000 ($240)"]} title={["", "", "(5 Nos)"]} />
     </div>
   )
 }

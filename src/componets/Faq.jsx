@@ -9,85 +9,60 @@ import { Parallax } from "react-scroll-parallax";
 
 import neonImg from "../assets/neonlight.webp"
 
+function Answer() {
+  return (
+    <div>
+      <b>The benefits of participating in a hackathon include:</b> <br />
+      <ul className="list-disc pl-10 text-justify"> 
+        <li><b>A valuable learning experience:</b> Participating in a hackathon provides an opportunity to test new skills and technologies in a focused and motivated environment. It also offers exposure to the latest advancements in the field and a supportive atmosphere where questions, no matter how basic, are encouraged.</li>
+        <li><b>Personal growth and development:</b> Hackathons challenge participants to step out of their comfort zones and develop new skills. This might include pitching ideas to strangers, working with a team, and presenting work to a large audience. These experiences can be intimidating, but also exciting and rewarding, particularly for those who are shy or struggle with impostor syndrome.</li>
+        <li><b>Hands-on management and team dynamics:</b> Hackathons offer a unique chance to practice smart management and learn about team dynamics. With limited time and resources, participants must make quick decisions, delegate tasks, and work efficiently under pressure.</li>
+        <li><b>Career exploration:</b> Hackathons provide an opportunity to learn about new career paths and connect with industry professionals. Company representatives often attend hackathons to recruit new talent, making it a valuable opportunity to network and explore potential workplaces in a more relaxed and natural setting.</li>
+        <li><b>Innovation:</b> Hackathons foster innovation by encouraging individuals to think creatively and develop new solutions to problems.</li>
+        <li><b>Competition:</b> Hackathons provide a competitive environment where individuals can test their skills against others and see their work evaluated by a panel of experts.</li>
+        <li><b>Networking opportunities:</b> Hackathons offer countless opportunities to build professional relationships, including team-matching sessions, food breaks, and coffee breaks. In some cases, hackathons may even offer closed groups or messaging platforms for participants to connect before the event.</li>
+        <li><b>A stepping stone to entrepreneurship:</b> Many individuals attend hackathons with the goal of exploring business ideas and potentially forming startups. This can be an exciting opportunity to bring ideas to life and connect with like-minded individuals.</li>
+        <li><b>Recognition and attention:</b> While not the primary focus, winning a hackathon can help market oneself and add a significant accomplishment to a CV. Even if a participant is not a finalist, they can still benefit from all of the above experiences and opportunities.</li>
+      </ul>
+    </div>
+  )
+}
+
+
 const Faq = () => {
   const faq = [
     {
       number: 1,
-      question: "What is the Adi Shankara Hackathon 2K23?",
+      question: "What is a Hackathon?",
       answer:
-        "The Adi Shankara Hackathon 2K23 is a 3-day long hackathon of 24 hours each hackathon conducted by the Adi Shankara Institute of Engineering and Technology in collaboration with the CIIRC, Banglore. It aims to develop a skillset and expand the horizons of brilliant minds.",
+        "A hackathon is a technology-focused event where participants work together in teams to develop innovative projects in a short amount of time, typically over the course of one or more days.",
     },
     {
       number: 2,
-      question:
-        "When is the event scheduled?",
-      answer:
-      "The event is proposed to be conducted from 3rd March 2023 to 5th March 2023.",
+      question: "What are the benefits of participating in a Hackathon?",
+      answer: <Answer />
     },
     {
       number: 3,
-      question: "What are the different events under the  Adi Shankara Hackathon?",
+      question: "When does Adi Shankara Hackathon 2K23 begin?",
       answer:
-        "Codeathon,Productathon, Gameathon, Mechathon, Civilathon, Bizthon. The event is also inclusive of an award for the Young Scientist which would be accorded on the basis of his/her idea and creativity",
+        "The Adi Shankara Hackathon 2K23 will begin on March 28th, 2023, featuring Codathon and Gameathon events that take place simultaneously.",
     },
     {
       number: 4,
-      question: "Is this a 24- hour long event?",
-      answer:
-        "Yes.",
+      question: "How should I register for the Adi Shankara Hackathon 2K23?",
+      answer: "Participants must choose the events they are interested in under Adi Shankara Hackathon 2K23 and register separately. At present registration is only open for Codathon and Gameathon events. Registration for remaining hackathon events will be announced. ",
     },
     {
       number: 5,
-      question: "What are the criteria on which our designs and ideas are evaluated?",
-      answer:
-        "The participants are expected to find creative, feasible and technical solutions to the stated complex problem designed by the event organisers. The stages will be focused on the above-mentioned areas and will be evaluated by a panel of experts.The winners of the event as decided by an expert jury panel will be awarded a cash prize of one lakh rupees. ",
+      question: "Is the registration amount the same for all hackathon events?",
+      answer: "No. The registration fee varies for each hackathon event. For further information, please visit the event's respective webpage or contact the event coordinators.",
     },
     {
       number: 6,
-      question: "What are the domains on which our idea can be accepted?",
-      answer:
-        "You would be given some themes under which you need to formulate and pitch your ideas.",
+      question: "Will you provide accommodation facilities?",
+      answer: "Yes. Accommodation can be arranged with prior notice. The cost of accommodation must be paid separately. For further information, please reach out to the respective event coordinators.",
     },
-    {
-      number: 7,
-      question: "What are the rules to be awarded as the Young Scientist?",
-      answer:
-        "Any aspiring young scientists (students from 8th to 12th standard) are eligible.Unlike other similar events, here the students have to go through different stages which will transform them into entrepreneurs. From the second stage onwards, a dedicated mentor will work in tandem with the students.The winner and the runner-ups would be awarded witht the cash prizes",
-    },
-    {
-      number: 8,
-      question: "What are the rules for Productathon?",
-      answer:
-        "Link to Rules of Productathon|Needs to be updated",
-    },
-    {
-      number: 9,
-      question: "What are the rules for Gameathon?",
-      answer:
-        "Around 20 teams will be allocated for participation on a first-come, first-served basis. For those who are new to game development, TILTLABS' will also be conducting a 40-hour Bootcamp before the Gameathon to help participants understand the basics of game development using Unity and complete their game ideas into an app.On successful completion of the Gameathon, prizes, gifts, scholarships to the TILTEDU education program, and internships at TILTLABS will be awarded to the top-performing teams.",
-    },
-    {
-      number: 10,
-      question: "What are the rules for Civilathon?",
-      answer:
-        "Link to Rules of Civilathon|Needs to be updated",
-    },
-    {
-      number: 11,
-      question: "What are the rules for Bizthon?",
-      answer:
-        "Participants are given six themes. Each team has to make a video on an innovative business idea to be launched in a digital platform/App for 4-5 minutes based on the  themes.",
-    },
-    {
-      number: 12,
-      question: "What are the rules for Mechathon?",
-      answer:
-        "Link to Rules of Ideathon|Needs to be updated",
-    },
-   
-   
-   
-    
   ];
   const targetRef = React.useRef(null);
 
@@ -97,9 +72,9 @@ const Faq = () => {
   }, []);
 
   return (
-    <div id="faq" className="relative py-10 w-full  overflow-x-hidden ">
+    <div id="faq" className="relative py-10 w-full overflow-x-hidden ">
       <div className="container mx-auto w-full md:max-h-screen grid grid-cols-2">
-        
+
         {/* Container */}
         {/* :IMAGE */}
         <Parallax
@@ -121,11 +96,11 @@ const Faq = () => {
         {/* :FAQ */}
         <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-center md:max-h-screen text-center md:text-left">
           {/* ::Title */}
-          <div className="text-2xl">
+          <div className="text-2xl font-bold">
             <span className="text-[var(--primary-color)]" ref={targetRef}>
               Frequently Asked
             </span>
-            Questions
+            &nbsp;Questions
           </div>
           {/* ::Accordion Panel */}
           <dl className="mx-auto my-10 p-3 max-w-2xl flex flex-col items-center scrollbar md:overflow-y-scroll z-10">
@@ -144,24 +119,21 @@ const Faq = () => {
                     >
                       {/* Question */}
                       <dt
-                        className={`group mt-6 w-full border-b-2 border-gray-700 text-[#f0f0f0] hover:text-[var(--secondary-color)] ${
-                          open && "text-[#f0f0f0]"
-                        }`}
+                        className={`group mt-6 w-full border-b-2 border-gray-700 text-[#f0f0f0] hover:text-[var(--secondary-color)] ${open && "text-[#f0f0f0]"
+                          }`}
                       >
                         <Disclosure.Button className="py-5 px-3 w-full flex justify-between items-center">
                           <QuestionMarkCircleIcon
-                            className={`${
-                              open && "text-[#f0f0f0]"
-                            } mt-auto mb-auto flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
+                            className={`${open && "text-[#f0f0f0]"
+                              } mt-auto mb-auto flex-shrink-0 mr-2 w-5 h-5 text-[var(--primary-color)] group-hover:text-[#f0f0f0]`}
                             aria-hidden="true"
                           />
                           <span className="mr-auto text-base text-left transition duration-150 ease-in transform group-hover:translate-x-2">
                             {faq.question}
                           </span>
                           <ChevronDownIcon
-                            className={`${
-                              open && "transform rotate-180 text-[#f0f0f0]"
-                            } mt-auto mb-auto flex-shrink-0 ml-2 w-5 h-5 text-[#f0f0f0] group-hover:text-[#f0f0f0]`}
+                            className={`${open && "transform rotate-180 text-[#f0f0f0]"
+                              } mt-auto mb-auto flex-shrink-0 ml-2 w-5 h-5 text-[#f0f0f0] group-hover:text-[#f0f0f0]`}
                             aria-hidden="true"
                           />
                         </Disclosure.Button>

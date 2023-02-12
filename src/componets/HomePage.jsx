@@ -146,12 +146,12 @@ const HomePage = () => {
                 autoPlay
                 loop
                 muted
-                className=" top-[8%] absolute bottom-0 object-contain md:h-[10%] w-[85%]"
+                className=" top-[8%] absolute bottom-0 object-contain h-[12%] w-[85%]"
               >
                 {width > 640 ? (
-                  <source src={prizeVideoM} type="video/webm" />
+                  <source src={prizeVideoM} type="video/webm"/>
                 ) : (
-                  <source src={prizeVideoM} type="video/webm" />
+                  <source src={prizeVideoM} type="video/webm"/>
                 )}
               </video>
             </div>
@@ -251,9 +251,9 @@ const HomePage = () => {
           <AboutUs />
           <div className="flex justify-center w-full h-full">
             {width > 640 ?
-              <iframe className="my-10 shadow-2xl rounded-md" width="1000" height="500" src="https://www.youtube.com/embed/iSKYwo7CQOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe className="my-10 shadow-white rounded-xl z-10" width="1000" height="500" src="https://www.youtube.com/embed/4_sLecHuhAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               :
-              <iframe className="mb-10" width="300" height="300" src="https://www.youtube.com/embed/iSKYwo7CQOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe className="mb-10 z-10" width="300" height="300" src="https://www.youtube.com/embed/4_sLecHuhAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             }
           </div>
           <ContactUs />

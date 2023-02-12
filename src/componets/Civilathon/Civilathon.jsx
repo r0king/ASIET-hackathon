@@ -353,6 +353,9 @@ function PrizeCivil() {
       <div className="text-base md:text-justify w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
         <PrizeCards prize={["Rs.40,000 ($400)", "Rs.30,000 ($367)", "Rs.20,000 ($245)","Rs.10,000 ($122)"]} title={["", "", ""]} />
       </div>
+      <ul className="list-disc pl-5 pt-5">
+        <li><b>4th Prize:</b> Rs.10,000 ($122)</li>
+      </ul>
     </div >
   )
 }

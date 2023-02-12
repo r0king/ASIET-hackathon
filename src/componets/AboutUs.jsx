@@ -33,23 +33,15 @@ const AboutUs = () => {
                 About Us
               </h3> */}
               {/* ::Title */}
-              <h2 className="mb-8 text-2xl text-[var(--secondary-color)] font-bold capitalize">
+              <h2 className="mb-8 -mt-10 text-2xl text-[var(--secondary-color)] font-bold capitalize">
                 <span className="text-[var(--primary-color)]">About Our</span>{" "}
                 <span className="">Institute</span>
               </h2>
               {/* Content goes here */}
               <p className="text-base text-justify text-[var(--secondary-color)]">
-                Adi Shankara Institute of Engineering and Technology was
-                established in Kalady with the sole purpose of cultivating the
-                engineering temperament of its students and turning them into
-                enterprising people in the industry. The school is managed by
-                ADI SANKARA TRUST, a registered trust that has made a name for
-                itself in the field of education. The Foundation has a tradition
-                of managing educational institutions for more than 50 years.
-                With JIT, we, ASIET, aspire to create a platform to bring
-                professionals and students together and create a collaborative
-                environment to solve a given problem in a rational way through
-                the three exclusive phases.
+                The Adi Shankara Institute of Engineering & Technology was established in Kalady with the goal of providing technical education that instills in students both professional excellence and strong ethical values. The institute is run by the Adi Shankara Trust, a well-respected educational organization that has been active for over 50 years.
+                <br/>&emsp;&emsp;Founded in 2001 and maintained by the Sringeri Mutt with the benign blessings of His Holiness Sri Sri Bharathi Tirtha Mahaswamiji, the college is dedicated to promoting the overall growth and development of its students.
+                <br/>&emsp;&emsp;ASIET is situated in a beautiful and inspiring location, reminiscent of the peaceful presence of Jagadguru Adi Shankaracharya. The college is affiliated with the A P J Abdul Kalam Technological University in Kerala, and is approved by the AICTE. It offers undergraduate, graduate, and PhD level courses, with four of its programs being NBA accredited (CSE, ECE, EEE & ME), demonstrating its commitment to high-quality education.
               </p>
               {/* ::Button */}
               <button
@@ -83,35 +75,35 @@ const AboutUs = () => {
             targetElement={targetElement}
           >
             {/* :IMAGES CONTAINER */}<LazyLoad offset={600} height={'500px'}>
-            <div
-              className="
+              <div
+                className="
               absolute md:relative top-1/2 left-1/2 md:inset-0 flex 
               h-full sm:ml-5 w-full md:w-1/2 
               transform -translate-x-1/2 md:translate-x-0"
-            >
-              
-              {/* ::Image 1 */}
-              <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
-                {/* Image goes here */}
-                <img
-                  src={image2}
-                  alt=""
-                  className="
+              >
+
+                {/* ::Image 1 */}
+                <div className="invisible md:visible flex-shrink-0 relative bottom-8 left-10 w-80 h-full rounded shadow ">
+                  {/* Image goes here */}
+                  <img
+                    src={image2}
+                    alt=""
+                    className="
               shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20
                absolute inset-0 w-full h-full object-cover object-right-bottom"
-                />
-              </div>
-              {/* ::Image 2 */}
-              <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
-                {/* Image goes here */}
-                <img
-                  src={image1}
-                  alt=""
-                  className=" shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
+                  />
+                </div>
+                {/* ::Image 2 */}
+                <div className="invisible md:visible flex-shrink-0 relative top-8 right-28 sm:right-10 md:right-28 lg:right-10 w-80 h-full rounded shadow overflow-hidden">
+                  {/* Image goes here */}
+                  <img
+                    src={image1}
+                    alt=""
+                    className=" shadow-[20px_20px_50px_rgba(0,0,0,0.35)] backdrop-blur-3xl bg-white/10 border-t-[1px] border-l-[1px] rounded-xl border-white/20 
               absolute inset-0 w-full h-full object-center object-cover "
-                />
-              </div>
-            </div></LazyLoad>
+                  />
+                </div>
+              </div></LazyLoad>
           </Parallax>
           {/* :OVERLAY */}
           {/* <div className="absolute inset-0 block md:hidden w-full h-full bg-gray-600 opacity-90" /> */}

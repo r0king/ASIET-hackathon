@@ -64,7 +64,7 @@ const AllUNeed2Know = () => {
                 >
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
-                    <div className="ml-4 lg:ml-14">
+                    <div>
                       <h4 className="text-lg font-medium leading-6 text-center md:text-left">
                         Series of Events
                       </h4>
@@ -88,7 +88,7 @@ const AllUNeed2Know = () => {
                 >
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
-                    <div className="ml-4 lg:ml-14">
+                    <div>
                       <h4 className="-mt-5 text-lg font-medium leading-6 text-center md:text-left">
                         Incubation Support
                       </h4>
@@ -108,7 +108,7 @@ const AllUNeed2Know = () => {
                 >
                   <div className="flex">
                     <div className="flex-shrink-0"></div>
-                    <div className="ml-4 lg:ml-14">
+                    <div>
                       <h4 className="-mt-5 text-lg font-medium leading-6 text-center md:text-left">
                         1.5 Million Grand Prize
                       </h4>
