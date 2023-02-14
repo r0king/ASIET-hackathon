@@ -28,10 +28,13 @@ class PrizeCard extends Component {
           <div className="flex justify-end ml-[50%] md:ml-0 md:mb-16">
             <div className="flex justify-center md:w-1/2 flex-col">
               <div
-                className="
-                 font-[Azonix] text-center font-extrabold text-transparent text-base md:text-2xl bg-clip-text bg-gradient-to-bl from-[#FAF4C6] via-[#D7B86C] to-[#FDFEFB]
+                className={`
+                 font-[Azonix] text-center font-extrabold text-transparent text-base md:text-2xl bg-clip-text bg-gradient-to-bl from-[#FAF4C6] via-[${this.props.colors.title}] to-[#FDFEFB]
                  drop-shadow-[0px_3px_5px_rgba(0,0,0,0.35)]  
-                 md:pb-1 md:pt-16"
+                 md:pb-1 md:pt-16`}
+                //  style={{
+                //   color: this.props.colors.title,
+                // }}
               >
                 {this.props.prize}
               </div>
