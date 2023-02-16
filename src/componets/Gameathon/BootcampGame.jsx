@@ -129,7 +129,7 @@ export default function BootcampGame() {
       </div>
       <div>
         <h1 className='text-lg font-bold mt-8'>Bootcamp Certificate</h1><br />
-        <h2 className='text-base  pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from TILTLABS.</h2>
+        <h2 className='text-base  pl-14'>Upon successful completion of the training program, registered participants will receive a certificate of participation via email in PDF format, with a digital signature from <b>TILTLABS</b>.</h2>
       </div>
     </div >
   )

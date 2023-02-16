@@ -30,37 +30,34 @@ function AboutGame(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify  h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <p>
-        We invite you to participate in a 3-day event at Adi Shankara Institute
-        of Engineering & Technology, where students can engage in team-working,
+        We invite you to participate in a 3-day event at <b>Adi Shankara Institute
+        of Engineering & Technology</b>, where students can engage in team-working,
         explore their creativity, and develop a game within three days. This
-        event will be supported by our industry partner TILTLABS. They will
+        event will be supported by our industry partner <b>TILTLABS</b>. They will
         provide participants with a concept along with tools such as Unity and
         Blender to create either casual or hyper-casual games.
       </p>
       <p>
-        <br />
-        <span className="pl-10"></span>Participants must bring their own laptops
+        <br />Participants must bring their own laptops
         or systems in order to develop the application. Teams must have a
-        minimum of two and a maximum of four members. TILTLABS' technical and
+        minimum of two and a maximum of four members. <b>TILTLABS</b>' technical and
         creative teams will be available on-site to answer any questions or
         concerns during the Gameathon. The final games will be evaluated by
-        TILTLABS' Creative Officer and Lead Game Designer along with other
+        <b>TILTLABS</b>' Creative Officer and Lead Game Designer along with other
         industry experts.
       </p>
       <p>
-        <br />
-        <span className="pl-10"></span>TILTLABS will also conduct a 40-hour
+        <br /><b>TILTLABS</b> will also conduct a 40-hour
         training or bootcamp before the Gameathon to help participants learn the
         basics of game development using Unity and complete their game ideas
         into an application.
       </p>
       <p>
-        <br />
-        <span className="pl-10"></span>On successful completion of the
+        <br />On successful completion of the
         Gameathon, prizes, gifts, scholarships to the TILTEDU education program,
-        and internships at TILTLABS will be awarded to the top-performing teams.
-        Further, participants will be able to work with TILTLABS' cutting-edge
-        gaming development, virtual production, and esports studio on the ASIET
+        and internships at <b>TILTLABS</b> will be awarded to the top-performing teams.
+        Further, participants will be able to work with <b>TILTLABS</b>' cutting-edge
+        gaming development, virtual production, and esports studio on the <b>ASIET </b>
         campus, which will open shortly.
       </p>
     </div>
