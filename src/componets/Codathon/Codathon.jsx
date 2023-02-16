@@ -29,11 +29,11 @@ function AboutCode(props) {
         Hackathons are rapidly becoming one of the most popular and important events in the technology world, and for good reason. They bring together talented individuals from a variety of backgrounds to collaborate, build, and innovate in a short period of time. Here are just a few of the reasons why attending the hackathon in ASIET is so important:
       </p><br />
       <ul className="list-decimal pl-10">
-        <li><b>Encourages Innovation:</b> Hackathons are a breeding ground for new and innovative ideas. By bringing together a diverse group of individuals with different skill sets and perspectives, Adi Shankara Hackathon creates a unique environment for creativity and problem-solving. The fast-paced nature of hackathons means that participants are forced to think outside the box and come up with new and creative solutions to complex problems.</li><br />
-        <li><b>Builds Community:</b> Adi Shankara Hackathon is an excellent way to build and strengthen the tech community. It brings together people from different backgrounds and industries to collaborate and network. By working together, participants can form meaningful relationships and build lasting connections.</li><br />
-        <li><b>Offers Career Opportunities:</b> Adi Shankara Hackathon is a great way to showcase your skills and make connections in the tech industry. Many participants come here with the intention of making connections that can help advance their careers. Companies and recruiters often attend hackathons to find the best and brightest talent.</li><br />
-        <li><b>Provides Hands-On Experience:</b> Adi Shankara Hackathon is an excellent opportunity for participants to get hands-on experience with new technologies and tools. They are an ideal way for people to learn new skills, try out new ideas, and get feedback from other participants and industry experts.</li><br />
-        <li><b>Promotes Diversity and Inclusion:</b> Adi Shankara Hackathon is a great way to promote diversity and inclusion in the tech industry. They bring together individuals from different backgrounds and perspectives, creating an environment where everyone's voice can be heard and everyone's ideas can be considered.</li><br />
+        <li><b>Encourages Innovation:</b> Hackathons are a breeding ground for new and innovative ideas. By bringing together a diverse group of individuals with different skill sets and perspectives, <b>Adi Shankara Hackathon</b> creates a unique environment for creativity and problem-solving. The fast-paced nature of hackathons means that participants are forced to think outside the box and come up with new and creative solutions to complex problems.</li><br />
+        <li><b>Builds Community:</b> <b>Adi Shankara Hackathon</b> is an excellent way to build and strengthen the tech community. It brings together people from different backgrounds and industries to collaborate and network. By working together, participants can form meaningful relationships and build lasting connections.</li><br />
+        <li><b>Offers Career Opportunities:</b> <b>Adi Shankara Hackathon</b> is a great way to showcase your skills and make connections in the tech industry. Many participants come here with the intention of making connections that can help advance their careers. Companies and recruiters often attend hackathons to find the best and brightest talent.</li><br />
+        <li><b>Provides Hands-On Experience:</b> <b>Adi Shankara Hackathon</b> is an excellent opportunity for participants to get hands-on experience with new technologies and tools. They are an ideal way for people to learn new skills, try out new ideas, and get feedback from other participants and industry experts.</li><br />
+        <li><b>Promotes Diversity and Inclusion:</b> <b>Adi Shankara Hackathon</b> is a great way to promote diversity and inclusion in the tech industry. They bring together individuals from different backgrounds and perspectives, creating an environment where everyone's voice can be heard and everyone's ideas can be considered.</li><br />
       </ul>
     </div>
   );
@@ -72,9 +72,9 @@ function ThemesCode(props) {
 function StagesCode(props) {
   return (
     <div className="md:p-10 p-3 text-base md:text-justify h-full md:min-h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-      <b>Adi Shankara Hackathon Process</b>
+      <b><b>Adi Shankara Hackathon</b> Process</b>
       <br /><br />
-      Adi Shankara Hackathon is a technology event where participants work together to create innovative solutions to real-world problems. The process for this hackathon may involve the following steps:
+      <b>Adi Shankara Hackathon</b> is a technology event where participants work together to create innovative solutions to real-world problems. The process for this hackathon may involve the following steps:
       <br /><br />
       <ul className="list-decimal pl-10">
         <li><b>Registration through DevFolio:</b> Participants may be required to register for the hackathon through a platform such as DevFolio. This platform may be used to manage the registration process, collect participant information, and communicate updates and information about the hackathon</li>
@@ -84,7 +84,7 @@ function StagesCode(props) {
         <li><b>Codeathon Day:</b> The actual hackathon event, referred to as ASH Day, will take place on a specified date. During this time, participants will work together to build their projects and present their solutions to a panel of judges. Prizes and awards may be given to the teams with the best projects.</li>
       </ul>
       <br />
-      This is a general outline of the process for Adi Shankara Hackathon, and specific details may vary depending on the event. However, the goal of the hackathon is to bring together talented individuals to collaborate and create innovative solutions to real-world problems.
+      This is a general outline of the process for <b>Adi Shankara Hackathon</b>, and specific details may vary depending on the event. However, the goal of the hackathon is to bring together talented individuals to collaborate and create innovative solutions to real-world problems.
       <br /><br />
       <b>Key Take Aways From Adi Shankara Codeathon</b>
       <br /><br />
@@ -332,7 +332,7 @@ function Codathon() {
       icon: ArchiveIcon,
       page: <AboutCode />,
     },
-    { name: "Regsitration", icon: ViewGridIcon, page: <RegisCode /> },
+    { name: "Registration", icon: ViewGridIcon, page: <RegisCode /> },
     { name: "Categories", icon: CloudUploadIcon, page: <ThemesCode /> },
     { name: "Stages", icon: ChartBarIcon, page: <StagesCode /> },
     // { name: "FAQ", icon: ViewGridIcon, page: <FaqYoung /> },

@@ -16,7 +16,7 @@ export default function RegistrationGame() {
       <br /><br /><b>NB:</b> As training is one-to-one through the online platform, participants must register individually. After training, participants can form teams (we will collect team details) to compete in the Gameathon.
       <br /><br/><b>Steps to participate in the Gameathon</b>
 
-      <img src={regFlowChart} alt="Registration Flow Chart" className='md:m-10 mt-10' />
+      <img src={regFlowChart} alt="Registration Flow Chart" className='md:m-10 mt-10 justify-center' />
     </div>
   )
 }
