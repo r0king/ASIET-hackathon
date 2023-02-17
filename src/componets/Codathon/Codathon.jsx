@@ -104,10 +104,10 @@ function GuideCode(props) {
   return (
     <div className='md:p-10 p-3 leading-8 text-base md:text-justify h-full md:h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <ul className="list-decimal pl-10">
-        <li>Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on 29-03-2023.</li>
+        <li>Reporting time at the ADI SHANKARA HACKATHON 2023 Venue 8.00 am on 28-03-2023.</li>
         <li>Registration starts at 9.00 am.</li>
         <li>Breakfast at 08.30 am- 09.30 am.</li>
-        <li>Inauguration at 09.00 am on 29-03-2022. Venue : Auditorium</li>
+        <li>Inauguration at 09.00 am on 28-03-2022. Venue : Auditorium</li>
         <li>
           The registration kit contains the following items. - Agenda sheet
         </li>
@@ -117,7 +117,7 @@ function GuideCode(props) {
           <li>Problem statement sheet</li>
           <li>Breakfast, lunch, dinner coupons - ID cards</li>
         </ul>
-        <li>Coding starts at 10.00 am on 29-03-2022</li>
+        <li>Coding starts at 10.00 am on 28-03-2022</li>
         <li>
           Team members have to wear the ID cards all the times when they are at
           the venue.
@@ -127,7 +127,7 @@ function GuideCode(props) {
           HACKATHON 2023, until the valedictory function.
         </li>
         <li>
-          Valedictory function will be held at 11.00 am on 30-03-2022. Venue :
+          Valedictory function will be held at 11.00 am on 29-03-2022. Venue :
           Auditorium
         </li>
         <li>
@@ -173,7 +173,7 @@ function GuideCode(props) {
         <li>
           {" "}
           Participation certificates will be provided to all the teams on
-          30-03-2023, at the work location.
+          29-03-2023, at the work location.
         </li>
         <li>
           {" "}
@@ -189,7 +189,7 @@ function GuideCode(props) {
         <li>
           {" "}
           Each team must submit a video demo of your product not longer than 2
-          minutes along with the code on Devfolio before 8 am on MARCH 30th.
+          minutes along with the code on Devfolio before 8 am on MARCH 29th.
           Detailed instructions on how to make submissions are available on
           Devfolio’s platform.
         </li>
@@ -344,7 +344,7 @@ function Codathon() {
   const { width } = useWindowSize();
 
   const event = "Codathon";
-  const eventDate = "Mar 29, 2023 00:00:00";
+  const eventDate = "Mar 28, 2023 00:00:00";
 
   return (
     <>
@@ -380,7 +380,7 @@ function Codathon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-white pt-5">
-            29<sup>th</sup> MARCH 2023
+            28<sup>th</sup> MARCH 2023
           </h2>
           {/* description */}
           <p className="text-base text-justify text-white pt-5 md:w-[45%] leading-6">

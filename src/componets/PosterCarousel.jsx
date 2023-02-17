@@ -27,7 +27,7 @@ const PosterCarousel = () => {
     {
       name: "codathon",
       image: codathonImg,
-      date: "29<sup>th</sup> March 2023",
+      date: "28<sup>th</sup> March 2023",
     },
     {
       name: "gameathon",
