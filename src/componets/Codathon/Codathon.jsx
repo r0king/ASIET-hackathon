@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bgImgD from "../../assets/Codathon/bgD.webp";
 import bgImgM from "../../assets/Codathon/bgPosterM.webp";
 import { useWindowSize } from "react-use";
@@ -326,6 +326,16 @@ function PrizeCode() {
 }
 
 function Codathon() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
   const tabs = [
     {
       name: "About",
@@ -387,14 +397,19 @@ function Codathon() {
             Codathon is a coding event where developers, programmers, and tech enthusiasts come together to collaborate and create innovative software solutions. Participants work in teams to design, build, and demonstrate their solutions to real-world scientific problems, using a variety of programming languages and technology platforms. Codathon provides a fast-paced and dynamic environment for participants to showcase their coding skills, network with like-minded individuals, and gain hands-on experience in problem-solving and solution development. With a focus on driving progress and innovation in the tech industry, this event is an exciting and challenging opportunity for coders of all levels to learn, grow, and make an impact.
           </p>
           {/* basic rounded line button */}
-          <button
+          {/* <button
             className="md:w-1/4 text-center max-h-16 md:max-h-auto text-white rounded-full duration-300 py-5 px-6 text-lg font-extrabold uppercase mt-10 hover:bg-[#f0f0f054] hover:text-[#0eedf5] flex items-center justify-center border border-[#0eedf5] hover:border-white"
             style={{
               boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.6)",
             }}
-          >
-            Register Now
-            <svg
+          > */}
+            <div
+              className="apply-button"
+              data-hackathon-slug="YOUR-HACKATHON-SLUG"
+              data-button-theme="dark"
+              style={{height: "44px", width: "312px"}}
+            ></div>
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 ml-2 mt-[0%]"
               fill="none"
@@ -408,7 +423,7 @@ function Codathon() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
       <Bg />
