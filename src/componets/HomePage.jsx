@@ -1,5 +1,5 @@
 import React from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { useWindowSize } from "react-use";
 
 import "./animation.css";
@@ -31,7 +31,9 @@ const HomePage = () => {
   // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 
   const introVideoRef = React.useRef(null);
+  const prizeVideoRef = React.useRef(null);
   const removeVideo = (video) => {
+    prizeVideoRef.current.play()
     video.classList.add("animate__zoomOut");
     video.classList.remove("z-40");
     video.classList.add("-z-50");
@@ -40,9 +42,11 @@ const HomePage = () => {
     // create a timeout where intro video only playes after 3000 seconds
     const timeout = setTimeout(() => {
       introVideoRef.current.firstChild.play();
+      prizeVideoRef.current.play();
     }, 3000);
     console.log(timeout);
     const hideVideo = () => {
+      
       removeVideo(introVideoRef.current);
     };
     window.addEventListener("scroll", hideVideo, { once: true });
@@ -131,7 +135,7 @@ const HomePage = () => {
           }}
           className=" md:h-full w-full object-cover"
         >
-          <source src={introVideo} type='video/webm' />
+          <source src={introVideo} type="video/webm" />
         </video>
       </div>
       <div className=" ">
@@ -144,15 +148,14 @@ const HomePage = () => {
             ></ParallaxBanner>
             <div className="flex justify-center w-full h-full">
               <video
-                autoPlay
-                loop
+                ref={prizeVideoRef}
                 muted
                 className=" top-[8%] absolute bottom-0 object-contain h-[12%] w-[85%]"
               >
                 {width > 640 ? (
-                  <source src={prizeVideoM} type="video/webm"/>
+                  <source src={prizeVideoM} type="video/webm" />
                 ) : (
-                  <source src={prizeVideoM} type="video/webm"/>
+                  <source src={prizeVideoM} type="video/webm" />
                 )}
               </video>
             </div>
@@ -176,8 +179,7 @@ const HomePage = () => {
             </div>
             <div className="flex justify-center w-full h-full">
               <video
-                autoPlay
-                loop
+                ref={prizeVideoRef}
                 muted
                 className="w-full top-[20%] absolute bottom-0 object-contain md:h-auto "
               >
@@ -230,35 +232,50 @@ const HomePage = () => {
                 />
               ),
             },
-            {
-              speed: 20,
-              translateY:
-                width > 640 ? [106, 72, "easeInOut"] : [84, 90, "easeInOut"],
-              scale: [1, 1.4, "easeOutBack"],
-              easing: "easeInOutCubic",
-              children: (
-                <img
-                  className="w-screen"
-                  src={collegePic}
-                  alt="College"
-                  loading="lazy"
-                />
-              ),
-            },
           ]}
         >
           <Sponsors />
           <Faq />
           <AboutUs />
           <div className="flex justify-center w-full h-full">
-            {width > 640 ?
-              <iframe className="my-10 shadow-white rounded-xl z-10" width="1000" height="500" src="https://www.youtube.com/embed/EskVbcbdut0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              :
-              <iframe className="mb-10 z-10" width="300" height="300" src="https://www.youtube.com/embed/EskVbcbdut0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            }
+            {width > 640 ? (
+              <iframe
+                className="my-10 shadow-white rounded-xl z-10"
+                width="1000"
+                height="500"
+                src="https://www.youtube.com/embed/EskVbcbdut0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : (
+              <iframe
+                className="mb-10 z-10"
+                width="300"
+                height="300"
+                src="https://www.youtube.com/embed/EskVbcbdut0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            )}
           </div>
-          <Enquiry/>
+          <Enquiry />
           <ContactUs />
+          <Parallax
+            translateY={[-70, -20]}
+            easing="ease"
+            className="absolute"
+          >
+            <img
+              className="w-screen"
+              src={collegePic}
+              alt="College"
+              loading="lazy"
+            />
+          </Parallax>
         </ParallaxBanner>
       </div>
     </>
