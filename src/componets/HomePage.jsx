@@ -23,6 +23,7 @@ import collegePic from "../assets/Parallax/asiet.png.webp";
 import prizeVideoM from "../assets/prizeM2.webm";
 import introVideo from "../assets/intro.webm";
 import { useEffect } from "react";
+import Enquiry from "./Enquiry";
 
 const HomePage = () => {
   const { width } = useWindowSize();
@@ -256,6 +257,7 @@ const HomePage = () => {
               <iframe className="mb-10 z-10" width="300" height="300" src="https://www.youtube.com/embed/EskVbcbdut0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             }
           </div>
+          <Enquiry/>
           <ContactUs />
         </ParallaxBanner>
       </div>
