@@ -54,7 +54,7 @@ export default class Enquiry extends Component {
                   id="first-name"
                   name="first-name"
                   required
-                  className="form-input pl-4 pr-20 w-full shadow-sm rounded-xl border border-white bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className="form-input pl-4 pr-20 w-full shadow-sm rounded-xl   bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus: focus:ring-1 focus:ring-white"
                 />
               </span>
               {/* :::last name */}
@@ -70,7 +70,7 @@ export default class Enquiry extends Component {
                   id="last-name"
                   name="last-name"
                   required
-                  className="form-input pl-4 pr-20 w-full shadow-sm rounded-xl border border-white bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className="form-input pl-4 pr-20 w-full shadow-sm rounded-xl   bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus: focus:ring-1 focus:ring-white"
                 />
               </span>
               {/* :::email */}
@@ -86,7 +86,7 @@ export default class Enquiry extends Component {
                   id="email"
                   name="email"
                   required
-                  className="form-input pl-4 pr-24 w-full shadow-sm rounded-xl border border-white bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className="form-input pl-4 pr-24 w-full shadow-sm rounded-xl   bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus: focus:ring-1 focus:ring-white"
                 />
               </span>
               {/* :::phone */}
@@ -104,7 +104,7 @@ export default class Enquiry extends Component {
                   pattern="[0-9]{10}"
                   style={{}}
                   required
-                  className="appearance-none form-input pl-4 pr-24 w-full shadow-sm rounded-xl border border-white bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className="appearance-none form-input pl-4 pr-24 w-full shadow-sm rounded-xl   bg-gray-50/20 p-6 bg-opacity-50 text-xl text-white focus: focus:ring-1 focus:ring-white"
                 />
               </span>
 
@@ -116,7 +116,7 @@ export default class Enquiry extends Component {
                   name="country"
                   id="country"
                   defaultValue=""
-                  className="form-select w-full shadow-sm rounded-xl border hover:text-black border-white bg-gray-50/20 p-6 bg-opacity-50 text-base text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className="form-select w-full shadow-sm rounded-xl  hover:text-black  bg-gray-50/20 p-6 bg-opacity-50 text-base text-white focus: focus:ring-1 focus:ring-white"
                 >
                   <option value="Social Media">Social Media</option>
                   <option value="Word of mouth">Word of Mouth</option>
@@ -136,7 +136,7 @@ export default class Enquiry extends Component {
                   id="enquiry"
                   name="enquiry"
                   required
-                  className=" h-[40vh] text-xl form-input pl-4 pr-16 w-full shadow-sm rounded-xl border border-white bg-gray-50/20 p-6 bg-opacity-50 text-white focus:border-white focus:ring-1 focus:ring-white"
+                  className=" h-[40vh] text-xl form-input pl-4 pr-16 w-full shadow-sm rounded-xl   bg-gray-50/20 p-6 bg-opacity-50 text-white focus: focus:ring-1 focus:ring-white"
                 />
               </span>
               <div className="md:col-span-4 hidden md:block "></div>
@@ -176,6 +176,6 @@ function makeRequest(data) {
       //   clearForm
     })
     .catch(function (error) {
-      console.log(error);
+      alert("Something went wrong. Please try again later or contact us directly at hackathon@adishankara.ac.in");
     });
 }
