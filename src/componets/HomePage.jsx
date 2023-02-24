@@ -265,7 +265,7 @@ const HomePage = () => {
           <Enquiry />
           <ContactUs />
           <Parallax
-            translateY={[-70, -20]}
+            translateY={[-50, 0]}
             easing="ease"
             className="absolute"
           >
