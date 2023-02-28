@@ -586,7 +586,7 @@ function Codathon() {
           <div
             className="apply-button"
             data-hackathon-slug="adi-shankara-hackathon"
-            data-button-theme="dark"
+            data-button-theme="light"
             	// style="height: 44px; width: 312px"
             // style={{ height: "20vh", width: "10vh" }}
           ></div>
