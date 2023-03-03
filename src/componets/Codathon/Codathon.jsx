@@ -20,6 +20,10 @@ import ProfImg2 from "../../assets/Codathon/facCont21.webp";
 import ProfImg3 from "../../assets/Codathon/facCont3.webp";
 import ProfImg4 from "../../assets/Codathon/studCont1.webp";
 import ProfImg5 from "../../assets/Codathon/studCont2.webp";
+import partLogo4 from "../../assets/Sponsors/devfolio.webp";
+import partLogo5 from "../../assets/Sponsors/polygon.webp";
+import Tilt from "react-parallax-tilt";
+import LazyLoad from "react-lazy-load";
 
 function AboutCode(props) {
   return (
@@ -587,7 +591,7 @@ function Codathon() {
             className="apply-button"
             data-hackathon-slug="adi-shankara-hackathon"
             data-button-theme="light"
-            	// style="height: 44px; width: 312px"
+            // style="height: 44px; width: 312px"
             // style={{ height: "20vh", width: "10vh" }}
           ></div>
           {/* <svg
@@ -608,6 +612,66 @@ function Codathon() {
         </div>
       </div>
       <Bg />
+        <div className="sponsor_title">
+          <h1 className="text-2xl  font-bold p-5 text-center">
+            <span>OUR</span> PARTNERS
+          </h1>
+        </div>
+        <div className="sponsors_silver sponsors">
+          {width > 640 ? (
+              <LazyLoad offset={300}>
+                <div className="images ">
+                  <Tilt
+                    scale={0.9}
+                    glareEnable={true}
+                    glareColor="pink"
+                    glarePosition="all"
+                    glareMaxOpacity={0.45}
+                    glareBorderRadius="15px"
+                    perspective={500}
+                  >
+                    <div className="img flex flex-col">
+                      <img src={partLogo4} alt="" />
+                      <div className="font-bold my-2">Devfolio</div>
+                    </div>
+                  </Tilt>
+                  <Tilt
+                    scale={0.9}
+                    glareEnable={true}
+                    glareColor="pink"
+                    glarePosition="all"
+                    glareMaxOpacity={0.45}
+                    glareBorderRadius="15px"
+                    perspective={500}
+                  >
+                    <div className="img flex flex-col">
+                      <img src={partLogo5} alt="" />
+                      <div className="font-bold my-2">Polygon</div>
+                    </div>
+                  </Tilt>
+                </div>
+              </LazyLoad>
+          ) : (
+            <div>
+              <LazyLoad offset={450}>
+                <div className="images ">
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo4} alt="Devfolio" />
+                      <div className="font-bold my-2">Devfolio</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="img flex flex-col">
+                      <img src={partLogo5} alt="Polygon" />
+                      <div className="font-bold my-2">Polygon</div>
+                    </div>
+                  </div>
+                </div>
+              </LazyLoad>
+            </div>
+          )}
+        </div>
       <Tab tabs={tabs} eventName={event} />
     </>
   );

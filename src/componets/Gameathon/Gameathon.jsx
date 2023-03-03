@@ -1,6 +1,6 @@
 import React from "react";
-import bgImgDesk from "../../assets/Gameathon/bgD.png.webp";
-import bgImgMobile from "../../assets/Gameathon/bgM.png.webp";
+import bgImgDesk from "../../assets/Gameathon/bgD.png";
+import bgImgMobile from "../../assets/Gameathon/bgM.png";
 import { useWindowSize } from "react-use";
 import "./Gameathon.css";
 import {

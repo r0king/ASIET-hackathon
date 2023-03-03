@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import gameImg from "../assets/Gameathon/bgM.png.webp";
+import gameImg from "../assets/Gameathon/bgM.png";
 import bizImg from "../assets/Bizthon/bgM.webp";
 import mechImg from "../assets/Mechathon/bgM.webp";
 import civiImg from "../assets/Civilathon/bgM.webp";
