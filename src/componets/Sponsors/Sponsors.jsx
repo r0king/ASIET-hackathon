@@ -45,7 +45,7 @@ const Sponsors = () => {
       <div className="sponsors_container">
         <div className="sponsor_title" ref={targetTitleRef}>
           <h1 className="text-2xl p-5 mt-20 font-bold">
-            <span>OUR</span> SPONSORS
+            <span>TITLE</span> SPONSORS
           </h1>
         </div>
         <div className="sponsors_platinum sponsors" ref={targetPlatinumRef}>
