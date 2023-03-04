@@ -91,7 +91,7 @@
 
 @media(max-width:510px){
     .sponsors .images{
-        display: grid;
+        /* display: grid; */
         grid-template-columns: 1fr 1fr;
     }
 }

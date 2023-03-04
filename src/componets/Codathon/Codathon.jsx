@@ -563,7 +563,8 @@ function Codathon() {
           </h1>
           {/* sub heading */}
           <h2 className="text-lg font-bold text-white pt-5">
-            28<sup>th</sup> MARCH 2023
+            {/* 28<sup>th</sup> MARCH 2023 */}
+            Coming Soon
           </h2>
           {/* description */}
           <p className="text-base text-justify text-white pt-5 md:w-[45%] leading-6">
