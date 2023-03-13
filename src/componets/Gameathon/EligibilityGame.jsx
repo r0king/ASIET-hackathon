@@ -5,6 +5,17 @@ export default function EligibilityGame() {
     <div className='md:p-10 p-3 text-base md:text-justify  h-[90vh] w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
       <b>You must consider attending Gameathon if you have following skillset</b><br/><br />
       <ul className='list-disc  md:pl-10 pl-3'>
+        <li><b>Device Requirements:</b> 
+          <ul className='md:pl-10 pl-3'>
+            <li>A computer with a processor speed of at least 3.0 GHz and a minimum of 16 GB of RAM.</li>
+            <li>A graphics card with at least 4 GB of VRAM.</li>
+            <li>A stable internet connection with a minimum download speed of 10 Mbps.</li>
+            <li>A microphone and webcam for online communication.</li>
+            <li>A mouse and keyboard for input.</li>
+            <li>A copy of the Unity 3D game engine & Blender should be installed on your machine if you use a virtual machine. </li>
+            <li>A Remote Desktop Protocol (RDP) client for connecting to the EC2 instance.<br /></li>
+          </ul>
+         </li>         
         <li><b>Technical Skills:</b> Familiarity with Unity game engine and its components, such as C# programming, game design and animation.<br /></li>
         <li><b>Creativity and Innovation:</b> The ability to come up with new and unique game ideas and the willingness to experiment and try new things.<br /></li>
         <li><b>Teamwork:</b> The ability to work effectively in a team environment and collaborate with others to bring a game to life.<br /></li>
